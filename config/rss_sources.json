@@ -1,8 +1,15 @@
 {
   "feeds": [
     "https://www.eetimes.com/feed/",
-    "https://www.anandtech.com/rss/",
-    "TODO"
+    "https://semiengineering.com/feed/",
+    "https://www.trendforce.com/feed/Semiconductors.html",
+    "https://spectrum.ieee.org/feeds/feed.rss",
+    "https://www.tomshardware.com/feeds/all",
+    "https://www.theregister.com/?lab_viewport=rss",
+    "https://blogs.nvidia.com/feed/",
+    "https://news.samsung.com/global/feed/rss",
+    "https://www.thelec.kr/rss/allArticle.xml",
+    "https://rss.etnews.com/Section901.xml"
   ],
   "hours_window": 24
 }

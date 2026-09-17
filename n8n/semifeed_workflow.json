@@ -1,0 +1,235 @@
+{
+  "name": "semiwire - fetch to slack review",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual_trigger",
+      "name": "수동 실행",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "feeds",
+              "name": "feeds",
+              "type": "array",
+              "value": [
+                "https://www.eetimes.com/feed/",
+                "https://semiengineering.com/feed/",
+                "https://www.trendforce.com/feed/Semiconductors.html",
+                "https://spectrum.ieee.org/feeds/feed.rss",
+                "https://www.tomshardware.com/feeds/all",
+                "https://www.theregister.com/?lab_viewport=rss",
+                "https://blogs.nvidia.com/feed/",
+                "https://news.samsung.com/global/feed/rss",
+                "https://www.thelec.kr/rss/allArticle.xml",
+                "https://rss.etnews.com/Section901.xml"
+              ]
+            },
+            { "id": "hours", "name": "hours_window", "type": "number", "value": 24 }
+          ]
+        }
+      },
+      "id": "config",
+      "name": "설정 (RSS 목록)",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "feeds",
+        "options": {}
+      },
+      "id": "split_feeds",
+      "name": "피드별로 분리",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.feeds }}"
+      },
+      "id": "rss_read",
+      "name": "RSS 읽기",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" },
+          "conditions": [
+            {
+              "id": "recent",
+              "leftValue": "={{ (Date.now() - new Date($json.isoDate).getTime()) / 3600000 }}",
+              "rightValue": "={{ $('설정 (RSS 목록)').first().json.hours_window }}",
+              "operator": { "type": "number", "operation": "lt" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "filter_recent",
+      "name": "최근 N시간 필터",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// 이미 처리한 링크는 워크플로우 static data에 저장해서 중복 방지\nconst staticData = $getWorkflowStaticData('global');\nif (!staticData.postedLinks) staticData.postedLinks = [];\n\nconst out = [];\nfor (const item of $input.all()) {\n  const link = item.json.link;\n  if (!staticData.postedLinks.includes(link)) {\n    out.push(item);\n  }\n}\nreturn out;"
+      },
+      "id": "dedupe",
+      "name": "중복 제거",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1100, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-api-key", "value": "={{ $credentials.anthropicApi.apiKey }}" },
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: \"claude-sonnet-4-6\", max_tokens: 400, messages: [{ role: \"user\", content: `다음 기사를 반도체/테크 인스타 카드용으로 한국어로 요약해줘. JSON만 출력: {\\\"headline\\\": \\\"12단어 이내 헤드라인\\\", \\\"bullets\\\": [\\\"짧은 요약1\\\", \\\"짧은 요약2\\\", \\\"짧은 요약3\\\"], \\\"source\\\": \\\"매체명\\\"}\\n\\n제목: ${$json.title}\\n링크: ${$json.link}\\n본문요약: ${$json.contentSnippet || ''}` }] }) }}"
+      },
+      "id": "claude_summarize",
+      "name": "Claude로 카드 문구 생성",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1320, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Claude 응답 파싱 + HTML 카드 조립\nconst results = [];\nfor (const item of $input.all()) {\n  let card;\n  try {\n    const text = item.json.content[0].text;\n    card = JSON.parse(text.replace(/```json|```/g, '').trim());\n  } catch (e) {\n    continue; // 파싱 실패한 항목은 건너뜀\n  }\n\n  const bulletsHtml = card.bullets.map(b => `<li>${b}</li>`).join('');\n  const html = `\n  <html><head><style>\n    body { margin:0; width:1080px; height:1080px; background:#0d0d0d; color:#fff; font-family: 'Pretendard', sans-serif; padding:80px; box-sizing:border-box; }\n    h1 { font-size:56px; line-height:1.3; margin-bottom:50px; }\n    ul { font-size:32px; line-height:1.8; padding-left:30px; }\n    .source { position:absolute; bottom:60px; left:80px; font-size:24px; color:#888; }\n  </style></head>\n  <body>\n    <h1>${card.headline}</h1>\n    <ul>${bulletsHtml}</ul>\n    <div class=\"source\">출처: ${card.source}</div>\n  </body></html>`;\n\n  results.push({ json: { html, caption: `${card.headline}\\n\\n${card.bullets.join('\\n')}\\n\\n출처: ${card.source} | ${item.json.link}`, link: item.json.link } });\n}\nreturn results;"
+      },
+      "id": "build_html",
+      "name": "HTML 카드 조립",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1540, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://hcti.io/v1/image",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ html: $json.html }) }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Authorization", "value": "={{ 'Basic ' + $credentials.htmlCssToImage.basicAuth }}" }
+          ]
+        }
+      },
+      "id": "render_image",
+      "name": "카드 이미지 렌더링 (htmlcsstoimage)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1760, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": "={{ 'TODO-슬랙-채널-ID' }}",
+        "otherOptions": {},
+        "blocksUi": "={{ JSON.stringify([\n  { type: 'image', image_url: $json.url, alt_text: '카드 미리보기' },\n  { type: 'section', text: { type: 'mrkdwn', text: $('HTML 카드 조립').item.json.caption } },\n  { type: 'actions', elements: [\n    { type: 'button', text: { type: 'plain_text', text: '승인' }, style: 'primary', value: $('HTML 카드 조립').item.json.link, action_id: 'approve_post' },\n    { type: 'button', text: { type: 'plain_text', text: '반려' }, style: 'danger', value: $('HTML 카드 조립').item.json.link, action_id: 'reject_post' }\n  ] }\n]) }}"
+      },
+      "id": "slack_review",
+      "name": "Slack에 승인 요청",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [1980, 300]
+    },
+    {
+      "parameters": {
+        "resume": "webhook",
+        "options": {}
+      },
+      "id": "wait_for_approval",
+      "name": "승인 대기 (Wait)",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "webhookId": "semiwire-approval",
+      "position": [2200, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" },
+          "conditions": [
+            {
+              "id": "is_approved",
+              "leftValue": "={{ $json.body.actions[0].action_id }}",
+              "rightValue": "approve_post",
+              "operator": { "type": "string", "operation": "equals" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "if_approved",
+      "name": "승인됨?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [2420, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// TODO: Instagram Graph API 연동 자리\n// 1) POST /{ig-user-id}/media  (image_url, caption)\n// 2) POST /{ig-user-id}/media_publish (creation_id)\n// API 승인 전까지는 여기서 파일을 '발행 대기' 폴더에 저장해두고 수동 업로드\nconst staticData = $getWorkflowStaticData('global');\nstaticData.postedLinks.push($json.body.actions[0].value);\nreturn [{ json: { status: 'approved - ready to publish', link: $json.body.actions[0].value } }];"
+      },
+      "id": "publish_stub",
+      "name": "발행 (TODO: Instagram API)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2640, 220]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { status: 'rejected', link: $json.body.actions[0].value } }];"
+      },
+      "id": "reject_stub",
+      "name": "반려 처리",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2640, 380]
+    }
+  ],
+  "connections": {
+    "수동 실행": { "main": [[{ "node": "설정 (RSS 목록)", "type": "main", "index": 0 }]] },
+    "설정 (RSS 목록)": { "main": [[{ "node": "피드별로 분리", "type": "main", "index": 0 }]] },
+    "피드별로 분리": { "main": [[{ "node": "RSS 읽기", "type": "main", "index": 0 }]] },
+    "RSS 읽기": { "main": [[{ "node": "최근 N시간 필터", "type": "main", "index": 0 }]] },
+    "최근 N시간 필터": { "main": [[{ "node": "중복 제거", "type": "main", "index": 0 }]] },
+    "중복 제거": { "main": [[{ "node": "Claude로 카드 문구 생성", "type": "main", "index": 0 }]] },
+    "Claude로 카드 문구 생성": { "main": [[{ "node": "HTML 카드 조립", "type": "main", "index": 0 }]] },
+    "HTML 카드 조립": { "main": [[{ "node": "카드 이미지 렌더링 (htmlcsstoimage)", "type": "main", "index": 0 }]] },
+    "카드 이미지 렌더링 (htmlcsstoimage)": { "main": [[{ "node": "Slack에 승인 요청", "type": "main", "index": 0 }]] },
+    "Slack에 승인 요청": { "main": [[{ "node": "승인 대기 (Wait)", "type": "main", "index": 0 }]] },
+    "승인 대기 (Wait)": { "main": [[{ "node": "승인됨?", "type": "main", "index": 0 }]] },
+    "승인됨?": {
+      "main": [
+        [{ "node": "발행 (TODO: Instagram API)", "type": "main", "index": 0 }],
+        [{ "node": "반려 처리", "type": "main", "index": 0 }]
+      ]
+    }
+  }
+}
