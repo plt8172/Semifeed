@@ -2,24 +2,24 @@
 
 ## 0. n8n 실행 (로컬)
 ```bash
-docker run -it --rm --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n n8nio/n8n
+docker run -it --rm --name n8n -p 5678:5678 --env-file .env -v ~/.n8n:/home/node/.n8n n8nio/n8n
 ```
 브라우저에서 http://localhost:5678 접속.
 
 ## 1. 워크플로우 임포트
-n8n 화면 우측 상단 `...` → `Import from File` → `semiwire_workflow.json` 선택.
+n8n 화면 우측 상단 `...` → `Import from File` → `n8n/semifeed_workflow.json` 선택.
 노드가 좌→우로 쭉 나열된 게 보이면 정상.
 
 ## 2. 필요한 계정/키 준비
 | 무엇 | 어디서 | 용도 |
 |---|---|---|
-| Anthropic API 키 | console.anthropic.com | 기사 요약·카드 문구 생성 |
+| OpenRouter API 키 | openrouter.ai | 기사 요약·카드 문구 생성 |
 | htmlcsstoimage.com 계정 | hcti.io (무료 티어 있음) | HTML → PNG 렌더링 |
 | Slack App | api.slack.com/apps | 카드 미리보기 + 승인/반려 버튼 |
 
-## 3. n8n Credentials 등록
-- `Claude로 카드 문구 생성` 노드: Header Auth 자격증명 만들어서 `x-api-key`에 Anthropic 키 입력
-  (또는 노드 파라미터의 `$credentials.anthropicApi.apiKey` 부분을 실제 값으로 바로 바꿔도 됨 — 연습 단계에선 이게 더 빠름)
+## 3. 환경변수와 n8n Credentials 등록
+- 프로젝트 루트에 `.env.example`을 복사한 `.env`를 만들고 `OPENROUTER_API_KEY`를 설정
+- `OpenRouter로 카드 문구 생성` 노드는 `$env.OPENROUTER_API_KEY`를 Bearer 토큰으로 사용
 - `카드 이미지 렌더링` 노드: hcti.io User ID:API Key를 base64 인코딩해서 `$credentials.htmlCssToImage.basicAuth` 자리에 입력
 
 ## 4. Slack App 설정 (제일 중요한 부분)

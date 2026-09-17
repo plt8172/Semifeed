@@ -95,28 +95,28 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://api.anthropic.com/v1/messages",
+        "url": "https://openrouter.ai/api/v1/chat/completions",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            { "name": "x-api-key", "value": "={{ $credentials.anthropicApi.apiKey }}" },
-            { "name": "anthropic-version", "value": "2023-06-01" },
-            { "name": "content-type", "value": "application/json" }
+            { "name": "Authorization", "value": "={{ 'Bearer ' + $env.OPENROUTER_API_KEY }}" },
+            { "name": "Content-Type", "value": "application/json" },
+            { "name": "X-OpenRouter-Title", "value": "semifeed" }
           ]
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({ model: \"claude-sonnet-4-6\", max_tokens: 400, messages: [{ role: \"user\", content: `다음 기사를 반도체/테크 인스타 카드용으로 한국어로 요약해줘. JSON만 출력: {\\\"headline\\\": \\\"12단어 이내 헤드라인\\\", \\\"bullets\\\": [\\\"짧은 요약1\\\", \\\"짧은 요약2\\\", \\\"짧은 요약3\\\"], \\\"source\\\": \\\"매체명\\\"}\\n\\n제목: ${$json.title}\\n링크: ${$json.link}\\n본문요약: ${$json.contentSnippet || ''}` }] }) }}"
+        "jsonBody": "={{ JSON.stringify({ model: \"~anthropic/claude-sonnet-latest\", max_tokens: 400, temperature: 0.2, messages: [{ role: \"user\", content: `다음 기사를 반도체/테크 인스타 카드용으로 한국어로 요약해줘. JSON만 출력: {\\\"headline\\\": \\\"12단어 이내 헤드라인\\\", \\\"bullets\\\": [\\\"짧은 요약1\\\", \\\"짧은 요약2\\\", \\\"짧은 요약3\\\"], \\\"source\\\": \\\"매체명\\\"}\\n\\n제목: ${$json.title}\\n링크: ${$json.link}\\n본문요약: ${$json.contentSnippet || ''}` }] }) }}"
       },
-      "id": "claude_summarize",
-      "name": "Claude로 카드 문구 생성",
+      "id": "openrouter_summarize",
+      "name": "OpenRouter로 카드 문구 생성",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [1320, 300]
     },
     {
       "parameters": {
-        "jsCode": "// Claude 응답 파싱 + HTML 카드 조립\nconst results = [];\nfor (const item of $input.all()) {\n  let card;\n  try {\n    const text = item.json.content[0].text;\n    card = JSON.parse(text.replace(/```json|```/g, '').trim());\n  } catch (e) {\n    continue; // 파싱 실패한 항목은 건너뜀\n  }\n\n  const bulletsHtml = card.bullets.map(b => `<li>${b}</li>`).join('');\n  const html = `\n  <html><head><style>\n    body { margin:0; width:1080px; height:1080px; background:#0d0d0d; color:#fff; font-family: 'Pretendard', sans-serif; padding:80px; box-sizing:border-box; }\n    h1 { font-size:56px; line-height:1.3; margin-bottom:50px; }\n    ul { font-size:32px; line-height:1.8; padding-left:30px; }\n    .source { position:absolute; bottom:60px; left:80px; font-size:24px; color:#888; }\n  </style></head>\n  <body>\n    <h1>${card.headline}</h1>\n    <ul>${bulletsHtml}</ul>\n    <div class=\"source\">출처: ${card.source}</div>\n  </body></html>`;\n\n  results.push({ json: { html, caption: `${card.headline}\\n\\n${card.bullets.join('\\n')}\\n\\n출처: ${card.source} | ${item.json.link}`, link: item.json.link } });\n}\nreturn results;"
+        "jsCode": "// OpenRouter Chat Completions 응답 파싱 + HTML 카드 조립\nconst results = [];\nconst responseItems = $input.all();\nconst sourceItems = $('중복 제거').all();\nfor (let index = 0; index < responseItems.length; index++) {\n  const item = responseItems[index];\n  const sourceItem = sourceItems[index]?.json || {};\n  let card;\n  try {\n    const content = item.json.choices?.[0]?.message?.content;\n    const text = typeof content === 'string'\n      ? content\n      : Array.isArray(content)\n        ? content.map(part => part?.text || '').join('')\n        : '';\n    card = JSON.parse(text.replace(/```json|```/g, '').trim());\n  } catch (e) {\n    continue; // 파싱 실패한 항목은 건너뜀\n  }\n\n  const bulletsHtml = card.bullets.map(b => `<li>${b}</li>`).join('');\n  const html = `\n  <html><head><style>\n    body { margin:0; width:1080px; height:1080px; background:#0d0d0d; color:#fff; font-family: 'Pretendard', sans-serif; padding:80px; box-sizing:border-box; }\n    h1 { font-size:56px; line-height:1.3; margin-bottom:50px; }\n    ul { font-size:32px; line-height:1.8; padding-left:30px; }\n    .source { position:absolute; bottom:60px; left:80px; font-size:24px; color:#888; }\n  </style></head>\n  <body>\n    <h1>${card.headline}</h1>\n    <ul>${bulletsHtml}</ul>\n    <div class=\"source\">출처: ${card.source}</div>\n  </body></html>`;\n\n  results.push({ json: { html, caption: `${card.headline}\\n\\n${card.bullets.join('\\n')}\\n\\n출처: ${card.source} | ${sourceItem.link}`, link: sourceItem.link } });\n}\nreturn results;"
       },
       "id": "build_html",
       "name": "HTML 카드 조립",
@@ -219,8 +219,8 @@
     "피드별로 분리": { "main": [[{ "node": "RSS 읽기", "type": "main", "index": 0 }]] },
     "RSS 읽기": { "main": [[{ "node": "최근 N시간 필터", "type": "main", "index": 0 }]] },
     "최근 N시간 필터": { "main": [[{ "node": "중복 제거", "type": "main", "index": 0 }]] },
-    "중복 제거": { "main": [[{ "node": "Claude로 카드 문구 생성", "type": "main", "index": 0 }]] },
-    "Claude로 카드 문구 생성": { "main": [[{ "node": "HTML 카드 조립", "type": "main", "index": 0 }]] },
+    "중복 제거": { "main": [[{ "node": "OpenRouter로 카드 문구 생성", "type": "main", "index": 0 }]] },
+    "OpenRouter로 카드 문구 생성": { "main": [[{ "node": "HTML 카드 조립", "type": "main", "index": 0 }]] },
     "HTML 카드 조립": { "main": [[{ "node": "카드 이미지 렌더링 (htmlcsstoimage)", "type": "main", "index": 0 }]] },
     "카드 이미지 렌더링 (htmlcsstoimage)": { "main": [[{ "node": "Slack에 승인 요청", "type": "main", "index": 0 }]] },
     "Slack에 승인 요청": { "main": [[{ "node": "승인 대기 (Wait)", "type": "main", "index": 0 }]] },
