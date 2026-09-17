@@ -1,0 +1,8 @@
+{
+  "feeds": [
+    "https://www.eetimes.com/feed/",
+    "https://www.anandtech.com/rss/",
+    "TODO"
+  ],
+  "hours_window": 24
+}
