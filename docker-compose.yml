@@ -1,0 +1,18 @@
+services:
+  n8n:
+    image: n8nio/n8n
+    ports:
+      - "5678:5678"
+    env_file:
+      - .env
+    volumes:
+      - ~/.n8n:/home/node/.n8n
+    depends_on:
+      - browserless
+
+  browserless:
+    image: browserless/chrome
+    ports:
+      - "3000:3000"
+    environment:
+      - MAX_CONCURRENT_SESSIONS=5
