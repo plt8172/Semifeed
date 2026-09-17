@@ -248,7 +248,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// TODO: Instagram Graph API 연동 자리\n// 1) POST /{ig-user-id}/media  (image_url, caption)\n// 2) POST /{ig-user-id}/media_publish (creation_id)\n// API 승인 전까지는 여기서 파일을 '발행 대기' 폴더에 저장해두고 수동 업로드\nconst link = $('HTML 카드 조립').first().json.link;\nconst staticData = $getWorkflowStaticData('global');\nstaticData.postedLinks.push(link);\nreturn [{ json: { status: 'approved - ready to publish', link } }];"
+        "jsCode": "// TODO: Instagram Graph API 연동 자리\n// 1) POST /{ig-user-id}/media  (image_url, caption)\n// 2) POST /{ig-user-id}/media_publish (creation_id)\n// API 승인 전까지는 여기서 파일을 '발행 대기' 폴더에 저장해두고 수동 업로드\nconst link = $('HTML 카드 조립').first().json.link;\nconst staticData = $getWorkflowStaticData('global');\nif (!Array.isArray(staticData.postedLinks)) staticData.postedLinks = [];\nif (!staticData.postedLinks.includes(link)) staticData.postedLinks.push(link);\nreturn [{ json: { status: 'approved - ready to publish', link } }];"
       },
       "id": "publish_stub",
       "name": "발행 (TODO: Instagram API)",
