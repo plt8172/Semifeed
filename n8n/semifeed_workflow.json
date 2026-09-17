@@ -30,7 +30,9 @@
                 "https://rss.etnews.com/Section901.xml"
               ]
             },
-            { "id": "hours", "name": "hours_window", "type": "number", "value": 24 }
+            { "id": "hours", "name": "hours_window", "type": "number", "value": 24 },
+            { "id": "slack_channel", "name": "slack_channel_id", "type": "string", "value": "C0C209QAURH" },
+            { "id": "max_items", "name": "max_items", "type": "number", "value": 1 }
           ]
         }
       },
@@ -84,7 +86,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// 이미 처리한 링크는 워크플로우 static data에 저장해서 중복 방지\nconst staticData = $getWorkflowStaticData('global');\nif (!staticData.postedLinks) staticData.postedLinks = [];\n\nconst out = [];\nfor (const item of $input.all()) {\n  const link = item.json.link;\n  if (!staticData.postedLinks.includes(link)) {\n    out.push(item);\n  }\n}\nreturn out;"
+        "jsCode": "// 이미 처리한 링크는 워크플로우 static data에 저장해서 중복 방지\nconst staticData = $getWorkflowStaticData('global');\nif (!staticData.postedLinks) staticData.postedLinks = [];\n\nconst out = [];\nfor (const item of $input.all()) {\n  const link = item.json.link;\n  if (!staticData.postedLinks.includes(link)) {\n    out.push(item);\n  }\n}\n\n// 테스트/운영 시 처리 기사 수를 중앙 설정에서 제한\nconst maxItems = Math.max(1, Number($('설정 (RSS 목록)').first().json.max_items || 3));\nreturn out.slice(0, maxItems);"
       },
       "id": "dedupe",
       "name": "중복 제거",
@@ -96,10 +98,11 @@
       "parameters": {
         "method": "POST",
         "url": "https://openrouter.ai/api/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
-            { "name": "Authorization", "value": "={{ 'Bearer ' + $env.OPENROUTER_API_KEY }}" },
             { "name": "Content-Type", "value": "application/json" },
             { "name": "X-OpenRouter-Title", "value": "semifeed" }
           ]
@@ -126,11 +129,32 @@
     },
     {
       "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "mode": "id",
+          "value": "={{ $('설정 (RSS 목록)').first().json.slack_channel_id }}"
+        },
+        "text": "={{ $('HTML 카드 조립').item.json.caption }}",
+        "messageType": "text",
+        "otherOptions": {
+          "includeLinkToWorkflow": false
+        }
+      },
+      "id": "slack_review_parent",
+      "name": "Slack 승인 요청 시작",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [1760, 300]
+    },
+    {
+      "parameters": {
         "method": "POST",
         "url": "http://browserless:3000/screenshot",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({ html: $json.html, options: { type: 'png', fullPage: false, clip: { x: 0, y: 0, width: 1080, height: 1080 } } }) }}",
+        "jsonBody": "={{ JSON.stringify({ html: $('HTML 카드 조립').item.json.html, options: { type: 'png', fullPage: false, clip: { x: 0, y: 0, width: 1080, height: 1080 } } }) }}",
         "options": {
           "response": {
             "response": {
@@ -144,7 +168,7 @@
       "name": "카드 이미지 렌더링 (browserless)",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [1760, 300]
+      "position": [1980, 300]
     },
     {
       "parameters": {
@@ -152,9 +176,9 @@
         "operation": "upload",
         "binaryPropertyName": "data",
         "options": {
-          "channelId": "={{ $env.SLACK_CHANNEL_ID }}",
+          "channelId": "={{ $('설정 (RSS 목록)').first().json.slack_channel_id }}",
           "fileName": "semifeed-card.png",
-          "initialComment": "={{ $('HTML 카드 조립').item.json.caption }}",
+          "threadTs": "={{ $('Slack 승인 요청 시작').item.json.ts }}",
           "title": "semifeed news card"
         }
       },
@@ -162,35 +186,34 @@
       "name": "Slack에 카드 파일 업로드",
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.2,
-      "position": [1980, 300]
-    },
-    {
-      "parameters": {
-        "resource": "file",
-        "operation": "get",
-        "fileId": "={{ $json.id }}"
-      },
-      "id": "slack_get_uploaded_file",
-      "name": "Slack 업로드 파일 정보 조회",
-      "type": "n8n-nodes-base.slack",
-      "typeVersion": 2.2,
-      "position": [1980, 80]
+      "position": [2200, 300]
     },
     {
       "parameters": {
         "resource": "message",
-        "operation": "post",
+        "operation": "sendAndWait",
         "select": "channel",
         "channelId": {
           "mode": "id",
-          "value": "={{ $env.SLACK_CHANNEL_ID }}"
+          "value": "={{ $('설정 (RSS 목록)').first().json.slack_channel_id }}"
         },
-        "messageType": "block",
-        "blocksUi": "={{ JSON.stringify([\n  { type: 'actions', block_id: 'approval_actions', elements: [\n    { type: 'button', text: { type: 'plain_text', text: '승인' }, style: 'primary', value: $('HTML 카드 조립').item.json.link, action_id: 'approve_post' },\n    { type: 'button', text: { type: 'plain_text', text: '반려' }, style: 'danger', value: $('HTML 카드 조립').item.json.link, action_id: 'reject_post' }\n  ] }\n]) }}",
-        "otherOptions": {
+        "message": "이 카드의 발행 여부를 선택해주세요.",
+        "responseType": "approval",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double",
+            "approveLabel": "승인",
+            "buttonApprovalStyle": "primary",
+            "disapproveLabel": "반려",
+            "buttonDisapprovalStyle": "secondary"
+          }
+        },
+        "captureResponder": false,
+        "options": {
+          "appendAttribution": false,
           "thread_ts": {
             "replyValues": {
-              "thread_ts": "={{ Number($json.shares?.public?.[$env.SLACK_CHANNEL_ID]?.[0]?.ts || $json.shares?.private?.[$env.SLACK_CHANNEL_ID]?.[0]?.ts) }}",
+              "thread_ts": "={{ $('Slack 승인 요청 시작').item.json.ts }}",
               "reply_broadcast": false
             }
           }
@@ -200,19 +223,7 @@
       "name": "Slack 승인 버튼 메시지",
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.2,
-      "position": [2200, 80]
-    },
-    {
-      "parameters": {
-        "resume": "webhook",
-        "options": {}
-      },
-      "id": "wait_for_approval",
-      "name": "승인 대기 (Wait)",
-      "type": "n8n-nodes-base.wait",
-      "typeVersion": 1.1,
-      "webhookId": "semiwire-approval",
-      "position": [2200, 300]
+      "position": [2420, 300]
     },
     {
       "parameters": {
@@ -221,8 +232,8 @@
           "conditions": [
             {
               "id": "is_approved",
-              "leftValue": "={{ $json.body.actions[0].action_id }}",
-              "rightValue": "approve_post",
+              "leftValue": "={{ String($json.data.approved) }}",
+              "rightValue": "true",
               "operator": { "type": "string", "operation": "equals" }
             }
           ],
@@ -233,27 +244,27 @@
       "name": "승인됨?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
-      "position": [2420, 300]
+      "position": [2640, 300]
     },
     {
       "parameters": {
-        "jsCode": "// TODO: Instagram Graph API 연동 자리\n// 1) POST /{ig-user-id}/media  (image_url, caption)\n// 2) POST /{ig-user-id}/media_publish (creation_id)\n// API 승인 전까지는 여기서 파일을 '발행 대기' 폴더에 저장해두고 수동 업로드\nconst staticData = $getWorkflowStaticData('global');\nstaticData.postedLinks.push($json.body.actions[0].value);\nreturn [{ json: { status: 'approved - ready to publish', link: $json.body.actions[0].value } }];"
+        "jsCode": "// TODO: Instagram Graph API 연동 자리\n// 1) POST /{ig-user-id}/media  (image_url, caption)\n// 2) POST /{ig-user-id}/media_publish (creation_id)\n// API 승인 전까지는 여기서 파일을 '발행 대기' 폴더에 저장해두고 수동 업로드\nconst link = $('HTML 카드 조립').first().json.link;\nconst staticData = $getWorkflowStaticData('global');\nstaticData.postedLinks.push(link);\nreturn [{ json: { status: 'approved - ready to publish', link } }];"
       },
       "id": "publish_stub",
       "name": "발행 (TODO: Instagram API)",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [2640, 220]
+      "position": [2860, 220]
     },
     {
       "parameters": {
-        "jsCode": "return [{ json: { status: 'rejected', link: $json.body.actions[0].value } }];"
+        "jsCode": "const link = $('HTML 카드 조립').first().json.link;\nreturn [{ json: { status: 'rejected', link } }];"
       },
       "id": "reject_stub",
       "name": "반려 처리",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [2640, 380]
+      "position": [2860, 380]
     }
   ],
   "connections": {
@@ -264,12 +275,11 @@
     "최근 N시간 필터": { "main": [[{ "node": "중복 제거", "type": "main", "index": 0 }]] },
     "중복 제거": { "main": [[{ "node": "OpenRouter로 카드 문구 생성", "type": "main", "index": 0 }]] },
     "OpenRouter로 카드 문구 생성": { "main": [[{ "node": "HTML 카드 조립", "type": "main", "index": 0 }]] },
-    "HTML 카드 조립": { "main": [[{ "node": "카드 이미지 렌더링 (browserless)", "type": "main", "index": 0 }]] },
+    "HTML 카드 조립": { "main": [[{ "node": "Slack 승인 요청 시작", "type": "main", "index": 0 }]] },
+    "Slack 승인 요청 시작": { "main": [[{ "node": "카드 이미지 렌더링 (browserless)", "type": "main", "index": 0 }]] },
     "카드 이미지 렌더링 (browserless)": { "main": [[{ "node": "Slack에 카드 파일 업로드", "type": "main", "index": 0 }]] },
-    "Slack에 카드 파일 업로드": { "main": [[{ "node": "Slack 업로드 파일 정보 조회", "type": "main", "index": 0 }]] },
-    "Slack 업로드 파일 정보 조회": { "main": [[{ "node": "Slack 승인 버튼 메시지", "type": "main", "index": 0 }]] },
-    "Slack 승인 버튼 메시지": { "main": [[{ "node": "승인 대기 (Wait)", "type": "main", "index": 0 }]] },
-    "승인 대기 (Wait)": { "main": [[{ "node": "승인됨?", "type": "main", "index": 0 }]] },
+    "Slack에 카드 파일 업로드": { "main": [[{ "node": "Slack 승인 버튼 메시지", "type": "main", "index": 0 }]] },
+    "Slack 승인 버튼 메시지": { "main": [[{ "node": "승인됨?", "type": "main", "index": 0 }]] },
     "승인됨?": {
       "main": [
         [{ "node": "발행 (TODO: Instagram API)", "type": "main", "index": 0 }],
