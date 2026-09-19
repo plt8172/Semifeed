@@ -23,4 +23,4 @@ services:
     ports:
       - "127.0.0.1:3000:3000"
     environment:
-      - MAX_CONCURRENT_SESSIONS=5
+      - MAX_CONCURRENT_SESSIONS=1
