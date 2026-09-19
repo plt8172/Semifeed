@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-09-19
+- Google Compute Engine 단일 VM에 Docker Compose와 Tailscale Funnel로 배포하는 전체 절차 및 검증·백업·전환 체크리스트 문서화
+- n8n 비민감 서버 설정을 `config/n8n.env`로 분리하고 `.env`는 encryption key만 보관하도록 정리
+- n8n과 browserless 호스트 포트를 localhost에만 바인딩해 Google Cloud 외부 직접 노출 차단
 - 공용 뉴스 파이프라인과 수동 실행기·일일 스케줄러를 분리해 처리 로직 중복 없이 수동/자동 실행 경로 구성
 - 매일 오전 9시(Asia/Seoul)에 공용 파이프라인을 호출하는 Schedule Trigger 워크플로우 추가
 - n8n 외부 기본 URL을 Tailscale Funnel 주소로 고정해 다른 기기의 Slack에서도 승인/반려 가능하도록 설정

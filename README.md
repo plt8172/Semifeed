@@ -1,82 +1,81 @@
-# semiwire n8n 파이프라인 적용법
+# Semifeed 운영 가이드
 
-## 0. n8n + browserless 실행 (로컬)
+반도체 뉴스를 RSS에서 수집하고, OpenRouter로 카드 문구를 생성한 뒤 Slack 승인 후 Instagram에 게시하는 n8n 파이프라인입니다.
+
+```mermaid
+flowchart LR
+    manual[수동 실행기] --> pipeline[공용 뉴스 파이프라인]
+    schedule[일일 스케줄러] --> pipeline
+    pipeline --> slack[Slack 승인]
+    slack --> instagram[Instagram 게시]
+    pipeline --> storage[(JPEG 임시 저장)]
+    meta[Meta 이미지 요청] --> webhook[미디어 Webhook]
+    webhook --> storage
+    storage --> response[JPEG 응답]
+    response --> meta
+```
+
+운영 배포의 권장 구성은 Google Compute Engine 단일 VM, Docker Compose, Tailscale Funnel입니다. Funnel이 공개 HTTPS를 제공하므로 별도 도메인이 필요 없고, Google Cloud 방화벽에 n8n의 5678 포트나 browserless의 3000 포트를 열지 않습니다.
+
+## 1. 저장소 구성
+
+```text
+config/n8n.env                       n8n 서버의 비민감 실행 설정
+config/semifeed.json                 RSS·Slack 채널·Instagram 계정 등 워크플로우 설정
+n8n/semifeed_workflow.json           공용 뉴스 파이프라인
+n8n/semifeed_manual_workflow.json    수동 실행기
+n8n/semifeed_schedule_workflow.json  매일 오전 9시 자동 실행기
+data/instagram/                      Instagram이 가져갈 임시 JPEG
+.env                                 n8n encryption key만 저장, Git 제외
+```
+
+API 토큰은 `.env`나 JSON에 넣지 않고 n8n Credentials에 저장합니다. `.env`에는 n8n credential DB를 복호화하는 `N8N_ENCRYPTION_KEY`만 둡니다.
+
+이전 구성의 `.env`에 `OPENROUTER_API_KEY`, `SLACK_BOT_TOKEN`, `INSTAGRAM_ACCESS_TOKEN`이 남아 있다면 해당 줄은 제거합니다. Compose는 `N8N_ENCRYPTION_KEY`만 선택적으로 컨테이너에 전달합니다.
+
+## 2. 로컬 실행
+
+기존 n8n 데이터가 있다면 현재 키를 `.env`에 기록합니다.
+
 ```bash
+cp .env.example .env
+jq -r '"N8N_ENCRYPTION_KEY=" + .encryptionKey' ~/.n8n/config > .env
+chmod 600 .env
 docker compose up -d
 ```
-실행 후 n8n은 http://localhost:5678, browserless는 http://localhost:3000에서 확인할 수 있어요.
 
-현재 외부 주소는 `https://plutos-macbook-air.tail8016b0.ts.net/`이며, Tailscale Funnel이 로컬 n8n의 5678 포트로 전달합니다. Compose에는 이 주소가 `N8N_WEBHOOK_URL`과 `N8N_EDITOR_BASE_URL`로 설정되어 있어 Slack 승인 버튼의 실행별 응답 URL도 외부 HTTPS 주소로 생성됩니다.
-
-browserless JPEG 렌더링은 다음처럼 단독으로 확인할 수 있어요.
+새 인스턴스라면 키를 새로 생성합니다.
 
 ```bash
-curl -X POST http://localhost:3000/screenshot \
-  -H "Content-Type: application/json" \
-  -d '{"html":"<h1>test</h1>","options":{"type":"jpeg","quality":90}}' \
-  --output test.jpg
+cp .env.example .env
+printf 'N8N_ENCRYPTION_KEY=%s\n' "$(openssl rand -hex 32)" > .env
+chmod 600 .env
+docker compose up -d
 ```
 
-## 1. 워크플로우 임포트
-n8n 화면 우측 상단 `...` → `Import from File`에서 아래 파일을 순서대로 임포트합니다.
+상태 확인:
 
-1. `n8n/semifeed_workflow.json` — RSS 수집부터 Slack 승인·Instagram 발행까지 담당하는 공용 파이프라인
-2. `n8n/semifeed_manual_workflow.json` — 공용 파이프라인을 수동으로 호출하는 테스트용 실행기
-3. `n8n/semifeed_schedule_workflow.json` — 공용 파이프라인을 매일 오전 9시(Asia/Seoul)에 호출하는 자동 실행기
+```bash
+docker compose ps
+curl -fsS http://localhost:5678/healthz
+curl -fsS http://localhost:3000/pressure
+```
 
-실제 처리 로직과 Credentials는 공용 파이프라인에만 있으므로, 수동·자동 실행 방식이 나뉘어도 로직을 중복 관리하지 않습니다.
+## 3. n8n Credentials
 
-## 2. 필요한 계정/키 준비
-| 무엇 | 어디서 | 용도 |
+기존 `~/.n8n`을 서버로 이전하면 아래 Credentials와 노드 연결도 함께 복제됩니다. 새 인스턴스에 직접 구성할 때만 다음 값을 등록합니다.
+
+| 이름 | n8n Credential | 값 |
 |---|---|---|
-| OpenRouter API 키 | openrouter.ai | 기사 요약·카드 문구 생성 |
-| Slack App | api.slack.com/apps | 카드 미리보기 + 승인/반려 버튼 |
-| Instagram Access Token | Meta for Developers의 Instagram API setup | 승인된 카드 게시 |
+| OpenRouter | Header Auth | Name `Authorization`, Value `Bearer <OPENROUTER_API_KEY>` |
+| Slack | Slack API | Bot User OAuth Token `xoxb-...` |
+| Instagram | Header Auth | Name `Authorization`, Value `Bearer <INSTAGRAM_ACCESS_TOKEN>` |
 
-## 3. n8n Credentials와 설정값
-- OpenRouter API 키는 `OpenRouter로 카드 문구 생성` 노드의 **Header Auth Credential**에 등록합니다. 헤더 이름은 `Authorization`, 값은 `Bearer <OpenRouter API 키>`입니다.
-- Slack Bot User OAuth Token은 `Slack 승인 요청 시작`, `Slack에 카드 파일 업로드`, `Slack 승인 버튼 메시지` 노드에서 공통으로 선택하는 **Slack Credential**에 등록합니다.
-- API 키와 토큰은 워크플로우나 저장소에 넣지 않습니다. `.env` 없이도 Docker Compose를 실행할 수 있습니다.
-- RSS 목록과 비민감 운영 설정은 `config/semifeed.json`에서 관리합니다. 이 디렉터리는 컨테이너의 `/data/config`에 읽기 전용으로 마운트되며, 워크플로우의 `설정 파일 읽기` → `설정 (RSS 목록)` 노드가 실행할 때마다 파일을 읽습니다.
-- `Instagram 게시 컨테이너 생성`, `Instagram 게시 발행` 노드는 같은 **Header Auth Credential**을 사용합니다. 헤더 이름은 `Authorization`, 값은 `Bearer <Instagram Access Token>`입니다.
-- `config/semifeed.json`의 `instagram_user_id`, `instagram_api_version`, `n8n_public_base_url`을 실제 값으로 변경합니다. `n8n_public_base_url`은 경로를 제외한 외부 HTTPS n8n 기본 주소입니다.
-- App ID와 App Secret은 워크플로우 JSON에 넣지 않습니다. 게시 호출에는 Access Token Credential만 사용합니다.
-- `카드 이미지 렌더링 (browserless)` 노드는 Instagram 게시 규격에 맞춰 로컬 browserless에서 1080×1080 JPEG를 생성합니다.
+토큰이 터미널 출력, 로그 또는 공유 문서에 노출됐다면 기존 값을 계속 사용하지 말고 각 서비스에서 폐기·재발급한 뒤 n8n Credential을 갱신합니다.
 
-## 4. Slack App 설정 (제일 중요한 부분)
-1. api.slack.com/apps → Create New App → From scratch
-2. **OAuth & Permissions** → Bot Token Scopes에 `chat:write`, `chat:write.public`, `files:write` 추가 → 워크스페이스에 재설치 → Bot Token(`xoxb-...`) 복사
-3. n8n의 `Slack 승인 요청 시작`, `Slack에 카드 파일 업로드`, `Slack 승인 버튼 메시지` 노드에 같은 Slack Credential 선택
-4. `config/semifeed.json`의 `slack_channel_id`에 실제 채널 ID를 설정
-5. 파일 업로드할 채널에 Slack Bot을 초대
+Slack Bot에는 `chat:write`, `chat:write.public`, `files:write` scope가 필요하며 대상 채널에 Bot을 초대해야 합니다. `config/semifeed.json`의 `slack_channel_id`에는 채널 이름이 아닌 `C...` 형태의 채널 ID를 넣습니다.
 
-승인 처리는 n8n Slack 노드의 **Send and Wait for Response** 기능을 사용합니다. 버튼에는 실행별 서명 URL이 들어가므로 Slack App의 Interactivity Request URL은 필요하지 않습니다. 현재 Compose의 `N8N_WEBHOOK_URL`이 Tailscale Funnel HTTPS 주소를 가리키므로 휴대폰이나 다른 PC의 Slack에서도 승인/반려할 수 있습니다.
-
-외부 Slack 사용 조건은 다음과 같습니다.
-
-- Tailscale Funnel 상태에 `https://plutos-macbook-air.tail8016b0.ts.net` → `http://127.0.0.1:5678` 프록시가 표시되어야 합니다.
-- n8n 컨테이너와 승인 대기 중인 실행이 계속 살아 있어야 합니다.
-- Slack Bot은 대상 채널에 초대되어 있어야 합니다. 다른 채널로 바꾸려면 `설정 (RSS 목록)`의 `slack_channel_id`를 변경하고 Bot을 그 채널에도 초대합니다.
-- 과거 실행에서 생성된 버튼은 해당 실행이 종료되면 다시 사용할 수 없습니다. 새 실행으로 받은 버튼을 사용합니다.
-
-## 5. RSS 주소 채워넣기
-`config/semifeed.json`의 `feeds` 배열에서 RSS 주소를 관리합니다.
-보통 `사이트주소/feed` 또는 `사이트주소/rss.xml` 형태입니다. 사이트에 RSS 아이콘이 없으면 위 두 경로를 직접 브라우저에 쳐서 XML이 뜨는지 확인하면 됩니다.
-
-## 6. 테스트 실행
-1. `semifeed - manual run` 워크플로우를 열고 상단 `Execute Workflow` 클릭
-2. Slack 채널에 캡션이 부모 메시지로 게시되고, 같은 스레드에 JPEG 카드와 승인/반려 버튼이 뜨는지 확인
-3. 버튼을 누르면 브라우저에서 승인 결과가 기록되고 공용 파이프라인의 `Slack 승인 버튼 메시지` 노드가 재개됨 — n8n Executions 탭에서 하위 실행 로그 확인
-
-## 6-1. 정기 실행
-
-`semifeed - daily schedule` 워크플로우만 저장 후 **Publish**하면 매일 오전 9시(Asia/Seoul)에 공용 파이프라인을 한 번 호출합니다. Schedule Trigger는 워크플로우가 Publish 상태일 때만 동작합니다.
-
-실행 시각을 바꾸려면 이 워크플로우의 `매일 오전 9시` 노드에서 Cron 식 `0 9 * * *`을 수정한 뒤 다시 Publish합니다. 자동 실행기는 공용 파이프라인 완료를 기다리지 않고 종료되며, Slack 승인 대기는 별도의 공용 파이프라인 실행에서 계속됩니다.
-
-## 7. Instagram 게시 설정
-1. Meta 앱의 Instagram API setup에서 `instagram_business_basic`, `instagram_business_content_publish` 권한으로 `semifeed` 계정 Access Token을 발급합니다.
-2. 다음 요청으로 `instagram_user_id`를 확인합니다. `<VERSION>`과 `<ACCESS_TOKEN>`은 실제 값으로 바꿉니다.
+Instagram 토큰에는 `instagram_business_basic`, `instagram_business_content_publish` 권한이 필요합니다. 계정 ID는 다음 요청의 `user_id`를 사용합니다.
 
 ```bash
 curl -G "https://graph.instagram.com/<VERSION>/me" \
@@ -84,50 +83,275 @@ curl -G "https://graph.instagram.com/<VERSION>/me" \
   --data-urlencode "fields=user_id,username"
 ```
 
-3. n8n에서 Header Auth Credential을 하나 만들고 `Instagram 게시 컨테이너 생성`, `Instagram 게시 발행` 두 노드에 지정합니다.
-4. `config/semifeed.json`에서 아래 값을 변경합니다.
-   - `instagram_user_id`: 위 API 응답의 `user_id`
-   - `instagram_api_version`: Meta 앱에 표시된 지원 버전(기본값 `v25.0`)
-   - `n8n_public_base_url`: 경로를 제외한 n8n 외부 HTTPS 기본 주소. 워크플로우가 여기에 `/webhook/semifeed-media`를 붙여 Instagram 이미지 URL을 생성합니다.
-5. 워크플로우를 활성화합니다. Production Webhook은 워크플로우가 활성화되어야 Meta가 이미지를 가져갈 수 있습니다.
-6. 로컬 n8n 주소(`localhost`)는 Meta에서 접근할 수 없습니다. 기존 도메인, 리버스 프록시 또는 HTTPS 터널을 통해 n8n Production Webhook이 인터넷에서 열려 있어야 합니다.
+## 4. 워크플로우 설치와 실행
 
-승인 전 JPEG는 `data/instagram/`에 저장되고, 무작위 파일명을 아는 요청에만 Webhook이 파일을 반환합니다. 이 Webhook은 댓글·DM 이벤트 수신용이 아니라 Instagram 게시 API가 이미지 파일을 가져가기 위한 용도입니다. 운영 시 오래된 JPEG를 주기적으로 삭제하세요.
-
-승인 후 실행 순서는 다음과 같습니다.
-
-```text
-JPEG 임시 저장 → Slack 승인 → Instagram /media → Instagram /media_publish → 게시 ID 기록
-```
-
-## 8. 운영 시 보강할 부분
-- 중복 방지는 워크플로우의 static data(메모리)에 저장되는 방식이라 n8n을 재시작하면 초기화될 수 있어요. 계속 쓰려면 Google Sheets나 SQLite 노드로 바꿔서 영구 저장하는 걸 추천합니다.
-- `data/instagram/`의 오래된 임시 이미지는 자동 정리되지 않습니다. 게시 안정화 후 보존 기간 기반 정리 작업을 추가하는 것을 권장합니다.
-
-## 9. 서버 운영 체크리스트
-
-Compose 서비스에는 `restart: unless-stopped`가 설정되어 있어 Docker 엔진이 재시작되면 n8n과 browserless도 자동으로 다시 올라옵니다. 단, 이 구성은 Mac 자체가 서버 역할을 하므로 Mac이 잠자기 상태이거나 꺼져 있거나 Docker Desktop/Tailscale이 종료되면 Slack 승인과 Instagram 이미지 전달도 중단됩니다.
-
-재시작 및 상태 확인 명령은 다음과 같습니다.
+워크플로우 파일은 컨테이너의 `/data/workflows`에 읽기 전용으로 마운트됩니다. 다음 명령은 같은 ID의 기존 워크플로우를 갱신하고 없는 워크플로우를 추가합니다.
 
 ```bash
-docker compose up -d
-docker compose ps
-curl -fsS http://localhost:5678/healthz
-curl -fsS http://localhost:3000/pressure
-tailscale funnel status
-curl -fsS https://plutos-macbook-air.tail8016b0.ts.net/healthz
+docker compose exec -u node n8n \
+  n8n import:workflow --separate --input=/data/workflows
+docker compose restart n8n
 ```
 
-Mac 로그인 시 Docker Desktop과 Tailscale을 자동 실행하도록 설정하고, 운영 중에는 시스템 잠자기를 방지해야 합니다. 워크플로우도 n8n에서 활성화된 상태여야 Production Webhook과 정기 실행이 유지됩니다.
+그다음 n8n UI에서:
 
-## 10. `.env`와 설정 파일의 역할
+1. `semifeed - news pipeline`을 열어 Credential 연결을 확인하고 Publish합니다.
+2. `semifeed - manual run`을 실행해 Slack 승인부터 Instagram 게시까지 시험합니다.
+3. `semifeed - daily schedule`을 Publish합니다.
 
-- `.env`는 `N8N_ENCRYPTION_KEY`, 데이터베이스 비밀번호처럼 서버 시작에 필요한 민감한 인프라 값에만 사용하고 Git에는 커밋하지 않습니다.
-- Slack, OpenRouter, Instagram 토큰은 n8n Credentials에 저장합니다.
-- 워크플로우 JSON에는 비밀값이 아닌 Credential ID·이름 참조가 포함되어 있어, 같은 ID의 Credential을 DB 이전 또는 CLI import로 준비하면 각 노드에 자동 연결됩니다.
-- 워크플로우 ID도 고정되어 있어 CLI로 다시 임포트할 때 별도 복제본을 만들지 않고 같은 워크플로우를 갱신할 수 있습니다.
-- RSS 목록, 처리 개수, 채널 ID, Instagram 계정 ID와 공개 URL처럼 비밀이 아닌 실행 설정은 `config/semifeed.json`에서 관리합니다.
-- Docker Compose의 `.env` 값은 컨테이너에 명시적으로 전달해야 하며, n8n 워크플로우에서 `$env`로 직접 읽는 방식은 보안 설정에 따라 차단될 수 있으므로 사용하지 않습니다.
+자동 실행기는 `Asia/Seoul` 기준 매일 오전 9시에 공용 파이프라인을 호출합니다. 시간을 변경하려면 `매일 오전 9시` 노드의 Cron 식 `0 9 * * *`을 수정하고 다시 Publish합니다. 자동 실행기는 공용 파이프라인 완료를 기다리지 않으므로 Slack 승인은 별도의 하위 실행에서 계속 대기합니다.
 
-Slack 승인 버튼의 외부 응답 URL은 `config/semifeed.json`을 읽지 않습니다. n8n이 Compose의 `N8N_WEBHOOK_URL`을 기준으로 실행별 URL을 자동 생성합니다. `config/semifeed.json`의 `n8n_public_base_url`과 Compose의 `N8N_WEBHOOK_URL`은 같은 공개 origin을 가리켜야 합니다.
+## 5. 비민감 운영 설정
+
+`config/semifeed.json`:
+
+| 키 | 의미 |
+|---|---|
+| `feeds` | 수집할 RSS URL 목록 |
+| `hours_window` | 이 시간보다 오래된 기사 제외 |
+| `max_items` | 실행 한 번에 생성할 카드 최대 개수 |
+| `slack_channel_id` | 승인 메시지를 보낼 Slack 채널 ID |
+| `instagram_user_id` | Instagram API의 `user_id` |
+| `instagram_api_version` | 사용할 Graph API 버전 |
+| `n8n_public_base_url` | 경로와 마지막 `/`를 제외한 외부 HTTPS origin |
+
+`config/n8n.env`의 `N8N_WEBHOOK_URL`, `N8N_EDITOR_BASE_URL`과 `config/semifeed.json`의 `n8n_public_base_url`은 반드시 같은 공개 origin을 가리켜야 합니다.
+
+## 6. Google Compute Engine에 배포
+
+아래 절차는 기존 Mac의 n8n 계정·Credentials·워크플로우 DB를 그대로 서버로 이전하는 권장 경로입니다.
+
+### 6.1 VM 생성
+
+Google Cloud Console에서 Compute Engine API를 활성화하고 VM 인스턴스를 생성합니다.
+
+프로젝트에 결제 계정이 연결되어 있어야 합니다. 예상치 못한 과금을 확인할 수 있도록 Google Cloud Billing에서 예산 알림도 설정합니다.
+
+- 리전/존: 서울과 가까운 `asia-northeast3` 권장
+- 운영체제: Ubuntu 24.04 LTS
+- 머신 유형: `e2-medium` 이상 권장(2 vCPU, 4GB RAM)
+- 부팅 디스크: Balanced persistent disk 30GB 이상
+- 방화벽: HTTP/HTTPS 허용을 선택하지 않음
+- 초기 접속용 SSH만 허용; 5678과 3000은 외부에 열지 않음
+
+브라우저의 VM 목록에서 **SSH**를 눌러 접속할 수 있습니다. 프로젝트 전송에는 로컬에 Google Cloud CLI가 필요합니다.
+
+### 6.2 Docker 설치
+
+VM에서 실행합니다.
+
+```bash
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl jq
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+  -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+sudo tee /etc/apt/sources.list.d/docker.sources >/dev/null <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io \
+  docker-buildx-plugin docker-compose-plugin
+sudo usermod -aG docker "$USER"
+sudo systemctl enable --now docker
+```
+
+SSH 연결을 종료했다가 다시 접속한 후 확인합니다.
+
+```bash
+docker version
+docker compose version
+```
+
+### 6.3 Tailscale과 Funnel 설정
+
+VM에서 실행한 뒤 출력되는 로그인 URL을 브라우저에서 승인합니다.
+
+```bash
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up --hostname=semifeed-server
+sudo tailscale funnel --bg 5678
+sudo tailscale funnel status
+```
+
+`tailscale funnel status`에 표시되는 `https://semifeed-server.<tailnet>.ts.net` 주소를 기록합니다. `--bg`로 만든 Funnel은 VM이나 Tailscale이 재시작된 뒤에도 복구됩니다.
+
+항상 켜둘 서버이므로 Tailscale Admin Console의 **Machines**에서 `semifeed-server`의 key expiry 정책도 확인합니다. 만료를 끄면 재인증으로 인한 중단은 피할 수 있지만, 서버가 탈취됐을 때의 위험이 커지므로 신뢰할 수 있는 VM에만 적용하고 정기적으로 Machines 목록을 점검합니다.
+
+Funnel은 n8n 로그인 화면까지 공개 인터넷에 노출합니다. n8n 소유자 계정에 강한 비밀번호와 2단계 인증을 설정해야 합니다.
+
+### 6.4 프로젝트 파일 전송
+
+Mac에 Google Cloud CLI가 없다면 설치하고 로그인합니다.
+
+```bash
+brew update
+brew install --cask gcloud-cli
+gcloud init
+```
+
+로컬 프로젝트 루트에서 `VM_NAME`과 `ZONE`을 실제 값으로 바꿔 실행합니다. `gcloud init`에서 다른 프로젝트를 선택했다면 먼저 `gcloud config set project <PROJECT_ID>`로 배포 대상 프로젝트를 지정합니다.
+
+```bash
+VM_NAME=semifeed
+ZONE=asia-northeast3-a
+
+gcloud compute ssh "$VM_NAME" --zone "$ZONE" \
+  --command='mkdir -p ~/semifeed'
+gcloud compute scp --recurse \
+  docker-compose.yml .env.example .gitignore README.md config docs n8n \
+  "$VM_NAME":~/semifeed --zone "$ZONE"
+```
+
+Git 원격 저장소를 연결한 뒤라면 위 SCP 대신 VM에서 저장소를 clone해도 됩니다. `.env`는 Git으로 전송하지 않습니다.
+
+### 6.5 기존 n8n 데이터와 Credentials 이전
+
+SQLite가 기록 중인 상태로 복사되지 않도록 로컬 n8n을 먼저 중지합니다.
+
+```bash
+docker compose stop n8n
+tar -C "$HOME" -czf /tmp/n8n-backup.tgz .n8n
+gcloud compute scp /tmp/n8n-backup.tgz \
+  "$VM_NAME":~/n8n-backup.tgz --zone "$ZONE"
+```
+
+서버 VM에서 복원합니다. 이 폴더에는 로그인 계정, SQLite DB, 워크플로우, Credentials와 encryption key가 포함됩니다.
+
+```bash
+tar -xzf ~/n8n-backup.tgz -C "$HOME"
+sudo chown -R 1000:1000 ~/.n8n
+cd ~/semifeed
+mkdir -p data/instagram
+sudo chown -R 1000:1000 data/instagram
+
+jq -r '"N8N_ENCRYPTION_KEY=" + .encryptionKey' ~/.n8n/config > .env
+chmod 600 .env
+```
+
+`.env`의 키와 `~/.n8n/config`의 키가 다르면 기존 Credentials를 복호화할 수 없습니다. encryption key와 `.n8n` 백업을 별도 안전한 장소에도 보관합니다.
+
+### 6.6 서버 공개 URL 적용
+
+서버에서 `config/n8n.env`의 다음 두 값을 Funnel URL로 변경합니다. 두 값에는 마지막 `/`를 붙입니다.
+
+```dotenv
+N8N_WEBHOOK_URL=https://semifeed-server.<tailnet>.ts.net/
+N8N_EDITOR_BASE_URL=https://semifeed-server.<tailnet>.ts.net/
+```
+
+`config/semifeed.json`도 같은 origin으로 변경하되 마지막 `/`는 제외합니다.
+
+```json
+"n8n_public_base_url": "https://semifeed-server.<tailnet>.ts.net"
+```
+
+이 주소는 Slack 승인 버튼의 콜백과 Instagram 이미지 다운로드에 모두 사용됩니다. Mac의 기존 `plutos-macbook-air...` 주소가 남아 있으면 서버 실행 중에도 요청이 Mac으로 돌아갑니다.
+
+### 6.7 서버 시작과 워크플로우 반영
+
+```bash
+cd ~/semifeed
+docker compose config --quiet
+docker compose pull
+docker compose up -d
+docker compose ps
+
+docker compose exec -u node n8n \
+  n8n import:workflow --separate --input=/data/workflows
+docker compose restart n8n
+```
+
+Funnel URL에 접속하면 기존 n8n 사용자로 로그인할 수 있습니다. 다음 순서로 마무리합니다.
+
+1. `semifeed - news pipeline`의 OpenRouter·Slack·Instagram Credentials 연결 확인
+2. 공용 파이프라인 Publish
+3. `semifeed - manual run`으로 전체 과정 시험
+4. `semifeed - daily schedule` Publish
+5. Slack 승인 후 Instagram 게시와 이미지 Webhook 실행 확인
+
+### 6.8 최종 전환
+
+서버 테스트가 끝나면 로컬 Mac의 `semifeed - daily schedule`을 Unpublish하거나 로컬 Compose를 중지합니다. 로컬과 서버의 스케줄러를 동시에 Publish하면 같은 기사가 중복 처리될 수 있습니다.
+
+```bash
+docker compose down
+```
+
+`down -v`는 n8n 데이터 볼륨을 삭제할 수 있으므로 사용하지 않습니다.
+
+## 7. 정상 동작 확인
+
+서버에서:
+
+```bash
+docker compose ps
+docker compose logs --tail=100 n8n
+curl -fsS http://localhost:5678/healthz
+curl -fsS http://localhost:3000/pressure
+sudo tailscale funnel status
+curl -fsS https://semifeed-server.<tailnet>.ts.net/healthz
+```
+
+기능 확인 순서:
+
+1. 수동 실행기 실행
+2. Slack에 부모 메시지, JPEG, 승인/반려 버튼 표시
+3. 승인 버튼 클릭
+4. `Instagram 이미지 공개 Webhook`이 별도 실행으로 호출됨
+5. Instagram 게시 완료
+6. 스케줄러의 다음 실행 시각이 오전 9시 KST로 표시됨
+
+## 8. 재부팅·업데이트·백업
+
+Docker와 Tailscale은 systemd로 시작되고 Compose 서비스에는 `restart: unless-stopped`가 설정되어 있습니다. 재부팅 후 다음 항목만 확인합니다.
+
+```bash
+sudo systemctl status docker tailscaled
+docker compose ps
+sudo tailscale funnel status
+```
+
+n8n 업데이트 전에는 반드시 백업합니다. SQLite 일관성을 위해 n8n을 중지한 상태로 `~/.n8n`을 복사합니다.
+
+```bash
+mkdir -p ~/backups
+docker compose stop n8n
+tar -C "$HOME" -czf "$HOME/backups/n8n-$(date +%F).tgz" .n8n
+docker compose start n8n
+```
+
+현재 고정 버전을 변경할 때는 `docker-compose.yml`의 `n8nio/n8n:2.39.7`을 수정한 뒤 실행합니다.
+
+```bash
+docker compose pull
+docker compose up -d
+docker compose logs --tail=100 n8n
+```
+
+## 9. 현재 운영상 제한
+
+- 중복 링크는 공용 워크플로우 static data에 저장됩니다. 같은 n8n DB를 유지하면 재시작 후에도 보존되지만, 워크플로우를 새 ID로 다시 만들면 별도 상태가 됩니다.
+- `data/instagram/`의 JPEG는 자동 삭제되지 않습니다. 디스크 사용량을 확인하고 오래된 파일 정리 작업을 추가해야 합니다.
+- Tailscale Funnel은 공개 URL이므로 URL을 아는 누구나 n8n 로그인 화면과 공개 미디어 Webhook에 접근할 수 있습니다.
+- 서버의 `.env`, `~/.n8n`, `data/instagram/`은 Git에 커밋하지 않습니다.
+
+## 공식 참고 문서
+
+- [Google Compute Engine Linux VM 생성](https://docs.cloud.google.com/compute/docs/create-linux-vm-instance)
+- [Google Cloud CLI 설치 및 초기화](https://docs.cloud.google.com/sdk/docs/install-sdk)
+- [Google Compute Engine 파일 전송](https://docs.cloud.google.com/compute/docs/instances/transfer-files)
+- [Docker Engine Ubuntu 설치](https://docs.docker.com/engine/install/ubuntu/)
+- [Tailscale Linux 설치](https://tailscale.com/docs/install/linux)
+- [Tailscale Funnel](https://tailscale.com/docs/reference/tailscale-cli/funnel)
+- [n8n reverse proxy Webhook URL 설정](https://docs.n8n.io/deploy/host-n8n/configure-n8n/basic-configuration/configuration-examples/configure-webhook-urls-with-reverse-proxy)
+- [n8n encryption key 설정](https://docs.n8n.io/deploy/host-n8n/configure-n8n/basic-configuration/configuration-examples/set-a-custom-encryption-key)
+- [n8n 백업과 복구](https://docs.n8n.io/deploy/host-n8n/keep-n8n-running/backup-and-restore)
