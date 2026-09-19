@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-09-19
+- `gcloud compute scp` 전송 시 VM SSH 사용자명을 명시해 다른 사용자 홈으로 백업이 들어가는 문제 방지
 - 서버의 프로젝트 배포는 Git clone/pull로, 비공개 n8n 데이터 이전은 `gcloud compute scp`로 역할 분리
 - 운영 공개 URL을 Google Cloud VM의 Tailscale Funnel 주소 `semifeed-server.tail8016b0.ts.net`으로 전환
 - Google Cloud Debian VM에 Ubuntu Docker 저장소가 등록되지 않도록 배포판 자동 감지 및 복구 절차 보강

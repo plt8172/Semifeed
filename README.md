@@ -232,9 +232,10 @@ brew install --cask gcloud-cli
 gcloud init
 ```
 
-`gcloud init`에서 다른 프로젝트를 선택했다면 `gcloud config set project <PROJECT_ID>`로 배포 대상 프로젝트를 지정합니다. 이어서 로컬 프로젝트 루트에서 `VM_NAME`과 `ZONE`을 실제 값으로 설정합니다.
+`gcloud init`에서 다른 프로젝트를 선택했다면 `gcloud config set project <PROJECT_ID>`로 배포 대상 프로젝트를 지정합니다. 이어서 로컬 프로젝트 루트에서 VM의 SSH 사용자명, 인스턴스 이름과 Zone을 실제 값으로 설정합니다. 원격 사용자명을 생략하면 Mac 사용자명과 같은 별도 VM 계정의 홈으로 전송될 수 있습니다.
 
 ```bash
+VM_USER=YOUR_VM_SSH_USER
 VM_NAME=YOUR_VM_NAME
 ZONE=YOUR_VM_ZONE
 ```
@@ -245,7 +246,13 @@ SQLite가 기록 중인 상태로 복사되지 않도록 로컬 n8n을 먼저 �
 docker compose stop n8n
 tar -C "$HOME" -czf /tmp/n8n-backup.tgz .n8n
 gcloud compute scp /tmp/n8n-backup.tgz \
-  "$VM_NAME":~/n8n-backup.tgz --zone "$ZONE"
+  "${VM_USER}@${VM_NAME}":~/n8n-backup.tgz --zone "$ZONE"
+```
+
+전송 후 VM에서 파일이 보이지 않으면 다른 사용자 홈에 들어갔는지 확인합니다.
+
+```bash
+sudo find /home /tmp -maxdepth 3 -type f -name n8n-backup.tgz -ls
 ```
 
 서버 VM에서 복원합니다. 이 폴더에는 로그인 계정, SQLite DB, 워크플로우, Credentials와 encryption key가 포함됩니다.
