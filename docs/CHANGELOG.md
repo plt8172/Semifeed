@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-09-19
+- 공용 뉴스 파이프라인과 수동 실행기·일일 스케줄러를 분리해 처리 로직 중복 없이 수동/자동 실행 경로 구성
+- 매일 오전 9시(Asia/Seoul)에 공용 파이프라인을 호출하는 Schedule Trigger 워크플로우 추가
 - n8n 외부 기본 URL을 Tailscale Funnel 주소로 고정해 다른 기기의 Slack에서도 승인/반려 가능하도록 설정
 - n8n 환경 변수 `WEBHOOK_URL`을 `N8N_WEBHOOK_URL`로 갱신하고 외부 편집기 URL·서울 시간대·컨테이너 자동 재시작 설정 추가
 - RSS·처리 개수·채널/Instagram 식별자·공개 URL을 `config/semifeed.json`으로 분리

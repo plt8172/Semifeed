@@ -1,13 +1,15 @@
 {
   "id": "VSKWfxxMWiBocpaQ",
-  "name": "semiwire - fetch to slack review",
+  "name": "semifeed - news pipeline",
   "nodes": [
     {
-      "parameters": {},
-      "id": "manual_trigger",
-      "name": "수동 실행",
-      "type": "n8n-nodes-base.manualTrigger",
-      "typeVersion": 1,
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "id": "pipeline_trigger",
+      "name": "실행 요청 받기",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.2,
       "position": [0, 300]
     },
     {
@@ -425,7 +427,7 @@
     }
   ],
   "connections": {
-    "수동 실행": { "main": [[{ "node": "설정 파일 읽기", "type": "main", "index": 0 }]] },
+    "실행 요청 받기": { "main": [[{ "node": "설정 파일 읽기", "type": "main", "index": 0 }]] },
     "설정 파일 읽기": { "main": [[{ "node": "설정 (RSS 목록)", "type": "main", "index": 0 }]] },
     "설정 (RSS 목록)": { "main": [[{ "node": "피드별로 분리", "type": "main", "index": 0 }]] },
     "피드별로 분리": { "main": [[{ "node": "RSS 읽기", "type": "main", "index": 0 }]] },

@@ -1,0 +1,41 @@
+{
+  "id": "m1K7pQ2xR9vT4nW8",
+  "name": "semifeed - manual run",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual_trigger",
+      "name": "수동 실행",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {
+        "source": "database",
+        "workflowId": {
+          "__rl": true,
+          "value": "VSKWfxxMWiBocpaQ",
+          "mode": "id"
+        },
+        "mode": "once",
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      },
+      "id": "run_pipeline",
+      "name": "뉴스 파이프라인 실행",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "position": [240, 300]
+    }
+  ],
+  "connections": {
+    "수동 실행": {
+      "main": [[{ "node": "뉴스 파이프라인 실행", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

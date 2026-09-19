@@ -18,8 +18,13 @@ curl -X POST http://localhost:3000/screenshot \
 ```
 
 ## 1. 워크플로우 임포트
-n8n 화면 우측 상단 `...` → `Import from File` → `n8n/semifeed_workflow.json` 선택.
-노드가 좌→우로 쭉 나열된 게 보이면 정상.
+n8n 화면 우측 상단 `...` → `Import from File`에서 아래 파일을 순서대로 임포트합니다.
+
+1. `n8n/semifeed_workflow.json` — RSS 수집부터 Slack 승인·Instagram 발행까지 담당하는 공용 파이프라인
+2. `n8n/semifeed_manual_workflow.json` — 공용 파이프라인을 수동으로 호출하는 테스트용 실행기
+3. `n8n/semifeed_schedule_workflow.json` — 공용 파이프라인을 매일 오전 9시(Asia/Seoul)에 호출하는 자동 실행기
+
+실제 처리 로직과 Credentials는 공용 파이프라인에만 있으므로, 수동·자동 실행 방식이 나뉘어도 로직을 중복 관리하지 않습니다.
 
 ## 2. 필요한 계정/키 준비
 | 무엇 | 어디서 | 용도 |
@@ -59,9 +64,15 @@ n8n 화면 우측 상단 `...` → `Import from File` → `n8n/semifeed_workflow
 보통 `사이트주소/feed` 또는 `사이트주소/rss.xml` 형태입니다. 사이트에 RSS 아이콘이 없으면 위 두 경로를 직접 브라우저에 쳐서 XML이 뜨는지 확인하면 됩니다.
 
 ## 6. 테스트 실행
-1. 워크플로우 상단 `Execute Workflow` (수동 실행) 클릭
+1. `semifeed - manual run` 워크플로우를 열고 상단 `Execute Workflow` 클릭
 2. Slack 채널에 캡션이 부모 메시지로 게시되고, 같은 스레드에 JPEG 카드와 승인/반려 버튼이 뜨는지 확인
-3. 버튼을 누르면 브라우저에서 승인 결과가 기록되고 `Slack 승인 버튼 메시지` 노드가 재개됨 — n8n Executions 탭에서 로그 확인
+3. 버튼을 누르면 브라우저에서 승인 결과가 기록되고 공용 파이프라인의 `Slack 승인 버튼 메시지` 노드가 재개됨 — n8n Executions 탭에서 하위 실행 로그 확인
+
+## 6-1. 정기 실행
+
+`semifeed - daily schedule` 워크플로우만 저장 후 **Publish**하면 매일 오전 9시(Asia/Seoul)에 공용 파이프라인을 한 번 호출합니다. Schedule Trigger는 워크플로우가 Publish 상태일 때만 동작합니다.
+
+실행 시각을 바꾸려면 이 워크플로우의 `매일 오전 9시` 노드에서 Cron 식 `0 9 * * *`을 수정한 뒤 다시 Publish합니다. 자동 실행기는 공용 파이프라인 완료를 기다리지 않고 종료되며, Slack 승인 대기는 별도의 공용 파이프라인 실행에서 계속됩니다.
 
 ## 7. Instagram 게시 설정
 1. Meta 앱의 Instagram API setup에서 `instagram_business_basic`, `instagram_business_content_publish` 권한으로 `semifeed` 계정 Access Token을 발급합니다.
