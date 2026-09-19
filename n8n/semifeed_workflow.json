@@ -32,7 +32,10 @@
             },
             { "id": "hours", "name": "hours_window", "type": "number", "value": 24 },
             { "id": "slack_channel", "name": "slack_channel_id", "type": "string", "value": "C0C209QAURH" },
-            { "id": "max_items", "name": "max_items", "type": "number", "value": 1 }
+            { "id": "max_items", "name": "max_items", "type": "number", "value": 1 },
+            { "id": "instagram_user_id", "name": "instagram_user_id", "type": "string", "value": "17841433117660601" },
+            { "id": "instagram_api_version", "name": "instagram_api_version", "type": "string", "value": "v25.0" },
+            { "id": "instagram_media_base_url", "name": "instagram_media_base_url", "type": "string", "value": "https://plutos-macbook-air.tail8016b0.ts.net/webhook/semifeed-media" }
           ]
         }
       },
@@ -154,7 +157,7 @@
         "url": "http://browserless:3000/screenshot",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({ html: $('HTML 카드 조립').item.json.html, options: { type: 'png', fullPage: false, clip: { x: 0, y: 0, width: 1080, height: 1080 } } }) }}",
+        "jsonBody": "={{ JSON.stringify({ html: $('HTML 카드 조립').item.json.html, options: { type: 'jpeg', quality: 90, fullPage: false, clip: { x: 0, y: 0, width: 1080, height: 1080 } } }) }}",
         "options": {
           "response": {
             "response": {
@@ -172,12 +175,34 @@
     },
     {
       "parameters": {
+        "jsCode": "const config = $('설정 (RSS 목록)').first().json;\nconst baseUrl = String(config.instagram_media_base_url || '').replace(/\\/+$/, '');\nif (!baseUrl.startsWith('https://') || baseUrl.includes('YOUR_PUBLIC_N8N_HOST')) {\n  throw new Error('설정 (RSS 목록)의 instagram_media_base_url을 외부에서 접근 가능한 HTTPS n8n Webhook URL로 설정하세요.');\n}\n\nreturn $input.all().map((item, index) => {\n  const randomPart = Math.random().toString(36).slice(2, 12);\n  const mediaFileName = `semifeed-${$execution.id}-${Date.now()}-${index}-${randomPart}.jpg`;\n  return {\n    json: {\n      ...item.json,\n      media_file_name: mediaFileName,\n      public_image_url: `${baseUrl}?file=${encodeURIComponent(mediaFileName)}`,\n    },\n    binary: item.binary,\n    pairedItem: item.pairedItem,\n  };\n});"
+      },
+      "id": "prepare_instagram_media",
+      "name": "Instagram 미디어 준비",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2090, 300]
+    },
+    {
+      "parameters": {
+        "fileName": "={{ '/data/instagram/' + $json.media_file_name }}",
+        "dataPropertyName": "data",
+        "options": {}
+      },
+      "id": "save_instagram_media",
+      "name": "Instagram 임시 이미지 저장",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [2200, 300]
+    },
+    {
+      "parameters": {
         "resource": "file",
         "operation": "upload",
         "binaryPropertyName": "data",
         "options": {
           "channelId": "={{ $('설정 (RSS 목록)').first().json.slack_channel_id }}",
-          "fileName": "semifeed-card.png",
+          "fileName": "semifeed-card.jpg",
           "threadTs": "={{ $('Slack 승인 요청 시작').item.json.ts }}",
           "title": "semifeed news card"
         }
@@ -186,7 +211,7 @@
       "name": "Slack에 카드 파일 업로드",
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.2,
-      "position": [2200, 300]
+      "position": [2420, 300]
     },
     {
       "parameters": {
@@ -223,7 +248,7 @@
       "name": "Slack 승인 버튼 메시지",
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.2,
-      "position": [2420, 300]
+      "position": [2640, 300]
     },
     {
       "parameters": {
@@ -244,17 +269,61 @@
       "name": "승인됨?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
-      "position": [2640, 300]
+      "position": [2860, 300]
     },
     {
       "parameters": {
-        "jsCode": "// TODO: Instagram Graph API 연동 자리\n// 1) POST /{ig-user-id}/media  (image_url, caption)\n// 2) POST /{ig-user-id}/media_publish (creation_id)\n// API 승인 전까지는 여기서 파일을 '발행 대기' 폴더에 저장해두고 수동 업로드\nconst link = $('HTML 카드 조립').first().json.link;\nconst staticData = $getWorkflowStaticData('global');\nif (!Array.isArray(staticData.postedLinks)) staticData.postedLinks = [];\nif (!staticData.postedLinks.includes(link)) staticData.postedLinks.push(link);\nreturn [{ json: { status: 'approved - ready to publish', link } }];"
+        "method": "POST",
+        "url": "={{ 'https://graph.instagram.com/' + $('설정 (RSS 목록)').first().json.instagram_api_version + '/' + $('설정 (RSS 목록)').first().json.instagram_user_id + '/media' }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "image_url", "value": "={{ $('Instagram 미디어 준비').item.json.public_image_url }}" },
+            { "name": "caption", "value": "={{ $('HTML 카드 조립').item.json.caption }}" }
+          ]
+        },
+        "options": {}
       },
-      "id": "publish_stub",
-      "name": "발행 (TODO: Instagram API)",
+      "id": "instagram_create_container",
+      "name": "Instagram 게시 컨테이너 생성",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [3080, 180]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ 'https://graph.instagram.com/' + $('설정 (RSS 목록)').first().json.instagram_api_version + '/' + $('설정 (RSS 목록)').first().json.instagram_user_id + '/media_publish' }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "creation_id", "value": "={{ $json.id }}" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "instagram_publish_container",
+      "name": "Instagram 게시 발행",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [3300, 180],
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "jsCode": "const link = $('HTML 카드 조립').item.json.link;\nconst staticData = $getWorkflowStaticData('global');\nif (!Array.isArray(staticData.postedLinks)) staticData.postedLinks = [];\nif (!staticData.postedLinks.includes(link)) staticData.postedLinks.push(link);\nreturn [{ json: { status: 'published', instagram_media_id: $json.id, link } }];"
+      },
+      "id": "record_instagram_publish",
+      "name": "Instagram 발행 완료 기록",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [2860, 220]
+      "position": [3520, 180]
     },
     {
       "parameters": {
@@ -264,7 +333,63 @@
       "name": "반려 처리",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [2860, 380]
+      "position": [3080, 420]
+    },
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "semifeed-media",
+        "authentication": "none",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "instagram_media_webhook",
+      "name": "Instagram 이미지 공개 Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [0, 680],
+      "webhookId": "2ce43a2e-b526-4fb4-a45e-7d5f55d8af62"
+    },
+    {
+      "parameters": {
+        "jsCode": "const fileName = String($json.query?.file || '');\nif (!/^semifeed-[A-Za-z0-9-]+\\.jpg$/.test(fileName)) {\n  throw new Error('유효하지 않은 Instagram 미디어 파일명입니다.');\n}\nreturn [{ json: { file_path: `/data/instagram/${fileName}` } }];"
+      },
+      "id": "validate_instagram_media_request",
+      "name": "Instagram 이미지 요청 검증",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 680]
+    },
+    {
+      "parameters": {
+        "filePath": "={{ $json.file_path }}",
+        "dataPropertyName": "data"
+      },
+      "id": "read_instagram_media",
+      "name": "Instagram 임시 이미지 읽기",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "typeVersion": 1,
+      "position": [440, 680]
+    },
+    {
+      "parameters": {
+        "respondWith": "binary",
+        "responseDataSource": "set",
+        "inputFieldName": "data",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              { "name": "Content-Type", "value": "image/jpeg" },
+              { "name": "Cache-Control", "value": "private, max-age=300" }
+            ]
+          }
+        }
+      },
+      "id": "respond_instagram_media",
+      "name": "Instagram 이미지 응답",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [660, 680]
     }
   ],
   "connections": {
@@ -277,14 +402,21 @@
     "OpenRouter로 카드 문구 생성": { "main": [[{ "node": "HTML 카드 조립", "type": "main", "index": 0 }]] },
     "HTML 카드 조립": { "main": [[{ "node": "Slack 승인 요청 시작", "type": "main", "index": 0 }]] },
     "Slack 승인 요청 시작": { "main": [[{ "node": "카드 이미지 렌더링 (browserless)", "type": "main", "index": 0 }]] },
-    "카드 이미지 렌더링 (browserless)": { "main": [[{ "node": "Slack에 카드 파일 업로드", "type": "main", "index": 0 }]] },
+    "카드 이미지 렌더링 (browserless)": { "main": [[{ "node": "Instagram 미디어 준비", "type": "main", "index": 0 }]] },
+    "Instagram 미디어 준비": { "main": [[{ "node": "Instagram 임시 이미지 저장", "type": "main", "index": 0 }]] },
+    "Instagram 임시 이미지 저장": { "main": [[{ "node": "Slack에 카드 파일 업로드", "type": "main", "index": 0 }]] },
     "Slack에 카드 파일 업로드": { "main": [[{ "node": "Slack 승인 버튼 메시지", "type": "main", "index": 0 }]] },
     "Slack 승인 버튼 메시지": { "main": [[{ "node": "승인됨?", "type": "main", "index": 0 }]] },
     "승인됨?": {
       "main": [
-        [{ "node": "발행 (TODO: Instagram API)", "type": "main", "index": 0 }],
+        [{ "node": "Instagram 게시 컨테이너 생성", "type": "main", "index": 0 }],
         [{ "node": "반려 처리", "type": "main", "index": 0 }]
       ]
-    }
+    },
+    "Instagram 게시 컨테이너 생성": { "main": [[{ "node": "Instagram 게시 발행", "type": "main", "index": 0 }]] },
+    "Instagram 게시 발행": { "main": [[{ "node": "Instagram 발행 완료 기록", "type": "main", "index": 0 }]] },
+    "Instagram 이미지 공개 Webhook": { "main": [[{ "node": "Instagram 이미지 요청 검증", "type": "main", "index": 0 }]] },
+    "Instagram 이미지 요청 검증": { "main": [[{ "node": "Instagram 임시 이미지 읽기", "type": "main", "index": 0 }]] },
+    "Instagram 임시 이미지 읽기": { "main": [[{ "node": "Instagram 이미지 응답", "type": "main", "index": 0 }]] }
   }
 }

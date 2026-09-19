@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-19
+- n8n 외부 기본 URL을 Tailscale Funnel 주소로 고정해 다른 기기의 Slack에서도 승인/반려 가능하도록 설정
+- n8n 환경 변수 `WEBHOOK_URL`을 `N8N_WEBHOOK_URL`로 갱신하고 외부 편집기 URL·서울 시간대·컨테이너 자동 재시작 설정 추가
+
 ## 2026-09-17
 - 초기 프로젝트 구조 생성 (n8n 워크플로우, README, 예시 카드 템플릿 이관)
 - 반도체·회로·산업·기업·테크 분야의 신뢰할 수 있는 RSS 피드 10개로 소스 구성 확장
@@ -13,3 +17,9 @@
 - Slack 파일 공유 정보 조회를 제거하고 승인 요청 부모 메시지의 `ts`를 이미지와 버튼 스레드에 직접 사용하도록 변경
 - Slack 승인 처리를 별도 Wait 웹훅에서 내장 Send and Wait 방식으로 전환해 실행별 서명 URL로 콜백 연결
 - 승인 후 발행 대기 처리에서 중복 기록 배열이 없는 경우 초기화하도록 보강
+
+## 2026-09-18
+- Slack 승인 후 Instagram API with Instagram Login의 `/media`, `/media_publish` 호출로 실제 게시하도록 구현
+- Instagram이 가져갈 JPEG를 로컬에 임시 저장하고 외부 HTTPS n8n Webhook으로 제공하는 미디어 전달 경로 추가
+- Instagram Access Token은 n8n Header Auth Credential에, 계정 ID·API 버전·미디어 URL은 중앙 설정 노드에 분리
+- Tailscale Funnel 고정 HTTPS 주소를 n8n Webhook 및 Instagram 미디어 공개 URL로 연결

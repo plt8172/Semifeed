@@ -1,15 +1,25 @@
 services:
   n8n:
-    image: n8nio/n8n
+    image: n8nio/n8n:2.39.7
+    restart: unless-stopped
     ports:
       - "5678:5678"
+    environment:
+      - N8N_RESTRICT_FILE_ACCESS_TO=/data/instagram
+      - N8N_WEBHOOK_URL=https://plutos-macbook-air.tail8016b0.ts.net/
+      - N8N_EDITOR_BASE_URL=https://plutos-macbook-air.tail8016b0.ts.net/
+      - N8N_PROXY_HOPS=1
+      - GENERIC_TIMEZONE=Asia/Seoul
+      - TZ=Asia/Seoul
     volumes:
       - ~/.n8n:/home/node/.n8n
+      - ./data/instagram:/data/instagram
     depends_on:
       - browserless
 
   browserless:
     image: browserless/chrome
+    restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
