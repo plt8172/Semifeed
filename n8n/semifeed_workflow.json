@@ -1,4 +1,5 @@
 {
+  "id": "VSKWfxxMWiBocpaQ",
   "name": "semiwire - fetch to slack review",
   "nodes": [
     {
@@ -11,44 +12,39 @@
     },
     {
       "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "feeds",
-              "name": "feeds",
-              "type": "array",
-              "value": [
-                "https://www.eetimes.com/feed/",
-                "https://semiengineering.com/feed/",
-                "https://www.trendforce.com/feed/Semiconductors.html",
-                "https://spectrum.ieee.org/feeds/feed.rss",
-                "https://www.tomshardware.com/feeds/all",
-                "https://www.theregister.com/?lab_viewport=rss",
-                "https://blogs.nvidia.com/feed/",
-                "https://news.samsung.com/global/feed/rss",
-                "https://www.thelec.kr/rss/allArticle.xml",
-                "https://rss.etnews.com/Section901.xml"
-              ]
-            },
-            { "id": "hours", "name": "hours_window", "type": "number", "value": 24 },
-            { "id": "slack_channel", "name": "slack_channel_id", "type": "string", "value": "C0C209QAURH" },
-            { "id": "max_items", "name": "max_items", "type": "number", "value": 1 },
-            { "id": "instagram_user_id", "name": "instagram_user_id", "type": "string", "value": "17841433117660601" },
-            { "id": "instagram_api_version", "name": "instagram_api_version", "type": "string", "value": "v25.0" },
-            { "id": "instagram_media_base_url", "name": "instagram_media_base_url", "type": "string", "value": "https://plutos-macbook-air.tail8016b0.ts.net/webhook/semifeed-media" }
-          ]
+        "operation": "read",
+        "fileSelector": "/data/config/semifeed.json",
+        "options": {
+          "dataPropertyName": "data"
+        }
+      },
+      "id": "config_file_read",
+      "name": "설정 파일 읽기",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1.1,
+      "position": [110, 180]
+    },
+    {
+      "parameters": {
+        "operation": "fromJson",
+        "binaryPropertyName": "data",
+        "destinationKey": "config",
+        "options": {
+          "keepSource": "json"
         }
       },
       "id": "config",
       "name": "설정 (RSS 목록)",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
       "position": [220, 300]
     },
     {
       "parameters": {
-        "fieldToSplitOut": "feeds",
-        "options": {}
+        "fieldToSplitOut": "config.feeds",
+        "options": {
+          "destinationFieldName": "feeds"
+        }
       },
       "id": "split_feeds",
       "name": "피드별로 분리",
@@ -74,7 +70,7 @@
             {
               "id": "recent",
               "leftValue": "={{ (Date.now() - new Date($json.isoDate).getTime()) / 3600000 }}",
-              "rightValue": "={{ $('설정 (RSS 목록)').first().json.hours_window }}",
+              "rightValue": "={{ $('설정 (RSS 목록)').first().json.config.hours_window }}",
               "operator": { "type": "number", "operation": "lt" }
             }
           ],
@@ -89,7 +85,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// 이미 처리한 링크는 워크플로우 static data에 저장해서 중복 방지\nconst staticData = $getWorkflowStaticData('global');\nif (!staticData.postedLinks) staticData.postedLinks = [];\n\nconst out = [];\nfor (const item of $input.all()) {\n  const link = item.json.link;\n  if (!staticData.postedLinks.includes(link)) {\n    out.push(item);\n  }\n}\n\n// 테스트/운영 시 처리 기사 수를 중앙 설정에서 제한\nconst maxItems = Math.max(1, Number($('설정 (RSS 목록)').first().json.max_items || 3));\nreturn out.slice(0, maxItems);"
+        "jsCode": "// 이미 처리한 링크는 워크플로우 static data에 저장해서 중복 방지\nconst staticData = $getWorkflowStaticData('global');\nif (!staticData.postedLinks) staticData.postedLinks = [];\n\nconst out = [];\nfor (const item of $input.all()) {\n  const link = item.json.link;\n  if (!staticData.postedLinks.includes(link)) {\n    out.push(item);\n  }\n}\n\n// 테스트/운영 시 처리 기사 수를 외부 설정 파일에서 제한\nconst maxItems = Math.max(1, Number($('설정 (RSS 목록)').first().json.config.max_items || 3));\nreturn out.slice(0, maxItems);"
       },
       "id": "dedupe",
       "name": "중복 제거",
@@ -118,6 +114,12 @@
       "name": "OpenRouter로 카드 문구 생성",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "ilgiQDECADVKCCZa",
+          "name": "Openrouter Header Auth"
+        }
+      },
       "position": [1320, 300]
     },
     {
@@ -137,7 +139,7 @@
         "select": "channel",
         "channelId": {
           "mode": "id",
-          "value": "={{ $('설정 (RSS 목록)').first().json.slack_channel_id }}"
+          "value": "={{ $('설정 (RSS 목록)').first().json.config.slack_channel_id }}"
         },
         "text": "={{ $('HTML 카드 조립').item.json.caption }}",
         "messageType": "text",
@@ -149,6 +151,12 @@
       "name": "Slack 승인 요청 시작",
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.2,
+      "credentials": {
+        "slackApi": {
+          "id": "ZWJ0WjyllE7f7lXx",
+          "name": "Slack account"
+        }
+      },
       "position": [1760, 300]
     },
     {
@@ -175,7 +183,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const config = $('설정 (RSS 목록)').first().json;\nconst baseUrl = String(config.instagram_media_base_url || '').replace(/\\/+$/, '');\nif (!baseUrl.startsWith('https://') || baseUrl.includes('YOUR_PUBLIC_N8N_HOST')) {\n  throw new Error('설정 (RSS 목록)의 instagram_media_base_url을 외부에서 접근 가능한 HTTPS n8n Webhook URL로 설정하세요.');\n}\n\nreturn $input.all().map((item, index) => {\n  const randomPart = Math.random().toString(36).slice(2, 12);\n  const mediaFileName = `semifeed-${$execution.id}-${Date.now()}-${index}-${randomPart}.jpg`;\n  return {\n    json: {\n      ...item.json,\n      media_file_name: mediaFileName,\n      public_image_url: `${baseUrl}?file=${encodeURIComponent(mediaFileName)}`,\n    },\n    binary: item.binary,\n    pairedItem: item.pairedItem,\n  };\n});"
+        "jsCode": "const config = $('설정 (RSS 목록)').first().json.config;\nconst publicBaseUrl = String(config.n8n_public_base_url || '').replace(/\\/+$/, '');\nif (!publicBaseUrl.startsWith('https://') || publicBaseUrl.includes('YOUR_PUBLIC_N8N_HOST')) {\n  throw new Error('config/semifeed.json의 n8n_public_base_url을 외부에서 접근 가능한 HTTPS n8n 기본 주소로 설정하세요.');\n}\n\nreturn $input.all().map((item, index) => {\n  const randomPart = Math.random().toString(36).slice(2, 12);\n  const mediaFileName = `semifeed-${$execution.id}-${Date.now()}-${index}-${randomPart}.jpg`;\n  return {\n    json: {\n      ...item.json,\n      media_file_name: mediaFileName,\n      public_image_url: `${publicBaseUrl}/webhook/semifeed-media?file=${encodeURIComponent(mediaFileName)}`,\n    },\n    binary: item.binary,\n    pairedItem: item.pairedItem,\n  };\n});"
       },
       "id": "prepare_instagram_media",
       "name": "Instagram 미디어 준비",
@@ -201,7 +209,7 @@
         "operation": "upload",
         "binaryPropertyName": "data",
         "options": {
-          "channelId": "={{ $('설정 (RSS 목록)').first().json.slack_channel_id }}",
+          "channelId": "={{ $('설정 (RSS 목록)').first().json.config.slack_channel_id }}",
           "fileName": "semifeed-card.jpg",
           "threadTs": "={{ $('Slack 승인 요청 시작').item.json.ts }}",
           "title": "semifeed news card"
@@ -211,6 +219,12 @@
       "name": "Slack에 카드 파일 업로드",
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.2,
+      "credentials": {
+        "slackApi": {
+          "id": "ZWJ0WjyllE7f7lXx",
+          "name": "Slack account"
+        }
+      },
       "position": [2420, 300]
     },
     {
@@ -220,7 +234,7 @@
         "select": "channel",
         "channelId": {
           "mode": "id",
-          "value": "={{ $('설정 (RSS 목록)').first().json.slack_channel_id }}"
+          "value": "={{ $('설정 (RSS 목록)').first().json.config.slack_channel_id }}"
         },
         "message": "이 카드의 발행 여부를 선택해주세요.",
         "responseType": "approval",
@@ -248,6 +262,12 @@
       "name": "Slack 승인 버튼 메시지",
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.2,
+      "credentials": {
+        "slackApi": {
+          "id": "ZWJ0WjyllE7f7lXx",
+          "name": "Slack account"
+        }
+      },
       "position": [2640, 300]
     },
     {
@@ -274,7 +294,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "={{ 'https://graph.instagram.com/' + $('설정 (RSS 목록)').first().json.instagram_api_version + '/' + $('설정 (RSS 목록)').first().json.instagram_user_id + '/media' }}",
+        "url": "={{ 'https://graph.instagram.com/' + $('설정 (RSS 목록)').first().json.config.instagram_api_version + '/' + $('설정 (RSS 목록)').first().json.config.instagram_user_id + '/media' }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendQuery": true,
@@ -290,12 +310,18 @@
       "name": "Instagram 게시 컨테이너 생성",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "iepAgJ0VqDlA4bF6",
+          "name": "Instagram Header Auth"
+        }
+      },
       "position": [3080, 180]
     },
     {
       "parameters": {
         "method": "POST",
-        "url": "={{ 'https://graph.instagram.com/' + $('설정 (RSS 목록)').first().json.instagram_api_version + '/' + $('설정 (RSS 목록)').first().json.instagram_user_id + '/media_publish' }}",
+        "url": "={{ 'https://graph.instagram.com/' + $('설정 (RSS 목록)').first().json.config.instagram_api_version + '/' + $('설정 (RSS 목록)').first().json.config.instagram_user_id + '/media_publish' }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendQuery": true,
@@ -310,6 +336,12 @@
       "name": "Instagram 게시 발행",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "iepAgJ0VqDlA4bF6",
+          "name": "Instagram Header Auth"
+        }
+      },
       "position": [3300, 180],
       "retryOnFail": true,
       "maxTries": 5,
@@ -393,7 +425,8 @@
     }
   ],
   "connections": {
-    "수동 실행": { "main": [[{ "node": "설정 (RSS 목록)", "type": "main", "index": 0 }]] },
+    "수동 실행": { "main": [[{ "node": "설정 파일 읽기", "type": "main", "index": 0 }]] },
+    "설정 파일 읽기": { "main": [[{ "node": "설정 (RSS 목록)", "type": "main", "index": 0 }]] },
     "설정 (RSS 목록)": { "main": [[{ "node": "피드별로 분리", "type": "main", "index": 0 }]] },
     "피드별로 분리": { "main": [[{ "node": "RSS 읽기", "type": "main", "index": 0 }]] },
     "RSS 읽기": { "main": [[{ "node": "최근 N시간 필터", "type": "main", "index": 0 }]] },

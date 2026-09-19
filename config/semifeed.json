@@ -11,5 +11,10 @@
     "https://www.thelec.kr/rss/allArticle.xml",
     "https://rss.etnews.com/Section901.xml"
   ],
-  "hours_window": 24
+  "hours_window": 24,
+  "max_items": 1,
+  "slack_channel_id": "C0C209QAURH",
+  "instagram_user_id": "17841433117660601",
+  "instagram_api_version": "v25.0",
+  "n8n_public_base_url": "https://plutos-macbook-air.tail8016b0.ts.net"
 }

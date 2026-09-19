@@ -3,6 +3,10 @@
 ## 2026-09-19
 - n8n 외부 기본 URL을 Tailscale Funnel 주소로 고정해 다른 기기의 Slack에서도 승인/반려 가능하도록 설정
 - n8n 환경 변수 `WEBHOOK_URL`을 `N8N_WEBHOOK_URL`로 갱신하고 외부 편집기 URL·서울 시간대·컨테이너 자동 재시작 설정 추가
+- RSS·처리 개수·채널/Instagram 식별자·공개 URL을 `config/semifeed.json`으로 분리
+- 워크플로우가 read-only 마운트된 JSON 설정 파일을 실행 시 읽도록 변경
+- 워크플로우 JSON에 OpenRouter·Slack·Instagram Credential 참조를 포함해 임포트 후 노드별 수동 재선택 제거
+- Instagram 전용으로 보이던 공개 URL 설정을 공용 `n8n_public_base_url`로 변경하고 미디어 Webhook 경로는 워크플로우에서 조립
 
 ## 2026-09-17
 - 초기 프로젝트 구조 생성 (n8n 워크플로우, README, 예시 카드 템플릿 이관)
