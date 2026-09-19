@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-09-19
+- 서버의 프로젝트 배포는 Git clone/pull로, 비공개 n8n 데이터 이전은 `gcloud compute scp`로 역할 분리
+- 운영 공개 URL을 Google Cloud VM의 Tailscale Funnel 주소 `semifeed-server.tail8016b0.ts.net`으로 전환
+- Google Cloud Debian VM에 Ubuntu Docker 저장소가 등록되지 않도록 배포판 자동 감지 및 복구 절차 보강
 - Google Compute Engine 단일 VM에 Docker Compose와 Tailscale Funnel로 배포하는 전체 절차 및 검증·백업·전환 체크리스트 문서화
 - n8n 비민감 서버 설정을 `config/n8n.env`로 분리하고 `.env`는 encryption key만 보관하도록 정리
 - n8n과 browserless 호스트 포트를 localhost에만 바인딩해 Google Cloud 외부 직접 노출 차단

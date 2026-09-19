@@ -128,30 +128,38 @@ Google Cloud Console에서 Compute Engine API를 활성화하고 VM 인스턴스
 프로젝트에 결제 계정이 연결되어 있어야 합니다. 예상치 못한 과금을 확인할 수 있도록 Google Cloud Billing에서 예산 알림도 설정합니다.
 
 - 리전/존: 서울과 가까운 `asia-northeast3` 권장
-- 운영체제: Ubuntu 24.04 LTS
+- 운영체제: Ubuntu 24.04 LTS 또는 Debian 13(Trixie)
 - 머신 유형: `e2-medium` 이상 권장(2 vCPU, 4GB RAM)
 - 부팅 디스크: Balanced persistent disk 30GB 이상
 - 방화벽: HTTP/HTTPS 허용을 선택하지 않음
 - 초기 접속용 SSH만 허용; 5678과 3000은 외부에 열지 않음
 
-브라우저의 VM 목록에서 **SSH**를 눌러 접속할 수 있습니다. 프로젝트 전송에는 로컬에 Google Cloud CLI가 필요합니다.
+브라우저의 VM 목록에서 **SSH**를 눌러 접속할 수 있습니다. Git에 넣지 않는 n8n 데이터 백업을 전송할 때는 로컬에 Google Cloud CLI가 필요합니다.
 
 ### 6.2 Docker 설치
 
-VM에서 실행합니다.
+VM에서 실행합니다. 아래 명령은 `/etc/os-release`를 읽어 Ubuntu와 Debian용 Docker 저장소를 자동 선택합니다.
 
 ```bash
+DOCKER_DISTRO="$(. /etc/os-release && printf '%s' "$ID")"
+DOCKER_CODENAME="$(. /etc/os-release && printf '%s' "$VERSION_CODENAME")"
+
+case "$DOCKER_DISTRO" in
+  ubuntu|debian) ;;
+  *) echo "지원하지 않는 배포판: $DOCKER_DISTRO" >&2; exit 1 ;;
+esac
+
 sudo apt-get update
-sudo apt-get install -y ca-certificates curl jq
+sudo apt-get install -y ca-certificates curl git jq
 sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
+sudo curl -fsSL "https://download.docker.com/linux/${DOCKER_DISTRO}/gpg" \
   -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 sudo tee /etc/apt/sources.list.d/docker.sources >/dev/null <<EOF
 Types: deb
-URIs: https://download.docker.com/linux/ubuntu
-Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+URIs: https://download.docker.com/linux/${DOCKER_DISTRO}
+Suites: ${DOCKER_CODENAME}
 Components: stable
 Architectures: $(dpkg --print-architecture)
 Signed-By: /etc/apt/keyrings/docker.asc
@@ -171,6 +179,14 @@ docker version
 docker compose version
 ```
 
+`apt update`에 `download.docker.com/linux/ubuntu trixie` 404가 나온다면 Debian VM에 Ubuntu 저장소가 잘못 등록된 상태입니다. 잘못된 파일을 비활성화하고 Debian 저장소로 위 절차를 다시 실행합니다.
+
+```bash
+sudo mv /etc/apt/sources.list.d/docker.sources \
+  /etc/apt/sources.list.d/docker.sources.disabled
+sudo apt-get update
+```
+
 ### 6.3 Tailscale과 Funnel 설정
 
 VM에서 실행한 뒤 출력되는 로그인 URL을 브라우저에서 승인합니다.
@@ -188,9 +204,27 @@ sudo tailscale funnel status
 
 Funnel은 n8n 로그인 화면까지 공개 인터넷에 노출합니다. n8n 소유자 계정에 강한 비밀번호와 2단계 인증을 설정해야 합니다.
 
-### 6.4 프로젝트 파일 전송
+### 6.4 Git 저장소 Clone
 
-Mac에 Google Cloud CLI가 없다면 설치하고 로그인합니다.
+프로젝트 코드는 파일별로 복사하지 않고 GitHub 저장소에서 받습니다. 서버 VM에서 실행합니다.
+
+```bash
+git clone https://github.com/plt8172/Semifeed.git ~/semifeed
+cd ~/semifeed
+```
+
+저장소가 private이면 HTTPS clone에 GitHub fine-grained PAT을 사용하거나 서버용 SSH deploy key를 먼저 등록합니다. `.env`와 `~/.n8n`은 Git에 포함되지 않습니다.
+
+이후 코드와 설정을 갱신할 때는 서버에서 다음 명령만 사용합니다.
+
+```bash
+cd ~/semifeed
+git pull --ff-only
+```
+
+### 6.5 기존 n8n 데이터와 Credentials 이전
+
+`~/.n8n`은 Git에 넣을 수 없으므로 Google Cloud CLI의 SCP로 한 번 전송합니다. Mac에 CLI가 없다면 설치하고 로그인합니다.
 
 ```bash
 brew update
@@ -198,22 +232,12 @@ brew install --cask gcloud-cli
 gcloud init
 ```
 
-로컬 프로젝트 루트에서 `VM_NAME`과 `ZONE`을 실제 값으로 바꿔 실행합니다. `gcloud init`에서 다른 프로젝트를 선택했다면 먼저 `gcloud config set project <PROJECT_ID>`로 배포 대상 프로젝트를 지정합니다.
+`gcloud init`에서 다른 프로젝트를 선택했다면 `gcloud config set project <PROJECT_ID>`로 배포 대상 프로젝트를 지정합니다. 이어서 로컬 프로젝트 루트에서 `VM_NAME`과 `ZONE`을 실제 값으로 설정합니다.
 
 ```bash
-VM_NAME=semifeed
-ZONE=asia-northeast3-a
-
-gcloud compute ssh "$VM_NAME" --zone "$ZONE" \
-  --command='mkdir -p ~/semifeed'
-gcloud compute scp --recurse \
-  docker-compose.yml .env.example .gitignore README.md config docs n8n \
-  "$VM_NAME":~/semifeed --zone "$ZONE"
+VM_NAME=YOUR_VM_NAME
+ZONE=YOUR_VM_ZONE
 ```
-
-Git 원격 저장소를 연결한 뒤라면 위 SCP 대신 VM에서 저장소를 clone해도 됩니다. `.env`는 Git으로 전송하지 않습니다.
-
-### 6.5 기존 n8n 데이터와 Credentials 이전
 
 SQLite가 기록 중인 상태로 복사되지 않도록 로컬 n8n을 먼저 중지합니다.
 
@@ -254,7 +278,7 @@ N8N_EDITOR_BASE_URL=https://semifeed-server.<tailnet>.ts.net/
 "n8n_public_base_url": "https://semifeed-server.<tailnet>.ts.net"
 ```
 
-이 주소는 Slack 승인 버튼의 콜백과 Instagram 이미지 다운로드에 모두 사용됩니다. Mac의 기존 `plutos-macbook-air...` 주소가 남아 있으면 서버 실행 중에도 요청이 Mac으로 돌아갑니다.
+이 주소는 Slack 승인 버튼의 콜백과 Instagram 이미지 다운로드에 모두 사용됩니다. 현재 운영 주소는 `https://semifeed-server.tail8016b0.ts.net`입니다. Mac의 기존 `plutos-macbook-air...` 주소가 남아 있으면 서버 실행 중에도 요청이 Mac으로 돌아갑니다.
 
 ### 6.7 서버 시작과 워크플로우 반영
 
@@ -332,6 +356,7 @@ docker compose start n8n
 현재 고정 버전을 변경할 때는 `docker-compose.yml`의 `n8nio/n8n:2.39.7`을 수정한 뒤 실행합니다.
 
 ```bash
+git pull --ff-only
 docker compose pull
 docker compose up -d
 docker compose logs --tail=100 n8n
@@ -350,6 +375,7 @@ docker compose logs --tail=100 n8n
 - [Google Cloud CLI 설치 및 초기화](https://docs.cloud.google.com/sdk/docs/install-sdk)
 - [Google Compute Engine 파일 전송](https://docs.cloud.google.com/compute/docs/instances/transfer-files)
 - [Docker Engine Ubuntu 설치](https://docs.docker.com/engine/install/ubuntu/)
+- [Docker Engine Debian 설치](https://docs.docker.com/engine/install/debian/)
 - [Tailscale Linux 설치](https://tailscale.com/docs/install/linux)
 - [Tailscale Funnel](https://tailscale.com/docs/reference/tailscale-cli/funnel)
 - [n8n reverse proxy Webhook URL 설정](https://docs.n8n.io/deploy/host-n8n/configure-n8n/basic-configuration/configuration-examples/configure-webhook-urls-with-reverse-proxy)
