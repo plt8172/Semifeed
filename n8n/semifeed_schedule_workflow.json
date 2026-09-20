@@ -8,13 +8,13 @@
           "interval": [
             {
               "field": "cronExpression",
-              "expression": "0 9 * * *"
+              "expression": "0 9,12,17,21 * * *"
             }
           ]
         }
       },
       "id": "daily_schedule",
-      "name": "매일 오전 9시",
+      "name": "매일 9·12·17·21시",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.4,
       "position": [0, 300]
@@ -40,7 +40,7 @@
     }
   ],
   "connections": {
-    "매일 오전 9시": {
+    "매일 9·12·17·21시": {
       "main": [[{ "node": "뉴스 파이프라인 실행", "type": "main", "index": 0 }]]
     }
   },

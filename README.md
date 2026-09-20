@@ -24,7 +24,7 @@ config/n8n.env                       n8n 서버의 비민감 실행 설정
 config/semifeed.json                 RSS·Slack 채널·Instagram 계정 등 워크플로우 설정
 n8n/semifeed_workflow.json           공용 뉴스 파이프라인
 n8n/semifeed_manual_workflow.json    수동 실행기
-n8n/semifeed_schedule_workflow.json  매일 오전 9시 자동 실행기
+n8n/semifeed_schedule_workflow.json  하루 4회 자동 실행기
 data/instagram/                      Instagram이 가져갈 임시 JPEG
 .env                                 n8n encryption key만 저장, Git 제외
 ```
@@ -99,7 +99,7 @@ docker compose restart n8n
 2. `semifeed - manual run`을 실행해 Slack 승인부터 Instagram 게시까지 시험합니다.
 3. `semifeed - daily schedule`을 Publish합니다.
 
-자동 실행기는 `Asia/Seoul` 기준 매일 오전 9시에 공용 파이프라인을 호출합니다. 시간을 변경하려면 `매일 오전 9시` 노드의 Cron 식 `0 9 * * *`을 수정하고 다시 Publish합니다. 자동 실행기는 공용 파이프라인 완료를 기다리지 않으므로 Slack 승인은 별도의 하위 실행에서 계속 대기합니다.
+자동 실행기는 `Asia/Seoul` 기준 매일 09시, 12시, 17시, 21시에 공용 파이프라인을 호출합니다. 시간을 변경하려면 `매일 9·12·17·21시` 노드의 Cron 식 `0 9,12,17,21 * * *`을 수정하고 다시 Publish합니다. 자동 실행기는 공용 파이프라인 완료를 기다리지 않으므로 Slack 승인은 별도의 하위 실행에서 계속 대기합니다.
 
 ## 5. 비민감 운영 설정
 
@@ -108,7 +108,7 @@ docker compose restart n8n
 | 키 | 의미 |
 |---|---|
 | `feeds` | 수집할 RSS URL 목록 |
-| `hours_window` | 이 시간보다 오래된 기사 제외 |
+| `hours_window` | 이 시간보다 오래된 기사 제외(기본 72시간) |
 | `max_items` | 실행 한 번에 생성할 카드 최대 개수 |
 | `slack_channel_id` | 승인 메시지를 보낼 Slack 채널 ID |
 | `instagram_user_id` | Instagram API의 `user_id` |

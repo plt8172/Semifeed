@@ -56,13 +56,24 @@
     },
     {
       "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop_feeds",
+      "name": "피드별 순차 처리",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
         "url": "={{ $json.feeds }}"
       },
       "id": "rss_read",
       "name": "RSS 읽기",
       "type": "n8n-nodes-base.rssFeedRead",
       "typeVersion": 1,
-      "position": [660, 300]
+      "position": [880, 460]
     },
     {
       "parameters": {
@@ -430,8 +441,14 @@
     "실행 요청 받기": { "main": [[{ "node": "설정 파일 읽기", "type": "main", "index": 0 }]] },
     "설정 파일 읽기": { "main": [[{ "node": "설정 (RSS 목록)", "type": "main", "index": 0 }]] },
     "설정 (RSS 목록)": { "main": [[{ "node": "피드별로 분리", "type": "main", "index": 0 }]] },
-    "피드별로 분리": { "main": [[{ "node": "RSS 읽기", "type": "main", "index": 0 }]] },
-    "RSS 읽기": { "main": [[{ "node": "최근 N시간 필터", "type": "main", "index": 0 }]] },
+    "피드별로 분리": { "main": [[{ "node": "피드별 순차 처리", "type": "main", "index": 0 }]] },
+    "피드별 순차 처리": {
+      "main": [
+        [{ "node": "최근 N시간 필터", "type": "main", "index": 0 }],
+        [{ "node": "RSS 읽기", "type": "main", "index": 0 }]
+      ]
+    },
+    "RSS 읽기": { "main": [[{ "node": "피드별 순차 처리", "type": "main", "index": 0 }]] },
     "최근 N시간 필터": { "main": [[{ "node": "중복 제거", "type": "main", "index": 0 }]] },
     "중복 제거": { "main": [[{ "node": "OpenRouter로 카드 문구 생성", "type": "main", "index": 0 }]] },
     "OpenRouter로 카드 문구 생성": { "main": [[{ "node": "HTML 카드 조립", "type": "main", "index": 0 }]] },
