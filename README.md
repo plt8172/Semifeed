@@ -92,14 +92,17 @@ curl -G "https://graph.instagram.com/<VERSION>/me" \
 ```bash
 docker compose exec -u node n8n \
   n8n import:workflow --separate --input=/data/workflows
+docker compose exec -u node n8n \
+  n8n publish:workflow --id=VSKWfxxMWiBocpaQ
+docker compose exec -u node n8n \
+  n8n publish:workflow --id=s8F3dL6qP1cZ7bN5
 docker compose restart n8n
 ```
 
 그다음 n8n UI에서:
 
-1. `semifeed - news pipeline`을 열어 Credential 연결을 확인하고 Publish합니다.
+1. `semifeed - news pipeline`을 열어 Credential 연결을 확인합니다.
 2. `semifeed - manual run`을 실행해 Slack 승인부터 Instagram 게시까지 시험합니다.
-3. `semifeed - daily schedule`을 Publish합니다.
 
 자동 실행기는 `Asia/Seoul` 기준 매일 09시, 12시, 17시, 21시에 공용 파이프라인을 호출합니다. 시간을 변경하려면 `매일 9·12·17·21시` 노드의 Cron 식 `0 9,12,17,21 * * *`을 수정하고 다시 Publish합니다. 자동 실행기는 공용 파이프라인 완료를 기다리지 않으므로 Slack 승인은 별도의 하위 실행에서 계속 대기합니다.
 
@@ -111,7 +114,7 @@ docker compose restart n8n
 |---|---|
 | `feeds` | 수집할 RSS URL 목록 |
 | `hours_window` | 이 시간보다 오래된 기사 제외(기본 72시간) |
-| `max_items` | 실행 한 번에 생성할 카드 최대 개수 |
+| `max_items` | 실행 한 번에 생성할 카드 최대 개수(기본 5개, 서로 다른 출처 우선) |
 | `slack_channel_id` | 승인 메시지를 보낼 Slack 채널 ID |
 | `instagram_user_id` | Instagram API의 `user_id` |
 | `instagram_api_version` | 사용할 Graph API 버전 |

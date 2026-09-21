@@ -98,13 +98,24 @@
     },
     {
       "parameters": {
-        "jsCode": "// 이미 처리한 링크는 워크플로우 static data에 저장해서 중복 방지\nconst staticData = $getWorkflowStaticData('global');\nif (!staticData.postedLinks) staticData.postedLinks = [];\n\nconst out = [];\nfor (const item of $input.all()) {\n  const link = item.json.link;\n  if (!staticData.postedLinks.includes(link)) {\n    out.push(item);\n  }\n}\n\n// 테스트/운영 시 처리 기사 수를 외부 설정 파일에서 제한\nconst maxItems = Math.max(1, Number($('설정 (RSS 목록)').first().json.config.max_items || 3));\nreturn out.slice(0, maxItems);"
+        "jsCode": "// 이미 게시한 링크는 제외하고, 실행 시간대별로 출처를 순환해 특정 매체 편중을 방지\nconst staticData = $getWorkflowStaticData('global');\nif (!Array.isArray(staticData.postedLinks)) staticData.postedLinks = [];\n\nconst config = $('설정 (RSS 목록)').first().json.config;\nconst maxItems = Math.max(1, Number(config.max_items || 5));\nconst bySource = new Map();\n\nfor (const item of $input.all()) {\n  const link = String(item.json.link || '');\n  if (!link || staticData.postedLinks.includes(link)) continue;\n\n  let source;\n  try {\n    source = new URL(link).hostname.toLowerCase().replace(/^www\\./, '');\n  } catch {\n    source = 'unknown';\n  }\n\n  if (!bySource.has(source)) bySource.set(source, []);\n  bySource.get(source).push(item);\n}\n\nfor (const items of bySource.values()) {\n  items.sort((a, b) => {\n    const aTime = new Date(a.json.isoDate || a.json.pubDate || 0).getTime() || 0;\n    const bTime = new Date(b.json.isoDate || b.json.pubDate || 0).getTime() || 0;\n    return bTime - aTime;\n  });\n}\n\nconst sources = [...bySource.keys()].sort();\nif (!sources.length) return [];\n\n// Asia/Seoul의 날짜와 09/12/17/21시 실행 슬롯으로 시작 출처를 결정한다.\n// 상태 저장에 의존하지 않아 이전 실행이 실패해도 다음 슬롯은 다른 출처 묶음을 선택한다.\nconst kstNow = new Date(Date.now() + 9 * 60 * 60 * 1000);\nconst hour = kstNow.getUTCHours();\nconst slot = hour >= 21 ? 3 : hour >= 17 ? 2 : hour >= 12 ? 1 : 0;\nconst dayNumber = Math.floor(Date.UTC(kstNow.getUTCFullYear(), kstNow.getUTCMonth(), kstNow.getUTCDate()) / 86400000);\nconst start = ((dayNumber * 4 + slot) * maxItems) % sources.length;\n\nconst selected = [];\nfor (let offset = 0; offset < sources.length && selected.length < maxItems; offset++) {\n  const source = sources[(start + offset) % sources.length];\n  const article = bySource.get(source)?.[0];\n  if (article) selected.push(article);\n}\n\nreturn selected;"
       },
       "id": "dedupe",
       "name": "중복 제거",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [1100, 300]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop_cards",
+      "name": "카드별 순차 렌더링",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1980, 300]
     },
     {
       "parameters": {
@@ -193,7 +204,7 @@
       "name": "카드 이미지 렌더링 (browserless)",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [1980, 300]
+      "position": [2200, 460]
     },
     {
       "parameters": {
@@ -454,8 +465,14 @@
     "중복 제거": { "main": [[{ "node": "OpenRouter로 카드 문구 생성", "type": "main", "index": 0 }]] },
     "OpenRouter로 카드 문구 생성": { "main": [[{ "node": "HTML 카드 조립", "type": "main", "index": 0 }]] },
     "HTML 카드 조립": { "main": [[{ "node": "Slack 승인 요청 시작", "type": "main", "index": 0 }]] },
-    "Slack 승인 요청 시작": { "main": [[{ "node": "카드 이미지 렌더링 (browserless)", "type": "main", "index": 0 }]] },
-    "카드 이미지 렌더링 (browserless)": { "main": [[{ "node": "Instagram 미디어 준비", "type": "main", "index": 0 }]] },
+    "Slack 승인 요청 시작": { "main": [[{ "node": "카드별 순차 렌더링", "type": "main", "index": 0 }]] },
+    "카드별 순차 렌더링": {
+      "main": [
+        [{ "node": "Instagram 미디어 준비", "type": "main", "index": 0 }],
+        [{ "node": "카드 이미지 렌더링 (browserless)", "type": "main", "index": 0 }]
+      ]
+    },
+    "카드 이미지 렌더링 (browserless)": { "main": [[{ "node": "카드별 순차 렌더링", "type": "main", "index": 0 }]] },
     "Instagram 미디어 준비": { "main": [[{ "node": "Instagram 임시 이미지 저장", "type": "main", "index": 0 }]] },
     "Instagram 임시 이미지 저장": { "main": [[{ "node": "Slack에 카드 파일 업로드", "type": "main", "index": 0 }]] },
     "Slack에 카드 파일 업로드": { "main": [[{ "node": "Slack 승인 버튼 메시지", "type": "main", "index": 0 }]] },
