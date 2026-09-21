@@ -115,7 +115,7 @@
       "name": "카드별 순차 렌더링",
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
-      "position": [1980, 300]
+      "position": [1760, 300]
     },
     {
       "parameters": {
@@ -181,7 +181,7 @@
           "name": "Slack account"
         }
       },
-      "position": [1760, 300]
+      "position": [1980, 460]
     },
     {
       "parameters": {
@@ -214,7 +214,7 @@
       "name": "Instagram 미디어 준비",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [2090, 300]
+      "position": [2420, 460]
     },
     {
       "parameters": {
@@ -226,7 +226,7 @@
       "name": "Instagram 임시 이미지 저장",
       "type": "n8n-nodes-base.writeBinaryFile",
       "typeVersion": 1,
-      "position": [2200, 300]
+      "position": [2640, 460]
     },
     {
       "parameters": {
@@ -250,7 +250,7 @@
           "name": "Slack account"
         }
       },
-      "position": [2420, 300]
+      "position": [2860, 460]
     },
     {
       "parameters": {
@@ -293,7 +293,7 @@
           "name": "Slack account"
         }
       },
-      "position": [2640, 300]
+      "position": [3080, 460]
     },
     {
       "parameters": {
@@ -314,7 +314,7 @@
       "name": "승인됨?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
-      "position": [2860, 300]
+      "position": [3300, 460]
     },
     {
       "parameters": {
@@ -341,7 +341,7 @@
           "name": "Instagram Header Auth"
         }
       },
-      "position": [3080, 180]
+      "position": [3520, 340]
     },
     {
       "parameters": {
@@ -367,7 +367,7 @@
           "name": "Instagram Header Auth"
         }
       },
-      "position": [3300, 180],
+      "position": [3740, 340],
       "retryOnFail": true,
       "maxTries": 5,
       "waitBetweenTries": 5000
@@ -380,17 +380,17 @@
       "name": "Instagram 발행 완료 기록",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [3520, 180]
+      "position": [3960, 340]
     },
     {
       "parameters": {
-        "jsCode": "const link = $('HTML 카드 조립').first().json.link;\nreturn [{ json: { status: 'rejected', link } }];"
+        "jsCode": "const link = $('HTML 카드 조립').item.json.link;\nreturn [{ json: { status: 'rejected', link } }];"
       },
       "id": "reject_stub",
       "name": "반려 처리",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [3080, 420]
+      "position": [3520, 620]
     },
     {
       "parameters": {
@@ -464,15 +464,15 @@
     "최근 N시간 필터": { "main": [[{ "node": "중복 제거", "type": "main", "index": 0 }]] },
     "중복 제거": { "main": [[{ "node": "OpenRouter로 카드 문구 생성", "type": "main", "index": 0 }]] },
     "OpenRouter로 카드 문구 생성": { "main": [[{ "node": "HTML 카드 조립", "type": "main", "index": 0 }]] },
-    "HTML 카드 조립": { "main": [[{ "node": "Slack 승인 요청 시작", "type": "main", "index": 0 }]] },
-    "Slack 승인 요청 시작": { "main": [[{ "node": "카드별 순차 렌더링", "type": "main", "index": 0 }]] },
+    "HTML 카드 조립": { "main": [[{ "node": "카드별 순차 렌더링", "type": "main", "index": 0 }]] },
+    "Slack 승인 요청 시작": { "main": [[{ "node": "카드 이미지 렌더링 (browserless)", "type": "main", "index": 0 }]] },
     "카드별 순차 렌더링": {
       "main": [
-        [{ "node": "Instagram 미디어 준비", "type": "main", "index": 0 }],
-        [{ "node": "카드 이미지 렌더링 (browserless)", "type": "main", "index": 0 }]
+        [],
+        [{ "node": "Slack 승인 요청 시작", "type": "main", "index": 0 }]
       ]
     },
-    "카드 이미지 렌더링 (browserless)": { "main": [[{ "node": "카드별 순차 렌더링", "type": "main", "index": 0 }]] },
+    "카드 이미지 렌더링 (browserless)": { "main": [[{ "node": "Instagram 미디어 준비", "type": "main", "index": 0 }]] },
     "Instagram 미디어 준비": { "main": [[{ "node": "Instagram 임시 이미지 저장", "type": "main", "index": 0 }]] },
     "Instagram 임시 이미지 저장": { "main": [[{ "node": "Slack에 카드 파일 업로드", "type": "main", "index": 0 }]] },
     "Slack에 카드 파일 업로드": { "main": [[{ "node": "Slack 승인 버튼 메시지", "type": "main", "index": 0 }]] },
@@ -485,6 +485,8 @@
     },
     "Instagram 게시 컨테이너 생성": { "main": [[{ "node": "Instagram 게시 발행", "type": "main", "index": 0 }]] },
     "Instagram 게시 발행": { "main": [[{ "node": "Instagram 발행 완료 기록", "type": "main", "index": 0 }]] },
+    "Instagram 발행 완료 기록": { "main": [[{ "node": "카드별 순차 렌더링", "type": "main", "index": 0 }]] },
+    "반려 처리": { "main": [[{ "node": "카드별 순차 렌더링", "type": "main", "index": 0 }]] },
     "Instagram 이미지 공개 Webhook": { "main": [[{ "node": "Instagram 이미지 요청 검증", "type": "main", "index": 0 }]] },
     "Instagram 이미지 요청 검증": { "main": [[{ "node": "Instagram 임시 이미지 읽기", "type": "main", "index": 0 }]] },
     "Instagram 임시 이미지 읽기": { "main": [[{ "node": "Instagram 이미지 응답", "type": "main", "index": 0 }]] }

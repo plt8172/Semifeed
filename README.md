@@ -114,7 +114,7 @@ docker compose restart n8n
 |---|---|
 | `feeds` | 수집할 RSS URL 목록 |
 | `hours_window` | 이 시간보다 오래된 기사 제외(기본 72시간) |
-| `max_items` | 실행 한 번에 생성할 카드 최대 개수(기본 5개, 서로 다른 출처 우선) |
+| `max_items` | 실행 한 번에 생성할 카드 최대 개수(기본 5개, 서로 다른 출처 우선). 카드는 한 장씩 차례로 승인·게시됩니다 |
 | `slack_channel_id` | 승인 메시지를 보낼 Slack 채널 ID |
 | `instagram_user_id` | Instagram API의 `user_id` |
 | `instagram_api_version` | 사용할 Graph API 버전 |
@@ -340,11 +340,14 @@ curl -fsS https://semifeed-server.<tailnet>.ts.net/healthz
 기능 확인 순서:
 
 1. 수동 실행기 실행
-2. Slack에 부모 메시지, JPEG, 승인/반려 버튼 표시
+2. Slack에 첫 번째 카드의 부모 메시지, JPEG, 승인/반려 버튼 표시
 3. 승인 버튼 클릭
 4. `Instagram 이미지 공개 Webhook`이 별도 실행으로 호출됨
 5. Instagram 게시 완료
-6. 스케줄러의 다음 실행 시각이 오전 9시 KST로 표시됨
+6. 다음 카드가 2번부터 다시 표시되고, `max_items`만큼 반복된 뒤 실행 종료
+7. 스케줄러의 다음 실행 시각이 오전 9시 KST로 표시됨
+
+카드 한 장의 승인·게시가 끝나야 다음 카드를 렌더링합니다. 반려해도 같은 순서로 다음 카드가 이어집니다.
 
 ## 8. 재부팅·업데이트·백업
 
