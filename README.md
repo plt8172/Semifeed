@@ -61,6 +61,8 @@ curl -fsS http://localhost:5678/healthz
 curl -fsS http://localhost:3000/pressure
 ```
 
+저사양 VM에서는 Chrome의 첫 실행에 수 분이 걸릴 수 있습니다. Compose의 browserless `CONNECTION_TIMEOUT`과 n8n 이미지 렌더링 요청 제한은 모두 10분으로 맞춰져 있으므로 한쪽만 줄이지 않습니다.
+
 ## 3. n8n Credentials
 
 기존 `~/.n8n`을 서버로 이전하면 아래 Credentials와 노드 연결도 함께 복제됩니다. 새 인스턴스에 직접 구성할 때만 다음 값을 등록합니다.

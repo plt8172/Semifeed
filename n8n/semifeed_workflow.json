@@ -180,6 +180,7 @@
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify({ html: $('HTML 카드 조립').item.json.html, options: { type: 'jpeg', quality: 90, fullPage: false, clip: { x: 0, y: 0, width: 1080, height: 1080 } } }) }}",
         "options": {
+          "timeout": 600000,
           "response": {
             "response": {
               "responseFormat": "file",
