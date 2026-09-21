@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semifeed news card</title>
+  <style>
+    :root {
+      --canvas: #071019;
+      --surface: #0d1b27;
+      --surface-soft: #122535;
+      --line: rgba(160, 211, 230, 0.18);
+      --text: #f5f8fa;
+      --muted: #9fb1bd;
+      --accent: #63e6c8;
+      --accent-deep: #13a889;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      background: #02070b;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      font-family: Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      position: relative;
+      width: 1080px;
+      height: 1080px;
+      overflow: hidden;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 92% 8%, rgba(46, 203, 174, 0.12), transparent 28%),
+        var(--canvas);
+    }
+
+    .topbar {
+      height: 112px;
+      padding: 0 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--accent);
+      border-radius: 12px;
+      color: var(--accent);
+      font-size: 19px;
+      letter-spacing: 0;
+      box-shadow: inset 0 0 24px rgba(99, 230, 200, 0.08);
+    }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    .category {
+      padding: 10px 16px;
+      border: 1px solid rgba(99, 230, 200, 0.38);
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(99, 230, 200, 0.08);
+    }
+
+    .hero {
+      position: relative;
+      height: 414px;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(99, 230, 200, 0.12), transparent 58%),
+        repeating-linear-gradient(90deg, transparent 0 76px, rgba(99, 230, 200, 0.08) 77px 78px),
+        repeating-linear-gradient(0deg, transparent 0 76px, rgba(99, 230, 200, 0.08) 77px 78px),
+        var(--surface-soft);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 360px;
+      height: 360px;
+      right: 72px;
+      top: 26px;
+      border: 1px solid rgba(99, 230, 200, 0.42);
+      background:
+        radial-gradient(circle, rgba(99, 230, 200, 0.2) 0 3px, transparent 4px) 0 0 / 30px 30px,
+        rgba(6, 25, 34, 0.7);
+      box-shadow: 0 0 80px rgba(19, 168, 137, 0.18);
+    }
+
+    .hero::after {
+      width: 240px;
+      height: 240px;
+      right: 132px;
+      top: 86px;
+      border: 1px solid rgba(99, 230, 200, 0.32);
+    }
+
+    .hero-image {
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-shade {
+      position: absolute;
+      z-index: 3;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 16, 25, 0.82) 0%, rgba(7, 16, 25, 0.12) 58%),
+        linear-gradient(0deg, rgba(7, 16, 25, 0.7) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    .hero-label {
+      position: absolute;
+      z-index: 4;
+      left: 64px;
+      top: 64px;
+      width: 390px;
+      color: rgba(245, 248, 250, 0.84);
+      font-size: 22px;
+      font-weight: 650;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-label strong {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 17px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .image-credit {
+      position: absolute;
+      z-index: 4;
+      right: 26px;
+      bottom: 22px;
+      max-width: 520px;
+      color: rgba(245, 248, 250, 0.68);
+      font-size: 16px;
+      text-align: right;
+      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.75);
+    }
+
+    .story {
+      height: 554px;
+      padding: 48px 64px 42px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      max-height: 142px;
+      margin: 0 0 32px;
+      overflow: hidden;
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.34;
+      letter-spacing: -0.045em;
+    }
+
+    .bullets {
+      display: grid;
+      gap: 17px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .bullets li {
+      position: relative;
+      padding-left: 28px;
+      color: #dbe5ea;
+      font-size: 25px;
+      font-weight: 520;
+      line-height: 1.5;
+      letter-spacing: -0.025em;
+    }
+
+    .bullets li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.62em;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 16px rgba(99, 230, 200, 0.55);
+    }
+
+    .footer {
+      margin-top: auto;
+      padding-top: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .source strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .read-more {
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 1080px) {
+      .card {
+        transform: scale(calc(100vw / 1080));
+        transform-origin: top left;
+      }
+
+      body {
+        display: block;
+        width: 100vw;
+        height: 100vw;
+        min-height: 0;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="card" aria-label="Semifeed 반도체 뉴스 카드">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">SF</span>
+        <span>SEMIFEED</span>
+      </div>
+      <div class="meta">
+        <span class="category" data-field="category">산업</span>
+        <time data-field="published-at">2026.09.20</time>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="기사 대표 이미지">
+      <!-- 실제 연결 시 src를 검증된 이미지 URL 또는 data URI로 교체합니다. -->
+      <img class="hero-image" data-field="image" src="" alt="" hidden>
+      <div class="hero-shade"></div>
+      <div class="hero-label">
+        <strong>Semiconductor Brief</strong>
+        오늘의 반도체 산업 변화를<br>핵심만 정리했습니다.
+      </div>
+      <div class="image-credit" data-field="image-credit">Image: Semifeed graphic</div>
+    </section>
+
+    <main class="story">
+      <h1 data-field="headline">차세대 반도체 투자가 공급망의 무게중심을 바꾼다</h1>
+      <ul class="bullets" data-field="bullets">
+        <li>첨단 공정과 패키징을 중심으로 주요 기업의 설비 투자가 확대되고 있습니다.</li>
+        <li>공급망 안정성과 지역별 생산 역량이 새로운 경쟁 기준으로 떠올랐습니다.</li>
+        <li>단기 수요보다 장기 기술 로드맵과 실제 양산 일정에 주목할 필요가 있습니다.</li>
+      </ul>
+
+      <footer class="footer">
+        <span class="source">출처 · <strong data-field="source">Sample News</strong></span>
+        <span class="read-more">SEMIFEED BRIEF →</span>
+      </footer>
+    </main>
+  </article>
+</body>
+</html>
