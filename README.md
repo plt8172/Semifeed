@@ -15,7 +15,7 @@ Claude는 판단이 필요한 일(기사 선별, 카드 문구)만 맡고, 나�
 | --- | --- | --- |
 | 1. 수집 | `scripts/fetch.py` | 완료 |
 | 2. 렌더 | `scripts/render.py` | 완료 |
-| 3. Slack 전송 | `scripts/slack_post.py` | 예정 |
+| 3. Slack 전송 | `scripts/slack_post.py` | 완료 |
 | 4. 승인·게시 | `worker/` | 예정 |
 | 5. 예약 작업 절차 | `RUN.md` | 예정 |
 
@@ -28,6 +28,7 @@ config/semifeed.json   RSS 목록, 수집 시간 창, Slack 채널·Instagram �
 scripts/fetch.py       RSS 수집, 72시간 필터, 중복 제거 → candidates.json
 scripts/mark_seen.py   카드로 만든 기사 링크를 state/seen.json에 기록
 scripts/render.py      카드 JSON + templates/card.html → JPEG
+scripts/slack_post.py  카드 이미지(raw URL) + 캡션 + [승인][반려] 버튼을 Slack에 전송
 state/seen.json        처리한 기사 링크 (승인 여부와 무관하게 생성 시점에 기록)
 cards/<날짜>/<id>.*    카드 이미지와 메타데이터 (Worker가 raw URL로 읽음)
 templates/card.html    카드 디자인 (DESIGN.md)
@@ -45,7 +46,10 @@ python3 scripts/fetch.py
 pip install -r requirements.txt
 python3 scripts/render.py cards/2026-10-19/<id>.json
 
-# 3. 처리한 기사 기록
+# 3. 카드를 커밋·푸시한 뒤 Slack 승인 요청 (raw URL이 열려야 전송)
+SLACK_BOT_TOKEN=xoxb-... python3 scripts/slack_post.py cards/2026-10-19/<id>.json
+
+# 4. 처리한 기사 기록
 python3 scripts/mark_seen.py <기사 링크>...
 
 # 테스트

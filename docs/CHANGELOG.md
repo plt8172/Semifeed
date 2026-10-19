@@ -7,6 +7,8 @@
 - `scripts/render.py` 추가: Playwright Chromium으로 `templates/card.html`을 1080×1080 JPEG로 렌더링하고 문구 넘침을 감지
 - Pretendard 가변 폰트를 저장소에 포함해 실행 환경의 설치 폰트와 무관하게 같은 카드가 나오도록 변경
 - `config/semifeed.json`에서 더 쓰지 않는 `n8n_public_base_url` 제거
+- `scripts/slack_post.py` 추가: 파일 업로드 대신 GitHub raw URL 이미지 블록과 [승인][반려] 버튼(value = `<날짜>/<id>`)으로 승인 요청을 보내 Slack과 Instagram이 같은 이미지를 보게 함. 전송 전 캡션 길이·해시태그 수·raw URL 공개 여부 확인
+- `config/semifeed.json`에 카드 raw URL을 만들 `github_repo`, `github_branch` 추가
 
 ## 2026-09-21
 - 저사양 VM의 느린 Chrome 시작을 허용하도록 browserless 세션과 n8n 이미지 렌더링 요청 제한을 10분으로 확대
