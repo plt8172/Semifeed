@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-19
+- 서버리스 재구축 시작: n8n·Docker Compose·VM 관련 파일과 기존 README를 `legacy/`로 이동
+- `scripts/fetch.py` 추가: 표준 라이브러리로 RSS 2.0·RSS 1.0·Atom 수집, EUC-KR 피드 처리, 72시간 필터, 추적 파라미터를 무시한 링크 중복 제거, 출처별 후보 수 제한
+- `scripts/mark_seen.py`, `state/seen.json` 추가: 처리한 기사를 n8n 내부 상태 대신 저장소 파일로 기록
+- `scripts/render.py` 추가: Playwright Chromium으로 `templates/card.html`을 1080×1080 JPEG로 렌더링하고 문구 넘침을 감지
+- Pretendard 가변 폰트를 저장소에 포함해 실행 환경의 설치 폰트와 무관하게 같은 카드가 나오도록 변경
+- `config/semifeed.json`에서 더 쓰지 않는 `n8n_public_base_url` 제거
+- `scripts/slack_post.py` 추가: 파일 업로드 대신 GitHub raw URL 이미지 블록과 [승인][반려] 버튼(value = `<날짜>/<id>`)으로 승인 요청을 보내 Slack과 Instagram이 같은 이미지를 보게 함. 전송 전 캡션 길이·해시태그 수·raw URL 공개 여부 확인
+- `config/semifeed.json`에 카드 raw URL을 만들 `github_repo`, `github_branch` 추가
+- `worker/` 추가: Slack 서명 검증 후 즉시 응답하고 waitUntil에서 Instagram 게시, KV로 중복 게시 방지, 20초 안에 끝나지 않은 컨테이너는 5분 Cron이 마무리, 실패 시 버튼 복원, 매일 Instagram 장기 토큰 갱신
+
 ## 2026-09-21
 - 저사양 VM의 느린 Chrome 시작을 허용하도록 browserless 세션과 n8n 이미지 렌더링 요청 제한을 10분으로 확대
 - Chrome 렌더링 직후 task runner가 일시적으로 응답하지 않아도 버티도록 heartbeat 간격을 300초로 확대

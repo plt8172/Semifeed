@@ -16,5 +16,6 @@
   "slack_channel_id": "C0C209QAURH",
   "instagram_user_id": "17841433117660601",
   "instagram_api_version": "v25.0",
-  "n8n_public_base_url": "https://semifeed-server.tail8016b0.ts.net"
+  "github_repo": "plt8172/Semifeed",
+  "github_branch": "main"
 }

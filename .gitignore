@@ -1,6 +1,8 @@
 .env
+.dev.vars
 node_modules/
+__pycache__/
 *.log
 .DS_Store
 .omx/
-data/instagram/*.jpg
+candidates.json
