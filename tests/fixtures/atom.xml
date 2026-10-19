@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sample Atom</title>
+  <entry>
+    <title type="html">Intel ships 18A test chips</title>
+    <link rel="alternate" type="text/html" href="https://atom.example.org/2026/10/18/intel_18a/"/>
+    <updated>2026-10-18T21:15:00Z</updated>
+    <summary type="html">&lt;h4&gt;Foundry&lt;/h4&gt; Intel says 18A yields improve.</summary>
+  </entry>
+</feed>

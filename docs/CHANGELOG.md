@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-19
+- 서버리스 재구축 시작: n8n·Docker Compose·VM 관련 파일과 기존 README를 `legacy/`로 이동
+- `scripts/fetch.py` 추가: 표준 라이브러리로 RSS 2.0·RSS 1.0·Atom 수집, EUC-KR 피드 처리, 72시간 필터, 추적 파라미터를 무시한 링크 중복 제거, 출처별 후보 수 제한
+- `scripts/mark_seen.py`, `state/seen.json` 추가: 처리한 기사를 n8n 내부 상태 대신 저장소 파일로 기록
+- `scripts/render.py` 추가: Playwright Chromium으로 `templates/card.html`을 1080×1080 JPEG로 렌더링하고 문구 넘침을 감지
+- Pretendard 가변 폰트를 저장소에 포함해 실행 환경의 설치 폰트와 무관하게 같은 카드가 나오도록 변경
+- `config/semifeed.json`에서 더 쓰지 않는 `n8n_public_base_url` 제거
+
 ## 2026-09-21
 - 저사양 VM의 느린 Chrome 시작을 허용하도록 browserless 세션과 n8n 이미지 렌더링 요청 제한을 10분으로 확대
 - Chrome 렌더링 직후 task runner가 일시적으로 응답하지 않아도 버티도록 heartbeat 간격을 300초로 확대

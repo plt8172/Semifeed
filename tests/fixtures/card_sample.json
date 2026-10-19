@@ -1,0 +1,14 @@
+{
+  "id": "381bbabb74",
+  "link": "https://example-semi.com/news/tsmc-2nm",
+  "source": "Sample Semi News",
+  "category": "파운드리",
+  "published_at": "2026-10-19T12:00+09:00",
+  "headline": "TSMC, 2나노 생산능력 확대 계획 상향",
+  "bullets": [
+    "TSMC가 두 개 팹에서 N2 공정 생산량을 늘리는 계획을 발표했습니다.",
+    "고객사의 AI 가속기 수요가 첨단 공정 증설의 직접적인 배경입니다.",
+    "실제 양산 일정과 수율 안정화 시점이 경쟁 구도의 변수로 남아 있습니다."
+  ],
+  "caption": "TSMC, 2나노 생산능력 확대 계획 상향\n\n출처: Sample Semi News | https://example-semi.com/news/tsmc-2nm"
+}
