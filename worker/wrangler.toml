@@ -1,0 +1,22 @@
+# Semifeed 승인·게시 Worker
+# 배포 절차는 worker/README.md 참고. 시크릿은 이 파일이 아니라 `wrangler secret put`으로 등록한다.
+name = "semifeed"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+[vars]
+IG_USER_ID = "17841433117660601"
+IG_API_VERSION = "v25.0"
+# 카드 <id>.jpg·<id>.json을 읽을 위치. slack_post.py의 raw URL과 같아야 한다.
+CARDS_BASE_URL = "https://raw.githubusercontent.com/plt8172/Semifeed/main/cards"
+
+# 처리 상태, 대기 중인 게시, 갱신된 Instagram 토큰을 저장한다.
+# `npx wrangler kv namespace create STATE`로 만든 id로 바꾼다.
+[[kv_namespaces]]
+binding = "STATE"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[triggers]
+# 5분마다: Instagram 처리가 늦어 대기 중인 게시 마무리
+# 매일 03:00 KST(18:00 UTC): Instagram 장기 토큰 갱신
+crons = ["*/5 * * * *", "0 18 * * *"]

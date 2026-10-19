@@ -9,6 +9,7 @@
 - `config/semifeed.json`에서 더 쓰지 않는 `n8n_public_base_url` 제거
 - `scripts/slack_post.py` 추가: 파일 업로드 대신 GitHub raw URL 이미지 블록과 [승인][반려] 버튼(value = `<날짜>/<id>`)으로 승인 요청을 보내 Slack과 Instagram이 같은 이미지를 보게 함. 전송 전 캡션 길이·해시태그 수·raw URL 공개 여부 확인
 - `config/semifeed.json`에 카드 raw URL을 만들 `github_repo`, `github_branch` 추가
+- `worker/` 추가: Slack 서명 검증 후 즉시 응답하고 waitUntil에서 Instagram 게시, KV로 중복 게시 방지, 20초 안에 끝나지 않은 컨테이너는 5분 Cron이 마무리, 실패 시 버튼 복원, 매일 Instagram 장기 토큰 갱신
 
 ## 2026-09-21
 - 저사양 VM의 느린 Chrome 시작을 허용하도록 browserless 세션과 n8n 이미지 렌더링 요청 제한을 10분으로 확대

@@ -16,7 +16,7 @@ Claude는 판단이 필요한 일(기사 선별, 카드 문구)만 맡고, 나�
 | 1. 수집 | `scripts/fetch.py` | 완료 |
 | 2. 렌더 | `scripts/render.py` | 완료 |
 | 3. Slack 전송 | `scripts/slack_post.py` | 완료 |
-| 4. 승인·게시 | `worker/` | 예정 |
+| 4. 승인·게시 | `worker/` | 완료 (배포 전) |
 | 5. 예약 작업 절차 | `RUN.md` | 예정 |
 
 기존 n8n + Google Cloud VM 구성은 `legacy/`에 보관합니다.
@@ -33,7 +33,8 @@ state/seen.json        처리한 기사 링크 (승인 여부와 무관하게 �
 cards/<날짜>/<id>.*    카드 이미지와 메타데이터 (Worker가 raw URL로 읽음)
 templates/card.html    카드 디자인 (DESIGN.md)
 fonts/                 Pretendard 가변 폰트 (SIL OFL 1.1)
-tests/                 fetch.py 테스트와 샘플 피드·카드
+worker/                Cloudflare Worker: Slack 버튼 → Instagram 게시, 토큰 갱신 (worker/README.md)
+tests/                 스크립트 테스트와 샘플 피드·카드
 ```
 
 ## 실행
