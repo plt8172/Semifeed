@@ -19,7 +19,7 @@ Claude는 판단이 필요한 일(기사 선별, 카드 문구)만 맡고, 나�
 | 4. 승인·게시 | `worker/` | 완료 (배포 전) |
 | 5. 예약 작업 절차 | `RUN.md` | 예정 |
 
-기존 n8n + Google Cloud VM 구성은 `legacy/`에 보관합니다.
+기존 n8n + Google Cloud VM 구성은 `legacy/`에 보관합니다. 운영에 필요한 연결·토큰은 `docs/SETUP.md`에 정리돼 있습니다.
 
 ## 구조
 
