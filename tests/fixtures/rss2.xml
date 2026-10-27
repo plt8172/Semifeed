@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Sample Semi News</title>
+<item>
+  <title>TSMC raises 2nm capacity plan</title>
+  <link>https://www.example-semi.com/news/tsmc-2nm?utm_source=rss&amp;utm_medium=feed</link>
+  <pubDate>Sun, 19 Oct 2026 03:00:00 GMT</pubDate>
+  <description>&lt;p&gt;TSMC expands &lt;b&gt;N2&lt;/b&gt; output across two fabs.&lt;/p&gt;</description>
+</item>
+<item>
+  <title>Duplicate of the TSMC story with another tracking tag</title>
+  <link>https://example-semi.com/news/tsmc-2nm/?utm_campaign=x</link>
+  <pubDate>Sun, 19 Oct 2026 02:00:00 GMT</pubDate>
+  <description>dup</description>
+</item>
+<item>
+  <title>Already processed HBM4 story</title>
+  <link>https://example-semi.com/news/hbm4-ramp</link>
+  <pubDate>Sat, 18 Oct 2026 10:00:00 GMT</pubDate>
+  <description>seen before</description>
+</item>
+<item>
+  <title>Old story outside the 72h window</title>
+  <link>https://example-semi.com/news/old</link>
+  <pubDate>Mon, 13 Oct 2026 10:00:00 GMT</pubDate>
+  <description>too old</description>
+</item>
+</channel>
+</rss>
