@@ -63,6 +63,14 @@ class FetchTest(unittest.TestCase):
         code, _ = run_fetch(self.tmp, "broken.xml")
         self.assertEqual(code, 1)
 
+    def test_source_name_from_config(self):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from fetch import source_name
+        names = {"etnews.com": "전자신문"}
+        self.assertEqual(source_name("rss.etnews.com", names), "전자신문")
+        self.assertEqual(source_name("etnews.com", names), "전자신문")
+        self.assertEqual(source_name("notetnews.com", names), "notetnews.com")
+
     def test_card_id_is_stable_across_tracking_params(self):
         self.assertEqual(
             card_id("https://www.example-semi.com/news/tsmc-2nm?utm_source=rss"),

@@ -17,7 +17,7 @@ Claude는 판단이 필요한 일(기사 선별, 카드 문구)만 맡고, 나�
 | 2. 렌더 | `scripts/render.py` | 완료 |
 | 3. Slack 전송 | `scripts/slack_post.py` | 완료 |
 | 4. 승인·게시 | `worker/` | 완료 (배포 전) |
-| 5. 예약 작업 절차 | `RUN.md` | 예정 |
+| 5. 예약 작업 절차 | `RUN.md` | 완료 (예약 작업 생성 전) |
 
 기존 n8n + Google Cloud VM 구성은 `legacy/`에 보관합니다. 운영에 필요한 연결·토큰은 `docs/SETUP.md`에 정리돼 있습니다.
 
@@ -38,6 +38,8 @@ tests/                 스크립트 테스트와 샘플 피드·카드
 ```
 
 ## 실행
+
+예약 작업에서는 Claude가 `RUN.md` 절차대로 아래 단계를 모두 실행합니다. 아래 명령은 손으로 한 단계씩 확인할 때 씁니다.
 
 ```bash
 # 1. 수집: candidates.json 생성 (표준 라이브러리만 사용)

@@ -17,5 +17,17 @@
   "instagram_user_id": "17841433117660601",
   "instagram_api_version": "v25.0",
   "github_repo": "plt8172/Semifeed",
-  "github_branch": "main"
+  "github_branch": "main",
+  "source_names": {
+    "eetimes.com": "EE Times",
+    "semiengineering.com": "Semiconductor Engineering",
+    "trendforce.com": "TrendForce",
+    "spectrum.ieee.org": "IEEE Spectrum",
+    "tomshardware.com": "Tom's Hardware",
+    "theregister.com": "The Register",
+    "blogs.nvidia.com": "NVIDIA Blog",
+    "news.samsung.com": "Samsung Newsroom",
+    "thelec.kr": "디일렉",
+    "etnews.com": "전자신문"
+  }
 }
