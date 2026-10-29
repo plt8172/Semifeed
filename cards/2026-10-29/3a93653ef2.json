@@ -1,0 +1,31 @@
+{
+  "id": "3a93653ef2",
+  "link": "https://semiengineering.com/analog-superposition-increases-effective-pcm-storage-density-ibm-research-europe/",
+  "source": "Semiconductor Engineering",
+  "category": "AI·설계",
+  "published_at": "2026-10-28T05:37+09:00",
+  "headline": "IBM, 아날로그 PCM 저장 밀도 높여",
+  "bullets": [
+    "상변화메모리에 AI 벡터 여러 개를 겹쳐 저장하는 구조",
+    "정확도와 맞바꿔 유효 저장 밀도를 조절할 수 있어",
+    "시제품 추론 정확도, 전정밀도 소프트웨어에 근접"
+  ],
+  "caption": "IBM, 아날로그 PCM 저장 밀도 높여\n\n• 상변화메모리에 AI 벡터 여러 개를 겹쳐 저장하는 구조\n• 정확도와 맞바꿔 유효 저장 밀도를 조절할 수 있어\n• 시제품 추론 정확도, 전정밀도 소프트웨어에 근접\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/analog-superposition-increases-effective-pcm-storage-density-ibm-research-europe/\n\n#반도체 #semiconductor #IBM #PCM #상변화메모리 #인메모리컴퓨팅 #AI반도체",
+  "photo_query": "microchip circuit closeup",
+  "photo": {
+    "provider": "pixabay",
+    "id": "453758",
+    "query": "microchip circuit closeup",
+    "file": "3a93653ef2.photo.jpg",
+    "download_url": "https://pixabay.com/get/g67250e28256b1c8607dc79d6c50771c282f9c5b0aaef4ccee9249eba526712a6e1388472ef705561b70275ddb061cb18e067f964ccb0d37bf18becddf4c080d5_1280.jpg",
+    "page_url": "https://pixabay.com/photos/board-electronics-computer-453758/",
+    "photographer": "blickpixel",
+    "photographer_url": "https://pixabay.com/users/blickpixel-52945/",
+    "alt": "board, electronics, computer, electrical engineering, current, printed circuit board, data, cpu, circuits, chip, technology, control center, solder joint, riser board, computer science, microprocessor, electronics, computer, computer, technology, technology, technology, technology, technology",
+    "width": 2250,
+    "height": 1529,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: blickpixel / Pixabay"
+  }
+}
