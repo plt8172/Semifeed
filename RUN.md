@@ -109,6 +109,7 @@ python3 scripts/render.py cards/$TODAY/<이번에 만든 id>.json ...
 ```
 
 같은 날 앞선 실행의 카드는 다시 렌더하지 않는다 (이미 게시됐을 수 있다).
+레이아웃은 `config/semifeed.json`의 `card_layout`을 따른다. 3-1에서 받은 사진은 렌더러가 카드 JSON의 `photo`를 보고 자동으로 넣는다.
 
 - 종료 코드 2로 `text overflow`가 난 카드는 제목이나 요약을 줄여 그 카드만 다시 렌더한다. 세 번 해도 넘치면 그 카드의 `.json`을 지우고 보고한다.
 - 다른 오류면 멈추고 보고한다.

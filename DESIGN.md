@@ -57,7 +57,7 @@
 - `HeroMedia`: 대표 이미지, 이미지 크레딧, CSS fallback
 - `StoryBody`: 제목과 최대 3개 요약
 - `SourceFooter`: 매체명과 원문 안내
-- 디자인 토큰은 우선 `templates/card.html`의 CSS custom properties가 소유한다.
+- 레이아웃은 `templates/layouts/`에 하나씩 둔다. 디자인 토큰은 각 레이아웃의 CSS custom properties가 소유한다 (`templates/README.md`).
 
 ## Accessibility
 
@@ -90,7 +90,7 @@
 
 - browserless/chrome에서 1080×1080 JPEG로 렌더링한다.
 - 템플릿은 단일 HTML 파일이며 외부 JavaScript 의존성을 두지 않는다.
-- 워크플로우 연결 전까지 `templates/card.html`은 독립 시안으로만 관리한다.
+- 기본 레이아웃은 `photo`(사진 + 그라데이션, 장식 없음)다. 첫 디자인은 `classic`으로 보존한다.
 - 원격 이미지는 최종 렌더링 전에 다운로드·검증해 data URI로 삽입하는 방식을 우선 검토한다.
 
 ## Open questions
