@@ -176,6 +176,14 @@ def collect(feeds: list[str], now: datetime, hours: int, seen: dict[str, str], p
     return candidates, report
 
 
+def source_name(host: str, names: dict[str, str]) -> str:
+    """카드에 표시할 매체명. rss.etnews.com처럼 하위 도메인이 붙어도 찾는다. 없으면 호스트 그대로."""
+    for domain, name in names.items():
+        if host == domain or host.endswith("." + domain):
+            return name
+    return host
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--config", type=Path, default=CONFIG_PATH)
@@ -194,6 +202,9 @@ def main() -> int:
         now = now.replace(tzinfo=KST)
 
     candidates, report = collect(feeds, now, hours, load_seen(args.seen), args.per_source)
+    names = config.get("source_names", {})
+    for item in candidates:
+        item["source_name"] = source_name(item["source"], names)
     write_json(args.out, {
         "generated_at": now.astimezone(KST).isoformat(timespec="seconds"),
         "hours_window": hours,

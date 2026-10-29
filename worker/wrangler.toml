@@ -3,6 +3,10 @@
 name = "semifeed"
 main = "src/index.ts"
 compatibility_date = "2026-10-01"
+# Slack Request URL: https://semifeed.semifeed.workers.dev
+workers_dev = true
+# 버전별 미리보기 주소는 쓰지 않는다. 승인 요청이 받을 주소를 하나로 유지한다.
+preview_urls = false
 
 [vars]
 IG_USER_ID = "17841433117660601"
