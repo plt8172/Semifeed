@@ -1,0 +1,31 @@
+{
+  "id": "b112d8b193",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64567",
+  "source": "디일렉",
+  "category": "패키징",
+  "published_at": "2026-10-29T18:30+09:00",
+  "headline": "AI 서버 칩 받침판 수요 늘자 日이비덴 1.3조 투자",
+  "bullets": [
+    "이비덴, 1조2800억원 들여 CPU용 패키지 기판 증설",
+    "일본 가마 공장 증설에 해외 거점 투자도 계획",
+    "AI 추론·에이전틱 AI 확산에 CPU 기판 수요 증가 전망"
+  ],
+  "caption": "AI 서버 칩 받침판 수요 늘자 日이비덴 1.3조 투자\n\n일본 반도체 패키지 기판 업체 이비덴이 1조2800억원을 들여 AI 서버용 고성능 CPU 패키지 기판 생산능력을 늘리기로 했습니다. 패키지 기판은 반도체 칩을 올려 메인보드와 전기적으로 연결해 주는 받침판으로, 칩 성능이 높아질수록 더 정밀하고 큰 기판이 필요합니다. 이비덴은 기후현 가마 공장 6동을 증설하고 해외 생산거점에도 투자할 계획이며, 새 설비는 2029회계연도부터 차례로 가동합니다. 회사는 AI 추론 연산과 스스로 작업을 처리하는 에이전틱 AI가 늘면서 GPU뿐 아니라 CPU 기판 수요도 커질 것으로 보고 있습니다. 실제로 올해 상반기(4~9월) 영업이익은 전년보다 84.6% 늘었고, 연간 실적 전망도 올려 잡았습니다. 다만 생산능력이 구체적으로 얼마나 늘어나는지는 공개하지 않았습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64567\n\n#반도체 #semiconductor #패키지기판 #반도체패키징 #이비덴 #AI서버 #CPU",
+  "photo_query": "green printed circuit board",
+  "photo": {
+    "provider": "pixabay",
+    "id": "9383740",
+    "query": "green printed circuit board",
+    "file": "b112d8b193.photo.jpg",
+    "download_url": "https://pixabay.com/get/ge1a7fbc324ecc41cc4e0508ff501526c9efda44c6f004d833820cacb1b111648ab996660c2ccffda0cda2a966cf07710554c53fde3e0caff7564a699ed02cbaf_1280.jpg",
+    "page_url": "https://pixabay.com/photos/circuit-electronic-connectors-9383740/",
+    "photographer": "Surprising_Media",
+    "photographer_url": "https://pixabay.com/users/Surprising_Media-11873433/",
+    "alt": "circuit, electronic, connectors, components, technology, printed circuit board, tags, cuts, resistor, capacitors, integrated circuit",
+    "width": 4000,
+    "height": 3400,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Surprising_Media / Pixabay"
+  }
+}

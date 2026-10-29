@@ -1,0 +1,31 @@
+{
+  "id": "e63dac64d4",
+  "link": "https://www.tomshardware.com/software/github-report-highlights-massive-influx-of-ai-generated-code-sixfold-increase-in-activity-over-one-year-required-extra-4-million-cpu-cores-and-160pb-of-storage",
+  "source": "Tom's Hardware",
+  "category": "AI·설계",
+  "published_at": "2026-10-29T19:30+09:00",
+  "headline": "AI가 짠 코드 몰리자 깃허브, CPU 코어 400만개 추가",
+  "bullets": [
+    "깃허브 월간 커밋 1년 새 6배, 74억건으로 늘어",
+    "AI 에이전트가 만든 코드 유입이 증가의 주된 원인",
+    "처리 위해 CPU 코어 400만개·저장공간 160PB 증설"
+  ],
+  "caption": "AI가 짠 코드 몰리자 깃허브, CPU 코어 400만개 추가\n\n세계 최대 코드 저장소 서비스 깃허브에 올라오는 코드가 1년 사이 6배로 늘어, 월간 커밋(코드 변경 기록) 수가 74억건에 이르렀습니다. 증가를 이끈 것은 사람 대신 스스로 코드를 작성하고 고치는 AI 에이전트입니다. 깃허브는 쏟아지는 코드를 감당하려고 데이터센터에 CPU 코어 400만개와 저장공간 160PB(페타바이트)를 추가했습니다. 1PB는 1TB의 1000배로, 160PB는 1TB 노트북 16만 대 분량에 해당합니다. AI 반도체 수요라고 하면 보통 GPU를 떠올리지만, 이번 사례는 AI가 만들어 낸 결과물을 저장하고 처리하는 일반 서버의 CPU와 저장장치 수요까지 끌어올리고 있음을 보여 줍니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/software/github-report-highlights-massive-influx-of-ai-generated-code-sixfold-increase-in-activity-over-one-year-required-extra-4-million-cpu-cores-and-160pb-of-storage\n\n#반도체 #semiconductor #AI #CPU #데이터센터 #깃허브 #스토리지",
+  "photo_query": "computer processor chip",
+  "photo": {
+    "provider": "pixabay",
+    "id": "5881454",
+    "query": "computer processor chip",
+    "file": "e63dac64d4.photo.jpg",
+    "download_url": "https://pixabay.com/get/g5a1b5c1fdc688956f2d23bb16cb17c107902775e0e3e8308e203cdc33b05e9545f242cf89251b38ef1833489b9ff398fa3aed8be2d1137d1912ebd4ee83628e0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/microchip-chip-processor-integrated-5881454/",
+    "photographer": "dexmac",
+    "photographer_url": "https://pixabay.com/users/dexmac-12233086/",
+    "alt": "microchip, chip, processor, integrated, electronics, computer technology, technology, computer, microchip, microchip, microchip, microchip, microchip, chip",
+    "width": 5626,
+    "height": 3745,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: dexmac / Pixabay"
+  }
+}

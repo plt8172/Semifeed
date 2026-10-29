@@ -1,0 +1,31 @@
+{
+  "id": "5041630158",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/fujifilm-plans-5x-production-boost-of-100tb-magnetic-storage-tapes-driven-by-ai-usd63-million-injection-is-the-largest-investment-in-tape-for-20-years",
+  "source": "Tom's Hardware",
+  "category": "전자·부품",
+  "published_at": "2026-10-29T20:40+09:00",
+  "headline": "AI 데이터 폭증에 후지필름, 자기 테이프 생산 5배로",
+  "bullets": [
+    "100TB급 자기 저장 테이프 생산량 최대 5배 확대 계획",
+    "투자액 6300만달러, 테이프 분야 20년 만의 최대 투자",
+    "AI 데이터센터의 대용량 저장 수요가 증산 이유"
+  ],
+  "caption": "AI 데이터 폭증에 후지필름, 자기 테이프 생산 5배로\n\n후지필름이 데이터센터용 자기 저장 테이프 생산량을 최대 5배까지 늘리기로 했습니다. 투자 규모는 6300만달러로, 테이프 분야에서 20년 만에 가장 큰 투자입니다. 자기 테이프는 카세트테이프처럼 자성 물질을 입힌 띠에 데이터를 기록하는 저장장치로, 읽고 쓰는 속도는 느리지만 같은 용량을 SSD나 하드디스크보다 싸고 오래 보관할 수 있어 데이터센터의 장기 보관용으로 지금도 쓰입니다. 이번에 늘리는 제품은 한 개에 100TB를 담는 테이프입니다. AI 모델 학습과 서비스에 쓰이는 데이터가 크게 늘면서 이를 저렴하게 쌓아 둘 저장공간 수요도 함께 커졌고, 후지필름은 이 수요를 겨냥해 증산에 나섰습니다. AI 붐이 GPU와 메모리를 넘어 오래된 저장 기술까지 다시 불러내고 있다는 의미입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/fujifilm-plans-5x-production-boost-of-100tb-magnetic-storage-tapes-driven-by-ai-usd63-million-injection-is-the-largest-investment-in-tape-for-20-years\n\n#반도체 #semiconductor #데이터센터 #스토리지 #자기테이프 #후지필름 #AI",
+  "photo_query": "data center storage servers",
+  "photo": {
+    "provider": "pixabay",
+    "id": "2588137",
+    "query": "data center storage servers",
+    "file": "5041630158.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2cee7c9e4ce88205d60f03477f7bb1d99cb74994fc2c104d0f7d5585d97e6efbc744d1d0f1a1396ff91bd77a452851d602466cd0f4f932f1bb5c85d56892b83a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/glass-reflection-lights-door-stock-2588137/",
+    "photographer": "StockSnap",
+    "photographer_url": "https://pixabay.com/users/StockSnap-894430/",
+    "alt": "glass, reflection, lights, door, stock, storage, selling, wall, gray glass, gray door, gray glasses, selling, selling, selling, selling, selling",
+    "width": 4000,
+    "height": 1400,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: StockSnap / Pixabay"
+  }
+}
