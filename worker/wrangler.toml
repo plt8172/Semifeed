@@ -14,7 +14,7 @@ CARDS_BASE_URL = "https://raw.githubusercontent.com/plt8172/Semifeed/main/cards"
 # `npx wrangler kv namespace create STATE`로 만든 id로 바꾼다.
 [[kv_namespaces]]
 binding = "STATE"
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
+id = "164e106c09294148b681949405576f61"
 
 [triggers]
 # 5분마다: Instagram 처리가 늦어 대기 중인 게시 마무리
