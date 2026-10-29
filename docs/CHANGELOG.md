@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-27
+- 예약 작업이 매 실행마다 따를 절차 `RUN.md` 추가: 수집 → 기사 선별·문구 작성 → 렌더 → seen 기록 → main 푸시 → Slack 승인 요청
+- `config/semifeed.json`에 매체 표시명 `source_names`를 추가하고 `fetch.py`가 후보마다 `source_name`을 내보내도록 변경
+
 ## 2026-10-19
 - 서버리스 재구축 시작: n8n·Docker Compose·VM 관련 파일과 기존 README를 `legacy/`로 이동
 - `scripts/fetch.py` 추가: 표준 라이브러리로 RSS 2.0·RSS 1.0·Atom 수집, EUC-KR 피드 처리, 72시간 필터, 추적 파라미터를 무시한 링크 중복 제거, 출처별 후보 수 제한
