@@ -27,7 +27,7 @@ Claude는 판단이 필요한 일(기사 선별, 카드 문구)만 맡고, 나�
 config/semifeed.json   RSS 목록, 수집 시간 창, Slack 채널·Instagram 계정 ID
 scripts/fetch.py       RSS 수집, 72시간 필터, 중복 제거 → candidates.json
 scripts/mark_seen.py   카드로 만든 기사 링크를 state/seen.json에 기록
-scripts/photo.py       카드별 무료 스톡 사진(Pexels)을 받고 출처·라이선스를 카드 JSON에 기록
+scripts/photo.py       카드별 무료 스톡 사진(Pixabay, 선택적으로 Pexels)을 받고 출처·라이선스를 카드 JSON에 기록
 scripts/render.py      카드 JSON + templates/layouts/<레이아웃>.html → JPEG
 scripts/slack_post.py  카드 이미지(raw URL) + 캡션 + [승인][반려] 버튼을 Slack에 전송
 state/seen.json        처리한 기사 링크 (승인 여부와 무관하게 생성 시점에 기록)
@@ -46,8 +46,8 @@ tests/                 스크립트 테스트와 샘플 피드·카드
 # 1. 수집: candidates.json 생성 (표준 라이브러리만 사용)
 python3 scripts/fetch.py
 
-# 1-1. 사진: 카드 JSON의 photo_query로 Pexels 검색 → <id>.photo.jpg (커밋하지 않음)
-PEXELS_API_KEY=... python3 scripts/photo.py cards/2026-10-19/<id>.json
+# 1-1. 사진: 카드 JSON의 photo_query로 Pixabay 검색 → <id>.photo.jpg (커밋하지 않음)
+PIXABAY_API_KEY=... python3 scripts/photo.py cards/2026-10-19/<id>.json
 
 # 2. 렌더: cards/2026-10-19/<id>.json → <id>.jpg
 pip install -r requirements.txt

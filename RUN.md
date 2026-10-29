@@ -12,14 +12,14 @@ Claude Code 예약 작업이 실행될 때마다 이 문서를 처음부터 끝�
 git checkout main && git pull --ff-only origin main
 python3 -c "import playwright" 2>/dev/null || pip install -q -r requirements.txt
 test -n "$SLACK_BOT_TOKEN" || echo "SLACK_BOT_TOKEN 없음"
-test -n "$PEXELS_API_KEY" || echo "PEXELS_API_KEY 없음"
+test -n "$PIXABAY_API_KEY" || echo "PIXABAY_API_KEY 없음"
 TODAY=$(TZ=Asia/Seoul date +%F)
 ```
 
 `SLACK_BOT_TOKEN`이 없으면 카드를 만들지 말고 여기서 멈춘다. 카드를 만들어도 승인 요청을 보낼 수 없고,
 `state/seen.json`에 기록되면 그 기사들이 다시 후보로 올라오지 않기 때문이다.
 
-`PEXELS_API_KEY`가 없으면 멈추지 않는다. 3-1(사진 수집)만 건너뛰고 마지막 보고에 적는다. 사진은 카드의 필수 요소가 아니다.
+`PIXABAY_API_KEY`(`config/semifeed.json`의 `photo_provider`에 맞는 키)가 없으면 멈추지 않는다. 3-1(사진 수집)만 건너뛰고 마지막 보고에 적는다. 사진은 카드의 필수 요소가 아니다.
 
 ## 1. 수집
 
@@ -85,13 +85,13 @@ python3 scripts/fetch.py
 
 ## 3-1. 사진 수집
 
-`PEXELS_API_KEY`가 없으면 이 단계를 건너뛴다.
+사진 제공처 키가 없으면 이 단계를 건너뛴다.
 
 ```bash
 python3 scripts/photo.py cards/$TODAY/<이번에 만든 id>.json ...
 ```
 
-스크립트가 Pexels 검색 결과에서 최근 30일 동안 쓰지 않은 첫 번째 가로 사진을 `cards/$TODAY/<id>.photo.jpg`로 받고,
+스크립트가 무료 스톡 사진(기본 Pixabay) 검색 결과에서 최근 30일 동안 쓰지 않은 첫 번째 가로 사진을 `cards/$TODAY/<id>.photo.jpg`로 받고,
 출처·작가·라이선스를 카드 JSON의 `photo`에 기록한다. 사진 파일은 커밋되지 않는다 (`.gitignore`). 출처 기록만 커밋한다.
 
 받은 사진을 카드마다 직접 열어 보고 판단한다 (Claude 판단):
@@ -151,5 +151,5 @@ python3 scripts/slack_post.py cards/$TODAY/<이번에 만든 id>.json ...
 
 - 후보 수, 고른 카드 수와 각 카드의 제목·출처
 - Slack 전송 결과
-- 사진: 카드별 Pexels 사진 id와 검색어, 다시 고른 횟수, 사진 없이 간 카드와 이유
+- 사진: 카드별 제공처·사진 id와 검색어, 다시 고른 횟수, 사진 없이 간 카드와 이유
 - 실패한 피드, 렌더에서 뺀 카드, 그 밖의 오류
