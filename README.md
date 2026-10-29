@@ -46,8 +46,10 @@ tests/                 스크립트 테스트와 샘플 피드·카드
 # 1. 수집: candidates.json 생성 (표준 라이브러리만 사용)
 python3 scripts/fetch.py
 
-# 1-1. 사진: 카드 JSON의 photo_query로 Pixabay 검색 → <id>.photo.jpg (커밋하지 않음)
+# 1-1. 사진: 카드 JSON의 photo_queries(검색어 3개)로 Pixabay 검색 → <id>.photo.jpg (커밋하지 않음)
 PIXABAY_API_KEY=... python3 scripts/photo.py cards/2026-10-19/<id>.json
+#      이번 사진과 최근 3일 카드를 한 장에 모아 겹치는 사진을 눈으로 찾는다 → contact_sheet.jpg
+python3 scripts/contact_sheet.py cards/2026-10-19/<id>.json
 
 # 2. 렌더: cards/2026-10-19/<id>.json → <id>.jpg
 pip install -r requirements.txt

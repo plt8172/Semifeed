@@ -18,6 +18,7 @@ FIXTURES = ROOT / "tests" / "fixtures"
 JPEG = b"\xff\xd8\xff\xe0fake-jpeg"
 
 
+
 def fake_photo(base: str, photo_id: int, width: int = 4000, height: int = 2667) -> dict:
     return {
         "id": photo_id,
@@ -47,6 +48,7 @@ def fake_hit(base: str, photo_id: int, width: int = 5000, height: int = 3333, fr
 class FakePexels(BaseHTTPRequestHandler):
     requests: list = []
     base = ""
+    empty_queries: set = set()  # 결과가 없는 검색어
 
     def do_GET(self):
         parts = urlsplit(self.path)
@@ -65,6 +67,11 @@ class FakePexels(BaseHTTPRequestHandler):
                 fake_photo(self.base, 103),
                 fake_photo(self.base, 104),
             ]
+            q = parse_qs(parts.query)
+            if q["query"][0] in self.empty_queries or q.get("page") != ["1"]:
+                photos = []
+            elif q["query"][0] == "second query":
+                photos = [fake_photo(self.base, 300)]
             body, content_type = json.dumps({"photos": photos}).encode(), "application/json"
         elif parts.path.startswith("/img/"):
             body, content_type = JPEG, "image/jpeg"
@@ -93,6 +100,7 @@ class PhotoTest(unittest.TestCase):
         data["photo_query"] = "silicon wafer cleanroom"
         self.card.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
         FakePexels.requests = []
+        FakePexels.empty_queries = set()
         self.server = HTTPServer(("127.0.0.1", 0), FakePexels)
         FakePexels.base = f"http://127.0.0.1:{self.server.server_port}"
         threading.Thread(target=self.server.serve_forever, daemon=True).start()
@@ -150,6 +158,41 @@ class PhotoTest(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(self.load(other)["photo"]["id"], "103")
 
+    def make_other_card(self, **fields):
+        other = self.card.with_name("aaaaaaaaaa.json")
+        data = self.load()
+        data.pop("photo", None)
+        data.update(fields)
+        other.write_text(json.dumps(data), encoding="utf-8")
+        return other
+
+    def test_skips_photographer_used_by_recent_card(self):
+        self.run_photo()
+        card = self.load()
+        card["photo"]["photographer_url"] = "https://www.pexels.com/@author103"  # 103의 작가가 쓴 것으로
+        self.card.write_text(json.dumps(card), encoding="utf-8")
+        other = self.make_other_card()
+        result = self.run_photo(card=other)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(self.load(other)["photo"]["id"], "104")
+
+    def test_falls_back_to_next_query(self):
+        FakePexels.empty_queries = {"first query"}
+        other = self.make_other_card(photo_queries=["first query", "second query"])
+        result = self.run_photo(card=other)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        photo = self.load(other)["photo"]
+        self.assertEqual((photo["id"], photo["query"]), ("300", "second query"))
+        searched = [r["query"]["query"][0] for r in FakePexels.requests if r["path"] == "/v1/search"]
+        self.assertEqual(searched, ["first query", "second query"])
+
+    def test_no_result_for_any_query_is_soft_failure(self):
+        FakePexels.empty_queries = {"first query", "other query"}
+        other = self.make_other_card(photo_queries=["first query", "other query"])
+        result = self.run_photo(card=other)
+        self.assertEqual(result.returncode, 3)
+        self.assertIn("0 results", result.stderr)
+
     def test_clear_removes_record_and_file(self):
         self.run_photo()
         result = self.run_photo("--clear", key="")
@@ -163,7 +206,7 @@ class PhotoTest(unittest.TestCase):
         self.card.write_text(json.dumps(data), encoding="utf-8")
         result = self.run_photo()
         self.assertEqual(result.returncode, 3)
-        self.assertIn("photo_query", result.stderr)
+        self.assertIn("photo_queries", result.stderr)
 
     def test_pixabay_picks_and_refreshes_by_id(self):
         result = self.run_photo(provider="pixabay")

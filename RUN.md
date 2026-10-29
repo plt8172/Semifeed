@@ -55,7 +55,7 @@ python3 scripts/fetch.py
   "headline": "제목",
   "bullets": ["요약 1", "요약 2", "요약 3"],
   "caption": "Instagram 캡션",
-  "photo_query": "사진 검색어 (영어 2~4단어)"
+  "photo_queries": ["사진 검색어 1", "검색어 2", "검색어 3"]
 }
 ```
 
@@ -112,10 +112,21 @@ python3 scripts/fetch.py
 #반도체 #semiconductor #<분야 태그 2~6개>
 ```
 
-`photo_query` 규칙 (`DESIGN.md`의 Imagery):
-- 기사 주제를 보여 줄 수 있는 사물·장소를 영어로 쓴다. 예: `silicon wafer`, `semiconductor cleanroom`, `circuit board closeup`, `data center servers`, `lithium battery cells`.
-- 회사명·제품명·인물을 넣지 않는다. 스톡 사진에는 그 회사의 실제 모습이 없고, 엉뚱한 로고나 인물 사진이 나오기 쉽다.
+`photo_queries` 규칙 (`DESIGN.md`의 Imagery):
+- 영어 검색어 3개(각 2~4단어)를 기사에 잘 맞는 순서로 쓴다. 스크립트는 1번 결과부터 보고, 쓸 사진이 없을 때만 다음 검색어로 넘어간다.
+  세 개는 같은 말을 바꿔 쓴 것이 아니라 서로 다른 장면이어야 한다. 그래야 앞 검색어 결과가 다 쓰였을 때 다른 사진이 나온다.
+  1. 기사 핵심을 보여 주는 구체적인 사물 (예: `hard disk platter`, `magnetic tape cartridge`, `lithium battery cells`)
+  2. 다른 각도의 사물·장소: 그 부품이 들어가는 곳, 만드는 곳, 쓰는 모습 (예: `tape library robot`, `battery factory line`)
+  3. 조금 넓지만 산업이 드러나는 장면 (예: `server room cables`, `electronics assembly line`)
+- 기사 주제를 보여 줄 수 있는 사물·장소를 쓴다. 회사명·제품명·인물을 넣지 않는다. 스톡 사진에는 그 회사의 실제 모습이 없고, 엉뚱한 로고나 인물 사진이 나오기 쉽다.
 - 너무 넓은 단어(`technology`, `business`)는 피한다. 같은 실행의 카드끼리 검색어가 겹치지 않게 한다.
+- 자주 쓴 검색어는 인기 사진이 이미 다 쓰여 엉뚱한 사진이 나온다. 쓰기 전에 최근 검색어를 확인하고, 최근 3일에 쓴 검색어는 1번에 두지 않는다.
+  `data center server rack`, `circuit board`, `microchip` 같은 흔한 검색어는 기사에 더 구체적인 사물이 없을 때만 쓴다.
+
+```bash
+# 최근 3일(날짜 폴더 3개) 카드 사진에 쓰인 검색어와 횟수
+grep -h '"query"' $(ls -d cards/*/ | tail -3 | sed 's|$|*.json|') | sort | uniq -c | sort -rn
+```
 
 ## 3-1. 사진 수집
 
@@ -125,13 +136,23 @@ python3 scripts/fetch.py
 python3 scripts/photo.py cards/$TODAY/<이번에 만든 id>.json ...
 ```
 
-스크립트가 무료 스톡 사진(기본 Pixabay) 검색 결과에서 최근 30일 동안 쓰지 않은 첫 번째 가로 사진을 `cards/$TODAY/<id>.photo.jpg`로 받고,
-출처·작가·라이선스를 카드 JSON의 `photo`에 기록한다. 사진 파일은 커밋되지 않는다 (`.gitignore`). 출처 기록만 커밋한다.
+스크립트가 무료 스톡 사진(기본 Pixabay)을 `photo_queries` 순서대로 검색해서(검색어마다 최대 200장) 첫 번째로 쓸 수 있는 가로 사진을
+`cards/$TODAY/<id>.photo.jpg`로 받고, 출처·작가·라이선스·맞은 검색어를 카드 JSON의 `photo`에 기록한다.
+쓸 수 없는 사진: 최근 30일 카드에 쓴 사진 id, 최근 3일 카드에 쓴 작가의 사진(한 작가는 같은 장면을 여러 장 올린다), `--exclude` 사진.
+이력은 카드 JSON의 `photo`가 곧 기록이라 따로 관리하지 않는다. 사진 파일은 커밋되지 않는다 (`.gitignore`). 출처 기록만 커밋한다.
 
-받은 사진을 카드마다 직접 열어 보고 판단한다 (Claude 판단):
+그다음 이번 사진과 최근 3일 카드를 한 장에 모아 연다:
+
+```bash
+python3 scripts/contact_sheet.py cards/$TODAY/<이번에 만든 id>.json ...   # → contact_sheet.jpg
+```
+
+`contact_sheet.jpg`를 열어 카드마다 판단한다 (Claude 판단):
 - 기사 주제와 맞는가. 인물 얼굴, 회사 로고·상표, 읽히는 글자가 크게 나오면 쓰지 않는다.
-- 맞지 않으면 그 사진 id를 빼고 다시 고른다: `python3 scripts/photo.py --exclude <photo.id> cards/$TODAY/<id>.json`
-  (검색어를 바꿨다면 `--replace`). 카드 하나에 세 번까지 시도한다.
+- 최근 카드나 이번 다른 카드의 사진과 겹쳐 보이지 않는가. id와 작가가 달라도 같은 사진을 다른 계정이 다시 올린 경우가 있다
+  (예: 2026-10-29의 서버실 복도 사진 2160321과 2588137). 같은 장면·구도·색감이면 겹치는 것으로 보고 뺀다.
+- 맞지 않거나 겹치면 그 사진 id를 빼고 다시 고른다: `python3 scripts/photo.py --exclude <photo.id> cards/$TODAY/<id>.json`
+  (검색어를 바꿨다면 `--replace`). 다시 고른 뒤에는 contact sheet를 다시 만들어 확인한다. 카드 하나에 세 번까지 시도한다.
 - 세 번 해도 맞는 사진이 없으면 `python3 scripts/photo.py --clear cards/$TODAY/<id>.json`으로 비우고 넘어간다.
 
 종료 코드 1(키 없음)이나 3(일부 카드 실패)이어도 멈추지 않는다. 실패한 카드는 사진 없이 다음 단계로 간다.
@@ -185,5 +206,5 @@ python3 scripts/slack_post.py cards/$TODAY/<이번에 만든 id>.json ...
 
 - 후보 수, 고른 카드 수와 각 카드의 제목·출처
 - Slack 전송 결과
-- 사진: 카드별 제공처·사진 id와 검색어, 다시 고른 횟수, 사진 없이 간 카드와 이유
+- 사진: 카드별 제공처·사진 id와 맞은 검색어(몇 번째인지), 다시 고른 횟수와 이유(주제 불일치·겹침), 사진 없이 간 카드와 이유
 - 실패한 피드, 렌더에서 뺀 카드, 그 밖의 오류

@@ -7,3 +7,4 @@ __pycache__/
 .omx/
 candidates.json
 cards/**/*.photo.jpg
+contact_sheet.jpg
