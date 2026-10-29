@@ -45,7 +45,7 @@ LLM API 키(OpenRouter, Anthropic)는 필요 없습니다. 기사 선별과 문�
 
 ### 2. Slack App (api.slack.com/apps, 기존 앱 재사용 가능)
 - [ ] Bot Token Scopes에 `chat:write`. 파일 업로드를 쓰지 않으므로 `files:write`는 필요 없습니다. 권한을 바꿨다면 앱을 다시 설치합니다.
-- [ ] 봇을 채널 `C0C209QAURH`에 초대
+- [x] 봇을 채널 `C0CD6SFCFS8`(Semifeed 워크스페이스)에 초대
 - [ ] Interactivity & Shortcuts → Request URL을 Worker 주소로 변경 (Worker 배포 뒤, n8n을 멈춘 뒤)
 
 ### 3. Instagram (Meta 개발자 앱)
