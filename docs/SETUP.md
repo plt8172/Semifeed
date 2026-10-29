@@ -32,7 +32,8 @@ LLM API 키(OpenRouter, Anthropic)는 필요 없습니다. 기사 선별과 문�
 | `SLACK_BOT_TOKEN` (`xoxb-…`) | Slack App → OAuth & Permissions → Bot User OAuth Token | ① Claude 클라우드 환경 ② Worker Secret |
 | `SLACK_SIGNING_SECRET` | Slack App → Basic Information → App Credentials → Signing Secret | Worker Secret |
 | `IG_ACCESS_TOKEN` (`IGAA…`, 장기 토큰) | Meta 개발자 앱 → Instagram API with Instagram Login | Worker Secret |
-| `PEXELS_API_KEY` | https://www.pexels.com/api/ 에서 무료 발급 | Claude 클라우드 환경 |
+| `PIXABAY_API_KEY` | https://pixabay.com/api/docs/ 에서 로그인하면 바로 표시됨 (무료) | Claude 클라우드 환경 |
+| `PEXELS_API_KEY` (선택) | https://www.pexels.com/api/ (2026-10-29 기준 신규 발급 중단) | Claude 클라우드 환경, `photo_provider`를 `pexels`로 바꿀 때만 |
 
 토큰은 저장소·채팅에 붙여 넣지 않습니다.
 
@@ -41,7 +42,7 @@ LLM API 키(OpenRouter, Anthropic)는 필요 없습니다. 기사 선별과 문�
 ### 1. Claude (claude.ai)
 - [x] 클라우드 환경 네트워크 허용: RSS 10개 도메인 + `slack.com`
 - [ ] 같은 클라우드 환경에 `SLACK_BOT_TOKEN` 추가: 환경 메뉴의 톱니바퀴 → Network secrets(없으면 환경 변수). 프로젝트가 그 환경을 쓰도록 선택돼 있어야 합니다.
-- [ ] 카드 사진: 같은 환경의 네트워크 허용에 `api.pexels.com`, `images.pexels.com` 추가, 환경 변수에 `PEXELS_API_KEY` 추가. 없어도 카드는 사진 없이 만들어집니다.
+- [ ] 카드 사진: 같은 환경의 네트워크 허용에 `pixabay.com` 추가(API와 이미지 모두 이 도메인), 환경 변수에 `PIXABAY_API_KEY` 추가. 없어도 카드는 사진 없이 만들어집니다.
 - [ ] GitHub 연결에 `plt8172/Semifeed` 쓰기 권한 확인: 예약 작업이 `main`에 카드를 푸시합니다.
 - [ ] 예약 작업의 "Automatically approve" 켜기: 예약 작업을 만든 뒤 켭니다.
 

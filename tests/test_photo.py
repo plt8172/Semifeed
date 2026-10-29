@@ -31,6 +31,19 @@ def fake_photo(base: str, photo_id: int, width: int = 4000, height: int = 2667) 
     }
 
 
+def fake_hit(base: str, photo_id: int, width: int = 5000, height: int = 3333, fresh: bool = False) -> dict:
+    return {
+        "id": photo_id,
+        "imageWidth": width,
+        "imageHeight": height,
+        "pageURL": f"https://pixabay.com/photos/chip-{photo_id}/",
+        "user": "maker",
+        "user_id": 77,
+        "tags": "chip, wafer",
+        "largeImageURL": f"{base}/img/px{photo_id}{'-fresh' if fresh else ''}.jpg",
+    }
+
+
 class FakePexels(BaseHTTPRequestHandler):
     requests: list = []
     base = ""
@@ -38,7 +51,13 @@ class FakePexels(BaseHTTPRequestHandler):
     def do_GET(self):
         parts = urlsplit(self.path)
         FakePexels.requests.append({"path": parts.path, "query": parse_qs(parts.query), "auth": self.headers.get("Authorization")})
-        if parts.path == "/v1/search":
+        if parts.path == "/api/":
+            q = parse_qs(parts.query)
+            hits = [fake_hit(self.base, 200, width=1000, height=700), fake_hit(self.base, 201), fake_hit(self.base, 202)]
+            if "id" in q:
+                hits = [fake_hit(self.base, int(q["id"][0]), fresh=True)]
+            body, content_type = json.dumps({"hits": hits}).encode(), "application/json"
+        elif parts.path == "/v1/search":
             photos = [
                 fake_photo(self.base, 100, width=1200, height=800),  # 너무 작다
                 fake_photo(self.base, 101, width=2000, height=3000),  # 세로
@@ -82,9 +101,11 @@ class PhotoTest(unittest.TestCase):
         self.server.shutdown()
         self._tmp.cleanup()
 
-    def run_photo(self, *extra, key="test-key", card=None):
-        env = {**os.environ, "PEXELS_API_BASE": f"{FakePexels.base}/v1", "PEXELS_API_KEY": key}
-        args = [sys.executable, str(ROOT / "scripts" / "photo.py"), "--cards-dir", str(self.cards_dir), *extra, str(card or self.card)]
+    def run_photo(self, *extra, key="test-key", card=None, provider="pexels"):
+        env = {**os.environ, "PEXELS_API_BASE": f"{FakePexels.base}/v1", "PIXABAY_API_BASE": f"{FakePexels.base}/api",
+               "PEXELS_API_KEY": key, "PIXABAY_API_KEY": key}
+        args = [sys.executable, str(ROOT / "scripts" / "photo.py"), "--cards-dir", str(self.cards_dir),
+                "--provider", provider, *extra, str(card or self.card)]
         return subprocess.run(args, capture_output=True, text=True, env=env)
 
     def load(self, path=None):
@@ -143,6 +164,24 @@ class PhotoTest(unittest.TestCase):
         result = self.run_photo()
         self.assertEqual(result.returncode, 3)
         self.assertIn("photo_query", result.stderr)
+
+    def test_pixabay_picks_and_refreshes_by_id(self):
+        result = self.run_photo(provider="pixabay")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        search = FakePexels.requests[0]
+        self.assertEqual(search["query"]["key"], ["test-key"])
+        self.assertEqual(search["query"]["q"], ["silicon wafer cleanroom"])
+        photo = self.load()["photo"]
+        self.assertEqual((photo["provider"], photo["id"]), ("pixabay", "201"))
+        self.assertEqual(photo["credit"], "Photo: maker / Pixabay")
+        self.assertEqual(photo["photographer_url"], "https://pixabay.com/users/maker-77/")
+        self.assertNotIn("test-key", json.dumps(photo))
+        # 임시 이미지 주소 대신 id로 새 주소를 받아 다시 내려받는다.
+        self.card.with_name("381bbabb74.photo.jpg").unlink()
+        FakePexels.requests = []
+        result = self.run_photo(provider="pixabay")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual([r["path"] for r in FakePexels.requests], ["/api/", "/img/px201-fresh.jpg"])
 
     def test_missing_key(self):
         result = self.run_photo(key="")

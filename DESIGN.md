@@ -95,6 +95,6 @@
 
 ## Open questions
 
-- [x] 운영 이미지 소스: Pexels로 시작 (2026-10-29). Pexels License는 상업 이용·수정을 허용하고, API가 작가·원본 링크를 줘 출처를 기록할 수 있다. Unsplash는 API 약관상 이미지를 받아 다시 호스팅하는 방식과 맞지 않고, Wikimedia Commons는 사진마다 라이선스(CC BY-SA 등) 조건이 달라 자동 판단이 어렵다. 출처는 `scripts/photo.py`가 카드 JSON의 `photo`에 기록한다.
+- [x] 운영 이미지 소스: Pixabay 기본, Pexels 선택 (2026-10-29). Pexels가 신규 API 키 발급을 멈춰 Pixabay를 기본으로 한다. Pixabay Content License와 Pexels License는 모두 상업 이용·수정을 허용하고 출처 표기 의무가 없으며, API가 작가·원본 링크를 줘 출처를 기록할 수 있다. Unsplash는 API 약관상 이미지를 받아 다시 호스팅하는 방식과 맞지 않고, Wikimedia Commons는 사진마다 라이선스(CC BY-SA 등) 조건이 달라 자동 판단이 어렵다. 출처는 `scripts/photo.py`가 카드 JSON의 `photo`에 기록한다.
 - [ ] 기업 보도자료 이미지를 매체별 이용조건 확인 후 허용 목록으로 관리할지 결정 — owner: 운영자, impact: 기사 연관성
 - [ ] 카드에 이미지 크레딧을 항상 표시할지, 캡션에만 표시할지 결정 — owner: 운영자, impact: 레이아웃과 라이선스 준수
