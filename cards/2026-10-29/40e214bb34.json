@@ -1,0 +1,31 @@
+{
+  "id": "40e214bb34",
+  "link": "https://www.trendforce.com/presscenter/news/20261029-13284.html",
+  "source": "TrendForce",
+  "category": "전자·부품",
+  "published_at": "2026-10-29T15:42+09:00",
+  "headline": "AI 추론 수요에 고용량 MLCC 품귀",
+  "bullets": [
+    "AI 추론·에이전트 확산으로 CPU·DDR5 수요 증가",
+    "CPU 보드·메모리 모듈용 고용량 MLCC 공급 압박",
+    "무라타 증설은 2028년 이후, 부족 내년 상반기까지"
+  ],
+  "caption": "AI 추론 수요에 고용량 MLCC 품귀\n\n• AI 추론·에이전트 확산으로 CPU·DDR5 수요 증가\n• CPU 보드·메모리 모듈용 고용량 MLCC 공급 압박\n• 무라타 증설은 2028년 이후, 부족 내년 상반기까지\n\n출처: TrendForce\nhttps://www.trendforce.com/presscenter/news/20261029-13284.html\n\n#반도체 #semiconductor #MLCC #DDR5 #전자부품 #AI반도체 #TrendForce",
+  "photo_query": "circuit board capacitors",
+  "photo": {
+    "provider": "pixabay",
+    "id": "581597",
+    "query": "circuit board capacitors",
+    "file": "40e214bb34.photo.jpg",
+    "download_url": "https://pixabay.com/get/gcd69872faeafd89095ab68d2394402fc92340db3d810e0ea0c0087cfa357666768f6d7a905c0b8440590f7663789140b817ceebc290cc2cfccfad98979d226b4_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mother-board-electronics-computer-581597/",
+    "photographer": "Magnascan",
+    "photographer_url": "https://pixabay.com/users/Magnascan-653134/",
+    "alt": "mother board, electronics, computer, board, components, chips, technology, main board, digital, circuit, hardware, computing, processor, laptop, equipment, modern, microchip, integrated circuit, gray computer, gray technology, gray laptop, gray digital, gray board, electronics, electronics, electronics, chips, circuit, circuit, hardware, hardware, hardware, hardware, hardware, processor, processor, microchip, microchip, microchip, microchip, integrated circuit, integrated circuit, integrated circuit, integrated circuit",
+    "width": 3264,
+    "height": 2448,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Magnascan / Pixabay"
+  }
+}

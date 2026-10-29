@@ -1,0 +1,31 @@
+{
+  "id": "92e8ddbe58",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64513",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-10-29T14:46+09:00",
+  "headline": "삼성SDI, 3분기 영업이익 흑자전환",
+  "bullets": [
+    "3분기 매출 4조6856억원, 영업이익 4078억원",
+    "AI 데이터센터용 배터리백업유닛(BBU) 판매 급증",
+    "미국 SPE LFP ESS 라인 10월 양산 시작"
+  ],
+  "caption": "삼성SDI, 3분기 영업이익 흑자전환\n\n• 3분기 매출 4조6856억원, 영업이익 4078억원\n• AI 데이터센터용 배터리백업유닛(BBU) 판매 급증\n• 미국 SPE LFP ESS 라인 10월 양산 시작\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64513\n\n#반도체 #semiconductor #삼성SDI #배터리 #ESS #실적 #2차전지",
+  "photo_query": "battery energy storage",
+  "photo": {
+    "provider": "pixabay",
+    "id": "2476790",
+    "query": "battery energy storage",
+    "file": "92e8ddbe58.photo.jpg",
+    "download_url": "https://pixabay.com/get/g09907927de834fa55bddc9f86e76ac612a061f479b35d3f549a785453d8afe66c98ed85ead6e8a7d722c2cc0fe100156a607f082724d81033e10d26ca3ab33dd_1280.jpg",
+    "page_url": "https://pixabay.com/photos/data-center-engine-room-2476790/",
+    "photographer": "Akela999",
+    "photographer_url": "https://pixabay.com/users/Akela999-5825566/",
+    "alt": "data center, engine room, the battery pack, data center, data center, data center, data center, data center",
+    "width": 4096,
+    "height": 2160,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Akela999 / Pixabay"
+  }
+}

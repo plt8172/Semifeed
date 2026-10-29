@@ -1,0 +1,31 @@
+{
+  "id": "0daab2d34c",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64518",
+  "source": "디일렉",
+  "category": "AI·설계",
+  "published_at": "2026-10-29T13:35+09:00",
+  "headline": "AMD, 오라클에 서버 CPU·DPU 공급",
+  "bullets": [
+    "6세대 에픽 베니스 CPU, OCI 컴퓨트 E7 인스턴스 탑재",
+    "펜산도 DPU는 오라클 액셀러론 통합 NIC에 내장",
+    "네트워크·스토리지·보안 연산을 CPU에서 분리 처리"
+  ],
+  "caption": "AMD, 오라클에 서버 CPU·DPU 공급\n\n• 6세대 에픽 베니스 CPU, OCI 컴퓨트 E7 인스턴스 탑재\n• 펜산도 DPU는 오라클 액셀러론 통합 NIC에 내장\n• 네트워크·스토리지·보안 연산을 CPU에서 분리 처리\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64518\n\n#반도체 #semiconductor #AMD #CPU #DPU #데이터센터 #클라우드",
+  "photo_query": "data center server rack",
+  "photo": {
+    "provider": "pixabay",
+    "id": "2160321",
+    "query": "data center server rack",
+    "file": "0daab2d34c.photo.jpg",
+    "download_url": "https://pixabay.com/get/gcbb506e215f49fe27bacf5051e410ae10326aef839fa5a680b92b57b640327e4ff87cbcc1e3f840fba0ab3fba0672ef042981ec0bb2e128a340b5805151e6694_1280.jpg",
+    "page_url": "https://pixabay.com/photos/server-space-the-server-room-dark-2160321/",
+    "photographer": "Schäferle",
+    "photographer_url": "https://pixabay.com/users/Schäferle-3372715/",
+    "alt": "server, space, the server room, dark, led, shining, mystical, template, artificially, neon, gray, basement, cellar, fog, flash, hardware, computer, data, to process, coloured, garish, tube, cold, light, seem to be, work, processing, satellite, connection, clever, nerd, professional, cabinets, server cabinets, it, information, technology, server, server, server, server, server, data",
+    "width": 4000,
+    "height": 1400,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Schäferle / Pixabay"
+  }
+}
