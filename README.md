@@ -28,11 +28,11 @@ config/semifeed.json   RSS 목록, 수집 시간 창, Slack 채널·Instagram �
 scripts/fetch.py       RSS 수집, 72시간 필터, 중복 제거 → candidates.json
 scripts/mark_seen.py   카드로 만든 기사 링크를 state/seen.json에 기록
 scripts/photo.py       카드별 무료 스톡 사진(Pexels)을 받고 출처·라이선스를 카드 JSON에 기록
-scripts/render.py      카드 JSON + templates/card.html → JPEG
+scripts/render.py      카드 JSON + templates/layouts/<레이아웃>.html → JPEG
 scripts/slack_post.py  카드 이미지(raw URL) + 캡션 + [승인][반려] 버튼을 Slack에 전송
 state/seen.json        처리한 기사 링크 (승인 여부와 무관하게 생성 시점에 기록)
 cards/<날짜>/<id>.*    카드 이미지와 메타데이터 (Worker가 raw URL로 읽음)
-templates/card.html    카드 디자인 (DESIGN.md)
+templates/layouts/     카드 레이아웃 (photo 기본, classic 보존). templates/README.md
 fonts/                 Pretendard 가변 폰트 (SIL OFL 1.1)
 worker/                Cloudflare Worker: Slack 버튼 → Instagram 게시, 토큰 갱신 (worker/README.md)
 tests/                 스크립트 테스트와 샘플 피드·카드

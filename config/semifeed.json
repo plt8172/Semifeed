@@ -13,6 +13,7 @@
   ],
   "hours_window": 72,
   "max_items": 5,
+  "card_layout": "photo",
   "slack_channel_id": "C0CD6SFCFS8",
   "instagram_user_id": "17841433117660601",
   "instagram_api_version": "v25.0",
