@@ -1,0 +1,35 @@
+{
+  "id": "2cbaf6f67a",
+  "link": "https://www.tomshardware.com/pc-components/ai-demand-triggers-massive-pcb-shortage-for-pc-makers-as-order-books-full-until-2030-lead-times-stretch-to-30-months-as-material-costs-surge-12x",
+  "source": "Tom's Hardware",
+  "category": "전자·부품",
+  "published_at": "2026-10-30T00:25+09:00",
+  "headline": "AI 수요에 PC 회로기판 품귀, 납기 최대 30개월",
+  "bullets": [
+    "AI 업계가 생산능력 가져가며 PC용 기판 공급 부족",
+    "일부 기판 주문은 납기 30개월, 신규 주문은 2028년 말",
+    "기판 원료 동박적층판 값 7월 이후 12배 이상 올라"
+  ],
+  "caption": "AI 수요에 PC 회로기판 품귀, 납기 최대 30개월\n\nAI 수요가 이번에는 PC 회로기판(PCB)까지 끌어가고 있습니다. PCB는 부품을 꽂고 서로 전기로 잇는 녹색 판으로, 거의 모든 전자기기에 들어가는 기본 부품입니다. 니케이아시아 보도를 인용한 Tom's Hardware에 따르면, 한 미국 PC 업체 관계자는 내년 PC 출하가 줄 수 있는데도 PCB를 충분히 확보하기 어렵다고 말했습니다. AI 제품이 더 많이 주문하고 더 비싸게 값을 치르면서 기존 PCB 수요가 밀려난 것입니다. 한 PCB 업체는 일부 제품 납기가 두 배로 늘어 길게는 30개월이 걸린다고 했고, 다른 업체는 지금 주문하면 2028년 말에야 받을 수 있다고 했습니다. PCB의 원료인 동박적층판(CCL, 구리 박막을 붙인 절연판) 가격은 한 대만 PC 업체 기준 7월 이후 최소 12배 올랐고, 한 주요 CCL 공급사는 2030년까지 주문이 차고 있다고 밝혔습니다. 메모리, GPU, SSD에 이어 가장 기본적인 부품까지 AI 수요의 영향을 받고 있다는 뜻입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/ai-demand-triggers-massive-pcb-shortage-for-pc-makers-as-order-books-full-until-2030-lead-times-stretch-to-30-months-as-material-costs-surge-12x\n\n#반도체 #semiconductor #PCB #인쇄회로기판 #AI #공급망 #전자부품",
+  "photo_queries": [
+    "pcb manufacturing line",
+    "copper foil roll",
+    "bare circuit board stack"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4922413",
+    "query": "pcb manufacturing line",
+    "file": "2cbaf6f67a.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf112564b68b877190066808a9def078d0566ec2378d0021ac0de4e7d56a872704a988951e604d14a4cae71c9ea3ed8429343f0a2df97e325ad42ab37e11fb79e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/engineer-engineering-broadcast-4922413/",
+    "photographer": "This_is_Engineering",
+    "photographer_url": "https://pixabay.com/users/This_is_Engineering-11384528/",
+    "alt": "engineer, engineering, broadcast, broadcast engineer, workshop, tech, technology, solder, circuit board, electronics, tech, tech, tech, tech, tech, solder, solder, solder",
+    "width": 7952,
+    "height": 5304,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: This_is_Engineering / Pixabay"
+  }
+}

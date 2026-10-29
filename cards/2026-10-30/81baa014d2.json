@@ -1,0 +1,35 @@
+{
+  "id": "81baa014d2",
+  "link": "https://www.etnews.com/20261030000003",
+  "source": "전자신문",
+  "category": "기업·실적",
+  "published_at": "2026-10-30T07:17+09:00",
+  "headline": "인텔, 매출 21% 늘었는데 주가는 급락",
+  "bullets": [
+    "3분기 매출 165억1000만달러, 1년 전보다 21% 증가",
+    "조정 주당순이익 0.52달러로 시장 예상치 웃돌아",
+    "PC 수요 둔화로 4분기 전망 낮추자 주가 급락"
+  ],
+  "caption": "인텔, 매출 21% 늘었는데 주가는 급락\n\n미국 반도체 기업 인텔이 29일(현지시간) 발표한 2026년 3분기(7~9월) 실적은 숫자만 보면 좋았습니다. 매출은 165억1000만달러로 1년 전 137억달러보다 21% 늘었고, 조정 주당순이익(EPS)도 0.52달러로 시장이 예상한 0.40~0.41달러를 넘었습니다. 주당순이익은 회사가 번 이익을 주식 한 주당으로 나눈 값으로, 투자자들이 실적을 비교할 때 가장 많이 보는 지표입니다. 그런데 회사가 내놓은 4분기 전망이 시장 기대에 크게 못 미치면서 주가는 급락했습니다. 기사에 따르면 PC 수요 둔화가 전망을 낮춘 이유입니다. 주식시장이 지나간 성적보다 앞으로의 전망에 더 크게 반응한다는 점을 보여 주는 사례입니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261030000003\n\n#반도체 #semiconductor #인텔 #Intel #실적 #CPU #PC",
+  "photo_queries": [
+    "cpu processor socket",
+    "chip fabrication plant",
+    "desktop computer parts"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4418212",
+    "query": "cpu processor socket",
+    "file": "81baa014d2.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2bb358351a419c6ae5427d7f30e07b11ef70889cf74d1027824bc7d44e2360b94e5dece264f2cda19a9182cdea8f81f764442e87b8109cc7a9348f3e05fdebc5_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computer-motherboard-pc-4418212/",
+    "photographer": "Gray_Rhee",
+    "photographer_url": "https://pixabay.com/users/Gray_Rhee-11143452/",
+    "alt": "computer, motherboard, pc, mother board, main board, hardware, micro chip, processor, motherboard, motherboard, motherboard, mother board, mother board, mother board, mother board, mother board",
+    "width": 4752,
+    "height": 3168,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Gray_Rhee / Pixabay"
+  }
+}

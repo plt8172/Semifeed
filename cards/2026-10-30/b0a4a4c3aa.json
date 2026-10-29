@@ -1,0 +1,35 @@
+{
+  "id": "b0a4a4c3aa",
+  "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/dept-of-justice-reportedly-probes-nvidia-over-usd13-billion-hugging-face-ai-platform-acquisition-concerns-raised-over-competition-in-ai-and-pressure-on-customers",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-10-29T21:49+09:00",
+  "headline": "엔비디아 130억달러 AI 인수, 美법무부가 들여다본다",
+  "bullets": [
+    "로이터 \"美법무부, 엔비디아 허깅페이스 인수 문의\"",
+    "AI 모델 공유 플랫폼 장악이 경쟁 해칠지 따지는 것",
+    "엔비디아는 논평 거부, 인수 완료는 2027년 상반기 예상"
+  ],
+  "caption": "엔비디아 130억달러 AI 인수, 美법무부가 들여다본다\n\n엔비디아가 9월 약 130억달러에 사기로 한 허깅페이스(Hugging Face)를 두고 미국 법무부가 경쟁 문제를 살펴보고 있다고 로이터가 보도했습니다. 허깅페이스는 전 세계 개발자가 AI 모델을 올리고 시험해 보는 오픈소스 플랫폼으로, AI 업계의 공용 창고 같은 곳입니다. 법무부는 이 인수가 엔비디아 경쟁사들에게 어떤 영향을 줄지 문의한 것으로 알려졌습니다. AI 칩 시장을 이끄는 엔비디아가 모델이 유통되는 핵심 통로까지 갖게 되면, 자기 제품에 유리한 구조를 굳힐 수 있다는 우려입니다. 엔비디아는 이 보도에 대해 논평하지 않았고, 인수 뒤에도 여러 칩·AI 업체를 계속 지원하겠다는 입장입니다. 법무부는 앞서 엔비디아의 SchedMD 인수와, AI 칩 배정을 네트워크 장비 구매와 묶었는지 여부도 살펴본 바 있습니다. 허깅페이스는 2027년 상반기에 엔비디아에 정식 편입될 예정입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/artificial-intelligence/dept-of-justice-reportedly-probes-nvidia-over-usd13-billion-hugging-face-ai-platform-acquisition-concerns-raised-over-competition-in-ai-and-pressure-on-customers\n\n#반도체 #semiconductor #엔비디아 #NVIDIA #허깅페이스 #반독점 #AI칩",
+  "photo_queries": [
+    "graphics card gpu",
+    "courthouse columns",
+    "ai server hardware"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2852024",
+    "query": "graphics card gpu",
+    "file": "b0a4a4c3aa.photo.jpg",
+    "download_url": "https://pixabay.com/get/g6d76e7550e7f7f4dfbf79d599b47a88fb09ae68f4321dd0d4e066387974f7daa0fe0f9f37d13a703807b35a089e0209e8d1ecb23741a1e231afb0ad784990c7d_1280.jpg",
+    "page_url": "https://pixabay.com/photos/farm-mining-the-ethereum-market-2852024/",
+    "photographer": "rebcenter-moscow",
+    "photographer_url": "https://pixabay.com/users/rebcenter-moscow-6351207/",
+    "alt": "farm, mining, the ethereum, market, digital, blockchain, currency, cryptocurrency, bitcoin, coin, business, exchange, finance, crypto, financial, symbol, payment, network, bit, cryptography, electronic, virtual, web, cash, trade, technology, money, bank, graphics card, hardware, nvida, free image of bitcoin, the crypt, the internet, economy, bit coin, mining, mining, blockchain, blockchain, cryptocurrency, cryptocurrency, cryptocurrency, bitcoin, bitcoin, crypto, crypto, crypto, crypto, crypto, graphics card",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: rebcenter-moscow / Pixabay"
+  }
+}
