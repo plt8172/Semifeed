@@ -1,0 +1,35 @@
+{
+  "id": "0aefa2ff88",
+  "link": "https://www.tomshardware.com/pc-components/cpus/intel-confirms-nova-lake-will-use-advanced-18a-p-node-more-details-at-ces-company-says-its-taking-panther-lake-capacity-offline-to-build-more-granite-rapids-data-center-cpus",
+  "source": "Tom's Hardware",
+  "category": "파운드리",
+  "published_at": "2026-10-30T06:55+09:00",
+  "headline": "인텔, 노트북 칩 줄이고 서버 칩 더 만든다",
+  "bullets": [
+    "차세대 데스크톱 CPU 노바레이크, 18A-P 공정 첫 적용",
+    "팬서레이크 생산능력 일부를 서버 CPU 생산으로 돌려",
+    "립부 탄 CEO가 3분기 실적 발표에서 확인"
+  ],
+  "caption": "인텔, 노트북 칩 줄이고 서버 칩 더 만든다\n\n인텔이 노트북용 칩 생산을 일부 줄이고 데이터센터용 서버 칩을 더 만들기로 했습니다. Tom's Hardware에 따르면 인텔은 3분기 실적 발표에서 노트북용 프로세서 팬서레이크의 생산능력 일부를 내려 서버용 CPU 그래닛래피즈를 더 생산하겠다고 밝혔습니다. 같은 공장 설비를 더 수요가 큰 쪽에 쓰겠다는 뜻입니다. 립부 탄 CEO는 또 차세대 데스크톱 프로세서 노바레이크가 인텔의 개선된 18A-P 공정을 쓰는 첫 PC용 제품이 될 것이라고 확인했습니다. 공정은 칩 회로를 새기는 제조 기술 세대를 말하며, 18A는 인텔이 자체 공장에서 가장 앞세우는 최신 공정입니다. 노바레이크의 자세한 내용은 내년 CES에서 공개될 예정입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/cpus/intel-confirms-nova-lake-will-use-advanced-18a-p-node-more-details-at-ces-company-says-its-taking-panther-lake-capacity-offline-to-build-more-granite-rapids-data-center-cpus\n\n#반도체 #semiconductor #인텔 #CPU #18A #서버 #데이터센터 #파운드리",
+  "photo_queries": [
+    "cpu chip pins",
+    "server motherboard closeup",
+    "laptop keyboard closeup"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3007664",
+    "query": "cpu chip pins",
+    "file": "0aefa2ff88.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc99eae2ed2d7c2e01ebca067e4cfe548a92ffc199cdfe3f65065da2d1e53057d83c62519ef645a5eda6a5a7e3a6d9792a97bb986edba41125d89a882d7b89646_1280.jpg",
+    "page_url": "https://pixabay.com/photos/electronics-integrated-circuit-3007664/",
+    "photographer": "brookhaven",
+    "photographer_url": "https://pixabay.com/users/brookhaven-7126425/",
+    "alt": "electronics, integrated circuit, technology, chip, computer, processor, microchip, component, semiconductor, macro, blue computer, blue technology, blue laptop, processor, semiconductor, semiconductor, semiconductor, semiconductor, semiconductor",
+    "width": 3000,
+    "height": 1903,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: brookhaven / Pixabay"
+  }
+}

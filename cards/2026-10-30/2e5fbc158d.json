@@ -1,0 +1,35 @@
+{
+  "id": "2e5fbc158d",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64592",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-10-30T11:05+09:00",
+  "headline": "HBM 장비 한미반도체, 석 달 영업이익률 50%",
+  "bullets": [
+    "3분기 매출 1810억원, 영업이익 908억원",
+    "HBM용 TC 본더 수요로 1년 전보다 이익 33.9% 늘어",
+    "전분기보단 이익 30% 줄어, 일부 납품이 4분기로 밀려"
+  ],
+  "caption": "HBM 장비 한미반도체, 석 달 영업이익률 50%\n\n한미반도체가 올해 3분기 매출 1810억원, 영업이익 908억원을 거뒀다고 밝혔습니다. 1년 전보다 매출은 8.9%, 영업이익은 33.9% 늘었고, 매출에서 이익이 차지하는 비율인 영업이익률은 50.2%에 이릅니다. 실적을 이끈 것은 HBM용 열압착(TC) 본더입니다. HBM은 메모리 칩을 여러 층 쌓아 AI 칩 옆에 붙이는 고성능 메모리이고, TC 본더는 이 칩들을 열과 압력으로 한 층씩 붙이는 장비입니다. 다만 직전 분기와 비교하면 매출은 27.9%, 영업이익은 30.3% 줄었습니다. 회사는 3분기에 납품할 예정이던 일부 장비가 4분기로 밀렸다며 4분기 실적이 더 좋을 것이고, 올해 연간 매출과 영업이익은 3년 연속 역대 최대가 될 것이라고 전망했습니다. 마이크론과 SK하이닉스 등 고객사가 미국에 HBM 공장을 짓고 있어, 한미반도체도 이달 미국 법인을 세웠습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64592\n\n#반도체 #semiconductor #HBM #TC본더 #한미반도체 #반도체장비 #실적",
+  "photo_queries": [
+    "semiconductor chip bonding",
+    "wire bonding machine",
+    "electronics factory equipment"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "8141642",
+    "query": "semiconductor chip bonding",
+    "file": "2e5fbc158d.photo.jpg",
+    "download_url": "https://pixabay.com/get/gbb4e38c97e911ab66f9bb869eefb35b44c50cd77e29df594ff4d50407dc7cc55f8e04d5428faf6186af887f79163c9361a491cbfbbb449ef9a773150e6b67d11_1280.jpg",
+    "page_url": "https://pixabay.com/photos/memory-ram-computer-technology-8141642/",
+    "photographer": "cliffsmith23",
+    "photographer_url": "https://pixabay.com/users/cliffsmith23-38386472/",
+    "alt": "memory, ram, computer, technology, electronics, component, laptop, digital, ram, ram, ram, ram, computer, computer, computer, computer, computer, laptop",
+    "width": 3000,
+    "height": 2000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: cliffsmith23 / Pixabay"
+  }
+}

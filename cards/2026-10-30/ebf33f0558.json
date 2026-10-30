@@ -1,0 +1,35 @@
+{
+  "id": "ebf33f0558",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64585",
+  "source": "디일렉",
+  "category": "정책·공급망",
+  "published_at": "2026-10-30T11:28+09:00",
+  "headline": "LS전선, 중국 안 거치는 희토류 자석 공장 짓는다",
+  "bullets": [
+    "자회사 코리아모션웍스, 구미에 3500억원 공장 협약",
+    "2028년 하반기 전기차·로봇용 네오디뮴 자석 양산",
+    "연 1000톤 이상, 국내 수요 6000톤의 17% 규모"
+  ],
+  "caption": "LS전선, 중국 안 거치는 희토류 자석 공장 짓는다\n\nLS전선이 경상북도 구미에 희토류 영구자석 공장을 짓습니다. 희토류 자석 자회사 코리아모션웍스가 경상북도, 구미시와 3500억원 규모의 투자 협약을 맺었습니다. 희토류 영구자석은 아주 강한 자력을 내는 자석으로, 전기차와 하이브리드차의 구동 모터, 풍력발전기, 로봇의 관절에 들어갑니다. 지금은 희토류 정제와 영구자석 생산 대부분을 중국이 맡고 있어, 중국 공급이 막히면 이런 산업이 함께 흔들릴 수 있습니다. 공장은 내년 상반기 착공해 2028년 하반기에 로봇·전기차용 네오디뮴 자석을 양산하고, 이후 방산용 사마륨코발트 자석으로 넓힙니다. 연간 생산능력은 1000톤 이상으로 국내 수요 6000톤의 17%에 해당합니다. LS전선은 호주 라이너스의 원료, 베트남의 금속 생산, 한국·미국의 자석 제조를 이어 원료부터 완제품까지 중국을 거치지 않는 공급망을 만든다는 계획입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64585\n\n#반도체 #semiconductor #희토류 #영구자석 #네오디뮴 #공급망 #전기차 #LS전선",
+  "photo_queries": [
+    "neodymium magnets",
+    "electric motor rotor",
+    "wind turbine generator"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6114651",
+    "query": "neodymium magnets",
+    "file": "ebf33f0558.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf9f399eecdd5be0edb99a512bd7d3345b7d17108a8cc03e7fde79cb46c22d6fed52c9db35c8af79f8e676a927d88ef04fd9140a6ccb56467011895927922b45e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/magnet-horseshoe-pair-alnico-6114651/",
+    "photographer": "matthewsjackie",
+    "photographer_url": "https://pixabay.com/users/matthewsjackie-20584384/",
+    "alt": "magnet, horseshoe, pair, alnico, red magnet, metal, stuck, force, side by side, reflection, magnet, magnet, magnet, magnet, magnet",
+    "width": 6147,
+    "height": 4414,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: matthewsjackie / Pixabay"
+  }
+}
