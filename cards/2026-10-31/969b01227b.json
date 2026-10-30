@@ -1,0 +1,35 @@
+{
+  "id": "969b01227b",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64626",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-10-30T17:38+09:00",
+  "headline": "주문 밀린 日무라타, 전자기기 필수 부품에 1조엔 투자",
+  "bullets": [
+    "무라타, 5년간 MLCC에 약 1조엔(약 8조5000억원) 투자",
+    "오카야마 공장 추가해 일본 3개 거점, 태국·필리핀도 증설",
+    "AI 서버용 수요로 주문 일부 거절…2030년 매출 2배 전망"
+  ],
+  "caption": "주문 밀린 日무라타, 전자기기 필수 부품에 1조엔 투자\n\n일본 무라타가 2026~2030회계연도 5년 동안 적층세라믹콘덴서(MLCC)에 약 1조엔(약 8조5000억원)을 투자해 생산능력을 늘리겠다고 밝혔습니다. MLCC는 전기를 잠깐 저장했다가 내보내며 전압을 안정시키는 작은 부품으로, 스마트폰·PC·서버 등 거의 모든 전자기기에 들어갑니다. 무라타는 일본 생산 거점을 후쿠이·이즈모에 오카야마를 더한 3곳으로 늘리고, 오카야마에만 약 1500억엔을 들여 2028년 말 MLCC 생산동을 준공할 계획입니다. 태국과 필리핀 자회사도 생산 설비를 넓힙니다. 나카지마 노리오 사장은 앞서 AI 서버용 MLCC 수요가 늘어 일부 고객 주문을 거절해야 하는 상황이라고 말했습니다. 무라타는 이번 증설로 2030회계연도 MLCC 매출이 2025회계연도보다 두 배 이상 늘 것으로 내다봤습니다. AI 서버 부품 부족이 반도체 칩을 넘어 기본 전자부품까지 번지고 있다는 뜻입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64626\n\n#반도체 #semiconductor #MLCC #무라타 #전자부품 #AI서버 #적층세라믹콘덴서",
+  "photo_queries": [
+    "electronic components macro",
+    "smd resistors reel",
+    "circuit board soldering"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7897827",
+    "query": "electronic components macro",
+    "file": "969b01227b.photo.jpg",
+    "download_url": "https://pixabay.com/get/g17ecaf6f213f3546dfb89f05446fc0b75df1038e8475f10ebcad4c98e7ccf7da3f74c0e2604a9e84f1ac9256df9955d81ca9fefcca331efb3cb7afe1f8f5e934_1280.jpg",
+    "page_url": "https://pixabay.com/photos/soldering-electronics-circuit-chip-7897827/",
+    "photographer": "theaflowers",
+    "photographer_url": "https://pixabay.com/users/theaflowers-35041082/",
+    "alt": "soldering, electronics, circuit, chip, tool, motherboard, black, gold, engineering, industrial, manufacturing, soldering, electronics, electronics, electronics, electronics, electronics, chip, engineering, engineering, engineering, engineering, manufacturing, manufacturing, manufacturing",
+    "width": 5334,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: theaflowers / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "2db94c41f0",
+  "link": "https://www.tomshardware.com/tech-industry/photonics/psiquantum-turns-its-photonics-know-how-into-an-optical-switch-for-supercharging-ai-data-center-gpu-networks-8x8-lab-prototype-loses-less-light-than-rivals-with-plans-to-develop-larger-devices",
+  "source": "Tom's Hardware",
+  "category": "전자·부품",
+  "published_at": "2026-10-30T23:30+09:00",
+  "headline": "양자컴퓨터 회사, 빛 덜 새는 AI 데이터센터 스위치 공개",
+  "bullets": [
+    "사이퀀텀, 실리콘 칩으로 만든 8×8 광스위치 시제품 공개",
+    "실험실 빛 손실 1.2dB(약 4분의 1)로 허용치 3dB보다 낮아",
+    "GPU 연결 병목 완화 목적, 포트 수는 경쟁품보다 적어"
+  ],
+  "caption": "양자컴퓨터 회사, 빛 덜 새는 AI 데이터센터 스위치 공개\n\n양자컴퓨터 회사 사이퀀텀(PsiQuantum)이 양자컴퓨터용으로 개발한 실리콘 광학 기술을 활용해 AI 데이터센터용 광스위치 시제품을 내놨습니다. 광스위치는 광섬유로 들어온 빛 신호를 전기로 바꾸지 않고 그대로 다른 광섬유로 넘겨주는 장치로, 변환 과정이 없어 전력과 지연을 줄일 수 있습니다. 대신 스위치를 지날 때 빛이 얼마나 새는지가 핵심인데, 데이터센터 광학 장비는 보통 빛의 절반(3dB) 손실까지 허용합니다. 사이퀀텀 시제품은 실험실에서 1.2dB, 즉 빛의 약 4분의 1만 잃었고 증폭기도 쓰지 않았습니다. 다만 입출력이 8개씩으로, 32~300개인 경쟁 제품보다 작아 회사는 더 큰 제품을 개발 중이라고 밝혔습니다. AI 클러스터가 커질수록 GPU끼리 데이터를 주고받는 일이 병목이 되고 있어, 빛으로 연결하는 기술에 관심이 커지고 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/photonics/psiquantum-turns-its-photonics-know-how-into-an-optical-switch-for-supercharging-ai-data-center-gpu-networks-8x8-lab-prototype-loses-less-light-than-rivals-with-plans-to-develop-larger-devices\n\n#반도체 #semiconductor #광스위치 #실리콘포토닉스 #데이터센터 #AI인프라 #광통신",
+  "photo_queries": [
+    "fiber optic cables",
+    "laser light beam",
+    "network switch ports"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4814456",
+    "query": "fiber optic cables",
+    "file": "2db94c41f0.photo.jpg",
+    "download_url": "https://pixabay.com/get/g6e708701f48e9d52efee84372a12a29e5172b2afb3d313766a677326f2f98628ff8fa81ee65c6d77ce0f664839b1a417bc49bf0bdbaea4bc0e7a54aa99ad9453_1280.jpg",
+    "page_url": "https://pixabay.com/photos/fiber-cable-wire-connection-4814456/",
+    "photographer": "Lucent_Designs_dinoson20",
+    "photographer_url": "https://pixabay.com/users/Lucent_Designs_dinoson20-1455439/",
+    "alt": "fiber, cable, wire, connection, network, cord, twine, internet, technology, tech, ethernet, string, strong, thread, communication, broadband, networking, twisted, network, network, internet, internet, technology, technology, tech, tech, tech, tech, tech, broadband",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Lucent_Designs_dinoson20 / Pixabay"
+  }
+}

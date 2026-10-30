@@ -1,0 +1,35 @@
+{
+  "id": "a4ec1744c9",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64631",
+  "source": "디일렉",
+  "category": "메모리",
+  "published_at": "2026-10-30T18:03+09:00",
+  "headline": "내년 메모리 매출 두 배로…반도체 시장 62% 차지 전망",
+  "bullets": [
+    "테크인사이츠, 내년 메모리 매출 1조6000억달러 이상 전망",
+    "올해 7400억달러의 두 배 넘어, 전체 반도체의 약 62%",
+    "AI 투자로 HBM·D램·낸드 부족 계속, 다음 병목은 낸드"
+  ],
+  "caption": "내년 메모리 매출 두 배로…반도체 시장 62% 차지 전망\n\n시장조사업체 테크인사이츠가 '2027년 전망 보고서'에서 내년 세계 반도체 시장이 2조6000억달러(약 3500조원)를 넘고, 그중 약 62%를 메모리가 차지할 것으로 내다봤습니다. 메모리 매출은 올해 7400억달러에서 내년 1조6000억달러 이상으로 두 배 넘게 늘 것이라는 전망입니다. 이유는 AI 인프라 투자입니다. AI 칩 옆에 붙는 고대역폭메모리(HBM), 서버용 D램, 데이터를 오래 저장하는 낸드플래시가 모두 공급 부족으로 값이 크게 오르고 있습니다. 테크인사이츠는 AI가 낸드로 만드는 저장장치(SSD) 수요를 키우면서 낸드가 다음 병목이 될 것이라고 봤습니다. 또 기업들이 내년에는 어떤 기술을 개발할지뿐 아니라 어떤 메모리를 확보할 수 있는지도 고민해야 하며, 이것이 칩 설계와 시설 투자는 물론 소비자 제품에까지 영향을 줄 것이라고 밝혔습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64631\n\n#반도체 #semiconductor #메모리 #HBM #D램 #낸드 #반도체전망",
+  "photo_queries": [
+    "dram chips circuit board",
+    "ssd circuit board",
+    "server room aisle"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6979572",
+    "query": "dram chips circuit board",
+    "file": "a4ec1744c9.photo.jpg",
+    "download_url": "https://pixabay.com/get/g227e4f477689fc83bd32215669b7b3125181871b145bcf0339afba7f50e600376eaa8e0a726584fb42c93dc58a2c27b86741ac996feb7879063efb1579cc628e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/printed-circuit-board-circuit-board-6979572/",
+    "photographer": "analogicus",
+    "photographer_url": "https://pixabay.com/users/analogicus-8164369/",
+    "alt": "printed circuit board, circuit board, electronics, circuit, computer chip, microchip",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: analogicus / Pixabay"
+  }
+}

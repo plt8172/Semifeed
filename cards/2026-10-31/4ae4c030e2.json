@@ -1,0 +1,35 @@
+{
+  "id": "4ae4c030e2",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-10-31T01:28+09:00",
+  "headline": "오픈AI 올트먼 \"개인 PC에 D램 두는 건 끔찍한 일\"",
+  "bullets": [
+    "올트먼, 인터뷰서 \"PC 속 D램은 5%만 쓰인다\"고 지적",
+    "공급 부족한 D램은 클라우드에서 최대한 써야 한다고 주장",
+    "외신은 오픈AI 클라우드 사업 모델 옹호로 해석"
+  ],
+  "caption": "오픈AI 올트먼 \"개인 PC에 D램 두는 건 끔찍한 일\"\n\n오픈AI CEO 샘 올트먼이 유튜브 채널 인터뷰에서 사람들이 각자 PC에 D램을 두는 것은 '꽤 끔찍한 일'이라고 말했습니다. D램은 컴퓨터가 작업 중인 데이터를 잠시 올려 두는 메모리로, 지금 AI 데이터센터 수요 때문에 공급이 부족하고 값이 오르고 있습니다. 올트먼은 세계적으로 한정된 D램이 개인 컴퓨터에 들어가 5% 정도의 시간만 쓰이는 것은 자원 배분 면에서 비효율적이며, 공급이 빠듯한 상황에서는 클라우드에서 최대한 활용해야 한다고 주장했습니다. 이는 집에 있는 PC로 공개 AI 모델을 직접 돌리는 '로컬 AI'에 대한 질문에서 나온 말입니다. 톰스하드웨어는 오픈AI가 데이터센터에서 돌리는 유료 모델로 돈을 버는 회사인 만큼, 결국 자사 사업 모델을 옹호한 발언이라고 짚었습니다. 개인이 하드웨어를 소유하지 못하고 빌려 쓰게 될 수 있다는 우려도 나온다고 덧붙였습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization\n\n#반도체 #semiconductor #D램 #메모리 #오픈AI #로컬AI #데이터센터",
+  "photo_queries": [
+    "desktop pc ram",
+    "computer motherboard slots",
+    "gaming pc interior"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "428539",
+    "query": "desktop pc ram",
+    "file": "4ae4c030e2.photo.jpg",
+    "download_url": "https://pixabay.com/get/gb8e333d5654e875f35ac9f88805312c60d94cb336802d0976f6f5aa3f03ba40a3debbb922c1dc40e3476e175f760ade303ab5ad435c2f8ab97c2406749fef495_1280.jpg",
+    "page_url": "https://pixabay.com/photos/service-computers-repair-428539/",
+    "photographer": "jarmoluk",
+    "photographer_url": "https://pixabay.com/users/jarmoluk-143740/",
+    "alt": "service, computers, repair, electronics, computer, hardware, computer specialist, components, technology, equipment, service, repair, repair, repair, repair, hardware, hardware, hardware, hardware, hardware",
+    "width": 2000,
+    "height": 1324,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: jarmoluk / Pixabay"
+  }
+}
