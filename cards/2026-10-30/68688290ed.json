@@ -1,0 +1,35 @@
+{
+  "id": "68688290ed",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64635",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-10-30T20:18+09:00",
+  "headline": "日 메모리 키옥시아, 석 달 영업이익 2222% 늘었다",
+  "bullets": [
+    "7~9월 매출 2조4800억엔, 영업이익 1조9947억엔 기록",
+    "매출 453%, 영업이익 2222% 늘며 분기 최대 경신",
+    "AI 데이터센터 수요로 낸드 값 올라 이익률 80% 넘어"
+  ],
+  "caption": "日 메모리 키옥시아, 석 달 영업이익 2222% 늘었다\n\n일본 메모리 반도체 업체 키옥시아가 분기 기준 역대 최대 실적을 냈습니다. 디일렉에 따르면 키옥시아는 7~9월 매출 2조4800억엔(약 21조400억원), 영업이익 1조9947억엔(약 16조9300억원)을 기록했고, 1년 전보다 매출은 453.2%, 영업이익은 2222% 늘었습니다. 키옥시아는 스마트폰·SSD 같은 저장장치에 들어가는 낸드플래시를 주로 만드는 회사입니다. 낸드는 전원이 꺼져도 데이터가 남는 메모리로, AI 데이터센터가 대량의 데이터를 저장하면서 수요가 크게 늘었습니다. 낸드 가격이 오르면서 매출 대비 영업이익 비율이 80%를 넘었는데, 디일렉은 이 수치가 삼성전자와 SK하이닉스를 앞선다고 전했습니다. 메모리 호황의 혜택이 D램뿐 아니라 저장장치용 메모리 업체에도 크게 돌아가고 있다는 뜻입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64635\n\n#반도체 #semiconductor #키옥시아 #낸드 #메모리 #SSD #AI데이터센터 #실적",
+  "photo_queries": [
+    "solid state drive",
+    "sd memory card",
+    "server hard drives"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6158470",
+    "query": "solid state drive",
+    "file": "68688290ed.photo.jpg",
+    "download_url": "https://pixabay.com/get/ge5cbbb8bf84543e680333743a973fff2f78ac5ce749fb47982d3576682a2fece818a9255e43204c563afa56148b97a1ae92826cdd6279eae4c13db27bd985c1c_1280.jpg",
+    "page_url": "https://pixabay.com/photos/solid-state-drive-storage-device-6158470/",
+    "photographer": "manseok_Kim",
+    "photographer_url": "https://pixabay.com/users/manseok_Kim-1005494/",
+    "alt": "solid state drive, storage device, computer, ssd, memory card, electronic components, storage, semiconductor, integrated circuit, ssd, ssd, ssd, ssd, ssd",
+    "width": 5472,
+    "height": 3648,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: manseok_Kim / Pixabay"
+  }
+}

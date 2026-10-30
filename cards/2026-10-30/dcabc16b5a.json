@@ -1,0 +1,35 @@
+{
+  "id": "dcabc16b5a",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64634",
+  "source": "디일렉",
+  "category": "메모리",
+  "published_at": "2026-10-30T20:20+09:00",
+  "headline": "PC용 메모리 값, 19개월 연속 올라 역대 최고",
+  "bullets": [
+    "PC용 DDR4 8Gb 10월 평균가 27.5달러, 전월비 5.77%↑",
+    "업체들이 HBM 등 서버용 생산 늘려 범용 공급 감소",
+    "반면 범용 낸드 가격은 21개월 만에 상승 멈춰"
+  ],
+  "caption": "PC용 메모리 값, 19개월 연속 올라 역대 최고\n\nPC에 들어가는 범용 D램 가격이 또 역대 최고치를 경신했습니다. 시장조사업체 D램익스체인지에 따르면 PC용 D램 DDR4 8Gb의 10월 평균 가격은 27.5달러로 9월(26달러)보다 5.77% 올라 19개월 연속 상승했습니다. D램은 컴퓨터가 작업 중인 데이터를 잠시 올려 두는 메모리이고, HBM은 D램을 여러 층 쌓아 AI 칩 옆에 붙이는 고성능 메모리입니다. 메모리 업체들이 돈이 되는 HBM과 서버용 메모리 생산을 늘리면서 일반 PC용 D램 물량이 줄어든 것이 원인입니다. 트렌드포스는 내년 한국 D램 업체들의 PC용 D램 생산량이 올해보다 20~40% 줄어들 것으로 내다봤습니다. 반면 저장장치용 메모리인 범용 낸드 가격은 21개월 만에 상승세를 멈췄습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64634\n\n#반도체 #semiconductor #D램 #DDR4 #메모리 #HBM #낸드 #메모리가격",
+  "photo_queries": [
+    "ram memory module",
+    "desktop pc interior",
+    "computer keyboard mouse"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "20072",
+    "query": "ram memory module",
+    "file": "dcabc16b5a.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc1bf09a8a6a082aa2abcee9fc0c09a60bbe238869ac43fbf53f558a808af77c0fecc3a074fb3baacbbbf2150197dffac_1280.jpg",
+    "page_url": "https://pixabay.com/photos/chips-card-chip-computer-data-20072/",
+    "photographer": "PublicDomainPictures",
+    "photographer_url": "https://pixabay.com/users/PublicDomainPictures-14/",
+    "alt": "chips, card, chip, computer, data, digital, electrical, electronic, green, hardware, macro, module, part, ram, random, access, memory, tech, technology, ram, ram, ram, ram, ram",
+    "width": 5616,
+    "height": 3744,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: PublicDomainPictures / Pixabay"
+  }
+}
