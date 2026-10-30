@@ -1,0 +1,45 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../../../kit/kit.css">
+<style>
+ .bit{font-size:40px;font-weight:800;fill:var(--b)}
+ .cnt{font-size:96px;font-weight:900;text-align:center;position:absolute;width:100%;top:1020px}
+</style>
+<div id="stage"><div class="safe">
+  <div id="head" class="h2" style="position:absolute;top:30px;width:100%">목소리 → 숫자</div>
+  <svg width="870" height="820" style="position:absolute;top:200px" viewBox="0 0 870 820">
+    <g id="mic"><rect x="25" y="230" width="90" height="150" rx="45" fill="none" stroke="var(--fg)" stroke-width="7"/>
+      <line x1="70" y1="380" x2="70" y2="440" stroke="var(--fg)" stroke-width="7"/></g>
+    <path id="wave" fill="none" stroke="var(--a)" stroke-width="6" stroke-linecap="round"/>
+    <line x1="150" y1="305" x2="850" y2="305" stroke="var(--dim)" stroke-width="3"/>
+    <g id="dots"></g>
+    <g id="code"></g>
+    <text id="note" x="500" y="800" text-anchor="middle" font-size="38" font-weight="700" fill="var(--muted)">잰 값 하나 = 0과 1 여덟 칸 (8비트)</text>
+  </svg>
+  <div id="cnt" class="cnt"><span id="num">0</span><span style="font-size:52px;color:var(--muted)"> 칸 / 1초</span></div>
+</div></div>
+<script src="../../../kit/kit.js"></script>
+<script>
+const ns = "http://www.w3.org/2000/svg", wave = t => Math.sin(t * 0.045) * 0.7 + Math.sin(t * 0.11 + 1) * 0.3;
+const xs = []; for (let x = 150; x <= 850; x += 4) xs.push(x);
+const dots = [], code = [];
+for (let i = 0; i < 16; i++) {
+  const x = 170 + i * 43, c = document.createElementNS(ns, "circle"); c.setAttribute("r", 11); c.setAttribute("fill", "var(--b)");
+  c.setAttribute("cx", x); c.setAttribute("cy", 305 - wave(x) * 190); Reel.$("#dots").appendChild(c); dots.push(c);
+}
+for (let r = 0; r < 4; r++) { const tx = document.createElementNS(ns, "text"); tx.setAttribute("class", "bit");
+  tx.setAttribute("x", 500); tx.setAttribute("y", 560 + r * 52); tx.setAttribute("text-anchor", "middle"); Reel.$("#code").appendChild(tx); code.push(tx); }
+const bin = v => (Math.round((v + 1) * 127.5) & 255).toString(2).padStart(8, "0").split("").join(" ");
+Reel.scene((t, R) => {
+  R.set("#head", { o: R.ramp(t, 0, .3) });
+  const sh = R.ramp(t, 0, 1.2);
+  Reel.$("#wave").setAttribute("d", xs.filter(x => x < 150 + 700 * sh).map((x, i) => (i ? "L" : "M") + x + "," + (305 - wave(x + t * 60 * (1 - R.ramp(t, R.at(.25), R.at(.3)))) * 190)).join(""));
+  const sampling = R.ramp(t, R.at(.25), R.at(.5));
+  dots.forEach((d, i) => d.setAttribute("opacity", i / 16 < sampling ? 1 : 0));
+  const shown = Math.floor(16 * sampling);
+  code.forEach((c, r) => { const k = shown - 4 + r; c.textContent = k >= 0 ? bin(wave(170 + k * 43)) : ""; c.setAttribute("opacity", R.ramp(t, R.at(.5), R.at(.55))); });
+  Reel.$("#note").setAttribute("opacity", R.ramp(t, R.at(.55), R.at(.62)));
+  const n = Math.round(64000 * R.ramp(t, R.at(.78), R.at(.95)));
+  Reel.$("#num").textContent = n.toLocaleString("en-US");
+  R.set("#cnt", { o: R.ramp(t, R.at(.76), R.at(.8)), s: 0.9 + 0.1 * R.pop(t, R.at(.76)) });
+});
+</script>

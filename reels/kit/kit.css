@@ -1,0 +1,33 @@
+/* 릴스 장면 공통 스타일: 1080×1920 고정 캔버스, 다크 기본, 자막 레이어.
+   Instagram UI가 덮는 영역: 위 ~220px, 아래 ~380px, 오른쪽 ~140px. 중요한 내용은 safe 영역 안에 둔다. */
+@font-face {
+  font-family: "Pretendard";
+  src: url("../../fonts/PretendardVariable.woff2") format("woff2-variations");
+  font-weight: 100 900;
+}
+:root {
+  --bg: #0a0b12;
+  --fg: #f4f5f8;
+  --muted: #8d93a6;
+  --dim: #232634;
+  --a: #3ee0d0;   /* 주 강조 */
+  --b: #ffcc33;   /* 보조 강조 */
+  --c: #ff5a8c;   /* 경고·대비 */
+  --font: "Pretendard", "Noto Sans CJK KR", sans-serif;
+  --safe-top: 220px;
+  --safe-bottom: 380px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--bg); color: var(--fg);
+  font-family: var(--font); word-break: keep-all; }
+#stage { position: absolute; inset: 0; }
+.safe { position: absolute; left: 70px; right: 140px; top: var(--safe-top); bottom: var(--safe-bottom); }
+.h1 { font-size: 96px; font-weight: 900; line-height: 1.15; letter-spacing: -0.02em; text-align: center; }
+.h2 { font-size: 64px; font-weight: 800; line-height: 1.25; text-align: center; }
+.body { font-size: 44px; font-weight: 600; line-height: 1.45; color: var(--muted); text-align: center; }
+.label { font-size: 34px; font-weight: 700; letter-spacing: 0.04em; color: var(--muted); }
+.reel-caption { position: absolute; left: 70px; right: 140px; bottom: 420px; display: flex; justify-content: center; }
+.reel-caption span { background: var(--fg); color: var(--bg); font-size: 50px; font-weight: 800; line-height: 1.3;
+  padding: 10px 26px; border-radius: 18px; text-align: center; max-width: 100%; }
+.reel-caption span:empty { display: none; }
+.reel-progress { position: absolute; left: 0; top: 0; height: 8px; background: var(--a); }

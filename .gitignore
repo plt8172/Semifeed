@@ -10,3 +10,6 @@ cards/**/*.photo.jpg
 contact_sheet.jpg
 
 cards/**/*.candidates/
+reels/.models/
+reels/episodes/*/build/
+reels/episodes/*/out/

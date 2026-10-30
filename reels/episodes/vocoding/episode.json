@@ -1,0 +1,55 @@
+{
+  "title": "전화 속 목소리는 진짜일까? (보코딩)",
+  "fps": 30,
+  "voice": {"backend": "auto", "openai_voice": "coral"},
+  "bgm": {"type": "pulse", "bpm": 96, "gain": 0.1},
+  "scenes": [
+    {
+      "id": "hook",
+      "html": "scenes/hook.html",
+      "narration": "전화로 듣는 상대방 목소리. 사실은 상대 목소리가 아니라, 내 폰이 다시 만든 소리예요.",
+      "sfx": [{"type": "hit", "at": "vo:0.45"}]
+    },
+    {
+      "id": "bits",
+      "html": "scenes/bits.html",
+      "narration": "목소리를 멀리 보내려면 숫자로 바꿔야 해요. 마이크의 떨림을 일 초에 팔천 번 재고, 잰 값 하나를 0과 1, 여덟 칸으로 적어요. 일 초에 육만 사천 칸이에요.",
+      "caption": "목소리를 멀리 보내려면, 숫자로 바꿔야 해요. 마이크 떨림을 1초에 8,000번 재고, 잰 값 하나를, 0과 1 여덟 칸으로 적어요. 1초에 64,000칸이에요.",
+      "sfx": [{"type": "ding", "at": "vo:0.9"}]
+    },
+    {
+      "id": "slice",
+      "html": "scenes/slice.html",
+      "narration": "그런데 아 소리를 확대해 보면, 같은 모양이 계속 반복돼요. 그래서 오십분의 일 초씩 잘라서, 조각마다 짧게 설명할 수 있어요.",
+      "caption": "그런데 '아' 소리를 확대해 보면, 같은 모양이 계속 반복돼요. 그래서 1/50초씩 잘라서, 조각마다 짧게 설명해요.",
+      "sfx": [{"type": "tick", "at": "vo:0.62"}, {"type": "tick", "at": "vo:0.66"}, {"type": "tick", "at": "vo:0.70"}, {"type": "tick", "at": "vo:0.74"}]
+    },
+    {
+      "id": "recipe",
+      "html": "scenes/recipe.html",
+      "narration": "목소리는 악기 같아요. 성대는 떨리는 줄이라, 빠르기와 세기가 있고, 입과 목은 울림통이라, 아와 이가 달라져요. 조각마다 이 세 가지만 숫자로 보내요.",
+      "caption": "목소리는 악기 같아요. 성대는 떨리는 줄, 빠르기와 세기가 있고, 입과 목은 울림통, 그래서 '아'와 '이'가 달라요. 조각마다 이 3가지만 보내요.",
+      "sfx": [{"type": "pop", "at": "vo:0.18"}, {"type": "pop", "at": "vo:0.36"}, {"type": "pop", "at": "vo:0.58"}]
+    },
+    {
+      "id": "listen",
+      "html": "scenes/listen.html",
+      "narration": "받는 폰은 그 숫자로 떨림을 흉내 내고, 울림통을 씌워 다시 만들어요. 직접 들어 볼까요?",
+      "clips": [
+        {"file": "audio/A.wav", "at": "vo+0.5"},
+        {"file": "audio/B.wav", "at": "vo+2.4"},
+        {"file": "audio/C.wav", "at": "vo+4.3"}
+      ],
+      "sfx": [{"type": "pop", "at": "vo+0.3"}, {"type": "pop", "at": "vo+2.2"}, {"type": "pop", "at": "vo+4.1"}],
+      "pad": [0.3, 0.6]
+    },
+    {
+      "id": "outro",
+      "html": "scenes/outro.html",
+      "narration": "데이터를 오분의 일, 구십분의 일까지 줄여도 알아듣죠? 이게 보코딩이에요.",
+      "caption": "데이터를 1/5, 1/90까지 줄여도, 알아듣죠? 이게 보코딩이에요.",
+      "sfx": [{"type": "hit", "at": "vo:0.75"}],
+      "pad": [0.3, 1.2]
+    }
+  ]
+}

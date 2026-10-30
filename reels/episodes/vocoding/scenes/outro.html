@@ -1,0 +1,33 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../../../kit/kit.css">
+<style>.row{position:absolute;left:0;right:0;height:120px}.row b{position:absolute;left:0;top:20px;font-size:80px;font-weight:900}
+.row .bar{position:absolute;left:110px;top:28px;height:70px;border-radius:18px}.row span{position:absolute;top:34px;font-size:52px;font-weight:900}</style>
+<div id="stage"><div class="safe">
+  <div id="g" style="position:absolute;inset:0">
+    <div class="row" style="top:180px"><b style="color:var(--a)">A</b><div class="bar" id="bA" style="background:var(--a)"></div><span id="lA"></span></div>
+    <div class="row" style="top:340px"><b style="color:var(--b)">B</b><div class="bar" id="bB" style="background:var(--b)"></div><span id="lB">1/5</span></div>
+    <div class="row" style="top:500px"><b style="color:var(--c)">C</b><div class="bar" id="bC" style="background:var(--c)"></div><span id="lC">1/90</span></div>
+    <div id="q" class="h2" style="position:absolute;top:720px;width:100%">그래도 알아듣죠?</div>
+  </div>
+  <div id="end" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;opacity:0">
+    <div class="h1" style="font-size:190px;color:var(--a)">보코딩</div>
+    <div class="h2">분석해서 레시피만 보내고<br>받는 쪽이 다시 만든다</div>
+  </div>
+</div></div>
+<script src="../../../kit/kit.js"></script>
+<script>
+const v = { A: 64000, B: 13000, C: 700 }, maxW = 540;
+Reel.scene((t, R) => {
+  const g = R.ramp(t, .1, .9);
+  for (const k of "ABC") {
+    const w = maxW * (k === "A" ? 1 : R.lerp(1, v[k] / v.A, g));
+    Reel.$("#b" + k).style.width = Math.max(14, w) + "px";
+    const l = Reel.$("#l" + k); l.style.left = 110 + Math.max(14, w) + 24 + "px";
+    if (k === "A") l.textContent = "64,000"; else l.style.opacity = R.ramp(t, R.at(k === "B" ? .1 : .3), R.at(k === "B" ? .18 : .38));
+  }
+  R.set("#q", { o: R.ramp(t, R.at(.45), R.at(.55)), s: .9 + .1 * R.pop(t, R.at(.45)) });
+  const e = R.at(.75);
+  Reel.$("#g").style.opacity = 1 - R.ramp(t, e, e + .15);
+  R.set("#end", { o: R.ramp(t, e, e + .12), s: R.pop(t, e) || .01 });
+});
+</script>

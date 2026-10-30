@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../../../kit/kit.css">
+<div id="stage">
+  <div class="safe">
+    <div id="t1" class="h1" style="position:absolute;top:40px;width:100%">전화 속 목소리,</div>
+    <div id="t2" class="h1" style="position:absolute;top:160px;width:100%;color:var(--c)">진짜가 아니다?</div>
+    <svg width="870" height="900" style="position:absolute;top:360px" viewBox="0 0 870 900">
+      <rect x="235" y="40" width="400" height="760" rx="60" fill="none" stroke="var(--fg)" stroke-width="8"/>
+      <rect x="385" y="70" width="100" height="14" rx="7" fill="var(--fg)" opacity=".5"/>
+      <g id="bars"></g>
+      <g id="stamp" opacity="0"><rect x="215" y="600" width="440" height="110" rx="55" fill="var(--c)"/>
+        <text x="435" y="675" text-anchor="middle" font-size="56" font-weight="900" fill="var(--bg)">폰이 다시 만든 소리</text></g>
+    </svg>
+  </div>
+</div>
+<script src="../../../kit/kit.js"></script>
+<script>
+const g = Reel.$("#bars"), N = 26, bars = [];
+for (let i = 0; i < N; i++) { const r = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+  r.setAttribute("width", 9); r.setAttribute("rx", 4.5); r.setAttribute("x", 275 + i * 12.6); g.appendChild(r); bars.push(r); }
+Reel.scene((t, R) => {
+  R.set("#t1", { o: R.ramp(t, 0, .25), s: R.pop(t, 0) || .01 });
+  R.set("#t2", { o: R.ramp(t, .35, .55), s: R.pop(t, .35) || .01 });
+  const fake = R.at(.45), glitch = R.ramp(t, fake, fake + .3);
+  bars.forEach((b, i) => {
+    const lv = R.level(Math.max(0, t - i * 0.012));
+    const h = 20 + 380 * lv * (0.6 + 0.4 * Math.sin(i * 1.7 + t * 9));
+    const jitter = glitch * ((i * 37 + Math.floor(t * 20) * 13) % 7 - 3) * 6;
+    b.setAttribute("y", 420 - h / 2 + jitter); b.setAttribute("height", h);
+    b.setAttribute("fill", glitch > .5 ? "var(--c)" : "var(--a)");
+  });
+  const st = Reel.$("#stamp"); st.setAttribute("opacity", R.ramp(t, fake, fake + .15));
+  const k = R.pop(t, fake); st.setAttribute("transform", `rotate(-6 435 655) translate(435 655) scale(${k || .01}) translate(-435 -655)`);
+});
+</script>
