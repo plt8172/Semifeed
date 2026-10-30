@@ -1,0 +1,6 @@
+playwright==1.56.0
+numpy
+scipy
+soundfile
+# 오프라인 한국어 TTS (OPENAI_API_KEY가 없을 때). 2.x는 이 모델의 발음 변환을 지원하지 않는다
+sherpa-onnx==1.12.40
