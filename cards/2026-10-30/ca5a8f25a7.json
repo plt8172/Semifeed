@@ -1,0 +1,35 @@
+{
+  "id": "ca5a8f25a7",
+  "link": "https://www.theregister.com/off-prem/2026/10/30/aws-installs-an-ai-accelerator-every-14-seconds-and-eyes-1-trillion-annual-revenue/5306547",
+  "source": "The Register",
+  "category": "기업·실적",
+  "published_at": "2026-10-30T14:42+09:00",
+  "headline": "아마존, 14초마다 AI 칩 하나씩 새로 설치한다",
+  "bullets": [
+    "AWS 3분기 매출 460억달러 육박, 1년 새 39.3% 증가",
+    "재시 CEO \"AI 가속기 약 14초마다 설치, 바로 다 쓰여\"",
+    "올해 설비투자 2200억달러 예상, 지난 분기만 759억달러"
+  ],
+  "caption": "아마존, 14초마다 AI 칩 하나씩 새로 설치한다\n\n아마존의 클라우드 사업부 AWS가 3분기에 460억달러에 조금 못 미치는 매출을 올리며 1년 전보다 39.3% 성장했습니다. 클라우드는 기업이 서버를 직접 사지 않고 아마존 같은 회사의 데이터센터 컴퓨터를 빌려 쓰는 서비스입니다. 앤디 재시 아마존 CEO는 실적 발표에서 AWS가 AI 가속기(AI 계산을 전담하는 칩)를 약 14초에 하나씩 새로 설치하고 있으며, 설치하는 속도만큼 고객이 바로 가져다 쓴다고 말했습니다. AI를 쓰려는 기업은 자기 데이터와 프로그램이 있는 곳 가까이에서 AI를 돌리고 싶어 하기 때문에, AI 수요가 저장장치와 일반 컴퓨팅 수요까지 끌어올리고 있다는 설명입니다. 아마존은 올해 설비투자로 2200억달러를 예상하고 있고 지난 분기에만 759억달러를 썼는데, 대부분이 AWS 데이터센터에 들어갔습니다. 재시 CEO는 AWS가 5~10년 안에 연 매출 1조달러 사업이 될 것으로 내다봤습니다. 이런 투자는 AI 칩과 메모리, 서버 부품을 만드는 반도체 업체들의 수요로 이어집니다.\n\n출처: The Register\nhttps://www.theregister.com/off-prem/2026/10/30/aws-installs-an-ai-accelerator-every-14-seconds-and-eyes-1-trillion-annual-revenue/5306547\n\n#반도체 #semiconductor #아마존 #AWS #클라우드 #AI가속기 #데이터센터",
+  "photo_queries": [
+    "server room cables",
+    "network switch cables",
+    "data center cooling"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7014547",
+    "query": "server room cables",
+    "file": "ca5a8f25a7.photo.jpg",
+    "download_url": "https://pixabay.com/get/g6bfb129f7cfb2804f5d28d516e2d35eefbed6f97d106774f1d3b2c567f43eb0388ddc75d81c3eb370c1345ffcbfbf0e222d9603912454d56233d71ee1b4f562a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/server-technology-computer-7014547/",
+    "photographer": "Tho-Ge",
+    "photographer_url": "https://pixabay.com/users/Tho-Ge-113537/",
+    "alt": "server, technology, computer, computer technology, cable, server, server, server, server, server",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Tho-Ge / Pixabay"
+  }
+}

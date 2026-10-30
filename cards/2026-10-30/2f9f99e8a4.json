@@ -1,0 +1,35 @@
+{
+  "id": "2f9f99e8a4",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64620",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-10-30T16:43+09:00",
+  "headline": "삼성전기, AI 서버 부품 8800억원어치 공급 계약",
+  "bullets": [
+    "글로벌 대형기업에 AI 서버용 MLCC 약 8793억원 공급 계약",
+    "올해 여덟 번째 장기공급계약, 누적 규모 약 5조1800억원",
+    "47μF 소형 제품 내년 수요, 올해의 약 8배 전망"
+  ],
+  "caption": "삼성전기, AI 서버 부품 8800억원어치 공급 계약\n\n삼성전기가 글로벌 대형기업과 약 8793억원 규모의 AI 서버용 MLCC 공급계약을 맺었다고 공시했습니다. MLCC(적층세라믹콘덴서)는 전기를 잠깐 저장했다가 내보내 전압을 안정시키는 작은 부품으로, 스마트폰부터 서버까지 거의 모든 전자기기에 들어가는 필수 부품입니다. 이번 계약은 오는 12월 21일부터 1년 동안 이어지며, 삼성전기가 올해 공시한 여덟 번째 장기공급계약(LTA)이자 MLCC 계약 중 두 번째로 큰 규모입니다. 장기공급계약은 고객사가 정해진 기간 동안 물량을 미리 확보하는 방식이라, 부품이 부족할 때 늘어나는 경향이 있습니다. AI 서버는 GPU 같은 칩이 전기를 많이 쓰기 때문에 안정적인 전력 공급에 필요한 MLCC 용량이 커지고 있고, 삼성전기는 주요 빅테크용 소형·초고용량 제품의 내년 수요가 올해의 약 8배에 이를 것으로 내다봤습니다. 이에 맞춰 부산사업장에 2040년까지 약 15조원을 투자하고, 필리핀 신공장에서도 내년부터 고부가 MLCC 양산을 시작할 계획입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64620\n\n#반도체 #semiconductor #삼성전기 #MLCC #적층세라믹콘덴서 #AI서버 #전자부품",
+  "photo_queries": [
+    "smd capacitors closeup",
+    "server motherboard closeup",
+    "electronic components reel"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4907759",
+    "query": "smd capacitors closeup",
+    "file": "2f9f99e8a4.photo.jpg",
+    "download_url": "https://pixabay.com/get/ge3cb5988d84d27ff21b85c08abf97a150e617784e4f9695aae828e8c460fef1a58c66b4287c585a088f676e34a0ec68dab344b12d6639bea8a580f7f7826ce94_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technique-technology-automation-4907759/",
+    "photographer": "gosiak1980",
+    "photographer_url": "https://pixabay.com/users/gosiak1980-2374509/",
+    "alt": "technique, technology, automation, electronics, device, electric, plate, elements, small, miniaturization, resistor, equipment, system, chip, automation, automation, automation, automation, automation, chip, chip, chip",
+    "width": 3456,
+    "height": 1944,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: gosiak1980 / Pixabay"
+  }
+}
