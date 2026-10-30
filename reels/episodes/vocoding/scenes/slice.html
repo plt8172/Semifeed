@@ -1,0 +1,39 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../../../kit/kit.css">
+<div id="stage"><div class="safe">
+  <div id="head" class="h2" style="position:absolute;top:30px;width:100%">'아~' 확대해 보기</div>
+  <svg width="870" height="900" style="position:absolute;top:220px" viewBox="0 0 870 900">
+    <rect id="win" fill="none" stroke="var(--b)" stroke-width="6" rx="14"/>
+    <path id="w" fill="none" stroke="var(--a)" stroke-width="5" stroke-linejoin="round"/>
+    <g id="cuts"></g>
+    <text id="lab" x="435" y="760" text-anchor="middle" font-size="64" font-weight="900" fill="var(--b)">1/50초 = 한 조각</text>
+    <text id="rep" x="435" y="120" text-anchor="middle" font-size="44" font-weight="800" fill="var(--fg)">같은 모양이 반복!</text>
+  </svg>
+</div></div>
+<script src="../../../kit/kit.js"></script>
+<script>
+const ns = "http://www.w3.org/2000/svg";
+// '아' 비슷한 유성음: 주기 T마다 감쇠 진동 두 개(포먼트)를 겹친다
+const voice = x => { const T = 1, p = ((x % T) + T) % T; return Math.exp(-p * 5) * (Math.sin(p * 2 * Math.PI * 4.2) * .8 + Math.sin(p * 2 * Math.PI * 9.5) * .35); };
+const env = u => Math.min(1, u * 3) * Math.min(1, (1 - u) * 3) * (0.6 + 0.4 * Math.sin(u * 9));
+const cuts = []; for (let i = 0; i <= 6; i++) { const l = document.createElementNS(ns, "line"); l.setAttribute("stroke", "var(--fg)"); l.setAttribute("stroke-width", 4); Reel.$("#cuts").appendChild(l); cuts.push(l); }
+Reel.scene((t, R) => {
+  R.set("#head", { o: R.ramp(t, 0, .3) });
+  const z = R.ramp(t, R.at(.12), R.at(.35));           // 0 = 전체 문장, 1 = 확대
+  const span = R.lerp(60, 6, z), c0 = R.lerp(0, 27, z); // 보이는 주기 수와 시작
+  let d = "";
+  for (let i = 0; i <= 600; i++) {
+    const u = i / 600, x = c0 + u * span, a = z < 1 ? R.lerp(env(x / 60), 1, z) : 1;
+    d += (i ? "L" : "M") + (35 + u * 800).toFixed(1) + "," + (420 - voice(x) * a * 230).toFixed(1);
+  }
+  Reel.$("#w").setAttribute("d", d);
+  const win = Reel.$("#win"), wx = R.lerp(35 + 27 / 60 * 800, 20, z), ww = R.lerp(6 / 60 * 800, 830, z);
+  win.setAttribute("x", wx); win.setAttribute("width", ww); win.setAttribute("y", R.lerp(160, 150, z)); win.setAttribute("height", R.lerp(520, 540, z));
+  win.setAttribute("opacity", R.ramp(t, R.at(.05), R.at(.12)) * (1 - R.ramp(t, R.at(.5), R.at(.55))));
+  Reel.$("#rep").setAttribute("opacity", R.ramp(t, R.at(.38), R.at(.45)) * (1 - R.ramp(t, R.at(.55), R.at(.6))));
+  const k = R.ramp(t, R.at(.6), R.at(.78));
+  cuts.forEach((l, i) => { const x = 35 + i * 800 / 6, on = i / 6 <= k;
+    l.setAttribute("x1", x); l.setAttribute("x2", x); l.setAttribute("y1", 160); l.setAttribute("y2", 680); l.setAttribute("opacity", on ? 1 : 0); });
+  const lab = Reel.$("#lab"); lab.setAttribute("opacity", R.ramp(t, R.at(.7), R.at(.78)));
+});
+</script>

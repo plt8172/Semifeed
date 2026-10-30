@@ -1,0 +1,31 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../../../kit/kit.css">
+<style>.card{position:absolute;left:0;right:0;height:300px;border-radius:36px;border:5px solid;padding:26px 34px}
+.card b{font-size:62px;font-weight:900;display:block}.card i{font-style:normal;font-size:38px;font-weight:700;color:var(--muted)}
+svg.in{position:absolute;right:30px;top:40px}</style>
+<div id="stage"><div class="safe">
+  <div id="head" class="h2" style="position:absolute;top:10px;width:100%">목소리 = 악기</div>
+  <div id="c1" class="card" style="top:150px;border-color:var(--b);background:#ffcc3318"><b style="color:var(--b)">1 · 빠르기</b><i>성대 줄이 떨리는 빠르기<br>→ 음높이</i>
+    <svg class="in" width="340" height="220"><path id="s1" fill="none" stroke="var(--b)" stroke-width="6"/></svg></div>
+  <div id="c2" class="card" style="top:490px;border-color:var(--a);background:#3ee0d018"><b style="color:var(--a)">2 · 세기</b><i>얼마나 세게 떠는지<br>→ 소리 크기</i>
+    <svg class="in" width="340" height="220"><path id="s2" fill="none" stroke="var(--a)" stroke-width="6"/></svg></div>
+  <div id="c3" class="card" style="top:830px;border-color:var(--c);background:#ff5a8c18"><b style="color:var(--c)">3 · 울림통</b><i>입·목 모양<br>→ 지금 모양: '<span id="vw">아</span>'</i>
+    <svg class="in" width="340" height="220"><path id="s3" fill="none" stroke="var(--c)" stroke-width="6"/></svg></div>
+</div></div>
+<script src="../../../kit/kit.js"></script>
+<script>
+const path = (f, w = 340, h = 220) => { let d = ""; for (let i = 0; i <= 120; i++) { const u = i / 120; d += (i ? "L" : "M") + (u * w).toFixed(1) + "," + (h / 2 - f(u) * h * .42).toFixed(1); } return d; };
+Reel.scene((t, R) => {
+  R.set("#head", { o: R.ramp(t, 0, .3) });
+  const on = [R.at(.17), R.at(.35), R.at(.57)];
+  ["#c1", "#c2", "#c3"].forEach((c, i) => R.set(c, { o: t >= on[i] ? 1 : 0, x: (1 - R.pop(t, on[i], .35)) * 900 }));
+  const fast = 3 + 3 * (0.5 + 0.5 * Math.sin(t * 1.5));
+  Reel.$("#s1").setAttribute("d", path(u => Math.sin(u * fast * 2 * Math.PI + t * 12) * Math.sin(u * Math.PI)));
+  const amp = 0.25 + 0.75 * Math.abs(Math.sin(t * 1.8));
+  Reel.$("#s2").setAttribute("d", path(u => amp * Math.sin(u * 5 * 2 * Math.PI + t * 12) * Math.sin(u * Math.PI)));
+  // 포먼트 위치: '아'는 F1 높고 F2 낮게, '이'는 F1 낮고 F2 높게 (주파수 축 0~4 kHz 개략)
+  const isI = Math.floor(t / 1.2) % 2 === 1, f1 = isI ? .08 : .2, f2 = isI ? .6 : .3;
+  Reel.$("#vw").textContent = isI ? "이" : "아";
+  Reel.$("#s3").setAttribute("d", path(u => 1.9 * (Math.exp(-(((u - f1) / .05) ** 2)) + .7 * Math.exp(-(((u - f2) / .07) ** 2))) - .95));
+});
+</script>

@@ -36,6 +36,7 @@ templates/layouts/     카드 레이아웃 (photo 기본, classic 보존). templ
 fonts/                 Pretendard 가변 폰트 (SIL OFL 1.1)
 worker/                Cloudflare Worker: Slack 버튼 → Instagram 게시, 토큰 갱신 (worker/README.md)
 tests/                 스크립트 테스트와 샘플 피드·카드
+reels/                 기술 원리 설명 릴스 파이프라인 (reels/AGENTS.md)
 ```
 
 ## 실행
