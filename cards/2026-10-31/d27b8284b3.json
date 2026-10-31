@@ -1,0 +1,35 @@
+{
+  "id": "d27b8284b3",
+  "link": "https://www.theregister.com/networks/2026/10/31/backbone-of-a-beast-charting-nvidias-rise-to-networking-titan/5306499",
+  "source": "The Register",
+  "category": "AI·설계",
+  "published_at": "2026-10-31T17:03+09:00",
+  "headline": "엔비디아 네트워크 장비 매출, 시스코 전체 매출 넘었다",
+  "bullets": [
+    "2분기 네트워킹 매출 175억달러, 시스코 전체 173억달러",
+    "2019년 69억달러에 멜라녹스 인수한 것이 출발점",
+    "GPU·네트워크를 한 몸처럼 설계해 AI 클러스터 장악"
+  ],
+  "caption": "엔비디아 네트워크 장비 매출, 시스코 전체 매출 넘었다\n\nGPU 회사로 알려진 엔비디아가 데이터센터 네트워크 장비 시장에서도 가장 큰 회사가 됐습니다. 엔비디아의 2분기 네트워킹 매출은 175억달러로, 같은 기간 네트워크 장비 전문 기업 시스코가 모든 제품을 합쳐 올린 매출 173억달러보다 많았습니다. 출발점은 2019년 69억달러에 사들인 이스라엘 네트워크 회사 멜라녹스입니다. AI 학습은 GPU 수천~수만 개를 하나처럼 묶어 데이터를 주고받아야 해서, GPU를 잇는 스위치와 네트워크 카드의 성능이 전체 속도를 좌우합니다. 엔비디아는 GPU와 네트워크 장비, 소프트웨어를 함께 설계해 고객이 따로 맞추는 수고를 덜어 줬고, 이것이 경쟁력이 됐다고 기사는 분석합니다. 특히 GPU 72개를 묶는 랙 시스템을 팔 때마다 GPU끼리 잇는 전용 스위치(NVSwitch)가 함께 팔리면서, 이 장비가 네트워킹 매출의 약 3분의 1을 차지하게 됐다는 시장조사업체 델오로의 추정도 나왔습니다.\n\n출처: The Register\nhttps://www.theregister.com/networks/2026/10/31/backbone-of-a-beast-charting-nvidias-rise-to-networking-titan/5306499\n\n#반도체 #semiconductor #엔비디아 #AI반도체 #데이터센터 #네트워크 #시스코",
+  "photo_queries": [
+    "ethernet cables switch",
+    "optical transceiver module",
+    "supercomputer data center"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "499792",
+    "query": "ethernet cables switch",
+    "file": "d27b8284b3.photo.jpg",
+    "download_url": "https://pixabay.com/get/gffc32c7c43fd841fff9466aecf31c27a013702d7dbe43a2a85a753bf7f181531147d8bd31187b674a33e08a41b42d3cdb30a8b091f29e343802ef8a6f027c238_1280.jpg",
+    "page_url": "https://pixabay.com/photos/network-cable-rj45-patch-patch-cord-499792/",
+    "photographer": "blickpixel",
+    "photographer_url": "https://pixabay.com/users/blickpixel-52945/",
+    "alt": "network cable, rj45, patch, patch cord, network, cable, management, data processing, rj-45, connection, plug, lan, network plug, lan cable, rj, macro, yellow, hardware, computer, edp, switch, distributor, hub, ethernet, data, tangled cables, administration, nsa, internet, monitoring, technology, network cable, network, network, network, network, network, cable, cable, lan, switch, ethernet, ethernet",
+    "width": 3000,
+    "height": 2000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: blickpixel / Pixabay"
+  }
+}

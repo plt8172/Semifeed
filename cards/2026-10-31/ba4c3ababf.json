@@ -1,0 +1,35 @@
+{
+  "id": "ba4c3ababf",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64621",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-10-30T16:41+09:00",
+  "headline": "한화시스템, KAI 제치고 3685억원 군 정찰위성 따냈다",
+  "bullets": [
+    "초소형 레이더(SAR) 군집위성 개발, 예정가 65% 써내 1순위",
+    "정부 1조4223억원 사업 일부, 위성 40기 묶어 운용",
+    "한반도 관측 주기 2시간에서 20~30분으로 단축 목표"
+  ],
+  "caption": "한화시스템, KAI 제치고 3685억원 군 정찰위성 따냈다\n\n한화시스템이 국방과학연구소가 발주한 군 정찰용 초소형 합성개구레이더(SAR) 군집 위성 개발 사업을 3685억원에 따냈습니다. 경쟁사 한국항공우주산업(KAI)은 4603억원을 써냈고, 기술 평가를 통과한 업체 중 가장 낮은 가격을 낸 곳이 낙찰되는 방식이라 918억원 차이가 승부를 갈랐습니다. SAR 위성은 지상과 바다로 레이더 전파를 쏜 뒤 반사돼 돌아오는 신호를 분석해 영상을 만드는 위성으로, 빛이 필요 없어 밤이나 구름 낀 날에도 관측할 수 있습니다. 이번 사업은 정부가 1조4223억원을 들이는 초소형 위성 체계의 일부로, 작은 위성 40기를 무리 지어 돌리며 한반도와 주변 바다를 감시합니다. 위성 수가 많아지면 같은 지역 위를 더 자주 지나가게 돼, 지금 2시간인 관측 간격을 20~30분까지 줄이는 것이 목표입니다. 한화시스템은 2023년 국내 민간 기업 최초로 자체 개발 SAR 위성을 쏘아 올렸고, 연간 최대 100기를 만들 수 있는 제주우주센터를 운영하고 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64621\n\n#반도체 #semiconductor #위성 #SAR #레이더 #한화시스템 #우주산업 #방산",
+  "photo_queries": [
+    "satellite in orbit",
+    "radar antenna dish",
+    "satellite ground station"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "67718",
+    "query": "satellite in orbit",
+    "file": "ba4c3ababf.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0b31022e707dcf12668cc446f4d92c2c271fc652f3190d071221dadde0a0d682dfff4ee59fc9f77f68a1590053c0405b_1280.jpg",
+    "page_url": "https://pixabay.com/photos/satellite-spacecraft-space-67718/",
+    "photographer": "WikiImages",
+    "photographer_url": "https://pixabay.com/users/WikiImages-1897/",
+    "alt": "satellite, spacecraft, space, outer space, soyuz, spaceship, space station, orbital station, orbital space station, satellite, satellite, satellite, satellite, satellite, space, spaceship",
+    "width": 2274,
+    "height": 1506,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: WikiImages / Pixabay"
+  }
+}

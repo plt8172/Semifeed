@@ -1,0 +1,36 @@
+{
+  "id": "a0fc42080e",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64617",
+  "source": "디일렉",
+  "category": "패키징",
+  "published_at": "2026-10-30T16:34+09:00",
+  "headline": "칩 붙이는 장비에 '공중에 뜨는' 자기부상 기술 들어간다",
+  "bullets": [
+    "EUV 노광장비 쓰는 자기부상 스테이지, 칩 접합 장비로 확산",
+    "독일 PI 시연, 약 2년 내 고객사 장비 적용 목표",
+    "칩 연결 간격 미세해져 후공정도 나노급 정밀 제어 필요"
+  ],
+  "caption": "칩 붙이는 장비에 '공중에 뜨는' 자기부상 기술 들어간다\n\n극자외선(EUV) 노광장비에 쓰이던 자기부상(마그레브) 스테이지 기술이 칩을 쌓아 붙이는 하이브리드 본딩 장비로 옮겨 오고 있습니다. 스테이지는 웨이퍼나 칩을 올려 작업 위치로 옮기는 이동대인데, 기존에는 금속 구슬이나 롤러가 굴러가며 움직여 진동과 미세한 마모 입자가 생겼습니다. 자기부상 방식은 스테이지에 붙인 자석과 아래 코일 사이의 힘으로 이동대를 띄워, 닿지 않고 움직이면서 전류로 위치와 기울기를 정밀하게 조절합니다. 하이브리드 본딩은 칩과 웨이퍼를 납땜 돌기 없이 직접 맞붙이는 기술로, 차세대 고대역폭메모리(HBM, AI 칩 옆에 붙는 고속 적층 메모리) 적층에 적용이 검토되고 있습니다. 칩 사이 연결 간격이 계속 좁아지면서 후공정에서도 전공정 수준의 나노미터급 정밀도가 필요해졌기 때문입니다. 독일 PI는 세미콘 웨스트 2026에서 접합 힘을 100뉴턴 이상까지 가하면서도 위치를 유지하는 스테이지를 시연했고 약 2년 안에 고객사 장비 적용을 목표로 합니다. 스위스 이텔은 2027년 하반기 상용화를, 네덜란드 프로드라이브는 한화세미텍과 하이브리드 본더 공동 개발을 진행 중입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64617\n\n#반도체 #semiconductor #하이브리드본딩 #HBM #첨단패키징 #자기부상 #반도체장비",
+  "photo_queries": [
+    "precision linear stage",
+    "magnetic levitation",
+    "semiconductor equipment machine"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2655766",
+    "query": "electronics manufacturing",
+    "file": "a0fc42080e.photo.jpg",
+    "download_url": "https://pixabay.com/get/g93a605766642546ed3f52145bdee8b4e0307ed1354f5a013f13a482730f3af3e520cc9c9e945a0aacf8a2eda2fb6d78beab5c75ef2911c71804522b578aa671b_1280.jpg",
+    "page_url": "https://pixabay.com/photos/pcb-circuit-board-technology-2655766/",
+    "photographer": "ranjatm",
+    "photographer_url": "https://pixabay.com/users/ranjatm-1062562/",
+    "alt": "pcb, circuit board, technology, printed, engineering, industry, motherboard, component, semiconductor, technical, electronics, electronic, pcb, pcb, pcb, pcb, pcb, semiconductor, semiconductor, semiconductor, semiconductor",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ranjatm / Pixabay",
+    "category": "industry"
+  }
+}
