@@ -1,0 +1,35 @@
+{
+  "id": "57f4c60319",
+  "link": "https://semiengineering.com/the-eu-cyber-resilience-act-reaches-chip-and-ip-suppliers/",
+  "source": "Semiconductor Engineering",
+  "category": "정책·공급망",
+  "published_at": "2026-10-29T16:06+09:00",
+  "headline": "EU에 반도체 팔려면 보안 결함도 신고해야 한다",
+  "bullets": [
+    "EU 사이버복원력법(CRA), 따로 파는 반도체 칩에도 적용",
+    "9월부터 악용 중인 취약점 알면 조기 경보·최종 보고 의무",
+    "칩 설계도(IP) 회사도 보안 평가 자료 요구받을 수 있어"
+  ],
+  "caption": "EU에 반도체 팔려면 보안 결함도 신고해야 한다\n\n유럽연합(EU)이 2024년 10월 채택한 사이버복원력법(CRA)이 반도체 회사에도 본격적으로 적용되고 있습니다. CRA는 네트워크에 연결되는 디지털 제품에 공통 보안 기준을 정한 법으로, 완제품뿐 아니라 따로 판매되는 반도체 칩에도 적용되고 회사가 어느 나라에 있든 EU 시장에 팔면 대상이 됩니다. 2026년 9월부터는 신고 의무가 시작돼, 제조사는 자기 제품의 취약점이 실제로 악용되고 있거나 심각한 보안 사고가 난 사실을 알면 먼저 조기 경보를 내고 이어 상세 통보와 원인·조치를 담은 최종 보고서를 내야 합니다. 법은 마이크로프로세서, 마이크로컨트롤러, 특정 용도 칩(ASIC), 회로를 다시 짤 수 있는 칩(FPGA) 같은 반도체를 기능에 따라 분류하고, 분류에 따라 의무가 달라집니다. 또 제조사는 다른 회사 부품을 쓸 때 보안을 확인해야 하므로, 칩 설계 블록을 파는 IP 회사도 고객에게 보안 평가 결과와 안전한 사용 조건을 설명하는 자료를 내야 할 수 있습니다. 유럽에 칩을 파는 회사라면 자기 제품이 어느 분류에 들어가는지부터 따져야 한다는 뜻입니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/the-eu-cyber-resilience-act-reaches-chip-and-ip-suppliers/\n\n#반도체 #semiconductor #사이버보안 #CRA #EU #반도체규제 #칩설계",
+  "photo_queries": [
+    "microcontroller chip closeup",
+    "padlock circuit board",
+    "european union flags"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1288717",
+    "query": "padlock circuit board",
+    "file": "57f4c60319.photo.jpg",
+    "download_url": "https://pixabay.com/get/gd5ebb798ab7d7fc86c6cdc40be76fe690463497f442695ad48e9a83407b5a68c295b2e309d0b9fc68f4c41866ed823fb0a4128752c265da871b134e01544d008_1280.jpg",
+    "page_url": "https://pixabay.com/photos/electrician-electronics-computer-1288717/",
+    "photographer": "RemazteredStudio",
+    "photographer_url": "https://pixabay.com/users/RemazteredStudio-1714780/",
+    "alt": "electrician, electronics, computer, processor, integrated circuit, technology, processor, processor, processor, processor, processor, integrated circuit, integrated circuit",
+    "width": 4500,
+    "height": 2531,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: RemazteredStudio / Pixabay"
+  }
+}

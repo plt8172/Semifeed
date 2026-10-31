@@ -1,0 +1,35 @@
+{
+  "id": "0747ff0d71",
+  "link": "https://www.theregister.com/ai-and-ml/2026/10/31/googles-ai-satellite-sends-a-very-expensive-haiku-to-earth/5306818",
+  "source": "The Register",
+  "category": "AI·설계",
+  "published_at": "2026-11-01T00:36+09:00",
+  "headline": "구글, 우주에 띄운 AI 칩에서 첫 답변 받았다",
+  "bullets": [
+    "이달 초 쏜 시험 위성 '선캐처'의 AI 칩이 궤도에서 시 생성",
+    "지상 시험서 HBM이 방사선에 가장 약했지만 기준의 약 3배 견뎌",
+    "발사비 kg당 200달러면 지상 전기료와 비슷, 내년엔 위성 2기 시험"
+  ],
+  "caption": "구글, 우주에 띄운 AI 칩에서 첫 답변 받았다\n\n구글이 이달 초 지구 저궤도에 올린 시험 위성 '선캐처(Suncatcher)'에서 처음으로 AI 답변을 받았습니다. 위성에는 구글이 직접 설계한 AI 전용 칩인 TPU가 실려 있는데, 지상국이 \"지구를 도는 TPU의 시점에서 하이쿠를 써 달라\"는 명령을 올려 보내자 위성 안의 Gemma 4 모델이 짧은 시를 만들어 노르웨이 스발바르 상공에서 내려보냈습니다. 구글이 우주에 데이터센터를 띄우려는 이유는 전기 때문으로, 발사 비용이 kg당 200달러까지 내려가면 위성 수명 동안 나눈 발사비가 미국 지상 데이터센터의 전기료와 비슷해진다고 계산했고, 그 시점을 2035년 무렵으로 보고 미리 시제품을 만들고 있습니다. 걸림돌은 우주 방사선입니다. 지상 시험에서는 AI 칩 옆에 붙는 고대역폭 메모리(HBM, 메모리를 여러 층 쌓아 데이터를 빠르게 주고받게 만든 칩)가 방사선에 가장 민감했지만, 구글이 정한 최소 기준의 약 3배까지 견뎠습니다. 구글은 다음으로 열과 방사선 속 성능을 시험하고, 내년에는 서로 연결된 위성 2기를 띄울 계획입니다.\n\n출처: The Register\nhttps://www.theregister.com/ai-and-ml/2026/10/31/googles-ai-satellite-sends-a-very-expensive-haiku-to-earth/5306818\n\n#반도체 #semiconductor #AI칩 #TPU #HBM #우주데이터센터 #구글",
+  "photo_queries": [
+    "satellite solar panels",
+    "rocket launch night",
+    "space station earth view"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2645330",
+    "query": "satellite solar panels",
+    "file": "0747ff0d71.photo.jpg",
+    "download_url": "https://pixabay.com/get/gdd06a62430f2fd9289e07790945e0847bbb6027a65211fed4b29693de4bfbfbfcdc6e6e6655fba729d0d866283cba0d385602024eeb216d033d3e7aa735c3f06_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mission-to-mars-mars-probe-2645330/",
+    "photographer": "PIRO4D",
+    "photographer_url": "https://pixabay.com/users/PIRO4D-2707530/",
+    "alt": "mission to mars, mars probe, space travel, research, science, astronomy, space, space probe, planets, heaven, satellite, future, universe, satellite, satellite, satellite, satellite, satellite",
+    "width": 3200,
+    "height": 1992,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: PIRO4D / Pixabay"
+  }
+}
