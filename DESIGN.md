@@ -4,7 +4,7 @@
 
 - Status: Draft
 - Date: 2026-09-20
-- Product surfaces: Instagram 1080×1080 뉴스 카드, Slack 승인 미리보기
+- Product surfaces: Instagram 1080×1350(4:5) 뉴스 카드, Slack 승인 미리보기
 - Evidence reviewed: `README.md`, `n8n/semifeed_workflow.json`의 기존 `HTML 카드 조립` 노드
 
 ## Brand
@@ -19,7 +19,7 @@
 - Slack 승인 화면과 Instagram 게시물의 시각 결과를 동일하게 유지한다.
 - 사진이 없거나 로드되지 않아도 완성된 카드로 보이게 한다.
 - Non-goals: 기사 전문 재현, 원문 이미지의 무단 재사용, 복잡한 데이터 시각화
-- Success signals: 1080×1080에서 제목·요약·출처가 잘리지 않고 읽힘
+- Success signals: 1080×1350에서 제목·요약·출처가 잘리지 않고 읽힘
 
 ## Personas and jobs
 
@@ -68,7 +68,8 @@
 
 ## Responsive behavior
 
-- 현재 산출물은 Instagram용 1080×1080 고정 캔버스만 지원한다.
+- 현재 산출물은 Instagram용 1080×1350(4:5 세로) 고정 캔버스만 지원한다. 피드에서 정사각보다 화면을 더 차지하기 때문이다 (2026-10-31 변경, 이전 1080×1080).
+- 프로필 그리드 썸네일은 3:4로 좌우를 약 34px씩 자른다. 글자·배지는 좌우 여백 64px 이상 안쪽에 둔다.
 - 브라우저 미리보기에서는 캔버스 비율을 유지하며 화면 폭에 맞춰 축소한다.
 
 ## Interaction states
@@ -91,7 +92,7 @@
 
 ## Implementation constraints
 
-- browserless/chrome에서 1080×1080 JPEG로 렌더링한다.
+- Playwright Chromium에서 1080×1350 JPEG로 렌더링한다.
 - 템플릿은 단일 HTML 파일이며 외부 JavaScript 의존성을 두지 않는다.
 - 기본 레이아웃은 `photo`(사진 + 그라데이션, 장식 없음)다. 첫 디자인은 `classic`으로 보존한다.
 - 원격 이미지는 최종 렌더링 전에 다운로드·검증해 data URI로 삽입하는 방식을 우선 검토한다.

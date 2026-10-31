@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Semifeed card: photo</title>
   <style>
-    /* 사진 한 장 + 그라데이션. 장식 요소 없이 사진이 분위기를, 글자가 내용을 맡는다. */
+    /* 사진 한 장 + 그라데이션. 장식 요소 없이 사진이 분위기를, 글자가 내용을 맡는다.
+       4:5 세로(1080×1350). 사진은 가로 원본(1280×853)이라 카드 전체에 깔면 1.6배 확대돼 흐려진다.
+       그래서 사진은 위쪽 900px에 원본에 가까운 크기로 두고, 아래로 갈수록 배경색에 녹여 본문 영역을 만든다.
+       프로필 그리드는 3:4로 좌우를 34px씩 자르므로, 글자는 좌우 여백(--pad) 안쪽에만 둔다. */
     @font-face {
       font-family: Pretendard;
       src: url("../../fonts/PretendardVariable.woff2") format("woff2-variations");
@@ -18,7 +21,8 @@
       --text: #ffffff;
       --text-soft: rgba(255, 255, 255, 0.86);
       --text-muted: rgba(255, 255, 255, 0.62);
-      --pad: 64px;
+      --pad: 72px;
+      --photo-h: 900px;
     }
 
     * {
@@ -43,7 +47,7 @@
     .card {
       position: relative;
       width: 1080px;
-      height: 1080px;
+      height: 1350px;
       overflow: hidden;
       color: var(--text);
       /* 사진이 없을 때 보이는 배경 (DESIGN.md: Empty image) */
@@ -52,29 +56,31 @@
 
     .photo {
       position: absolute;
-      inset: 0;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 100%;
+      height: var(--photo-h);
       object-fit: cover;
     }
 
-    /* 위쪽은 메타 정보가 읽힐 만큼만, 아래쪽은 본문이 확실히 읽히도록 어둡게 한다. */
+    /* 위쪽은 메타 정보가 읽힐 만큼만 어둡게 하고, 사진 아래쪽은 배경색으로 녹여 사진 경계가 보이지 않게 한다. */
     .shade {
       position: absolute;
       inset: 0;
       background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0) 20%,
-        rgba(0, 0, 0, 0) 34%,
-        rgba(0, 0, 0, 0.7) 58%,
-        rgba(0, 0, 0, 0.92) 100%
+        rgba(0, 0, 0, 0.5) 0px,
+        rgba(0, 0, 0, 0) 240px,
+        rgba(0, 0, 0, 0) 420px,
+        rgba(11, 15, 20, 0.8) 740px,
+        var(--canvas) var(--photo-h),
+        var(--canvas) 100%
       );
     }
 
     .topbar {
       position: absolute;
-      top: 56px;
+      top: 60px;
       left: var(--pad);
       right: var(--pad);
       display: flex;
@@ -104,8 +110,8 @@
       position: absolute;
       left: var(--pad);
       right: var(--pad);
-      bottom: 52px;
-      max-height: 660px;
+      bottom: 64px;
+      max-height: 700px;
       overflow: hidden;
     }
 
@@ -174,7 +180,7 @@
       body {
         display: block;
         width: 100vw;
-        height: 100vw;
+        height: calc(100vw * 1350 / 1080);
         min-height: 0;
         overflow: hidden;
       }

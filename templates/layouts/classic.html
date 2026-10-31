@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Semifeed card: classic</title>
   <style>
-    /* 저장소에 포함된 폰트를 써서 실행 환경과 무관하게 같은 카드가 나오게 한다. */
+    /* 저장소에 포함된 폰트를 써서 실행 환경과 무관하게 같은 카드가 나오게 한다.
+       4:5 세로(1080×1350) = 상단 바 112 + 히어로 600 + 본문 638. */
     @font-face {
       font-family: Pretendard;
       src: url("../../fonts/PretendardVariable.woff2") format("woff2-variations");
@@ -46,7 +47,7 @@
     .card {
       position: relative;
       width: 1080px;
-      height: 1080px;
+      height: 1350px;
       overflow: hidden;
       color: var(--text);
       background:
@@ -104,7 +105,7 @@
 
     .hero {
       position: relative;
-      height: 414px;
+      height: 600px;
       overflow: hidden;
       background:
         linear-gradient(135deg, rgba(99, 230, 200, 0.12), transparent 58%),
@@ -196,7 +197,7 @@
     }
 
     .story {
-      height: 554px;
+      height: 638px;
       padding: 48px 64px 42px;
       display: flex;
       flex-direction: column;
@@ -273,7 +274,7 @@
       body {
         display: block;
         width: 100vw;
-        height: 100vw;
+        height: calc(100vw * 1350 / 1080);
         min-height: 0;
         overflow: hidden;
       }

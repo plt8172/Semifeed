@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""카드 메타데이터(<id>.json)를 templates/layouts/<레이아웃>.html에 채워 1080×1080 JPEG로 렌더링한다.
+"""카드 메타데이터(<id>.json)를 templates/layouts/<레이아웃>.html에 채워 1080×1350(4:5) JPEG로 렌더링한다.
 
     python3 scripts/render.py cards/2026-10-19/381bbabb74.json [...]
     → 같은 폴더에 381bbabb74.jpg
@@ -47,6 +47,8 @@ LAYOUTS_DIR = ROOT / "templates" / "layouts"
 DEFAULT_LAYOUT = "photo"
 FALLBACK_CHROMIUM = "/opt/pw-browsers/chromium"
 JPEG_QUALITY = 92
+# Instagram 피드 세로 최대 비율 4:5. 레이아웃의 .card도 이 크기여야 한다 (templates/README.md).
+CARD_WIDTH, CARD_HEIGHT = 1080, 1350
 
 FILL_SCRIPT = """
 (card) => {
@@ -179,7 +181,7 @@ def main() -> int:
     failed = 0
     with sync_playwright() as playwright:
         browser = launch(playwright)
-        page = browser.new_page(viewport={"width": 1080, "height": 1080}, device_scale_factor=1)
+        page = browser.new_page(viewport={"width": CARD_WIDTH, "height": CARD_HEIGHT}, device_scale_factor=1)
         for card_path in args.cards:
             out_path = (args.out_dir or card_path.parent) / f"{card_path.stem}.jpg"
             errors = render(page, card_path, out_path, args.layout, config)
