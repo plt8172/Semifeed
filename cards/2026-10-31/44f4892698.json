@@ -1,0 +1,35 @@
+{
+  "id": "44f4892698",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64613",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-10-30T17:37+09:00",
+  "headline": "LG엔솔, GM과 '파우치+각형' 섞은 새 배터리 개발",
+  "bullets": [
+    "파우치 셀 2~4개를 금속 케이스에 넣어 각형처럼 만들어",
+    "기존 파우치 설비를 그대로 써 투자·원가 줄이는 목적",
+    "오창 공장서 시제품 생산 중, 실제 차량 적용은 미정"
+  ],
+  "caption": "LG엔솔, GM과 '파우치+각형' 섞은 새 배터리 개발\n\nLG에너지솔루션이 미국 GM과 함께 파우치형과 각형의 장점을 합친 '하이브리드 배터리'를 개발하고 있습니다. 전기차 배터리는 셀을 감싸는 겉모양에 따라 원통형, 비닐처럼 얇은 막으로 감싼 파우치형, 단단한 금속 캔에 넣은 각형으로 나뉩니다. LG에너지솔루션은 그동안 파우치형을 주력으로 해 왔지만, 세계 완성차 업체들이 각형 채택을 늘리면서 대응이 필요해졌습니다. 내부에서 PtoP(Pouch to Prismatic)라고 부르는 이 기술은 이미 완성된 파우치 셀 2~4개를 금속 케이스에 넣고 전극을 레이저로 용접해 하나의 각형 배터리처럼 만듭니다. 각형 전용 라인을 새로 짓지 않고 전 세계에 갖춘 파우치 생산설비를 그대로 활용할 수 있어 투자비와 제조원가를 줄일 수 있다는 것이 핵심입니다. 오창 공장에서 시제품을 만들고 있지만, 업계는 아직 특정 차량 적용보다는 여러 가능성을 살펴보는 단계라고 전했습니다. SK온도 비슷한 기술을 개발하고 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64613\n\n#반도체 #semiconductor #배터리 #전기차 #LG에너지솔루션 #GM #각형배터리 #파우치배터리",
+  "photo_queries": [
+    "electric vehicle battery pack",
+    "laser welding metal",
+    "electric car chassis"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1458836",
+    "query": "electric vehicle battery pack",
+    "file": "44f4892698.photo.jpg",
+    "download_url": "https://pixabay.com/get/gfd912fe9d507cb965154088d5bc336930d0fe3727ca7bb42ac19032c3cba028ce3f30f517b766c2340eb79914073c4486856b0ed48bb32c1a78bb7ef880b92e1_1280.jpg",
+    "page_url": "https://pixabay.com/photos/electric-car-car-electric-vehicle-1458836/",
+    "photographer": "VariousPhotography",
+    "photographer_url": "https://pixabay.com/users/VariousPhotography-1860391/",
+    "alt": "electric car, car, electric, vehicle, power, electricity, transportation, automobile, energy, car wallpapers, ecology, fuel, alternative, environment, charge, battery, green, plug, hybrid, eco, technology, socket, recharge, supply, rechargeable, clean, blue car, blue technology, blue energy, blue power, blue clean",
+    "width": 4912,
+    "height": 2760,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: VariousPhotography / Pixabay"
+  }
+}

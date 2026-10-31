@@ -1,0 +1,35 @@
+{
+  "id": "912e2901b2",
+  "link": "https://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed",
+  "source": "Tom's Hardware",
+  "category": "기업·실적",
+  "published_at": "2026-10-31T05:06+09:00",
+  "headline": "인텔 30% 폭락에 반도체 시총 하루 1조달러 증발",
+  "bullets": [
+    "인텔 주가 하루 30% 하락, 시총 약 1500억달러 사라져",
+    "PC용 칩 매출 20% 넘게 줄 것이란 전망이 원인",
+    "엔비디아·AMD·ASML 등 동반 하락, 업계 시총 1조달러 증발"
+  ],
+  "caption": "인텔 30% 폭락에 반도체 시총 하루 1조달러 증발\n\n인텔 주가가 금요일 하루에만 30% 떨어져 시가총액 약 1500억달러가 사라졌습니다. 회사 역사상 하루 최대 낙폭입니다. 인텔은 다음 분기 실적 전망에서, 회사 수익의 절반 가까이를 책임지는 PC용 프로세서 사업 매출이 20% 넘게 줄어들 것으로 내다봤습니다. 인텔은 높은 메모리 가격 등으로 PC 시장이 내년까지 더 나빠질 것으로 보고 있습니다. 충격은 업계 전체로 번져 주요 반도체 30개사로 구성된 필라델피아 반도체지수가 9% 넘게 빠졌고, 벤징가 추산으로 반도체 시가총액 약 1조달러가 하루 만에 증발했습니다. AMD·퀄컴·Arm은 12%대, 엔비디아는 5.66% 내렸는데 엔비디아는 회사 규모가 커서 금액으로는 약 2700억달러로 인텔보다 더 많이 줄었습니다. 델·HPE 같은 서버 업체와 오라클까지 떨어졌는데, 로이터는 AI 인프라 투자 규모가 계속 유지될 수 있는지 투자자들의 의문이 커진 것도 영향을 줬다고 전했습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed\n\n#반도체 #semiconductor #인텔 #Intel #반도체주 #PC시장 #필라델피아반도체지수",
+  "photo_queries": [
+    "stock market chart",
+    "laptop keyboard closeup",
+    "silicon chip die"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1863880",
+    "query": "stock market chart",
+    "file": "912e2901b2.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf0c8d7fdbe5cfb3581daeca355e606ea45d178d093042e854fc912c0e051ad6bb53380fd936ac3a6a5a2eadd1448d76dc83d6d59f4bfda848b9c3cfdc0a04cda_1280.jpg",
+    "page_url": "https://pixabay.com/photos/stock-trading-monitor-business-1863880/",
+    "photographer": "3844328",
+    "photographer_url": "https://pixabay.com/users/3844328-3844328/",
+    "alt": "stock, trading, monitor, business, finance, exchange, investment, market, trade, data, graph, economy, financial, currency, chart, information, technology, profit, forex, rate, foreign exchange, analysis, statistic, funds, digital, sell, earning, display, blue, accounting, index, management, black and white, monochrome, stock, stock, stock, trading, trading, trading, trading, trading, business, business, business, finance, finance, finance, finance, investment, investment, market, data, data, data, graph, economy, economy, economy, financial, technology, forex",
+    "width": 5812,
+    "height": 3875,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 3844328 / Pixabay"
+  }
+}

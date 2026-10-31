@@ -1,0 +1,19 @@
+{
+  "id": "97c635c2a6",
+  "link": "https://semiengineering.com/chip-industry-week-in-review-162/",
+  "source": "Semiconductor Engineering",
+  "category": "메모리",
+  "published_at": "2026-10-30T16:01+09:00",
+  "headline": "SK하이닉스 \"메모리 부족, 2030년까지 간다\"",
+  "bullets": [
+    "SK하이닉스, D램·HBM 2029년까지 사실상 매진 전망",
+    "삼성전자도 2028년까지 공급 빠듯, 2027년 HBM 매진",
+    "공장 건설·장비 납기 길고 D램 생산이 HBM으로 쏠려"
+  ],
+  "caption": "SK하이닉스 \"메모리 부족, 2030년까지 간다\"\n\nSK하이닉스가 메모리 공급 부족이 2030년까지 이어지고, D램과 고대역폭메모리(HBM) 물량은 2029년까지 사실상 다 팔렸다고 내다봤습니다. HBM은 D램 여러 장을 수직으로 쌓아 데이터를 빠르게 주고받게 만든 메모리로, 엔비디아 등의 AI 가속기 옆에 붙어 쓰입니다. 삼성전자도 2028년까지 공급이 빠듯할 것으로 보고 2027년 HBM 물량은 이미 매진됐다고 밝혔습니다. 삼성전자는 그 이유로 새 공장을 짓고 장비를 들이는 데 오래 걸리는 점, 차세대 HBM은 칩이 더 크고 공정이 복잡한 점, D램 생산능력이 HBM으로 옮겨 가는 점을 꼽았습니다. 같은 주에 대만 TSMC는 AI 칩을 메모리와 묶는 첨단 패키징(CoWoS) 가격을 20% 올리는 방안을 검토 중이라는 보도가 나왔고, 중국 CXMT는 수율이 20~30%에 그치는데도 HBM3E 소량 생산을 시작할 계획인 것으로 전해졌습니다. AI 투자가 늘수록 메모리와 패키징이 병목이 되고 있다는 뜻입니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/chip-industry-week-in-review-162/\n\n#반도체 #semiconductor #메모리 #HBM #D램 #SK하이닉스 #삼성전자 #AI반도체",
+  "photo_queries": [
+    "memory chips closeup",
+    "semiconductor cleanroom equipment",
+    "computer motherboard slots"
+  ]
+}
