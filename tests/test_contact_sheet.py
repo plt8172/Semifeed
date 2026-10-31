@@ -48,6 +48,20 @@ class ContactSheetTest(unittest.TestCase):
         self.assertIn("10-27 · 2", page)
         self.assertIn("사진 없음", page)  # 이번 카드 사진 파일이 아직 없다
 
+    def test_candidate_rows_for_cards_without_photo(self):
+        new = self.card("2026-10-29", "new0000002", None, rendered=False)
+        folder = new.with_name("new0000002.candidates")
+        folder.mkdir()
+        (folder / "55.jpg").write_bytes(b"\xff\xd8fake")
+        (folder / "list.json").write_text(json.dumps({"provider": "pixabay", "candidates": [
+            {"id": "55", "label": "q1", "thumb": "55.jpg"}, {"id": "66", "label": "f2", "thumb": "66.jpg"}]}))
+        page = contact_sheet.build([new], [], 3)
+        self.assertIn("new0000002 후보", page)
+        self.assertIn("55 · q1", page)
+        self.assertIn("66 · f2", page)
+        self.assertNotIn("new0000002 · -", page)  # 후보가 있는 카드는 윗줄에 다시 나오지 않는다
+        self.assertEqual(page.count("data:image/jpeg"), 1)  # 썸네일이 있는 후보만 그림이 들어간다
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -50,6 +50,10 @@ python3 scripts/fetch.py
 PIXABAY_API_KEY=... python3 scripts/photo.py cards/2026-10-19/<id>.json
 #      이번 사진과 최근 3일 카드를 한 장에 모아 겹치는 사진을 눈으로 찾는다 → contact_sheet.jpg
 python3 scripts/contact_sheet.py cards/2026-10-19/<id>.json
+#      정기 실행은 후보를 모아 contact sheet에서 고른다 (RUN.md 3-1). 사진 없는 카드를 줄이려는 방식
+PIXABAY_API_KEY=... python3 scripts/photo.py --candidates cards/2026-10-19/<id>.json
+python3 scripts/contact_sheet.py cards/2026-10-19/<id>.json   # 후보 줄이 나온다
+PIXABAY_API_KEY=... python3 scripts/photo.py --pick <photo id> cards/2026-10-19/<id>.json
 
 # 2. 렌더: cards/2026-10-19/<id>.json → <id>.jpg
 pip install -r requirements.txt
