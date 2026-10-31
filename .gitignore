@@ -8,3 +8,5 @@ __pycache__/
 candidates.json
 cards/**/*.photo.jpg
 contact_sheet.jpg
+
+cards/**/*.candidates/

@@ -4,7 +4,11 @@
     python3 scripts/contact_sheet.py cards/2026-10-29/ae21ef86a0.json [...]
     → contact_sheet.jpg (커밋하지 않음)
 
-윗줄: 넘긴 카드의 사진(<id>.photo.jpg). 아랫줄: 최근 DAYS일 동안 사진을 넣어 렌더된 다른 카드(<id>.jpg).
+윗줄: 넘긴 카드 중 사진을 고른 카드의 사진(<id>.photo.jpg).
+가운데: 아직 사진이 없고 photo.py --candidates로 후보를 모은 카드마다 한 줄씩, 후보 썸네일.
+  칸 이름은 "사진 id · 출처"다. q1~q3은 카드의 photo_queries 순서, f1~은 config의 일반 검색어.
+  고른 사진은 photo.py --pick <사진 id>로 붙인다.
+아랫줄: 최근 DAYS일 동안 사진을 넣어 렌더된 다른 카드(<id>.jpg).
 칸마다 사진 id를 적어서, 겹치는 사진을 찾으면 바로 photo.py --exclude에 쓸 수 있다.
 
 photo.py는 같은 id와 같은 작가만 거른다. 다른 계정이 같은 사진을 다시 올린 경우는
@@ -54,17 +58,33 @@ def tile(card_path: Path, image: str, label: str) -> str:
     return f'<figure>{picture}<figcaption>{html.escape(label)}</figcaption></figure>'
 
 
+def candidate_rows(new_cards: list[Path]) -> str:
+    rows = []
+    for path in new_cards:
+        card = load_json(path, {}) or {}
+        if card.get("photo"):
+            continue
+        folder = path.with_name(f"{path.stem}.candidates")
+        listing = load_json(folder / "list.json", {}) or {}
+        tiles = [tile(folder / "x", c["thumb"], f"{c['id']} · {c['label']}") for c in listing.get("candidates", [])]
+        title = html.escape(f"{path.stem} 후보 — {card.get('headline') or card.get('title') or ''}")
+        rows.append(f'<h2>{title}</h2><div class="row">{"".join(tiles) or "후보 없음"}</div>')
+    return "".join(rows)
+
+
 def build(new_cards: list[Path], recent: list[Path], days: int) -> str:
     top = []
     for path in new_cards:
         photo = (load_json(path, {}) or {}).get("photo") or {}
+        if not photo and path.with_name(f"{path.stem}.candidates").is_dir():
+            continue  # 아래 후보 줄에 나온다
         top.append(tile(path, photo.get("file", ""), f"{path.stem} · {photo.get('id', '-')}"))
     bottom = []
     for path in recent:
         photo = load_json(path, {})["photo"]
         bottom.append(tile(path, path.with_suffix(".jpg").name, f"{path.parent.name[5:]} · {photo.get('id', '-')}"))
     return f"""<!doctype html><meta charset="utf-8"><style>
-body {{ margin: 0; padding: 16px; background: #fff; font: 14px sans-serif; width: {THUMB * 6 + 16 * 7}px; }}
+body {{ margin: 0; padding: 16px; background: #fff; font: 14px sans-serif; width: {THUMB * 7 + 16 * 8}px; }}
 h2 {{ font-size: 16px; margin: 8px 0; }}
 .row {{ display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }}
 figure {{ margin: 0; width: {THUMB}px; }}
@@ -72,7 +92,8 @@ img, .none {{ width: {THUMB}px; height: {THUMB}px; object-fit: cover; display: b
 .none {{ display: flex; align-items: center; justify-content: center; }}
 figcaption {{ margin-top: 4px; }}
 </style>
-<h2>이번 카드 사진 (카드 id · 사진 id)</h2><div class="row">{''.join(top)}</div>
+<h2>이번 카드 사진 (카드 id · 사진 id)</h2><div class="row">{''.join(top) or '없음'}</div>
+{candidate_rows(new_cards)}
 <h2>최근 {days}일 카드 (날짜 · 사진 id)</h2><div class="row">{''.join(bottom) or '없음'}</div>"""
 
 

@@ -15,6 +15,16 @@
   "max_items": 5,
   "card_layout": "photo",
   "photo_provider": "pixabay",
+  "photo_fallback_queries": [
+    {"query": "semiconductor", "category": "science"},
+    {"query": "microchip", "category": "computer"},
+    {"query": "printed circuit board", "category": "computer"},
+    {"query": "electronic components", "category": "science"},
+    {"query": "server room", "category": "computer"},
+    {"query": "fiber optic", "category": "science"},
+    {"query": "electronics manufacturing", "category": "industry"},
+    {"query": "electrical engineering", "category": "industry"}
+  ],
   "slack_channel_id": "C0CD6SFCFS8",
   "instagram_user_id": "17841433117660601",
   "instagram_api_version": "v25.0",

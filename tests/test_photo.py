@@ -32,7 +32,8 @@ def fake_photo(base: str, photo_id: int, width: int = 4000, height: int = 2667) 
     }
 
 
-def fake_hit(base: str, photo_id: int, width: int = 5000, height: int = 3333, fresh: bool = False) -> dict:
+def fake_hit(base: str, photo_id: int, width: int = 5000, height: int = 3333, fresh: bool = False,
+             tags: str = "chip, wafer") -> dict:
     return {
         "id": photo_id,
         "imageWidth": width,
@@ -40,8 +41,9 @@ def fake_hit(base: str, photo_id: int, width: int = 5000, height: int = 3333, fr
         "pageURL": f"https://pixabay.com/photos/chip-{photo_id}/",
         "user": "maker",
         "user_id": 77,
-        "tags": "chip, wafer",
+        "tags": tags,
         "largeImageURL": f"{base}/img/px{photo_id}{'-fresh' if fresh else ''}.jpg",
+        "webformatURL": f"{base}/img/thumb{photo_id}.jpg",
     }
 
 
@@ -55,7 +57,11 @@ class FakePexels(BaseHTTPRequestHandler):
         FakePexels.requests.append({"path": parts.path, "query": parse_qs(parts.query), "auth": self.headers.get("Authorization")})
         if parts.path == "/api/":
             q = parse_qs(parts.query)
-            hits = [fake_hit(self.base, 200, width=1000, height=700), fake_hit(self.base, 201), fake_hit(self.base, 202)]
+            hits = [fake_hit(self.base, 200, width=1000, height=700), fake_hit(self.base, 201), fake_hit(self.base, 202),
+                    fake_hit(self.base, 203, tags="cupcakes, dessert, food"),  # 'wafer'가 과자로 나오던 사례
+                    fake_hit(self.base, 204, tags="worker, beautiful girl, chip")]
+            if q.get("category") == ["science"]:
+                hits = [fake_hit(self.base, 201), fake_hit(self.base, 205), fake_hit(self.base, 206)]
             if "id" in q:
                 hits = [fake_hit(self.base, int(q["id"][0]), fresh=True)]
             body, content_type = json.dumps({"hits": hits}).encode(), "application/json"
@@ -225,6 +231,43 @@ class PhotoTest(unittest.TestCase):
         result = self.run_photo(provider="pixabay")
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual([r["path"] for r in FakePexels.requests], ["/api/", "/img/px201-fresh.jpg"])
+
+    def run_candidates(self, *extra):
+        config = Path(self._tmp.name) / "config.json"
+        config.write_text(json.dumps({"photo_fallback_queries": [{"query": "semiconductor", "category": "science"}]}))
+        return self.run_photo("--config", str(config), *extra, provider="pixabay")
+
+    def test_candidates_collects_card_and_fallback_queries(self):
+        result = self.run_candidates("--candidates")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        folder = self.card.with_name("381bbabb74.candidates")
+        listing = json.loads((folder / "list.json").read_text())
+        # 200은 작고, 203·204는 태그로 빠진다. 201은 카드 검색어에서 이미 나와 일반 검색어 쪽에서는 205가 들어간다.
+        self.assertEqual([(c["id"], c["label"]) for c in listing["candidates"]], [("201", "q1"), ("202", "q1"), ("205", "f1")])
+        self.assertTrue((folder / "205.jpg").is_file())
+        searches = [r["query"] for r in FakePexels.requests if r["path"] == "/api/"]
+        self.assertEqual([s.get("category") for s in searches], [None, ["science"]])
+        self.assertNotIn("photo", self.load())  # 후보 모드는 고르지 않는다
+
+    def test_pick_attaches_candidate(self):
+        self.run_candidates("--candidates")
+        result = self.run_candidates("--pick", "205")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        photo = self.load()["photo"]
+        self.assertEqual((photo["id"], photo["query"], photo["category"]), ("205", "semiconductor", "science"))
+        self.assertEqual(self.card.with_name("381bbabb74.photo.jpg").read_bytes(), JPEG)
+        # 이미 사진이 있는 카드는 후보를 다시 모으지 않는다
+        result = self.run_candidates("--candidates")
+        self.assertIn("already has photo 205", result.stderr)
+
+    def test_pick_rejects_non_candidate_and_photo_used_elsewhere(self):
+        self.run_candidates("--candidates")
+        self.assertEqual(self.run_candidates("--pick", "999").returncode, 3)
+        other = self.make_other_card(photo={"provider": "pixabay", "id": "202"})
+        result = self.run_candidates("--pick", "202")
+        self.assertEqual(result.returncode, 3)
+        self.assertIn("already used", result.stderr)
+        other.unlink()
 
     def test_missing_key(self):
         result = self.run_photo(key="")
