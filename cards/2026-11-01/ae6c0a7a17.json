@@ -1,0 +1,35 @@
+{
+  "id": "ae6c0a7a17",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64630",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-01T10:39+09:00",
+  "headline": "효성중공업·지멘스, AI 데이터센터 전기 함께 관리한다",
+  "bullets": [
+    "효성중공업, 지멘스와 글로벌 전략적 파트너십 협약 체결",
+    "디지털 자산관리·디지털 변전소·데이터센터 전력 등 3개 분야 협력",
+    "반도체 변압기와 에너지관리시스템 연계해 데이터센터 전력 효율 개선"
+  ],
+  "caption": "효성중공업·지멘스, AI 데이터센터 전기 함께 관리한다\n\n국내 전력기기 회사 효성중공업이 독일 지멘스와 디지털 전력망과 AI 데이터센터 분야에서 협력하는 '글로벌 전략적 파트너십 협약'을 맺었습니다. 두 회사는 디지털 자산관리, 디지털 변전소, 데이터센터 통합 전력 솔루션 세 분야에서 손을 잡습니다. 먼저 효성중공업의 전력설비 진단 시스템과 지멘스의 클라우드 전력관리 플랫폼을 연결해, 초고압부터 저압까지 설비 상태를 한곳에서 보고 고장 징후를 미리 잡아내려 합니다. 변전소는 발전소에서 온 전기의 전압을 바꿔 각 지역으로 나눠 보내는 시설인데, 여기에 효성중공업의 계측 센서와 지멘스의 디지털 신호 변환 장치를 결합해 디지털로 관리하는 변전소를 만든다는 계획입니다. AI 데이터센터용으로는 반도체 소자로 전압을 바꾸는 반도체 변압기(SST)와 지멘스의 에너지관리시스템을 묶어 전력 운영 효율을 높입니다. 전기를 많이 쓰는 AI 데이터센터가 늘면서 전력 설비 회사들도 장비 공급을 넘어 운영 관리까지 사업을 넓히고 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64630\n\n#반도체 #semiconductor #전력망 #데이터센터 #변전소 #반도체변압기 #효성중공업 #지멘스",
+  "photo_queries": [
+    "electrical substation transformer",
+    "high voltage power lines",
+    "power distribution switchgear"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3196696",
+    "query": "electrical substation transformer",
+    "file": "ae6c0a7a17.photo.jpg",
+    "download_url": "https://pixabay.com/get/g41d97f7878f6a223813f58c36dd9fb31fe0cc01ec2e980c60f23e554d50dd03a507329c08371b2f0f8b4c8d972048310256babf043aa0843a77b69d8f20fa089_1280.jpg",
+    "page_url": "https://pixabay.com/photos/industry-perfomance-heaven-3196696/",
+    "photographer": "Photomat",
+    "photographer_url": "https://pixabay.com/users/Photomat-7904557/",
+    "alt": "industry, perfomance, heaven, technology, electricity, substation, electrical engineering, energy, high voltage, wülfel, sromverteilung, power supply, substation, substation, substation, substation, electrical engineering, electrical engineering, electrical engineering, electrical engineering, electrical engineering",
+    "width": 3649,
+    "height": 2433,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Photomat / Pixabay"
+  }
+}
