@@ -1,0 +1,35 @@
+{
+  "id": "dba6243bde",
+  "link": "https://www.etnews.com/20261030000267",
+  "source": "전자신문",
+  "category": "정책·공급망",
+  "published_at": "2026-11-01T16:00+09:00",
+  "headline": "러시아 1위 통신사 CEO, 방한해 5G 파트너 찾는다",
+  "bullets": [
+    "러시아 1위 통신사 MTS 최고경영자, 12월 인천 송도 행사 맞춰 방한",
+    "6G 동향 확인하고 5G 통신망 구축할 한국 파트너 물색이 목적",
+    "국제 정세 민감한 통신장비 시장서 한국 업체 협업 기회 될지 주목"
+  ],
+  "caption": "러시아 1위 통신사 CEO, 방한해 5G 파트너 찾는다\n\n러시아 1위 통신사 모바일텔레시스템즈(MTS)의 이네사 갈락티오노바 최고경영자(CEO)가 12월 8일 인천 송도에서 개막하는 행사에 맞춰 한국을 찾는다고 전자신문이 단독 보도했습니다. MTS CEO의 방한은 7년 만입니다. 방문 목적은 세계 6G 기술 흐름을 살피고, 러시아가 당장 풀어야 할 5G 이동통신망 구축을 함께할 파트너를 찾는 것입니다. 5G·6G 같은 이동통신망은 기지국 장비와 그 안에 들어가는 통신 칩, 안테나 부품으로 만들어지기 때문에 통신장비 시장은 반도체·전자부품 산업과 바로 이어져 있습니다. 다만 통신장비는 나라 간 관계와 국제 정세에 따라 거래가 막히거나 열리는 민감한 시장이라, 기술력을 갖춘 한국 통신·장비 업체와 러시아 사이에 실제 협업이 생길지는 아직 지켜봐야 하는 단계입니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261030000267\n\n#반도체 #semiconductor #통신장비 #5G #6G #이동통신 #러시아",
+  "photo_queries": [
+    "cell tower antenna",
+    "telecom base station equipment",
+    "fiber optic network"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1676940",
+    "query": "telecom base station equipment",
+    "file": "dba6243bde.photo.jpg",
+    "download_url": "https://pixabay.com/get/g896245b5dcd3726d2600919f8c127b3689ef0abd7ec98bd58d678a3e755f4debb37558e46c4ffe38bcfaf4ce97d4109e49df3514f03e201782afdb49c1ceac33_1280.jpg",
+    "page_url": "https://pixabay.com/photos/cellular-tower-sky-blue-clear-sky-1676940/",
+    "photographer": "MaxwellFury",
+    "photographer_url": "https://pixabay.com/users/MaxwellFury-4913791/",
+    "alt": "cellular tower, sky, blue sky, blue, clear sky, tower, station, technology, cellular, network, mobile, transmitter, transmission, connection, structure, nature, white, blue mobile, Laval, Canada, Quebec",
+    "width": 4320,
+    "height": 3240,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: MaxwellFury / Pixabay"
+  }
+}

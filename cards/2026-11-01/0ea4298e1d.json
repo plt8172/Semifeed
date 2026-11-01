@@ -1,0 +1,35 @@
+{
+  "id": "0ea4298e1d",
+  "link": "https://www.etnews.com/20261030000262",
+  "source": "전자신문",
+  "category": "전자·부품",
+  "published_at": "2026-11-01T16:30+09:00",
+  "headline": "삼성전자, 내년 퀀텀닷 TV 접고 등급 셋으로 단순화",
+  "bullets": [
+    "내년 프리미엄 TV를 울트라·플러스·베이직 3단계로 전면 개편",
+    "OLED·네오QLED·미니LED 같은 기술명 대신 제품 등급으로 구분",
+    "퀀텀닷 TV 양산 중단하고 백라이트 방식 위주로 단순화할 방침"
+  ],
+  "caption": "삼성전자, 내년 퀀텀닷 TV 접고 등급 셋으로 단순화\n\n삼성전자가 내년 프리미엄 TV 라인업을 '울트라·플러스·베이직' 세 단계로 전면 개편한다고 전자신문이 보도했습니다. 지금까지는 마이크로 RGB, OLED, 네오QLED, 미니LED처럼 화면을 만드는 기술 이름을 제품 앞에 내세웠는데, 앞으로는 제품의 급과 가치를 바로 알 수 있는 등급으로 나눈다는 것입니다. 기사에 따르면 내년 이후에는 프리미엄 기술인 양자점(QD·퀀텀닷) TV 양산을 중단하고, 백라이트 유닛(BLU) 방식 위주로 제품을 단순화합니다. 퀀텀닷은 빛을 받으면 특정 색을 선명하게 내는 아주 작은 반도체 입자로, 화면 색 재현력을 높이는 데 쓰입니다. 백라이트 유닛은 LCD 패널 뒤에서 빛을 비추는 부품으로, 미니LED TV도 이 방식에 속합니다. 소비자가 헷갈리던 기술명을 걷어 내고 등급으로 고르기 쉽게 만들어 판매를 늘리려는 전략으로 풀이되며, 패널·부품 업체들의 공급 구성에도 변화가 생길 수 있습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261030000262\n\n#반도체 #semiconductor #디스플레이 #TV #퀀텀닷 #미니LED #삼성전자",
+  "photo_queries": [
+    "television screen closeup",
+    "led backlight panel",
+    "display panel factory"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7025907",
+    "query": "television screen closeup",
+    "file": "0ea4298e1d.photo.jpg",
+    "download_url": "https://pixabay.com/get/g5992182700284f0214dab9cfe62aee5a156a6cf5147157710deed66d5c7c0051c3f0de106d158b9fc85a99140a8b422e69ebff5bd671f3d32c8e38f53540f60e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/television-speaker-screen-tv-7025907/",
+    "photographer": "yousafbhutta",
+    "photographer_url": "https://pixabay.com/users/yousafbhutta-2933897/",
+    "alt": "television, speaker, screen, tv, entertainment, recreation, closeup, television, television, television, speaker, speaker, speaker, speaker, speaker, tv",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: yousafbhutta / Pixabay"
+  }
+}
