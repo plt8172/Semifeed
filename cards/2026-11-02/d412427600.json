@@ -1,0 +1,35 @@
+{
+  "id": "d412427600",
+  "link": "https://www.etnews.com/20261101000098",
+  "source": "전자신문",
+  "category": "기업·실적",
+  "published_at": "2026-11-01T15:36+09:00",
+  "headline": "엔비디아 하루 4.2% 급락, 시총 1위 애플에 내줬다",
+  "bullets": [
+    "애플 시가총액 5조300억달러로 세계 1위 자리 되찾아",
+    "엔비디아는 같은 날 주가가 4.2% 급락하며 1위 자리 내줘",
+    "빅테크의 막대한 AI 투자 수익성 우려가 배경으로 꼽혀"
+  ],
+  "caption": "엔비디아 하루 4.2% 급락, 시총 1위 애플에 내줬다\n\n애플이 엔비디아를 제치고 세계에서 가장 기업 가치가 큰 회사 자리를 되찾았습니다. 블룸버그통신에 따르면 애플 주가는 현지시간 30일 뉴욕증시에서 1.2% 내렸지만 시가총액 5조300억달러를 기록했고, 같은 날 엔비디아 주가는 4.2% 급락했습니다. 시가총액은 주가에 발행 주식 수를 곱한 값으로, 시장이 매기는 회사 전체의 가격이라고 볼 수 있습니다. 엔비디아는 AI 학습과 추론에 쓰이는 GPU(그래픽처리장치)를 사실상 독점 공급하며 AI 열풍의 최대 수혜 기업으로 꼽혀 왔습니다. 이번 순위 변화는 AI 데이터센터에 막대한 돈을 쏟아붓는 빅테크 기업들이 그만큼 돈을 벌 수 있을지에 대한 우려가 커진 가운데, 상대적으로 AI 투자 지출을 억제해 온 애플에 투자자들의 관심이 쏠린 결과로 풀이됩니다. AI 칩 수요를 떠받치는 빅테크 투자에 대한 시장의 시선이 달라지고 있다는 신호로 읽힙니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261101000098\n\n#반도체 #semiconductor #엔비디아 #애플 #AI칩 #GPU #시가총액",
+  "photo_queries": [
+    "gpu chip closeup",
+    "trading screen numbers",
+    "ai server hardware"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1235959",
+    "query": "ai server hardware",
+    "file": "d412427600.photo.jpg",
+    "download_url": "https://pixabay.com/get/g8ae19dab993ee325e41a32c167c6f056e1ac24772fa70fa0649632f2f96839fbf645ebeb73e85ccf72fa930cb2738bacdb382692636187b35c0d2703785a0afe_1280.jpg",
+    "page_url": "https://pixabay.com/photos/server-cloud-development-business-1235959/",
+    "photographer": "ColossusCloud",
+    "photographer_url": "https://pixabay.com/users/ColossusCloud-2086276/",
+    "alt": "server, cloud, development, business, network, connection, technology, internet, web, database, analysis, application, colors, design, management, designer, developer, gray business, gray technology, gray clouds, gray network, gray internet, gray design, gray company, gray web, gray color, gray server, gray management, server, server, server, server, server, database, database",
+    "width": 1980,
+    "height": 1320,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ColossusCloud / Pixabay"
+  }
+}

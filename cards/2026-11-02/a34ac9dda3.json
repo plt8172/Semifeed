@@ -1,0 +1,35 @@
+{
+  "id": "a34ac9dda3",
+  "link": "https://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673",
+  "source": "The Register",
+  "category": "정책·공급망",
+  "published_at": "2026-11-01T18:04+09:00",
+  "headline": "영국, 100일 뒤 구리선 유선전화망 완전히 끈다",
+  "bullets": [
+    "BT 자회사 오픈리치, 2027년 1월 31일 기존 전화망 종료 재확인",
+    "카드 결제기·화재경보기·노인 응급호출기도 영향 받을 수 있어",
+    "구리선 대신 광섬유 기반 디지털 네트워크로 전환하는 계획"
+  ],
+  "caption": "영국, 100일 뒤 구리선 유선전화망 완전히 끈다\n\n영국 최대 통신사 BT그룹의 인프라 자회사 오픈리치가 기존 유선전화망(PSTN)을 2027년 1월 31일에 종료하며, 이 일정을 더는 미루지 않겠다고 통신사들에 알렸습니다. PSTN은 구리 전화선으로 음성 신호를 주고받는 오래된 공중전화교환망으로, 집 전화뿐 아니라 매장의 카드 결제 단말기, 화재·보안 경보기, 노인과 취약계층이 쓰는 응급호출기도 이 망에 기대어 왔습니다. 영국 정부는 전국 통신망을 광섬유 기반의 고속 디지털 네트워크로 바꾸려 하고 있는데, 구리선에 의존하는 기존 전화 서비스가 걸림돌이었습니다. 앞으로 유선전화를 계속 쓰려면 전화기를 인터넷 공유기에 연결하는 '디지털 보이스' 방식을 써야 합니다. 오픈리치는 10년 가까이 전환을 준비했고 한 차례 일정을 미룬 적도 있지만, 아직 대중의 인식이 낮아 통신사들이 더 적극적으로 알려야 한다는 지적이 나옵니다.\n\n출처: The Register\nhttps://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673\n\n#반도체 #semiconductor #통신 #광섬유 #유선전화 #PSTN #영국",
+  "photo_queries": [
+    "old telephone exchange",
+    "copper telephone cables",
+    "fiber optic router"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3594206",
+    "query": "old telephone exchange",
+    "file": "a34ac9dda3.photo.jpg",
+    "download_url": "https://pixabay.com/get/g93a93aa88702d8184b44b4a0a70b752d9623d309abe1172d050ecba3a07b4736ae2ae4f1dc960ab860e776120fe60618f83414d08869d89d909c7bfc11e1821b_1280.jpg",
+    "page_url": "https://pixabay.com/photos/telephone-vintage-monochrome-phone-3594206/",
+    "photographer": "Alexas_Fotos",
+    "photographer_url": "https://pixabay.com/users/Alexas_Fotos-686414/",
+    "alt": "telephone, vintage, monochrome, phone, dial, chat, communication, retro, connection, telephone, telephone, telephone, telephone, telephone, phone, phone, phone, phone",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Alexas_Fotos / Pixabay"
+  }
+}
