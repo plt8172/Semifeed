@@ -1,0 +1,36 @@
+{
+  "id": "71632bf58f",
+  "link": "https://www.etnews.com/20261101000090",
+  "source": "전자신문",
+  "category": "패키징",
+  "published_at": "2026-11-01T16:10+09:00",
+  "headline": "이재용, 日 요코하마 칩 포장 연구소 직접 찾았다",
+  "bullets": [
+    "삼성전자 이재용 회장, 요코하마 '어드밴스트 패키지 랩' 방문",
+    "9월 8일 문 연 뒤 두 달 만의 첫 현장 방문, 연구 현황 점검",
+    "AI 칩 승부처 첨단 패키징 챙기고 日 소부장과 협력 확대 모색"
+  ],
+  "caption": "이재용, 日 요코하마 칩 포장 연구소 직접 찾았다\n\n이재용 삼성전자 회장이 1일 일본 요코하마에 있는 삼성전자의 반도체 패키징 연구거점 '어드밴스트 패키지 랩(APL)'을 방문해 차세대 패키징 요소기술 연구 현황을 점검했습니다. 이 연구소는 9월 8일 공식적으로 문을 열었고, 이번 방문은 그로부터 약 두 달 만에 이뤄진 첫 현장 경영입니다. 패키징은 다 만든 반도체 칩을 기판에 연결하고 보호하도록 감싸는 공정인데, 최근에는 여러 칩을 한데 쌓거나 나란히 붙여 하나처럼 움직이게 만드는 '첨단 패키징'이 AI 반도체의 성능을 좌우하는 기술로 떠올랐습니다. 이 회장은 이 분야의 기술 확보 상황을 챙기는 동시에, 반도체 소재·부품·장비(소부장) 기업이 많은 일본 생태계와 협력을 넓힐 방법을 모색한 것으로 전해졌습니다. AI 칩 경쟁이 칩 자체의 미세 공정뿐 아니라 칩을 어떻게 묶느냐로 넓어지면서, 삼성전자가 일본 현지 연구거점을 통해 이 경쟁에 대응하려는 행보로 볼 수 있습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261101000090\n\n#반도체 #semiconductor #첨단패키징 #삼성전자 #소부장 #AI반도체 #요코하마",
+  "photo_queries": [
+    "chip packaging substrate",
+    "microscope electronics lab",
+    "semiconductor cleanroom equipment"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4739537",
+    "query": "printed circuit board",
+    "file": "71632bf58f.photo.jpg",
+    "download_url": "https://pixabay.com/get/gb0436a6149439d0fef066af9a0762d90211f40c6984c608a492178d8ca16de3822d0f7a5bb9fe2116e332848310990cb0288060a83aeaee03a28b1e08f46c0b6_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-board-circuit-electronic-4739537/",
+    "photographer": "padrinan",
+    "photographer_url": "https://pixabay.com/users/padrinan-1694659/",
+    "alt": "technology, board, circuit, electronic, computer, component, chip, hardware, team, electric, service, device, system, electricity, transistor, personal computer, technical, connection, industry, chip, chip, transistor, transistor, transistor, transistor, transistor",
+    "width": 6016,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: padrinan / Pixabay",
+    "category": "computer"
+  }
+}

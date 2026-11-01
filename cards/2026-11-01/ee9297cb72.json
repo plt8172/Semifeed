@@ -1,0 +1,35 @@
+{
+  "id": "ee9297cb72",
+  "link": "https://www.etnews.com/20261030000273",
+  "source": "전자신문",
+  "category": "정책·공급망",
+  "published_at": "2026-11-01T18:00+09:00",
+  "headline": "기존 데이터센터 일부만 바꿔도 'AI 데이터센터' 인정 추진",
+  "bullets": [
+    "정부, AI 데이터센터(AIDC) 인정 기준을 시행령 초안보다 완화",
+    "기존 데이터센터 일부를 AI용으로 바꿔도 인정받게 할 방침",
+    "AIDC 특별법 하위법령, 이르면 이번 주 입법예고 계획"
+  ],
+  "caption": "기존 데이터센터 일부만 바꿔도 'AI 데이터센터' 인정 추진\n\n정부가 인공지능 데이터센터(AIDC)로 인정하는 기준을 당초 논의된 시행령 초안보다 크게 완화하는 방향으로 조정하고 있는 것으로 알려졌습니다. AIDC는 AI 학습과 추론에 쓰이는 고성능 서버를 대량으로 갖춘 데이터센터를 말하는데, 정부는 AIDC 특별법을 만들어 이런 시설을 따로 정의하고 지원하려 하고 있습니다. 이번 조정은 업계 의견을 반영한 것으로, 인정 범위를 넓히고 기존 데이터센터의 일부를 AI용으로 전환하는 경우에도 AIDC로 인정받을 수 있게 하려는 취지로 풀이됩니다. 새로 짓지 않고 이미 있는 시설을 고쳐 쓰는 사업자도 제도 안으로 들어올 수 있게 되는 셈입니다. 정부는 특별법 하위법령 제정 작업을 마무리하고 이르면 이번 주 중 입법예고할 계획이며, 구체적인 기준은 입법예고 내용에서 확인할 수 있을 전망입니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261030000273\n\n#반도체 #semiconductor #AI데이터센터 #AIDC #데이터센터 #정책",
+  "photo_queries": [
+    "gpu server cooling",
+    "data center cooling pipes",
+    "server room aisle lights"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "386669",
+    "query": "gpu server cooling",
+    "file": "ee9297cb72.photo.jpg",
+    "download_url": "https://pixabay.com/get/ga0857bbade9cd6b39d983f669f06afce912f1a829ff75e652f51f2a95aba3b68d8d07800e37848c19caf287376d45c22845fee37cbc38c6c4e2635864bba5dd0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/motherboard-computer-pc-modding-386669/",
+    "photographer": "Henning_W",
+    "photographer_url": "https://pixabay.com/users/Henning_W-327613/",
+    "alt": "motherboard, computer, pc, nature, modding, water cooling, water, hardware, datailaufnahme",
+    "width": 3888,
+    "height": 2592,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Henning_W / Pixabay"
+  }
+}
