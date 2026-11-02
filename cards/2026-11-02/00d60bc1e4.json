@@ -1,0 +1,35 @@
+{
+  "id": "00d60bc1e4",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64709",
+  "source": "디일렉",
+  "category": "파운드리",
+  "published_at": "2026-11-02T16:27+09:00",
+  "headline": "삼성전자, 2030년 말 8인치 칩 위탁생산 접는다",
+  "bullets": [
+    "8인치 파운드리 고객사에 2030년 말 라인 가동 종료 통보",
+    "12인치 미세공정에 인력·설비 집중, 올해 신규 수주도 중단",
+    "DDI·PMIC 맡겨 온 국내 팹리스, 대체 생산처 확보 비상"
+  ],
+  "caption": "삼성전자, 2030년 말 8인치 칩 위탁생산 접는다\n\n삼성전자가 8인치 파운드리 고객사들에 2030년 말까지 관련 생산라인 가동을 모두 끝내겠다고 통보한 것으로 확인됐습니다. 파운드리는 다른 회사가 설계한 반도체를 대신 만들어 주는 위탁생산 사업이고, 8인치는 반도체를 새기는 원판인 웨이퍼의 지름(약 200mm)을 뜻합니다. 8인치 라인은 65~180나노 구형 공정으로 디스플레이 구동칩(DDI), 전력관리반도체(PMIC), 마이크로컨트롤러(MCU), 이미지센서처럼 첨단 공정이 꼭 필요하지 않은 칩을 만들어 왔습니다. 그동안 단계적 축소만 밝혀 온 삼성전자가 종료 시점을 못 박은 것은 처음으로, 12인치 웨이퍼 기반 미세공정에 인력과 설비를 모으려는 결정으로 전해졌습니다. 문제는 이 라인을 써 온 이미지스, 어보브반도체, LX세미콘 같은 국내 팹리스(설계 전문 기업)입니다. 국내 대안인 DB하이텍과 SK키파운드리는 이미 생산 여력이 꽉 찼고, 12인치로 옮기면 원가가 오르고 설계 재검증이 필요하며, 중국 업체는 최종 고객사의 중국산 반도체 사용 제한 때문에 쓰기 어렵다는 것이 업계 설명입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64709\n\n#반도체 #semiconductor #파운드리 #8인치 #삼성전자 #팹리스 #시스템반도체",
+  "photo_queries": [
+    "silicon wafer cleanroom",
+    "integrated circuit chips tray",
+    "semiconductor fab equipment"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3089884",
+    "query": "silicon wafer cleanroom",
+    "file": "00d60bc1e4.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0b4b3af7293c7d304611b3f1468c6a75c138880fbd2e53ddde55b91e2eae0ba11d9eadb6b6e7249325958db20a79be10fa01fa306749b4d15e0905368a925466_1280.jpg",
+    "page_url": "https://pixabay.com/photos/hospital-indoors-medicine-3089884/",
+    "photographer": "OsloMetX",
+    "photographer_url": "https://pixabay.com/users/OsloMetX-7322944/",
+    "alt": "hospital, indoors, medicine, technology, science, laboratory, lab, radioactive, biotechnology, pharmaceutical, technician, chemist, chemistry, medical, research, equipment, chemical, blue technology, blue hospital, blue medical, blue science, blue research, blue medicine, blue lab, blue laboratory, blue chemistry, hospital, hospital, hospital, science, laboratory, laboratory, laboratory, laboratory, laboratory, lab, lab, lab, lab, biotechnology, pharmaceutical, pharmaceutical, pharmaceutical, medical, research, chemical",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: OsloMetX / Pixabay"
+  }
+}

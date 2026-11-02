@@ -1,0 +1,35 @@
+{
+  "id": "0e2b7d1b16",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64702",
+  "source": "디일렉",
+  "category": "AI·설계",
+  "published_at": "2026-11-02T15:00+09:00",
+  "headline": "삼성SDS, 옛 삼성전자 구미공장 터에 AI 데이터센터",
+  "bullets": [
+    "구미 1만4000평에 초기 60MW, 최대 120MW AI 데이터센터",
+    "건물·일부 설비에 4273억원 투자, 2029년 3월 가동 목표",
+    "GPU 서버엔 수냉, 네트워크 장비엔 공냉 쓰는 하이브리드"
+  ],
+  "caption": "삼성SDS, 옛 삼성전자 구미공장 터에 AI 데이터센터\n\n삼성SDS가 경북 구미시 공단동 1만4000평 부지에 AI 전용 데이터센터를 짓는다고 발표했습니다. 이 땅은 2024년 12월 삼성전자에서 사들인 옛 구미1사업장 자리로, 초기 전력 용량 60메가와트(MW)로 시작해 수요에 따라 최대 120MW까지 늘릴 계획입니다. 데이터센터 규모를 전력으로 말하는 이유는 AI 연산에 쓰는 GPU 서버가 전기를 많이 쓰고 열도 많이 내기 때문이며, 그래서 고밀도 GPU 서버는 냉각수로 식히는 수냉식, 열이 적은 네트워크·스토리지 장비는 바람으로 식히는 공냉식을 함께 씁니다. 이사회가 승인한 4273억원은 건물과 일부 설비 비용이고, GPU 서버 같은 연산 장비 투자는 포함되지 않아 투자 규모가 더 커질 수 있습니다. 2028년 말 준공, 2029년 3월 가동이 목표이며, 삼성이 7월 발표한 영남권 60조원 투자 계획의 첫 사업입니다. 삼성 관계사의 제조 로봇 AI 학습에도 쓰이고, 삼성SDS는 2031년까지 AI 인프라를 800MW 이상으로 늘리겠다는 계획도 밝힌 바 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64702\n\n#반도체 #semiconductor #AI데이터센터 #데이터센터 #삼성SDS #GPU #수냉식",
+  "photo_queries": [
+    "liquid cooled server",
+    "data center aisle lights",
+    "industrial cooling towers"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3645379",
+    "query": "industrial cooling towers",
+    "file": "0e2b7d1b16.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0a51e08546e4415499b3dc17f9311985495e6886df137298aeece052862ed1770ceecb2c50428d623484bab406bf04e12c361e9425df8f375ac914e024bb18f8_1280.jpg",
+    "page_url": "https://pixabay.com/photos/fan-cooling-propeller-power-plant-3645379/",
+    "photographer": "Tama66",
+    "photographer_url": "https://pixabay.com/users/Tama66-1032521/",
+    "alt": "fan, cooling, propeller, power plant, cooling tower, cooler, industry, blower, heavy industry, industrial, turbines, black and white, fan, fan, fan, power plant, power plant, cooling tower, industry, industry, industry, industry, industrial, industrial, industrial, industrial, industrial",
+    "width": 4008,
+    "height": 2696,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Tama66 / Pixabay"
+  }
+}

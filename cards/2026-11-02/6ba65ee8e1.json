@@ -1,0 +1,35 @@
+{
+  "id": "6ba65ee8e1",
+  "link": "https://www.etnews.com/20261102000327",
+  "source": "전자신문",
+  "category": "파운드리",
+  "published_at": "2026-11-02T16:00+09:00",
+  "headline": "TSMC, 美 2공장 텍사스로 가닥…삼성 안방서 격돌",
+  "bullets": [
+    "TSMC, 미국 두 번째 대형 거점으로 텍사스 셔먼 낙점",
+    "셔먼 시와 수백억달러 규모 공장 유치 막바지 부지 협상",
+    "오스틴·테일러에 공장 둔 삼성전자와 같은 주에서 맞붙어"
+  ],
+  "caption": "TSMC, 美 2공장 텍사스로 가닥…삼성 안방서 격돌\n\n세계 최대 파운드리 기업인 대만 TSMC가 미국 내 두 번째 대형 생산 거점으로 텍사스주 북부 도시 셔먼을 낙점하고 막바지 부지 협상에 들어갔다고 미국 댈러스비즈니스저널 등 현지 매체가 전했습니다. 파운드리는 애플·엔비디아 같은 회사가 설계한 반도체를 대신 만들어 주는 위탁생산 사업으로, TSMC는 이 분야 1위이고 삼성전자는 추격하는 위치입니다. 셔먼 시는 TSMC와 수백억달러 규모의 반도체 제조 시설 유치를 두고 협상 중인 것으로 알려졌으며, 아직 최종 확정된 단계는 아닙니다. 텍사스는 삼성전자가 오스틴과 테일러를 거점으로 30년 가까이 '미국 내 안방'으로 삼아 온 곳이어서, 같은 주에서 두 회사가 고객과 인력, 지역 지원을 두고 정면으로 맞붙게 될 것이라는 분석이 나옵니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261102000327\n\n#반도체 #semiconductor #파운드리 #TSMC #삼성전자 #텍사스 #미국반도체",
+  "photo_queries": [
+    "texas highway landscape",
+    "factory construction site crane",
+    "semiconductor production line"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2422130",
+    "query": "factory construction site crane",
+    "file": "6ba65ee8e1.photo.jpg",
+    "download_url": "https://pixabay.com/get/g9c975ecfc608002a99e12bbeb75cf7daffacd637d80f31c7230b8447727c52d7927e5298c4c6def36940f872547428f6e011000f5d222a3e23b34d4d5b6cf860_1280.jpg",
+    "page_url": "https://pixabay.com/photos/by-the-company-chanmr-group-2422130/",
+    "photographer": "3123327",
+    "photographer_url": "https://pixabay.com/users/3123327-3123327/",
+    "alt": "by the company, chanmr, group",
+    "width": 3267,
+    "height": 2178,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 3123327 / Pixabay"
+  }
+}
