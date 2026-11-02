@@ -1,0 +1,35 @@
+{
+  "id": "399dc4207a",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64685",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-03T06:43+09:00",
+  "headline": "애플, 맥북 OLED 화면 만들 공정 '싼 쪽' 먼저 검토",
+  "bullets": [
+    "애플, 차세대 OLED 기술 HMO에 스퍼터링 증착 우선 검토",
+    "ALD는 정밀하지만 장비·소재 비싸…최종 공정은 미정",
+    "삼성·LG디스플레이도 스퍼터링 우선, ALD 병행 개발"
+  ],
+  "caption": "애플, 맥북 OLED 화면 만들 공정 '싼 쪽' 먼저 검토\n\n애플이 차세대 OLED 화면 기술인 고이동도 산화물(HMO)을 개발하면서, 얇은 막을 입히는 방식으로 비용이 적은 스퍼터링을 우선 검토하는 것으로 알려졌습니다. 최종 양산 공정은 아직 정하지 않았습니다. HMO는 화면의 화소 하나하나를 켜고 끄는 박막트랜지스터(TFT)의 전자 이동 속도를 지금의 10㎠/Vs 안팎에서 30~50㎠/Vs로 높이는 기술로, 맥북·아이맥 같은 고해상도 IT용 OLED 후보로 거론됩니다. 막을 만드는 방법은 두 가지입니다. 스퍼터링은 플라즈마로 고체 재료의 원자를 떼어 쌓는 방식이라 기존 설비를 쓸 수 있고, 원자층증착(ALD)은 기체 원료로 원자 한 층씩 쌓아 정밀하지만 장비와 원료가 비쌉니다. 삼성디스플레이와 LG디스플레이도 스퍼터링에 우선순위를 두면서 ALD를 함께 연구하고 있으며, 애플은 삼성디스플레이에 8세대급 대형 기판 적용 가능성을 확인해 달라고 제안한 것으로 전해졌습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64685\n\n#반도체 #semiconductor #OLED #디스플레이 #애플 #삼성디스플레이 #LG디스플레이",
+  "photo_queries": [
+    "laptop screen closeup",
+    "oled display pixels",
+    "vacuum deposition chamber"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1559179",
+    "query": "oled display pixels",
+    "file": "399dc4207a.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc13a759a1cfc3dff9a825e08ff5f9854c1db202024021dc5009c9db2ec859aff4b609f11f412e196db1cdfdbfd3dd2b67610f77347f6173c6f0c0b5ee497be84_1280.jpg",
+    "page_url": "https://pixabay.com/photos/structure-light-led-move-to-dye-1559179/",
+    "photographer": "Michael_Luenen",
+    "photographer_url": "https://pixabay.com/users/Michael_Luenen-2998623/",
+    "alt": "structure, cool backgrounds, mac wallpaper, 4k wallpaper, full hd wallpaper, light, wallpaper 4k, hd wallpaper, led, wallpaper hd, move, to dye, red, abstract, windows wallpaper, free background, free wallpaper, indirect lighting, background, template, texture, screen background, multicoloured, 4k wallpaper 1920x1080, beautiful wallpaper, light source, background motif, modern, desktop backgrounds, laptop wallpaper, bright, wall, lights",
+    "width": 3872,
+    "height": 2592,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Michael_Luenen / Pixabay"
+  }
+}

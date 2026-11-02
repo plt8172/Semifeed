@@ -1,0 +1,35 @@
+{
+  "id": "11e2292e49",
+  "link": "https://www.tomshardware.com/pc-components/cpus/tachyum-developer-of-heavily-delayed-universal-prodigy-processor-voluntarily-files-for-bankruptcy-future-of-prodigy-ip-unknown-as-company-begins-bankruptcy-proceedings",
+  "source": "Tom's Hardware",
+  "category": "AI·설계",
+  "published_at": "2026-11-03T03:07+09:00",
+  "headline": "8년 동안 실제 칩 못 내놓은 CPU 스타트업, 파산 신청",
+  "bullets": [
+    "타키움, 슬로바키아 법원에 파산 신청…법원이 절차 개시",
+    "2018년 공개한 '프로디지' 칩, 출시를 해마다 미뤄 실물 없음",
+    "64코어→1024코어로 설계 계속 바꿔, 특허 향방도 불투명"
+  ],
+  "caption": "8년 동안 실제 칩 못 내놓은 CPU 스타트업, 파산 신청\n\n만능 프로세서 '프로디지'를 만들겠다던 반도체 스타트업 타키움이 슬로바키아 법원에 파산을 신청했고, 브라티슬라바 법원이 파산 절차를 시작했습니다. 타키움은 2018년 프로디지를 공개하며 2020년 판매를 약속했지만 출시를 2021년부터 2025년까지 해마다 미뤘고, 8년이 지나도록 실제로 작동하는 칩을 보여 주지 못했습니다. 그사이 설계도 64코어에서 128코어, 192코어로 바뀌었고, 2025년 말에는 TSMC 2나노급 공정으로 1024코어 칩렛(여러 조각 칩을 이어 붙이는 방식) 설계로 다시 갈아엎어 출시가 2030년 이후로 밀릴 처지였습니다. 이번 파산은 슬로바키아 개발 법인이 채권자 신청을 기다리지 않고 스스로 낸 것입니다. 특허를 가진 케이맨제도 모회사도 청산 절차 대상이어서 특허가 채권 변제를 위해 팔릴 수 있고, 개발이 이어질지는 불투명합니다. 반도체는 설계만으로 끝나지 않고 실제 칩을 만들어 증명해야 한다는 점을 보여 주는 사례입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/cpus/tachyum-developer-of-heavily-delayed-universal-prodigy-processor-voluntarily-files-for-bankruptcy-future-of-prodigy-ip-unknown-as-company-begins-bankruptcy-proceedings\n\n#반도체 #semiconductor #CPU #스타트업 #칩설계 #파산",
+  "photo_queries": [
+    "cpu processor closeup",
+    "computer chip silicon die",
+    "empty electronics laboratory"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "424812",
+    "query": "cpu processor closeup",
+    "file": "11e2292e49.photo.jpg",
+    "download_url": "https://pixabay.com/get/g4a4c071c0efd2eec53075dd2be6bdcc9b012c4d66647f5f0db6b9f1f276ec0a806b526b87dc11c750776b435d866c6ab528479fe9d09e3c66ecf1bc3d56c550a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/cpu-processor-computer-chip-pc-424812/",
+    "photographer": "TobiasD",
+    "photographer_url": "https://pixabay.com/users/TobiasD-206193/",
+    "alt": "cpu, processor, computer, chip, pc, hardware, circuit, cpu, cpu, cpu, cpu, cpu, processor, processor, chip, chip, chip",
+    "width": 3968,
+    "height": 2232,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: TobiasD / Pixabay"
+  }
+}

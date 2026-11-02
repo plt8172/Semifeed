@@ -1,0 +1,35 @@
+{
+  "id": "635f00a71a",
+  "link": "https://www.tomshardware.com/raspberry-pi/16gb-raspberry-pi-5-hiked-to-usd385-more-than-triple-its-launch-price-makers-are-already-shifting-to-pico-esp32-for-small-projects-mini-pcs-for-more-ambitious-tasks",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-03T01:17+09:00",
+  "headline": "메모리값 폭등에 라즈베리파이 16GB, 출시가 3배 넘었다",
+  "bullets": [
+    "16GB 라즈베리파이5 가격 80달러 올려 385달러, 출시가 120달러",
+    "컴퓨트모듈5 16GB도 40달러 인상, 이유는 2년간 메모리값 급등",
+    "한 달 전 2GB 모델도 인상, 메모리 많은 제품일수록 타격 커"
+  ],
+  "caption": "메모리값 폭등에 라즈베리파이 16GB, 출시가 3배 넘었다\n\n교육용·취미용 소형 컴퓨터로 유명한 라즈베리파이가 16GB 메모리 제품 가격을 또 올렸습니다. 16GB 라즈베리파이5는 80달러 오른 385달러가 됐는데, 2025년 1월 출시 때 120달러였으니 세 배가 넘습니다. 산업용 기판인 컴퓨트모듈5 16GB도 40달러 올랐습니다. 에벤 업턴 대표는 지난 2년간 메모리 가격이 가파르게 오른 탓이라고 설명했고, 다른 컴퓨터 회사들도 비슷한 결정을 하고 있다고 말했습니다. 메모리는 AI 데이터센터 수요가 몰리면서 공급이 부족해졌고, 그 부담이 소비자 기기 가격으로 넘어오고 있는 셈입니다. 한 달 전에도 2GB 모델 가격이 12.5달러씩 올랐지만, 16GB 모델의 인상 폭이 훨씬 커서 메모리 용량이 클수록 값이 크게 뛴다는 점이 드러납니다. 오랫동안 25~35달러를 지켜 온 제품이라 취미 개발자들이 더 싼 대안으로 옮겨 가고 있다는 분석도 나옵니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/raspberry-pi/16gb-raspberry-pi-5-hiked-to-usd385-more-than-triple-its-launch-price-makers-are-already-shifting-to-pico-esp32-for-small-projects-mini-pcs-for-more-ambitious-tasks\n\n#반도체 #semiconductor #메모리 #D램 #라즈베리파이 #메모리가격",
+  "photo_queries": [
+    "single board computer",
+    "electronics soldering workbench",
+    "ram memory sticks"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2202618",
+    "query": "single board computer",
+    "file": "635f00a71a.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2d4a27eccf56e582c3492a125c3c30b5ebc0938d67c21619bc1447a82b74c6dbf47a01d3a3ac60d4580236a89edc6dd63c4a5e6b05423af8aa04d39c56fadf21_1280.jpg",
+    "page_url": "https://pixabay.com/photos/video-game-console-video-game-play-2202618/",
+    "photographer": "WikimediaImages",
+    "photographer_url": "https://pixabay.com/users/WikimediaImages-1185597/",
+    "alt": "video game console, video game, play, toy, computer game, device, entertainment, electronics, fun, raspberry, pi, bare, br",
+    "width": 3400,
+    "height": 2700,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: WikimediaImages / Pixabay"
+  }
+}

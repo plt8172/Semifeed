@@ -1,0 +1,35 @@
+{
+  "id": "daa0107336",
+  "link": "https://www.theregister.com/systems/2026/11/02/marvell-wants-to-be-a-copper-topper-bets-115b-on-photonics-leader-to-push-optical-networking/5307028",
+  "source": "The Register",
+  "category": "기업·실적",
+  "published_at": "2026-11-03T03:02+09:00",
+  "headline": "칩 회사 마벨, 1150억달러에 광통신 회사 인수 나선다",
+  "bullets": [
+    "마벨, 광부품 강자 루멘텀을 1150억달러 전액 주식으로 인수",
+    "레이저·광트랜시버·광스위치·인화인듐 생산 역량 확보 노려",
+    "구리선 한계 넘는 AI 서버 광연결 수요 선점, 2028년 상반기 마무리"
+  ],
+  "caption": "칩 회사 마벨, 1150억달러에 광통신 회사 인수 나선다\n\n미국 반도체 설계 회사 마벨 테크놀로지가 광통신 부품 강자 루멘텀을 전액 주식 교환 방식으로 인수하겠다고 밝혔습니다. 거래 규모는 1150억달러이고 2028년 상반기 마무리가 목표입니다. 이유는 AI 서버를 잇는 선이 구리에서 빛으로 바뀌고 있기 때문입니다. 구리선은 한 가닥에 400Gbps 신호를 약 1.25m밖에 보내지 못하고 속도가 두 배가 될 때마다 거리가 절반으로 줄지만, 빛을 쓰는 광연결은 같은 신호를 수 km까지 보낼 수 있습니다. 엔비디아와 AMD처럼 GPU 수백~수천 개를 하나로 묶는 대형 랙 시스템을 준비하는 회사들이 광연결을 많이 쓰게 될 전망이어서, 마벨은 루멘텀의 레이저 광원, 광트랜시버(전기 신호와 빛 신호를 바꿔 주는 모듈), 광회로 스위치, 인화인듐 화합물 반도체 생산 능력을 한꺼번에 확보하려는 것입니다. 엔비디아도 8개월 전 루멘텀에 20억달러를 투자했을 만큼 광부품 확보 경쟁이 뜨겁습니다.\n\n출처: The Register\nhttps://www.theregister.com/systems/2026/11/02/marvell-wants-to-be-a-copper-topper-bets-115b-on-photonics-leader-to-push-optical-networking/5307028\n\n#반도체 #semiconductor #광통신 #실리콘포토닉스 #인수합병 #AI데이터센터 #마벨",
+  "photo_queries": [
+    "fiber optic connectors",
+    "laser optics laboratory",
+    "network switch fiber cables"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2633600",
+    "query": "fiber optic connectors",
+    "file": "daa0107336.photo.jpg",
+    "download_url": "https://pixabay.com/get/g277bab4ae3dca3473975fed906f49c24817abcd27afbce62c71b288a5fadb3d75464ef2310ce207e02ea06f599dd7550cbc35448036608809677e01473d4632e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/networking-fiber-optics-2633600/",
+    "photographer": "PawinG",
+    "photographer_url": "https://pixabay.com/users/PawinG-2524720/",
+    "alt": "networking, fiber optics, communication, technology, network, cable, connection, optic, speed, fiber, line, wire, fiber optics, fiber optics, fiber optics, fiber optics, network, cable, cable, cable, cable, cable, fiber, fiber, fiber",
+    "width": 5760,
+    "height": 3840,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: PawinG / Pixabay"
+  }
+}
