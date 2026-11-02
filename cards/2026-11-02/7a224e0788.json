@@ -1,0 +1,35 @@
+{
+  "id": "7a224e0788",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64648",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-02T10:00+09:00",
+  "headline": "LG CNS, 서버 10만대 들어가는 인니 AI 데이터센터 완공",
+  "bullets": [
+    "자카르타에 30MW급 AI 데이터센터 완공, 1000억원 수주 1년여 만",
+    "GPU 발열 대응해 공랭·액체냉각 결합, 랙당 300kW 이상 전력 대비",
+    "후속 단계까지 400MW로 확대 예정, 동남아·일본 진출도 추진"
+  ],
+  "caption": "LG CNS, 서버 10만대 들어가는 인니 AI 데이터센터 완공\n\nLG CNS가 인도네시아 자카르타에 수전용량 30메가와트(MW) 규모의 AI 데이터센터를 완공했다고 발표했습니다. 지난해 1000억원 규모로 수주한 지 1년여 만이며, 완공 전에 전체 용량만큼의 수요도 확보했습니다. 수전용량은 데이터센터가 전력망에서 받아 쓸 수 있는 전기의 양으로, AI 학습·추론에 쓰는 GPU 서버는 전기를 많이 쓰고 열도 많이 나기 때문에 데이터센터 규모를 가늠하는 기준이 됩니다. 지상 11층 건물에 서버 10만대 이상이 들어가도록 설계했고, 바람으로 식히는 공랭식과 냉각액을 흘려 식히는 액체냉각을 함께 쓰는 구조를 택했습니다. 1단계에는 공랭식을 적용했고 후속 사업에서 액체냉각을 더하며, 랙당 300킬로와트(kW) 이상의 고밀도 서버에 맞춘 전력 설비와 예비전력도 갖췄습니다. LG전자가 공조 시스템, LG에너지솔루션이 배터리를 공급했고, 후속 단계가 끝나면 전체 수전용량은 400MW까지 늘어날 예정입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64648\n\n#반도체 #semiconductor #데이터센터 #AI인프라 #액체냉각 #LGCNS #인도네시아",
+  "photo_queries": [
+    "data center cooling units",
+    "server rack power cables",
+    "jakarta city skyline"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4393368",
+    "query": "server rack power cables",
+    "file": "7a224e0788.photo.jpg",
+    "download_url": "https://pixabay.com/get/g66557332e9e1278934e6467de337a560eac498945a2ac974af1f00901bdf35dbbaf93cc7ac9a27e1b51688307b8a479e86b9508a02db68830ca8631d456a750c_1280.jpg",
+    "page_url": "https://pixabay.com/photos/network-edp-plug-patch-cord-4393368/",
+    "photographer": "Bru-nO",
+    "photographer_url": "https://pixabay.com/users/Bru-nO-1161770/",
+    "alt": "network, edp, plug, patch cord, data cable, rj45, ethernet, copper, lan, switch, router, hardware, data, dsl, internet, web, connection, connected, network, network, network, ethernet, ethernet, lan, lan, switch, switch, router, router, router, router, router, hardware, data",
+    "width": 5876,
+    "height": 3481,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Bru-nO / Pixabay"
+  }
+}

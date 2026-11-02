@@ -1,0 +1,35 @@
+{
+  "id": "e0a07b807a",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64658",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-02T10:27+09:00",
+  "headline": "LS전선, 504MW 태안 해상풍력에 해저케이블 공급 협약",
+  "bullets": [
+    "LS전선·LS마린솔루션, 태안풍력발전과 생산·시공 일정 확보 협약",
+    "케이블 설비·포설선 일정 먼저 잡는 계약, 금액 등은 연내 확정",
+    "신안우이 이어 두 번째 공동 참여, 7000톤급 포설선 GL2030 투입"
+  ],
+  "caption": "LS전선, 504MW 태안 해상풍력에 해저케이블 공급 협약\n\nLS전선과 해저케이블 시공 자회사 LS마린솔루션이 충남 태안 앞바다에 짓는 504메가와트(MW) 규모 해상풍력 단지에 해저케이블을 공급하고 설치하기로 하고, 사업자인 태안풍력발전과 생산·시공 일정 확보 협약(CRA)을 맺었습니다. 해저케이블은 바다 위 풍력발전기에서 만든 전기를 육지까지 보내는 바닷속 전력선으로, 공장에서 길게 만든 케이블을 전용 선박(포설선)에 실어 바다 밑에 깔아야 합니다. 생산 설비와 배가 한정돼 있어 본계약 전에 일정부터 확보하는 것이 이번 협약이고, 계약금액 등 세부 조건은 연내 확정할 예정입니다. 두 회사는 2024년 우선협상대상자로 선정됐으며, 신안우이해상풍력에 이어 두 번째로 대규모 해상풍력 사업에 함께 참여합니다. 태안해상풍력은 한국서부발전과 싱가포르 뷔나에너지, 덴마크 코펜하겐 인프라스트럭처 파트너스(CIP)가 함께 개발하며 2030년 준공이 목표입니다. LS마린솔루션은 7000톤급으로 개조한 포설선 'GL2030'을 투입합니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64658\n\n#반도체 #semiconductor #전력 #해저케이블 #해상풍력 #LS전선 #신재생에너지",
+  "photo_queries": [
+    "submarine power cable",
+    "cable laying ship",
+    "offshore wind turbines"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "9762992",
+    "query": "offshore wind turbines",
+    "file": "e0a07b807a.photo.jpg",
+    "download_url": "https://pixabay.com/get/g63d69ef2f7d211c711edcc82fa71d1e318c368cd4e12f59faed82aff6445844bfa81ce0c8156b59fbef92b4f18bb1aae0d048efb722d565647246c21b72aaf37_1280.jpg",
+    "page_url": "https://pixabay.com/photos/wind-energy-offshore-wind-farm-9762992/",
+    "photographer": "Sinousxl",
+    "photographer_url": "https://pixabay.com/users/Sinousxl-7554155/",
+    "alt": "wind energy, offshore, wind farm, baltic sea, pinwheels, wind power, power generation, energy transition",
+    "width": 5568,
+    "height": 3712,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Sinousxl / Pixabay"
+  }
+}
