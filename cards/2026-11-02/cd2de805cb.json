@@ -1,0 +1,36 @@
+{
+  "id": "cd2de805cb",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64715",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-02T17:33+09:00",
+  "headline": "삼성전기 사장 \"AI 산업은 이제 1월 1일\"",
+  "bullets": [
+    "장덕현 사장, 창립 53주년 기념식에서 AI 시장 확대 강조",
+    "MLCC·패키지기판 등 주력 사업 전반에 대형 성장 기회 언급",
+    "임직원에게 AI 에이전트로 반복 업무 효율화도 주문"
+  ],
+  "caption": "삼성전기 사장 \"AI 산업은 이제 1월 1일\"\n\n장덕현 삼성전기 사장이 수원사업장에서 열린 창립 53주년 기념식에서 \"글로벌 AI 산업은 이제 1월 1일에 불과하다\"며 AI 서버와 데이터센터 확대가 회사에 큰 기회라고 강조했습니다. 그가 꼽은 주력 사업은 적층세라믹콘덴서(MLCC)와 패키지기판입니다. MLCC는 전기를 잠시 저장했다가 안정적으로 흘려보내는 아주 작은 부품으로 스마트폰·자동차·서버 등 거의 모든 전자기기에 수백~수천 개씩 들어가고, 패키지기판은 칩을 메인보드에 연결해 주는 받침판입니다. AI 서버는 일반 서버보다 전력을 많이 쓰고 칩이 커서 이 두 부품이 더 많이, 더 고사양으로 필요합니다. 장 사장은 개발·생산·품질 전 영역에서 실행력으로 기회를 성과로 증명하자고 당부했고, 임직원 각자가 AI 에이전트로 단순·반복 업무를 줄이라고 주문했습니다. AI 붐이 칩을 넘어 그 주변 부품 회사의 전략까지 바꾸고 있다는 뜻입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64715\n\n#반도체 #semiconductor #삼성전기 #MLCC #패키지기판 #AI서버 #전자부품",
+  "photo_queries": [
+    "ceramic capacitors closeup",
+    "chip substrate package",
+    "smt assembly machine"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4491980",
+    "query": "printed circuit board",
+    "file": "cd2de805cb.photo.jpg",
+    "download_url": "https://pixabay.com/get/g1af5719e9c46414f8549cde610b56aa1f822568f259ca2172f4b42dfbd9f6abfb9f1c59982af9581d5f39c0228fd52f8d8059ed4ff59031663a48a55300f9ee4_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computer-green-technology-chip-4491980/",
+    "photographer": "papazachariasa",
+    "photographer_url": "https://pixabay.com/users/papazachariasa-12696704/",
+    "alt": "computer, green, technology, chip, data, pc, hardware, calculator, circuit, digital, memory, electronics, motherboard, macro, close up, chip, data, circuit, motherboard, motherboard, motherboard, motherboard, motherboard",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: papazachariasa / Pixabay",
+    "category": "computer"
+  }
+}

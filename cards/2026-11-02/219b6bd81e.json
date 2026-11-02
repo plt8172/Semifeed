@@ -1,0 +1,36 @@
+{
+  "id": "219b6bd81e",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64721",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-02T18:13+09:00",
+  "headline": "AI 서버 기판 달려 이수페타시스, 5000억 새 공장",
+  "bullets": [
+    "이수페타시스, 대구국가산단에 7공장 짓는 투자협약 체결",
+    "투자 5000억원, 부지 약 5만1000평으로 5공장 부지의 약 8배",
+    "AI 가속기·서버용 고다층 PCB 수요 급증에 증설 잇따라"
+  ],
+  "caption": "AI 서버 기판 달려 이수페타시스, 5000억 새 공장\n\n인쇄회로기판(PCB) 업체 이수페타시스가 대구국가산업단지에 5000억원을 들여 7공장을 짓기로 하고 대구시·달성군과 투자협약을 맺었습니다. PCB는 칩과 부품을 올려 전기 신호를 이어 주는 판인데, AI 가속기와 고속 네트워크 장비에 들어가는 제품은 일반 기판보다 층수가 훨씬 많고 만드는 공정도 복잡합니다. 이런 고다층 기판 수요가 급증하자, 회사는 2028년 말까지 진행하는 기존 1~5공장 증설이 끝나기도 전에 새 공장을 결정했습니다. 7공장 부지는 약 5만1000평으로 2024년에 협약한 5공장 부지의 약 8배이고, 대구시는 폐수처리장 용량을 두 배로 늘리는 등 기반시설을 지원합니다. 다만 회사는 투자 기간과 금액이 아직 검토 중이며 협의에 따라 바뀔 수 있다고 밝혔습니다. AI 붐의 수혜가 칩 회사뿐 아니라 칩을 받쳐 주는 기판 업체로까지 넓어지고 있음을 보여 주는 소식입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64721\n\n#반도체 #semiconductor #PCB #인쇄회로기판 #AI서버 #이수페타시스 #전자부품",
+  "photo_queries": [
+    "multilayer pcb layers",
+    "pcb drilling machine",
+    "electronics factory production"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2440249",
+    "query": "microchip",
+    "file": "219b6bd81e.photo.jpg",
+    "download_url": "https://pixabay.com/get/g688a3225644664940276b73d1dd567ee5449920016e282fb1140acc61af9d6eeaa8e900eb9c2277ecb600b5a89b7fedae31564fa790319e4ba17fc9e57e29e43_1280.jpg",
+    "page_url": "https://pixabay.com/photos/circuit-board-conductor-tracks-2440249/",
+    "photographer": "geralt",
+    "photographer_url": "https://pixabay.com/users/geralt-9301/",
+    "alt": "circuit board, conductor tracks, circuits, computer, access, computer viruses, computer virus, data control center, trace, cpu, pc, solder joint, processor, chip, data processing, connections, data, management, distributor, electronics, printed circuit board, lines, chip, data, data, data, data, data",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: geralt / Pixabay",
+    "category": "computer"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "33d27d7ea3",
+  "link": "https://www.trendforce.com/presscenter/news/20261102-13291.html",
+  "source": "TrendForce",
+  "category": "AI·설계",
+  "published_at": "2026-11-02T17:33+09:00",
+  "headline": "AI 데이터센터 연결 장비 시장, 3년 새 7배 커진다",
+  "bullets": [
+    "AI 네트워킹 시장, 2024년 379억→2027년 2798억달러 전망",
+    "스위치가 1050억달러로 최대, 광트랜시버는 841억달러",
+    "가속기끼리 잇는 스케일업 비중 11%→24%로 확대"
+  ],
+  "caption": "AI 데이터센터 연결 장비 시장, 3년 새 7배 커진다\n\n시장조사업체 트렌드포스는 AI 서버를 서로 연결하는 네트워킹·인터커넥트 시장 매출이 2024년 379억달러에서 2027년 2798억달러로, 연평균 95%씩 커질 것으로 전망했습니다. AI 학습에는 수천~수만 개의 가속기(GPU 등)가 한 몸처럼 데이터를 주고받아야 해서, 칩만큼이나 이들을 잇는 스위치·광트랜시버·네트워크 카드가 중요해졌기 때문입니다. 2027년 스위치 매출은 1050억달러로 가장 크고, 전기 신호를 빛으로 바꿔 보내는 광트랜시버는 841억달러로 예상됩니다. 특히 한 랙 안에서 가속기끼리 직접 잇는 '스케일업' 비중이 11%에서 24%로 늘고, 이 구간에서는 2027년에도 구리 케이블이 주로 쓰일 것으로 봤습니다. 트렌드포스는 다만 AI 칩 출하가 늘어난 만큼 네트워킹 매출이 똑같이 느는 것은 아니며, 플랫폼마다 연결 구조가 달라 공급망의 몫이 계속 바뀔 것이라고 설명했습니다.\n\n출처: TrendForce\nhttps://www.trendforce.com/presscenter/news/20261102-13291.html\n\n#반도체 #semiconductor #AI데이터센터 #네트워크 #광트랜시버 #스위치 #트렌드포스",
+  "photo_queries": [
+    "optical transceiver module",
+    "copper cables server rack",
+    "data center network cabling"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6267791",
+    "query": "data center network cabling",
+    "file": "33d27d7ea3.photo.jpg",
+    "download_url": "https://pixabay.com/get/g09b05820e0276f236f41799dbdebd2b7748d141f9020fb0cf594dbeb4b25caefece877a41aca530eb5c3a5de014dbaf8441d840154e3b7f9ac9062759264352c_1280.jpg",
+    "page_url": "https://pixabay.com/photos/patch-panel-internet-cable-6267791/",
+    "photographer": "timwesterhoff",
+    "photographer_url": "https://pixabay.com/users/timwesterhoff-7399852/",
+    "alt": "patch panel, internet, cable, connection, glass fiber, fiber, networking, technology, closeup, patch panel, patch panel, patch panel, patch panel, patch panel",
+    "width": 4032,
+    "height": 3024,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: timwesterhoff / Pixabay"
+  }
+}
