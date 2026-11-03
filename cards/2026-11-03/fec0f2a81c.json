@@ -1,0 +1,35 @@
+{
+  "id": "fec0f2a81c",
+  "link": "https://www.etnews.com/20261103000049",
+  "source": "전자신문",
+  "category": "기업·실적",
+  "published_at": "2026-11-03T09:33+09:00",
+  "headline": "애플, 메모리값 폭등에도 석 달 154조원 최대 매출",
+  "bullets": [
+    "7~9월 매출 1144억7700만달러, 1년 전보다 12% 증가",
+    "아이폰·맥 판매 늘고 제품값 올려 메모리 원가 상쇄",
+    "월가 전망 1134억달러 웃돌아…영업이익도 10% 증가"
+  ],
+  "caption": "애플, 메모리값 폭등에도 석 달 154조원 최대 매출\n\n애플이 2026회계연도 4분기(7~9월)에 매출 1144억7700만달러(약 154조원)를 올려 분기 기준 역대 최대 기록을 세웠다고 공시했습니다. 1년 전보다 12% 늘었고, 월가 전망치였던 1134억달러도 넘었습니다. 최근 스마트폰과 PC에 들어가는 메모리 반도체 값이 크게 올라 기기를 만드는 회사의 원가 부담이 커졌는데, 애플은 아이폰과 맥 판매가 늘어난 데다 제품 가격을 올려 그 부담을 상쇄했습니다. 매출 가운데 기기 판매가 829억400만달러, 앱스토어·클라우드 같은 서비스가 315억7300만달러였고 영업이익도 10% 늘었습니다. 메모리 값 상승이 완제품 회사의 실적과 소비자 가격에 어떻게 이어지는지 보여 주는 사례입니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261103000049\n\n#반도체 #semiconductor #애플 #메모리 #아이폰 #실적 #전자",
+  "photo_queries": [
+    "smartphone circuit board",
+    "laptop keyboard closeup",
+    "electronics store shelves"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5948960",
+    "query": "smartphone circuit board",
+    "file": "fec0f2a81c.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf694e8a5e4592e9e2a56928d13df8fdf8241b3c41fd9820e02018e86b4a0f736e5ed973eb8e10d099a65edb1d424f923fd08485a1bb9c353253942ceef16791f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/iphone-camera-mobile-phone-phone-5948960/",
+    "photographer": "MikuAalto",
+    "photographer_url": "https://pixabay.com/users/MikuAalto-13852633/",
+    "alt": "iphone, camera, mobile phone, phone, smartphone, phone camera, camera phone, electronic device, iphone 12, iphone 12 pro max, iphone 12 pro, apple, digital, device, technology, 3d, iphone 12, iphone 12, iphone 12, iphone 12, iphone 12",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: MikuAalto / Pixabay"
+  }
+}

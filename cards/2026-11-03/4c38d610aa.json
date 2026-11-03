@@ -1,0 +1,35 @@
+{
+  "id": "4c38d610aa",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64756",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-03T10:43+09:00",
+  "headline": "반도체 장비 부품사 씨엠티엑스, 매출 최대에도 이익 30%↓",
+  "bullets": [
+    "3분기 매출 484억원, 12분기 연속 늘며 최대 기록",
+    "영업이익 105억원, 전년·전분기보다 30% 넘게 감소",
+    "구미 공장 증설로 비용 늘어…2027년 생산능력 2배"
+  ],
+  "caption": "반도체 장비 부품사 씨엠티엑스, 매출 최대에도 이익 30%↓\n\n씨엠티엑스가 3분기 매출 484억원, 영업이익 105억원을 기록했다고 공시했습니다. 매출은 1년 전보다 18.1% 늘며 12분기 연속 증가해 분기 최대 기록을 새로 썼지만, 영업이익은 1년 전과 직전 분기보다 모두 30% 넘게 줄었습니다. 영업이익률도 21.6%로 1년 전보다 16.1%p 떨어졌는데, 새 시설을 늘리고 인력을 뽑으면서 비용이 늘어난 영향으로 풀이됩니다. 이 회사는 반도체 회로를 깎아 내는 식각 장비 안에 들어가는 실리콘 전극·링 같은 소모성 부품을 공급하며, 삼성전자·마이크론·TSMC와 직접 거래합니다. 경북 구미에 짓고 있는 새 공장이 2027년 차례로 가동되면 연간 생산능력은 2000억원에서 4000억원으로 두 배가량 늘어납니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64756\n\n#반도체 #semiconductor #반도체장비 #식각 #부품 #씨엠티엑스 #실적",
+  "photo_queries": [
+    "precision machined metal parts",
+    "plasma glow chamber",
+    "industrial factory building"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4673364",
+    "query": "precision machined metal parts",
+    "file": "4c38d610aa.photo.jpg",
+    "download_url": "https://pixabay.com/get/g5e5bc121d5d59eaa75bfa0c20e924d400d80bbe5cfce2b2acaa2472ce83933ad833a00e3ed09c94c4f5780c48aa83c4e2ea22fe5540527abb7e473c93690ab47_1280.jpg",
+    "page_url": "https://pixabay.com/photos/machined-parts-metal-metallic-4673364/",
+    "photographer": "Pineapple22Productions",
+    "photographer_url": "https://pixabay.com/users/Pineapple22Productions-14350514/",
+    "alt": "machined parts, metal, metallic, industry, steel, part, chrome, transmission, cnc, array, brown metal, brown industry, cnc, cnc, cnc, cnc, cnc",
+    "width": 3265,
+    "height": 2177,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Pineapple22Productions / Pixabay"
+  }
+}

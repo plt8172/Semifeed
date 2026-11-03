@@ -1,0 +1,35 @@
+{
+  "id": "8105c4f345",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64781",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-03T11:28+09:00",
+  "headline": "LG엔솔, 전력 저장 배터리 덕에 매출 28% 뛰었다",
+  "bullets": [
+    "3분기 매출 9조6434억원, 영업이익 7560억원",
+    "ESS 물량 전분기보다 60% 넘게 늘어 매출 30%대 차지",
+    "빅테크와 첫 직접 공급 계약…수주 잔고 160GWh"
+  ],
+  "caption": "LG엔솔, 전력 저장 배터리 덕에 매출 28% 뛰었다\n\nLG에너지솔루션이 올해 3분기 매출 9조6434억원, 영업이익 7560억원을 기록했습니다. 매출은 직전 분기보다 28% 늘었고, 영업이익 가운데 4169억원은 미국 인플레이션감축법(IRA)에 따른 현지 생산 보조금(AMPC)입니다. 성장을 이끈 것은 에너지저장장치(ESS)입니다. ESS는 전기를 배터리에 모아 두었다가 필요할 때 내보내는 설비로, 전력망과 AI 데이터센터에서 수요가 늘고 있습니다. 회사는 ESS 물량이 전분기보다 60% 이상 늘어 매출 비중이 30% 초반까지 올랐고, 처음으로 빅테크에 ESS를 직접 공급하는 계약을 맺어 3분기 말 수주 잔고가 160기가와트시(GWh) 수준이라고 밝혔습니다. 다만 환율 관련 손실 등으로 당기순손실 2969억원을 냈습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64781\n\n#반도체 #semiconductor #배터리 #이차전지 #ESS #LG에너지솔루션 #AI데이터센터 #실적",
+  "photo_queries": [
+    "battery energy storage containers",
+    "cylindrical battery cells",
+    "solar farm power grid"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "78116",
+    "query": "solar farm power grid",
+    "file": "8105c4f345.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0de98329e9f7adf2b2a93969f4f7bcc491c232cb9b1bc2b2e69328b8f31dcd1ef42ce15218d9b69fe4453e31d931ed50_1280.jpg",
+    "page_url": "https://pixabay.com/photos/energy-landscape-desert-mountains-78116/",
+    "photographer": "12019",
+    "photographer_url": "https://pixabay.com/users/12019-12019/",
+    "alt": "energy, nature, landscape, desert, mountains, photovoltaic, generation, solar, alternative, electrical, eco, electricity, ecology, clean, power, blue desert, blue energy, blue power, blue clean",
+    "width": 1800,
+    "height": 1350,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 12019 / Pixabay"
+  }
+}

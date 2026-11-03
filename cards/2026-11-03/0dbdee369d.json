@@ -1,0 +1,35 @@
+{
+  "id": "0dbdee369d",
+  "link": "https://www.theregister.com/networks/2026/11/02/ericsson-says-it-can-detect-track-drones-using-only-mobile-networks/5306958",
+  "source": "The Register",
+  "category": "전자·부품",
+  "published_at": "2026-11-03T02:29+09:00",
+  "headline": "에릭슨, 휴대폰 기지국 전파로 드론 추적 나선다",
+  "bullets": [
+    "기지국 전파가 드론에 반사된 신호로 위치 추적",
+    "2027년 일부 고객 시범, 2028년부터 확대 도입",
+    "AT&T·핀란드 시험서 여러 대 드론 동시 추적"
+  ],
+  "caption": "에릭슨, 휴대폰 기지국 전파로 드론 추적 나선다\n\n통신장비 회사 에릭슨이 이동통신망만으로 낮게 나는 드론을 찾아내고 추적하는 기술을 단계적으로 상용화하겠다고 밝혔습니다. 통합 감지·통신(ISAC)이라 불리는 이 기술은 한 기지국이 쏜 전파가 드론에 부딪혀 반사되면, 주변 여러 기지국이 그 신호를 받아 분석해 위치를 계산하는 방식입니다. 레이더와 비슷한 원리를 이미 깔려 있는 통신망에 더하는 셈인데, 기지국 안테나는 원래 땅 가까운 높이를 비추고 있어 저고도 드론을 보기에 유리합니다. 다만 감지 기능을 갖춘 무선 장비와 별도 연산 자원이 필요합니다. 미국 AT&T와 핀란드 국가 재난통신 회사의 시험에서 여러 대의 드론을 동시에 추적했고, 2027년 일부 고객 대상 시범을 거쳐 2028년부터 넓게 도입할 계획입니다. 최근 공항이 드론 때문에 문을 닫는 일이 이어지면서 넓은 지역을 감시할 방법이 필요해진 배경이 있습니다.\n\n출처: The Register\nhttps://www.theregister.com/networks/2026/11/02/ericsson-says-it-can-detect-track-drones-using-only-mobile-networks/5306958\n\n#반도체 #semiconductor #통신 #5G #6G #기지국 #드론 #에릭슨",
+  "photo_queries": [
+    "cell tower antennas",
+    "quadcopter drone sky",
+    "radar dish antenna"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2722028",
+    "query": "cell tower antennas",
+    "file": "0dbdee369d.photo.jpg",
+    "download_url": "https://pixabay.com/get/g328795e1cb8b13bf080a662d281e0f664acd0c7d8f62fd8c364e8eacb164494673a152bcbdf13012d9377f22ba420ddaf77091a32e01784a808c9efddadaede6_1280.jpg",
+    "page_url": "https://pixabay.com/photos/transmission-mast-radio-station-2722028/",
+    "photographer": "Ratfink1973",
+    "photographer_url": "https://pixabay.com/users/Ratfink1973-5627178/",
+    "alt": "transmission mast, radio station, cellphone mast, radio masts, antenna, news, masts, radio technology, cellular network, radio antenna, cellular, technology, communication, channel, wireless, cellular antenna, antenna mast, transmission, base station, radio mast, mast, telecommunications, radio station, base station, base station, base station, base station, base station",
+    "width": 4608,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Ratfink1973 / Pixabay"
+  }
+}
