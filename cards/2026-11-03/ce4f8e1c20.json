@@ -1,0 +1,36 @@
+{
+  "id": "ce4f8e1c20",
+  "link": "https://www.theregister.com/systems/2026/11/03/toyota-shows-off-soc-that-stores-model-weights-and-its-os-on-integrated-memory/5307117",
+  "source": "The Register",
+  "category": "AI·설계",
+  "published_at": "2026-11-03T12:25+09:00",
+  "headline": "토요타 계열 아이신, 메모리 품은 AI 칩으로 부팅 38배 단축",
+  "bullets": [
+    "16나노 칩 안 MRAM에 AI 모델과 운영체제 함께 저장",
+    "전원 켠 뒤 65.7ms 만에 시작, 외부 메모리보다 38배",
+    "곱셈 방식 조합해 모델 크기 53% 줄여, 양산 시점 미정"
+  ],
+  "caption": "토요타 계열 아이신, 메모리 품은 AI 칩으로 부팅 38배 단축\n\n토요타가 대주주인 자동차 부품 회사 아이신(AISIN)이 도호쿠대와 함께 AI 모델을 칩 안에 담는 시스템온칩(SoC)을 공개했습니다. 보통 AI 칩은 모델을 바깥 메모리(D램)에 두고 프로세서와 계속 데이터를 주고받는데, 아이신은 이 왕래가 차량 영상 인식 같은 기기 속 AI를 느리게 만들고 지금은 D램 값도 비싸다고 봤습니다. 그래서 16나노 공정 칩 안에 전원이 꺼져도 데이터가 남는 메모리인 STT-MRAM을 넣고, 여기에 AI 모델 가중치와 운영체제를 함께 저장했습니다. 그 결과 전원을 켠 뒤 커널이 시작되기까지 65.7밀리초로, 외부 메모리를 쓸 때보다 38배 빨랐습니다. 좁은 칩 속 메모리를 아껴 쓰려고 8비트와 16비트 곱셈을 섞어 모델 크기를 17.7MB에서 9.36MB로 53% 줄였습니다. 언제 양산할지는 밝히지 않았습니다.\n\n출처: The Register\nhttps://www.theregister.com/systems/2026/11/03/toyota-shows-off-soc-that-stores-model-weights-and-its-os-on-integrated-memory/5307117\n\n#반도체 #semiconductor #AI반도체 #MRAM #자동차반도체 #시스템온칩 #토요타",
+  "photo_queries": [
+    "car dashboard electronics",
+    "autonomous car sensors",
+    "tiny chip fingertip"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5423760",
+    "query": "printed circuit board",
+    "file": "ce4f8e1c20.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf9bccb4e3e8c34cd3809adf8bc0a3d17c3aa86859eeaa75a11fd4bdf4429558e0d491ec562dbd47d1e52049b54a8f56aff3e3cf7ffe6f524fc6f58cd420767d9_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mother-board-electronics-computer-5423760/",
+    "photographer": "nanoslavic",
+    "photographer_url": "https://pixabay.com/users/nanoslavic-17278421/",
+    "alt": "mother board, electronics, computer, board, components, chips, tech, technology, main board, digital, circuit, hardware, parts, processor, module, microelectronics, electrical, repair, engineering, printed circuit board, pcb, macro, mother board, pcb, pcb, pcb, pcb, pcb",
+    "width": 5760,
+    "height": 3840,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: nanoslavic / Pixabay",
+    "category": "computer"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "6cda7633b5",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64808",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-03T16:30+09:00",
+  "headline": "HBM 검사장비 테크윙, 526억원 들여 새 공장 짓는다",
+  "bullets": [
+    "천안 BIT산단에 526억원 투입, 내년 7월까지 신공장",
+    "메모리 테스트 핸들러·HBM 검사 큐브 프로버 생산",
+    "새 설비 연 2000억~3000억원 규모, 작년 매출 1590억"
+  ],
+  "caption": "HBM 검사장비 테크윙, 526억원 들여 새 공장 짓는다\n\n반도체 검사장비 회사 테크윙이 약 526억원을 들여 충남 천안BIT산업단지에 새 공장을 짓는다고 공시했습니다. 투자액은 자기자본의 26.7%에 이르고, 투자 기간은 내년 7월 31일까지입니다. 기존 아산사업장이 이미 완전 가동 중인 데다 고객사의 구매주문이 계속 들어오고 있어, 내년 장비 수요를 내다보고 생산능력을 미리 확보하려는 것이라고 회사는 설명했습니다. 새 공장에서는 메모리 테스트 핸들러와 큐브 프로버를 만듭니다. 테스트 핸들러는 다 만든 칩을 자동검사장비로 옮기고 뜨겁거나 차가운 환경을 만들어 신뢰성을 확인하는 장비이고, 큐브 프로버는 영하 40도에서 영상 150도 환경에서 AI용 고대역폭메모리(HBM)를 이루는 칩 조각(다이)을 검사합니다. 새 생산능력은 연간 2000억~3000억원 매출 규모로, 지난해 매출 약 1590억원보다 큽니다. 고객은 삼성전자, SK하이닉스, 마이크론 등입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64808\n\n#반도체 #semiconductor #반도체장비 #HBM #메모리 #테스트핸들러 #테크윙",
+  "photo_queries": [
+    "semiconductor test equipment",
+    "automated factory robot arm",
+    "memory chip modules"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1911693",
+    "query": "memory chip modules",
+    "file": "6cda7633b5.photo.jpg",
+    "download_url": "https://pixabay.com/get/g40a0241fef46e4d712cc472f624cbb86a44ef820e26a1d7b8d5baa5a4bc1a57b0a689a4e124111adb42f6be36b6eea3ef4cc9631cd91cd0138f4ab68615f533a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/printed-circuit-board-1911693/",
+    "photographer": "stux",
+    "photographer_url": "https://pixabay.com/users/stux-12364/",
+    "alt": "printed circuit board, random access memory, green, fund, silver, laptop, component, module, technology, computer, pc, trace, circuit, storage medium, cpu, solder joint, chip, electronics, storage, circuit board, data store, data processing, connection, notebook, mac book pro, circuit, cpu, cpu, cpu, chip, chip, circuit board, circuit board, circuit board, circuit board, circuit board",
+    "width": 5472,
+    "height": 3648,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: stux / Pixabay"
+  }
+}

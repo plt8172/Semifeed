@@ -1,0 +1,35 @@
+{
+  "id": "be54ad68c5",
+  "link": "https://www.etnews.com/20261102000334",
+  "source": "전자신문",
+  "category": "전자·부품",
+  "published_at": "2026-11-03T16:00+09:00",
+  "headline": "가전 명가 파나소닉, AI 데이터센터 부품에 7800억원 투자",
+  "bullets": [
+    "日 전자 기업, 가전 대신 AI 인프라 하드웨어로 전환",
+    "파나소닉 인더스트리, 소재·부품 증설에 920억엔",
+    "AI 데이터센터용 소재·부품·서버 공급망 공략 가속"
+  ],
+  "caption": "가전 명가 파나소닉, AI 데이터센터 부품에 7800억원 투자\n\n한때 세계 가전 시장을 이끌던 일본 전자 기업들이 인공지능(AI) 쪽으로 사업 방향을 바꾸고 있습니다. TV나 냉장고 같은 완제품보다, AI 데이터센터를 짓는 데 꼭 필요한 소재·전자부품·서버 같은 하드웨어 공급망을 공략하는 데 속도를 내고 있다는 것입니다. 대표적으로 파나소닉 인더스트리는 AI 데이터센터용 소재와 전자부품 생산 능력을 늘리는 데 모두 920억엔(약 7800억원)을 투자합니다. AI 데이터센터에는 수많은 서버와 전원 장치가 들어가고, 그 안에는 기판 소재와 콘덴서 같은 작은 부품이 대량으로 쓰입니다. 가전 제조사로서의 이름값이 예전 같지 않은 상황에서, 수요가 빠르게 늘어나는 AI 하드웨어로 사업 구조를 재편해 새 성장 동력을 찾으려는 포석으로 풀이됩니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261102000334\n\n#반도체 #semiconductor #전자부품 #AI데이터센터 #파나소닉 #일본",
+  "photo_queries": [
+    "electronic components assembly",
+    "power supply unit internals",
+    "data center hallway"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "218835",
+    "query": "electronic components assembly",
+    "file": "be54ad68c5.photo.jpg",
+    "download_url": "https://pixabay.com/get/gd5a3cc8e8b4a87dfc718a279db95d4eceb74a2aac124f3aad5abe831dfbf7b4c448141afc7a8af3c2b57a6656a7250c50be97d5376cf1257e56d4f41a5db0c1e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/transistors-transistor-electronic-218835/",
+    "photographer": "PublicDomainPictures",
+    "photographer_url": "https://pixabay.com/users/PublicDomainPictures-14/",
+    "alt": "transistors, transistor, electronic, pin, semiconductors, hardware, voltage, transistors, transistor, transistor, transistor, transistor, transistor",
+    "width": 1919,
+    "height": 1440,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: PublicDomainPictures / Pixabay"
+  }
+}
