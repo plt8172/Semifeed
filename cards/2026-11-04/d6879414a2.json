@@ -1,0 +1,35 @@
+{
+  "id": "d6879414a2",
+  "link": "https://www.tomshardware.com/tech-industry/semiconductors/intel-14a-moves-closer-to-production-as-pdk-0-9-becomes-available-process-design-kit-gives-developers-important-production-milestone-ahead-of-1-0-in-2027",
+  "source": "Tom's Hardware",
+  "category": "파운드리",
+  "published_at": "2026-11-04T00:20+09:00",
+  "headline": "인텔, 차세대 14A 칩 설계 도구 공개…2028년 양산 목표",
+  "bullets": [
+    "인텔 파운드리, 14A 공정 설계 키트 0.9 배포",
+    "실제 실리콘 측정 기반, 정식판은 2027년 1분기",
+    "자체 제품 위험생산 2027년 하반기, 양산 2028년"
+  ],
+  "caption": "인텔, 차세대 14A 칩 설계 도구 공개…2028년 양산 목표\n\n인텔 파운드리가 차세대 제조 공정 '14A'의 공정 설계 키트(PDK) 0.9 버전을 고객사에 내놓았습니다. PDK는 트랜지스터 모델과 설계 규칙을 담은 일종의 설명서로, 칩 설계 회사는 이것을 보고 그 공장에서 만들 칩을 설계합니다. 이번 0.9 버전은 이론 모델이 아니라 실제로 만든 실리콘을 측정한 결과를 바탕으로 해, 고객이 성능과 전력을 더 믿고 설계를 시작할 수 있다는 점에서 의미가 있습니다. 인텔은 대량 생산 준비가 됐는지를 확인하는 PDK 1.0을 2027년 1분기에 내놓을 계획입니다. 다만 곧바로 양산하는 것은 아니며, 자체 제품의 위험생산은 2027년 하반기, 본격 양산은 2028년으로 잡고 있습니다. 14A에는 2세대 게이트올어라운드(GAA) 트랜지스터와 칩 뒷면으로 전력을 공급하는 기술 등이 들어갑니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/semiconductors/intel-14a-moves-closer-to-production-as-pdk-0-9-becomes-available-process-design-kit-gives-developers-important-production-milestone-ahead-of-1-0-in-2027\n\n#반도체 #semiconductor #인텔 #Intel #파운드리 #14A #반도체공정 #GAA",
+  "photo_queries": [
+    "cpu processor die",
+    "integrated circuit macro",
+    "clean room technician gown"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "564771",
+    "query": "cpu processor die",
+    "file": "d6879414a2.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2718b34d8d4f4d8fd7a705aa3aab98731a745c0cb9dcc77e7595cd5cb0bda7eb9caa8da8c46a76bf4865348ca8008cb957a7c33816910c28ba746d5cc60a1e42_1280.jpg",
+    "page_url": "https://pixabay.com/photos/cpu-processor-macro-pen-pin-564771/",
+    "photographer": "blickpixel",
+    "photographer_url": "https://pixabay.com/users/blickpixel-52945/",
+    "alt": "cpu, processor, macro, pen, pin, computer, electronics, data processing, chip, circuit board, circuits, pc, control center, connections, electrical engineering, component, technology, trace, data, electric, components, software, close up, slot, cpu, cpu, cpu, cpu, cpu, processor, processor, chip",
+    "width": 3825,
+    "height": 2550,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: blickpixel / Pixabay"
+  }
+}

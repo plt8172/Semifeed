@@ -1,0 +1,36 @@
+{
+  "id": "80acfe4aac",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64822",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-04T08:09+09:00",
+  "headline": "LX세미콘, 상장 16년 만에 첫 적자…대표도 바꾼다",
+  "bullets": [
+    "3분기 매출 3360억원, 영업손실 156억원",
+    "메모리값 상승에 세트업체 부품 단가 인하 압박",
+    "매출 3년 연속 감소, 나준호 부사장 대표 내정"
+  ],
+  "caption": "LX세미콘, 상장 16년 만에 첫 적자…대표도 바꾼다\n\n화면 구동 칩을 만드는 LX세미콘이 3분기에 영업손실 155억6400만원을 내며 2010년 상장 이후 처음으로 분기 적자를 기록했습니다. 매출은 3360억2000만원으로 1년 전보다 14.8% 줄었습니다. 회사는 전방 산업의 수요 부진, 메모리 가격 상승에 따른 가격 인하 압박, 환율 영향을 이유로 들었습니다. 메모리값이 오르면서 원가 부담이 커진 TV·스마트폰 같은 완제품 업체들이 디스플레이 구동칩(DDI) 등 다른 부품 값을 깎아 달라고 요구했다는 뜻입니다. DDI는 화면의 수많은 화소를 켜고 끄도록 신호를 보내는 칩입니다. 증권가에서는 애플이 DDI 공급처를 대만 노바텍으로 나누면서 물량이 줄었다고 보고 있고, 회사는 같은 날 나준호 전략마케팅부문장(부사장)을 새 대표로 내정했습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64822\n\n#반도체 #semiconductor #LX세미콘 #DDI #디스플레이구동칩 #실적 #팹리스",
+  "photo_queries": [
+    "lcd display panel closeup",
+    "television screen pixels macro",
+    "smartphone screen repair"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2655765",
+    "query": "electronics manufacturing",
+    "file": "80acfe4aac.photo.jpg",
+    "download_url": "https://pixabay.com/get/gbb719c1916801732753bc195340de5c783e5ae31edba157f2ed6af2f1fbc8c0baebcc7ad0056eebaeae0784b7b346c4df49a7d81225e0c9f869850aa2df90cc6_1280.jpg",
+    "page_url": "https://pixabay.com/photos/pcb-circuit-board-technology-2655765/",
+    "photographer": "ranjatm",
+    "photographer_url": "https://pixabay.com/users/ranjatm-1062562/",
+    "alt": "pcb, circuit board, technology, printed, engineering, industry, motherboard, component, semiconductor, technical, electronics, electronic, pcb, pcb, pcb, pcb, pcb, semiconductor, semiconductor, semiconductor",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ranjatm / Pixabay",
+    "category": "industry"
+  }
+}

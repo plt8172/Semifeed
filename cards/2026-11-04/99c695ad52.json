@@ -1,0 +1,35 @@
+{
+  "id": "99c695ad52",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-tells-data-center-operators-to-limit-business-from-chinese-customers-with-new-global-restrictions-report-claims-allegedly-restricted-to-49-percent-of-the-total-ensuring-51-percent-are-non-chinese-outfits",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-03T22:31+09:00",
+  "headline": "엔비디아, 클라우드 회사에 '중국 고객 49%까지만' 요구",
+  "bullets": [
+    "엔비디아, 클라우드 업체에 中 고객 비중 제한 통보",
+    "매출의 51% 이상은 중국 외 기업이어야",
+    "전 세계 데이터센터 대상, 신규 계약부터 적용"
+  ],
+  "caption": "엔비디아, 클라우드 회사에 '중국 고객 49%까지만' 요구\n\n엔비디아가 자사 데이터센터 제품을 쓰는 클라우드 회사들에게 중국 기업에 파는 서비스를 전체의 절반 미만으로 줄이라고 요구했다는 보도가 나왔습니다. 보도에 따르면 중국 고객 비중은 49%까지만 허용되고 51% 이상은 중국이 아닌 기업이어야 하며, 이 방침은 공식 문서가 아니라 영업 조직을 통해 전달됐습니다. 아시아뿐 아니라 전 세계 데이터센터에 적용되지만, 이미 맺은 계약이 아니라 새 계약부터 해당됩니다. 미국은 중국의 AI 개발 속도를 늦추려고 고성능 AI 칩 수출을 통제해 왔는데, 칩을 직접 사지 못한 중국 기업이 해외 클라우드를 빌려 쓰는 길도 좁아지는 셈입니다. 엔비디아는 성명에서 미국 칩이 세계 경쟁의 기반이며 현재 정책은 클라우드 회사가 미국 인프라 위에서 사업하도록 장려한다고 밝혔습니다. 고객 범위가 줄어든 클라우드 회사들의 부담은 커질 수 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/nvidia-tells-data-center-operators-to-limit-business-from-chinese-customers-with-new-global-restrictions-report-claims-allegedly-restricted-to-49-percent-of-the-total-ensuring-51-percent-are-non-chinese-outfits\n\n#반도체 #semiconductor #엔비디아 #Nvidia #수출통제 #미중갈등 #클라우드 #데이터센터",
+  "photo_queries": [
+    "gpu graphics card closeup",
+    "cloud server rack lights",
+    "shipping containers port"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2402637",
+    "query": "cloud server rack lights",
+    "file": "99c695ad52.photo.jpg",
+    "download_url": "https://pixabay.com/get/gcf4d9166670733f734d745fe9f48f7c37ffd996d2678cafa53a641e93df94046caafde01c24a1f8fbb107e3072518565b35be3ea7331585ca2e2dad763e0c53e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/network-server-system-2402637/",
+    "photographer": "bsdrouin",
+    "photographer_url": "https://pixabay.com/users/bsdrouin-5016447/",
+    "alt": "network, server, system, infrastructure, managed services, connection, computer, cloud, gray computer, gray laptop, network, network, server, server, server, server, server",
+    "width": 1920,
+    "height": 1080,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: bsdrouin / Pixabay"
+  }
+}

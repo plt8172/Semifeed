@@ -1,0 +1,35 @@
+{
+  "id": "58f7d9f250",
+  "link": "https://www.etnews.com/20261103000452",
+  "source": "전자신문",
+  "category": "장비·소재",
+  "published_at": "2026-11-03T19:29+09:00",
+  "headline": "반도체 장비, 3년 뒤 납품분까지 미리 계약 줄섰다",
+  "bullets": [
+    "글로벌 장비사들, 3년 뒤 공급할 장비 계약 추진",
+    "AI 인프라 수요에 칩 제조사 설비 투자 경쟁",
+    "평소보다 1~2년 빠른 행보, 장비 리드타임 급증"
+  ],
+  "caption": "반도체 장비, 3년 뒤 납품분까지 미리 계약 줄섰다\n\n주요 글로벌 반도체 장비 회사들이 3년 뒤에나 납품할 장비의 공급 계약을 서둘러 맺고 있는 것으로 전해졌습니다. 반도체를 만드는 회사들이 인공지능(AI) 인프라 수요에 대응하려고 앞다퉈 설비 투자에 나섰기 때문이며, 평소보다 1~2년 빠른 움직임입니다. 반도체 장비는 노광기·식각기처럼 공장 한 곳에 수백 대가 들어가는 정밀 기계로, 주문한 뒤 받기까지 걸리는 기간을 '리드타임'이라고 부릅니다. 구매가 몰리는데 장비사의 생산 능력은 한정돼 있어 이 리드타임이 빠르게 늘고 있습니다. 미리 장비를 확보하지 못하면 AI 반도체 경쟁에서 뒤처질 수 있다는 칩 제조사들의 위기감이 반영된 것으로 풀이됩니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261103000452\n\n#반도체 #semiconductor #반도체장비 #설비투자 #리드타임 #AI반도체 #semiconductorequipment",
+  "photo_queries": [
+    "vacuum chamber machine",
+    "industrial robot arm factory",
+    "factory construction site"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2791671",
+    "query": "industrial robot arm factory",
+    "file": "58f7d9f250.photo.jpg",
+    "download_url": "https://pixabay.com/get/gb60e3c0190b1e07f220203170cf1959895fc47472a8000afc9e824e6304f7696eec5c26c7c42e464a9f86222af0db1f965430ca7fb5f59a72b5943367875cc7d_1280.jpg",
+    "page_url": "https://pixabay.com/photos/robot-arm-technology-robot-arm-2791671/",
+    "photographer": "jarmoluk",
+    "photographer_url": "https://pixabay.com/users/jarmoluk-143740/",
+    "alt": "robot, arm, technology, robot arm, robotics, kawasaki, science, orange, technique, electronics, automation, robot, robot, robot arm, robotics, automation, automation, automation, automation, automation",
+    "width": 3000,
+    "height": 2000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: jarmoluk / Pixabay"
+  }
+}
