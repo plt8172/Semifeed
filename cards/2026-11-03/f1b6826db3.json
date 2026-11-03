@@ -1,0 +1,35 @@
+{
+  "id": "f1b6826db3",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/putin-demands-russian-data-centers-supply-capacity-to-the-state-in-wake-of-ukraine-drone-attacks-10-percent-capacity-must-be-available-for-state-it-infrastructure-with-24-hours-notice",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-03T03:00+09:00",
+  "headline": "드론 공격 받은 러시아 \"민간 데이터센터 10% 비워둬라\"",
+  "bullets": [
+    "푸틴, 민간 데이터센터에 용량 10%를 국가용으로 남기라 지시",
+    "정부 위원회가 요청하면 24시간 안에 내줘야 하는 방식",
+    "최근 우크라이나 드론 공격에 러시아 대형 데이터센터 잇단 피해"
+  ],
+  "caption": "드론 공격 받은 러시아 \"민간 데이터센터 10% 비워둬라\"\n\n러시아 푸틴 대통령이 국가가 운영하지 않는 민간 데이터센터들에 전체 용량의 10%를 국가 IT 인프라용으로 비워 두라고 지시했습니다. 데이터센터는 인터넷 서비스와 정부 전산망이 돌아가는 서버를 모아 둔 시설인데, 최근 몇 주 사이 우크라이나 드론 공격의 표적이 돼 왔습니다. 10월 초에는 러시아 최대 규모인 63메가와트급 데이터센터가 공격을 받아 일부 설비를 아예 가동에서 빼야 했고, 2주 뒤에는 세금 데이터베이스가 있던 재무부 데이터센터도 피해를 입었습니다. 이번 조치로 디지털개발부는 전국 민간 시설의 남은 용량과 공간을 조사하고, 새 정부 위원회가 요청하면 데이터센터 운영사는 24시간 안에 용량을 내줘야 합니다. 국가 시설이 공격받아도 민간 시설로 서비스를 옮겨 계속 돌릴 수 있게 하려는 것입니다. 전쟁에서 데이터센터가 전력망처럼 공격 대상이자 지켜야 할 핵심 기반시설이 됐다는 점을 보여 줍니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/putin-demands-russian-data-centers-supply-capacity-to-the-state-in-wake-of-ukraine-drone-attacks-10-percent-capacity-must-be-available-for-state-it-infrastructure-with-24-hours-notice\n\n#반도체 #semiconductor #데이터센터 #러시아 #우크라이나 #서버 #사이버안보",
+  "photo_queries": [
+    "server room aisle",
+    "network switch cables",
+    "military drone sky"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4688477",
+    "query": "server room aisle",
+    "file": "f1b6826db3.photo.jpg",
+    "download_url": "https://pixabay.com/get/ga5236fe437d405b79fa625d1f2bb9643a6ee645b872d545e9e4cf9a2748d2a0e38092f1d7b16497b69d574386a498bbd4c807dfe1a8bce922a152267ddac033a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/spatialship-future-space-travel-4688477/",
+    "photographer": "11287688",
+    "photographer_url": "https://pixabay.com/users/11287688-11287688/",
+    "alt": "spatialship, future, space, travel, cosmos, universe, 3d, spatialship, spatialship, spatialship, future, future, future, future, future",
+    "width": 3840,
+    "height": 2160,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 11287688 / Pixabay"
+  }
+}

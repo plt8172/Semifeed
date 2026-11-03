@@ -1,0 +1,35 @@
+{
+  "id": "9d99ed1e5f",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64813",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-03T17:03+09:00",
+  "headline": "반도체 기판 심텍, 영업이익 1년 새 721% 늘었다",
+  "bullets": [
+    "3분기 매출 5359억원·영업익 1018억원, 영업익 4년 만에 1000억",
+    "AI 서버용 메모리 모듈 SOCAMM 기판 매출이 크게 늘어",
+    "SOCAMM·고다층 기판 증설에 투자, 규모 4000억원까지 확대"
+  ],
+  "caption": "반도체 기판 심텍, 영업이익 1년 새 721% 늘었다\n\n반도체를 올려 다른 부품과 연결해 주는 기판을 만드는 심텍이 3분기 매출 5359억원, 영업이익 1018억원을 기록했습니다. 영업이익은 1년 전보다 721.6% 늘었고, 분기 영업이익이 1000억원을 넘은 것은 반도체 호황기였던 2022년 3분기 이후 4년 만입니다. 매출도 직전 최고였던 2분기를 넘어 사상 최대를 기록했고, 영업이익률은 19%까지 올라갔습니다. 실적을 끌어올린 것은 SOCAMM이라는 AI 서버용 저전력 메모리 모듈입니다. SOCAMM은 전력을 적게 쓰는 메모리 칩 여러 개를 작은 판 하나에 모아 서버에 끼우는 형태로, 심텍은 이 판에 쓰이는 기판을 만듭니다. 2분기부터 공장 가동률이 80%를 넘어 손익분기점을 넘긴 것도 수익성 개선의 이유입니다. 심텍은 SOCAMM 전용 기판 공장에 1500억원을 들이는 등 투자 규모를 4000억원까지 늘리고, 새 생산라인을 2028년부터 차례로 가동할 계획입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64813\n\n#반도체 #semiconductor #반도체기판 #심텍 #SOCAMM #AI서버 #실적",
+  "photo_queries": [
+    "printed circuit board manufacturing",
+    "memory module closeup",
+    "factory production line machines"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5088594",
+    "query": "printed circuit board manufacturing",
+    "file": "9d99ed1e5f.photo.jpg",
+    "download_url": "https://pixabay.com/get/gec6e135e6ebc48550efeaa8eb27c81a47ee34ac0bfcba2b3477ddabf09d87b6ede149aa717a78baba3df698d16e12625cd31460377a4321dd387735e22b62aa8_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computer-plate-page-electronics-5088594/",
+    "photographer": "krystianwin",
+    "photographer_url": "https://pixabay.com/users/krystianwin-8237000/",
+    "alt": "computer, plate, page, electronics, informatics, technology, processor, system, connection, data, cpu, pc",
+    "width": 4896,
+    "height": 3264,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: krystianwin / Pixabay"
+  }
+}

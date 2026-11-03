@@ -1,0 +1,36 @@
+{
+  "id": "1d1d33d44b",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64806",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-03T16:59+09:00",
+  "headline": "HBM 장비 특허 다툼 한미·한화, 법정 대신 조정 간다",
+  "bullets": [
+    "HBM용 TC 본더 특허 소송, 양사 합의로 분쟁조정 절차 진행",
+    "조정은 보통 3개월 안에 끝나며, 결렬되면 소송을 이어간다",
+    "2024년 12월 한미반도체 소송으로 시작, 한화세미텍도 맞소송"
+  ],
+  "caption": "HBM 장비 특허 다툼 한미·한화, 법정 대신 조정 간다\n\nAI 반도체에 들어가는 고대역폭메모리(HBM)를 만드는 핵심 장비를 두고 다투던 한미반도체와 한화세미텍이 법정 공방을 잠시 멈추고 조정 절차를 밟기로 했습니다. HBM은 D램 칩을 여러 층 수직으로 쌓아 데이터를 한꺼번에 많이 주고받게 만든 메모리이고, TC 본더는 쌓은 칩을 열과 압력으로 눌러 붙이는 장비입니다. 양사는 특허심판원의 권유에 따라 산업재산권 분쟁조정위원회에서 합의를 시도하기로 했습니다. 이 위원회는 소송의 시간과 비용 부담을 줄이려고 운영되는 기구로, 조정은 보통 3개월 안에 마무리되고 성립되면 재판상 화해와 같은 효력을 갖습니다. 분쟁은 2024년 12월 한미반도체가 특허 침해 소송을 내며 시작됐고, 한화세미텍도 한미반도체 장비가 자사 특허 세 건을 침해했다며 맞소송을 냈습니다. 한미반도체는 이 주장을 전면 부인하고 있으며, 조정이 결렬되면 소송은 다시 이어집니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64806\n\n#반도체 #semiconductor #HBM #TC본더 #한미반도체 #한화세미텍 #특허 #반도체장비",
+  "photo_queries": [
+    "semiconductor packaging machine",
+    "stacked memory chips",
+    "courthouse gavel books"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2437882",
+    "query": "printed circuit board",
+    "file": "1d1d33d44b.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc937c89d959c0cd1a333306ce8a73b5014ff854dc5ea9c2be024440e63e6e3de6357014de1f5c5135cea7eb7f0f89eba44394e3dc4f1e910a35be94f10486544_1280.jpg",
+    "page_url": "https://pixabay.com/photos/board-computer-circuit-background-2437882/",
+    "photographer": "axonite",
+    "photographer_url": "https://pixabay.com/users/axonite-5531574/",
+    "alt": "board, computer, cool backgrounds, laptop wallpaper, circuit, background, technology, motherboard, digital, mac wallpaper, electronic, chip, hd wallpaper, texture, information, hardware, science, beautiful wallpaper, blue, 4k wallpaper, full hd wallpaper, system, wallpaper 4k, free wallpaper, processor, green, engineering, vector, communication, abstract, modern, tech, wallpaper hd, windows wallpaper, free background, printed, desktop backgrounds, integrated, sign, error, 4k wallpaper 1920x1080, home, binary, connection",
+    "width": 2100,
+    "height": 1390,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: axonite / Pixabay",
+    "category": "computer"
+  }
+}

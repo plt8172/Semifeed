@@ -1,0 +1,35 @@
+{
+  "id": "ee405862e6",
+  "link": "https://www.etnews.com/20261103000413",
+  "source": "전자신문",
+  "category": "파운드리",
+  "published_at": "2026-11-03T17:24+09:00",
+  "headline": "폴더블폰 잘 팔려 칩 더 달란 삼성, 대만 업체 '어렵다'",
+  "bullets": [
+    "삼성, 대만 UMC에 화면 구동칩용 웨이퍼 1만장 이상 추가 요청",
+    "폴더블폰이 예상보다 많이 팔려 OLED 구동칩 수요가 늘어난 탓",
+    "UMC는 생산 여력 부족으로 어렵다고 답한 것으로 전해져"
+  ],
+  "caption": "폴더블폰 잘 팔려 칩 더 달란 삼성, 대만 업체 '어렵다'\n\n삼성전자가 폴더블 스마트폰이 예상보다 잘 팔리면서 화면에 들어가는 반도체를 더 구하려 했지만, 대만 반도체 위탁생산(파운드리) 업체로부터 추가 생산이 어렵다는 답을 들은 것으로 전해졌습니다. 대만 경제일보 보도에 따르면 삼성전자는 대만 UMC에 OLED 디스플레이 구동칩(DDI)을 만들 웨이퍼 1만장 이상을 추가로 요청했습니다. DDI는 화면의 수많은 화소 하나하나에 신호를 보내 그림을 그리게 하는 칩으로, 스마트폰마다 반드시 들어갑니다. 웨이퍼는 칩을 새겨 넣는 둥근 실리콘 원판이라, 웨이퍼 장수가 곧 만들 수 있는 칩의 양을 뜻합니다. 제품이 많이 팔려 부품이 더 필요해졌지만 칩을 만들어 줄 공장의 생산 여력이 부족해 공급에 제동이 걸린 셈입니다. 이번 소식은 대만 언론 보도로 전해진 내용이며, 삼성전자가 부족분을 어떻게 메울지는 밝혀지지 않았습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261103000413\n\n#반도체 #semiconductor #파운드리 #디스플레이구동칩 #DDI #폴더블폰 #삼성전자 #UMC",
+  "photo_queries": [
+    "oled display panel",
+    "smartphone assembly line",
+    "silicon wafer semiconductor"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "410311",
+    "query": "smartphone assembly line",
+    "file": "ee405862e6.photo.jpg",
+    "download_url": "https://pixabay.com/get/g659bbe3251f7ce551ad6dc000fab77b8b02f248d2e4bf8f09a8ef9409c4e2cafbc32cf9333f9db74fa4327074ac259c08781a90da23dce455bec16e87780ec7c_1280.jpg",
+    "page_url": "https://pixabay.com/photos/iphone-hand-screen-smartphone-apps-410311/",
+    "photographer": "JESHOOTS-com",
+    "photographer_url": "https://pixabay.com/users/JESHOOTS-com-264599/",
+    "alt": "iphone, hand, screen, smartphone, apps, mobile phone, cell phone, phone, communication, mobile, telephone, technology, cellular, wireless, modern, digital, communicate, electronic, display, contact, touch, touchscreen, applications, ios, apple, iphone, iphone, iphone, iphone, iphone, smartphone, mobile phone, cell phone, phone, phone, phone, mobile, mobile",
+    "width": 1920,
+    "height": 1280,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: JESHOOTS-com / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "1c59ac7707",
+  "link": "https://semiengineering.com/quantum-interconnects-link-two-120-qubit-processors-ibm-research/",
+  "source": "Semiconductor Engineering",
+  "category": "AI·설계",
+  "published_at": "2026-11-03T04:45+09:00",
+  "headline": "IBM, 미터 단위 떨어진 양자칩 2개 이어 붙였다",
+  "bullets": [
+    "IBM 연구진, 미터 단위 거리의 양자 연결선 논문 발표",
+    "연결선 4개로 120큐비트 양자 프로세서 두 개를 연결",
+    "칩 하나를 키우는 대신 여러 모듈을 잇는 확장 방식의 핵심 기술"
+  ],
+  "caption": "IBM, 미터 단위 떨어진 양자칩 2개 이어 붙였다\n\nIBM 연구진이 미터 단위 거리로 떨어진 양자 프로세서 두 개를 연결하는 기술을 논문으로 발표했습니다. 양자 프로세서는 0과 1을 동시에 가질 수 있는 큐비트로 계산하는 칩인데, 칩 하나에 큐비트를 끝없이 늘리기는 어려워 여러 칩 모듈을 이어 붙이는 방식이 대안으로 꼽힙니다. 문제는 큐비트의 양자 상태가 매우 약해서, 칩 사이를 잇는 선이 길어지면 정보가 쉽게 깨진다는 점입니다. 연구진은 미터 단위 거리에서도 양자 상태를 유지하도록 설계한 장거리 연결선(L-커플러) 4개를 만들어 120큐비트 프로세서 두 개를 연결했다고 밝혔습니다. 이런 연결선은 두 모듈 사이에 여러 개를 놓을 수 있어야 하는데, 이번 실험은 그 요구를 겨냥했습니다. 더 큰 양자컴퓨터를 만들 때 칩을 하나 키우는 대신 모듈을 늘리는 길이 실제로 가능한지를 보여 주는 연구입니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/quantum-interconnects-link-two-120-qubit-processors-ibm-research/\n\n#반도체 #semiconductor #양자컴퓨터 #큐비트 #IBM #양자칩 #반도체설계",
+  "photo_queries": [
+    "quantum computer cryostat",
+    "coaxial cables laboratory",
+    "superconducting chip closeup"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1850021",
+    "query": "coaxial cables laboratory",
+    "file": "1c59ac7707.photo.jpg",
+    "download_url": "https://pixabay.com/get/g8e881cf100c02d5c5b8766eb28ff0da41636aedf561b28e6e1181a44f994747838836cf535c922cf1a1efcd643951b058b993f8a4a992bc7a41f0940495d2dc5_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-electronics-computer-1850021/",
+    "photographer": "Pexels",
+    "photographer_url": "https://pixabay.com/users/Pexels-2286921/",
+    "alt": "technology, electronics, computer, connection, data, display, electronic, equipment, mechanical engineering, screen, waveform, function, controls, electronics, electronics, electronics, electronics, electronics, electronic, mechanical engineering, mechanical engineering",
+    "width": 4633,
+    "height": 3089,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Pexels / Pixabay"
+  }
+}
