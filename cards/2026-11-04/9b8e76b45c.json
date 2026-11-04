@@ -1,0 +1,36 @@
+{
+  "id": "9b8e76b45c",
+  "link": "https://www.theregister.com/networks/2026/11/03/gsma-warns-of-growing-risks-to-mobile-networks-from-extreme-weather/5307308",
+  "source": "The Register",
+  "category": "정책·공급망",
+  "published_at": "2026-11-04T02:54+09:00",
+  "headline": "폭풍·홍수에 기지국 수리비 연 17억달러…2050년엔 2배",
+  "bullets": [
+    "GSMA, 이상기후로 기지국 피해 수리비 연 17억달러 추산",
+    "2050년엔 연 30억달러 넘을 수 있다고 경고",
+    "가장 큰 약점은 전력…정부·통신사 공동 대응 요구"
+  ],
+  "caption": "폭풍·홍수에 기지국 수리비 연 17억달러…2050년엔 2배\n\n전 세계 이동통신 업계를 대표하는 단체 GSMA가 폭풍과 홍수 같은 이상기후 때문에 통신사들이 기지국 피해 복구에 해마다 17억달러를 쓰고 있으며, 2050년 기후 조건에서는 이 비용이 연 30억달러 이상으로 거의 두 배가 될 수 있다고 경고했습니다. 현재 피해액 가운데 심한 폭풍이 약 10억달러, 강 범람과 해안 홍수가 각각 5억7700만달러와 1억2400만달러를 차지합니다. 철탑과 옥상 기지국은 강풍·낙뢰에, 지상 장비는 침수에 약하고, 고온에서는 무선 장비가 과열되며 폭우는 전파 신호를 약하게 만듭니다. 보고서가 꼽은 가장 큰 약점은 전력으로, 정전이 나면 기지국은 비상 전원이 다 떨어지는 순간 멈춥니다. 그래서 GSMA는 통신사뿐 아니라 전력·연료 공급사, 재난 대응 기관, 정부가 함께 대비해야 한다며, 세세한 규제보다 결과 중심의 정책을 요구했습니다.\n\n출처: The Register\nhttps://www.theregister.com/networks/2026/11/03/gsma-warns-of-growing-risks-to-mobile-networks-from-extreme-weather/5307308\n\n#반도체 #semiconductor #통신 #기지국 #이동통신 #기후변화 #GSMA",
+  "photo_queries": [
+    "telecom tower storm clouds",
+    "flooded street electrical",
+    "backup generator industrial"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2749588",
+    "query": "fiber optic",
+    "file": "9b8e76b45c.photo.jpg",
+    "download_url": "https://pixabay.com/get/gd7db0e65b51c3900c6b56c2ecc57ec400eaed4e96d9761ea6a0d6bbb4621758531e5a4db8b637f33c961e5706112199635b60da74de5c2b1f6bfbc4762486be2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/fiber-optic-cable-blue-network-2749588/",
+    "photographer": "chaitawat",
+    "photographer_url": "https://pixabay.com/users/chaitawat-6442268/",
+    "alt": "fiber optic, cable, blue, network, technology, communication, speed, fiber, data, internet, connection, digital, computer, ethernet, telecommunication, light, web, equipment, transfer, modern, tech, blue computer, blue technology, blue laptop, blue light, blue data, blue network, blue community, blue internet, blue digital, blue communication, blue tech, blue web, blue lights, fiber optic, fiber optic, network, fiber, data, telecommunication, telecommunication, tech, tech, tech, tech, tech",
+    "width": 1920,
+    "height": 1280,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: chaitawat / Pixabay",
+    "category": "science"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "05a3a790cd",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/china-deploys-worlds-first-800-volt-dc-power-system-for-massive-ai-data-center-seeks-to-quench-power-needs-with-higher-conversion-and-efficiency-inside-a-smaller-footprint",
+  "source": "Tom's Hardware",
+  "category": "AI·설계",
+  "published_at": "2026-11-03T21:40+09:00",
+  "headline": "中, AI 데이터센터에 800V 직류 전원 세계 첫 상용화",
+  "bullets": [
+    "中 엔비전, 내몽골 AI 데이터센터에 800V 직류 전원 적용",
+    "10kV 교류를 800V 직류로 바로 바꿔 변환 단계 줄여",
+    "단지는 3GW로 확장, AI 가속기 최대 100만 개 목표"
+  ],
+  "caption": "中, AI 데이터센터에 800V 직류 전원 세계 첫 상용화\n\n중국 에너지 기업 엔비전(Envision)이 내몽골 울란차브의 '갤럭시' AI 데이터센터에 800볼트 직류(DC) 통합 전원 시스템을 상용으로 처음 적용했다고 밝혔습니다. 데이터센터는 보통 전력망에서 받은 교류 전기를 서버가 쓸 수 있는 전기로 바꾸기 위해 여러 번 변환을 거치는데, 이 과정마다 전력이 조금씩 새고 장비 공간도 차지합니다. 엔비전의 시스템은 10킬로볼트 중전압 교류를 곧바로 800볼트 직류로 바꿔 변환 장비를 줄이고, 배터리를 함께 붙여 AI 작업이 몰릴 때 순간 전력 수요에 대응하도록 했습니다. 전압을 높이면 같은 전력을 더 적은 전류로 보낼 수 있어 구리 배선도 덜 필요하고, 같은 면적에 더 많은 AI 서버를 넣을 수 있습니다. 회사는 이 단지를 3기가와트 규모로 키워 AI 가속기 최대 100만 개를 운영하고, 2030년까지 사막 지역에 5기가와트 규모 친환경 AI 데이터센터를 짓는 계획에도 이 기술을 쓸 예정입니다. 다만 성능 평가는 회사 자체 발표라는 점을 감안해야 합니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/china-deploys-worlds-first-800-volt-dc-power-system-for-massive-ai-data-center-seeks-to-quench-power-needs-with-higher-conversion-and-efficiency-inside-a-smaller-footprint\n\n#반도체 #semiconductor #데이터센터 #AI인프라 #전력 #직류전원 #중국",
+  "photo_queries": [
+    "high voltage power converter",
+    "electrical switchgear cabinet",
+    "battery energy storage container"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1098059",
+    "query": "electrical switchgear cabinet",
+    "file": "05a3a790cd.photo.jpg",
+    "download_url": "https://pixabay.com/get/ga644eadc63b7600762c1109e41ec0d2e651bc0b077cfb0bf8eb68dd15640a0342d7951b05983dc706d783918ab92344676bc75804f088b988facbe266ac62fdc_1280.jpg",
+    "page_url": "https://pixabay.com/photos/wire-cables-electric-network-1098059/",
+    "photographer": "Taken",
+    "photographer_url": "https://pixabay.com/users/Taken-336382/",
+    "alt": "wire, cables, electric, network, electricity, fuse, electrical, power, switch, electrical wires, wiring, circuit, current, connection, energy, distribution, electrician, installation, electrical engineering, electrical, electrician, electrician, electrician, electrician, electrician, electrical engineering, electrical engineering",
+    "width": 5545,
+    "height": 3120,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Taken / Pixabay"
+  }
+}
