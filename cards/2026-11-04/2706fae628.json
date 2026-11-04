@@ -1,0 +1,35 @@
+{
+  "id": "2706fae628",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide",
+  "source": "Tom's Hardware",
+  "category": "전자·부품",
+  "published_at": "2026-11-04T00:02+09:00",
+  "headline": "전기 모자란 AI 데이터센터, 비행기 엔진 8대로 전기 만든다",
+  "bullets": [
+    "xAI, 미시시피 데이터센터에 개조 제트엔진 터빈 8대",
+    "터빈 1대 최대 50MW, 일반 가정 약 1만5000곳 분량",
+    "일산화탄소·유해물질 배출에 환경단체 이의 제기"
+  ],
+  "caption": "전기 모자란 AI 데이터센터, 비행기 엔진 8대로 전기 만든다\n\n일론 머스크의 AI 회사 xAI가 미국 미시시피주 데이터센터에 비행기 제트엔진을 개조한 터빈 8대를 들여 전기를 만들고 있습니다. 이 터빈은 미국 미주리주 회사 프로에너지가 보잉 여객기에 쓰이던 GE 엔진을 발전기로 바꾼 것으로, 한 대가 최대 50메가와트(MW), 보통 가정 약 1만5000곳이 쓸 만큼의 전기를 냅니다. 이런 방법까지 쓰는 이유는 AI 데이터센터의 전력 수요가 전력회사의 공급 속도를 앞질렀기 때문입니다. 기사에 따르면 올해 4월 기준 미국 데이터센터 건설의 절반이 전력 부족 등으로 취소되거나 늦어졌습니다. 터빈은 주 정부 허가를 받았지만 일산화탄소와 휘발성 유기화합물을 내뿜어, 미국 환경단체 남부환경법센터가 배출 기준 충족을 보장하지 못했다며 허가에 이의를 제기했습니다. AI 경쟁이 전력 확보 경쟁으로 번지면서 지역 주민의 건강과 환경 문제가 새로운 갈등으로 떠오르고 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide\n\n#반도체 #semiconductor #AI데이터센터 #xAI #전력 #가스터빈 #에너지",
+  "photo_queries": [
+    "gas turbine power plant",
+    "jet engine turbine blades",
+    "high voltage transmission lines"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2438799",
+    "query": "jet engine turbine blades",
+    "file": "2706fae628.photo.jpg",
+    "download_url": "https://pixabay.com/get/g41e3f3a68363f457bf5c2bc716c095366f9f8e597139a4bb366e2c99d0cbfb9133ae98700ebbc3a12f9bc57a3f820c567c92d51d2e98c8c04e7588ca7b3072f0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/aircraft-turbine-engine-jet-engine-2438799/",
+    "photographer": "2780243",
+    "photographer_url": "https://pixabay.com/users/2780243-2780243/",
+    "alt": "aircraft, 4k wallpaper 1920x1080, full hd wallpaper, turbine, wallpaper hd, engine, windows wallpaper, wallpaper 4k, desktop backgrounds, jet engine, plane, cool backgrounds, airplane, laptop wallpaper, beautiful wallpaper, 4k wallpaper, hd wallpaper, aircraft turbine, mac wallpaper, free wallpaper, free background, technology, background, black and white",
+    "width": 3936,
+    "height": 2624,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 2780243 / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "d299783919",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64831",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-04T08:46+09:00",
+  "headline": "AMD, 석 달 매출 18조원 역대 최대…데이터센터 2배",
+  "bullets": [
+    "3분기 매출 133.8억달러, 1년 새 45% 늘어 분기 최대",
+    "데이터센터 매출 2배 가까이, 전체 매출의 64% 차지",
+    "4분기 전망 170억달러 제시, 주가 하락한 인텔과 대비"
+  ],
+  "caption": "AMD, 석 달 매출 18조원 역대 최대…데이터센터 2배\n\n미국 반도체 회사 AMD가 올해 3분기에 매출 133억7700만달러(약 17조9980억원), 영업이익 28억3200만달러를 올렸다고 발표했습니다. 1년 전보다 각각 45%, 123% 늘어난 것으로 모두 분기 기준 최대입니다. 성장을 이끈 것은 데이터센터 사업으로, 서버용 중앙처리장치(CPU) '에픽'과 인공지능(AI) 연산에 쓰는 그래픽처리장치(GPU) '인스팅트 MI450' 판매가 늘면서 이 부문 매출이 전년 대비 두 배 가까이 됐습니다. 그 결과 데이터센터가 전체 매출에서 차지하는 비중은 1년 전 47%에서 64%로 올라갔습니다. AMD는 4분기 매출 전망을 1년 전보다 66% 많은 170억달러로 제시했는데, 서버 랙 단위 AI 플랫폼 '헬리오스'와 6세대 에픽 '베니스'의 생산 확대를 근거로 들었습니다. 이 소식에 주가는 시간 외 거래에서 7% 넘게 올랐고, 지난주 실적은 늘었지만 4분기 전망이 기대에 못 미쳐 주가가 20% 넘게 떨어진 인텔과 대비됐습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64831\n\n#반도체 #semiconductor #AMD #데이터센터 #AI반도체 #GPU #CPU #실적",
+  "photo_queries": [
+    "server motherboard cpu socket",
+    "graphics card heatsink",
+    "server hall blue lights"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6995934",
+    "query": "graphics card heatsink",
+    "file": "d299783919.photo.jpg",
+    "download_url": "https://pixabay.com/get/g488a03acecb38775818153f27edef405c6d9394ccd61941777fe56daf4dcee190539025a1482b17593f0299914ff6c2a5ad2ec362ec7ed81d3bc9f7bf5d8141f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/graphics-card-computer-parts-6995934/",
+    "photographer": "analogicus",
+    "photographer_url": "https://pixabay.com/users/analogicus-8164369/",
+    "alt": "graphics card, computer parts, electronics, riser board, circuit board, graphics card, graphics card, graphics card, graphics card, graphics card, computer parts, computer parts, computer parts, computer parts",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: analogicus / Pixabay"
+  }
+}

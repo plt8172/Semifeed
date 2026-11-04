@@ -1,0 +1,35 @@
+{
+  "id": "11962acf70",
+  "link": "https://www.theregister.com/software/2026/11/03/microsoft-improves-windows-11-performance-on-8-gb-pcs-as-ram-prices-keep-climbing/5307382",
+  "source": "The Register",
+  "category": "메모리",
+  "published_at": "2026-11-04T06:38+09:00",
+  "headline": "메모리값 치솟자 MS, 8GB PC에 맞춰 윈도우 고쳤다",
+  "bullets": [
+    "8GB PC 반응 20%, 멀티태스킹 40% 빨라졌다고 발표",
+    "메모리 2GB 더 활용, 위젯·탭 절전 등 사용량 줄여",
+    "AI발 메모리값 상승 속 윈도우 기기 매출 22% 감소"
+  ],
+  "caption": "메모리값 치솟자 MS, 8GB PC에 맞춰 윈도우 고쳤다\n\n마이크로소프트(MS)가 메모리(RAM) 8GB짜리 저가 PC에서 윈도우 11이 더 빠르게 돌아가도록 개선했다고 밝혔습니다. MS는 8GB PC의 반응 속도가 최대 20%, 여러 프로그램을 함께 쓰는 멀티태스킹은 최대 40% 빨라진다고 설명했습니다. 데이터를 느린 저장장치로 옮기기 전에 메모리에 최대 2GB 더 붙잡아 두고, 위젯은 쓸 때만 불러오며, 엣지 브라우저의 안 쓰는 탭은 2시간이 아니라 15분 만에 잠재우는 방식입니다. 이런 조치의 배경에는 AI 데이터센터가 메모리를 대량으로 사들이면서 생긴 메모리값 상승이 있습니다. PC 값이 오르자 소비자가 교체를 미루면서 MS의 최근 분기 윈도우 OEM·기기 매출은 1년 전보다 22% 줄었습니다. 메모리 부족이 반도체 업계를 넘어 PC 운영체제를 만드는 회사의 전략까지 바꾸고 있다는 뜻입니다.\n\n출처: The Register\nhttps://www.theregister.com/software/2026/11/03/microsoft-improves-windows-11-performance-on-8-gb-pcs-as-ram-prices-keep-climbing/5307382\n\n#반도체 #semiconductor #메모리 #RAM #D램 #마이크로소프트 #윈도우11 #PC",
+  "photo_queries": [
+    "laptop keyboard closeup",
+    "ram stick slot",
+    "computer repair workbench"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "785742",
+    "query": "laptop keyboard closeup",
+    "file": "11962acf70.photo.jpg",
+    "download_url": "https://pixabay.com/get/gb8464552e42833971981cc08f4da185701188fe36606e4a2c83dd86ae80b3d704d6dac876ea4a2302e94aabb66faf89ffc377731c1ed04b83e3660906a2beaa8_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-keyboard-computing-785742/",
+    "photographer": "Pixies",
+    "photographer_url": "https://pixabay.com/users/Pixies-1021586/",
+    "alt": "technology, keyboard, computing, illuminated, mac, blur, technology, technology, technology, technology, technology, keyboard, keyboard, keyboard",
+    "width": 4429,
+    "height": 2953,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Pixies / Pixabay"
+  }
+}

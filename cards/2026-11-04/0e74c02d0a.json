@@ -1,0 +1,36 @@
+{
+  "id": "0e74c02d0a",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64795",
+  "source": "디일렉",
+  "category": "패키징",
+  "published_at": "2026-11-04T10:00+09:00",
+  "headline": "AI 서버 덕에 주문 밀린 해성디에스, 생산능력 50% 늘린다",
+  "bullets": [
+    "aQFN용 리드프레임 첫 진출, 내년 상반기 공급 시작",
+    "고객사가 투자비 일부 지원, 창원에 새 라인 구축",
+    "연 생산능력 5000억→7500억원, 수요가 물량 넘어서"
+  ],
+  "caption": "AI 서버 덕에 주문 밀린 해성디에스, 생산능력 50% 늘린다\n\n국내 유일의 리드프레임 제조사 해성디에스가 'aQFN'이라는 새로운 패키지용 리드프레임 시장에 처음 진출해 내년 상반기부터 공급을 시작합니다. 리드프레임은 반도체 칩을 기판에 연결하고 받쳐 주는 얇은 구리 판으로, 칩을 포장하는 후공정에 쓰이는 핵심 소재입니다. aQFN은 구리판을 약품으로 정밀하게 녹여 깎아 칩 바닥의 접점을 한 줄에서 최대 세 줄로 늘린 방식으로, 값비싼 패키지기판 없이도 더 많은 신호선을 연결할 수 있습니다. 해성디에스는 후공정 고객사 한 곳(대만 ASE로 추정)에게 설비 투자비 일부를 지원받아 창원 공장에 라인을 만들었고, 이달 말 투자가 끝나면 리드프레임 생산능력이 연 5000억원에서 7500억원으로 50% 늘어납니다. 회사 측은 AI 서버 한 대에 GPU보다 전원 관리용 아날로그 반도체가 훨씬 많이 들어가 리드프레임 수요가 급증했고, 고객 주문이 생산 가능 물량을 한참 넘어 나눠서 공급하고 있다고 설명했습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64795\n\n#반도체 #semiconductor #해성디에스 #리드프레임 #패키징 #후공정 #AI서버",
+  "photo_queries": [
+    "copper lead frame",
+    "chip packaging machine",
+    "microcontroller chips closeup"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1137492",
+    "query": "printed circuit board",
+    "file": "0e74c02d0a.photo.jpg",
+    "download_url": "https://pixabay.com/get/g36ca75c96851baf483cc544eee8c0da87a2f82246d60ffe9860fd3c29bdafb5e05d2db7b3f74734b0609a9030039bda477eaee340011c70d80a79496a6311068_1280.jpg",
+    "page_url": "https://pixabay.com/photos/pcb-logic-board-transistors-1137492/",
+    "photographer": "Recklessstudios",
+    "photographer_url": "https://pixabay.com/users/Recklessstudios-1884442/",
+    "alt": "pcb, logic board, transistors, printed circuit board, motherboard, processor, technology, electronic, chip, solder, resistor, computer, mainboard, pcb, pcb, pcb, pcb, pcb, motherboard, chip",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Recklessstudios / Pixabay",
+    "category": "computer"
+  }
+}
