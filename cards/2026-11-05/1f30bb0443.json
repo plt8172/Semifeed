@@ -1,0 +1,35 @@
+{
+  "id": "1f30bb0443",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64873",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-04T18:55+09:00",
+  "headline": "칩 고장 검사 회사 큐알티, 우주 부품 시험까지 넓힌다",
+  "bullets": [
+    "반도체 신뢰성 평가를 우주 부품·유리기판으로 확대",
+    "저궤도 위성용 일반 부품이 우주서 견디는지 미리 시험",
+    "HBM4·CXL·소캠 평가 수요 늘어…TEM 2호기 설치"
+  ],
+  "caption": "칩 고장 검사 회사 큐알티, 우주 부품 시험까지 넓힌다\n\n반도체가 오래, 제대로 작동하는지 시험하고 고장 원인을 분석하는 회사 큐알티가 사업 범위를 우주용 부품과 유리기판으로 넓힌다고 밝혔습니다. 많은 위성을 낮은 궤도에 띄우는 저궤도 군집위성 제조사들은 비용을 줄이려고 비싼 우주 전용 부품 대신 일반 상용 부품을 쓰려 합니다. 이런 부품이 우주의 방사선·온도 환경을 견디는지 미리 가려내는 시험을 업스크리닝이라고 하며, 큐알티는 이 시장을 공략합니다. 유리기판은 칩을 올리는 판을 유리로 만든 차세대 기판으로, 시제품을 넘어 양산 검증 단계에 들어서면서 고장 분석 수요가 늘었습니다. 기존 반도체 분야에서도 HBM4(AI용 고성능 메모리) 등 새 메모리의 평가 의뢰가 늘어, 상반기에 투과전자현미경(TEM) 2호기를 들였습니다. KB증권은 큐알티의 올해 하반기 영업이익을 80억원으로 전망했습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64873\n\n#반도체 #semiconductor #반도체장비 #신뢰성평가 #우주 #유리기판 #HBM",
+  "photo_queries": [
+    "satellite orbit earth",
+    "electron microscope laboratory",
+    "electronic component testing"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2030265",
+    "query": "electron microscope laboratory",
+    "file": "1f30bb0443.photo.jpg",
+    "download_url": "https://pixabay.com/get/g3398edfb83d21817ac2d7cac013eab27edfcf0b4ba7fba0e8eef6bf59495cf298d4a3439745184fe9ef4d25156647075e75a3a955def6e8c43f1491bc08b18fe_1280.jpg",
+    "page_url": "https://pixabay.com/photos/analysis-biochemistry-biologist-2030265/",
+    "photographer": "Kost9n4",
+    "photographer_url": "https://pixabay.com/users/Kost9n4-2105326/",
+    "alt": "analysis, biochemistry, biologist, biology, biotechnology, chemistry, clinic, clinical, equipment, experiment, laboratory devices, laboratory, lenses, medical, medicine, microbiology, microscope, optical, study, science, scientific, technique, biology, laboratory, medical, medicine, microscope, microscope, science, science, science, science, science",
+    "width": 5443,
+    "height": 3629,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Kost9n4 / Pixabay"
+  }
+}

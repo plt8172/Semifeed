@@ -1,0 +1,35 @@
+{
+  "id": "73b4ae2b8f",
+  "link": "https://www.tomshardware.com/video-games/nintendo/nintendo-rom-chip-supplier-macronix-quits-to-focus-on-chips-for-ai-data-centers-game-key-cards-may-be-more-available-as-large-game-storage-chips-become-more-expensive",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-05T02:10+09:00",
+  "headline": "닌텐도 게임칩 만들던 마크로닉스, AI 메모리로 간다",
+  "bullets": [
+    "마크로닉스, 스위치 게임 카드용 ROM 사업 정리 보도",
+    "3분기 ROM 매출 비중 5%…1년 전 26%서 급감",
+    "설비투자 378억 대만달러는 AI용 NOR·낸드에"
+  ],
+  "caption": "닌텐도 게임칩 만들던 마크로닉스, AI 메모리로 간다\n\n대만 반도체 회사 마크로닉스가 닌텐도 스위치와 스위치 2 게임 카드에 들어가는 ROM 칩 사업을 정리한다고 업계 분석가와 대만 현지 언론이 전했습니다. ROM은 게임 데이터를 한 번 기록해 두고 읽기만 하는 메모리로, 실물 게임 카드의 핵심 부품입니다. 마크로닉스의 3분기 매출에서 ROM이 차지한 비중은 5%로 1년 전 26%에서 크게 줄었고, 378억 대만달러 규모의 설비투자는 모두 AI 데이터센터가 원하는 NOR·낸드 플래시 메모리에 쓰일 예정입니다. 낸드는 SSD 같은 저장장치에 쓰는 메모리, NOR는 기기가 켜질 때 읽는 프로그램을 담는 메모리입니다. 로옴 계열사도 닌텐도에 ROM을 공급하고 있어 실물 게임 카드가 곧 사라지지는 않겠지만, 공급처가 하나 줄면서 실물 게임 가격이 오르거나 다운로드 방식이 늘 수 있다는 관측이 나옵니다. 닌텐도용 ROM을 설계하고 생산을 마크로닉스에 맡겨 온 일본 메가칩스가 가장 큰 타격을 받을 수 있다는 분석도 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/video-games/nintendo/nintendo-rom-chip-supplier-macronix-quits-to-focus-on-chips-for-ai-data-centers-game-key-cards-may-be-more-available-as-large-game-storage-chips-become-more-expensive\n\n#반도체 #semiconductor #메모리 #낸드 #닌텐도 #게임 #AI반도체",
+  "photo_queries": [
+    "video game cartridge",
+    "flash memory card",
+    "usb storage chip"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1444798",
+    "query": "flash memory card",
+    "file": "73b4ae2b8f.photo.jpg",
+    "download_url": "https://pixabay.com/get/g49a2b21b146918e3e6654c2b55554aa9be8ad05e1e21fff4aa0a505d0ef9a7cbaefe0f1b44443befd111f872d0b5a00a2e5de326025357dcb77baab012d00f76_1280.jpg",
+    "page_url": "https://pixabay.com/photos/digital-data-carriers-storage-usb-1444798/",
+    "photographer": "AS_Photography",
+    "photographer_url": "https://pixabay.com/users/AS_Photography-1546875/",
+    "alt": "digital data carriers, storage, usb, digital, data, information, computer card, technology, create a backup, sdhc card, security, multimedia, memory, improvement, equipment, stick, drive, mobility, system, archives, restoration, pc, digitally, flash, mediocre, memories, usb, usb, usb, usb, usb",
+    "width": 6016,
+    "height": 4016,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: AS_Photography / Pixabay"
+  }
+}

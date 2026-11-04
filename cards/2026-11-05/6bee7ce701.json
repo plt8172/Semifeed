@@ -1,0 +1,35 @@
+{
+  "id": "6bee7ce701",
+  "link": "https://www.theregister.com/on-prem/2026/11/04/bare-metal-boom-on-prem-server-sales-for-hpc-and-ai-up-20-this-year/5307611",
+  "source": "The Register",
+  "category": "기업·실적",
+  "published_at": "2026-11-05T02:30+09:00",
+  "headline": "기업용 AI 서버 매출 20%↑, 대수는 4%만 늘었다",
+  "bullets": [
+    "상반기 사내 HPC·AI 서버 매출 165억달러, 19.9%↑",
+    "출하 대수는 4.4%↑…GPU·메모리값 올라 대당 가격 상승",
+    "델, 점유율 24%로 HPE(21%) 제치고 1위"
+  ],
+  "caption": "기업용 AI 서버 매출 20%↑, 대수는 4%만 늘었다\n\n기업과 연구기관이 자기 건물 안에 두고 쓰는 고성능 컴퓨팅(HPC)·AI 서버 시장이 커지고 있습니다. 조사기관 하이페리온 리서치에 따르면 올해 상반기 이 시장 매출은 165억달러로 1년 전보다 19.9% 늘었습니다. 하지만 실제로 팔린 서버 대수는 4.4% 느는 데 그쳤습니다. 서버 한 대에 비싼 GPU 같은 AI 가속기가 더 많이 들어가고, 메모리 가격이 지난해보다 3~4배 오르면서 대당 가격이 크게 뛰었기 때문입니다. HPC는 여러 서버를 묶어 복잡한 계산을 빠르게 처리하는 시스템으로, AI 연산의 기반이 됩니다. 클라우드를 빌려 쓰는 대신 자체 서버를 사는 기업도 여전히 많다는 뜻입니다. 업체별로는 델이 상반기 42억달러, 점유율 24%로 오랫동안 1위였던 HPE(21%)를 처음 앞질렀습니다.\n\n출처: The Register\nhttps://www.theregister.com/on-prem/2026/11/04/bare-metal-boom-on-prem-server-sales-for-hpc-and-ai-up-20-this-year/5307611\n\n#반도체 #semiconductor #서버 #AI #HPC #GPU #메모리",
+  "photo_queries": [
+    "supercomputer cluster",
+    "gpu server hardware",
+    "network switch cables"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "92369",
+    "query": "supercomputer cluster",
+    "file": "6bee7ce701.photo.jpg",
+    "download_url": "https://pixabay.com/get/gb6f9e31807799994c87f19a8ae4eda09db39374b8e7d02e034c67ba8acfb88dc6444374e101052b8b9f3b851fbca9783_1280.jpg",
+    "page_url": "https://pixabay.com/photos/modern-furniture-supercomputer-92369/",
+    "photographer": "12019",
+    "photographer_url": "https://pixabay.com/users/12019-12019/",
+    "alt": "modern, furniture, supercomputer, computer, machine, computers, compute, electronics, calculation, inside, interior, fast, multi-calculations, rapid, science, scientific, technology, gray computer, gray technology, gray laptop, gray science, gray interior, supercomputer, supercomputer, supercomputer, supercomputer, supercomputer",
+    "width": 2884,
+    "height": 2268,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 12019 / Pixabay"
+  }
+}

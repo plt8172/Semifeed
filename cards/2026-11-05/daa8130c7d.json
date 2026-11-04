@@ -1,0 +1,35 @@
+{
+  "id": "daa8130c7d",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-04T22:13+09:00",
+  "headline": "美 중간선거서 AI 데이터센터 제한 33건 줄줄이 통과",
+  "bullets": [
+    "13개 주 약 40곳 지역 투표에 데이터센터 안건 올라",
+    "개발 제한 안건 33건 통과, 6건 우세…부결 1건뿐",
+    "전기요금·소음 우려 탓, 진행 중 사업 영향은 불분명"
+  ],
+  "caption": "美 중간선거서 AI 데이터센터 제한 33건 줄줄이 통과\n\n미국 중간선거에서 여러 지역이 AI 데이터센터를 두고 주민 투표를 했는데, 대부분 개발을 막는 쪽으로 결론이 났습니다. 집계 사이트 'Data Centers on the Ballot'에 따르면 13개 주 약 40곳에서 데이터센터 관련 안건이 투표에 부쳐졌고, 개발을 제한하는 안건 33건이 이미 통과됐으며 6건이 앞서고 있습니다. 부결된 것은 노스다코타주 하우드의 한 건뿐이었습니다. 안건은 영구 금지부터 일시 중단, 규모·전력 사용량 제한까지 다양했습니다. 주민들이 반대한 이유로는 전기요금 인상과 소음 같은 생활 피해가 꼽힙니다. AI 데이터센터는 AI를 학습·실행하는 서버를 모아 둔 대형 시설로, 전기를 매우 많이 씁니다. 이미 짓고 있는 사업에 미칠 영향은 아직 분명하지 않지만, 앞으로 새로 지을 데이터센터는 부지 찾기가 더 어려워질 수 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments\n\n#반도체 #semiconductor #데이터센터 #AI #미국 #중간선거 #전력",
+  "photo_queries": [
+    "data center building exterior",
+    "high voltage transmission towers",
+    "server hall cooling units"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7997980",
+    "query": "high voltage transmission towers",
+    "file": "daa8130c7d.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf6cd6cf6a67141c5036cd09ffcb6cfa213f2c035ffe0198bdecd6da77200f378a20894dfd966b44651fd8ec332a941d476121e10f52dc7cd56e0b45d0bf9c1b8_1280.jpg",
+    "page_url": "https://pixabay.com/photos/wires-electrical-current-electricity-7997980/",
+    "photographer": "Couleur",
+    "photographer_url": "https://pixabay.com/users/Couleur-1195798/",
+    "alt": "wires, electrical current, electricity, high voltage, energy, high voltage line, high voltage pylon, overhead lines, voltage, stole, power generation, power line, power pole, power supply, technology, environment, caution, electricity, electricity, electricity, electricity, electricity",
+    "width": 6099,
+    "height": 4066,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Couleur / Pixabay"
+  }
+}

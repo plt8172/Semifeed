@@ -1,0 +1,35 @@
+{
+  "id": "8695c2138d",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64834",
+  "source": "디일렉",
+  "category": "패키징",
+  "published_at": "2026-11-05T07:22+09:00",
+  "headline": "반도체 기판 심텍, 청주에 1054억원 더 쏟는다",
+  "bullets": [
+    "청주 본사 인근에 생산·물류시설과 사무공간 확충",
+    "새 건물에 850억, SiP 기판 설비에 200억원 투입",
+    "8월 2742억원 투자 이어 합계 약 3796억원"
+  ],
+  "caption": "반도체 기판 심텍, 청주에 1054억원 더 쏟는다\n\n반도체 기판 회사 심텍이 충북 청주 본사 인근 부지에 1054억원을 투자해 생산·물류시설과 사무공간을 늘린다고 공시했습니다. 반도체 기판은 칩을 올려 전자기기 회로와 이어 주는 판으로, 칩이 작동하려면 꼭 필요한 부품입니다. 투자액 가운데 약 850억원은 새 건물을 짓는 데 쓰입니다. 본사에 미세 회로를 여러 층 쌓는 고다층 mSAP 기판 설비를 들이면서 공간이 부족해졌기 때문입니다. 약 200억원은 웨어러블 기기에 쓰던 시스템인패키지(SiP)용 기판 설비를 늘려 모바일 기기로 넓히는 데 씁니다. SiP는 여러 칩을 기판 하나에 묶어 작은 모듈로 만드는 방식입니다. 심텍은 지난 8월 2742억원 투자를 발표한 데 이어 이번 투자까지 합쳐 약 3796억원을 쓰게 되며, 이번 투자는 물류·사무공간 비중이 커 생산능력 증가 폭은 크지 않을 것으로 보입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64834\n\n#반도체 #semiconductor #패키징 #반도체기판 #심텍 #SiP #투자",
+  "photo_queries": [
+    "pcb substrate closeup",
+    "warehouse logistics shelves",
+    "electronics production line"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3113719",
+    "query": "pcb substrate closeup",
+    "file": "8695c2138d.photo.jpg",
+    "download_url": "https://pixabay.com/get/g9fc4b32a8bccac549396d7a8bb508524eef7806fd774e5ca76be7cbbf84e4046aeda921825963314e2718bdb64e847fee794d384639f500c827d32f8ee185440_1280.jpg",
+    "page_url": "https://pixabay.com/photos/printed-circuit-board-circuit-board-3113719/",
+    "photographer": "fotoblend",
+    "photographer_url": "https://pixabay.com/users/fotoblend-87167/",
+    "alt": "printed circuit board, circuit board, cpu, computer, circuits, technology, data processing, chip, solder joint, macro, conductor tracks, pc, components, electronics, control center, computer science, digital, electronic, microchip, semiconductor, capacitor, transistor, focus stacking, circuit board, semiconductor, semiconductor, semiconductor, semiconductor, semiconductor, transistor",
+    "width": 4800,
+    "height": 3200,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: fotoblend / Pixabay"
+  }
+}
