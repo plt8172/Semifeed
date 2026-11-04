@@ -1,0 +1,35 @@
+{
+  "id": "3a43d0d700",
+  "link": "https://www.tomshardware.com/tech-industry/cyber-security/certified-android-tv-manufacturer-put-unauthorized-backdoor-in-set-top-boxes-google-reveals-oem-sold-access-to-criminal-affiliates-for-1-3-million-devices-used-massive-network-as-botnet-for-ad-fraud-residential-proxy",
+  "source": "Tom's Hardware",
+  "category": "전자·부품",
+  "published_at": "2026-11-04T20:00+09:00",
+  "headline": "TV 셋톱박스 130만대에 제조사가 직접 뒷문 심었다",
+  "bullets": [
+    "구글 인증 업체 비디오스트롱, 130만대에 백도어 설치 적발",
+    "범죄 조직에 접근권 팔아 광고 사기·프록시망에 악용",
+    "구글, 거래 끊고 구글 앱 탑재 기기 생산 금지"
+  ],
+  "caption": "TV 셋톱박스 130만대에 제조사가 직접 뒷문 심었다\n\n구글이 안드로이드 TV 인증 협력사였던 제조사 비디오스트롱(Videostrong)이 셋톱박스 130만대에 몰래 '백도어'를 심어 온 사실을 밝혀냈습니다. 백도어는 정상적인 인증을 거치지 않고 기기에 드나들 수 있게 만든 숨은 통로입니다. 구글에 따르면 이 회사는 그 접근 권한을 범죄 조직에 팔았고, 조직들은 감염된 기기로 광고 사기를 벌이거나 남의 집 인터넷 회선을 빌려 쓰는 프록시망을 만들고, 사용자를 노린 악성코드까지 설치할 수 있었습니다. 구글은 이 악성 소프트웨어가 여러 해에 걸쳐 여러 모델·브랜드에 들어갔고 2024년에는 탐지를 피하는 3단계 구조로 진화했다며, 내부자 한 명의 일탈이 아니라고 봤습니다. 구글은 이 회사와 관계를 끊고 구글 앱을 넣은 기기를 만들지 못하게 했지만, 안드로이드는 공개 소프트웨어라 이 회사가 계속 쓸 수는 있습니다. 부품·기기를 만드는 회사 자체를 믿을 수 있는지가 보안의 출발점이라는 점을 보여 준 사건입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/cyber-security/certified-android-tv-manufacturer-put-unauthorized-backdoor-in-set-top-boxes-google-reveals-oem-sold-access-to-criminal-affiliates-for-1-3-million-devices-used-massive-network-as-botnet-for-ad-fraud-residential-proxy\n\n#반도체 #semiconductor #전자 #보안 #안드로이드TV #셋톱박스 #공급망 #백도어",
+  "photo_queries": [
+    "tv set top box",
+    "network router lights",
+    "living room television"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2559790",
+    "query": "living room television",
+    "file": "3a43d0d700.photo.jpg",
+    "download_url": "https://pixabay.com/get/gadffc12dca886d2a0e92a94f238468df029b9e1d5448b626e4b4455622084bbc7aacbc4c46decdd424d05a9e0afd6d9f8850dd6672a80cc750b57b8a787ea1bb_1280.jpg",
+    "page_url": "https://pixabay.com/photos/room-office-modern-lectronic-2559790/",
+    "photographer": "StockSnap",
+    "photographer_url": "https://pixabay.com/users/StockSnap-894430/",
+    "alt": "room, office, modern, lectronic, technology, tv, screen, remote control, work, desk, table, gray office, gray technology, gray work, gray room, gray table, gray desk, remote control, remote control, remote control, remote control, remote control",
+    "width": 4272,
+    "height": 2848,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: StockSnap / Pixabay"
+  }
+}

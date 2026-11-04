@@ -1,0 +1,35 @@
+{
+  "id": "d057c1ba13",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64886",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-04T18:50+09:00",
+  "headline": "웨이퍼 갈아내는 장비 잘 팔려…케이씨텍 영업익 36% 늘었다",
+  "bullets": [
+    "3분기 매출 1142억원, 영업이익 202억원으로 각각 19%·35.8%↑",
+    "삼성전자·SK하이닉스 생산능력 확대에 CMP 장비 매출 증가",
+    "전분기 대비 영업익은 14% 감소, 장비 R&D 전환 일회성 비용"
+  ],
+  "caption": "웨이퍼 갈아내는 장비 잘 팔려…케이씨텍 영업익 36% 늘었다\n\n반도체 장비업체 케이씨텍이 올해 3분기 매출 약 1142억원, 영업이익 약 202억원을 냈다고 공시했습니다. 지난해 같은 기간보다 각각 19%, 35.8% 늘어난 수치입니다. 성장을 이끈 것은 화학기계연마(CMP) 장비로, CMP는 반도체 웨이퍼 표면을 화학 반응과 기계적인 연마로 평평하게 갈아내는 공정입니다. 칩을 여러 층으로 쌓을 때마다 표면을 고르게 만들어야 해서 반도체 공장에 꼭 필요한 장비입니다. 주요 고객인 삼성전자와 SK하이닉스가 생산능력을 늘리면서 주문이 늘었고, CMP 장비 매출에서 삼성전자 비중이 SK하이닉스의 약 2배였습니다. 다만 영업이익은 전분기(약 235억원)보다 14% 줄었는데, 회사는 외부 판매용 장비를 내부 연구개발용으로 돌리면서 일회성 비용이 생겼다고 설명했습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64886\n\n#반도체 #semiconductor #반도체장비 #케이씨텍 #CMP #삼성전자 #SK하이닉스 #실적",
+  "photo_queries": [
+    "polishing machine metal surface",
+    "semiconductor equipment cleanroom",
+    "factory control panel"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7445783",
+    "query": "semiconductor equipment cleanroom",
+    "file": "d057c1ba13.photo.jpg",
+    "download_url": "https://pixabay.com/get/g8765e3795fa03dc342cc01022db3af41a3922bb0fbd966a389ca4473db5dd5ee8b2d588d6005f325d0efc286e78c5ca3921ff4b12b2528db8a655ec59a69834a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/blue-interior-window-lighting-7445783/",
+    "photographer": "BrianPenny",
+    "photographer_url": "https://pixabay.com/users/BrianPenny-29844978/",
+    "alt": "blue, interior, window, lighting, office, engineering office, futuristic, office, office, office, office, office",
+    "width": 9216,
+    "height": 6144,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: BrianPenny / Pixabay"
+  }
+}

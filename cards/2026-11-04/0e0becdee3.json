@@ -1,0 +1,35 @@
+{
+  "id": "0e0becdee3",
+  "link": "https://www.etnews.com/20261104000422",
+  "source": "전자신문",
+  "category": "기업·실적",
+  "published_at": "2026-11-04T17:05+09:00",
+  "headline": "SK하이닉스, 美 메모리 생산법인을 AI 투자회사로 바꿨다",
+  "bullets": [
+    "미국 AI 투자·솔루션 법인명 'HYAICO 코퍼레이션'으로 확정",
+    "미국 증권거래위원회(SEC) 제출 보고서에 새 이름 명시",
+    "옛 이름은 'SK hynix NAND Product Solutions Corp.'"
+  ],
+  "caption": "SK하이닉스, 美 메모리 생산법인을 AI 투자회사로 바꿨다\n\nSK하이닉스가 미국에 둔 인공지능(AI) 전문 투자 법인의 이름을 'HYAICO 코퍼레이션'으로 확정했습니다. 업계에 따르면 SK하이닉스는 미국 증권거래위원회(SEC)에 낸 보고서에 이 이름을 적었습니다. 이 법인의 원래 이름은 'SK hynix NAND Product Solutions Corp.'로, 기존 미국 메모리 생산법인을 AI 투자와 관련 솔루션 사업을 맡는 법인으로 바꾼 것입니다. 메모리를 만들어 파는 회사가 AI 분야에 직접 투자하는 창구를 따로 만든 셈으로, AI 반도체 수요가 커지는 흐름에 맞춰 사업 범위를 넓히려는 움직임으로 볼 수 있습니다. 새 법인이 구체적으로 어디에 얼마를 투자할지는 이 보도에서 밝혀지지 않았습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261104000422\n\n#반도체 #semiconductor #SK하이닉스 #메모리 #AI반도체 #HYAICO #해외법인",
+  "photo_queries": [
+    "skyscraper glass office",
+    "stock market screen charts",
+    "memory chip wafer"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2418349",
+    "query": "memory chip wafer",
+    "file": "0e0becdee3.photo.jpg",
+    "download_url": "https://pixabay.com/get/g976ff7cd18fb305824419802f0f73c904b4db772bc493f0713407b80e2018d89e74010fef8a2e4c7b70775ed98a33c0a37c9b0737ea3329ac831e1aae2bc8fe5_1280.jpg",
+    "page_url": "https://pixabay.com/photos/sd-card-storage-electronics-2418349/",
+    "photographer": "LPArt",
+    "photographer_url": "https://pixabay.com/users/LPArt-5664606/",
+    "alt": "sd card, storage, electronics, computer, storage medium, data, digital, technology, pc, mobility, chip, riser board, memory card, music, floor, data store, transport, to back up, backup, big data, connection, sd card, sd card, sd card, sd card, sd card, memory card, memory card, big data",
+    "width": 5119,
+    "height": 3413,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: LPArt / Pixabay"
+  }
+}

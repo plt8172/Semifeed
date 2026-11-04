@@ -1,0 +1,36 @@
+{
+  "id": "1e59de83e1",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64899",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-04T18:50+09:00",
+  "headline": "韓 장비회사 첫 세계 1위 전망…선익시스템, 日·美 제친다",
+  "bullets": [
+    "카운터포인트, 선익시스템 2027년 디스플레이 장비 매출 1위 전망",
+    "BOE 8.6세대 IT OLED 공장 증착장비 전량 수주가 배경",
+    "다만 내년 전체 디스플레이 장비 투자는 49% 감소 예상"
+  ],
+  "caption": "韓 장비회사 첫 세계 1위 전망…선익시스템, 日·美 제친다\n\n시장조사업체 카운터포인트리서치가 국내 장비업체 선익시스템이 2027년 디스플레이 장비 매출 세계 1위에 오를 것으로 내다봤습니다. 국내 장비업체가 이 분야 1위에 오르는 것은 처음으로, 그동안 시장은 일본 캐논 계열과 미국 어플라이드머티어리얼즈 등이 이끌어 왔습니다. 선익시스템은 OLED 화면을 만들 때 유기물을 기판에 얇게 입히는 '증착장비'를 만드는 회사로, 중국 BOE가 노트북·태블릿용 OLED를 만드는 8.6세대 공장(B16)의 증착장비를 모두 수주했습니다. 실리콘 웨이퍼 위에 OLED를 만들어 스마트글라스·XR 기기에 쓰는 초고해상도 화면(OLEDoS) 장비도 올해 중국 고객 3곳에서 따냈습니다. 다만 카운터포인트는 대형 투자가 줄고 메모리값 상승으로 스마트폰 원가 부담이 커지면서, 내년 전체 디스플레이 장비 투자는 올해보다 49% 줄어들 것으로 봤습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64899\n\n#반도체 #semiconductor #디스플레이 #OLED #선익시스템 #반도체장비 #증착장비",
+  "photo_queries": [
+    "oled display panel closeup",
+    "vacuum chamber equipment",
+    "laptop screen factory"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7646551",
+    "query": "electronics manufacturing",
+    "file": "1e59de83e1.photo.jpg",
+    "download_url": "https://pixabay.com/get/g7e90678f2e3d85eb77f65fb775eb00c6b73cc319ce4f7bc1cd9f80144bc86adcc1d639fa9e03710ca0b24854cb166214bbac7844fe36e050a394d3d76e75826e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/industry-connector-7646551/",
+    "photographer": "xzx717073557",
+    "photographer_url": "https://pixabay.com/users/xzx717073557-14952334/",
+    "alt": "industry, connector, electronic products, switch, electronics, pcb, technology, connector, connector, connector, connector, connector, electronic products, electronic products, electronic products, electronic products, electronic products, pcb",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: xzx717073557 / Pixabay",
+    "category": "industry"
+  }
+}
