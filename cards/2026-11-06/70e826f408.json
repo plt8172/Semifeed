@@ -1,0 +1,35 @@
+{
+  "id": "70e826f408",
+  "link": "https://www.tomshardware.com/tech-industry/semiconductors/india-targets-creating-homegrown-gpus-within-2-years-and-plans-to-commercialize-indigenous-shakti-and-vega-risc-v-processors-sees-ai-boom-as-a-potential-repeat-of-the-y2k-opportunity-for-its-it-industry",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-06T03:00+09:00",
+  "headline": "인도, \"2년 안에 우리 손으로 만든 GPU 내놓겠다\"",
+  "bullets": [
+    "인도 전자정보기술부 차관, 자체 GPU 개발에 약 24개월 목표",
+    "RISC-V 기반 자체 CPU 샥티·베가도 상용화 추진",
+    "제조사·설계 주체는 아직 미정, 초기 단계 목표"
+  ],
+  "caption": "인도, \"2년 안에 우리 손으로 만든 GPU 내놓겠다\"\n\n인도 정부가 2년 안에 자국산 GPU를 만들겠다는 목표를 내놨습니다. 인도 전자정보기술부(MeitY)의 S. 크리슈난 차관은 11월 4일 인터뷰에서 \"인도 반도체 미션 2.0\"의 하나로 약 24개월짜리 GPU 개발 사업을 추진하겠다고 밝혔습니다. GPU는 원래 그래픽 처리용 칩이지만 지금은 AI 학습과 추론에 가장 많이 쓰이는 핵심 칩이라, 외국산 칩에 덜 기대려는 나라들이 자체 개발에 나서고 있습니다. 인도는 이와 함께 누구나 쓸 수 있는 공개 설계 방식인 RISC-V로 만든 자체 CPU 샥티(SHAKTI)와 베가(VEGA)를 상용화하고, 국내 서버 생산도 늘릴 계획입니다. 다만 GPU를 누가 설계하고 어디서 만들지는 밝히지 않아 아직 초기 단계의 목표입니다. 크리슈난 차관은 AI 붐이 2000년 전후 Y2K 때처럼 인도 IT 산업에 기회가 될 수 있다고 봤습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/semiconductors/india-targets-creating-homegrown-gpus-within-2-years-and-plans-to-commercialize-indigenous-shakti-and-vega-risc-v-processors-sees-ai-boom-as-a-potential-repeat-of-the-y2k-opportunity-for-its-it-industry\n\n#반도체 #semiconductor #GPU #인도 #RISCV #AI칩 #반도체정책",
+  "photo_queries": [
+    "graphics card circuit board",
+    "processor development board",
+    "server assembly technician"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5884683",
+    "query": "graphics card circuit board",
+    "file": "70e826f408.photo.jpg",
+    "download_url": "https://pixabay.com/get/g970cf1ddd38cf5fc60c99a5b9352543b0250e09d0023969cf30047afd3d62b8332ef9cbfdd2301afd28f5c18e6146eab868ec50a2087e64d663d1bb28a72dd8d_1280.jpg",
+    "page_url": "https://pixabay.com/photos/card-circuit-electronics-chips-5884683/",
+    "photographer": "ArmandoAre1",
+    "photographer_url": "https://pixabay.com/users/ArmandoAre1-7153816/",
+    "alt": "card, circuit, electronics, chips, processor, repair, board, engineering, computer, components, tech, technology, digital, hardware, parts, microelectronics, electrical, repair, tech, microelectronics, microelectronics, microelectronics, microelectronics, microelectronics",
+    "width": 6016,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ArmandoAre1 / Pixabay"
+  }
+}

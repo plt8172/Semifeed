@@ -1,0 +1,35 @@
+{
+  "id": "ba3600702a",
+  "link": "https://www.tomshardware.com/tech-industry/semiconductors/microns-usd4-5-billion-taoyuan-plant-construction-halted-amidst-labor-dispute-company-and-union-still-havent-reached-agreement-as-latter-asks-for-clearer-profit-sharing-terms",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-05T23:28+09:00",
+  "headline": "성과급 갈등에 마이크론 45억달러 대만 공장 멈췄다",
+  "bullets": [
+    "마이크론, 대만 타오위안 45억달러 공장 공사 사실상 중단",
+    "성과급 배분 놓고 타오위안 노조와 합의 못 해, 6일 재협상",
+    "AI 메모리 호황에 삼성·SK·마이크론 직원 몫 요구 커져"
+  ],
+  "caption": "성과급 갈등에 마이크론 45억달러 대만 공장 멈췄다\n\n마이크론이 대만 타오위안에 짓던 45억달러 규모 공장(Fab 11E)의 공사를 사실상 멈췄습니다. 블룸버그 보도에 따르면 안전 관련 작은 작업을 빼고는 현장이 거의 멈췄고, 회사는 현지 관청에 중단 사실을 알렸습니다. 배경에는 성과급 배분을 더 분명히 해 달라는 타오위안 노조와의 갈등이 있습니다. 마이크론은 일부 직원에게 연봉의 최대 다섯 배까지 줄 수 있는 보너스를 내놓았고 더 큰 타이중 노조와는 합의했지만, 타오위안 노조는 지난달 하루 파업까지 하며 버티고 있습니다. 양측은 11월 6일 다시 만납니다. AI용 메모리 호황으로 메모리 회사들이 큰 이익을 내면서 삼성전자·SK하이닉스·마이크론 직원들이 모두 더 많은 몫을 요구하고 있습니다. 마이크론은 대만 공장 운영은 평소대로 이어지고 있다고 밝혔고, 일본·싱가포르·미국에서도 다른 공장을 짓고 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/semiconductors/microns-usd4-5-billion-taoyuan-plant-construction-halted-amidst-labor-dispute-company-and-union-still-havent-reached-agreement-as-latter-asks-for-clearer-profit-sharing-terms\n\n#반도체 #semiconductor #메모리 #마이크론 #대만 #반도체공장 #노사협상",
+  "photo_queries": [
+    "labor strike protest signs",
+    "construction crane building site",
+    "memory chip factory cleanroom"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2458150",
+    "query": "construction crane building site",
+    "file": "ba3600702a.photo.jpg",
+    "download_url": "https://pixabay.com/get/g99ad8a8287c98525d27bd34953f5e3d685c3c00ed92b25b85246711c8cd0c35a1860004d2924ea01dbd4798d8abb6ee78a010f30add7c58d2c4095e699afe204_1280.jpg",
+    "page_url": "https://pixabay.com/photos/worksite-project-tower-crane-2458150/",
+    "photographer": "Convegni_Ancisa",
+    "photographer_url": "https://pixabay.com/users/Convegni_Ancisa-2280708/",
+    "alt": "worksite, project, tower crane, construction, architecture, architect, engineering, engineer, surveyor, design, safety, work, project, tower crane, tower crane, construction, architect, engineering, engineering, engineering, engineering, engineering, engineer, engineer, safety, safety",
+    "width": 1920,
+    "height": 1276,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Convegni_Ancisa / Pixabay"
+  }
+}

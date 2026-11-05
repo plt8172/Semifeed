@@ -1,0 +1,35 @@
+{
+  "id": "f3d2d66d4a",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64950",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-05T19:09+09:00",
+  "headline": "AI 서버용 구리박 수요에 롯데, 생산능력 2배 넘게 늘린다",
+  "bullets": [
+    "AI 서버·고속 네트워크용 하이엔드 회로박, 내년 두 자릿수 이익률 전망",
+    "익산공장 회로박 연 6700톤 → 2027년 1만6000톤으로 증설",
+    "최하위 등급 수율 60%로 범용(80%)에 못 미쳐 과제"
+  ],
+  "caption": "AI 서버용 구리박 수요에 롯데, 생산능력 2배 넘게 늘린다\n\n롯데에너지머티리얼즈가 AI 데이터센터용 고급 회로박 사업으로 내년에 두 자릿수 영업이익률을 낼 수 있다고 밝혔습니다. 회로박은 전자기기 회로판(PCB)에 쓰는 얇은 구리 막인데, AI 서버와 고속 네트워크에는 표면을 매끄럽게 만들어 신호 손실을 줄인 HVLP라는 고급 제품이 쓰입니다. 데이터가 빨리 오갈수록 구리 표면의 작은 거칠기도 신호를 깎아 먹기 때문입니다. 회사는 전북 익산공장의 회로박 생산능력을 연 6700톤에서 2027년 1만6000톤으로 늘리고, 올해 14%인 회로박 매출 비중을 2029년 40%까지 높일 계획입니다. 다만 HVLP 가장 낮은 등급의 수율이 60% 수준으로 일반 회로박의 80%에 못 미쳐, 연내 끌어올리는 것이 과제입니다. 3분기 매출은 2897억원으로 1년 전보다 101.6% 늘었고, 영업손실은 213억원으로 적자 폭이 줄었습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64950\n\n#반도체 #semiconductor #동박 #회로박 #PCB #AI서버 #소재",
+  "photo_queries": [
+    "copper foil roll",
+    "copper sheet metal closeup",
+    "circuit board copper traces"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4915548",
+    "query": "circuit board copper traces",
+    "file": "f3d2d66d4a.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc58b861a8129b49b3255394be21ed5474d78713ae0786b62e264e5cf28d28cc6c4ec0e4a80b275ef88b6a90c1595e8992dc671ba4034150f46bf20acb7114fe6_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technique-technology-automation-4915548/",
+    "photographer": "gosiak1980",
+    "photographer_url": "https://pixabay.com/users/gosiak1980-2374509/",
+    "alt": "technique, technology, automation, electronics, device, electric, plate, elements, small, miniaturization, resistor, equipment, automation, automation, automation, automation, automation",
+    "width": 3456,
+    "height": 1944,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: gosiak1980 / Pixabay"
+  }
+}

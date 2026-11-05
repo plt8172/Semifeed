@@ -1,0 +1,35 @@
+{
+  "id": "2d20094e9e",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64996",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-05T22:41+09:00",
+  "headline": "한화오션·ABB, 바다에 띄우는 데이터센터 전력 기술 만든다",
+  "bullets": [
+    "한화오션·ABB, 부유식 데이터센터 전력·제어 기술 협력 MOU",
+    "내년 5월까지 전력 시스템 설계 검토·제어 기술 개발",
+    "땅·전기 부족한 육상 데이터센터 대안으로 주목"
+  ],
+  "caption": "한화오션·ABB, 바다에 띄우는 데이터센터 전력 기술 만든다\n\n한화오션이 전력·자동화 기업 ABB와 바다 위에 띄우는 데이터센터(부유식 데이터센터, FDC)의 전력·제어 기술을 함께 개발하기로 업무협약을 맺었습니다. 부유식 데이터센터는 물 위에 뜬 구조물에 서버와 전력, 냉각 설비를 싣는 방식으로, AI 때문에 데이터센터가 급격히 늘면서 땅과 전기를 구하기 어려운 육상 데이터센터의 대안으로 주목받고 있습니다. 한화오션은 기본 설계와 LNG 엔진 기반 발전 설비의 설계 기준을 맡고, ABB는 그 설계를 바탕으로 전력 시스템의 신뢰성과 전력 품질을 분석하며 발전 설비와 전력 시스템을 함께 제어하는 기술을 개발합니다. AI 연산은 전력 사용량이 갑자기 크게 변하기 때문에, 양사는 LNG 엔진 출력 조절 같은 대응 기술도 개발합니다. 두 회사는 내년 5월까지 설계 검토와 기술 개발을 진행합니다. 이번 협약은 업무협약 단계로, 실제 건조 일정은 기사에서 밝혀지지 않았습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64996\n\n#반도체 #semiconductor #데이터센터 #부유식데이터센터 #전력 #조선 #ABB",
+  "photo_queries": [
+    "offshore platform ocean",
+    "ship engine room",
+    "electrical switchboard panel"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5232047",
+    "query": "offshore platform ocean",
+    "file": "2d20094e9e.photo.jpg",
+    "download_url": "https://pixabay.com/get/g287f5c37f53b3a87fac583b55e0ac8091e2c91664cfcf46d1c9c2191b62e2f94bd705a715e13cd306aa12976bc087b4273d9a6250e64482bc700e9b1e0bc15f2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/oil-rig-oil-platform-ocean-rig-5232047/",
+    "photographer": "keridjackson",
+    "photographer_url": "https://pixabay.com/users/keridjackson-2736306/",
+    "alt": "oil rig, oil platform, nature, ocean, rig, drilling, platform, industry, offshore, fuel, oil, petroleum, energy, pipeline, drill, gray industry",
+    "width": 6000,
+    "height": 3600,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: keridjackson / Pixabay"
+  }
+}
