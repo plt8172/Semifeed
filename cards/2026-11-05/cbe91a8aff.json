@@ -1,0 +1,35 @@
+{
+  "id": "cbe91a8aff",
+  "link": "https://www.tomshardware.com/pc-components/gpu-drivers/open-source-project-renders-your-windows-11-desktop-using-the-npu-rather-than-the-gpu-npu-driver-can-only-run-at-2-to-3-hz-targets-30-hz-performance",
+  "source": "Tom's Hardware",
+  "category": "AI·설계",
+  "published_at": "2026-11-04T21:00+09:00",
+  "headline": "노트북 속 노는 AI 칩으로 윈도 화면 그렸다",
+  "bullets": [
+    "오픈소스 'npu-driver', 윈도11 바탕화면을 NPU로 렌더",
+    "아직 초당 2~3번 갱신, 목표는 30번…시제품 단계",
+    "그래픽칩 3D 사용률 3.4%→0.6%, 남는 힘은 AI 추론에"
+  ],
+  "caption": "노트북 속 노는 AI 칩으로 윈도 화면 그렸다\n\n개발자 그룹 labscommunity가 윈도11 바탕화면을 그래픽칩(GPU) 대신 NPU로 그리는 시제품 드라이버 'npu-driver'를 오픈소스로 공개했다고 톰스하드웨어가 전했습니다. NPU는 AI 연산만 빠르게 처리하도록 만든 전용 칩으로, 요즘 노트북 프로세서에는 대부분 들어 있지만 평소에는 쓰이지 않고 놀 때가 많습니다. 개발진은 '노트북마다 NPU가 있는데 화면 합성은 여전히 GPU가 한다'며, 앱이 눈치채지 못하게 NPU가 화면을 대신 그릴 수 있는지 시험했습니다. 인텔 팬서레이크 노트북에서 메모장·엣지 창까지 화면이 그려졌지만, 화면 갱신은 초당 2~3번으로 목표인 30번에 한참 못 미치고, 문제가 생기면 GPU로 되돌아갑니다. 개발진은 GPU의 3D 사용률이 3.4%에서 0.6%로 줄어 그 여유를 AI 모델 실행 같은 다른 일에 쓸 수 있다고 설명했습니다. 아직 제품이 아닌 연구용 시제품이지만, 노트북에 들어간 NPU를 어떻게 활용할지에 대한 실험이라는 점에서 눈길을 끕니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/gpu-drivers/open-source-project-renders-your-windows-11-desktop-using-the-npu-rather-than-the-gpu-npu-driver-can-only-run-at-2-to-3-hz-targets-30-hz-performance\n\n#반도체 #semiconductor #NPU #AI반도체 #노트북 #인텔 #GPU #오픈소스",
+  "photo_queries": [
+    "laptop motherboard closeup",
+    "computer desktop monitor",
+    "processor chip socket"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "885177",
+    "query": "laptop motherboard closeup",
+    "file": "cbe91a8aff.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf15d03373afb11aa422ea34cd02b104719849dc2a68239c9352c5ddda28d868c74959e0533e5ba1eb259f11911b39ea34695728c2c9a0a915cd0389f5a9e24b0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/motherboard-cpu-computer-processor-885177/",
+    "photographer": "FuzzyMannerz",
+    "photographer_url": "https://pixabay.com/users/FuzzyMannerz-1291525/",
+    "alt": "motherboard, cpu, computer, processor, technology, hardware, circuit, system, board, pc, pcb, chip, gray computer, gray technology, gray laptop, gray board, motherboard, motherboard, motherboard, motherboard, motherboard",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: FuzzyMannerz / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "669a0c8f4c",
+  "link": "https://www.theregister.com/off-prem/2026/11/05/when-datacenters-lose-power-generators-should-kick-in-that-didnt-happen-for-google-in-london/5307739",
+  "source": "The Register",
+  "category": "전자·부품",
+  "published_at": "2026-11-05T15:19+09:00",
+  "headline": "비상발전기 안 켜져 구글 런던 데이터센터 멈췄다",
+  "bullets": [
+    "10월 20일 정전, HSBC·로이즈 등 서비스 중단 원인 공개",
+    "한쪽 전력선 수리 중 다른 쪽 지하 케이블까지 고장",
+    "제어장치 설정 오류로 발전기에 시동 신호가 안 갔다"
+  ],
+  "caption": "비상발전기 안 켜져 구글 런던 데이터센터 멈췄다\n\n구글 클라우드가 10월 20일 런던 데이터센터 구역(europe-west-2-b)이 멈춘 원인을 공개했습니다. 이 정전으로 HSBC·로이즈 은행, 로열메일, 레볼루트 등의 서비스가 끊겼습니다. 이 시설은 독립된 전력선 두 개(A·B)로 전기를 받는데, 10월 14일 발전기 점검에서 문제가 발견돼 B선 차단기를 열어 둔 채 수리하던 중 전력회사의 지하 케이블이 끊어지며 A선까지 전기가 끊겼습니다. 정전 때는 무정전전원장치(UPS)가 약 5분을 버티는 사이 비상발전기가 켜져야 하는데, 발전기를 관리하는 PLC(공장·설비를 자동 제어하는 산업용 컴퓨터)가 전력선이 모두 끊겼는데도 정상 전원이 있다고 판단해 시동 신호를 보내지 않았습니다. 구글은 전압 감지 설계 결함과 PLC 설정 오류를 원인으로 꼽았고, 전력이 돌아온 뒤 PLC를 다시 프로그래밍하고 전기 설비 여러 곳을 고쳐 시험했다고 밝혔습니다. 예비 장치를 이중삼중으로 갖춰도 그것을 켜는 제어 논리 하나가 틀리면 소용이 없다는 점을 보여 준 사례입니다.\n\n출처: The Register\nhttps://www.theregister.com/off-prem/2026/11/05/when-datacenters-lose-power-generators-should-kick-in-that-didnt-happen-for-google-in-london/5307739\n\n#반도체 #semiconductor #데이터센터 #전력 #정전 #PLC #UPS #구글클라우드",
+  "photo_queries": [
+    "diesel backup generator",
+    "industrial control panel",
+    "underground power cables"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1853330",
+    "query": "industrial control panel",
+    "file": "669a0c8f4c.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2b1fd37cea95be961505e7510c6f85e84eb0b9fa34d9da80c0d550e129f5416bbe900bba425548a35eb977da2ea9ab49e35a96809470f02dc49fb20a6d72f1a6_1280.jpg",
+    "page_url": "https://pixabay.com/photos/controls-indoors-room-computer-1853330/",
+    "photographer": "Pexels",
+    "photographer_url": "https://pixabay.com/users/Pexels-2286921/",
+    "alt": "controls, indoors, room, computer, control center, technology, control panel, room, room, room, room, room, computer, control center, technology, technology, technology, control panel",
+    "width": 5332,
+    "height": 3555,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Pexels / Pixabay"
+  }
+}

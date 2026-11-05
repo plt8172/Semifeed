@@ -1,0 +1,35 @@
+{
+  "id": "d3b8c9a4e8",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64949",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-05T12:53+09:00",
+  "headline": "인피니언·솔루엠, AI 데이터센터 전기 아낄 전원 만들기로",
+  "bullets": [
+    "서버 전원장치·배터리백업·중간 변환기 3분야 협약",
+    "인피니언은 Si·SiC·GaN 전력반도체, 솔루엠은 설계·생산",
+    "고전압 직류 배전은 변환 단계가 적어 전력 손실 감소"
+  ],
+  "caption": "인피니언·솔루엠, AI 데이터센터 전기 아낄 전원 만들기로\n\n독일 반도체 회사 인피니언의 한국법인이 국내 전원장치 회사 솔루엠과 AI 데이터센터용 고전압직류(HVDC) 전력 제품을 함께 개발하기로 업무협약을 맺었습니다. 협력 분야는 서버에 전기를 넣는 전원공급장치(PSU), 정전 때 버티게 하는 배터리백업유닛(BBU), 전압을 중간에서 바꿔 주는 중간버스컨버터(IBC) 세 가지입니다. 인피니언은 실리콘·실리콘카바이드(SiC)·질화갈륨(GaN) 기반 전력반도체와 MCU, 센서를 공급하고 개발 초기부터 설계를 돕고, 솔루엠은 전원 제품 설계와 생산을 맡습니다. HVDC는 데이터센터 안에서 전기를 교류가 아닌 높은 전압의 직류로 나눠 보내는 방식으로, 교류와 직류를 오가는 변환 단계가 줄어 그만큼 버려지는 전기가 적습니다. 전력반도체는 전기를 켜고 끄며 전압을 바꾸는 반도체로, SiC와 GaN은 일반 실리콘보다 높은 전압과 열을 잘 견디는 소재입니다. AI 서버가 전기를 많이 쓰면서 같은 공간에서 더 많은 전력을 효율적으로 다루는 기술이 중요해지고 있습니다. 솔루엠은 2015년 삼성전기 사업부에서 분사한 회사로 TV·서버용 파워모듈을 만듭니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64949\n\n#반도체 #semiconductor #전력반도체 #데이터센터 #HVDC #SiC #GaN #인피니언",
+  "photo_queries": [
+    "power supply unit internals",
+    "electrical substation transformer",
+    "industrial battery bank"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5209513",
+    "query": "power supply unit internals",
+    "file": "d3b8c9a4e8.photo.jpg",
+    "download_url": "https://pixabay.com/get/gcb10effa93682acbcd8d60eccc96085d29b57f6f8e8390c2cd30dc8311dce5df441a7b128f550f16567e406ece22c5ef82603572d6a0d87404d55e41f7f69388_1280.jpg",
+    "page_url": "https://pixabay.com/photos/power-supply-case-computer-psu-5209513/",
+    "photographer": "16671105",
+    "photographer_url": "https://pixabay.com/users/16671105-16671105/",
+    "alt": "power, supply, case, computer, psu, fan, psu, psu, psu, psu, psu",
+    "width": 3456,
+    "height": 2304,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 16671105 / Pixabay"
+  }
+}
