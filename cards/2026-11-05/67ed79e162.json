@@ -1,0 +1,35 @@
+{
+  "id": "67ed79e162",
+  "link": "https://www.tomshardware.com/pc-components/dram/micron-details-ambitious-dram-and-nand-roadmap-3d-nand-high-na-euv-new-materials-and-custom-silicon-makes-a-comeback",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-04T23:00+09:00",
+  "headline": "마이크론, 삼성·SK와 달리 차세대 D램 구조 안 간다",
+  "bullets": [
+    "경쟁사가 준비하는 4F² 셀 D램 계획 접고 다른 길 택해",
+    "다음 1δ 공정 2027년 하반기 양산, 비트 밀도 20% 중반↑",
+    "웨이퍼 본딩·High-NA EUV·3D D램 순으로 로드맵 공개"
+  ],
+  "caption": "마이크론, 삼성·SK와 달리 차세대 D램 구조 안 간다\n\n미국 메모리 회사 마이크론이 앞으로 몇 년간의 D램·낸드 기술 계획을 공개했습니다. 가장 눈에 띄는 것은 삼성전자·SK하이닉스·중국 CXMT가 준비 중인 4F² 셀 D램을 만들지 않기로 한 점입니다. 4F²는 메모리 한 칸(셀)이 차지하는 면적을 줄여 같은 크기 칩에 더 많은 데이터를 담는 구조인데, 마이크론은 지금 위치에서 이 방식으로 더 작게 만들 길이 마땅치 않다고 판단했습니다. 대신 다음 세대 1δ 공정을 2027년 하반기에 양산해 밀도를 20% 중반 높이고, 그 뒤로는 서로 다른 웨이퍼를 붙이는 웨이퍼 본딩, 더 미세한 회로를 그리는 High-NA EUV 노광장비, 셀을 위로 쌓는 3D D램을 차례로 도입할 계획입니다. 다만 각 기술의 구체적 효과와 일정은 대부분 밝히지 않았습니다. AI 개발사마다 원하는 메모리가 달라지면서 고객 맞춤형 D램·낸드 제품도 늘린다고 밝혔습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/dram/micron-details-ambitious-dram-and-nand-roadmap-3d-nand-high-na-euv-new-materials-and-custom-silicon-makes-a-comeback\n\n#반도체 #semiconductor #마이크론 #D램 #낸드 #메모리 #EUV #3DDRAM",
+  "photo_queries": [
+    "dram memory module closeup",
+    "silicon chip macro",
+    "cleanroom laboratory equipment"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1761599",
+    "query": "dram memory module closeup",
+    "file": "67ed79e162.photo.jpg",
+    "download_url": "https://pixabay.com/get/g6aa499e015aa23759ecafd4ac31a1aad1ee8211f1f35b9b2d4d236dd8feff20286215a1e0004d708e3bc5d512b13880e802342c8e623088f7d677c35a917a714_1280.jpg",
+    "page_url": "https://pixabay.com/photos/memory-computer-component-1761599/",
+    "photographer": "magica",
+    "photographer_url": "https://pixabay.com/users/magica-1766064/",
+    "alt": "memory, computer, component, printed circuit board, memory, memory, memory, computer, printed circuit board, printed circuit board, printed circuit board, printed circuit board, printed circuit board",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: magica / Pixabay"
+  }
+}

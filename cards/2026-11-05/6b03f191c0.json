@@ -1,0 +1,35 @@
+{
+  "id": "6b03f191c0",
+  "link": "https://www.etnews.com/20261105000095",
+  "source": "전자신문",
+  "category": "AI·설계",
+  "published_at": "2026-11-05T09:57+09:00",
+  "headline": "美 스타트업, 빛으로 칩 잇는 마이크로LED 칩 첫 수주",
+  "bullets": [
+    "美 팔로미노, 대형 클라우드 고객사에서 첫 구매주문 받아",
+    "질화갈륨(GaN) 마이크로LED 기반 광 인터커넥트 칩 공급",
+    "해당 기술의 첫 상업 주문…AI 데이터센터 적용 주목"
+  ],
+  "caption": "美 스타트업, 빛으로 칩 잇는 마이크로LED 칩 첫 수주\n\n미국 스타트업 팔로미노가 글로벌 대형 클라우드 고객사(하이퍼스케일러)로부터 AI 인프라용 광 인터커넥트 칩 공급을 위한 첫 구매주문을 받았습니다. 마이크로LED 기반 광 인터커넥트 기술로는 첫 상업용 주문 사례입니다. 광 인터커넥트는 칩과 칩, 서버와 서버 사이 데이터를 전기 신호 대신 빛으로 주고받는 기술로, AI 데이터센터처럼 오가는 데이터가 많은 곳에서 속도와 전력 효율을 높이는 방법으로 주목받고 있습니다. 팔로미노의 칩은 아주 작은 LED인 마이크로LED를 질화갈륨(GaN)이라는 반도체 소재로 만들어 빛을 내는 방식입니다. 고객사 이름과 주문 규모는 밝혀지지 않았습니다. 업계는 이번 주문을 계기로 이 기술이 AI 데이터센터에 본격적으로 쓰이기 시작할지 지켜보고 있습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261105000095\n\n#반도체 #semiconductor #광인터커넥트 #마이크로LED #AI데이터센터 #GaN #질화갈륨",
+  "photo_queries": [
+    "fiber optic light strands",
+    "led chip closeup",
+    "optical network switch"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7204051",
+    "query": "fiber optic light strands",
+    "file": "6b03f191c0.photo.jpg",
+    "download_url": "https://pixabay.com/get/g948ac2df4dddec61a573eaeae472d2b647985b17411b2dbd3fb0444d9d8d3d62b4cf5dbf25d88a91fcc377524b06746985ce32b72707e0c0b588a856347eb326_1280.jpg",
+    "page_url": "https://pixabay.com/photos/luminous-lights-bokeh-night-lights-7204051/",
+    "photographer": "饿狐网www_ewhooo_com",
+    "photographer_url": "https://pixabay.com/users/饿狐网www_ewhooo_com-112701/",
+    "alt": "luminous, beautiful wallpaper, lights, 4k wallpaper 1920x1080, bokeh, night lights, night, optical fiber, wallpaper hd, starry, 4k wallpaper, full hd wallpaper, light, hd wallpaper, desktop backgrounds, mac wallpaper, cool backgrounds, free background, free wallpaper, windows wallpaper, wallpaper 4k, ambient light, laptop wallpaper, background, fluorescence",
+    "width": 3500,
+    "height": 2334,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 饿狐网www_ewhooo_com / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "3456ec16b6",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64937",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-05T11:26+09:00",
+  "headline": "배터리 소재사 피노, 1830억 조달…中 지분은 낮아질 듯",
+  "bullets": [
+    "국내 투자기관 대상 약 1830억원 제3자배정 유상증자",
+    "약 1199억원은 포항 LFP 양극재 공장(연산 5만t)에 투입",
+    "美 해외우려기업 규제 대응 과제…중국계 지분율 하락 전망"
+  ],
+  "caption": "배터리 소재사 피노, 1830억 조달…中 지분은 낮아질 듯\n\n중국 배터리 소재 기업 CNGR이 최대주주인 피노가 국내 투자기관을 상대로 약 1830억원 규모의 유상증자를 해 자금을 모읍니다. 이 가운데 약 1199억원은 포스코퓨처엠 등과 함께 세운 합작법인의 경북 포항 리튬인산철(LFP) 양극재 공장에 씁니다. 양극재는 배터리의 용량과 성능을 좌우하는 핵심 소재이고, LFP는 값이 싸고 안정성이 높아 전기차와 에너지저장장치(ESS)에 많이 쓰이는 배터리 종류입니다. 이 공장은 지난 5월 연산 5만톤 규모로 착공했고 2030년까지 5000억원 이상이 투입될 계획입니다. 피노는 미국의 해외우려기업(PFE) 규제에 대응하려면 중국계 지배력을 낮춰야 하는 과제가 있는데, 잇따른 외부 투자 유치로 중국계 지분율은 더 낮아질 전망입니다. 한국거래소는 우회상장 여부를 확인하기 위해 5일 피노의 주식 거래를 정지했습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64937\n\n#반도체 #semiconductor #배터리 #양극재 #LFP #피노 #공급망",
+  "photo_queries": [
+    "battery cathode powder",
+    "lithium battery pack",
+    "chemical plant tanks"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "525119",
+    "query": "chemical plant tanks",
+    "file": "3456ec16b6.photo.jpg",
+    "download_url": "https://pixabay.com/get/g9a19eb935fefaf3379893a43bcdfa65330fa635e168b2fef168215d327aaaedb12302bd68945e1e28b61109384d7e941588ef57d80de89ac164efa33c9fdd54c_1280.jpg",
+    "page_url": "https://pixabay.com/photos/industry-industrial-plant-525119/",
+    "photographer": "127071",
+    "photographer_url": "https://pixabay.com/users/127071-127071/",
+    "alt": "industry, industrial plant, petrochemicals, refinery, environmental pollution, tube, industrial park, sasol, brunsbüttel germany, industry, industry, industry, industry, industry, refinery, refinery, refinery, refinery",
+    "width": 4959,
+    "height": 2979,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 127071 / Pixabay"
+  }
+}

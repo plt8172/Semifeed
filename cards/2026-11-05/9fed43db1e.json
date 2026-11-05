@@ -1,0 +1,35 @@
+{
+  "id": "9fed43db1e",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64940",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-05T11:17+09:00",
+  "headline": "메모리 부족에 폰 덜 팔려…퀄컴, 데이터센터로 간다",
+  "bullets": [
+    "올해 스마트폰 출하 10% 초중반 감소, 내년 보합~소폭 감소 전망",
+    "메모리 공급 부족·가격 상승에 생산 축소, 폰값도 대부분 올라",
+    "12월 분기 맞춤형 칩 매출 6.5억달러↑…비스마트폰 비중 확대"
+  ],
+  "caption": "메모리 부족에 폰 덜 팔려…퀄컴, 데이터센터로 간다\n\n스마트폰용 칩을 주로 만드는 퀄컴이 실적발표에서 올해 전 세계 스마트폰 출하량이 지난해보다 10% 초중반대 줄고, 내년에도 보합이거나 소폭 줄 것이라고 내다봤습니다. 원인은 메모리입니다. 메모리 공급이 모자라고 값이 오르자 스마트폰 제조사들이 생산 계획을 줄이고 판매 가격을 올렸고, 그 결과 소비자 수요가 약해졌습니다. 퀄컴은 원가 상승에 대응해 제품 가격을 올리고 있으며 효과는 2027회계연도 2분기부터 반영된다고 밝혔습니다. 대신 AI 데이터센터 사업에 힘을 싣습니다. 12월 분기에 아마존 등 대형 클라우드 회사용 맞춤형 반도체(ASIC, 특정 고객의 용도에 맞춰 설계한 칩) 매출 6억5000만달러 이상이 잡혀 있고, 2027회계연도부터는 반도체 부문에서 스마트폰 매출 비중이 50% 아래로 내려갈 전망입니다. 삼성전자 플래그십 폰의 퀄컴 칩 점유율은 70% 이상이 새 기준선이 됐다고도 밝혔습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64940\n\n#반도체 #semiconductor #퀄컴 #스마트폰 #메모리 #데이터센터 #ASIC",
+  "photo_queries": [
+    "smartphone chip closeup",
+    "mobile phone disassembled",
+    "server room cables"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4197002",
+    "query": "smartphone chip closeup",
+    "file": "9fed43db1e.photo.jpg",
+    "download_url": "https://pixabay.com/get/gdc7ed830a926eac26a5d1e5155ed55f08b31d3ff4ee211c084a9a593d5734e1d73e38732a3e139d1c07dc9f677517c1b04712c52a3fec62a8ee1574a46a8ade2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/iphone-mobile-smartphone-apple-4197002/",
+    "photographer": "saifata30",
+    "photographer_url": "https://pixabay.com/users/saifata30-1727382/",
+    "alt": "iphone, mobile, smartphone, apple, circuit board",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: saifata30 / Pixabay"
+  }
+}

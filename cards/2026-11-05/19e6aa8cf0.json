@@ -1,0 +1,35 @@
+{
+  "id": "19e6aa8cf0",
+  "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-can-only-fulfill-1-percent-of-chinas-massive-usd70-billion-gpu-order-for-ai-chips-report-claims-supply-constraints-choke-export-friendly-rtx-pro-5500-deliveries-despite-huge-demand",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-04T21:15+09:00",
+  "headline": "中 주문 엔비디아 칩 700억달러어치, 1%만 받을 듯",
+  "bullets": [
+    "中 빅테크 RTX Pro 5500 주문 약 700억달러 규모 (블룸버그)",
+    "수개월 내 인도분은 수만 장, 주문의 약 1% 수준",
+    "수출 제한 없는 모델이라 수요 몰려…생산이 못 따라가"
+  ],
+  "caption": "中 주문 엔비디아 칩 700억달러어치, 1%만 받을 듯\n\n중국 바이트댄스·알리바바·텐센트 등이 엔비디아에 주문한 그래픽카드 RTX Pro 5500 가운데 앞으로 몇 달 안에 실제로 받는 양은 수만 장, 주문량의 약 1%에 그칠 것이라고 블룸버그가 익명 소식통을 인용해 보도했습니다. 주문 규모는 장당 1만1000달러 기준 약 700억달러로, 앞서 알려진 350억달러에서 두 배로 늘었습니다. 이 제품은 게이밍 최상위 모델 RTX 5090과 같은 연산 코어에 84GB 그래픽 메모리를 달아 AI 개발에 쓰기 좋으면서도, 미국 수출 통제 대상이 아니어서 중국에 제한 없이 팔 수 있다는 점 때문에 주문이 몰렸습니다. 수출 통제는 미국이 첨단 AI 칩의 중국 판매를 막는 규제로, H200·B300 같은 AI 전용 칩은 여기에 묶여 있습니다. 보도에 따르면 첫 물량 수천 장은 2026년 말까지, 누적 70만 장은 2027년 말까지 인도될 전망이지만 바뀔 수 있습니다. 엔비디아는 출하 수량에 대한 언급은 피했습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/gpus/nvidia-can-only-fulfill-1-percent-of-chinas-massive-usd70-billion-gpu-order-for-ai-chips-report-claims-supply-constraints-choke-export-friendly-rtx-pro-5500-deliveries-despite-huge-demand\n\n#반도체 #semiconductor #AI반도체 #엔비디아 #GPU #수출통제 #미중갈등",
+  "photo_queries": [
+    "gpu graphics card fans",
+    "cargo container port cranes",
+    "computer workstation tower"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2202279",
+    "query": "gpu graphics card fans",
+    "file": "19e6aa8cf0.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2d40abf2acf0062f5a976f4285e20e802ff63e907521696363d6cc8390596c0facc15829a027eab844a6e9cdb051dfc196d82e657740c29cc03012dc564b00b4_1280.jpg",
+    "page_url": "https://pixabay.com/photos/nvidia-video-card-2202279/",
+    "photographer": "WikimediaImages",
+    "photographer_url": "https://pixabay.com/users/WikimediaImages-1185597/",
+    "alt": "nvidia, video, card, nvidia, nvidia, nvidia, nvidia, nvidia",
+    "width": 3480,
+    "height": 2370,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: WikimediaImages / Pixabay"
+  }
+}
