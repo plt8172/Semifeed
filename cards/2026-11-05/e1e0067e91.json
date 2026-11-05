@@ -1,0 +1,35 @@
+{
+  "id": "e1e0067e91",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64986",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-05T18:31+09:00",
+  "headline": "엔비디아 AI 서버용 기판 덕에 티엘비 이익 92% 늘었다",
+  "bullets": [
+    "3분기 매출 939억원·영업익 166억원, 분기 사상 최대",
+    "엔비디아 베라 루빈용 메모리 모듈 SOCAMM2 기판 공급 확대",
+    "메모리 2곳과 차세대 SOCAMM3 기판 개발, 2028년 양산 목표"
+  ],
+  "caption": "엔비디아 AI 서버용 기판 덕에 티엘비 이익 92% 늘었다\n\n메모리 기판 전문업체 티엘비가 3분기 매출 939억6500만원, 영업이익 165억9500만원으로 분기 사상 최대 매출을 냈다고 공시했습니다. 1년 전보다 매출은 36.4%, 영업이익은 91.8% 늘었고 영업이익률은 17.7%까지 올랐습니다. 실적을 끌어올린 것은 SOCAMM2 기판입니다. SOCAMM2는 엔비디아의 차세대 AI 서버 플랫폼 베라 루빈에서 CPU 옆에 붙는 저전력 D램 모듈이고, 티엘비는 이 모듈의 바탕이 되는 기판을 만듭니다. 메모리 칩이 놓이는 이 기판은 일반 메모리 모듈용 기판보다 비싸게 팔려, 매출보다 이익이 더 크게 늘었습니다. 티엘비는 국내외 메모리 제조사 2곳과 후속 규격인 SOCAMM3용 기판 개발도 시작했으며 양산 목표는 2028년입니다. AI 서버 수요가 칩뿐 아니라 그 아래 기판을 만드는 부품 회사까지 넓게 퍼지고 있다는 사례입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64986\n\n#반도체 #semiconductor #PCB #기판 #SOCAMM #AI서버 #엔비디아 #티엘비",
+  "photo_queries": [
+    "memory module pcb",
+    "printed circuit board drilling",
+    "server memory slots"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "424813",
+    "query": "memory module pcb",
+    "file": "e1e0067e91.photo.jpg",
+    "download_url": "https://pixabay.com/get/g401c3a36194d0b4a5fda85c0c023442fe6b74f88b189e74d4910817a0f78fb9e7e65f54593e4362f0e568849087087dcd3f5bfeac6ca35b70c40e6fa2775b017_1280.jpg",
+    "page_url": "https://pixabay.com/photos/ram-ram-module-memory-computer-424813/",
+    "photographer": "TobiasD",
+    "photographer_url": "https://pixabay.com/users/TobiasD-206193/",
+    "alt": "ram, ram module, memory, computer, module, pc, circuit, component, hardware, electronics, card, blue computer, blue laptop, blue memory, ram, ram, ram, ram, ram",
+    "width": 3968,
+    "height": 2232,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: TobiasD / Pixabay"
+  }
+}

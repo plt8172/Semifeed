@@ -1,0 +1,35 @@
+{
+  "id": "49a9bc5766",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64967",
+  "source": "디일렉",
+  "category": "AI·설계",
+  "published_at": "2026-11-05T18:58+09:00",
+  "headline": "양자컴퓨터 대비 새 암호, 칩 하나로 처리하는 엔진 만든다",
+  "bullets": [
+    "ICTK·부경대, 양자내성암호(PQC) 전용 하드웨어 엔진 개발",
+    "美 NIST 표준과 한국 표준 PQC를 한 엔진에서 지원",
+    "2028년 8월 목표, KT용 보안 SoC에 탑재될 전망"
+  ],
+  "caption": "양자컴퓨터 대비 새 암호, 칩 하나로 처리하는 엔진 만든다\n\n양자보안 반도체 설계 기업 아이씨티케이(ICTK)가 국립부경대학교와 함께 여러 양자내성암호를 하나로 처리하는 하드웨어 엔진을 개발합니다. 양자내성암호(PQC)는 앞으로 성능이 높아진 양자컴퓨터가 지금의 암호를 풀 수 있다는 우려에 대비해 만든 새 암호 방식입니다. 이번 엔진은 미국 국립표준기술연구소(NIST)가 정한 국제 표준 ML-KEM·ML-DSA와 한국 표준(KpqC)을 모두 지원하는 전용 연산장치로, 2028년 8월까지 개발이 목표입니다. 알고리즘마다 공통으로 쓰는 계산은 공용 회로가 맡고, 나머지는 설정값과 명령어를 바꿔 처리해 여러 방식에 유연하게 대응합니다. 이 엔진은 아이씨티케이가 한국전자기술연구원·국민대와 개발 중인 보안용 시스템온칩(SoC)에 들어갈 것으로 보이며, 이 칩의 수요 기업은 KT입니다. 아이씨티케이는 올해 5월부터 글로벌 빅테크용 보안칩을 양산하고 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64967\n\n#반도체 #semiconductor #양자내성암호 #PQC #보안칩 #팹리스 #시스템반도체 #ICTK",
+  "photo_queries": [
+    "encryption chip security",
+    "padlock circuit board",
+    "telecom network equipment"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2377718",
+    "query": "padlock circuit board",
+    "file": "49a9bc5766.photo.jpg",
+    "download_url": "https://pixabay.com/get/g584ec952783403e5396452d05767eaea64a56acd6bd5ce0be12dd8293e02b75fffccb0da7b0c2daed54fd2d7f9ce0e540c5eeb2a2fffa70736fe17527d91854b_1280.jpg",
+    "page_url": "https://pixabay.com/photos/cyber-security-network-internet-2377718/",
+    "photographer": "axonite",
+    "photographer_url": "https://pixabay.com/users/axonite-5531574/",
+    "alt": "cyber, security, network, internet, hack, keyboard, green, circuit, close-up, look, macro, system, hardware, computer, electronics, computers, board, pcb, printed, chip, inside, pc, mac, motherboard, circuit, hardware, hardware, pcb, pcb, pcb, pcb, pcb, chip, chip, chip, chip, motherboard, motherboard, motherboard",
+    "width": 3898,
+    "height": 2613,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: axonite / Pixabay"
+  }
+}

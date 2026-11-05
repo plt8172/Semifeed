@@ -1,0 +1,35 @@
+{
+  "id": "f15ac2488d",
+  "link": "https://www.etnews.com/20261105000460",
+  "source": "전자신문",
+  "category": "메모리",
+  "published_at": "2026-11-05T16:56+09:00",
+  "headline": "삼성전자, 세계 D램 38% 차지하며 1위 지켰다",
+  "bullets": [
+    "카운터포인트리서치, 3분기 D램 점유율 삼성 38%로 1위",
+    "SK하이닉스 29%, 마이크론 21%, 中 CXMT 9% 순",
+    "지난해 1분기 HBM 공급 난항으로 1위 내줬다가 HBM 판매 늘며 선두"
+  ],
+  "caption": "삼성전자, 세계 D램 38% 차지하며 1위 지켰다\n\n시장조사업체 카운터포인트리서치가 올해 3분기 세계 D램 시장에서 삼성전자가 38%를 차지해 1위를 지켰다고 밝혔습니다. 그 뒤로 SK하이닉스 29%, 미국 마이크론 21%, 중국 CXMT 9% 순입니다. D램은 컴퓨터와 스마트폰, 서버가 작업 중인 데이터를 잠시 올려 두는 메모리로, 세 회사가 대부분을 만듭니다. 삼성전자는 지난해 1분기 HBM 공급에 어려움을 겪으며 1위를 SK하이닉스에 내준 적이 있습니다. HBM(고대역폭메모리)은 D램을 여러 층 쌓아 AI 칩 옆에 붙이는 고성능 메모리로, AI 서버 수요가 몰리며 메모리 회사 실적을 좌우하고 있습니다. 이번 조사는 삼성전자가 HBM 판매를 늘리면서 다시 선두를 굳히고 있다는 뜻으로 읽힙니다. 중국 CXMT가 10%에 가까운 점유율을 보인 점도 눈여겨볼 부분입니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261105000460\n\n#반도체 #semiconductor #D램 #DRAM #HBM #메모리 #삼성전자 #SK하이닉스",
+  "photo_queries": [
+    "dram memory chips",
+    "memory chip factory",
+    "computer motherboard slots"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "921458",
+    "query": "memory chip factory",
+    "file": "f15ac2488d.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf8d65a49050a30e144f7a32a6cbe23fce0dab9de258a3f5c772e8d2a2cd4e5ef0e56dcd1f024dd8c9826c671daa2da24f69c7f3e865ea9bb8cdb87401247719f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/ram-memory-circuits-green-board-921458/",
+    "photographer": "502designs",
+    "photographer_url": "https://pixabay.com/users/502designs-1370596/",
+    "alt": "ram, memory, circuits, green board, resistors, electronic, technology, board, circuit board, green, computer, digital, hardware, engineering, motherboard, chip, tech, processor, system, integrated, connection, component, electricity, modern, electrical, ram, ram, ram, ram, ram",
+    "width": 4608,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: 502designs / Pixabay"
+  }
+}

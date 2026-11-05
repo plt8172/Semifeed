@@ -1,0 +1,35 @@
+{
+  "id": "3345f6a1c3",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/spacex-plans-to-build-more-data-center-compute-than-googles-entire-lifetime-capacity-in-just-1-5-years-analysts-say-target-is-realistic-spacex-to-build-staggering-10-gigawatts-of-compute-in-2027-alone",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-05T20:30+09:00",
+  "headline": "머스크 \"내년 데이터센터 10GW\"…분석가 \"가능할 수도\"",
+  "bullets": [
+    "머스크, 스페이스X가 2027년에만 10GW 데이터센터 구축 자신",
+    "성사되면 1.5년 만에 구글 전체 누적 규모 수준",
+    "관건은 칩보다 전력, 가스터빈 89대·배터리로 메워"
+  ],
+  "caption": "머스크 \"내년 데이터센터 10GW\"…분석가 \"가능할 수도\"\n\n일론 머스크가 스페이스X가 2027년 한 해에만 10GW 규모의 데이터센터를 지을 수 있다고 자신하자, 분석 매체 세미애큐레이트가 조건이 맞으면 가능하다는 분석을 내놨습니다. 기존 3GW에 10GW를 더하면 구글이 회사 역사 전체에 걸쳐 지은 데이터센터 용량을 1.5년 만에 따라잡는 셈입니다. 근거는 콜로서스 데이터센터의 건설 속도입니다. 콜로서스 2의 발전 용량은 1월 0.4GW에서 연말 2.4GW로 늘 것으로 보이고, 현장에는 가스터빈 89대와 테슬라 대형 배터리 1377대가 이미 놓여 있습니다. 다만 배출 규제로 자체 터빈은 약 1.24GW만 계속 쓸 수 있어 전력망과 배터리로 나머지를 채워야 합니다. 마이크로소프트 사티아 나델라가 '칩이 있어도 꽂을 곳이 없다'고 말했듯, AI 경쟁의 병목이 칩에서 전기와 부지로 옮겨 가고 있다는 점을 보여 줍니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/spacex-plans-to-build-more-data-center-compute-than-googles-entire-lifetime-capacity-in-just-1-5-years-analysts-say-target-is-realistic-spacex-to-build-staggering-10-gigawatts-of-compute-in-2027-alone\n\n#반도체 #semiconductor #데이터센터 #AI인프라 #전력 #스페이스X #GPU",
+  "photo_queries": [
+    "gas turbine power plant",
+    "battery storage containers",
+    "construction site cranes"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3428713",
+    "query": "gas turbine power plant",
+    "file": "3345f6a1c3.photo.jpg",
+    "download_url": "https://pixabay.com/get/g1dee31e9852406a22c1f36cfc28a227131766a07a65870bf79c33d38aff18d5f283542f9a280ffcd984f5dd111e62266a93f2d00ef85e76db20514fbf1b60ed0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/gas-turbine-equipment-work-factory-3428713/",
+    "photographer": "evgenia_axsenova",
+    "photographer_url": "https://pixabay.com/users/evgenia_axsenova-8205234/",
+    "alt": "gas turbine equipment, work, factory",
+    "width": 4500,
+    "height": 3000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: evgenia_axsenova / Pixabay"
+  }
+}
