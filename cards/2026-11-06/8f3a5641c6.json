@@ -1,0 +1,35 @@
+{
+  "id": "8f3a5641c6",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=64955",
+  "source": "디일렉",
+  "category": "패키징",
+  "published_at": "2026-11-06T10:12+09:00",
+  "headline": "폰 유리 만들던 제이앤티씨, 엔비디아 유리기판 공급사 등록",
+  "bullets": [
+    "엔비디아 구매 공급사 명단 올라 2mm TGV 유리기판 유상 샘플 공급",
+    "브로드컴 이어 두 번째 美 대형 반도체 고객, 첫 접촉 한 달 만",
+    "주력 커버글래스 부진 속 2028년 중반 초기 양산 목표"
+  ],
+  "caption": "폰 유리 만들던 제이앤티씨, 엔비디아 유리기판 공급사 등록\n\n제이앤티씨가 지난달 엔비디아의 구매 공급사 명단에 올라, 미세한 구멍을 뚫은 유리기판을 돈을 받고 샘플로 공급하고 있습니다. 반도체 기판은 칩을 얹고 전기 신호를 이어 주는 받침인데, AI 칩이 커지면서 휘어짐이 적고 배선을 촘촘하게 넣을 수 있는 유리가 기존 수지 기판의 대안으로 꼽힙니다. TGV(Through Glass Via)는 유리에 구멍을 뚫고 구리를 채워 위아래를 전기로 잇는 기술로, 구리와 유리가 단단히 붙지 않으면 균열이 생기기 쉽습니다. 제이앤티씨 제품은 이 결착력이 업계 요구치의 두 배 수준이었던 것으로 전해졌습니다. 공급사 등록은 무상 평가를 넘어 유상 구매가 가능해진 단계일 뿐 양산 계약은 아니며, 회사는 2028년 중반 초기 양산 물량 공급을 계획하고 있습니다. 스마트폰 커버글래스가 주력인 이 회사는 그 매출이 줄면서 적자를 내고 있어, 유리기판이 새 사업이 될지가 관심사입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=64955\n\n#반도체 #semiconductor #유리기판 #TGV #엔비디아 #반도체패키징 #제이앤티씨",
+  "photo_queries": [
+    "glass panel laser drilling",
+    "semiconductor package substrate",
+    "glass sheet factory"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2819138",
+    "query": "glass sheet factory",
+    "file": "8f3a5641c6.photo.jpg",
+    "download_url": "https://pixabay.com/get/g77d727be324160c0ee95b8959ce5e787ac4d319db6369597737946a6ac8c37c29902584db89c25f71b2e837db28b9849d514c549f36cd1526456355e4010a4ab_1280.jpg",
+    "page_url": "https://pixabay.com/photos/laser-cutting-cutting-out-machine-2819138/",
+    "photographer": "jarmoluk",
+    "photographer_url": "https://pixabay.com/users/jarmoluk-143740/",
+    "alt": "laser, cutting, cutting out, machine, plasma, sparks, technology, factory, mori, laser cutting, plasma cutting, the industry, production, device, company, metal, industrial, metalworking, steel, cnc, laser, laser, laser, laser, laser, factory, laser cutting, laser cutting, laser cutting, cnc, cnc, cnc",
+    "width": 3000,
+    "height": 2000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: jarmoluk / Pixabay"
+  }
+}

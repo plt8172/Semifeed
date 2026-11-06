@@ -1,0 +1,35 @@
+{
+  "id": "1d90aff61f",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65005",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-06T09:45+09:00",
+  "headline": "노트북 OLED 만드는 中 공장에 나인테크 장비 들어간다",
+  "bullets": [
+    "中 TCL CSOT 8.6세대 잉크젯 OLED 라인에 기판 이송장비 공급",
+    "LG전자와 맺은 254억원 계약 따른 것, LG 거쳐 납품",
+    "진공·질소 유지하며 대형 유리 원장 옮기는 물류 시스템"
+  ],
+  "caption": "노트북 OLED 만드는 中 공장에 나인테크 장비 들어간다\n\n나인테크가 중국 디스플레이 업체 TCL CSOT의 새 OLED 생산라인에 기판 이송장비를 공급합니다. 지난 6월 LG전자와 맺은 254억원 규모 계약에 따른 것으로, 장비는 LG전자를 거쳐 들어갑니다. OLED는 스스로 빛을 내는 유기 재료로 화면을 만드는 방식인데, 이 라인은 액체 발광 재료를 잉크젯 프린터처럼 필요한 자리에 뿌려 패턴을 만듭니다. 이 재료는 공기 중 수분과 산소에 약해서, 공정 사이에 기판을 옮길 때도 진공이나 질소 환경을 유지해야 합니다. 8.6세대는 6세대보다 약 2.25배 큰 유리 원장을 써서 한 장에서 노트북·태블릿용 패널을 더 많이 만들 수 있습니다. 이차전지 장비가 주력인 나인테크는 디스플레이 장비로 매출을 넓히고 있으며, 올해 이 분야 매출 목표는 350억원입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65005\n\n#반도체 #semiconductor #OLED #디스플레이 #디스플레이장비 #나인테크 #8.6세대",
+  "photo_queries": [
+    "vacuum chamber equipment",
+    "display panel production",
+    "industrial conveyor automation"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1137993",
+    "query": "industrial conveyor automation",
+    "file": "1d90aff61f.photo.jpg",
+    "download_url": "https://pixabay.com/get/g1f74bab71ad3bd00071e808e63a2d86f63ff748f2f73af6218980e3a6d2f632f64cb6354cf5eed53e45c14c2944cd57cd34fff64980bccc2c597f5167d246c26_1280.jpg",
+    "page_url": "https://pixabay.com/photos/factory-plant-industrial-hall-1137993/",
+    "photographer": "falco",
+    "photographer_url": "https://pixabay.com/users/falco-81448/",
+    "alt": "factory, plant, industrial hall, logistics, trade, transport, warehouse, nature, shelf, factory building, conveyor belt, tape",
+    "width": 4000,
+    "height": 3000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: falco / Pixabay"
+  }
+}

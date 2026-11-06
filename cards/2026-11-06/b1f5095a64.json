@@ -1,0 +1,35 @@
+{
+  "id": "b1f5095a64",
+  "link": "https://www.tomshardware.com/tech-industry/policy/chinese-ai-lab-moonshot-reportedly-looked-at-european-data-centers-to-access-nvidia-chips-report-claims-kimi-maker-primarily-interested-in-inferencing-capacity-but-also-asked-about-training-clusters",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-06T01:48+09:00",
+  "headline": "中 AI 기업, 유럽서 엔비디아 칩 8000개 빌리려 협상",
+  "bullets": [
+    "'키미' 만든 문샷AI, 유럽 데이터센터와 GPU 8000개 이상 임대 협상",
+    "中 기업 구매는 막혔지만 해외에서 빌려 쓰는 건 아직 허용",
+    "美 하원은 이 구멍 막는 법안 통과, 상원·대통령 절차 남아"
+  ],
+  "caption": "中 AI 기업, 유럽서 엔비디아 칩 8000개 빌리려 협상\n\nAI 챗봇 '키미'를 만든 중국 문샷AI가 유럽의 한 데이터센터와 엔비디아 블랙웰 GPU 8000개 이상을 빌려 쓰는 협상을 하고 있다고 CNBC가 보도했습니다. 주로 이미 만든 AI를 돌리는 데 쓸 용량이지만, AI를 새로 학습시킬 용량에도 관심을 보인 것으로 전해졌습니다. 미국은 수출 통제로 중국 기업이 고성능 AI 칩을 사는 것을 막고 있지만, 해외 데이터센터에서 원격으로 빌려 쓰는 것은 아직 막지 못하고 있습니다. 미국 하원은 이 빈틈을 막는 원격접근보안법을 통과시켰으나 상원과 백악관 절차가 남아 있습니다. 한편 엔비디아는 데이터센터 고객들에게 중국 기업에 용량의 49% 넘게 제공하지 말라고 요청한 것으로 보도돼, 중국 기업이 해외 용량을 확보할 여지도 줄고 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/policy/chinese-ai-lab-moonshot-reportedly-looked-at-european-data-centers-to-access-nvidia-chips-report-claims-kimi-maker-primarily-interested-in-inferencing-capacity-but-also-asked-about-training-clusters\n\n#반도체 #semiconductor #엔비디아 #GPU #수출통제 #AI반도체 #미중갈등",
+  "photo_queries": [
+    "gpu server cluster",
+    "european data center building",
+    "network switch cables"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2784907",
+    "query": "network switch cables",
+    "file": "b1f5095a64.photo.jpg",
+    "download_url": "https://pixabay.com/get/g6ee8def0f818d79dfbe534ca95b269af633ae34826e9599f645da3d91807860a8f5005ab7d12b6b9533a13f9b2ff757ba304899c46424efc7607051ad6dd9f04_1280.jpg",
+    "page_url": "https://pixabay.com/photos/cyberspace-data-wire-electronic-2784907/",
+    "photographer": "jarmoluk",
+    "photographer_url": "https://pixabay.com/users/jarmoluk-143740/",
+    "alt": "cyberspace, data, wire, electronic, electric, ethernet, infrastructure, cable, computer, communication, panel, connection, to combine, the industry, router, server, network, equipment, system, broadband, technology, telecommunication, service provider, plug, node, dam, connector, link, lan, server, server, server, server, server, network, broadband",
+    "width": 3000,
+    "height": 2000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: jarmoluk / Pixabay"
+  }
+}
