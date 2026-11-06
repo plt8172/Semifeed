@@ -1,0 +1,35 @@
+{
+  "id": "f67f5c5665",
+  "link": "https://www.trendforce.com/presscenter/news/20261106-13297.html",
+  "source": "TrendForce",
+  "category": "메모리",
+  "published_at": "2026-11-06T14:45+09:00",
+  "headline": "메모리값 오르자 싼 폰에 재사용 메모리 칩 늘어난다",
+  "bullets": [
+    "값싼 4G폰에 재가공(리볼) 메모리 탑재 증가",
+    "탑재 비중 올해 3~4%, 내년 7~9% 전망",
+    "원가는 줄지만 품질 편차·수명 단축 우려 남아"
+  ],
+  "caption": "메모리값 오르자 싼 폰에 재사용 메모리 칩 늘어난다\n\n스마트폰용 D램 계약 가격이 계속 오르자, 스마트폰 브랜드들이 값싼 보급형 모델에 '재가공(리볼) 메모리'를 넣는 사례가 늘고 있다고 시장조사업체 트렌드포스가 밝혔습니다. 재가공 메모리는 이미 쓰인 메모리 칩을 떼어 내 기판에 붙이는 작은 납 구슬(볼)을 다시 입혀 재사용하는 부품을 말합니다. 트렌드포스는 스마트폰 시장에서 이런 메모리의 비중이 올해 약 3~4%, 내년에는 7~9%까지 늘 수 있다고 내다봤습니다. 지금은 주로 4GB LPDDR4X 제품이 중국에서 1299위안 이하에 팔리는 4G폰에 쓰이는데, 이 가격대 소비자는 값에 매우 민감해 원가를 줄이는 것이 중요하기 때문입니다. 내년 1분기 D램 가격이 더 오를 것으로 예상돼 이런 방식이 더 비싼 모델로 번질 수 있다고 봤습니다. 다만 공급처가 복잡하고 품질이 고르지 않아 기기 신뢰성이 떨어지고 수명이 짧아질 수 있으며, 이는 브랜드 신뢰와 보증 수리 비용에 부담이 될 수 있다고 지적했습니다.\n\n출처: TrendForce\nhttps://www.trendforce.com/presscenter/news/20261106-13297.html\n\n#반도체 #semiconductor #메모리 #D램 #스마트폰 #트렌드포스 #LPDDR",
+  "photo_queries": [
+    "smartphone motherboard repair",
+    "soldering iron circuit board",
+    "electronics recycling scrap"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2510529",
+    "query": "smartphone motherboard repair",
+    "file": "f67f5c5665.photo.jpg",
+    "download_url": "https://pixabay.com/get/g7defcee131d84cc7820394d93152bfb27f3d937d026480f9ab27bedeea287b4aa1ca53ef95835510de154eaace8fa7dc291589cdd8c1de29527d6bdddbc36037_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mobile-phone-cellphone-technology-2510529/",
+    "photographer": "Bru-nO",
+    "photographer_url": "https://pixabay.com/users/Bru-nO-1161770/",
+    "alt": "mobile, phone, cellphone, technology, electronics, circuit board, smd, smartphone, communication, make a phone call, cellular, gsm, repair, defect, broken, workshop technician, mobile phone repair, cellphone, cellphone, circuit board, repair, repair, repair, repair, repair, broken",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Bru-nO / Pixabay"
+  }
+}

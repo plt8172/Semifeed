@@ -1,0 +1,35 @@
+{
+  "id": "403d7ee1a3",
+  "link": "https://www.etnews.com/20261106000278",
+  "source": "전자신문",
+  "category": "AI·설계",
+  "published_at": "2026-11-06T16:03+09:00",
+  "headline": "엔비디아, 인터넷 없이 PC에서 AI 비서 돌리는 칩 공개",
+  "bullets": [
+    "GPU·CPU 한 칩에 담은 'RTX 스파크' 소개",
+    "클라우드 연결 없이 PC에서 AI 비서 구동",
+    "메모리 덜 쓰는 경량 모델·하이브리드도 공개"
+  ],
+  "caption": "엔비디아, 인터넷 없이 PC에서 AI 비서 돌리는 칩 공개\n\n엔비디아가 6일 서울에서 그래픽처리장치(GPU)와 중앙처리장치(CPU)를 하나의 칩으로 합친 'RTX 스파크'를 소개하며, 개인용 PC에서 인공지능(AI) 비서를 직접 돌리는 '로컬 AI' 시장 공략에 나섰습니다. 지금 많이 쓰는 AI 비서는 질문을 인터넷 너머 데이터센터(클라우드)로 보내 처리하지만, 로컬 AI는 PC 안의 칩이 바로 계산하기 때문에 클라우드에 연결하지 않아도 동작합니다. GPU는 AI 계산처럼 많은 연산을 한꺼번에 처리하는 데 강하고 CPU는 PC의 전반적인 작업을 맡는데, 이 둘을 한 칩에 담은 것입니다. 엔비디아는 칩과 함께 메모리 사용량을 크게 줄인 가벼운 AI 모델, PC와 클라우드를 상황에 따라 함께 쓰는 하이브리드 기술도 선보였습니다. 하드웨어와 소프트웨어를 같이 내놓아 PC에서 바로 AI를 쓰는 온디바이스 AI 생태계를 완성하겠다는 전략입니다. 칩의 성능 수치나 출시 일정은 기사 요약에서 밝혀지지 않았습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261106000278\n\n#반도체 #semiconductor #엔비디아 #AI_PC #온디바이스AI #GPU #로컬AI",
+  "photo_queries": [
+    "laptop processor chip",
+    "desktop pc internals",
+    "computer chip socket"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4393384",
+    "query": "laptop processor chip",
+    "file": "403d7ee1a3.photo.jpg",
+    "download_url": "https://pixabay.com/get/gb3ed67da74a2a5727f9d885cd32abc0555899430a6b8eed68f894c05bb3ff437cb22117d60dd6cb1a2038bd622f5a7eb17a94fbfe0f35c457df4a40f92966e22_1280.jpg",
+    "page_url": "https://pixabay.com/photos/cpu-processor-chip-intel-core-pc-4393384/",
+    "photographer": "Bru-nO",
+    "photographer_url": "https://pixabay.com/users/Bru-nO-1161770/",
+    "alt": "cpu, processor, chip, intel, core, pc, computer, hardware, electronics, technology, smd, socket 1151, cpu, cpu, cpu, cpu, cpu, processor, processor, intel",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Bru-nO / Pixabay"
+  }
+}

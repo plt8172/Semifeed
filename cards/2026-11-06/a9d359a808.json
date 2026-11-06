@@ -1,0 +1,35 @@
+{
+  "id": "a9d359a808",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65037",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-06T16:03+09:00",
+  "headline": "SK하이닉스 공장 안에 국내 장비 회사용 시험 공장 생긴다",
+  "bullets": [
+    "SK하이닉스 등 출자 트리니티팹, 내년 10월 가동",
+    "용인 1기 팹 안 1000평에 장비 37대·약 3000억원",
+    "소부장 제품 양산 적용 기간 30% 단축이 목표"
+  ],
+  "caption": "SK하이닉스 공장 안에 국내 장비 회사용 시험 공장 생긴다\n\nSK하이닉스와 정부, 경기도, 용인시가 함께 세운 비영리 재단 '트리니티팹'이 내년 5월 장비 반입을 시작해 10월부터 시험 서비스를 시작합니다. 국내 반도체 소재·부품·장비(소부장) 기업은 새 제품이 실제 양산 조건에서 제대로 작동하는지 증명해야 납품할 수 있지만, 대당 수백억원짜리 장비와 양산 수준 클린룸(먼지를 극도로 줄인 생산 공간)을 직접 갖추기는 어렵습니다. 해외의 벨기에 imec 같은 시험 시설은 비용 부담이 컸습니다. 트리니티팹은 SK하이닉스 용인 반도체클러스터 1기 팹 안 1000평에 300mm 웨이퍼 기준 시험 환경을 만들고, 노광·식각·증착·세정·계측 등 장비 37대(약 3000억원 규모)를 2031년까지 순차 도입합니다. 시설 구축에는 SK하이닉스가 4432억원, 정부가 3736억원을 냅니다. 이용료는 imec보다 낮게 정했고, 약 300개 기업을 지원해 개발부터 양산 적용까지 걸리는 시간을 30% 줄이는 것이 목표입니다. 재단 측은 삼성전자 등 어느 회사에 납품하는 기업이든 구분하지 않고 지원하겠다고 밝혔습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65037\n\n#반도체 #semiconductor #SK하이닉스 #소부장 #클린룸 #용인반도체클러스터 #반도체장비",
+  "photo_queries": [
+    "semiconductor cleanroom equipment",
+    "lithography machine cleanroom",
+    "laboratory test equipment"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7445779",
+    "query": "semiconductor cleanroom equipment",
+    "file": "a9d359a808.photo.jpg",
+    "download_url": "https://pixabay.com/get/g3dd74596693dffb7bce0af1bc37924f818cba38d184bfd746f41c7bb2b2753c36707e96dc3d42ab397be3d320ec1b72ea879a0490128e617853ad2ceb2ce358f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/science-lab-interior-headquarters-7445779/",
+    "photographer": "BrianPenny",
+    "photographer_url": "https://pixabay.com/users/BrianPenny-29844978/",
+    "alt": "science lab, interior, headquarters, silver, futuristic, modern, windows, science lab, science lab, science lab, science lab, science lab, headquarters",
+    "width": 9216,
+    "height": 6144,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: BrianPenny / Pixabay"
+  }
+}

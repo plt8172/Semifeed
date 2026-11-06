@@ -1,0 +1,35 @@
+{
+  "id": "12ae3da227",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65034",
+  "source": "디일렉",
+  "category": "정책·공급망",
+  "published_at": "2026-11-06T15:43+09:00",
+  "headline": "中 추격에 정부, 디스플레이 연구시설에 3689억 투입",
+  "bullets": [
+    "첨단 디스플레이 국가연구플랫폼 예타 통과",
+    "2027~2033년 3689억원, 국비 2789억원 투입",
+    "패널 설계부터 모듈까지 한 곳에서 검증"
+  ],
+  "caption": "中 추격에 정부, 디스플레이 연구시설에 3689억 투입\n\n정부의 '첨단 디스플레이 국가연구플랫폼 구축사업'이 예비타당성조사(큰 국가 사업을 시작하기 전에 경제성과 필요성을 따지는 심사)를 통과했고, 한국디스플레이산업협회가 6일 환영 입장을 냈습니다. 2027년부터 2033년까지 3688억7000만원(국비 2789억원)을 들여 '첨단디스플레이연구원'을 만들고, 최대 1만ppi까지 대응하는 개방형 연구 인프라를 갖춥니다. ppi는 1인치에 들어가는 화소 수로, 숫자가 클수록 화면이 더 촘촘하고 선명합니다. 지금까지 국내 디스플레이 연구는 소재·부품·장비나 개별 공정 위주로 이뤄져, 패널 설계부터 모듈까지 한 곳에서 이어서 검증할 시설이 없었습니다. 차세대 디스플레이는 소재·공정·설계를 함께 검증해야 해 개발 난도와 투자 부담이 큽니다. 협회는 한국이 2025년 OLED 시장 점유율 68.7%로 세계 1위지만 중국 업체들이 빠르게 추격하고 있다며, 기업·대학·연구기관이 이 시설을 함께 쓰도록 지원하겠다고 밝혔습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65034\n\n#반도체 #semiconductor #디스플레이 #OLED #예타 #국가연구개발 #소부장",
+  "photo_queries": [
+    "oled display panel closeup",
+    "display pixels macro",
+    "research laboratory instruments"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4014712",
+    "query": "oled display panel closeup",
+    "file": "12ae3da227.photo.jpg",
+    "download_url": "https://pixabay.com/get/g80375f53f23f935d08f74982aa15e619fbfe2b5920cbea82b0c36f4463fcef76ea99a942486bcd976f7dabee509fdab98f6f1ab6f4f5d929eacf1e88dd861d02_1280.jpg",
+    "page_url": "https://pixabay.com/photos/plexiglass-multicoloured-detail-4014712/",
+    "photographer": "analogicus",
+    "photographer_url": "https://pixabay.com/users/analogicus-8164369/",
+    "alt": "plexiglass, multicoloured, detail, technology, shining, light, coloured, seem, transparent, structure, shape, template, texture, close up, art, decoration, design, lamp, modern, block, square, big, small, technology, block, block, block, block, block",
+    "width": 3403,
+    "height": 2225,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: analogicus / Pixabay"
+  }
+}
