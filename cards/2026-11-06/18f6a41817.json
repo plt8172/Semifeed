@@ -1,0 +1,35 @@
+{
+  "id": "18f6a41817",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65063",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-06T19:26+09:00",
+  "headline": "진공 없이 칩 결함 보는 현미경, 반도체 공장 진출 추진",
+  "bullets": [
+    "코셈·한빛레이저, 대기압 전자현미경 검사장비 공동 개발",
+    "웨이퍼 자르지 않고 나노미터 결함 분석 목표",
+    "HBM 등 첨단 패키징 검사 수요 노려 파일럿 테스트 계획"
+  ],
+  "caption": "진공 없이 칩 결함 보는 현미경, 반도체 공장 진출 추진\n\n전자현미경 업체 코셈이 레이저 장비 업체 한빛레이저와 손잡고 반도체 공장용 검사장비를 개발하기로 했습니다. 주사전자현미경(SEM)은 빛 대신 전자빔을 쏘아 표면을 보는 장비로, 일반 현미경보다 훨씬 작은 결함까지 볼 수 있어 반도체 개발과 불량 분석에 쓰입니다. 다만 전자빔이 공기에 흩어지지 않도록 시료를 진공 공간에 넣어야 해서, 진공을 만들고 시료를 준비하는 데 시간이 걸리는 것이 단점입니다. 코셈은 그래핀 막을 활용해 1기압 공기 속에서도 관찰할 수 있는 기술을 개발했고, 두 회사는 이를 이용해 300㎜ 웨이퍼를 자르지 않고 나노미터 수준의 결함을 찾는 자동화 장비를 만들 계획입니다. AI 서버용 고대역폭메모리(HBM, 메모리 칩을 여러 층 쌓은 제품)처럼 구조가 복잡한 제품이 늘면서 미세 결함 검사 수요가 커지고 있기 때문입니다. 시제품을 만든 뒤 주요 반도체 고객사와 파일럿 테스트를 거쳐 상용화 여부를 검증할 예정입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65063\n\n#반도체 #semiconductor #반도체장비 #전자현미경 #검사장비 #HBM #코셈",
+  "photo_queries": [
+    "scientific microscope lens",
+    "silicon wafer semiconductor",
+    "semiconductor cleanroom lab"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "275984",
+    "query": "scientific microscope lens",
+    "file": "18f6a41817.photo.jpg",
+    "download_url": "https://pixabay.com/get/geff35219cc73a481a0b2593fa7c94984be5ba2e9c66e75529183e97554374505395518e4c08dc157dab3a9dc5f9183feff62128f134c1a4607d00a23bf6b94e6_1280.jpg",
+    "page_url": "https://pixabay.com/photos/microscope-slide-research-close-up-275984/",
+    "photographer": "PublicDomainPictures",
+    "photographer_url": "https://pixabay.com/users/PublicDomainPictures-14/",
+    "alt": "microscope, slide, research, close-up, test, experiment, micro, microscopy, plate, scrutiny, medical, tool, red, sample, study, laboratory, biotechnology, light, discovery, analysis, technology, equipment, analytical, scientific, drop, lens, blue technology, blue medical, blue light, blue study, blue research, blue tools, blue studying, blue test, blue laboratory, blue closed, blue lights, microscope, microscope, microscope, research, research, research, research, research, medical, medical, medical, laboratory, laboratory, technology, technology, technology, technology",
+    "width": 4928,
+    "height": 3264,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: PublicDomainPictures / Pixabay"
+  }
+}

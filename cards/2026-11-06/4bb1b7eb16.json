@@ -1,0 +1,35 @@
+{
+  "id": "4bb1b7eb16",
+  "link": "https://www.etnews.com/20261106000316",
+  "source": "전자신문",
+  "category": "정책·공급망",
+  "published_at": "2026-11-06T17:33+09:00",
+  "headline": "154억원어치 엔비디아 AI 칩, 운송 중 트럭째 사라졌다",
+  "bullets": [
+    "美 오클랜드→텍사스 운송 중 AI 칩·장비 화물 실종",
+    "경찰 두 달째 수사 중, 화물 행방은 아직 못 찾아",
+    "고가 AI 칩 노린 전문 절도단 소행 가능성 제기"
+  ],
+  "caption": "154억원어치 엔비디아 AI 칩, 운송 중 트럭째 사라졌다\n\n미국 실리콘밸리에서 154억원어치의 엔비디아 인공지능(AI) 반도체와 관련 장비가 운송 도중 사라져 경찰이 두 달째 수사를 벌이고 있습니다. 미국 지역 매체 머큐리뉴스에 따르면 이 화물은 지난 8월 29일 캘리포니아주 오클랜드에서 텍사스주 포트워스로 옮겨지던 중이었고, 오클랜드 경찰이 사건을 맡고 있습니다. AI 반도체는 데이터센터에서 AI를 학습시키고 돌리는 데 쓰이는 핵심 부품으로, 수요에 비해 공급이 부족해 한 개 값이 매우 비쌉니다. 이 때문에 고가의 AI 칩을 노린 전문 절도단의 소행일 가능성이 제기되고 있지만, 누가 가져갔는지와 화물이 어디로 갔는지는 아직 밝혀지지 않았습니다. AI 칩이 귀해지면서 칩을 옮기는 운송 과정도 새로운 보안 위험이 되고 있다는 점을 보여 주는 사건입니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261106000316\n\n#반도체 #semiconductor #엔비디아 #AI반도체 #GPU #물류 #도난",
+  "photo_queries": [
+    "cargo truck highway night",
+    "shipping cardboard boxes warehouse",
+    "graphics card circuit board"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3701646",
+    "query": "cargo truck highway night",
+    "file": "4bb1b7eb16.photo.jpg",
+    "download_url": "https://pixabay.com/get/g8e6cc81504da5b41eae6c0b9be4e46c9e6963c137b6ada9646f1540780fe2d379620ed68bb2bfa164a36b3f3f7c97942f32dcd31dd241d3e9a7cd1ca33b85ad7_1280.jpg",
+    "page_url": "https://pixabay.com/photos/night-truck-american-traffic-3701646/",
+    "photographer": "rauschenberger",
+    "photographer_url": "https://pixabay.com/users/rauschenberger-4614580/",
+    "alt": "night, truck american, traffic, transport, vehicles, light, road, travel, urban, car park",
+    "width": 4000,
+    "height": 2248,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: rauschenberger / Pixabay"
+  }
+}

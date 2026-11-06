@@ -1,0 +1,35 @@
+{
+  "id": "04986702a1",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65065",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-06T19:32+09:00",
+  "headline": "현대차 휴머노이드 로봇에 삼성SDI 배터리 70개 들어간다",
+  "bullets": [
+    "보스턴 다이내믹스 아틀라스 배터리, 삼성SDI가 주로 공급",
+    "2170 원통형 셀 70개, 팩 용량 약 1.3kWh",
+    "LG엔솔도 협력사로 선정, 아틀라스 양산은 2028년 이후"
+  ],
+  "caption": "현대차 휴머노이드 로봇에 삼성SDI 배터리 70개 들어간다\n\n현대차그룹의 로봇 계열사 보스턴 다이내믹스가 만드는 사람 모양 로봇(휴머노이드) '아틀라스'에 삼성SDI 배터리가 들어갑니다. 현대차는 아틀라스 배터리 사양을 확정하고 삼성SDI와 LG에너지솔루션을 협력사로 골랐는데, 물량이 아직 많지 않아 초기 물량은 대부분 삼성SDI가 맡게 됐습니다. 쓰이는 배터리는 지름 21㎜, 높이 70㎜인 '2170' 규격 원통형 배터리로, 셀 하나에 5000mAh이고 로봇 한 대에 70개가 들어가 팩 용량은 약 1.3kWh가 됩니다. 전기차 아이오닉5 롱레인지 배터리의 약 1.6% 수준이지만, 보통 2~4시간 움직이는 휴머노이드에는 충분한 양이라고 합니다. 아틀라스는 배터리를 갈아 끼우는 방식으로 운영되며, 본격 양산은 2028년 이후입니다. 그보다 먼저 같은 배터리를 쓰는 로봇개 '스팟2'가 현대차 공장의 외관 검사에 투입될 예정이어서, 로봇이 배터리 회사의 새 시장이 될 수 있을지 보여 주는 첫 시험대가 될 것으로 보입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65065\n\n#반도체 #semiconductor #배터리 #삼성SDI #휴머노이드 #로봇 #보스턴다이내믹스",
+  "photo_queries": [
+    "cylindrical battery cells",
+    "humanoid robot metal",
+    "robot assembly factory"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2301646",
+    "query": "humanoid robot metal",
+    "file": "04986702a1.photo.jpg",
+    "download_url": "https://pixabay.com/get/gd651c2116aff1d7e7cddc4d3df84d4c80922e9ab5a1fe4a43d1d50ff969635ed95e8c5b1a17374b2cba4429a8d8d4d53cb4c906d166bb1f3a4c19c9bef42df67_1280.jpg",
+    "page_url": "https://pixabay.com/photos/robot-machine-technology-mecha-ai-2301646/",
+    "photographer": "Computerizer",
+    "photographer_url": "https://pixabay.com/users/Computerizer-4588466/",
+    "alt": "robot, machine, technology, mecha, ai, artificial intelligence, futuristic, robotic, fiction, science, future, tech, modern, sci-fi, metal, 3d, weapon, intelligence, artwork, digital, fantasy, ui, user interface, robot, robot, artificial intelligence, artificial intelligence, artificial intelligence, artificial intelligence, artificial intelligence, tech",
+    "width": 1920,
+    "height": 1080,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Computerizer / Pixabay"
+  }
+}

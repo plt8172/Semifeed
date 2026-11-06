@@ -1,0 +1,35 @@
+{
+  "id": "27ecf0d7c6",
+  "link": "https://www.tomshardware.com/tech-industry/semiconductors/gelsinger-backed-nagare-labs-capacitorless-z2ram-promises-sram-speed-with-dram-density-latest-published-cell-retains-data-for-over-300-seconds-at-85-c-but-further-figures-are-projected",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-06T20:00+09:00",
+  "headline": "前 인텔 CEO 투자사, AI 칩 위에 쌓는 새 메모리 공개",
+  "bullets": [
+    "美 스타트업 나가레랩스, 축전기 없는 메모리 Z2RAM 공개",
+    "1세대 목표: SRAM 대비 밀도 5배, D램 대비 속도 14배",
+    "현재 셀은 85도에서 300초 넘게 데이터 유지 확인"
+  ],
+  "caption": "前 인텔 CEO 투자사, AI 칩 위에 쌓는 새 메모리 공개\n\n팻 겔싱어 전 인텔 최고경영자가 이끄는 투자사 플레이그라운드 글로벌이 투자한 미국 조지아공대 출신 스타트업 나가레랩스가 'Z2RAM'이라는 새 메모리를 공개했습니다. AI 칩은 데이터를 매우 빠르게 받아야 하지만, 지금 쓰는 고대역폭메모리(HBM)는 만들기 어렵고 열 문제도 있어 공급이 빠듯합니다. 칩 위에 바로 쌓는 메모리 후보 가운데 SRAM은 빠르지만 같은 공간에 담는 양이 적고, D램은 많이 담지만 95도 이하로 유지해야 해서 아래 칩이 열을 많이 낼 수 없다는 한계가 있습니다. Z2RAM은 축전기 없이 트랜지스터 2개와 차폐 구조로 데이터를 저장해, 읽을 때 데이터가 지워지지 않고 다시 써 줄 필요가 없는 방식입니다. 회사는 1세대 제품이 6층으로 쌓아 SRAM보다 밀도가 5배 높고, D램보다 14배 빠르며, 읽기 전력은 SRAM의 3분의 1이 될 것으로 예상했습니다. 다만 이 수치는 목표치이고, 지금까지 논문으로 확인된 것은 85도에서 300초 넘게 데이터를 유지하는 셀 수준입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/semiconductors/gelsinger-backed-nagare-labs-capacitorless-z2ram-promises-sram-speed-with-dram-density-latest-published-cell-retains-data-for-over-300-seconds-at-85-c-but-further-figures-are-projected\n\n#반도체 #semiconductor #메모리 #D램 #SRAM #AI반도체 #스타트업",
+  "photo_queries": [
+    "memory chips stacked",
+    "transistor macro closeup",
+    "processor die macro"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3450410",
+    "query": "transistor macro closeup",
+    "file": "27ecf0d7c6.photo.jpg",
+    "download_url": "https://pixabay.com/get/g817ab9ec634bc6d2d08e48b211db84a73a74a5d78f032f4b70f1b7aa1cc6977032d89edbc14f3c4e2991f96373430a7d605ea49139e5a581031f63c974608904_1280.jpg",
+    "page_url": "https://pixabay.com/photos/circuit-board-electronics-circuit-3450410/",
+    "photographer": "paulclee",
+    "photographer_url": "https://pixabay.com/users/paulclee-50010/",
+    "alt": "circuit board, electronics, circuit, technology, board, computer, chip, processor, motherboard, hardware, tech, green, transistors, green computer, green technology, green laptop, green tech, green board, circuit board, circuit board, circuit board, motherboard, motherboard, tech, tech, tech, tech, tech",
+    "width": 4479,
+    "height": 3283,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: paulclee / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "5f6e3d9db6",
+  "link": "https://www.theregister.com/public-sector/2026/11/06/britains-tech-ambitions-depend-on-minerals-made-in-china-mps-warn/5307779",
+  "source": "The Register",
+  "category": "정책·공급망",
+  "published_at": "2026-11-06T18:30+09:00",
+  "headline": "갈륨 95%가 중국산…영국 의회 \"반도체 광물 대책 불분명\"",
+  "bullets": [
+    "英 하원 위원회, 정부 핵심광물 대책 10개 시험 모두 확신 못해",
+    "중국, 전략광물 20종 중 19종 정제 1위, 평균 점유율 70%",
+    "공급처 다변화엔 10~15년 걸린다고 경고"
+  ],
+  "caption": "갈륨 95%가 중국산…영국 의회 \"반도체 광물 대책 불분명\"\n\n영국 하원의 산업·과학 위원회가 영국의 AI·첨단 반도체·청정에너지 계획이 중국이 장악한 광물 공급망에 기대고 있다며, 정부에 의존도를 줄일 믿을 만한 계획이 있는지 확인할 수 없다는 보고서를 냈습니다. 위원회는 어떤 산업을 지켜야 하는지, 어떤 광물이 필요한지, 국내 생산과 해외 협력으로 빈틈을 어떻게 메울지 등 10가지 시험을 정했는데, 정부가 이 중 어느 하나도 통과한다고 확신할 수 없다고 평가했습니다. 핵심광물은 배터리·반도체·데이터센터·군사장비에 두루 쓰이는데, 문제는 광산보다 광석을 쓸 수 있는 소재로 만드는 정제 단계입니다. 국제에너지기구 자료에 따르면 중국은 전략광물 20종 가운데 19종에서 정제 1위이고 평균 점유율은 70%입니다. 특히 레이더·통신용 첨단 반도체에 쓰이는 갈륨과 게르마늄은 중국 생산 비중이 각각 95%, 93%에 이릅니다. 위원회는 공급처를 다변화하는 데 10~15년이 걸린다며, 중국을 완전히 배제하는 것은 현실적이지 않지만 지나친 의존은 위험하다고 지적했습니다.\n\n출처: The Register\nhttps://www.theregister.com/public-sector/2026/11/06/britains-tech-ambitions-depend-on-minerals-made-in-china-mps-warn/5307779\n\n#반도체 #semiconductor #공급망 #핵심광물 #갈륨 #희토류 #영국",
+  "photo_queries": [
+    "raw mineral ore rocks",
+    "metal refinery furnace",
+    "open pit mine excavator"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2595710",
+    "query": "raw mineral ore rocks",
+    "file": "5f6e3d9db6.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0f4bbb2e6becc60fa0b2add9f63f5172e8a22ae88f774627a86014e8896636b62da525c33b0ff9fe3e59807a365c59b2171894ea2342f3d44930f0d729ca7816_1280.jpg",
+    "page_url": "https://pixabay.com/photos/coal-gemstone-crystals-black-2595710/",
+    "photographer": "artyangel",
+    "photographer_url": "https://pixabay.com/users/artyangel-5887741/",
+    "alt": "coal, gemstone, crystals, black, texture, gray texture, coal, coal, coal, coal, coal",
+    "width": 2560,
+    "height": 1920,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: artyangel / Pixabay"
+  }
+}
