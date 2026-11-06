@@ -1,0 +1,36 @@
+{
+  "id": "a8c20bcb0b",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65043",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-06T19:11+09:00",
+  "headline": "AI 기판 장비 주문 7배 몰린 태성, 900억 조달",
+  "bullets": [
+    "올해 수주 약 2800억원, 지난해 연 매출 379억원의 7.4배",
+    "대금은 납품 뒤 받아 CB 700억·옛 공장 매각 198억 조달",
+    "400억원은 복합동박·유리기판 신사업 설비에 투입"
+  ],
+  "caption": "AI 기판 장비 주문 7배 몰린 태성, 900억 조달\n\n인쇄회로기판(PCB)을 만드는 공정 장비 회사 태성이 전환사채(CB) 발행과 옛 본사 공장 매각으로 898억원을 마련합니다. PCB는 칩과 부품을 올려 서로 연결하는 판으로, AI 서버용 기판과 반도체 패키지 기판 제조사들이 설비를 늘리면서 태성에 장비 주문이 몰렸습니다. 올해 누적 수주는 약 2800억원으로 지난해 한 해 매출의 7.4배입니다. 하지만 장비 대금 상당 부분은 납품·설치 뒤에야 들어오고 대부분 내년 이후라, 그 전에 들어갈 원자재 비용을 먼저 마련하려는 것입니다. 실제로 상반기 매출은 지난해 연간 매출을 넘었지만 영업으로 들어온 현금은 158억원 빠져나갔습니다. 조달액 중 400억원은 아직 매출이 없는 복합동박 소재와 유리기판 장비 생산설비에 쓰입니다. 주문이 급증한 회사도 돈이 들어오기까지 자금 부담을 겪는다는 점을 보여 주는 사례입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65043\n\n#반도체 #semiconductor #PCB #반도체장비 #유리기판 #AI서버 #태성",
+  "photo_queries": [
+    "pcb etching machine",
+    "copper clad laminate",
+    "pcb production line"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5496168",
+    "query": "printed circuit board",
+    "file": "a8c20bcb0b.photo.jpg",
+    "download_url": "https://pixabay.com/get/g9dead317117681692ac8e3ee7a30f9da6d63a000985886baff6c9b9e79f80a684cd9e0425a11f595b900a8b7024ef8de0e5466209f71f055c02a233b78651897_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mother-board-electronics-computer-5496168/",
+    "photographer": "nanoslavic",
+    "photographer_url": "https://pixabay.com/users/nanoslavic-17278421/",
+    "alt": "mother board, electronics, computer, board, components, chips, tech, technology, main board, digital, circuit, hardware, parts, processor, module, microelectronics, electrical, repair, engineering, printed circuit board, pcb, mother board, mother board, pcb, pcb, pcb, pcb, pcb",
+    "width": 5760,
+    "height": 3840,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: nanoslavic / Pixabay",
+    "category": "computer"
+  }
+}

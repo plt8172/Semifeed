@@ -1,0 +1,35 @@
+{
+  "id": "95a78fc622",
+  "link": "https://www.tomshardware.com/tech-industry/semiconductors/globalfoundries-vp-details-fdx-fusion-technology-sporting-7nm-class-performance-without-the-need-for-euv-tools-company-targets-2030-for-high-volume-manufacturing-with-planar-transistors-in-tow",
+  "source": "Tom's Hardware",
+  "category": "파운드리",
+  "published_at": "2026-11-06T23:00+09:00",
+  "headline": "글로벌파운드리, 비싼 EUV 장비 없이 7나노급 칩 만든다",
+  "bullets": [
+    "FD-SOI 기반 새 공정 FDX 퓨전, 7나노급 성능·8나노급 밀도",
+    "EUV 노광·핀펫 없이 평면 트랜지스터로 설계·제조비 절감",
+    "2028년 상업 생산, 2030년 대량 생산이 목표"
+  ],
+  "caption": "글로벌파운드리, 비싼 EUV 장비 없이 7나노급 칩 만든다\n\n미국 파운드리(반도체 위탁생산) 회사 글로벌파운드리가 새 공정 'FDX 퓨전'의 세부 내용을 공개했습니다. 7나노급 성능을 내면서도 최첨단 공정에 쓰이는 값비싼 EUV(극자외선) 노광 장비와 입체 구조 트랜지스터인 핀펫(FinFET)을 쓰지 않는 것이 특징입니다. 대신 절연막 위에 아주 얇은 실리콘을 올린 FD-SOI라는 평면 트랜지스터 기술을 씁니다. 회사는 이렇게 하면 설계비와 제조비를 크게 줄일 수 있지만, 같은 면적에 넣는 트랜지스터 수는 일반 7나노급 공정보다 적다고 설명했습니다. 글로벌파운드리는 8년 전 7나노 핀펫 개발을 포기한 바 있어, 이번 공정은 다른 길로 7나노급에 돌아오는 셈입니다. 주된 쓰임새는 와이파이·블루투스 같은 통신 칩, 자동차 레이더, 데이터센터의 광신호 증폭 회로 등이며, 2028년 상업 생산을 시작해 2030년 대량 생산에 들어가는 것이 목표입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/semiconductors/globalfoundries-vp-details-fdx-fusion-technology-sporting-7nm-class-performance-without-the-need-for-euv-tools-company-targets-2030-for-high-volume-manufacturing-with-planar-transistors-in-tow\n\n#반도체 #semiconductor #파운드리 #글로벌파운드리 #FDSOI #EUV #반도체공정",
+  "photo_queries": [
+    "silicon wafer semiconductor",
+    "lithography yellow cleanroom",
+    "chip fabrication plant"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "447483",
+    "query": "silicon wafer semiconductor",
+    "file": "95a78fc622.photo.jpg",
+    "download_url": "https://pixabay.com/get/g3f1ea45da35f5e90ee7f58180ccf987a496e9fd683be9551853fbd3e1513b4890b5b766da4030907878a3b6465ee196a4d36675f2a973fe2fdcd6a6ebdcf4efb_1280.jpg",
+    "page_url": "https://pixabay.com/photos/cpu-processor-electronics-computer-447483/",
+    "photographer": "blickpixel",
+    "photographer_url": "https://pixabay.com/users/blickpixel-52945/",
+    "alt": "cpu, processor, electronics, computer, data processing, circuit board, it, chip, control center, circuits, management, pc, connections, solder joint, technology, data, riser board, electrical engineering, component, electric, components, digital, operating system, software, circuit, cpu, cpu, cpu, cpu, cpu, processor",
+    "width": 3132,
+    "height": 2202,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: blickpixel / Pixabay"
+  }
+}

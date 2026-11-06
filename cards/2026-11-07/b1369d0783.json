@@ -1,0 +1,35 @@
+{
+  "id": "b1369d0783",
+  "link": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-06T22:49+09:00",
+  "headline": "엔비디아, 동남아 업체에 AI 칩 위치 추적 요구",
+  "bullets": [
+    "동남아 클라우드 업체, 공식 파트너 되려면 추적 프로그램 가입",
+    "GPU가 실제로 어디서 돌아가는지 엔비디아가 파악 가능",
+    "中 밀수 경유지로 꼽히는 동남아에 美 압박 커진 영향"
+  ],
+  "caption": "엔비디아, 동남아 업체에 AI 칩 위치 추적 요구\n\n블룸버그 보도에 따르면 엔비디아가 동남아시아 클라우드 업체에 '엔비디아 클라우드 파트너' 자격을 주는 조건으로 'Fleet Intelligence'라는 추적 프로그램 가입을 요구하기 시작했습니다. 이 프로그램은 원래 데이터센터 장비 관리용 소프트웨어로, 각 AI 칩(GPU)이 어디에 설치돼 돌아가고 있는지 정보를 모읍니다. 공식 파트너가 되면 엔비디아의 인증과 구하기 어려운 AI 칩을 먼저 받을 수 있어, 엔비디아가 이를 지렛대로 쓰는 셈입니다. 배경에는 미국의 수출 통제가 있습니다. 미국은 중국 기업이 허가 없이 첨단 AI 칩을 사지 못하게 막고 있지만, 동남아를 거쳐 상당량이 중국으로 흘러들어갔다는 의심을 받고 있습니다. 다만 파트너가 아닌 고객의 가입은 여전히 자율이고, 기존 파트너나 다른 지역에도 적용될지는 밝혀지지 않았습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status\n\n#반도체 #semiconductor #엔비디아 #AI칩 #수출통제 #GPU #공급망",
+  "photo_queries": [
+    "gps tracking map screen",
+    "shipping containers port",
+    "gpu server cluster"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6631117",
+    "query": "shipping containers port",
+    "file": "b1369d0783.photo.jpg",
+    "download_url": "https://pixabay.com/get/g8d6a98e6e72c67d1ffa8445804da5cae9bf489460998bbf4e28f46fe10701c9ece5839496eddd28143163d5e33497142916bbb4f91872577e2f9be1a707fcf67_1280.jpg",
+    "page_url": "https://pixabay.com/photos/container-ship-container-transport-6631117/",
+    "photographer": "dendoktoor",
+    "photographer_url": "https://pixabay.com/users/dendoktoor-14802912/",
+    "alt": "container ship, container transport, seagoing vessel, boat, vessel, freighter, means of transport sea containers, transport, container ship, container ship, container ship, container ship, container ship, boat, vessel, transport, transport",
+    "width": 5417,
+    "height": 3611,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: dendoktoor / Pixabay"
+  }
+}

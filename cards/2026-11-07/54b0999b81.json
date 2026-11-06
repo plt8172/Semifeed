@@ -1,0 +1,35 @@
+{
+  "id": "54b0999b81",
+  "link": "https://www.etnews.com/20261107000003",
+  "source": "전자신문",
+  "category": "정책·공급망",
+  "published_at": "2026-11-07T06:00+09:00",
+  "headline": "美 의회, 젠슨 황에 \"中 간첩 의혹 여성과 관계\" 해명 요구",
+  "bullets": [
+    "美 하원 위원장 3명, 젠슨 황에 공동 서한으로 출석 요구",
+    "중국 간첩 의혹을 받는 여성과의 관계 해명 요청",
+    "中의 첨단 반도체 기술 접근 우려에 엔비디아 압박 커져"
+  ],
+  "caption": "美 의회, 젠슨 황에 \"中 간첩 의혹 여성과 관계\" 해명 요구\n\n미국 하원의 외교위원장, 미중전략경쟁특별위원장, 정보위원장이 엔비디아 젠슨 황 최고경영자에게 공동 서한을 보내 출석을 요구했다고 정치매체 악시오스 등이 보도했습니다. 중국 간첩 의혹을 받는 한 여성과 어떤 관계인지 해명하라는 내용입니다. 엔비디아는 AI 학습에 쓰이는 고성능 칩(GPU) 시장을 사실상 이끄는 회사로, 미국은 수출 통제로 중국이 이런 첨단 칩을 쉽게 구하지 못하게 막고 있습니다. 이 때문에 미국 정치권은 중국이 엔비디아를 통해 첨단 반도체 기술에 접근할 가능성을 경계해 왔고, 이번 요구로 엔비디아에 대한 압박이 한층 커진 모습입니다. 의혹의 구체적인 내용과 실제 출석 여부는 기사에서 확인되지 않았습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261107000003\n\n#반도체 #semiconductor #엔비디아 #젠슨황 #미중갈등 #수출통제",
+  "photo_queries": [
+    "capitol dome washington",
+    "government documents envelope",
+    "computer chip closeup"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1273914",
+    "query": "capitol dome washington",
+    "file": "54b0999b81.photo.jpg",
+    "download_url": "https://pixabay.com/get/g20c90ef8cc216cd605248360c120d3ef6a6930bd3f0961d1e3c84de1bc92f58d8315f9334f831d0de6dbb137925123282896bdb96224cf0cbbc4e2cc2a70f3d0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/us-capitol-washington-dc-government-1273914/",
+    "photographer": "Proulain",
+    "photographer_url": "https://pixabay.com/users/Proulain-2265751/",
+    "alt": "us capitol, washington dc, government, dc, us capitol, us capitol, us capitol, us capitol, washington dc, washington dc, washington dc, washington dc, government, government, government, government, government",
+    "width": 2048,
+    "height": 1536,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Proulain / Pixabay"
+  }
+}

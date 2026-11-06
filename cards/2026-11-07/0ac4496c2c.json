@@ -1,0 +1,36 @@
+{
+  "id": "0ac4496c2c",
+  "link": "https://www.theregister.com/hpc/2026/11/06/oak-ridge-labs-gets-hybrid-quantum-hpc-system-to-test-qubit-error-correction/5308187",
+  "source": "The Register",
+  "category": "AI·설계",
+  "published_at": "2026-11-07T02:00+09:00",
+  "headline": "美 국립연구소, IBM 양자컴에 AMD 칩 붙여 오류 잡는다",
+  "bullets": [
+    "오크리지 연구소, 양자 오류 정정 연구용 결합 시스템 공개",
+    "IBM 120큐비트 양자 프로세서 + AMD CPU·GPU 슈퍼컴퓨터",
+    "美 정부 목표인 2028년 실용 양자컴퓨터 개발 연구에 활용"
+  ],
+  "caption": "美 국립연구소, IBM 양자컴에 AMD 칩 붙여 오류 잡는다\n\n미국 에너지부 산하 오크리지 국립연구소가 양자컴퓨터와 일반 슈퍼컴퓨터를 한데 묶은 연구용 시스템을 공개했습니다. IBM의 120큐비트 양자 프로세서를 넣은 양자컴퓨터에, AMD의 서버용 CPU와 GPU 가속기로 만든 슈퍼컴퓨터 'Umbra'를 연결했습니다. 큐비트는 양자컴퓨터의 계산 단위인데, 주변 잡음에 쉽게 상태가 깨져 계산 오류가 많습니다. 이 오류를 실시간으로 찾아 고치는 '양자 오류 정정'에는 빠른 일반 컴퓨터의 계산이 많이 필요해, 두 종류의 컴퓨터를 한 시스템으로 묶은 것입니다. AMD의 Versal 칩은 양자 회로를 제어하고 결과를 읽어 해독하는 역할을 맡습니다. 연구자들은 이 시스템으로 오류 정정 방식과 소프트웨어를 시험할 예정이며, 2028년까지 실용 양자 시스템을 만들라는 미국 대통령 행정명령과 에너지부 계획에도 쓰일 것으로 보입니다.\n\n출처: The Register\nhttps://www.theregister.com/hpc/2026/11/06/oak-ridge-labs-gets-hybrid-quantum-hpc-system-to-test-qubit-error-correction/5308187\n\n#반도체 #semiconductor #양자컴퓨터 #IBM #AMD #슈퍼컴퓨터 #양자오류정정",
+  "photo_queries": [
+    "quantum computer cryostat",
+    "gold dilution refrigerator",
+    "hpc data center aisle"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3092486",
+    "query": "semiconductor",
+    "file": "0ac4496c2c.photo.jpg",
+    "download_url": "https://pixabay.com/get/g12ecd3048f6d445477bbec387d0f883168076382cc2abd3be4ebdc891a75f335dd3d31a797153878824d3420fe0a171e5105a1db1c8535fb5b4f649c2d6f141f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-industry-big-data-cpu-3092486/",
+    "photographer": "jplenio",
+    "photographer_url": "https://pixabay.com/users/jplenio-7645255/",
+    "alt": "technology, industry, big data, cpu, circuit board, intelligence, future, data, chip, big data, big data, big data, big data, cpu, cpu, cpu, cpu, cpu, data, chip, chip, chip, chip",
+    "width": 2275,
+    "height": 1516,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: jplenio / Pixabay",
+    "category": "science"
+  }
+}
