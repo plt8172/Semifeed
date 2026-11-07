@@ -1,0 +1,35 @@
+{
+  "id": "2a0a909911",
+  "link": "https://www.tomshardware.com/pc-components/dram/tsmc-denies-exploring-3d-dram-at-nvidias-request-advanced-memory-tech-is-still-years-from-market-viability",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-07T22:00+09:00",
+  "headline": "엔비디아 요청에 TSMC가 메모리 만든다? TSMC는 부인",
+  "bullets": [
+    "디인포메이션, 엔비디아 요청에 TSMC가 3D D램 생산 검토 보도",
+    "TSMC는 \"파운드리에만 집중\" 공식 부인, 계획 준비설은 계속",
+    "3D D램은 메모리 3사도 수년 걸려 당장 품귀 해소는 어려워"
+  ],
+  "caption": "엔비디아 요청에 TSMC가 메모리 만든다? TSMC는 부인\n\n미국 매체 디인포메이션이 TSMC가 최대 고객 엔비디아의 요청을 받고 3D D램 생산을 검토하고 있다고 보도했습니다. AI 서버 수요로 D램이 모자라고 값이 오르자, 메모리를 확보하려는 엔비디아가 칩 위탁생산 1위인 TSMC에 손을 내밀었다는 내용입니다. TSMC는 톰스하드웨어에 \"우리는 언제나 핵심 사업인 파운드리(설계는 하지 않고 다른 회사 칩을 만들어 주는 사업)에 집중한다\"고 밝혀 사실상 부인했지만, 보도는 이미 내부에서 계획 준비가 시작됐다고 전합니다. D램은 정보를 기억하는 메모리 칩으로, 지금은 셀을 한 층에 평평하게 깔지만 3D D램은 여러 층으로 쌓아 웨이퍼 한 장에서 더 많은 용량을 얻는 차세대 기술입니다. 마이크론·삼성전자·SK하이닉스도 아직 개발 중이고 상용화까지 수년이 남아 있어, 이 계획이 사실이라도 적어도 5년 안에는 품귀를 풀기 어렵다는 것이 기사의 분석입니다. 그만큼 메모리가 AI 칩 출하를 좌우하는 전략 자원이 됐다는 뜻입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/dram/tsmc-denies-exploring-3d-dram-at-nvidias-request-advanced-memory-tech-is-still-years-from-market-viability\n\n#반도체 #semiconductor #메모리 #D램 #3D디램 #TSMC #엔비디아 #파운드리",
+  "photo_queries": [
+    "memory chips closeup",
+    "semiconductor fab interior",
+    "silicon chip layers"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1911695",
+    "query": "memory chips closeup",
+    "file": "2a0a909911.photo.jpg",
+    "download_url": "https://pixabay.com/get/g828c18d4497b551ab1b7c207515dc9916e13c6403e14a3dbfb0e5cce15e85ac2e1a838e7b6e3636acbb6b4e9e3ff4d993a11e49c343ed35fde172d43fd465bae_1280.jpg",
+    "page_url": "https://pixabay.com/photos/printed-circuit-board-1911695/",
+    "photographer": "stux",
+    "photographer_url": "https://pixabay.com/users/stux-12364/",
+    "alt": "printed circuit board, random access memory, green, fund, silver, laptop, component, module, technology, computer, pc, trace, circuit, storage medium, cpu, solder joint, chip, electronics, storage, circuit board, data store, data processing, connection, notebook, mac book pro",
+    "width": 5472,
+    "height": 3648,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: stux / Pixabay"
+  }
+}

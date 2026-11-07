@@ -1,0 +1,35 @@
+{
+  "id": "bf86f0c745",
+  "link": "https://www.theregister.com/devops/2026/11/06/pytorch-215-tackles-the-one-bad-gpu-problem/5308227",
+  "source": "The Register",
+  "category": "AI·설계",
+  "published_at": "2026-11-07T03:36+09:00",
+  "headline": "GPU 하나 고장에 AI 학습 처음부터…파이토치가 막는다",
+  "bullets": [
+    "파이토치 2.15, 엔비디아 GPU 통신 라이브러리 연결부 새로 작성",
+    "느리거나 멈춘 GPU를 빼고 다른 장비로 바꿔 끼울 수 있게",
+    "멈춤 원인을 기록하는 '플라이트 레코더'로 장애 분석 쉬워져"
+  ],
+  "caption": "GPU 하나 고장에 AI 학습 처음부터…파이토치가 막는다\n\nAI 모델은 수많은 GPU가 서로 데이터를 주고받으며 함께 학습하는데, 지금까지는 GPU 하나만 고장 나도 전체 학습 작업을 처음부터 다시 해야 하는 경우가 있었습니다. 더레지스터에 따르면 AI 개발 도구 파이토치의 새 버전 2.15는 GPU끼리 통신하게 해 주는 엔비디아 라이브러리 NCCL('니켈')과 연결되는 부분을 새로 만들었습니다. 이전 방식은 통신 통로가 수십 개씩 생기면서 가끔 서로 멈춰 버리거나 성능이 들쭉날쭉했는데, 새 방식은 통로를 하나로 정리했습니다. 또 GPU가 멈추거나 느려지면 외부 관리 프로그램이 그 GPU를 빼고 대신할 장비를 넣을 수 있게 했습니다. 문제가 생겼을 때 그 직전 동작을 저장해 두는 '플라이트 레코더'도 넣어, 예전처럼 막연한 오류 메시지만 보고 원인을 찾을 필요가 줄었습니다. 수천 개 GPU를 오래 돌리는 대형 AI 학습에서는 장비 고장이 흔하기 때문에, 이런 복구 기능이 곧 비용과 시간 절약으로 이어집니다.\n\n출처: The Register\nhttps://www.theregister.com/devops/2026/11/06/pytorch-215-tackles-the-one-bad-gpu-problem/5308227\n\n#반도체 #semiconductor #AI #GPU #파이토치 #AI인프라 #데이터센터",
+  "photo_queries": [
+    "gpu cluster cables",
+    "computer cooling fans",
+    "network cable patch panel"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3632935",
+    "query": "network cable patch panel",
+    "file": "bf86f0c745.photo.jpg",
+    "download_url": "https://pixabay.com/get/g766dfd4ce3a5e7aa262e14ae00f7b1aff4ac198cde475f678ff12b9aba79173db8ac5717046023d94b5fa1f04b7198315d92a1bdb37b87f881a699c6ea1f11a2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/server-switch-network-router-3632935/",
+    "photographer": "dmitrochenkooleg",
+    "photographer_url": "https://pixabay.com/users/dmitrochenkooleg-7621173/",
+    "alt": "server, switch, network, router, the internet, technology, connection, data, cable, ethernet, web, digital, connections, equipment, server, server, server, server, server, router, router, router, router, ethernet, ethernet, ethernet",
+    "width": 4608,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: dmitrochenkooleg / Pixabay"
+  }
+}

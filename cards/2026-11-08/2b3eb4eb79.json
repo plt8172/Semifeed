@@ -1,0 +1,35 @@
+{
+  "id": "2b3eb4eb79",
+  "link": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
+  "source": "NVIDIA Blog",
+  "category": "AI·설계",
+  "published_at": "2026-11-07T01:00+09:00",
+  "headline": "엔비디아 6G 무료 도구, 1년 새 사용 10배로 늘었다",
+  "bullets": [
+    "엔비디아, 1년 전 무선통신 소프트웨어 'Aerial'을 오픈소스로 공개",
+    "개발자 사용 10배, 5G·6G 도구 100만 다운로드, 기관 8000곳",
+    "로봇 작업시간 최대 52.6% 단축 등 6G 연구 성과 소개"
+  ],
+  "caption": "엔비디아 6G 무료 도구, 1년 새 사용 10배로 늘었다\n\n엔비디아는 1년 전 무선통신 소프트웨어 'Aerial'을 누구나 쓸 수 있는 오픈소스로 공개했고, 통신 시뮬레이션 도구 'Sionna'와 함께 6G 연구에 쓰이도록 제공해 왔습니다. 6G는 지금의 5G 다음 세대 이동통신으로, 데이터 전송뿐 아니라 연산과 주변 감지까지 한 네트워크에서 처리하는 것을 목표로 합니다. 엔비디아에 따르면 지난 1년 동안 두 소프트웨어의 개발자 사용이 10배로 늘었고, 5G·6G 오픈소스 도구 다운로드는 100만 회를 넘었으며, 전 세계 8000곳이 넘는 연구·학술 기관이 쓰고 있습니다. 예를 들어 영국 킹스칼리지런던 연구진은 로봇 팔이 사진 전체 대신 물체의 위치와 관계만 간단히 보내도록 해 작업 시간을 최대 52.6% 줄였습니다. 일본 소프트뱅크는 AI가 잡음 속 신호를 더 잘 알아듣는 수신 기술을 실제 5G 스마트폰으로 시험했습니다. 통신 장비의 핵심이 전용 하드웨어에서 GPU 위에서 도는 소프트웨어로 옮겨 가고 있다는 흐름을 보여 주는 소식입니다.\n\n출처: NVIDIA Blog\nhttps://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/\n\n#반도체 #semiconductor #6G #5G #무선통신 #엔비디아 #통신장비 #AI",
+  "photo_queries": [
+    "cell tower antenna",
+    "telecom antenna rooftop",
+    "robot arm factory"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1880873",
+    "query": "telecom antenna rooftop",
+    "file": "2b3eb4eb79.photo.jpg",
+    "download_url": "https://pixabay.com/get/g946adfe395767caa9ee6e23dc41dc3b64403b857d64b3edb9cc31a9e5e0991fa9158fa4a63773eac9f7dde89652bbde3bdc9338d8d46ab6b0403be583bcdc4ca_1280.jpg",
+    "page_url": "https://pixabay.com/photos/aerial-communication-connection-1880873/",
+    "photographer": "albertoadan",
+    "photographer_url": "https://pixabay.com/users/albertoadan-3864702/",
+    "alt": "aerial, communication, connection, telecommunication, telecom, antenna, blue community, blue communication, telecommunication, telecommunication, telecom, telecom, telecom, telecom, telecom, antenna",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: albertoadan / Pixabay"
+  }
+}

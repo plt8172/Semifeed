@@ -1,0 +1,35 @@
+{
+  "id": "7cfdf33c57",
+  "link": "https://www.tomshardware.com/peripherals/wearable-tech/new-bluetooth-high-data-throughput-may-finally-satisfy-audiophiles-bluetooth-hdt-offers-a-maximum-bandwidth-of-7-5mbps-allowing-true-lossless-transmission",
+  "source": "Tom's Hardware",
+  "category": "전자·부품",
+  "published_at": "2026-11-07T21:30+09:00",
+  "headline": "블루투스 4배 빨라진다…무선 이어폰도 원음 전송 길 열려",
+  "bullets": [
+    "블루투스 SIG, 최대 7.5Mbps 'HDT' 기능 11월 4일 발표",
+    "기존 블루투스 LE 2M(2Mbps)보다 약 4배, 전력은 더 적게",
+    "CD 음질 무손실 음원도 압축 없이 무선 전송 가능해져"
+  ],
+  "caption": "블루투스 4배 빨라진다…무선 이어폰도 원음 전송 길 열려\n\n블루투스 표준을 정하는 단체인 블루투스 SIG가 11월 4일 새 기능 '하이 데이터 스루풋(HDT)'을 발표했습니다. 최대 전송 속도가 7.5Mbps로, 지금까지 쓰던 블루투스 LE 2M(2Mbps)보다 약 4배 빠릅니다. 지금 무선 이어폰은 대역폭이 모자라 CD 음질(약 0.8~1.4Mbps)의 음원조차 안정적으로 보내지 못해 SBC·AAC·LDAC 같은 방식으로 압축해서 보내는데, HDT는 원음을 압축하지 않는 '무손실' 전송도 감당할 수 있습니다. 블루투스 SIG는 HDT가 더 안정적으로 연결되고 전력도 덜 쓴다고 밝혔습니다. 스마트워치, AI 기기, 확장현실(XR) 기기처럼 주고받을 데이터가 많은 기기도 이 기능을 쓸 수 있습니다. 다만 블루투스 코어 규격 7.0을 지원한다고 HDT가 자동으로 들어가는 것은 아니고, 최고 속도인 7.5Mbps는 선택 사항이라 실제 제품마다 지원 범위가 다를 수 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/peripherals/wearable-tech/new-bluetooth-high-data-throughput-may-finally-satisfy-audiophiles-bluetooth-hdt-offers-a-maximum-bandwidth-of-7-5mbps-allowing-true-lossless-transmission\n\n#반도체 #semiconductor #블루투스 #무선통신 #전자부품 #무손실음원 #이어폰",
+  "photo_queries": [
+    "wireless earbuds case",
+    "bluetooth audio speaker",
+    "headphones studio audio"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6849119",
+    "query": "wireless earbuds case",
+    "file": "7cfdf33c57.photo.jpg",
+    "download_url": "https://pixabay.com/get/g4a9e2fefd6d8709e2efaf6951d2207b1a1592cb931547b9df182f7d29cd0cfc4b6598b4a06e9c8aeb6d2a600d2eac7371c31b84341e62462278cb891f95543a0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/earphone-wireless-airpods-audio-6849119/",
+    "photographer": "subarasikiai",
+    "photographer_url": "https://pixabay.com/users/subarasikiai-21956773/",
+    "alt": "earphone, wireless, airpods, audio, music, listening, technology, airpods, airpods, airpods, airpods, airpods",
+    "width": 6048,
+    "height": 4024,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: subarasikiai / Pixabay"
+  }
+}

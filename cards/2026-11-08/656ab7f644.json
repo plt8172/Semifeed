@@ -1,0 +1,35 @@
+{
+  "id": "656ab7f644",
+  "link": "https://semiengineering.com/physical-ai-pushes-the-limits-of-hardware/",
+  "source": "Semiconductor Engineering",
+  "category": "AI·설계",
+  "published_at": "2026-11-05T17:01+09:00",
+  "headline": "로봇·드론에 들어갈 AI, 칩 설계를 처음부터 다시 짠다",
+  "bullets": [
+    "PwC 계열 스트래티지앤드, 피지컬 AI 시장 2030년 약 4300억유로 전망",
+    "메모리 용량·대역폭, 전력, 수명, 안전 문제가 한꺼번에 얽혀",
+    "업계 \"범용 칩 대신 용도별 맞춤 칩(ASIC)으로 돌아간다\""
+  ],
+  "caption": "로봇·드론에 들어갈 AI, 칩 설계를 처음부터 다시 짠다\n\n'피지컬 AI'는 로봇·드론·자율주행차처럼 센서로 주변을 읽고 실제로 움직이는 기계에 들어가는 AI를 말합니다. PwC 계열 컨설팅사 스트래티지앤드는 이 시장이 2030년 약 4300억유로 규모가 될 수 있다고 전망했습니다. 반도체 엔지니어링 보도에 따르면 이런 기계는 클라우드에 기대지 않고 기기 안에서 바로 판단해야 해서 칩 설계가 훨씬 까다롭습니다. 메모리 용량과 속도는 늘리고, 지연 시간과 전력은 줄이고, 제품 수명은 길게 하면서 안전까지 검증해야 하는데, 하나를 풀면 다른 쪽에 문제가 생기기 쉽습니다. 그래서 설계 업계에서는 여러 용도에 두루 쓰는 범용 칩 대신, 특정 작업에 딱 맞춘 ASIC(특정 용도 전용 칩)으로 돌아가고 있다는 말이 나옵니다. AI 칩 경쟁이 데이터센터를 넘어 기계 하나하나에 들어가는 맞춤 칩으로 넓어지고 있다는 뜻입니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/physical-ai-pushes-the-limits-of-hardware/\n\n#반도체 #semiconductor #피지컬AI #AI반도체 #ASIC #로봇 #칩설계",
+  "photo_queries": [
+    "delivery drone flying",
+    "industrial robot welding",
+    "autonomous car sensors"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1080844",
+    "query": "delivery drone flying",
+    "file": "656ab7f644.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2af9cc4660209c6f702e4c355b8eceb6f7617a345fc4e2d04dc457160f3926a6d50f689041e2bb1893d386495d3c17871805e16f44f7d2fc07ade70a220d533e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/drone-camera-flying-sky-1080844/",
+    "photographer": "Powie",
+    "photographer_url": "https://pixabay.com/users/Powie-1550508/",
+    "alt": "drone, camera, flying, nature, sky, camera drone, gimbal camera, dji, dji inspire 1, flight, technology",
+    "width": 5070,
+    "height": 3491,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Powie / Pixabay"
+  }
+}
