@@ -1,0 +1,35 @@
+{
+  "id": "80b815f686",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/protesters-storm-microsoft-ai-data-center-construction-site-amsterdam-reportedly-first-of-85-targeted-actions-across-europe",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-06T22:59+09:00",
+  "headline": "유럽 16개국 AI 데이터센터 반대 시위…MS 공사장 점거",
+  "bullets": [
+    "암스테르담 MS 데이터센터 공사장에 시위대 약 100명 진입",
+    "16개국 85곳에서 시위 예고…대형 데이터센터 중단 요구",
+    "덴마크는 전력망 연결 신청이 60GW 넘자 접수 멈춰"
+  ],
+  "caption": "유럽 16개국 AI 데이터센터 반대 시위…MS 공사장 점거\n\n네덜란드 암스테르담에서 짓고 있는 마이크로소프트 데이터센터 공사장에 시위대 약 100명이 담을 넘어 들어가 현장을 점거했다고 로이터가 전했습니다. 시위를 이끈 'Stop Dirty Data Centres' 연합은 11월 6~7일 더블린, 바르샤바, 덴마크의 다른 마이크로소프트 부지 등 유럽 16개국에서 행동에 나서고, 앞으로 85곳에서 시위를 이어 가겠다고 밝혔습니다. 이들은 AI 데이터센터가 늘면서 전기요금과 물 부족, 기후 문제가 커진다며 유럽 내 대형 데이터센터 건설을 당장 멈추라고 요구합니다. 데이터센터는 수많은 AI 서버를 돌리느라 전기를 매우 많이 쓰는 시설입니다. 실제로 덴마크는 데이터센터의 전력망 연결 신청이 60GW를 넘어 나라 전체 최대 전력 사용량의 8배를 넘자 신청을 받지 않기로 했습니다. 미국에 이어 유럽에서도 반발이 커지면서, AI 칩을 돌릴 데이터센터를 제때 짓는 일이 점점 어려워지고 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/protesters-storm-microsoft-ai-data-center-construction-site-amsterdam-reportedly-first-of-85-targeted-actions-across-europe\n\n#반도체 #semiconductor #데이터센터 #AI인프라 #마이크로소프트 #유럽 #전력",
+  "photo_queries": [
+    "construction site fence",
+    "power grid substation",
+    "data center building exterior"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7519979",
+    "query": "power grid substation",
+    "file": "80b815f686.photo.jpg",
+    "download_url": "https://pixabay.com/get/g5aa7589556139233d300a5b50d61f491b87db2c5f8a6a12f804ada5eb14c28eab6aee0c66414dca45d0ab07d3c74670e7f32bea17fb2be8a0f76db844028abef_1280.jpg",
+    "page_url": "https://pixabay.com/photos/power-plant-industry-installation-7519979/",
+    "photographer": "Camera-man",
+    "photographer_url": "https://pixabay.com/users/Camera-man-16096197/",
+    "alt": "power plant, industry, installation, electricity supply, electricity, energy problem, distribution, supplying, power, energy production, energy crisis, power plant, power plant, power plant, power plant, power plant, energy crisis, energy crisis",
+    "width": 4016,
+    "height": 2677,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Camera-man / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "751583ab57",
+  "link": "https://www.theregister.com/public-sector/2026/11/06/us-air-traffic-control-enters-the-21st-century-starts-to-abandon-floppy-disks/5308210",
+  "source": "The Register",
+  "category": "전자·부품",
+  "published_at": "2026-11-07T03:06+09:00",
+  "headline": "美 항공관제, 2028년까지 플로피디스크 쓰는 장비 퇴출",
+  "bullets": [
+    "1980년대부터 쓴 정보 시스템 4종을 새 시스템 E-IDS로 교체",
+    "공항 등 5곳부터 시작해 2028년 말까지 435곳에 설치",
+    "관제 시스템 138개 중 51개는 부품·예산 부족으로 유지 곤란"
+  ],
+  "caption": "美 항공관제, 2028년까지 플로피디스크 쓰는 장비 퇴출\n\n미국 연방항공청(FAA)이 항공 관제에 아직 쓰고 있는 플로피디스크 기반 장비를 없애겠다고 발표했습니다. 플로피디스크는 1980~90년대 PC에서 쓰던 얇은 사각형 저장 매체로, 지금의 USB 메모리보다 용량이 수천 배 작습니다. FAA는 날씨, 공항·공역 상황, 항공편 정보를 보여 주던 1980년대 시스템 4종을 하나로 합친 새 시스템 'E-IDS'로 바꿉니다. 애틀랜틱시티·내슈빌·로체스터 공항과 애틀랜타·솔트레이크시티 데이터 처리 거점 5곳에서 먼저 시작해, 2028년 말까지 435곳에 설치할 계획입니다. 미국 회계감사원은 2024년에 FAA 관제 시스템 138개 중 51개가 부품과 예산이 없어 유지하기 어렵다고 지적한 바 있습니다. 의회가 이미 125억달러를 배정했지만, FAA는 관제 현대화를 마치려면 300억달러가 더 필요하다며 추가 예산을 요청하고 있습니다.\n\n출처: The Register\nhttps://www.theregister.com/public-sector/2026/11/06/us-air-traffic-control-enters-the-21st-century-starts-to-abandon-floppy-disks/5308210\n\n#반도체 #semiconductor #플로피디스크 #항공관제 #레거시시스템 #전자 #인프라",
+  "photo_queries": [
+    "floppy disk stack",
+    "air traffic control tower",
+    "radar screen display"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2346764",
+    "query": "floppy disk stack",
+    "file": "751583ab57.photo.jpg",
+    "download_url": "https://pixabay.com/get/g7564bfe8dd3757b605c3806713a0a704120f1a39f266099094e5af266e5a65d3167ec94a9f0c172c491f3ce663da75c331a91e28bd019cd5afc6c7630d3b4335_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computer-disk-wallpaper-office-2346764/",
+    "photographer": "Frantisek_Krejci",
+    "photographer_url": "https://pixabay.com/users/Frantisek_Krejci-810589/",
+    "alt": "computer, 4k wallpaper, beautiful wallpaper, mac wallpaper, wallpaper hd, cool backgrounds, disk, laptop wallpaper, wallpaper, wallpaper 4k, windows wallpaper, office, desktop backgrounds, free wallpaper, retro, free background, 4k wallpaper 1920x1080, full hd wallpaper, hd wallpaper, background",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Frantisek_Krejci / Pixabay"
+  }
+}

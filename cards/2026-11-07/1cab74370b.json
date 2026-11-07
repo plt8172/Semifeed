@@ -1,0 +1,35 @@
+{
+  "id": "1cab74370b",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-wants-to-repurpose-over-130-old-telco-buildings-as-tiny-data-centers-report-claims-company-in-talks-with-brightspeed-after-pitching-idea-to-parent-company-apollo-global-management",
+  "source": "Tom's Hardware",
+  "category": "AI·설계",
+  "published_at": "2026-11-06T21:45+09:00",
+  "headline": "엔비디아, 통신사 옛 건물 130곳 AI 데이터센터로 바꾸나",
+  "bullets": [
+    "美 통신사 브라이트스피드와 건물 전환을 협의 중이라는 보도",
+    "130곳 합치면 약 1GW, AI 서버 랙 2200개 넘게 들어갈 규모",
+    "새로 짓는 것보다 허가·주민 반대 부담이 적다는 계산"
+  ],
+  "caption": "엔비디아, 통신사 옛 건물 130곳 AI 데이터센터로 바꾸나\n\n미국 통신사 브라이트스피드가 전국에 가진 건물 약 130곳을 작은 AI 데이터센터로 바꾸는 방안을 엔비디아와 협의하고 있다고 미국 매체 디인포메이션이 보도했습니다. 엔비디아가 브라이트스피드의 모회사인 사모펀드 아폴로에 먼저 제안했고, 지금은 자료를 더 요청하고 현장 방문도 추진하는 단계입니다. 통신사 건물은 원래 전화·데이터 장비를 돌리던 곳이라 서버에 필요한 전력 설비가 이미 갖춰져 있습니다. 엔비디아는 130곳을 합치면 약 1GW의 계산 능력을 낼 수 있다고 본 것으로 알려졌는데, 이는 최신 AI 서버 랙 2200개 이상이 들어갈 규모입니다. 다만 냉각 설비는 새로 설치해야 하고 지자체 허가도 필요합니다. 최근 미국에서는 대형 데이터센터에 대한 주민 반대와 규제가 늘고 있어, 이미 있는 건물을 쓰면 새로 짓는 것보다 시간과 반대를 줄일 수 있다는 계산입니다. 이렇게 흩어진 작은 시설들은 AI를 학습시키기보다, 이미 만든 AI 모델을 돌려 답을 내는 '추론'용 네트워크로 쓰인다는 설명입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/nvidia-wants-to-repurpose-over-130-old-telco-buildings-as-tiny-data-centers-report-claims-company-in-talks-with-brightspeed-after-pitching-idea-to-parent-company-apollo-global-management\n\n#반도체 #semiconductor #데이터센터 #엔비디아 #AI인프라 #통신 #AI반도체",
+  "photo_queries": [
+    "telephone exchange equipment",
+    "telecom building rooftop antennas",
+    "data center cooling pipes"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2209528",
+    "query": "telephone exchange equipment",
+    "file": "1cab74370b.photo.jpg",
+    "download_url": "https://pixabay.com/get/g3d2c379d7eeeaa136a8a42eb5a1e249304f4306314e973bae1e23698a6693d4029c49754539a44e42063af404343144d4fb7ff8f1883f6d87a57dee1c59da03b_1280.jpg",
+    "page_url": "https://pixabay.com/photos/phone-cables-technology-telephone-2209528/",
+    "photographer": "securefix",
+    "photographer_url": "https://pixabay.com/users/securefix-4848608/",
+    "alt": "phone, cables, technology, telephone, connection, communication, equipment, gadget, connect, electronic, data, brown phone, brown data, brown community, brown communication, brown telephone",
+    "width": 4032,
+    "height": 3024,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: securefix / Pixabay"
+  }
+}
