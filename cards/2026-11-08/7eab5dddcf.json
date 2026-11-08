@@ -1,0 +1,35 @@
+{
+  "id": "7eab5dddcf",
+  "link": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+  "source": "NVIDIA Blog",
+  "category": "AI·설계",
+  "published_at": "2026-11-06T05:00+09:00",
+  "headline": "엔비디아 \"새 CPU, 기존 서버 칩보다 AI 일 2배 빨라\"",
+  "bullets": [
+    "엔비디아, AI 에이전트용 서버 CPU 베라 성능 자료 공개",
+    "가장 효율 좋은 x86 대비 2배 빠르고, 전력당 1.6배 더 처리",
+    "퍼플렉시티 등 초기 고객사도 1.5~2.2배 빨랐다고 밝혀"
+  ],
+  "caption": "엔비디아 \"새 CPU, 기존 서버 칩보다 AI 일 2배 빨라\"\n\n엔비디아가 서버용 CPU '베라'가 기존 x86 서버 칩보다 AI 에이전트 작업을 더 빠르고 효율적으로 처리한다는 자료를 공개했습니다. x86은 인텔과 AMD가 만드는 PC·서버 CPU의 표준 설계 방식입니다. AI 에이전트는 답을 만드는 일은 GPU에서 하지만, 정보 검색·데이터베이스 조회·코드 실행처럼 실제로 일을 처리하는 단계는 CPU에서 하기 때문에 에이전트가 늘수록 CPU 성능이 중요해집니다. 엔비디아는 100메가와트 데이터센터를 가정한 비교에서 베라가 가장 빠른 x86 CPU보다 전력당 1.6배 많은 에이전트를 돌리고, 가장 전력 효율이 좋은 x86 CPU보다 2배 빠르다고 밝혔습니다. 퍼플렉시티는 코딩 작업이 1.5배, 딥인프라는 최대 2.2배 빨랐다고 전했습니다. 다만 모두 엔비디아와 고객사가 낸 수치입니다. GPU 강자인 엔비디아가 인텔·AMD가 지켜 온 서버 CPU 시장까지 넘보고 있다는 뜻입니다.\n\n출처: NVIDIA Blog\nhttps://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/\n\n#반도체 #semiconductor #CPU #엔비디아 #AI에이전트 #서버 #데이터센터",
+  "photo_queries": [
+    "processor die closeup",
+    "motherboard cpu cooler",
+    "data center power cables"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3374916",
+    "query": "motherboard cpu cooler",
+    "file": "7eab5dddcf.photo.jpg",
+    "download_url": "https://pixabay.com/get/g7a3de4586c75f950ff14a03fa7d9e8c175f3b0fa07a6e4be92c107e33a83bdbeae7941406fb72cf89e014f01466c16ee21cdf46fa5d50825ab618b79ec529a3b_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-computer-part-header-3374916/",
+    "photographer": "bluebudgie",
+    "photographer_url": "https://pixabay.com/users/bluebudgie-4333174/",
+    "alt": "technology, computer part, header, connection, memory, pc, circuit, processor, motherboard, component, connect, integrated, silicon, printed circuit board, chip, digital, electronic, cooler, power, board, device, socket, airflow, slots, heatsink, motherboard, motherboard, motherboard, motherboard, motherboard, heatsink, heatsink, heatsink, heatsink",
+    "width": 5184,
+    "height": 2113,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: bluebudgie / Pixabay"
+  }
+}

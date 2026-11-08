@@ -1,0 +1,35 @@
+{
+  "id": "3df4d68063",
+  "link": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+  "source": "NVIDIA Blog",
+  "category": "메모리",
+  "published_at": "2026-11-06T01:00+09:00",
+  "headline": "엔비디아, 메모리 3% 늘리고 AI 효율 최대 30배 주장",
+  "bullets": [
+    "AI 메모리 품귀·가격 상승 속 엔비디아, HBM 활용법 공개",
+    "베라 루빈, GPU당 HBM 3% 늘고 달러당 처리량 최대 30배",
+    "모델·대화 기억은 압축, 안 쓰는 데이터는 싼 저장장치로"
+  ],
+  "caption": "엔비디아, 메모리 3% 늘리고 AI 효율 최대 30배 주장\n\n엔비디아가 AI용 메모리가 모자라고 값이 오르는 상황에서 메모리를 더 많이 다는 대신 같은 메모리를 더 알뜰하게 쓰는 방법을 블로그에 공개했습니다. AI 칩 옆에 붙는 HBM(고대역폭 메모리)은 D램을 여러 층 쌓아 데이터를 매우 빠르게 주고받는 메모리로, 가장 빠르지만 가장 비싸고 구하기도 어렵습니다. AI 모델이 커지고 AI 에이전트가 긴 대화 맥락을 계속 들고 다니면서 이 HBM에 담아야 할 데이터가 빠르게 늘고 있습니다. 엔비디아는 모델 데이터와 대화 기억(KV 캐시)을 압축하고, 당장 쓰지 않는 데이터는 CPU 메모리나 SSD처럼 더 싼 저장 공간으로 옮겼다가 필요할 때 다시 불러오는 방식으로 HBM 부담을 줄인다고 설명합니다. 그 결과 차세대 플랫폼 베라 루빈은 이전 세대보다 GPU당 HBM 용량이 약 3%만 늘었지만, 세미애널리시스의 에이전트 성능 시험에서 1달러당 처리량이 최대 30배 높았다는 것이 엔비디아의 주장입니다. 메모리 공급이 빠듯한 가운데, 메모리 양보다 쓰는 방식이 AI 칩 경쟁력을 가르는 요소가 되고 있다는 뜻입니다.\n\n출처: NVIDIA Blog\nhttps://blogs.nvidia.com/blog/memory-full-stack-codesign/\n\n#반도체 #semiconductor #메모리 #HBM #엔비디아 #AI반도체 #데이터센터",
+  "photo_queries": [
+    "ram module slots",
+    "storage server hard drives",
+    "data center corridor"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4393381",
+    "query": "ram module slots",
+    "file": "3df4d68063.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0bd63373d970833eaa7f97ef982b2bf232691dba01b91d50d38d0fba0cbd3dc8fea952fdb4b7db51ca264fba004a786720b483cf3e5d0fc8333694076f94c277_1280.jpg",
+    "page_url": "https://pixabay.com/photos/r-a-m-storage-random-access-memory-4393381/",
+    "photographer": "Bru-nO",
+    "photographer_url": "https://pixabay.com/users/Bru-nO-1161770/",
+    "alt": "r a m, storage, random access memory, dimm, chip, pc, computer, hardware, electronics, technology, smd",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Bru-nO / Pixabay"
+  }
+}
