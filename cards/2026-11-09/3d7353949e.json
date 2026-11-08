@@ -1,0 +1,35 @@
+{
+  "id": "3d7353949e",
+  "link": "https://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors",
+  "source": "Tom's Hardware",
+  "category": "장비·소재",
+  "published_at": "2026-11-09T00:25+09:00",
+  "headline": "구리보다 열 5배 잘 빼는 다이아몬드, 칩 웨이퍼 크기로 나왔다",
+  "bullets": [
+    "다이아몬드 파운드리, 세계 첫 200mm 단결정 다이아몬드 웨이퍼 공개",
+    "열전도율 구리의 5배 이상, 전기는 통하지 않아 칩 냉각에 유리",
+    "아직 연마 전 시제품, 2030년 전 300mm까지 가능하다고 밝혀"
+  ],
+  "caption": "구리보다 열 5배 잘 빼는 다이아몬드, 칩 웨이퍼 크기로 나왔다\n\n인공 다이아몬드를 만드는 미국 기업 다이아몬드 파운드리가 지름 200mm짜리 단결정 다이아몬드 웨이퍼를 세계 처음으로 만들었다고 발표했습니다. 웨이퍼는 반도체 칩을 만드는 둥근 원판인데, 200mm는 반도체 공장이 비교적 오래된 공정에서 쓰는 크기입니다. 다이아몬드는 열을 전달하는 능력이 구리보다 최소 5배 높으면서도 전기는 통하지 않아, 칩에서 생기는 열을 빼내는 소재로 주목받아 왔습니다. 특히 단결정, 즉 하나의 결정으로 이어진 다이아몬드는 만들기 어렵지만 열을 가장 효율적으로 전달해 칩의 특정 부분이 뜨거워지는 '핫스폿'을 줄이는 데 유리합니다. AI 칩은 전력을 많이 쓰면서 발열이 큰 문제가 됐기 때문에 이런 소재의 대량 생산이 중요해졌습니다. 다만 공개된 시제품은 아직 연마 전이라 칩 제조사가 쓰려면 추가 가공이 필요합니다. 회사는 최첨단 공정에 쓰는 300mm 웨이퍼도 2030년 이전에 만들 수 있을 것으로 보고 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors\n\n#반도체 #semiconductor #다이아몬드 #웨이퍼 #반도체소재 #칩냉각 #AI칩",
+  "photo_queries": [
+    "raw diamond crystal",
+    "laboratory crystal growth",
+    "heatsink copper fins"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1476905",
+    "query": "raw diamond crystal",
+    "file": "3d7353949e.photo.jpg",
+    "download_url": "https://pixabay.com/get/gcc80a7b6685cb49e783a5fe3370584859cc5ff589d6c7cabcd4ddbcb70c627f5e1e6d325248314496a8a01cb67917921a3b4353f6288f5f336d1cf03674c293d_1280.jpg",
+    "page_url": "https://pixabay.com/photos/glass-piece-broken-crystallized-1476905/",
+    "photographer": "qimono",
+    "photographer_url": "https://pixabay.com/users/qimono-1962238/",
+    "alt": "glass, piece, broken, crystallized, artistic, clean, cracks, material, decoration, deco, clear, crystal, white, see through, red, lump, festive, shine, shiny, mineral, jewellery, gem, jewel, rock, geology, treasure, rare, mining, buried, stone, precious, jewelry, semiprecious, gemstone, luxury, diamond, brilliant, jewelery, elegance, transparent, diamond wallpaper, gray wallpaper, gray diamond, gray jewelry, gray clean",
+    "width": 5000,
+    "height": 3333,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: qimono / Pixabay"
+  }
+}

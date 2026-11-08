@@ -1,0 +1,35 @@
+{
+  "id": "e66f8f3dbe",
+  "link": "https://www.etnews.com/20261109000007",
+  "source": "전자신문",
+  "category": "정책·공급망",
+  "published_at": "2026-11-09T07:01+09:00",
+  "headline": "엔비디아 이사회, 젠슨 황 '中정보기관 표적' 보도 조사 착수",
+  "bullets": [
+    "이사회, 황 CEO가 외국 정보기관 표적이 됐다는 보도 독립 조사",
+    "외부 독립 변호사 자문 받는 독립 이사 위원회가 조사 감독",
+    "황 CEO는 사내 이메일로 불륜 인정하고 가족·임직원에 사과"
+  ],
+  "caption": "엔비디아 이사회, 젠슨 황 '中정보기관 표적' 보도 조사 착수\n\n세계 최대 AI 칩 기업 엔비디아의 이사회가 창업자이자 최고경영자(CEO)인 젠슨 황이 외국 정보기관의 표적이 됐다는 보도와 관련해 독립 조사에 들어갔습니다. 이사회는 8일(현지시간) 공식 성명에서 이를 발표했고, 조사는 외부 독립 변호사의 자문을 받는 독립 이사 위원회가 맡습니다. 황 CEO는 사내 이메일을 통해 불륜 사실을 인정하고 가족과 임직원에게 사과했으며, 조사에 협조하겠다는 입장입니다. 이 사안이 산업적으로 주목받는 이유는 엔비디아의 AI 칩이 미국의 대중국 수출 통제 대상이기 때문입니다. 수출 통제는 첨단 반도체가 중국의 군사·AI 기술 발전에 쓰이지 않도록 미국 정부가 판매를 제한하는 제도입니다. 중국 정보기관이 실제로 개입했는지는 독립적으로 확인되지 않았으며, 이사회 조사 결과에 따라 엔비디아 경영과 미중 반도체 갈등에 미칠 영향이 달라질 수 있습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261109000007\n\n#반도체 #semiconductor #엔비디아 #수출통제 #미중갈등 #AI칩",
+  "photo_queries": [
+    "corporate boardroom table",
+    "documents investigation folder",
+    "office building glass facade"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2181951",
+    "query": "corporate boardroom table",
+    "file": "e66f8f3dbe.photo.jpg",
+    "download_url": "https://pixabay.com/get/g6a82e252551a20652a706e0d47796f0baf561356f534b1753c667799c35d34f8162b2b6c3e5cc8099386521bafa80126158b4abd4e08b1394aa102ea0916ff4d_1280.jpg",
+    "page_url": "https://pixabay.com/photos/chairs-conference-room-furniture-2181951/",
+    "photographer": "Pexels",
+    "photographer_url": "https://pixabay.com/users/Pexels-2286921/",
+    "alt": "chairs, conference room, furniture, indoors, interior design, office, room, table, boardroom, interior decoration, office, office, office, office, office, table",
+    "width": 5431,
+    "height": 3621,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Pexels / Pixabay"
+  }
+}

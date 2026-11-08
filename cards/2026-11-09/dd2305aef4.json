@@ -1,0 +1,35 @@
+{
+  "id": "dd2305aef4",
+  "link": "https://www.etnews.com/20261109000006",
+  "source": "전자신문",
+  "category": "정책·공급망",
+  "published_at": "2026-11-09T06:54+09:00",
+  "headline": "앤트로픽, 4.6조원 들여 AI용 가스 발전설비 직접 샀다",
+  "bullets": [
+    "FT 보도: 앤트로픽, 34억달러 투자해 가스 발전설비 확보",
+    "전력회사에 기대는 대신 데이터센터 전력 직접 마련하는 전략",
+    "AI 데이터센터 전력 수요 급증에 AI 기업들 전력 확보 본격화"
+  ],
+  "caption": "앤트로픽, 4.6조원 들여 AI용 가스 발전설비 직접 샀다\n\nAI 기업 앤트로픽이 AI 데이터센터에 쓸 전기를 안정적으로 얻기 위해 가스 발전설비를 직접 사들였습니다. 파이낸셜타임스(FT)에 따르면 투자 규모는 34억달러(약 4조6000억원)입니다. 데이터센터는 AI 모델을 학습시키고 서비스하는 수많은 서버와 반도체 칩이 모인 시설로, 24시간 막대한 전기를 씁니다. AI 데이터센터가 빠르게 늘면서 전력 수요가 급증했고, 전력회사의 공급만 기다리다가는 시설을 제때 돌리지 못할 수 있다는 걱정이 커졌습니다. 그래서 앤트로픽은 발전설비를 먼저 확보해 전력 수급의 불확실성을 줄이는 쪽을 택했습니다. 전자신문은 AI 기업들이 이처럼 전력 인프라를 직접 확보하는 움직임이 본격화하고 있다고 전했습니다. AI 경쟁이 칩과 모델을 넘어 전기를 누가 먼저 확보하느냐의 경쟁으로도 번지고 있다는 뜻입니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261109000006\n\n#반도체 #semiconductor #AI #데이터센터 #전력 #AI인프라 #앤트로픽",
+  "photo_queries": [
+    "gas turbine power plant",
+    "power plant chimneys",
+    "high voltage transmission lines"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5452632",
+    "query": "gas turbine power plant",
+    "file": "dd2305aef4.photo.jpg",
+    "download_url": "https://pixabay.com/get/g77cf5a8e00c9a9ef34082aeca472825c9799a2ef358a30614a8d6728ba398625afc17709c8ac8606a01d1a3f31152a314317dcb873629d5170d113881c4b6c09_1280.jpg",
+    "page_url": "https://pixabay.com/photos/power-plant-carbon-5452632/",
+    "photographer": "grunzibaer",
+    "photographer_url": "https://pixabay.com/users/grunzibaer-6260337/",
+    "alt": "power plant, carbon, coal fired power plant, industry, environment, chimney, pollution, smoke, ruhr area, power generation, cooling towers, factory, steam, sky, power supply, nature, industrial plant",
+    "width": 3710,
+    "height": 2474,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: grunzibaer / Pixabay"
+  }
+}
