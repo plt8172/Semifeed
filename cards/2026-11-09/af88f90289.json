@@ -1,0 +1,36 @@
+{
+  "id": "af88f90289",
+  "link": "https://www.theregister.com/on-prem/2026/11/09/memory-crunch-makes-refurbished-kit-look-a-lot-less-secondhand/5307758",
+  "source": "The Register",
+  "category": "메모리",
+  "published_at": "2026-11-09T18:30+09:00",
+  "headline": "메모리값 4배 넘게 뛰자 중고 리퍼 장비로 눈 돌린다",
+  "bullets": [
+    "올해 메모리 가격 4배 이상 상승, 제조사들이 HBM 생산 우선",
+    "고객들 리퍼(재정비) 제품으로 이동, 최대 3년 보증도 등장",
+    "옴디아 \"2030년 채널 판매 장비 35%가 회수될 것\""
+  ],
+  "caption": "메모리값 4배 넘게 뛰자 중고 리퍼 장비로 눈 돌린다\n\n메모리 가격이 크게 오르면서 기업 고객들이 새 장비 대신 리퍼비시(재정비) 제품을 찾는 경우가 늘고 있다고 영국 IT 매체 The Register가 전했습니다. 기사에 따르면 올해 메모리 비용은 4배 넘게 뛰었는데, 메모리 제조사들이 AI 데이터센터 서버에 들어가는 고대역폭메모리(HBM)를 더 수익성이 높다고 보고 우선 생산하고 있기 때문입니다. HBM은 D램을 여러 층 쌓아 데이터를 아주 빠르게 주고받게 만든 AI 칩용 메모리라, 생산 능력이 그쪽으로 쏠리면 일반 PC·서버용 메모리가 귀해집니다. 리퍼 제품은 쓰던 장비를 회수해 점검·수리한 뒤 다시 파는 것으로, HP 등과 협력해 최대 3년 보증을 붙이는 업체도 생겼습니다. 시장조사업체 옴디아는 2030년까지 유통 채널에서 팔린 하드웨어의 35%가 협력사에 회수될 것으로 내다봤습니다. 다만 고객이 오래된 기기를 내놓지 않아 물량 확보가 어렵고, 품질 검증 기준을 마련하는 것이 과제로 꼽혔습니다.\n\n출처: The Register\nhttps://www.theregister.com/on-prem/2026/11/09/memory-crunch-makes-refurbished-kit-look-a-lot-less-secondhand/5307758\n\n#반도체 #semiconductor #메모리 #D램 #HBM #메모리가격 #리퍼비시",
+  "photo_queries": [
+    "ram sticks pile",
+    "refurbished laptops stack",
+    "electronics recycling bin"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "9365237",
+    "query": "printed circuit board",
+    "file": "af88f90289.photo.jpg",
+    "download_url": "https://pixabay.com/get/geca9e497624ee1adcfedcc3c3420ba797d7dc237b22de5b1d7248c371ff9a10af058626e0cbf779d3964329c6f769fedb9a9de5d7417e67d592805a8449ebed7_1280.jpg",
+    "page_url": "https://pixabay.com/photos/circuit-electronic-phone-samsung-9365237/",
+    "photographer": "Surprising_Media",
+    "photographer_url": "https://pixabay.com/users/Surprising_Media-11873433/",
+    "alt": "circuit, electronic, phone, samsung, connectors, smd, components, technology, printed circuit board",
+    "width": 4726,
+    "height": 2988,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Surprising_Media / Pixabay",
+    "category": "computer"
+  }
+}

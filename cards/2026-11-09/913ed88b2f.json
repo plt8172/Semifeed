@@ -1,0 +1,35 @@
+{
+  "id": "913ed88b2f",
+  "link": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+  "source": "EE Times",
+  "category": "AI·설계",
+  "published_at": "2026-11-09T15:47+09:00",
+  "headline": "5W로 대형 AI 모델 돌리는 칩, 딥엑스 2세대 설계 끝냈다",
+  "bullets": [
+    "딥엑스, 2세대 AI 가속기 칩 테이프아웃(설계 완료)",
+    "메모리 안에서 연산하는 LPDDR5x-PIM으로 성능 6.7배 목표",
+    "5W 이하로 기기 안에서 대형 언어모델 구동, 로봇 등 겨냥"
+  ],
+  "caption": "5W로 대형 AI 모델 돌리는 칩, 딥엑스 2세대 설계 끝냈다\n\nAI 반도체 기업 딥엑스가 2세대 AI 가속기 칩의 테이프아웃을 마쳤다고 EE Times가 전했습니다. 테이프아웃은 칩 설계를 끝내고 공장에 생산용 설계도를 넘기는 단계로, 실제 칩이 나오기 직전 과정입니다. 이번 칩은 LPDDR5x-PIM을 활용해 성능을 6.7배 높이는 것을 목표로 합니다. PIM(Processing-In-Memory)은 데이터를 저장하는 메모리 안에서 일부 계산까지 처리하는 기술로, 메모리와 프로세서 사이를 오가는 데이터가 줄어 속도와 전력 효율이 좋아집니다. LPDDR5x는 스마트폰처럼 전력이 중요한 기기에 쓰는 저전력 D램입니다. 딥엑스는 5W도 안 되는 전력으로 대형 언어모델을 인터넷 연결 없이 기기 안에서 돌릴 수 있다고 설명했습니다. 로봇처럼 클라우드에 기대기 어려운 '엣지' 기기에서 AI를 쓰려는 수요를 노린 것입니다.\n\n출처: EE Times\nhttps://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/\n\n#반도체 #semiconductor #AI반도체 #PIM #LPDDR5X #온디바이스AI #엣지AI #딥엑스",
+  "photo_queries": [
+    "robot arm closeup",
+    "embedded circuit board",
+    "security camera mount"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4753037",
+    "query": "embedded circuit board",
+    "file": "913ed88b2f.photo.jpg",
+    "download_url": "https://pixabay.com/get/g37a9496126f3b6617779cbea5134deb54cecaa8934107ae651f2faa62df67ab1fdafa57336b27e61e2ba057e6557a451ec92c54e73f42e717af3b318764e6aea_1280.jpg",
+    "page_url": "https://pixabay.com/photos/processor-beaglebone-cpu-4753037/",
+    "photographer": "christoph1703",
+    "photographer_url": "https://pixabay.com/users/christoph1703-633357/",
+    "alt": "processor, beaglebone, cpu, texas instruments, smd, electronics, sbc, technology, hardware, board, digital, silicon, ram, gray digital, gray board, beaglebone, cpu, cpu, cpu, cpu, cpu, texas instruments, texas instruments, texas instruments, smd, sbc, sbc, silicon, silicon, silicon, ram",
+    "width": 5194,
+    "height": 3457,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: christoph1703 / Pixabay"
+  }
+}

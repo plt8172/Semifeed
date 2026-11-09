@@ -1,0 +1,35 @@
+{
+  "id": "e0a7468d01",
+  "link": "https://www.theregister.com/systems/2026/11/09/huawei-says-its-made-a-100-percent-chinese-pc/5308335",
+  "source": "The Register",
+  "category": "정책·공급망",
+  "published_at": "2026-11-09T11:14+09:00",
+  "headline": "화웨이 \"부품 100% 중국산\" PC 내놨다",
+  "bullets": [
+    "화웨이, 자체 기린 X90 칩·하모니OS 탑재 데스크톱 출시",
+    "中 정부 기관 한 곳이 600대 계약, 정부는 국산 PC 전환 지시",
+    "설계까지 모두 중국산인지는 불분명, 인텔·AMD엔 악재"
+  ],
+  "caption": "화웨이 \"부품 100% 중국산\" PC 내놨다\n\n중국 화웨이가 중국에서 만든 부품만 썼다는 데스크톱 PC '칭윈 HM650'을 내놨다고 The Register가 전했습니다. 이 PC에는 화웨이가 직접 만든 10코어 기린 X90 프로세서와, 안드로이드 의존을 끊으려고 개발한 운영체제 하모니OS의 기업용 버전이 들어갑니다. 보도에 따르면 중국 정부 기관 한 곳이 600대를 계약했는데, 중국 정부가 모든 공공기관에 인텔 칩·윈도 PC를 국산으로 바꾸라고 지시한 만큼 일회성 사례로 보기 어렵다는 분석입니다. 다만 부품을 중국 땅에서 만들었다는 것과 중국 기술로 설계했다는 것은 다른 문제인데, 해외 기업도 중국에 공장을 두고 있어 모든 부품이 중국 설계인지는 밝혀지지 않았습니다. 그럼에도 메모리 가격 상승으로 PC 시장이 줄어드는 상황에서 거대한 구매자인 중국 정부 물량을 잃는 것은 인텔, AMD, 퀄컴에 악재라고 기사는 평가했습니다.\n\n출처: The Register\nhttps://www.theregister.com/systems/2026/11/09/huawei-says-its-made-a-100-percent-chinese-pc/5308335\n\n#반도체 #semiconductor #화웨이 #PC #공급망 #미중갈등 #국산화 #CPU",
+  "photo_queries": [
+    "desktop computer tower",
+    "computer motherboard closeup",
+    "office desktop computers"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5261333",
+    "query": "desktop computer tower",
+    "file": "e0a7468d01.photo.jpg",
+    "download_url": "https://pixabay.com/get/gd5738037688f5091621fac7ae22ffa15f2267a8a6c7c2ea7c09a05bd9a19f464a2d288c5b05008f741c732ea5e4820afb5e659f8e1c87e0d3acd92d57a8853d6_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computer-processor-hardware-5261333/",
+    "photographer": "kenchan4",
+    "photographer_url": "https://pixabay.com/users/kenchan4-3480725/",
+    "alt": "computer, processor, hardware, motherboard, motherboard, motherboard, motherboard, motherboard, motherboard",
+    "width": 3200,
+    "height": 1800,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: kenchan4 / Pixabay"
+  }
+}

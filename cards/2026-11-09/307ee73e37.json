@@ -1,0 +1,35 @@
+{
+  "id": "307ee73e37",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65134",
+  "source": "디일렉",
+  "category": "AI·설계",
+  "published_at": "2026-11-09T18:43+09:00",
+  "headline": "국산 AI 칩 리벨리온, 엔비디아·SKT와 손잡았다",
+  "bullets": [
+    "리벨리온·엔비디아·SKT, 한국형 AI 연산 인프라 업무협약",
+    "리벨리온 NPU를 엔비디아 NV링크 퓨전으로 GPU·CPU와 연결",
+    "2028년 R200 랙 시스템 공급 목표, SKT 데이터센터서 실증"
+  ],
+  "caption": "국산 AI 칩 리벨리온, 엔비디아·SKT와 손잡았다\n\nAI 반도체 기업 리벨리온이 엔비디아, SK텔레콤과 함께 한국형 '소버린 AI' 연산 인프라를 만들기로 하고 9일 업무협약을 맺었습니다. 소버린 AI는 다른 나라 기업에 기대지 않고 자국이 직접 통제하는 AI 기반을 뜻합니다. 리벨리온은 AI 계산에 특화된 칩인 NPU(신경망처리장치)를 만드는데, 차세대 제품 R200을 엔비디아의 서버 랙 구조(MGX)에 맞춰 랙 단위 AI 추론 시스템으로 개발합니다. 엔비디아의 칩 연결 기술 NV링크 퓨전을 쓰면 리벨리온 NPU가 같은 랙 안의 엔비디아 GPU, CPU와 빠르게 데이터를 주고받을 수 있습니다. SKT는 이 시스템을 자사 AI 데이터센터에 들여와 AI 추론의 단계마다 GPU와 NPU 중 알맞은 칩이 나눠 처리하게 해 전력과 비용을 줄일 계획입니다. 목표 공급 시점은 2028년이며, 리벨리온은 국내 실증 사례를 바탕으로 해외 시장도 공략한다는 계획입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65134\n\n#반도체 #semiconductor #AI반도체 #NPU #리벨리온 #엔비디아 #SKT #소버린AI",
+  "photo_queries": [
+    "server blade closeup",
+    "data center aisle",
+    "network switch ports"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2653005",
+    "query": "server blade closeup",
+    "file": "307ee73e37.photo.jpg",
+    "download_url": "https://pixabay.com/get/g782f09dc98c4a580accc15854f96ec02d3056f952ce61fe72d110162a6557709a00194168fc84ded28c1293da5c6a26d2680b121d1904adf6a367ca8ef1cb0f6_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computers-information-technology-2653005/",
+    "photographer": "tstokes",
+    "photographer_url": "https://pixabay.com/users/tstokes-6199331/",
+    "alt": "computers, information technology, data center, gray computer, gray technology, gray laptop, gray data, gray information, data center, data center, data center, data center, data center",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: tstokes / Pixabay"
+  }
+}
