@@ -60,7 +60,7 @@ pip install -r requirements.txt
 python3 scripts/render.py cards/2026-10-19/<id>.json
 
 # 3. 카드를 커밋·푸시한 뒤 Slack 승인 요청 (raw URL이 열려야 전송)
-SLACK_BOT_TOKEN=xoxb-... python3 scripts/slack_post.py cards/2026-10-19/<id>.json
+SEMIFEED_SLACK_BOT_TOKEN=xoxb-... python3 scripts/slack_post.py cards/2026-10-19/<id>.json
 
 # 4. 처리한 기사 기록
 python3 scripts/mark_seen.py <기사 링크>...

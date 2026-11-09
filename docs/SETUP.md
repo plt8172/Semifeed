@@ -29,7 +29,8 @@ LLM API 키(OpenRouter, Anthropic)는 필요 없습니다. 기사 선별과 문�
 
 | 값 | 어디서 얻나 | 넣을 곳 |
 | --- | --- | --- |
-| `SLACK_BOT_TOKEN` (`xoxb-…`) | Slack App → OAuth & Permissions → Bot User OAuth Token | ① Claude 클라우드 환경 ② Worker Secret |
+| `SEMIFEED_SLACK_BOT_TOKEN` (`xoxb-…`) | Slack App → OAuth & Permissions → Bot User OAuth Token | Claude 클라우드 환경 |
+| `SLACK_BOT_TOKEN` (위와 같은 값) | 위와 같음 | Worker Secret (Worker마다 따로 저장되므로 이름에 프로젝트를 붙이지 않음) |
 | `SLACK_SIGNING_SECRET` | Slack App → Basic Information → App Credentials → Signing Secret | Worker Secret |
 | `IG_ACCESS_TOKEN` (`IGAA…`, 장기 토큰) | Meta 개발자 앱 → Instagram API with Instagram Login | Worker Secret |
 | `PIXABAY_API_KEY` | https://pixabay.com/api/docs/ 에서 로그인하면 바로 표시됨 (무료) | Claude 클라우드 환경 |
@@ -41,7 +42,7 @@ LLM API 키(OpenRouter, Anthropic)는 필요 없습니다. 기사 선별과 문�
 
 ### 1. Claude (claude.ai)
 - [x] 클라우드 환경 네트워크 허용: RSS 10개 도메인 + `slack.com`
-- [ ] 같은 클라우드 환경에 `SLACK_BOT_TOKEN` 추가: 환경 메뉴의 톱니바퀴 → Network secrets(없으면 환경 변수). 프로젝트가 그 환경을 쓰도록 선택돼 있어야 합니다.
+- [ ] 같은 클라우드 환경에 `SEMIFEED_SLACK_BOT_TOKEN` 추가: 환경 메뉴의 톱니바퀴 → Network secrets(없으면 환경 변수). 프로젝트가 그 환경을 쓰도록 선택돼 있어야 합니다.
 - [ ] 카드 사진: 같은 환경의 네트워크 허용에 `pixabay.com` 추가(API와 이미지 모두 이 도메인), 환경 변수에 `PIXABAY_API_KEY` 추가. 없어도 카드는 사진 없이 만들어집니다.
 - [ ] GitHub 연결에 `plt8172/Semifeed` 쓰기 권한 확인: 예약 작업이 `main`에 카드를 푸시합니다.
 - [ ] 예약 작업의 "Automatically approve" 켜기: 예약 작업을 만든 뒤 켭니다.
@@ -71,4 +72,4 @@ LLM API 키(OpenRouter, Anthropic)는 필요 없습니다. 기사 선별과 문�
 1. 이 브랜치를 `main`에 머지: raw URL이 `main` 기준이라 머지 전에는 실제 게시가 안 됩니다.
 2. n8n 스케줄러 중지
 3. Cloudflare 배포 → Slack Request URL 변경
-4. Claude 환경에 `SLACK_BOT_TOKEN` 추가 → 예약 작업 생성·첫 실행으로 전체 검증
+4. Claude 환경에 `SEMIFEED_SLACK_BOT_TOKEN` 추가 → 예약 작업 생성·첫 실행으로 전체 검증

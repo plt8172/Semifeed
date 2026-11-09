@@ -11,12 +11,12 @@ Claude Code 예약 작업이 실행될 때마다 이 문서를 처음부터 끝�
 ```bash
 git checkout main && git pull --ff-only origin main
 python3 -c "import playwright" 2>/dev/null || pip install -q -r requirements.txt
-test -n "$SLACK_BOT_TOKEN" || echo "SLACK_BOT_TOKEN 없음"
+test -n "${SEMIFEED_SLACK_BOT_TOKEN:-$SLACK_BOT_TOKEN}" || echo "SEMIFEED_SLACK_BOT_TOKEN 없음"
 test -n "$PIXABAY_API_KEY" || echo "PIXABAY_API_KEY 없음"
 TODAY=$(TZ=Asia/Seoul date +%F)
 ```
 
-`SLACK_BOT_TOKEN`이 없으면 카드를 만들지 말고 여기서 멈춘다. 카드를 만들어도 승인 요청을 보낼 수 없고,
+`SEMIFEED_SLACK_BOT_TOKEN`(예전 이름 `SLACK_BOT_TOKEN`도 됨)이 없으면 카드를 만들지 말고 여기서 멈춘다. 카드를 만들어도 승인 요청을 보낼 수 없고,
 `state/seen.json`에 기록되면 그 기사들이 다시 후보로 올라오지 않기 때문이다.
 
 `PIXABAY_API_KEY`(`config/semifeed.json`의 `photo_provider`에 맞는 키)가 없으면 멈추지 않는다. 3-1(사진 수집)만 건너뛰고 마지막 보고에 적는다. 사진은 카드의 필수 요소가 아니다.
