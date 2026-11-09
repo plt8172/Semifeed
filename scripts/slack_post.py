@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """카드마다 Slack 메시지 하나를 보낸다: 카드 이미지 + 캡션 미리보기 + [승인][반려] 버튼.
 
-    SLACK_BOT_TOKEN=xoxb-... python3 scripts/slack_post.py cards/2026-10-19/381bbabb74.json [...]
+    SEMIFEED_SLACK_BOT_TOKEN=xoxb-... python3 scripts/slack_post.py cards/2026-10-19/381bbabb74.json [...]
     python3 scripts/slack_post.py --dry-run cards/...json   # 보낼 내용만 출력
 
 카드 이미지는 파일 업로드 대신 GitHub raw URL을 Block Kit 이미지 블록으로 보여 준다.
@@ -119,10 +119,12 @@ def main() -> int:
     args = parser.parse_args()
 
     config = load_json(args.config, {})
-    channel = os.environ.get("SLACK_CHANNEL_ID") or config.get("slack_channel_id")
-    token = os.environ.get("SLACK_BOT_TOKEN", "")
+    # 클라우드 환경을 여러 프로젝트가 같이 쓰므로 변수 이름에 프로젝트 이름을 붙인다.
+    # 예전 이름 SLACK_BOT_TOKEN은 환경에서 지워질 때까지만 대신 읽는다.
+    channel = os.environ.get("SEMIFEED_SLACK_CHANNEL_ID") or config.get("slack_channel_id")
+    token = os.environ.get("SEMIFEED_SLACK_BOT_TOKEN") or os.environ.get("SLACK_BOT_TOKEN", "")
     if not args.dry_run and not token:
-        print("SLACK_BOT_TOKEN 환경 변수가 없습니다.", file=sys.stderr)
+        print("SEMIFEED_SLACK_BOT_TOKEN 환경 변수가 없습니다.", file=sys.stderr)
         return 1
 
     failed = 0

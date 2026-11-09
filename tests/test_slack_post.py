@@ -48,7 +48,7 @@ class SlackPostTest(unittest.TestCase):
         self._tmp.cleanup()
 
     def run_post(self, *extra, token="xoxb-test"):
-        env = {**os.environ, "SLACK_API_BASE": f"http://127.0.0.1:{self.server.server_port}", "SLACK_BOT_TOKEN": token}
+        env = {**os.environ, "SLACK_API_BASE": f"http://127.0.0.1:{self.server.server_port}", "SEMIFEED_SLACK_BOT_TOKEN": token}
         args = [sys.executable, str(ROOT / "scripts" / "slack_post.py"), "--skip-url-check", *extra, str(self.card)]
         return subprocess.run(args, capture_output=True, text=True, env=env)
 
