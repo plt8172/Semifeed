@@ -1,0 +1,35 @@
+{
+  "id": "df6cced286",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65139",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-09T23:00+09:00",
+  "headline": "엔비디아, 국내 AI 스타트업 3곳에 투자한다",
+  "bullets": [
+    "업스테이지·모티프 테크놀로지스·리얼월드에 투자 계획",
+    "세 곳 모두 자체 AI 모델 개발… 리얼월드는 로봇용 AI",
+    "4월엔 국내 AI 데이터센터 연결 칩 기업에도 투자"
+  ],
+  "caption": "엔비디아, 국내 AI 스타트업 3곳에 투자한다\n\n엔비디아가 9일 서울 코엑스에서 열린 과학기술정보통신부-엔비디아 AI 스타트업 파트너십 포럼에서 국내 AI 스타트업 3곳에 투자할 계획이라고 밝혔습니다. 대상은 업스테이지, 모티프 테크놀로지스, 리얼월드로, 모두 다른 회사 모델을 빌려 쓰지 않고 자체 AI 모델을 개발하는 곳입니다. 업스테이지는 대규모 언어 모델(LLM, 챗GPT처럼 글을 이해하고 쓰는 AI) \"솔라\" 시리즈를 만들며 기업가치가 1조원을 넘고, 모티프 테크놀로지스도 LLM \"모티프\" 시리즈를 개발합니다. 리얼월드는 로봇이 여러 작업에 두루 쓸 수 있는 기반 AI 모델을 만드는 \"피지컬 AI\" 스타트업으로, 현재 2000억원 규모 투자를 유치하고 있습니다. 엔비디아는 지난 4월에도 AI 데이터센터의 칩과 칩을 잇는 연결 기술을 만드는 국내 스타트업 포인투테크놀로지에 투자했습니다. 투자 금액은 기사에서 밝혀지지 않았습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65139\n\n#반도체 #semiconductor #엔비디아 #AI #스타트업 #투자 #피지컬AI",
+  "photo_queries": [
+    "robot arm laboratory",
+    "gpu server cards",
+    "startup office monitors"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2791670",
+    "query": "robot arm laboratory",
+    "file": "df6cced286.photo.jpg",
+    "download_url": "https://pixabay.com/get/g8e8f4304fb3a752ba1495607fe1d4d9283299d93783fa87a9196ed4645922ad3fcf618897ce04968648dddc84b1cd21092662f46cc4160a5494bfbe654fcc9c4_1280.jpg",
+    "page_url": "https://pixabay.com/photos/robot-arm-technology-robot-arm-2791670/",
+    "photographer": "jarmoluk",
+    "photographer_url": "https://pixabay.com/users/jarmoluk-143740/",
+    "alt": "robot, arm, technology, robot arm, robotics, kawasaki, science, orange, technique, electronics, automation, robot arm, automation, automation, automation, automation, automation",
+    "width": 3000,
+    "height": 2000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: jarmoluk / Pixabay"
+  }
+}

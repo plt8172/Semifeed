@@ -1,0 +1,35 @@
+{
+  "id": "0f0b6119ef",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65079",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-09T18:08+09:00",
+  "headline": "中 HKC, 스마트폰 화면 공장 투자 지연…취소 가능성도",
+  "bullets": [
+    "쓰촨성 6세대 OLED 라인(H7) 주요 장비 발주 아직 없어",
+    "당초 2027년 3월 장비 반입, 2028년 6월 양산 목표",
+    "업황 악화·기술 확보 문제… 국내 장비업체 수주에도 영향"
+  ],
+  "caption": "中 HKC, 스마트폰 화면 공장 투자 지연…취소 가능성도\n\n중국 디스플레이 업체 HKC가 쓰촨성 몐양에 추진하는 6세대 OLED 생산라인(H7) 투자가 계획보다 늦어지고 있다고 디일렉이 보도했습니다. OLED는 스스로 빛을 내는 소자로 만든 화면으로, 주로 스마트폰에 쓰이며 6세대는 이 화면을 만드는 유리 기판의 크기 등급을 뜻합니다. HKC는 2027년 3월 핵심 장비인 증착장비를 들여와 2028년 6월 양산할 계획이었지만, 아직 주요 장비를 발주하지 않았습니다. 디스플레이 장비는 사양 확정부터 반입까지 보통 12~18개월이 걸려, 원래 일정대로라면 이미 발주가 끝났어야 합니다. 업계는 OLED 시장 침체와 기술 확보 문제를 지연 이유로 꼽으며, 최악의 경우 투자 자체가 취소될 수도 있다고 말합니다. HKC는 2019년에도 대형 OLED 라인 투자를 발표했다가 이듬해 철회한 전례가 있습니다. 지난 7월 국내 장비업체들에 견적을 받은 만큼, 지연이 길어지면 국내 장비업체들의 수주 일정에도 영향을 줄 전망입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65079\n\n#반도체 #semiconductor #디스플레이 #OLED #HKC #중국 #장비",
+  "photo_queries": [
+    "smartphone screen pixels closeup",
+    "cleanroom factory workers",
+    "glass panel production"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1894723",
+    "query": "smartphone screen pixels closeup",
+    "file": "0f0b6119ef.photo.jpg",
+    "download_url": "https://pixabay.com/get/g7bf5b064cada0a2c96dc4dcb6cfcc17355cbf272aabd56647f9f884afcc7b0366e634f171d0fdd33a0ee57aa29b9fca70c02e558e8013b9520500ff19b5bd898_1280.jpg",
+    "page_url": "https://pixabay.com/photos/smartphone-cellphone-touchscreen-1894723/",
+    "photographer": "stevepb",
+    "photographer_url": "https://pixabay.com/users/stevepb-282134/",
+    "alt": "smartphone, cellphone, touchscreen, mobile, technology, apple, communication, social media, mobile phones, connection, telephone, business, telecommunication, portable, gadget, internet, modern, multimedia, mobility, app, smartphone, smartphone, mobile, mobile, mobile, mobile, mobile, social media, social media, app",
+    "width": 5005,
+    "height": 3337,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: stevepb / Pixabay"
+  }
+}

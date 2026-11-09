@@ -1,0 +1,35 @@
+{
+  "id": "47dc7b4be2",
+  "link": "https://www.tomshardware.com/pc-components/dram/memory-shortage-spurs-smartphone-makers-to-melt-used-memory-off-old-devices-then-re-solder-it-onto-new-products-recycled-memory-to-keep-budget-phones-affordable-reballing-adoption-to-double-by-2027",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-09T22:40+09:00",
+  "headline": "메모리값 급등에 헌 폰 메모리 떼어 새 폰에 쓴다",
+  "bullets": [
+    "저가 스마트폰에 중고 메모리 재사용, 현재 비중 3~4%",
+    "트렌드포스 \"2027년 7~9%로 늘어날 전망\"",
+    "D램 값 더 오르면 고가 모델까지 번질 수 있음"
+  ],
+  "caption": "메모리값 급등에 헌 폰 메모리 떼어 새 폰에 쓴다\n\n메모리 가격이 계속 오르자 스마트폰 제조사들이 버려진 기기에서 메모리 칩을 떼어 새 제품에 다시 쓰는 방식을 늘리고 있습니다. 이런 칩을 \"리볼(reball) 메모리\"라고 부르는데, 기판에 칩을 붙이고 있는 작은 땜납 공을 녹여 칩을 떼어 낸 뒤 새 기기에 다시 납땜하는 과정에서 붙은 이름입니다. 시장조사업체 트렌드포스에 따르면 현재 스마트폰에서 리볼 메모리 비중은 3~4%로 주로 보급형 모델에 쓰이며, 2027년에는 7~9%까지 늘어날 전망입니다. 지금은 대부분 4GB LPDDR4X(스마트폰용 저전력 D램) 칩이 1299위안(약 200달러) 이하 4G 폰에 들어갑니다. 보급형 폰을 사는 소비자는 가격에 민감해 제조사가 판매가를 올리기 어렵기 때문에, 부품 원가를 낮추는 수단으로 쓰는 것입니다. 트렌드포스는 내년 1분기 D램 가격이 더 오를 것으로 보고 있어, 재활용 메모리가 보급형을 넘어 더 비싼 모델로 확대될 수 있다고 봤습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/dram/memory-shortage-spurs-smartphone-makers-to-melt-used-memory-off-old-devices-then-re-solder-it-onto-new-products-recycled-memory-to-keep-budget-phones-affordable-reballing-adoption-to-double-by-2027\n\n#반도체 #semiconductor #메모리 #D램 #스마트폰 #재활용 #트렌드포스",
+  "photo_queries": [
+    "soldering iron circuit",
+    "old smartphones pile",
+    "phone motherboard chips"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1038522",
+    "query": "soldering iron circuit",
+    "file": "47dc7b4be2.photo.jpg",
+    "download_url": "https://pixabay.com/get/gfb17d9b1cea9334447fee2520a1b840ac73fbd650074b502a30856479c65c5e0ecf8e1306d105f3e150786684fdddaead5b74582dcc12092692e6310e41ac7ff_1280.jpg",
+    "page_url": "https://pixabay.com/photos/soldering-soldering-station-tin-1038522/",
+    "photographer": "Bru-nO",
+    "photographer_url": "https://pixabay.com/users/Bru-nO-1161770/",
+    "alt": "soldering, soldering station, tin, circuit board, electronics, electrical engineering, technology, circuit, electronics technician, trace, soldering, soldering, soldering, soldering, soldering, electrical engineering, electrical engineering, electrical engineering",
+    "width": 3504,
+    "height": 2336,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Bru-nO / Pixabay"
+  }
+}
