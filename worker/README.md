@@ -20,28 +20,27 @@ Cron 매일 03:00 KST: Instagram 장기 토큰을 갱신해 KV에 저장
 - 무료 플랜의 `waitUntil`은 응답 후 약 30초까지만 이어지므로 상태 확인은 20초로 끊고 나머지는 Cron에 넘깁니다.
 - 처음 등록한 `IG_ACCESS_TOKEN`은 첫 갱신 이후로는 쓰지 않고 KV의 `ig_token`을 씁니다. 토큰을 수동으로 교체할 때는 Secret을 바꾸고 KV의 `ig_token`을 지웁니다.
 
-## 배포
+## 배포 (Cloudflare 대시보드에서 관리)
 
-```bash
-cd worker
-npm install
-npx wrangler login
+Worker는 Cloudflare Workers Builds로 이 저장소에 연결돼 있어서 `main`에 푸시하면 자동으로 배포됩니다. 클론이나 CLI는 필요 없습니다.
 
-# 1. 상태 저장용 KV 만들기 → 출력된 id를 wrangler.toml의 REPLACE_WITH_KV_NAMESPACE_ID 자리에 넣기
-npx wrangler kv namespace create STATE
+| 항목 | 값 |
+| --- | --- |
+| Worker | `semifeed` (https://semifeed.plutofeed.workers.dev) |
+| 연결 | 저장소 `plt8172/Semifeed`, 브랜치 `main`, Root directory `/worker`, Deploy command `npx wrangler deploy` |
+| 빌드 토큰 | `semifeed build token` |
+| KV | 바인딩 `STATE` → 네임스페이스 `semifeed-STATE` |
+| Secret | `SLACK_SIGNING_SECRET`, `SLACK_BOT_TOKEN`(xoxb-, `chat:write`), `IG_ACCESS_TOKEN`(값만, "Bearer" 없이) |
+| Variable | `wrangler.toml`의 `[vars]` (`IG_USER_ID`, `IG_API_VERSION`, `CARDS_BASE_URL`) |
+| Cron | `wrangler.toml`의 `[triggers]` |
 
-# 2. 시크릿 등록 (값은 프롬프트에 붙여 넣으며 저장소에는 남지 않습니다)
-npx wrangler secret put SLACK_SIGNING_SECRET   # Slack App → Basic Information → Signing Secret
-npx wrangler secret put SLACK_BOT_TOKEN        # xoxb-... (chat:write 권한)
-npx wrangler secret put IG_ACCESS_TOKEN        # Instagram 장기 토큰
+- 위치: dash.cloudflare.com → Workers & Pages → `semifeed` → Settings. 빌드 기록은 Deployments, 실시간 로그는 Observability 탭.
+- Secret은 대시보드의 Variables and secrets에서 바꿉니다. 배포해도 유지됩니다.
+- Variable·Cron·KV 바인딩은 `wrangler.toml`이 기준입니다. 대시보드에서 바꾸면 다음 배포 때 `wrangler.toml` 값으로 되돌아가므로 이 파일을 고쳐서 푸시합니다.
+- Slack App → **Interactivity & Shortcuts** → Request URL은 위 Worker 주소입니다.
+- 같은 구조의 새 Worker를 만들 때: Workers & Pages → Create → Import a repository → 저장소 선택, Root directory `/worker`. KV는 Storage & databases → Workers KV에서 `<worker 이름>-STATE`로 만들고 id를 `wrangler.toml`에 넣습니다.
 
-# 3. 배포 → https://semifeed.<계정>.workers.dev 주소가 출력됩니다
-npm run deploy
-```
-
-4. Slack App 설정 → **Interactivity & Shortcuts** → Request URL을 위 Worker 주소로 바꿉니다.
-   기존 n8n 승인 흐름은 이때부터 동작하지 않으므로 n8n 스케줄러를 먼저 멈춥니다.
-5. 실시간 로그: `npx wrangler tail`
+CLI로 직접 다룰 때는 `cd worker && npm install && npx wrangler login` 후 `npx wrangler tail`(로그), `npx wrangler secret put <이름>`을 쓸 수 있습니다.
 
 ## 개발
 
