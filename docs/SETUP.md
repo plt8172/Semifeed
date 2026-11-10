@@ -57,10 +57,9 @@ LLM API 키(OpenRouter, Anthropic)는 필요 없습니다. 기사 선별과 문�
 - [ ] 계정 ID가 `17841433117660601`이 맞는지 확인 (`worker/wrangler.toml`의 `IG_USER_ID`)
 
 ### 4. Cloudflare (무료 플랜)
-- [ ] 계정 생성 → `cd worker && npm install && npx wrangler login`
-- [ ] `npx wrangler kv namespace create STATE` → 출력된 id를 `worker/wrangler.toml`에 반영
-- [ ] `npx wrangler secret put` 으로 `SLACK_SIGNING_SECRET`, `SLACK_BOT_TOKEN`, `IG_ACCESS_TOKEN` 등록
-- [ ] `npm run deploy` → 출력된 `https://semifeed.<계정>.workers.dev` 주소를 Slack Request URL에 사용
+- [x] Worker `semifeed`를 대시보드에서 GitHub 저장소에 연결 (Workers Builds, Root `/worker`). `main`에 푸시하면 자동 배포.
+- [x] KV `semifeed-STATE`, Secret `SLACK_SIGNING_SECRET`·`SLACK_BOT_TOKEN`·`IG_ACCESS_TOKEN` 등록
+- [x] `https://semifeed.plutofeed.workers.dev`를 Slack Request URL에 사용
 
 자세한 배포 절차는 `worker/README.md`에 있습니다.
 
