@@ -1,0 +1,35 @@
+{
+  "id": "d23275fc61",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65214",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-10T17:41+09:00",
+  "headline": "수주 9.8조 쌓인 LS전선, 바다 밑 전력 케이블 공장 늘린다",
+  "bullets": [
+    "동해 해저6동에 1600억원 투자…내년 하반기 준공 예정",
+    "HVDC 해저케이블 공장 3개로, 가동률 작년 57.6%→2분기 78%",
+    "에너지고속도로·해상풍력 수요에 3분기 수주잔고 사상 최대"
+  ],
+  "caption": "수주 9.8조 쌓인 LS전선, 바다 밑 전력 케이블 공장 늘린다\n\nLS전선이 강원 동해사업장에 HVDC 해저케이블 공장(해저6동)을 짓고 주요 생산장비를 설치하고 있다고 디일렉이 보도했습니다. HVDC(초고압직류송전)는 전기를 직류로 바꿔 먼 거리까지 손실을 줄여 보내는 기술이고, 해저케이블은 이 전기를 바다 밑으로 나르는 전선입니다. 바닷속에서는 이음매를 최소화해야 해서 케이블을 수십~수백km 길이로 한 번에 만들어야 하는데, 이번에 들어가는 턴테이블과 수직연합기가 이런 연속 생산과 보관에 쓰이는 핵심 설비입니다. 회사는 해저6동에 1600억원을 투자해 내년 하반기 준공하며, 그러면 HVDC 해저케이블 전용 공장이 3개로 늘어납니다. 정부가 추진하는 서해안 에너지고속도로와 해상풍력 단지처럼 전기를 멀리, 바다 건너 보내야 하는 사업이 늘면서 동해사업장 가동률은 지난해 57.6%에서 올해 2분기 78%로 높아졌습니다. LS전선의 3분기 말 수주잔고도 9조8522억원으로 사상 최대를 기록했습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65214\n\n#반도체 #semiconductor #전력 #HVDC #해저케이블 #LS전선 #해상풍력 #전력망",
+  "photo_queries": [
+    "submarine power cable",
+    "offshore wind farm",
+    "high voltage transmission lines"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3820819",
+    "query": "offshore wind farm",
+    "file": "d23275fc61.photo.jpg",
+    "download_url": "https://pixabay.com/get/gdc84ecb0b2ea3ec68b32511c10f5e380b6570171c8d5d5e3f3252a570a44a3582d67fa86f88c61bdf2d30417391e4d9676d9ce5db19481142d1b53025b3ef612_1280.jpg",
+    "page_url": "https://pixabay.com/photos/park-wind-farm-energy-darling-wind-3820819/",
+    "photographer": "ELG21",
+    "photographer_url": "https://pixabay.com/users/ELG21-3764790/",
+    "alt": "park wind farm, energy, darling, wind, nature, clouds, atmosphere",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ELG21 / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "6b4c1fb3a5",
+  "link": "https://www.tomshardware.com/tech-industry/policy/microsoft-lobbies-against-potential-ban-on-chinese-optical-networking-gear-for-ai-data-centers-as-fcc-mulls-restricting-imports-industry-group-says-move-could-grind-data-center-rollout-to-a-halt",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-11T02:51+09:00",
+  "headline": "美, 세계 66% 차지한 中 광통신 부품 금지 검토…MS 반대",
+  "bullets": [
+    "FCC, 中 광트랜시버 수입 금지 검토…해킹·데이터 유출 우려",
+    "MS·업계 단체 반대 로비 \"데이터센터 구축 멈출 수도\"",
+    "美 생산업체는 코히런트·루멘텀 2곳뿐…물량 대체 어려워"
+  ],
+  "caption": "美, 세계 66% 차지한 中 광통신 부품 금지 검토…MS 반대\n\n미국 연방통신위원회(FCC)가 중국산 광트랜시버의 수입 금지를 검토하자 마이크로소프트(MS)와 업계 단체 ITI가 반대 로비에 나섰다고 Tom's Hardware가 로이터를 인용해 전했습니다. 광트랜시버는 장비의 전기 신호를 빛 신호로 바꿔 광섬유로 데이터를 보내게 해 주는 작은 모듈로, AI 데이터센터에서 GPU와 서버를 서로 연결하는 데 점점 많이 쓰입니다. 미국은 이 부품이 중국 정부에 악용돼 데이터를 빼내거나 데이터센터를 원격으로 방해하는 데 쓰일 수 있다고 우려하고 있습니다. 하지만 중국 업체가 세계 시장의 66%를 공급하고 있고, 미국 생산업체는 코히런트와 루멘텀 두 곳뿐이라 당장 금지하면 공급이 절반 넘게 줄어들 수 있습니다. ITI는 부품이 없으면 AI 칩이 연결되지 못한 채 놀게 된다며 데이터센터 구축이 멈출 수 있다고 주장했습니다. 트럼프 행정부는 초당 3.2테라비트급 고성능 제품만 금지하는 절충안도 거론하고 있지만 아직 검토 단계입니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/policy/microsoft-lobbies-against-potential-ban-on-chinese-optical-networking-gear-for-ai-data-centers-as-fcc-mulls-restricting-imports-industry-group-says-move-could-grind-data-center-rollout-to-a-halt\n\n#반도체 #semiconductor #광트랜시버 #데이터센터 #수출입규제 #미중갈등 #광통신",
+  "photo_queries": [
+    "optical transceiver module",
+    "fiber optic connectors",
+    "network switch ports"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "502894",
+    "query": "fiber optic connectors",
+    "file": "6b4c1fb3a5.photo.jpg",
+    "download_url": "https://pixabay.com/get/g375d23681c5fa51410a87cf2a7d99c47febdedd378016521180030bb9ae0a65e65438a10db494059c9f8c3db7f9e676ae75497b8f3fa6153eeb189b88664a4bb_1280.jpg",
+    "page_url": "https://pixabay.com/photos/fiber-optic-cable-glass-fiber-it-502894/",
+    "photographer": "blickpixel",
+    "photographer_url": "https://pixabay.com/users/blickpixel-52945/",
+    "alt": "fiber optic cable, glass fiber, it, technology, connection, digital, control center, data processing, connections, electronics, data, switch, network, network technology, technology, technology, technology, connection, electronics, electronics, electronics, data, data, data, switch, switch, switch, switch, switch, network, network, network, network, network",
+    "width": 3900,
+    "height": 2600,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: blickpixel / Pixabay"
+  }
+}

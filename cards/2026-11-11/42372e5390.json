@@ -1,0 +1,35 @@
+{
+  "id": "42372e5390",
+  "link": "https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/",
+  "source": "Semiconductor Engineering",
+  "category": "패키징",
+  "published_at": "2026-11-10T17:01+09:00",
+  "headline": "칩 쌓는 간격 좁아지자 50나노 먼지 하나도 불량 원인",
+  "bullets": [
+    "하이브리드 본딩, 35㎛ 범프 대신 10㎛ 이하 간격으로 칩 연결",
+    "양산 간격 4~9㎛…더 좁아지면 접합면 속 결함 찾기 어려워",
+    "결함 기준 최소 50나노…차세대 HBM 등 3D 적층의 관건"
+  ],
+  "caption": "칩 쌓는 간격 좁아지자 50나노 먼지 하나도 불량 원인\n\n칩을 위아래로 쌓아 붙이는 하이브리드 본딩 기술이 정밀해지면서 기존 검사 장비가 결함을 다 잡아내지 못하고 있다고 Semiconductor Engineering이 전했습니다. 지금까지는 칩 사이를 35㎛(마이크로미터) 크기의 작은 금속 돌기(범프)로 이었지만, 하이브리드 본딩은 돌기 없이 10㎛ 이하 간격의 구리 패드끼리 직접 붙여 신호가 더 빨리 오가고 전력도 덜 씁니다. 이 기술은 메모리를 여러 층 쌓아 AI 칩 옆에 붙이는 고대역폭메모리(HBM)의 차세대 제품에도 쓰일 수 있습니다. 문제는 현재 양산 수준인 4~9㎛보다 간격이 더 좁아지면 아주 작은 먼지나 빈틈, 어긋남도 불량이 된다는 점입니다. 검사 장비업체 온투이노베이션은 최첨단 공정에서 잡아야 할 결함 크기가 50나노미터까지 내려간다고 말했고, 먼지 하나로 위층 웨이퍼가 떨어져 나갈 수도 있습니다. 특히 이미 붙은 접합면 속에 숨은 결함은 찾기 어려워, 광학·적외선·X선·초음파 장비들이 해상도를 높이는 경쟁을 하고 있습니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/\n\n#반도체 #semiconductor #패키징 #하이브리드본딩 #HBM #검사장비 #3D적층",
+  "photo_queries": [
+    "industrial microscope inspection",
+    "stacked chip dies",
+    "electron microscope lab"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1817641",
+    "query": "electron microscope lab",
+    "file": "42372e5390.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf3c5b3481b3572b90b0d9b02e20282357d3f1ee3487d69b5f6afdd410fe2b8e5204996a388eb8c7f566c4ce094b7bce467544d8f82d3926a7f0070dd34845681_1280.jpg",
+    "page_url": "https://pixabay.com/photos/microscope-laboratory-diagnosis-1817641/",
+    "photographer": "Herney",
+    "photographer_url": "https://pixabay.com/users/Herney-3516803/",
+    "alt": "microscope, laboratory, diagnosis, white, aimagro, microscope, microscope, microscope, microscope, microscope, laboratory, laboratory, laboratory, laboratory",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Herney / Pixabay"
+  }
+}

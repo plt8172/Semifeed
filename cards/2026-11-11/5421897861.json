@@ -1,0 +1,36 @@
+{
+  "id": "5421897861",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65231",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-10T17:47+09:00",
+  "headline": "삼성, 칩 회로 새길 원판 부족…日 공급사 \"더 못 늘려\"",
+  "bullets": [
+    "내년부터 3년간 EUV 블랭크마스크 사용량 매년 25%가량 증가 예상",
+    "세계 70~75% 점유한 日호야, 삼성 증량 요청 모두 수용 어려워",
+    "국산 에스앤에스텍 제품 최종 평가 중…통과 시 삼성 첫 투입"
+  ],
+  "caption": "삼성, 칩 회로 새길 원판 부족…日 공급사 \"더 못 늘려\"\n\n삼성전자가 내년에 쓸 EUV 블랭크마스크를 충분히 확보하지 못할 수 있다고 디일렉이 보도했습니다. 반도체는 빛으로 회로 무늬를 웨이퍼에 찍어 만드는데, 이때 회로 무늬가 새겨진 판을 포토마스크라고 하고 그 원재료가 되는 빈 판이 블랭크마스크입니다. EUV는 극자외선이라는 아주 짧은 파장의 빛으로 미세한 회로를 새기는 최첨단 공정입니다. 삼성전자는 올해 약 5500장을 쓰는데, 공정이 미세해질수록 칩 하나에 필요한 마스크 수가 늘어 앞으로 3년간 매년 25%가량 더 필요할 것으로 내부에서 계산했습니다. 그러나 세계 시장의 70~75%를 차지하는 일본 호야는 다른 제조사 수요도 크게 늘고 있다며 요청을 모두 들어주기 어렵다고 답했고, 싱가포르 신공장은 2028회계연도에야 양산에 들어갑니다. 마스크가 모자라면 새 칩 개발과 양산용 마스크 교체가 늦어질 수 있어, 삼성전자는 국내 업체 에스앤에스텍 제품의 최종 평가를 진행하며 조달처를 넓히려 하고 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65231\n\n#반도체 #semiconductor #EUV #블랭크마스크 #삼성전자 #호야 #에스앤에스텍 #소재",
+  "photo_queries": [
+    "photomask glass plate",
+    "cleanroom laboratory yellow light",
+    "lithography optics lens"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2818664",
+    "query": "semiconductor",
+    "file": "5421897861.photo.jpg",
+    "download_url": "https://pixabay.com/get/g6b964e6026ec2f1e6d159c935145eaff568537dc47d56f782cd6e4b6dd5188e260d9b772a9771d4b6308437b1ec195af8ac25c182a2dea2debe2a5880d453946_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-processor-modernity-2818664/",
+    "photographer": "bodkins18",
+    "photographer_url": "https://pixabay.com/users/bodkins18-3428895/",
+    "alt": "technology, processor, modernity, electronics, computer, processor, processor, processor, processor, processor",
+    "width": 1920,
+    "height": 1080,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: bodkins18 / Pixabay",
+    "category": "science"
+  }
+}

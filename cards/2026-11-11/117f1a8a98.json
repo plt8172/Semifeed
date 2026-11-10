@@ -1,0 +1,35 @@
+{
+  "id": "117f1a8a98",
+  "link": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-targets-1-million-wafers-a-month-after-2032-planned-700-000-monthly-memory-wafers-could-rival-samsungs-entire-estimated-dram-production-capacity",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-10T22:00+09:00",
+  "headline": "머스크 칩 공장, 삼성 D램 맞먹는 월 70만장 메모리 계획",
+  "bullets": [
+    "테슬라·스페이스X 합작 테라팹, 2032년 이후 월 100만장 목표",
+    "70%는 메모리·30만장 이상은 로직…장비업체에 비공식 전달",
+    "칩 생산 경험 없고 일정 공격적…머스크도 \"오차 크다\" 인정"
+  ],
+  "caption": "머스크 칩 공장, 삼성 D램 맞먹는 월 70만장 메모리 계획\n\n테슬라와 스페이스X의 합작사 테라팹이 2032년 이후 한 달에 웨이퍼 100만 장을 생산하겠다는 계획을 장비업체들에 비공식적으로 알렸다고 Tom's Hardware가 보도했습니다. 웨이퍼는 반도체 칩을 만드는 둥근 실리콘 판으로, 생산량을 비교하는 기본 단위입니다. 이 가운데 약 70%인 70만 장을 메모리에 쓸 계획인데, 이는 지난해 월 65만~70만 장으로 추정된 삼성전자의 D램 생산능력과 비슷한 규모입니다. 다만 테라팹의 메모리에는 D램 외에 저장장치용 낸드가 포함될 수 있어 단순 비교는 어렵고, 어떤 메모리를 어떤 기술로 만들지는 아직 공개되지 않았습니다. 테라팹 구매팀은 이미 일본 장비업체를 찾아 몇 달 안에 납품해 달라고 요청한 것으로 전해졌습니다. 하지만 두 회사는 칩 생산 경험이 없고, 머스크 스스로도 일정이 매우 공격적이며 오차 범위가 크다고 말해 실제로 이뤄질지는 지켜봐야 합니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/semiconductors/elon-musks-terafab-targets-1-million-wafers-a-month-after-2032-planned-700-000-monthly-memory-wafers-could-rival-samsungs-entire-estimated-dram-production-capacity\n\n#반도체 #semiconductor #메모리 #D램 #테라팹 #테슬라 #일론머스크 #웨이퍼",
+  "photo_queries": [
+    "silicon wafer semiconductor",
+    "factory construction site crane",
+    "ram memory sticks"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1310766",
+    "query": "silicon wafer semiconductor",
+    "file": "117f1a8a98.photo.jpg",
+    "download_url": "https://pixabay.com/get/g3ca3e72545215871a3dddad93e0b145ccdb6e306e6326e796e8c3615e019d71c13ef854c401fe3883b010951ce4f4340b28f02e0591e7dd7d8243e47f56cb525_1280.jpg",
+    "page_url": "https://pixabay.com/photos/amd-cpu-processor-microprocessor-1310766/",
+    "photographer": "ElasticComputeFarm",
+    "photographer_url": "https://pixabay.com/users/ElasticComputeFarm-1865639/",
+    "alt": "amd, cpu, processor, microprocessor, hardware, chip, pc, technology, computer, component, circuit, semiconductor, vlsi, electronic, digital, socket, system, microchip, repair, transistor, engineering, power, tech, data, intel, ibm, ai, artificial intelligence, robot, data center, datacenter, it, cpu, cpu, cpu, processor, semiconductor, semiconductor, semiconductor, semiconductor, semiconductor",
+    "width": 4928,
+    "height": 3264,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ElasticComputeFarm / Pixabay"
+  }
+}
