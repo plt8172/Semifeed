@@ -1,0 +1,35 @@
+{
+  "id": "946ca5339c",
+  "link": "https://www.trendforce.com/presscenter/news/20261111-13303.html",
+  "source": "TrendForce",
+  "category": "메모리",
+  "published_at": "2026-11-11T16:20+09:00",
+  "headline": "메모리값 1년 넘게 오르자 노트북 출하 15.8% 줄었다",
+  "bullets": [
+    "3분기 노트북 출하 전분기 대비 15.8% 감소, 4분기도 소폭 감소 가능",
+    "재고 쌓인 PC 업체들, 4분기·내년 1분기 메모리 구매 계획 조정",
+    "4분기 PC D램 계약가 13~18% 상승 전망…오름폭은 둔화"
+  ],
+  "caption": "메모리값 1년 넘게 오르자 노트북 출하 15.8% 줄었다\n\n메모리 가격이 1년 넘게 오르면서 노트북과 PC를 만드는 회사들이 부담을 느끼고 있다고 시장조사업체 트렌드포스가 밝혔습니다. PC 업체들은 메모리 값이 더 오를 것에 대비해 부품 구매와 생산을 올해 상반기로 앞당겼지만, 제품 값이 오르자 아시아와 유럽에서 판매가 둔화됐고 3분기 노트북 출하는 전분기보다 15.8% 줄었습니다. 팔리지 않은 완제품 재고가 쌓이자 일부 업체는 4분기와 내년 1분기 메모리 구매 계획을 손보고, 사양이 낮은 메모리와 코어 수가 적은 CPU를 쓰는 방안도 검토하고 있습니다. D램은 컴퓨터가 작업 중인 데이터를 잠시 담아 두는 메모리이고, SSD는 파일을 저장하는 저장장치입니다. 메모리 회사들은 AI용 수요가 강해 내년 PC용 D램 공급을 줄일 계획이지만, PC 고객과의 관계를 고려해 가격 인상 폭을 조금 낮출 여지가 있습니다. 트렌드포스는 4분기 PC용 D램 계약 가격이 13~18% 오르고, PC용 SSD는 5% 미만 오르는 데 그쳐 오름세가 전보다 둔해질 것으로 내다봤습니다.\n\n출처: TrendForce\nhttps://www.trendforce.com/presscenter/news/20261111-13303.html\n\n#반도체 #semiconductor #메모리 #D램 #SSD #노트북 #PC #트렌드포스",
+  "photo_queries": [
+    "ram memory module",
+    "laptop motherboard closeup",
+    "electronics warehouse shelves"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "22098",
+    "query": "ram memory module",
+    "file": "946ca5339c.photo.jpg",
+    "download_url": "https://pixabay.com/get/g6536ff072bb81591719846fd88d64a6029f15edb1b6caeab9bfa8f5e22552cef5d856e8fa9e48e75ff8ff71dfd469c5f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/board-card-chip-computer-data-22098/",
+    "photographer": "PublicDomainPictures",
+    "photographer_url": "https://pixabay.com/users/PublicDomainPictures-14/",
+    "alt": "board, card, chip, computer, data, digital, electrical, electronic, green, hardware, macro, module, part, ram, random, access, memory, tech, technology, chip, ram, ram, ram, ram, ram, tech",
+    "width": 5000,
+    "height": 3333,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: PublicDomainPictures / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "20365821bc",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65313",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-12T08:27+09:00",
+  "headline": "엔비디아 이사회, 33년 이끈 젠슨 황 해임 준비",
+  "bullets": [
+    "WSJ \"이사회, 이르면 11일 회의 열어 황 CEO 거취 결정\"",
+    "불륜 인정 사흘 만에 직속 부하 임원과의 관계 의혹 추가 제기",
+    "지분 3.6%·차등의결권 없어 해임 결정 시 막을 수단 없어"
+  ],
+  "caption": "엔비디아 이사회, 33년 이끈 젠슨 황 해임 준비\n\n엔비디아 이사회가 창업자 젠슨 황 최고경영자(CEO)의 해임을 준비하고 있다고 미국 월스트리트저널이 사안에 정통한 관계자들을 인용해 보도했습니다. 황 CEO는 지난 8일 혼외 관계를 인정한 뒤에도 경영을 계속하겠다고 밝혔지만, 직속 부하인 엔비디아 여성 임원과도 관계를 맺었다는 의혹이 추가로 나오면서 신중하던 이사회 기류가 달라졌다고 합니다. 앞서 알려진 상대는 중국 정보기관과 연계됐다는 의혹을 받고 있어, 이사회는 미국 로펌에 맡겨 독립 조사를 벌이고 있습니다. 황 CEO의 지분은 약 3.6%이고, 창업자에게 의결권을 몰아주는 차등의결권 구조도 없어 이사회가 결정하면 막을 방법이 없습니다. 황 CEO는 게임용 그래픽처리장치(GPU) 회사였던 엔비디아를 세계 최대 AI 반도체 기업으로 키웠고 임원 60여 명에게 직접 보고를 받아 온 만큼, 해임될 경우 1993년 창업 이후 처음으로 그 없는 체제를 맞게 되며 뚜렷한 후계자가 없다는 점이 과제로 꼽힙니다. 보도 직후 엔비디아 주가는 시간외 거래에서 8% 가까이 떨어졌습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65313\n\n#반도체 #semiconductor #엔비디아 #NVIDIA #젠슨황 #AI반도체 #GPU #지배구조",
+  "photo_queries": [
+    "gpu graphics card",
+    "chip factory cleanroom",
+    "office tower night"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2202281",
+    "query": "gpu graphics card",
+    "file": "20365821bc.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0c93b5b9129edfc4b44e6a06200f49ffda3aff52f9b2e801dbdf7e3688433e6dc694d24203599835ef72082fc68422ad22316bf3d1cf49468dae61815dec41d2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/pc-agp-video-card-2202281/",
+    "photographer": "WikimediaImages",
+    "photographer_url": "https://pixabay.com/users/WikimediaImages-1185597/",
+    "alt": "pc, agp, video, card, pc, pc, pc, pc, pc, agp",
+    "width": 2847,
+    "height": 1920,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: WikimediaImages / Pixabay"
+  }
+}

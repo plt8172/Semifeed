@@ -1,0 +1,35 @@
+{
+  "id": "a9b5f630fc",
+  "link": "https://www.tomshardware.com/pc-components/cpus/amds-venice-x-maxes-out-family-at-5-3-ghz-returning-3d-v-cache-to-data-center-after-four-years-chips-target-hpc-workloads-with-pcie-6-0-and-1-6-tb-s-memory-bandwidth",
+  "source": "Tom's Hardware",
+  "category": "AI·설계",
+  "published_at": "2026-11-12T06:30+09:00",
+  "headline": "AMD, 메모리 쌓은 서버 CPU 4년 만에 다시 낸다",
+  "bullets": [
+    "베니스-X 내년 하반기 출시, 2023년 제노아-X 이후 4년 만",
+    "96코어·L3 캐시 1152MB에 최고 5.3GHz, 메모리 대역폭 1.6TB/s",
+    "AMD \"높은 클럭과 큰 캐시 결합, 칩 설계 검증 같은 HPC에 유리\""
+  ],
+  "caption": "AMD, 메모리 쌓은 서버 CPU 4년 만에 다시 낸다\n\nAMD가 '3D V-캐시'를 넣은 서버용 CPU 베니스-X를 내년 하반기에 내놓습니다. 3D V-캐시는 CPU 위에 캐시 메모리(SRAM)를 한 층 더 쌓아 붙이는 기술로, CPU 가까이에 데이터를 많이 둘 수 있어 계산이 빨라집니다. AMD는 2022년과 2023년 서버용으로 이 기술을 썼지만 지난 세대에서는 빠졌고, 이번에 4년 만에 다시 데이터센터로 돌아옵니다. 베니스-X는 이전 제품과 같은 96코어와 1152MB의 L3 캐시를 갖추면서도 최고 클럭을 5.3GHz로 크게 높였고, 최신 연결 규격 PCIe 6.0과 소켓당 1.6TB/s의 메모리 대역폭을 지원합니다. 예전 캐시 적층 제품은 다른 제품보다 클럭이 낮았는데, 이번에는 높은 속도와 큰 캐시를 한 칩에 합친 것이 핵심입니다. AMD는 슈퍼컴퓨터처럼 큰 계산을 하는 고성능 컴퓨팅(HPC), 특히 칩 설계가 제대로 동작하는지 시뮬레이션하는 작업에 유리하다고 설명했습니다. 기본 클럭과 전력, 제품 구성 등 세부 사양은 아직 공개되지 않았습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/cpus/amds-venice-x-maxes-out-family-at-5-3-ghz-returning-3d-v-cache-to-data-center-after-four-years-chips-target-hpc-workloads-with-pcie-6-0-and-1-6-tb-s-memory-bandwidth\n\n#반도체 #semiconductor #AMD #CPU #서버 #데이터센터 #3D적층 #HPC",
+  "photo_queries": [
+    "cpu processor socket",
+    "server motherboard closeup",
+    "supercomputer hall"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "19980",
+    "query": "server motherboard closeup",
+    "file": "a9b5f630fc.photo.jpg",
+    "download_url": "https://pixabay.com/get/g09460e3d2ab71e2c3a043f19776c1c3e69a079b43138bc0285fb267adc87cbcbf22ce893828c46fad48bb8f8e388540f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/micro-chip-computer-circuit-19980/",
+    "photographer": "PublicDomainPictures",
+    "photographer_url": "https://pixabay.com/users/PublicDomainPictures-14/",
+    "alt": "micro-chip, computer, circuit, technology, board, processor, digital, microchip, hardware, electronic, component, equipment, pc, motherboard, cpu, system, electric, microprocessor, integrated, data, microcircuit, bit, network, server, capacitor, gray computer, gray technology, gray laptop, gray data, gray network, gray digital, gray server, gray board, processor, microchip, microchip, microchip, microchip, microchip, cpu, cpu, microprocessor",
+    "width": 2794,
+    "height": 2370,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: PublicDomainPictures / Pixabay"
+  }
+}

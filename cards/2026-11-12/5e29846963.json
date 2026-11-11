@@ -1,0 +1,35 @@
+{
+  "id": "5e29846963",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/softbank-loses-usd3-7-billion-on-canceled-ai-data-center-gas-turbine-orders-days-after-denying-elon-musks-claim-it-was-defaulting-company-kills-reserved-13-gigawatts-of-power-more-than-six-hoover-dams-worth-of-capacity",
+  "source": "Tom's Hardware",
+  "category": "기업·실적",
+  "published_at": "2026-11-11T23:29+09:00",
+  "headline": "소프트뱅크, AI용 발전 터빈 주문 취소해 37억달러 손실",
+  "bullets": [
+    "AI 데이터센터용 가스터빈 13GW 넘게 예약했다가 남은 예약 취소",
+    "공급 부족에 대비해 미리 주문했지만 필요량을 과하게 잡아",
+    "CFO \"채무 불이행 아니다\"…머스크의 디폴트 주장 반박"
+  ],
+  "caption": "소프트뱅크, AI용 발전 터빈 주문 취소해 37억달러 손실\n\n일본 투자회사 소프트뱅크가 AI 데이터센터에 전기를 대려고 예약해 둔 가스터빈 주문을 취소하면서 실적에 37억달러의 손실을 반영하게 됐다고 톰스하드웨어가 월스트리트저널을 인용해 전했습니다. 가스터빈은 천연가스를 태워 전기를 만드는 발전 설비로, 수요가 몰려 몇 년 전에 미리 주문해야 하고 제조사가 기가와트(GW)당 수천만 달러를 받습니다. 소프트뱅크는 공급 부족을 예상하고 13GW가 넘는 터빈을 예약했는데, 이는 후버댐 6개가 넘는 발전 능력입니다. 그러나 쓸 수 있는 양을 과하게 잡았던 것으로 보이며, 터빈 공급사 GE 버노바에 남은 예약을 취소하고 이미 많이 진행된 주문도 정리했습니다. 소프트뱅크는 미국 오하이오주에 330억달러를 들여 9.2GW 발전소를 짓고 옆 데이터센터에 전기를 댈 계획인데, 이 데이터센터는 오픈AI에 임대될 예정입니다. 일론 머스크가 소프트뱅크의 채무 불이행을 주장했지만 소프트뱅크 최고재무책임자는 \"그런 불이행은 없다\"며 이번 취소는 자발적인 결정이라고 반박했습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/softbank-loses-usd3-7-billion-on-canceled-ai-data-center-gas-turbine-orders-days-after-denying-elon-musks-claim-it-was-defaulting-company-kills-reserved-13-gigawatts-of-power-more-than-six-hoover-dams-worth-of-capacity\n\n#반도체 #semiconductor #AI #데이터센터 #소프트뱅크 #가스터빈 #전력 #오픈AI",
+  "photo_queries": [
+    "industrial turbine blades",
+    "gas power plant chimney",
+    "high voltage power lines"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5581755",
+    "query": "high voltage power lines",
+    "file": "5e29846963.photo.jpg",
+    "download_url": "https://pixabay.com/get/g9eb9ba2f459cf8a13603ff0f45277ecb806bd9a0194bee4efd477739d3088d9769330445bb2f128c934c96509eddc063e598626e9499fac7ad0d0fb7e466a7ad_1280.jpg",
+    "page_url": "https://pixabay.com/photos/power-pole-high-voltage-pylon-5581755/",
+    "photographer": "NickyPe",
+    "photographer_url": "https://pixabay.com/users/NickyPe-10327513/",
+    "alt": "power pole, high voltage pylon, electric tower, overhead lines, electricity, power tower, energy, high voltage, mast, power adapter, power line, wires, voltage, technology, nature, catenary, telecommunication tower, electric tower, electric tower, electric tower, electricity, electricity, electricity, electricity, high voltage, power line, power line, power line, power line, power line, telecommunication tower, telecommunication tower, telecommunication tower",
+    "width": 6240,
+    "height": 4160,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: NickyPe / Pixabay"
+  }
+}

@@ -102,6 +102,8 @@
     "https://thelec.kr/news/articleView.html?idxno=65139": "2026-11-10T08:49:41+09:00",
     "https://thelec.kr/news/articleView.html?idxno=65214": "2026-11-11T08:39:33+09:00",
     "https://thelec.kr/news/articleView.html?idxno=65231": "2026-11-11T08:39:33+09:00",
+    "https://thelec.kr/news/articleView.html?idxno=65295": "2026-11-12T08:39:09+09:00",
+    "https://thelec.kr/news/articleView.html?idxno=65313": "2026-11-12T08:39:09+09:00",
     "https://theregister.com/ai-and-ml/2026/10/31/googles-ai-satellite-sends-a-very-expensive-haiku-to-earth/5306818": "2026-11-01T08:49:26+09:00",
     "https://theregister.com/devops/2026/11/06/pytorch-215-tackles-the-one-bad-gpu-problem/5308227": "2026-11-08T08:49:30+09:00",
     "https://theregister.com/hpc/2026/11/06/oak-ridge-labs-gets-hybrid-quantum-hpc-system-to-test-qubit-error-correction/5308187": "2026-11-07T08:49:38+09:00",
@@ -122,6 +124,7 @@
     "https://theregister.com/systems/2026/11/09/huawei-says-its-made-a-100-percent-chinese-pc/5308335": "2026-11-09T20:49:09+09:00",
     "https://tomshardware.com/pc-components/ai-demand-triggers-massive-pcb-shortage-for-pc-makers-as-order-books-full-until-2030-lead-times-stretch-to-30-months-as-material-costs-surge-12x": "2026-10-30T08:49:42+09:00",
     "https://tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors": "2026-11-09T08:48:52+09:00",
+    "https://tomshardware.com/pc-components/cpus/amds-venice-x-maxes-out-family-at-5-3-ghz-returning-3d-v-cache-to-data-center-after-four-years-chips-target-hpc-workloads-with-pcie-6-0-and-1-6-tb-s-memory-bandwidth": "2026-11-12T08:39:09+09:00",
     "https://tomshardware.com/pc-components/cpus/intel-confirms-nova-lake-will-use-advanced-18a-p-node-more-details-at-ces-company-says-its-taking-panther-lake-capacity-offline-to-build-more-granite-rapids-data-center-cpus": "2026-10-30T11:49:44+09:00",
     "https://tomshardware.com/pc-components/cpus/intels-woes-wipe-out-usd1-trillion-of-semiconductor-market-cap-in-one-day-pc-market-bloodbath-leaves-few-chip-stocks-unscathed": "2026-10-31T11:49:10+09:00",
     "https://tomshardware.com/pc-components/cpus/tachyum-developer-of-heavily-delayed-universal-prodigy-processor-voluntarily-files-for-bankruptcy-future-of-prodigy-ip-unknown-as-company-begins-bankruptcy-proceedings": "2026-11-03T08:56:39+09:00",
@@ -146,6 +149,7 @@
     "https://tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization": "2026-10-31T08:49:55+09:00",
     "https://tomshardware.com/tech-industry/data-centers/protesters-storm-microsoft-ai-data-center-construction-site-amsterdam-reportedly-first-of-85-targeted-actions-across-europe": "2026-11-07T20:50:13+09:00",
     "https://tomshardware.com/tech-industry/data-centers/putin-demands-russian-data-centers-supply-capacity-to-the-state-in-wake-of-ukraine-drone-attacks-10-percent-capacity-must-be-available-for-state-it-infrastructure-with-24-hours-notice": "2026-11-03T20:52:12+09:00",
+    "https://tomshardware.com/tech-industry/data-centers/softbank-loses-usd3-7-billion-on-canceled-ai-data-center-gas-turbine-orders-days-after-denying-elon-musks-claim-it-was-defaulting-company-kills-reserved-13-gigawatts-of-power-more-than-six-hoover-dams-worth-of-capacity": "2026-11-12T08:39:09+09:00",
     "https://tomshardware.com/tech-industry/data-centers/spacex-plans-to-build-more-data-center-compute-than-googles-entire-lifetime-capacity-in-just-1-5-years-analysts-say-target-is-realistic-spacex-to-build-staggering-10-gigawatts-of-compute-in-2027-alone": "2026-11-05T20:50:49+09:00",
     "https://tomshardware.com/tech-industry/manufacturing/ai-component-hikes-force-the-worlds-largest-pc-makers-to-return-manufacturing-capacity-to-china-brands-to-seek-lower-production-costs-and-efficiency-in-established-supply-chain": "2026-10-29T16:49:01+09:00",
     "https://tomshardware.com/tech-industry/manufacturing/sk-hynix-owned-solidigm-is-plotting-a-new-usd45-billion-flash-memory-factory-for-the-us-report-claims-wants-go-ahead-to-export-equipment-for-china-upgrades-in-return": "2026-10-29T15:39:56+09:00",
@@ -163,6 +167,7 @@
     "https://tomshardware.com/video-games/nintendo/nintendo-rom-chip-supplier-macronix-quits-to-focus-on-chips-for-ai-data-centers-game-key-cards-may-be-more-available-as-large-game-storage-chips-become-more-expensive": "2026-11-05T08:50:25+09:00",
     "https://trendforce.com/presscenter/news/20261029-13284.html": "2026-10-29T16:49:01+09:00",
     "https://trendforce.com/presscenter/news/20261102-13291.html": "2026-11-02T20:49:34+09:00",
-    "https://trendforce.com/presscenter/news/20261106-13297.html": "2026-11-06T16:50:28+09:00"
+    "https://trendforce.com/presscenter/news/20261106-13297.html": "2026-11-06T16:50:28+09:00",
+    "https://trendforce.com/presscenter/news/20261111-13303.html": "2026-11-12T08:39:09+09:00"
   }
 }

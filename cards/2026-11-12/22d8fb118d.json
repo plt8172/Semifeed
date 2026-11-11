@@ -1,0 +1,35 @@
+{
+  "id": "22d8fb118d",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65295",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-12T08:01+09:00",
+  "headline": "GM 전기차 배터리, 비슷한 값에 전기 33% 더 담는다",
+  "bullets": [
+    "4세대 전기차 플랫폼에 리튬망간리치(LMR) 각형 배터리 적용",
+    "LFP와 비슷한 비용에 에너지 밀도 33%↑, kWh당 주행거리 약 20%↑",
+    "LG엔솔·GM 합작사 얼티엄셀즈가 美 테네시 공장에서 생산"
+  ],
+  "caption": "GM 전기차 배터리, 비슷한 값에 전기 33% 더 담는다\n\n미국 자동차 회사 제너럴모터스(GM)가 'GM 포워드' 행사에서 4세대 전기차 플랫폼의 개발 방향을 공개하며 리튬망간리치(LMR) 각형 배터리를 쓰겠다고 밝혔습니다. LMR은 배터리 양극에 망간 비중을 높인 방식이고, 각형은 배터리 셀을 단단한 사각 캔에 담는 형태입니다. GM은 이 배터리가 값이 싼 편인 리튬인산철(LFP) 배터리와 비슷한 비용으로 에너지 밀도를 33% 높인다고 설명했습니다. 에너지 밀도가 높으면 같은 크기에 전기를 더 담을 수 있어 주행거리를 늘리기 쉽습니다. 배터리는 LG에너지솔루션과 GM의 합작법인 얼티엄셀즈가 미국 테네시주 스프링힐 공장에서 만듭니다. GM은 새 배터리와 소형화한 구동 시스템, 공기역학 설계를 합쳐 전력 1kWh당 주행거리를 기존보다 약 20% 늘리고, 구동 시스템 부품 수는 40% 줄일 계획입니다. 주행거리와 가격 경쟁력이 중요한 주요 차급에 적용한다는 계획이어서, 합작 생산을 맡은 국내 배터리 업계에도 의미가 있는 소식입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65295\n\n#반도체 #semiconductor #배터리 #전기차 #GM #LG에너지솔루션 #LMR #이차전지",
+  "photo_queries": [
+    "electric car battery pack",
+    "battery cell production line",
+    "electric vehicle charging"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4381728",
+    "query": "electric vehicle charging",
+    "file": "22d8fb118d.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf2f612b01279bb95d55d471d2d6d623bf03547678277e8b51e1745126aeffe187a1a1a0cf45753550bafe4f26f9014f7fbbec2658b3c7dba31f556bacc5a1796_1280.jpg",
+    "page_url": "https://pixabay.com/photos/electric-car-automobile-carsharing-4381728/",
+    "photographer": "andreas160578",
+    "photographer_url": "https://pixabay.com/users/andreas160578-2383079/",
+    "alt": "electric car, automobile, carsharing, smart, parking spot, rental car, park, load, charging station, electric car, electric car, electric car, electric car, electric car",
+    "width": 4500,
+    "height": 3000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: andreas160578 / Pixabay"
+  }
+}
