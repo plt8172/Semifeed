@@ -31,12 +31,13 @@ TTS는 기본이 내장 모델(`"backend": "auto"` 또는 `"local"`)이다. 수�
 
 ## 2. 대본 → `script.md`
 
-GUIDE.md의 대본 규칙으로 쓴다.
+GUIDE.md의 대본 규칙으로 쓴다. 가장 자주 받은 지적이 "대사가 AI 같다"이므로, GUIDE.md의 "말투"를 특히 지킨다.
 
 1. 훅 후보 3개를 쓰고, 하나를 고른 이유를 한 줄씩 적는다.
-2. 장 표를 쓴다. 장마다 나레이션과, 그때 화면에서 **무엇이 어떻게 변하는지**를 적는다. 앞 장의 그림이 다음 장의 무엇이 되는지가 드러나야 한다.
-3. "단순화한 부분" 목록을 적는다.
-4. GUIDE.md의 "대본 점검"을 하나씩 확인하고, 걸리면 고친다. 소리 내어 읽었을 때 어색한 문장이 남아 있으면 안 된다.
+2. 나레이션 전체를 줄로 나누지 않고, 친구에게 말로 설명하듯 처음부터 끝까지 한 번에 쓴다. 그다음 숨 쉬는 곳에서 줄을 나눈다.
+3. 장 표를 쓴다. 장마다 나레이션과, 그때 화면에서 **무엇이 어떻게 변하는지**를 적는다. 앞 장의 그림이 다음 장의 무엇이 되는지가 드러나야 한다.
+4. "단순화한 부분" 목록을 적는다.
+5. GUIDE.md의 "대본 점검"을 하나씩 확인하고, 걸리면 고친다. 소리 내어 읽었을 때 어색한 문장이 남아 있으면 안 된다.
 
 ## 3. 에피소드 정의 → `episode.json`
 
@@ -138,7 +139,7 @@ kit이 주는 것 (`reels/kit/kit.js`):
 에이전트는 영상을 재생해서 볼 수 없으므로, 정지 화면과 받아쓰기로 확인한다. 이 단계를 건너뛰지 않는다.
 
 ```bash
-python3 reels/reel.py check   reels/episodes/<slug>
+python3 reels/reel.py check   reels/episodes/<slug>            # 파일 검사 + 말투 경고(같은 어미 반복, 평서형 어미 비율, 쓰지 않는 말)
 python3 reels/reel.py plan    reels/episodes/<slug>            # 줄마다 시작·끝 시각과 자막. 전체 길이 확인
 python3 reels/reel.py preview reels/episodes/<slug>            # → build/preview.png (줄마다 2장)
 python3 reels/reel.py frames  reels/episodes/<slug> 12.4 m3    # → build/frames/ (원본 크기. 초 또는 줄 id)

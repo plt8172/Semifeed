@@ -159,9 +159,9 @@ function problem(t) {
   // 세기
   const t1s = R.word("p2", "1초에"), t64 = R.word("p3", "64,000");
   const k64 = ramp(t, t64, t64 + 0.45), mul = ramp(t, tP3, tP3 + 0.3) * (1 - ramp(t, t64 - 0.1, t64 + 0.15));
-  const n = lerp(8000 * R.ease(sp), 64000, k64), unit = k64 > 0.5 ? "칸" : "번";
+  const n = lerp(8000 * R.ease(sp), 64000, k64), unit = k64 > 0.5 ? "개" : "번";
   s += g(ramp(t, t1s, t1s + 0.3), text(540, 1250, span("1초에 ", C.fg, 48, 700) + span(R.num(n), k64 > 0.5 ? C.a : C.b, Math.round(80 + 14 * Math.sin(Math.PI * clamp((t - t64 - 0.2) / 0.5))), 800) + span(unit, C.fg, 48, 700) +
-    (mul > 0 ? `<tspan fill="${C.mu}" font-size="48" opacity="${mul.toFixed(2)}"> × 8칸</tspan>` : ""), 48));
+    (mul > 0 ? `<tspan fill="${C.mu}" font-size="48" opacity="${mul.toFixed(2)}"> × 8개</tspan>` : ""), 48));
   return g(out, s);
 }
 
@@ -297,7 +297,7 @@ function demo(t) {
     const grow = ramp(t, t0 + 0.1, t0 + 0.6), w = Math.max(10, (WID * d.rate) / 64000) * grow;
     const hi = last ? ramp(t, tE, tE + 0.4) : 0;
     let row = text(X0, d.y - 62, d.label, 60, { a: "start", w: 800, f: hi > 0.5 ? C.a : C.fg }) +
-      text(X1, d.y - 62, span("1초에 ", C.mu) + span(R.num(d.rate), C.b, 44, 800) + span("칸", C.mu), 34, { a: "end", w: 600 }) +
+      text(X1, d.y - 62, span("1초에 ", C.mu) + span(R.num(d.rate), C.b, 44, 800) + span("개", C.mu), 34, { a: "end", w: 600 }) +
       `<rect x="${X0}" y="${d.y - 36}" width="${w.toFixed(1)}" height="12" rx="6" fill="${C.b}"/>`;
     const p = clamp((t - d.clip.t0) / (d.clip.t1 - d.clip.t0)), playing = t >= d.clip.t0 && t <= d.clip.t1;
     const step = WID / d.bars.length;

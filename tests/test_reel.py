@@ -56,6 +56,24 @@ class TimingTest(unittest.TestCase):
         self.assertLess(reel.heard_ratio("이 을 1초에 8000번 제하해요.", say, cap), 0.9)
         self.assertEqual(reel.heard_ratio("아무 말", "", ""), 0.0)
 
+    def test_tone_notes(self):
+        def lines(*says):
+            return [{"id": f"l{i}", "say": t} for i, t in enumerate(says)]
+        flat = lines("소리는 공기의 떨림이에요.", "이 떨림을 재야 해요.", "숫자로 적으면 많아요.", "그래서 줄여야 해요.",
+                     "성대가 떨기 때문이에요.", "폰은 소리를 보내지 않아요.")
+        notes = "\n".join(reel.tone_notes(flat))
+        self.assertIn("기 때문이에요", notes)
+        self.assertIn("평서형 어미", notes)
+        same = lines("이건 소리예요.", "저건 숫자예요.", "그건 파형예요.")
+        self.assertIn("세 줄 이어짐", "\n".join(reel.tone_notes(same)))
+        # 소리(클립)가 사이에 끼면 같은 어미가 이어져도 된다
+        demo = [{"id": f"d{i}", "say": t, "clips": [{"file": "x.wav"}]} for i, t in enumerate(["전부 보내면,", "반만 보내면,", "조금만 보내면,"])]
+        self.assertEqual(reel.tone_notes(demo), [])
+
+    def test_example_episode_has_no_tone_notes(self):
+        data = reel.load_episode(ROOT / "reels" / "episodes" / "vocoding")
+        self.assertEqual(reel.tone_notes(data["lines"]), [])
+
     def test_example_episode_passes_check(self):
         self.assertEqual(reel.check(ROOT / "reels" / "episodes" / "vocoding"), [])
 

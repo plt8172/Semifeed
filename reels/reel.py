@@ -107,6 +107,39 @@ def check(ep: Path) -> list[str]:
     return errs
 
 
+# ---------- 말투 ----------
+
+# GUIDE.md "쓰지 않는 말". 설명하는 사람이 드러나는 말과 글말
+STOCK = ["사실은", "과연", "놀랍게도", "일까요", "알아볼게요", "살펴봐요", "볼까요", "이것이 바로", "정리하면",
+         "기 때문이에요", "기 때문입니다", "할 수 있어요", "할 수 있습니다", "을 통해", "를 통해", "다양한", "핵심은"]
+TALK_ENDS = ("잖아요", "거든요", "데요", "죠", "니까요", "고요", "래요")     # 말을 건네거나 이어 가는 어미
+
+
+def tone_notes(lines: list[dict]) -> list[str]:
+    """대본이 글말처럼 들리게 하는 흔한 버릇을 찾는다(GUIDE.md 말투). 경고일 뿐, 없다고 좋은 대본은 아니다."""
+    notes, says = [], []
+    for ln in lines:
+        text = re.sub(r"[^가-힣 ]", "", ln["say"]).strip()
+        if text:
+            says.append((ln.get("id", "?"), text, bool(ln.get("clips"))))
+        for w in STOCK:
+            if w in ln["say"]:
+                notes.append(f"{ln.get('id', '?')}: 쓰지 않는 말 \"{w}\"")
+    run = []                                    # 같은 어미로 끝나는 줄이 이어진 구간. 소리(클립)가 끼면 끊긴다
+    for lid, text, clip in says:
+        end = text[-2:]
+        run = run + [lid] if run and end == last else [lid]
+        last = end
+        if len(run) == 3:
+            notes.append(f"{run[0]}~{run[2]}: 같은 어미(~{end})가 세 줄 이어짐")
+        if clip:
+            run = []
+    plain = [lid for lid, text, _ in says if text.endswith("요") and not text.endswith(TALK_ENDS)]
+    if len(says) >= 6 and len(plain) > len(says) / 2:
+        notes.append(f"평서형 어미(~이에요, ~해요)로 끝나는 줄이 {len(plain)}/{len(says)}: 어미와 줄 길이를 섞을 것")
+    return notes
+
+
 # ---------- TTS ----------
 
 def tts_backend(voice: dict) -> str:
@@ -738,6 +771,9 @@ def main() -> None:
     if a.cmd == "check":
         errs = check(ep)
         print("통과" if not errs else "문제:\n- " + "\n- ".join(errs))
+        notes = [] if errs else tone_notes(load_episode(ep)["lines"])
+        if notes:
+            print("말투 (GUIDE.md 참고):\n- " + "\n- ".join(notes))
         sys.exit(1 if errs else 0)
     if a.cmd == "build":
         build(ep)
