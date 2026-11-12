@@ -1,0 +1,35 @@
+{
+  "id": "6b0a496a8d",
+  "link": "https://semiengineering.com/rethinking-memory-for-ai-inference/",
+  "source": "Semiconductor Engineering",
+  "category": "메모리",
+  "published_at": "2026-11-12T17:11+09:00",
+  "headline": "기기 속 AI, 메모리 안에서 계산해야 전력 줄인다",
+  "bullets": [
+    "AI가 데이터센터 학습에서 기기 속 추론으로 옮겨 가는 중",
+    "데이터 이동을 줄이려 메모리 근처·내부 연산(PNM·PIM)이 부상",
+    "소프트웨어·발열·구조 문제와 표준 마련은 아직 과제로 남아"
+  ],
+  "photo_queries": [
+    "dram chip closeup",
+    "autonomous drone flight",
+    "memory chip circuit board"
+  ],
+  "caption": "기기 속 AI, 메모리 안에서 계산해야 전력 줄인다\n\nAI의 무게중심이 데이터센터에서 모델을 학습시키는 일에서, 자동차·드론 같은 기기 안에서 학습된 모델을 실제로 돌리는 '추론'으로 옮겨 가고 있습니다. Semiconductor Engineering은 이런 변화가 데이터를 어디서 처리하고 저장할지를 근본부터 다시 설계하게 만든다고 전했습니다. 기기에서는 쓸 수 있는 연산 능력과 메모리, 전력이 모두 제한돼 있는데, 프로세서와 메모리 사이에서 데이터를 옮기는 데 상당한 시간과 에너지가 듭니다. 그래서 메모리 바로 옆에서 계산하는 PNM(processing near memory)과 메모리 칩 안에서 계산하는 PIM(processing in memory)이 대안으로 거론됩니다. 예를 들어 AI 서버용 고대역폭 메모리(HBM) 패키지나 모바일용 LPDDR6 메모리 안에 연산 기능을 넣는 방식입니다. 전기차나 드론은 데이터 처리에 드는 에너지를 줄일수록 한 번 충전으로 더 멀리 갈 수 있습니다. 다만 기사는 컴파일러와 운영체제 같은 소프트웨어, 발열, 칩 구조 문제와 업계 표준 마련이 아직 해결해야 할 과제라고 짚었습니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/rethinking-memory-for-ai-inference/\n\n#반도체 #semiconductor #메모리 #PIM #HBM #AI추론 #엣지AI",
+  "photo": {
+    "provider": "pixabay",
+    "id": "4569678",
+    "query": "memory chip circuit board",
+    "file": "6b0a496a8d.photo.jpg",
+    "download_url": "https://pixabay.com/get/g82e04abd05046bec8445034aae438e502fe0a92d1778a7e44ad4d54c806129c12ace3069af31b0d7d77d4ee66dd0d86ea1b103a71b8cee82dbff5c56c5abe559_1280.jpg",
+    "page_url": "https://pixabay.com/photos/board-electronics-computer-4569678/",
+    "photographer": "Panals",
+    "photographer_url": "https://pixabay.com/users/Panals-3111125/",
+    "alt": "board, electronics, computer, electrical engineering, current, printed circuit board, data, cpu, circuits, chip, technology, lines, control center, trace, solder joint, riser board, computer science, microprocessor, digital, information, electronic",
+    "width": 5973,
+    "height": 3982,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Panals / Pixabay"
+  }
+}

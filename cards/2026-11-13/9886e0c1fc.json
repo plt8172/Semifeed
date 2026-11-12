@@ -1,0 +1,35 @@
+{
+  "id": "9886e0c1fc",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65372",
+  "source": "디일렉",
+  "category": "파운드리",
+  "published_at": "2026-11-12T23:59+09:00",
+  "headline": "DB하이텍 공장 100% 가동, 누적 영업익 24% 늘었다",
+  "bullets": [
+    "3분기 매출 4034억원(14%↑), 영업이익 900억원(6.6%↑)",
+    "8인치 파운드리 가동률 사실상 100%, 고전압 제품 비중 확대",
+    "상우캠퍼스 클린룸 완공, 전력반도체 생산능력 월 10만장 이상으로"
+  ],
+  "photo_queries": [
+    "power semiconductor module",
+    "cleanroom fab worker",
+    "power transistor closeup"
+  ],
+  "caption": "DB하이텍 공장 100% 가동, 누적 영업익 24% 늘었다\n\n국내 파운드리 업체 DB하이텍이 올해 3분기 매출 4033억원, 영업이익 900억원을 기록했다고 공시했습니다. 파운드리는 다른 회사가 설계한 반도체를 대신 만들어 주는 사업이고, DB하이텍은 지름 8인치(200mm) 웨이퍼로 전력반도체를 주로 생산합니다. 전력반도체는 전자기기와 자동차, 산업 설비에서 전기를 켜고 끄거나 전압을 바꾸는 부품입니다. 회사는 8인치 파운드리 사업이 잘되면서 전력반도체를 중심으로 3분기 공장 가동률이 사실상 100%였고, 값이 비싼 고전압 제품(HV BCD) 비중이 늘어 판매 단가도 올랐다고 설명했습니다. 3분기까지 누적 영업이익은 2622억원으로 1년 전보다 24% 늘었습니다. 다만 자회사 DB월드의 합금철 사업 영업정지 손실과 외환·투자 손실이 반영되면서 당기순이익은 224억원으로 75% 줄었습니다. DB하이텍은 충북 음성 상우캠퍼스(FAB2) 클린룸을 완공했고, 앞으로 이곳의 차세대 전력반도체 생산능력을 월 6.3만장에서 10만장 이상으로 늘릴 계획입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65372\n\n#반도체 #semiconductor #파운드리 #전력반도체 #DB하이텍 #8인치 #실적",
+  "photo": {
+    "provider": "pixabay",
+    "id": "5907538",
+    "query": "power transistor closeup",
+    "file": "9886e0c1fc.photo.jpg",
+    "download_url": "https://pixabay.com/get/g477958099d1bb9be1f0d22c2e6f8c58d83ad8cbf2997fba69095e31708b34b7a3308a9fa34f669d54794816b0350f624cafd74df49e2d24d02e50d3aef7f1947_1280.jpg",
+    "page_url": "https://pixabay.com/photos/eic-diodes-semiconductors-5907538/",
+    "photographer": "zhuangwei500",
+    "photographer_url": "https://pixabay.com/users/zhuangwei500-19795926/",
+    "alt": "eic, diodes, semiconductors, electronic, components, device, diodes, diodes, diodes, diodes, diodes, semiconductors, semiconductors, semiconductors, electronic",
+    "width": 3888,
+    "height": 2592,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: zhuangwei500 / Pixabay"
+  }
+}

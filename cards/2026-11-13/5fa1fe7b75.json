@@ -1,0 +1,35 @@
+{
+  "id": "5fa1fe7b75",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65377",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-12T23:21+09:00",
+  "headline": "젠슨 황, 불륜 파문 속 엔비디아 CEO 사임",
+  "bullets": [
+    "엔비디아 이사회, 젠슨 황의 CEO·이사직 동시 사임 발표",
+    "콜레트 크레스 CFO가 임시 CEO, 하비 존스 첫 이사회 의장",
+    "사임 소식에 주가 장중 10% 넘게 하락, 정식 후임 물색 착수"
+  ],
+  "photo_queries": [
+    "gpu chip closeup",
+    "graphics card cooler",
+    "computer server hardware"
+  ],
+  "caption": "젠슨 황, 불륜 파문 속 엔비디아 CEO 사임\n\n1993년 엔비디아를 공동 창업해 33년 동안 회사를 이끌어 온 젠슨 황이 최고경영자(CEO)와 이사회 이사직에서 모두 물러났습니다. 엔비디아 이사회는 12일(현지시간) 사임을 발표했지만 구체적인 이유는 밝히지 않았습니다. 디일렉에 따르면 황 CEO는 중국 정보기관과 연계됐다는 의혹을 받는 여성과의 불륜을 인정했고, 이어 사내 여성 임원과의 추가 불륜 의혹까지 불거진 상태였습니다. 엔비디아는 AI 서버에 들어가는 그래픽처리장치(GPU)로 세계 최대 AI 반도체 기업이 된 회사입니다. 당분간은 2013년부터 재무를 맡아 온 콜레트 크레스 최고재무책임자(CFO)가 임시 CEO를 겸하고, 반도체 설계 소프트웨어 회사 시높시스의 CEO를 지낸 하비 존스가 처음 생긴 이사회 의장 자리를 맡습니다. 이사회는 회사 안팎에서 정식 후임을 찾기 시작했고, 엔비디아 주가는 12일 장중 10% 넘게 떨어졌습니다. AI 칩 시장을 이끌던 창업자가 갑자기 떠나면서 리더십 공백을 어떻게 메울지가 업계의 관심사가 됐습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65377\n\n#반도체 #semiconductor #엔비디아 #NVIDIA #AI반도체 #GPU #젠슨황",
+  "photo": {
+    "provider": "pixabay",
+    "id": "3100049",
+    "query": "computer server hardware",
+    "file": "5fa1fe7b75.photo.jpg",
+    "download_url": "https://pixabay.com/get/g107d2466dceb0076f74aa88c327496a9a302ae36b2a001e6ca6ac16e2f3c5c908edec8cb0ce073393da2ab471b7367aeea6a9d5d35611b86f6f268037cb6ad15_1280.jpg",
+    "page_url": "https://pixabay.com/photos/sever-digitization-mainframe-3100049/",
+    "photographer": "dlohner",
+    "photographer_url": "https://pixabay.com/users/dlohner-4631193/",
+    "alt": "sever, digitization, mainframe, computer, digital, binary, cable, network, data center, internet, frame, router, ethernet, server, switch, data center, data center, data center, data center, server, server, server, server, server",
+    "width": 5079,
+    "height": 3696,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: dlohner / Pixabay"
+  }
+}
