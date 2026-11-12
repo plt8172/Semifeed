@@ -1,0 +1,322 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../../kit/kit.css">
+<svg id="s" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+<script src="../../kit/kit.js"></script>
+<script>
+// 보코딩: 무대 하나가 처음부터 끝까지 이어진다. 파형 하나가 폰 속 → 확대 → 반복 → 성대·입 모양으로 분해 → 숫자 → 다시 합성으로 변해 간다.
+// 화면의 파형·펄스·공명 곡선은 make_audio.py와 같은 식(F0, FA, FI, GLIDE)으로 계산한다. 그림과 소리가 같은 것이다.
+const R = Reel, { ramp, lerp, clamp, g, path, seg, text, span, glow, C } = R;
+const svg = R.$("#s"), GA = R.GLOW_A, GB = R.GLOW_B;
+const X0 = 70, X1 = 1010, WID = X1 - X0;
+
+// ---------- 시각 ----------
+const at = R.at, ln = R.line;
+const tP = at("p1"), tP2 = at("p2"), tP3 = at("p3"), tP4 = at("p4"), tO = at("o1"), tO2 = at("o2"), tM = at("m1"),
+  tM2 = at("m2"), tM3 = at("m3"), tS = at("s1"), tS3 = at("s3"), tD = at("d1"), tE = at("e1"), tE2 = at("e2"), tE3 = at("e3");
+const cBuzz = R.clipTime("m2"), cA = R.clipTime("m3"), cAI = R.clipTime("m4");
+const HEAD = [{ t: 0 },
+  { t: tP + 0.25, chap: "01 · 문제", title: "소리를 그대로 보내면" },
+  { t: tO, chap: "02 · 단서", title: "목소리는 반복된다" },
+  { t: tM, chap: "03 · 원리", title: "성대와 입 모양" },
+  { t: tS, chap: "04 · 해법", title: "소리 대신 숫자" },
+  { t: tD, chap: "05 · 증명", title: "줄여도 들릴까" },
+  { t: tE2 - 0.05 }];
+
+// ---------- 소리 모델 (make_audio.py와 같은 수치) ----------
+const F0 = 120, PERIOD = 1 / F0;
+const FA = [[800, 80, 1], [1200, 90, 0.6], [2500, 120, 0.25]];      // '아': [공명 주파수, 대역폭, 세기]
+const FI = [[280, 60, 1], [2250, 100, 0.6], [2900, 120, 0.4]];      // '이'
+const GLIDE = [0.5, 0.25, 0.6];                                     // ai.wav: '아' 유지, 바뀌는 시간, '이' 유지
+const shape = (m) => FA.map((a, i) => a.map((v, j) => lerp(v, FI[i][j], m)));
+const ring = (F, x) => F.reduce((s, [f, b, a]) => s + a * Math.exp(-Math.PI * b * x) * Math.sin(2 * Math.PI * f * x), 0);
+const buzzRing = (x) => Math.exp(-2500 * x) - Math.exp(-9000 * x);
+// 주기 T로 반복되는 떨림에 대한 소리. x: 초
+const periodic = (h, x, T) => { const ph = ((x % T) + T) % T; let s = 0; for (let k = 0; k < 4; k++) s += h(ph + k * T); return s; };
+const normCache = {};
+function vowel(m, x, T = PERIOD) {
+  const key = m.toFixed(2) + "|" + T.toFixed(5);
+  const F = shape(m);
+  if (!normCache[key]) { let mx = 0; for (let i = 0; i < 160; i++) mx = Math.max(mx, Math.abs(periodic((u) => ring(F, u), (i / 160) * T, T))); normCache[key] = mx; }
+  return periodic((u) => ring(F, u), x, T) / normCache[key];
+}
+const BUZZ_MAX = 0.47;
+const buzz = (x) => periodic(buzzRing, x, PERIOD) / BUZZ_MAX;
+// 입 모양 곡선: 어느 높이의 소리를 키우는지 (0~3500 Hz)
+const FMAX = 3500;
+const mouth = (m, f) => shape(m).reduce((s, [F, B, a]) => s + a / Math.sqrt(1 + ((f - F) / (B * 1.7)) ** 2), 0);
+const glideMix = (x) => R.ease((x - GLIDE[0]) / GLIDE[1]);
+
+// ---------- 실제 음성 (데모 A) ----------
+const VA = R.clip("audio/A.wav"), SR = R.clipSr;
+let VGAIN = 1;
+const voiceAt = (sec) => clamp(R.sample(VA, sec * SR) * VGAIN, -1, 1);
+// 0.2초 동안 계속 소리가 큰 구간의 시작
+const C0 = (() => {
+  const hop = SR / 100, e = [];
+  for (let i = 0; i + hop <= VA.length; i += hop) { let s = 0; for (let j = 0; j < hop; j++) s += VA[i + j] ** 2; e.push(s); }
+  let best = 0, bv = -1;
+  for (let i = 0; i + 20 < e.length; i++) { const v = Math.min(...e.slice(i, i + 20)); if (v > bv) { bv = v; best = i; } }
+  return best / 100 + 0.03;
+})();
+const DRIFT = 0.012;                                    // 폰 속 파형이 흐르는 속도 (초/초)
+const CEN = C0 + DRIFT * tP2;                           // 확대할 때 멈추는 위치
+VGAIN = (() => { let mx = 0.05; for (let x = C0 - 0.015; x < CEN + 0.015; x += 0.00025) mx = Math.max(mx, Math.abs(voiceAt(x))); return 0.92 / mx; })();
+const WIN0 = 0.024, WIN1 = 0.006, NS = 48;              // 확대 전·후 창 길이, 확대한 창 안의 측정 횟수(8,000번/초 × 0.006초)
+const sampleVal = (i) => voiceAt(CEN - WIN1 / 2 + i / 8000);
+// 측정한 값 49개를 8칸짜리 0과 1로 적은 것. 화면의 점 하나가 여덟 칸이다
+const BITS = Array.from({ length: NS + 1 }, (_, i) => Math.round((sampleVal(i) * 0.5 + 0.5) * 255).toString(2).padStart(8, "0"));
+const BIT_STREAM = Array.from({ length: 80 }, (_, i) => BITS[i % (NS + 1)]).join(" ") + " ";
+
+// ---------- 0. 폰과 훅 ----------
+function phone(t, o, scale) {
+  if (o <= 0) return "";
+  return g(o, `<rect x="358" y="700" width="364" height="600" rx="54" fill="none" stroke="${C.fg}" stroke-width="4"/>` +
+    seg(505, 744, 575, 744, C.mu, 5), `transform="translate(540 1000) scale(${scale.toFixed(3)}) translate(-540 -1000)"`);
+}
+function hook(t) {
+  const out = 1 - ramp(t, tP - 0.45, tP - 0.1);
+  const th = at("h2", 0.2), on = t >= th + 0.12, size = 82 + 7 * Math.sin(Math.PI * clamp((t - th) / 0.45));
+  return g(out, text(540, 478, "통화 속 목소리는", 82, { w: 800 }) +
+    text(540, 586, "상대방 목소리가 아니다", size.toFixed(1), { w: 800, f: on ? C.a : C.fg }));
+}
+
+// ---------- 1~3. 하나로 이어지는 파형 ----------
+const G_HOOK = [392, 688, 1000, 80], G_PROB = [X0, X1, 760, 190], G_OBS = [X0, X1, 820, 170], G_OUT = [X0, X1, 1110, 85];
+const mixG = (a, b, k) => a.map((v, i) => lerp(v, b[i], k));
+const PHI0 = tM + 0.8, PHI_SPEED = 0.45;                 // 원리 장면에서 파형이 흐르는 속도 (주기/초)
+const phi = (t) => PHI_SPEED * clamp(t - PHI0, 0, tS3 - PHI0);
+const filterOn = (t) => (1 - ramp(t, tM2 + 0.2, tM2 + 0.9)) + ramp(t, at("m3", 0.2), cA.t0);   // 0: 성대만, 1: 입 모양까지
+const mouthMix = (t) => glideMix(t - cAI.t0);
+const isVowelAt = (t) => t >= tO + 0.3;
+function mainWave(t) {
+  if (t >= tS3 + 0.5) return "";
+  let G = mixG(G_HOOK, G_PROB, ramp(t, tP - 0.35, tP + 0.45));
+  G = isVowelAt(t) ? mixG(G, G_OBS, 1) : G;
+  G = mixG(G, G_OUT, ramp(t, tM, tM + 0.7));
+  const [x0, x1, mid, amp] = G;
+  const win = WIN0 * Math.pow(WIN1 / WIN0, ramp(t, tP2, tP2 + 0.9));
+  const cen = C0 + DRIFT * Math.min(t, tP2);
+  const isVowel = t >= tO + 0.3;                        // 실제 음성이 사라지고, 합성한 '아'가 왼쪽부터 그려진다
+  const swap = isVowel ? ramp(t, tO + 0.3, tO + 0.5) : 1 - ramp(t, tO, tO + 0.3);
+  const drawn = isVowel ? clamp((t - (tO + 0.3)) / 0.7) : 1;
+  const q = filterOn(t), m = mouthMix(t), ph = phi(t) * PERIOD;
+  const f = (k) => {
+    if (!isVowel) return voiceAt(cen + (k - 0.5) * win);
+    const x = k * 5 * PERIOD + ph;
+    return q >= 1 ? vowel(m, x) : lerp(buzz(x), vowel(m, x), q);
+  };
+  // 훅: 폰이 파형을 다시 그린다 (주황)
+  const tr = clamp((t - at("h3", 0.3)) / 1.1), back = ramp(t, tP - 0.3, tP + 0.3);
+  const white = lerp(1, 0.3, clamp(tr * 6)) * (1 - back) + back;
+  const dimS = 1 - 0.78 * ramp(t, tS + 0.3, tS + 0.9), gone = 1 - ramp(t, tS3, tS3 + 0.5);
+  let s = g(white * dimS * gone * swap, path(R.plot(f, x0, x1, mid, amp, 420, 0, drawn)));
+  if (tr > 0 && back < 1) {
+    s += g(1 - back, path(R.plot(f, x0, x1, mid, amp, 420, 0, tr), C.a, 5, glow(GA)) +
+      (tr < 1 ? `<circle cx="${lerp(x0, x1, tr).toFixed(1)}" cy="${(mid - f(tr) * amp).toFixed(1)}" r="9" fill="${C.a}" ${glow(GA, 18)}/>` : ""));
+  }
+  return s;
+}
+
+// ---------- 1. 문제: 1초에 8,000번, 64,000칸 ----------
+function problem(t) {
+  if (t < tP2 || t > tO + 0.4) return "";
+  const out = 1 - ramp(t, tO - 0.1, tO + 0.3);
+  const [x0, x1, mid, amp] = G_PROB;
+  const zoomed = ramp(t, tP2 + 0.8, tP2 + 1.1);
+  const tw = R.word("p2", "8,000"), sp = clamp((t - tw) / 1.2);
+  const typed = 72 * clamp((t - tP3) / (R.word("p3", "64,000") - tP3)) + 468 * clamp((t - tP4) / (ln("p4").t1 - tP4)) ** 1.5;
+  const hot = t >= tP3 ? Math.floor(typed / 9) % (NS + 1) : -1;
+  let s = "";
+  // 측정 점
+  let stems = "";
+  for (let i = 0; i <= NS; i++) {
+    if (sp <= 0 || i / NS > sp) break;
+    const x = lerp(x0, x1, i / NS), y = mid - sampleVal(i) * amp, col = i === hot ? C.a : C.b;
+    stems += seg(x, mid, x, y, col, 2.5, 'opacity="0.75"') + `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${i === hot ? 9 : 6}" fill="${col}"/>`;
+  }
+  s += stems;
+  // 시간 눈금
+  s += g(zoomed * 0.9, seg(x0, 985, x1, 985, C.mu, 2) + seg(x0, 973, x0, 997, C.mu, 2) + seg(x1, 973, x1, 997, C.mu, 2) +
+    `<rect x="455" y="965" width="170" height="40" fill="#07080c"/>` + text(540, 997, "0.006초", 30, { f: C.mu, w: 600 }));
+  // 0과 1
+  if (typed > 0) {
+    const stream = BIT_STREAM, PER = 36, last = Math.floor((typed - 1) / PER);
+    for (let r = Math.max(0, last - 1); r <= last; r++) {
+      const str = stream.slice(r * PER, Math.min((r + 1) * PER, Math.floor(typed)));
+      s += text(540 - 410, 1090 + (r - Math.max(0, last - 1)) * 52, str, 34, { a: "start", f: C.b, w: 600, ls: 3, x: R.TNUM + ' xml:space="preserve"' });
+    }
+  }
+  // 세기
+  const t1s = R.word("p2", "1초에"), t64 = R.word("p3", "64,000");
+  const k64 = ramp(t, t64, t64 + 0.45), mul = ramp(t, tP3, tP3 + 0.3) * (1 - ramp(t, t64 - 0.1, t64 + 0.15));
+  const n = lerp(8000 * R.ease(sp), 64000, k64), unit = k64 > 0.5 ? "칸" : "번";
+  s += g(ramp(t, t1s, t1s + 0.3), text(540, 1250, span("1초에 ", C.fg, 48, 700) + span(R.num(n), k64 > 0.5 ? C.a : C.b, Math.round(80 + 14 * Math.sin(Math.PI * clamp((t - t64 - 0.2) / 0.5))), 800) + span(unit, C.fg, 48, 700) +
+    (mul > 0 ? `<tspan fill="${C.mu}" font-size="48" opacity="${mul.toFixed(2)}"> × 8칸</tspan>` : ""), 48));
+  return g(out, s);
+}
+
+// ---------- 2. 단서: 같은 모양이 반복 ----------
+const PP = WID / 5;                                       // 한 주기의 화면 폭
+const arrive = (j) => tO2 + 0.5 + 0.4 * (j - 1);          // 겹쳐 보는 조각이 j번째 주기에 닿는 시각 (episode.json의 tick과 같다)
+function observe(t) {
+  if (t < tO2 || t > tM + 0.8) return "";
+  const [x0, , mid, amp] = G_OBS;
+  const out = 1 - ramp(t, tM - 0.05, tM + 0.25);
+  let pos = 0;                                            // 첫 주기 조각이 지금 몇 번째 주기 위에 있는지
+  for (let j = 1; j <= 4; j++) pos += ramp(t, arrive(j) - 0.28, arrive(j));
+  return g(ramp(t, tO2 + 0.05, tO2 + 0.3) * out,
+    path(R.plot((k) => vowel(0, k * 5 * PERIOD), x0, X1, mid, amp, 420, 0, 0.2), C.a, 6, glow(GA)), `transform="translate(${(pos * PP).toFixed(1)} 0)"`);
+}
+// 주기 경계선 → 성대 떨림(펄스)
+function pulses(t) {
+  if (t < tO2 || t > tS3 + 0.7) return "";
+  const k = ramp(t, tM, tM + 0.7), out = 1 - ramp(t, tS3, tS3 + 0.5);
+  const ph = phi(t);
+  const lvl = t > cBuzz.t0 - 0.1 ? R.level(t) : 0;
+  let s = "";
+  for (let i = 0; i <= 5; i++) {
+    const born = i <= 1 ? ramp(t, tO2 + 0.05, tO2 + 0.3) : ramp(t, arrive(i - 1) - 0.05, arrive(i - 1) + 0.12);
+    let u = i - ph;
+    if (k >= 1) u = ((u % 5) + 5) % 5;
+    const x = X0 + u * PP;
+    const edge = k >= 1 && ph > 0 ? clamp(Math.min(x - X0, X1 - x) / 50) : 1;
+    const last = i === 5 ? 1 - k : 1;
+    const y0 = lerp(990, 590, k), y1 = lerp(650, 480, k);
+    const col = k > 0.5 ? C.a : C.mu;
+    s += g(born * edge * last * lerp(0.7, 1, k), seg(x, y0, x, y1, col, lerp(2, 5, k), k >= 1 && lvl > 0.05 ? glow(GA, 6 + 16 * lvl) : ""));
+  }
+  s += g(k, seg(X0, 590, X1, 590, C.dim, 2) + text(X0, 455, "성대", 36, { a: "start", f: C.mu }));
+  return g(out, s);
+}
+
+// ---------- 3. 원리: 입 모양 ----------
+const MOUTH_BASE = 850, MOUTH_H = 150;
+const mouthMax = {};
+function mouthY(m, f, e) {
+  const key = m.toFixed(2);
+  if (!mouthMax[key]) { let mx = 0; for (let x = 0; x <= FMAX; x += 20) mx = Math.max(mx, mouth(m, x)); mouthMax[key] = mx; }
+  return MOUTH_BASE - (e * MOUTH_H * mouth(m, f)) / mouthMax[key];
+}
+function model(t) {
+  if (t < tM || t > tS3 + 0.7) return "";
+  const out = 1 - ramp(t, tS3, tS3 + 0.5);
+  const show = lerp(0.4, 1, ramp(t, tM3, tM3 + 0.3)) * ramp(t, tM + 0.4, tM + 0.8), e = ramp(t, at("m3", 0.2), cA.t0), m = mouthMix(t);
+  const d = R.plot((k) => (MOUTH_BASE - mouthY(m, k * FMAX, e)) / MOUTH_H, X0, X1, MOUTH_BASE, MOUTH_H, 240);
+  const playing = (t > cA.t0 && t < cA.t1) || (t > cAI.t0 && t < cAI.t1);
+  let s = g(show, path(d, C.b, 5, playing ? glow(GB, 6 + 14 * R.level(t)) : "") + seg(X0, MOUTH_BASE, X1, MOUTH_BASE, C.dim, 2) +
+    text(X0, 650, "입 모양", 36, { a: "start", f: C.mu }) +
+    g(e, text(X0, 896, "낮은 소리", 26, { a: "start", f: C.mu, w: 600 }) + text(X1, 896, "높은 소리", 26, { a: "end", f: C.mu, w: 600 })));
+  const gi = ramp(m, 0.35, 0.65);
+  s += g(e * (1 - gi), text(X1, 668, "아", 84, { a: "end", f: C.a, w: 800 })) + g(e * gi, text(X1, 668, "이", 84, { a: "end", f: C.a, w: 800 }));
+  const dropped = ramp(t, tS + 0.3, tS + 0.9);
+  s += g(ramp(t, tM + 0.4, tM + 0.8), text(X0, 985, "들리는 소리", 36, { a: "start", f: C.mu }) +
+    g(dropped, text(X1, 985, "보내지 않는다", 36, { a: "end", f: C.fg })));
+  return g(out, s);
+}
+
+// ---------- 4. 해법: 숫자만 보내고, 받는 쪽이 다시 만든다 ----------
+const DT = 0.3, FLY = 0.8, T_PK = tS3 + 0.75;            // 묶음 간격, 날아가는 시간, 첫 묶음이 떠나는 시각
+const pkMix = (n) => 0.5 + 0.5 * Math.cos((2 * Math.PI * n) / 12);
+const pkF0 = (n) => 120 + 14 * Math.sin((2 * Math.PI * n) / 8);
+const pkNums = (n) => { const F = shape(pkMix(n)); return [Math.round(pkF0(n)), Math.round(F[0][0] / 10) * 10, Math.round(F[1][0] / 10) * 10]; };
+const pkPhase = [0];
+for (let n = 0; n < 40; n++) pkPhase.push(pkPhase[n] + 0.02 * pkF0(n));
+const SLOT = WID / 4;
+function solution(t) {
+  if (t < tS || t > tD + 0.3) return "";
+  const out = 1 - ramp(t, tD - 0.35, tD);
+  const k = ramp(t, tS3, tS3 + 0.7);
+  const tSpeed = R.word("s2", "빨리"), tShape = R.word("s2", "입");
+  const a1 = ramp(t, tSpeed, tSpeed + 0.3), a2 = ramp(t, tShape, tShape + 0.3);
+  const nNow = Math.max(0, Math.floor((t - T_PK) / DT));
+  const [n0, n1, n2] = pkNums(t < T_PK ? 0 : nNow);
+  const px = (f) => X0 + (WID * f) / FMAX;
+  let s = "";
+  // 잰 값 표시 → 보내는 폰의 숫자
+  s += g(a1 * (1 - k), text(X1 - 128, 455, "1초에", 40, { a: "end" }) + text(X1, 455, "번", 40, { a: "end" }));
+  s += g(a1, text(lerp(X1 - 82, 300, k), lerp(455, 580, k), String(n0), lerp(46, 72, k), { w: 800, f: C.b, x: R.TNUM }));
+  const yPeak = (f) => mouthY(1, f, 1) - 22;
+  s += g(a2 * (1 - k), `<circle cx="${px(280)}" cy="${mouthY(1, 280, 1)}" r="9" fill="${C.b}"/><circle cx="${px(2250)}" cy="${mouthY(1, 2250, 1)}" r="9" fill="${C.b}"/>`);
+  s += g(a2, text(lerp(px(280) + 70, 625, k), lerp(yPeak(280) + 6, 580, k), String(n1), lerp(40, 72, k), { w: 800, f: C.b, x: R.TNUM }) +
+    text(lerp(px(2250), 850, k), lerp(yPeak(2250), 580, k), String(n2), lerp(40, 72, k), { w: 800, f: C.b, x: R.TNUM }));
+  s += g(k, text(X0, 455, "보내는 폰", 36, { a: "start", f: C.mu }) + text(300, 500, "빠르기", 30, { f: C.mu, w: 600 }) + text(735, 500, "입 모양", 30, { f: C.mu, w: 600 }) +
+    seg(X0, 796, X1, 796, C.mu, 2, 'stroke-dasharray="2 14" opacity="0.6"') + text(X0, 975, "받는 폰", 36, { a: "start", f: C.mu }));
+  // 숫자 묶음이 내려간다
+  const t50 = R.word("s3", "50번");
+  s += g(ramp(t, t50, t50 + 0.3), text(722, 724, span("1초에 ", C.fg) + span("50", C.b, 54, 800) + span("번", C.fg), 40, { a: "start" }) +
+    text(722, 764, "화면은 느리게 재생", 26, { a: "start", f: C.mu, w: 600 }));
+  for (let n = Math.max(0, nNow - 3); n <= nNow && t >= T_PK; n++) {
+    const u = (t - (T_PK + n * DT)) / FLY;
+    if (u < 0 || u > 1) continue;
+    const y = lerp(668, 925, u), o = Math.min(1, u * 6, (1 - u) * 6);
+    s += g(o, `<rect x="395" y="${(y - 36).toFixed(1)}" width="290" height="72" rx="18" fill="#07080c" stroke="${C.b}" stroke-width="3"/>` +
+      text(540, y + 13, pkNums(n).join("  "), 36, { f: C.b, w: 700, x: R.TNUM + ' xml:space="preserve"' }));
+  }
+  // 받는 폰이 조각마다 다시 그린다
+  const a0 = T_PK + FLY, scroll = Math.max(0, (t - a0) / DT - 3);
+  let rebuilt = "";
+  for (let n = Math.max(0, Math.floor(scroll) - 1); t >= a0 + n * DT; n++) {
+    const age = t - (a0 + n * DT), drawn = clamp(age / 0.28), hot = 1 - ramp(age, 0.3, 0.75);
+    const xa = X0 + (n - scroll) * SLOT, T = 1 / pkF0(n), m = pkMix(n);
+    const f = (q) => vowel(m, (pkPhase[n] % 1) * T + q * 0.02, T);
+    const d = R.plot(f, xa, xa + SLOT, 1110, 85, 170, 0, drawn);
+    rebuilt += path(d, C.fg, 3.5) + g(hot, path(d, C.a, 4.5, glow(GA, 10))) + seg(xa, 1200, xa, 1216, C.mu, 2);
+  }
+  s += `<clipPath id="rc"><rect x="${X0}" y="1000" width="${WID}" height="230"/></clipPath><g clip-path="url(#rc)">${rebuilt}</g>`;
+  return g(out, s);
+}
+
+// ---------- 5. 증명: 같은 문장, 세 가지 데이터 양 ----------
+const DEMO = [
+  { id: "d1", file: "audio/A.wav", label: "전부", rate: 64000 },
+  { id: "d2", file: "audio/B.wav", label: "1/5", rate: 13000 },
+  { id: "d3", file: "audio/C.wav", label: "1/90", rate: 700 },
+].map((d, i) => {
+  const s = R.clip(d.file), NB = 118, bars = [];
+  for (let j = 0; j < NB; j++) { let mx = 0; for (let q = Math.floor((j * s.length) / NB); q < ((j + 1) * s.length) / NB; q++) mx = Math.max(mx, Math.abs(s[q])); bars.push(mx); }
+  return { ...d, bars, y: 540 + i * 262, clip: R.clipTime(d.id) };
+});
+function demo(t) {
+  if (t < tD - 0.1 || t > tE2 + 0.5) return "";
+  const out = 1 - ramp(t, tE2 - 0.3, tE2 + 0.1);
+  let s = "";
+  DEMO.forEach((d, i) => {
+    const t0 = ln(d.id).t0, show = ramp(t, t0, t0 + 0.35);
+    if (show <= 0) return;
+    const last = i === 2, focus = last ? 1 : 1 - 0.68 * ramp(t, tE, tE + 0.4);
+    const grow = ramp(t, t0 + 0.1, t0 + 0.6), w = Math.max(10, (WID * d.rate) / 64000) * grow;
+    const hi = last ? ramp(t, tE, tE + 0.4) : 0;
+    let row = text(X0, d.y - 62, d.label, 60, { a: "start", w: 800, f: hi > 0.5 ? C.a : C.fg }) +
+      text(X1, d.y - 62, span("1초에 ", C.mu) + span(R.num(d.rate), C.b, 44, 800) + span("칸", C.mu), 34, { a: "end", w: 600 }) +
+      `<rect x="${X0}" y="${d.y - 36}" width="${w.toFixed(1)}" height="12" rx="6" fill="${C.b}"/>`;
+    const p = clamp((t - d.clip.t0) / (d.clip.t1 - d.clip.t0)), playing = t >= d.clip.t0 && t <= d.clip.t1;
+    const step = WID / d.bars.length;
+    let bars = "";
+    d.bars.forEach((v, j) => {
+      const x = X0 + (j + 0.5) * step, h = Math.max(3, v * 62), played = playing && j / d.bars.length <= p;
+      bars += seg(x, d.y + 62 - h, x, d.y + 62 + h, played ? C.a : C.fg, 4, played ? "" : 'opacity="0.55"');
+    });
+    row += g(ramp(t, t0 + 0.2, t0 + 0.6), bars);
+    s += g(show * focus, row);
+  });
+  return g(out, s);
+}
+
+// ---------- 6. 맺음: 처음 화면으로 돌아간다 ----------
+function outro(t) {
+  if (t < tE2 - 0.1) return "";
+  const k = ramp(t, tE2, tE2 + 0.4), k3 = ramp(t, tE3, tE3 + 0.5);
+  let s = g(k, text(540, 470, "VOCODING", 30, { f: C.b, ls: 8 }) + text(540, 620 + (1 - k) * 16, "보코딩", 150, { w: 900 }));
+  if (k3 > 0) {
+    const f = (q) => voiceAt(C0 + DRIFT * (t - tE3) + (q - 0.5) * WIN0);
+    s += phone(t, k3, 1) + g(k3, path(R.plot(f, ...G_HOOK, 300), C.a, 5, glow(GA)));
+  }
+  return s;
+}
+
+Reel.stage((t) => {
+  svg.innerHTML = hook(t) + phone(t, 1 - ramp(t, tP - 0.35, tP + 0.25), 1 + 1.6 * ramp(t, tP - 0.35, tP + 0.45)) +
+    pulses(t) + mainWave(t) + problem(t) + observe(t) + model(t) + solution(t) + demo(t) + outro(t);
+  R.header(t, HEAD);
+});
+</script>
