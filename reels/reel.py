@@ -7,10 +7,10 @@
     python3 reels/reel.py frames  reels/episodes/<slug> 3.2 h2 ... 지정한 시각(초 또는 줄 id)의 원본 크기 화면 → build/frames/
     python3 reels/reel.py build   reels/episodes/<slug>            tts → 렌더 → 믹스 → out/<slug>.mp4
     python3 reels/reel.py codec   in.wav out_dir/                  같은 음성을 PCM·GSM·Codec2로 통과시킨 A/B/C.wav
-    python3 reels/reel.py say     "문장" out.wav                    TTS로 문장 하나를 wav로 (데모 음성 재료)
+    python3 reels/reel.py say     "문장" out.wav [목소리 번호]        TTS로 문장 하나를 wav로 (데모 음성 재료)
     python3 reels/reel.py listen  reels/episodes/<slug>            완성 영상의 소리를 줄마다 받아 적어 자막과 나란히 출력
     python3 reels/reel.py listen  any.wav|mp4                      오디오 파일을 받아 적는다 (데모 음성이 들리는지 확인)
-    python3 reels/reel.py setup                                    오프라인 TTS 모델 받기 (OPENAI_API_KEY가 없을 때)
+    python3 reels/reel.py setup                                    내장 TTS 모델 받기 (약 130MB. 키 없이 쓰는 기본 목소리)
     python3 reels/reel.py setup   asr                              받아쓰기(음성 인식) 모델 받기 (listen에 필요, 약 640MB)
 
 에피소드는 나레이션 줄 목록(episode.json의 lines)과 무대 하나(stage.html)로 이루어진다.
@@ -21,6 +21,7 @@
 from __future__ import annotations
 
 import argparse
+import difflib
 import hashlib
 import json
 import math
@@ -40,8 +41,10 @@ import soundfile as sf
 
 REELS = Path(__file__).resolve().parent
 MODELS = REELS / ".models"
-SHERPA_MODEL = "vits-mimic3-ko_KO-kss_low"
-SHERPA_URL = f"https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/{SHERPA_MODEL}.tar.bz2"
+TTS_MODEL = "sherpa-onnx-supertonic-3-tts-int8-2026-05-11"      # Supertonic 3: 목소리 10개(sid 0~9), 44.1 kHz
+TTS_URL = f"https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/{TTS_MODEL}.tar.bz2"
+TTS_SID, TTS_SPEED = 2, 1.12
+TAKES, TAKE_OK = 4, 0.95           # 내장 TTS: 받아쓰기가 대본과 이만큼 맞을 때까지 다시 읽히는 횟수
 ASR_MODEL = "sherpa-onnx-whisper-small"
 ASR_URL = f"https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/{ASR_MODEL}.tar.bz2"
 FALLBACK_CHROMIUM = "/opt/pw-browsers/chromium"
@@ -112,8 +115,8 @@ def tts_backend(voice: dict) -> str:
         return b
     if os.environ.get("OPENAI_API_KEY"):
         return "openai"
-    if (MODELS / SHERPA_MODEL / "tokens.txt").is_file():
-        return "sherpa"
+    if (MODELS / TTS_MODEL / "tts.json").is_file():
+        return "local"
     return "silence"
 
 
@@ -132,22 +135,35 @@ def tts_openai(text: str, voice: dict, out: Path) -> None:
         out.write_bytes(r.read())
 
 
-_sherpa = None
+_local = None
 
 
-def tts_sherpa(text: str, voice: dict, out: Path) -> None:
-    global _sherpa
+def tts_local(text: str, voice: dict, out: Path) -> None:
+    """내장 모델(Supertonic 3)로 읽는다. voice: sid(목소리 0~9), speed(말 빠르기), steps.
+    모델의 speed를 올리면 어미가 뭉개지므로, 1.0으로 만든 뒤 음높이를 지키며(atempo) 빠르게 한다."""
+    global _local
     import sherpa_onnx
-    if _sherpa is None:
-        d = MODELS / SHERPA_MODEL
+    if _local is None:
+        d = MODELS / TTS_MODEL
         cfg = sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(
-            vits=sherpa_onnx.OfflineTtsVitsModelConfig(model=str(d / "ko_KO-kss_low.onnx"), lexicon="",
-                                                       tokens=str(d / "tokens.txt"), data_dir=str(d / "espeak-ng-data"),
-                                                       noise_scale=0.1, noise_scale_w=0.2),   # 낮춰야 발음과 길이가 덜 흔들린다
+            supertonic=sherpa_onnx.OfflineTtsSupertonicModelConfig(
+                duration_predictor=str(d / "duration_predictor.int8.onnx"), text_encoder=str(d / "text_encoder.int8.onnx"),
+                vector_estimator=str(d / "vector_estimator.int8.onnx"), vocoder=str(d / "vocoder.int8.onnx"),
+                tts_json=str(d / "tts.json"), unicode_indexer=str(d / "unicode_indexer.bin"), voice_style=str(d / "voice.bin")),
             num_threads=4))
-        _sherpa = sherpa_onnx.OfflineTts(cfg)
-    a = _sherpa.generate(text, sid=0, speed=voice.get("speed", 1.0))
-    sf.write(out, np.asarray(a.samples), a.sample_rate)
+        _local = sherpa_onnx.OfflineTts(cfg)
+    gc = sherpa_onnx.GenerationConfig()
+    gc.sid, gc.num_steps, gc.speed = int(voice.get("sid", TTS_SID)), int(voice.get("steps", 8)), 1.0
+    gc.extra["lang"] = voice.get("lang", "ko")
+    a = _local.generate(text, gc)
+    speed = float(voice.get("speed", TTS_SPEED))
+    if abs(speed - 1) < 0.01:
+        sf.write(out, np.asarray(a.samples), a.sample_rate)
+        return
+    raw = out.with_suffix(".raw.wav")
+    sf.write(raw, np.asarray(a.samples), a.sample_rate)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(raw), "-af", f"atempo={speed}", str(out)], check=True)
+    raw.unlink()
 
 
 def tts_silence(text: str, voice: dict, out: Path) -> None:
@@ -155,7 +171,7 @@ def tts_silence(text: str, voice: dict, out: Path) -> None:
     sf.write(out, np.zeros(int(SR * max(0.6, 0.13 * len(text)))), SR)
 
 
-TTS = {"openai": tts_openai, "sherpa": tts_sherpa, "silence": tts_silence}
+TTS = {"openai": tts_openai, "local": tts_local, "silence": tts_silence}
 
 
 def read_mono(path: Path, sr: int = SR) -> np.ndarray:
@@ -206,8 +222,24 @@ def run_tts(ep: Path, data: dict) -> dict:
         key = hashlib.sha1(json.dumps([backend, data["voice"], text], ensure_ascii=False).encode()).hexdigest()[:12]
         raw = vo / f"{ln['id']}.{key}.wav"
         if not raw.is_file():
-            print(f"tts[{backend}] {ln['id']}: {text}", flush=True)
             TTS[backend](text, data["voice"], raw)
+            note = ""
+            if backend == "local" and have_asr():
+                # 내장 모델은 읽을 때마다 조금씩 다르다. 받아 적어서 대본과 가장 가까운 것을 쓴다
+                def score(f):
+                    return heard_ratio(hear(read_mono(f, 16000)), text, ln["caption"])
+                best, n = score(raw), 1
+                while best < TAKE_OK and n < TAKES:
+                    alt = raw.with_suffix(".alt.wav")
+                    TTS[backend](text, data["voice"], alt)
+                    got, n = score(alt), n + 1
+                    if got > best:
+                        alt.replace(raw)
+                        best = got
+                    else:
+                        alt.unlink()
+                note = f"  (받아쓰기 일치 {best:.2f}, {n}번 읽음)"
+            print(f"tts[{backend}] {ln['id']}: {text}{note}", flush=True)
         x = read_mono(raw)
         runs = voiced_runs(x)
         if runs:
@@ -219,7 +251,7 @@ def run_tts(ep: Path, data: dict) -> dict:
         info[ln["id"]] = {"dur": len(x) / SR, "runs": runs}
     (ep / "build" / "tts.json").write_text(json.dumps({"backend": backend, "lines": info}, indent=1))
     if backend == "silence":
-        print("경고: TTS 백엔드가 없어 무음으로 만들었습니다. OPENAI_API_KEY를 설정하거나 `reel.py setup`을 실행하세요.")
+        print("경고: TTS가 없어 무음으로 만들었습니다. `python3 reels/reel.py setup`으로 내장 모델을 받으세요.")
     return info
 
 
@@ -622,22 +654,40 @@ def say(text: str, out: Path, voice: dict | None = None) -> None:
     TTS[tts_backend(voice)](text, voice, out)
 
 
-def listen(target: Path, lang: str = "ko") -> None:
-    """에이전트의 귀. 소리를 받아 적는다. 에피소드 폴더를 주면 완성 영상을 줄마다 나눠 자막과 나란히 보여 준다."""
+_asr = None
+
+
+def have_asr() -> bool:
+    return (MODELS / ASR_MODEL / "small-tokens.txt").is_file()
+
+
+def hear(x: np.ndarray, lang: str = "ko") -> str:
+    """에이전트의 귀. 16 kHz 모노 소리를 받아 적는다."""
+    global _asr
     import sherpa_onnx
-    d = MODELS / ASR_MODEL
-    if not (d / "small-tokens.txt").is_file():
-        raise SystemExit("받아쓰기 모델이 없습니다. `python3 reels/reel.py setup asr`을 먼저 실행하세요.")
-    rec = sherpa_onnx.OfflineRecognizer.from_whisper(
-        encoder=str(d / "small-encoder.int8.onnx"), decoder=str(d / "small-decoder.int8.onnx"),
-        tokens=str(d / "small-tokens.txt"), num_threads=4, language=lang, task="transcribe")
+    if _asr is None:
+        if not have_asr():
+            raise SystemExit("받아쓰기 모델이 없습니다. `python3 reels/reel.py setup asr`을 먼저 실행하세요.")
+        d = MODELS / ASR_MODEL
+        _asr = sherpa_onnx.OfflineRecognizer.from_whisper(
+            encoder=str(d / "small-encoder.int8.onnx"), decoder=str(d / "small-decoder.int8.onnx"),
+            tokens=str(d / "small-tokens.txt"), num_threads=4, language=lang, task="transcribe")
+    st = _asr.create_stream()
+    st.accept_waveform(16000, np.asarray(x, dtype=np.float32))
+    _asr.decode_stream(st)
+    return st.result.text.strip()
 
-    def hear(x: np.ndarray) -> str:
-        st = rec.create_stream()
-        st.accept_waveform(16000, x)
-        rec.decode_stream(st)
-        return st.result.text.strip()
 
+def heard_ratio(heard: str, *wants: str) -> float:
+    """받아 적은 글이 대본과 얼마나 같은지(0~1). 글자만 비교한다.
+    숫자는 한글로도 아라비아 숫자로도 받아 적히므로, 넘겨준 글(say, caption) 중 가장 가까운 것과 비교한다."""
+    def norm(t):
+        return re.sub(r"[^0-9A-Za-z가-힣]", "", t)
+    return max((difflib.SequenceMatcher(None, norm(w), norm(heard)).ratio() for w in wants if norm(w)), default=0.0)
+
+
+def listen(target: Path) -> None:
+    """소리를 받아 적는다. 에피소드 폴더를 주면 완성 영상을 줄마다 나눠 자막과 나란히 보여 준다."""
     def load(path: Path) -> np.ndarray:
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-ar", "16000", "-ac", "1", "-f", "f32le", "-"],
                              check=True, capture_output=True).stdout
@@ -657,7 +707,7 @@ def listen(target: Path, lang: str = "ko") -> None:
 
 
 def setup(kind: str = "tts") -> None:
-    name, url, mark = ((ASR_MODEL, ASR_URL, "small-tokens.txt") if kind == "asr" else (SHERPA_MODEL, SHERPA_URL, "tokens.txt"))
+    name, url, mark = ((ASR_MODEL, ASR_URL, "small-tokens.txt") if kind == "asr" else (TTS_MODEL, TTS_URL, "tts.json"))
     MODELS.mkdir(exist_ok=True)
     if (MODELS / name / mark).is_file():
         print("이미 있음:", MODELS / name)
@@ -683,7 +733,7 @@ def main() -> None:
     if a.cmd == "codec":
         return codec_demo(Path(a.args[0]), Path(a.args[1]))
     if a.cmd == "say":
-        return say(a.args[0], Path(a.args[1]))
+        return say(a.args[0], Path(a.args[1]), {"sid": int(a.args[2])} if len(a.args) > 2 else None)
     ep = Path(a.args[0])
     if a.cmd == "check":
         errs = check(ep)

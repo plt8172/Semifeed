@@ -50,18 +50,28 @@ const glideMix = (x) => R.ease((x - GLIDE[0]) / GLIDE[1]);
 const VA = R.clip("audio/A.wav"), SR = R.clipSr;
 let VGAIN = 1;
 const voiceAt = (sec) => clamp(R.sample(VA, sec * SR) * VGAIN, -1, 1);
+const WIN0 = 0.024, WIN1 = 0.006, NS = 48;              // 확대 전·후 창 길이, 확대한 창 안의 측정 횟수(8,000번/초 × 0.006초)
+const DRIFT = 0.012;                                    // 폰 속 파형이 흐르는 속도 (초/초)
 // 0.2초 동안 계속 소리가 큰 구간의 시작
 const C0 = (() => {
   const hop = SR / 100, e = [];
   for (let i = 0; i + hop <= VA.length; i += hop) { let s = 0; for (let j = 0; j < hop; j++) s += VA[i + j] ** 2; e.push(s); }
   let best = 0, bv = -1;
   for (let i = 0; i + 20 < e.length; i++) { const v = Math.min(...e.slice(i, i + 20)); if (v > bv) { bv = v; best = i; } }
-  return best / 100 + 0.03;
+  // 확대한 창(0.006초)은 낮은 목소리의 떨림 한 번보다 짧다. 떨림 사이의 잔잔한 곳에서 멈추면 잴 것이 안 보이므로,
+  // 떨림 한 번 범위 안에서 창 속 파형의 위아래 폭이 가장 큰 곳에 멈추도록 시작점을 조금 옮긴다
+  const c0 = best / 100 + 0.03;
+  let bd = 0, span = -1;
+  for (let d = -0.006; d <= 0.006; d += 0.00025) {
+    const c = c0 + d + DRIFT * tP2;
+    let lo = 1, hi = -1;
+    for (let x = c - WIN1 / 2; x <= c + WIN1 / 2; x += 0.000125) { const v = R.sample(VA, x * SR); lo = Math.min(lo, v); hi = Math.max(hi, v); }
+    if (hi - lo > span) { span = hi - lo; bd = d; }
+  }
+  return c0 + bd;
 })();
-const DRIFT = 0.012;                                    // 폰 속 파형이 흐르는 속도 (초/초)
 const CEN = C0 + DRIFT * tP2;                           // 확대할 때 멈추는 위치
 VGAIN = (() => { let mx = 0.05; for (let x = C0 - 0.015; x < CEN + 0.015; x += 0.00025) mx = Math.max(mx, Math.abs(voiceAt(x))); return 0.92 / mx; })();
-const WIN0 = 0.024, WIN1 = 0.006, NS = 48;              // 확대 전·후 창 길이, 확대한 창 안의 측정 횟수(8,000번/초 × 0.006초)
 const sampleVal = (i) => voiceAt(CEN - WIN1 / 2 + i / 8000);
 // 측정한 값 49개를 8칸짜리 0과 1로 적은 것. 화면의 점 하나가 여덟 칸이다
 const BITS = Array.from({ length: NS + 1 }, (_, i) => Math.round((sampleVal(i) * 0.5 + 0.5) * 255).toString(2).padStart(8, "0"));

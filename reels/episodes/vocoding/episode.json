@@ -1,7 +1,7 @@
 {
   "title": "통화 속 목소리는 상대방 목소리가 아니다 (보코딩)",
   "fps": 30,
-  "voice": {"backend": "auto", "openai_voice": "coral", "speed": 1.1},
+  "voice": {"backend": "auto", "sid": 2, "speed": 1.12, "openai_voice": "coral"},
   "bgm": {"type": "pad", "gain": 0.03},
   "stage": "stage.html",
   "lines": [

@@ -48,6 +48,14 @@ class TimingTest(unittest.TestCase):
         self.assertEqual(sum(groups, []), [x["w"] for x in w])
         self.assertTrue(all(sum(map(len, g)) <= reel.CAPTION_MAX + 4 for g in groups))
 
+    def test_heard_ratio(self):
+        # 문장부호·띄어쓰기는 보지 않고, 숫자는 say(한글)와 caption(아라비아 숫자) 중 가까운 쪽과 비교한다
+        say, cap = "이 떨림을 일초에 팔천번 재야 해요.", "이 떨림을 1초에 8,000번 재야 해요."
+        self.assertEqual(reel.heard_ratio("이 떨림을 1초에 8000번 재야 해요", say, cap), 1.0)
+        self.assertEqual(reel.heard_ratio("이떨림을 일초에 팔천번 재야해요.", say, cap), 1.0)
+        self.assertLess(reel.heard_ratio("이 을 1초에 8000번 제하해요.", say, cap), 0.9)
+        self.assertEqual(reel.heard_ratio("아무 말", "", ""), 0.0)
+
     def test_example_episode_passes_check(self):
         self.assertEqual(reel.check(ROOT / "reels" / "episodes" / "vocoding"), [])
 

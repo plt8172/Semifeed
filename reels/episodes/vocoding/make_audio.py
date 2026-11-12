@@ -68,9 +68,19 @@ def main() -> None:
     sf.write(out / "buzz.wav", voice(lambda t: buzz(), 0.9), SR)
     sf.write(out / "a.wav", voice(lambda t: response(0.0), 0.9), SR)
     sf.write(out / "ai.wav", voice(lambda t: response(glide_mix(t)), sum(GLIDE)), SR)
-    src = out / "_src.wav"
-    reel.say("내 목소리 잘 들려?", src)
-    reel.codec_demo(src, out)
+    # 통화 상대의 목소리: 나레이션(2번)과 구별되고, 화면의 성대 떨림(120 Hz)과 높이가 비슷한 낮은 목소리(7번).
+    # 내장 TTS는 읽을 때마다 조금씩 다르다. 가장 많이 줄인 C까지 그대로 받아 적히는 것이 나올 때까지 다시 만든다.
+    # 대본이 "90분의 1인데도 알아들을 수 있다"고 말하기 때문이다. 커밋된 A·B·C는 그렇게 확인한 한 벌이다.
+    src, said = out / "_src.wav", "내 목소리 잘 들려?"
+    for _ in range(8):
+        reel.say(said, src, {"backend": "local", "sid": 7, "speed": 1.3})
+        reel.codec_demo(src, out)
+        heard = [reel.hear(reel.read_mono(out / f"{n}.wav", 16000)) for n in "ABC"]
+        print("받아쓰기:", heard)
+        if all(reel.heard_ratio(h, said) == 1 for h in heard):
+            break
+    else:
+        print("경고: C가 그대로 받아 적히는 음성을 만들지 못했습니다. 문장을 바꾸세요.")
     src.unlink()
 
 

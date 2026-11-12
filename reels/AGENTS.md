@@ -11,12 +11,13 @@
 pip install -q -r reels/requirements.txt
 python3 -m playwright install chromium >/dev/null 2>&1 || true   # 실패해도 된다. /opt/pw-browsers/chromium이 있으면 그것을 쓴다
 ffmpeg -hide_banner -encoders | grep -q libx264 || echo "ffmpeg(libx264) 필요"
-test -n "$OPENAI_API_KEY" || python3 reels/reel.py setup        # OpenAI 키가 없으면 오프라인 한국어 TTS 모델을 받는다
+python3 reels/reel.py setup                                      # 내장 TTS 모델 (Supertonic 3, 약 130MB. 키가 필요 없다)
 python3 reels/reel.py setup asr                                  # 받아쓰기 모델 (listen에 필요, 약 640MB)
 ```
 
-TTS는 `OPENAI_API_KEY`가 있으면 OpenAI(`gpt-4o-mini-tts`), 없으면 오프라인 모델, 둘 다 없으면 무음(레이아웃 확인용)으로 만든다.
-오프라인 모델은 발음이 뭉개진다. 보고할 때 어떤 TTS를 썼는지 반드시 적는다. 키는 환경 변수로만 받고 저장소에 쓰지 않는다.
+TTS는 기본이 내장 모델(`"backend": "auto"` 또는 `"local"`)이다. 수퍼톤의 Supertonic 3(모델 라이선스 OpenRAIL-M)를 내려받아 직접 돌리므로 키도 비용도 없다.
+`OPENAI_API_KEY`가 있으면 `auto`는 OpenAI(`gpt-4o-mini-tts`)를 쓰고, 모델도 키도 없으면 무음(레이아웃 확인용)으로 만든다.
+보고할 때 어떤 TTS를 썼는지 반드시 적는다. 키는 환경 변수로만 받고 저장소에 쓰지 않는다.
 
 ## 1. 자료 정리 → `reels/episodes/<slug>/brief.md`
 
@@ -45,7 +46,7 @@ GUIDE.md의 대본 규칙으로 쓴다.
 {
   "title": "영상 제목",
   "fps": 30,
-  "voice": {"backend": "auto", "openai_voice": "coral", "speed": 1.1},
+  "voice": {"backend": "auto", "sid": 2, "speed": 1.12},
   "bgm": {"type": "pad", "gain": 0.03},
   "stage": "stage.html",
   "waves": ["audio/extra.wav"],
@@ -58,6 +59,8 @@ GUIDE.md의 대본 규칙으로 쓴다.
 }
 ```
 
+- `voice`: `sid`는 내장 모델의 목소리 번호(0~9. 0~5는 높은 목소리, 6~9는 낮은 목소리), `speed`는 말 빠르기다. 1초에 6~6.5음절이 되게 맞춘다(2번 목소리는 1.12). 사용자가 목소리를 정해 주지 않으면 예시의 값을 쓴다.
+- 내장 모델은 읽을 때마다 소리가 조금씩 다르다. `reel.py`가 줄마다 받아 적어 보고(받아쓰기 모델이 있을 때) 대본과 0.95 이상 맞을 때까지 최대 네 번 다시 읽혀 가장 가까운 것을 쓴다. `plan`의 출력에서 일치가 0.85보다 낮은 줄은 `say`의 표기를 바꿔 본다(숫자를 한글로, 외래어를 소리 나는 대로).
 - `say`: TTS가 읽는 글. 숫자는 한글로 풀어 쓴다("팔천번"). `caption`: 화면 자막. 생략하면 `say`와 같고, `""`이면 그 줄은 자막을 띄우지 않는다(화면의 큰 글자가 같은 말을 할 때).
 - `say`와 `caption`의 단어 수(띄어쓰기 기준)를 맞추면 단어 강조 시각이 정확해진다. 자막은 문장부호(, . ? !)에서 끊기고, 14자가 넘는 구는 자동으로 나뉜다.
 - 줄의 길이는 나레이션 길이 + 클립 + `after`(줄 뒤 쉼, 기본 0.3초)로 자동으로 정해진다. `dur`을 주면 최소 길이가 된다.
@@ -70,7 +73,7 @@ GUIDE.md의 대본 규칙으로 쓴다.
 
 들려줄 소리는 진짜여야 한다. 만드는 방법을 `make_audio.py`로 남겨 다시 만들 수 있게 한다(예시 에피소드 참고).
 
-- 문장 하나를 TTS로: `python3 reels/reel.py say "문장" out.wav`
+- 문장 하나를 TTS로: `python3 reels/reel.py say "문장" out.wav 7` (끝의 숫자는 목소리 번호. 화면 속 인물의 말은 나레이션과 다른 목소리로 만든다)
 - 같은 음성의 코덱 비교: `python3 reels/reel.py codec 원본.wav audio/` → A(PCM 64k)·B(GSM 13k)·C(Codec2 700bps)
 - 만든 뒤 `python3 reels/reel.py listen audio/파일.wav`로 받아 적어서, 대본이 말하는 대로 들리는지 확인한다. "알아들을 수 있다"고 말하려면 받아쓰기가 실제로 알아들어야 한다.
 
