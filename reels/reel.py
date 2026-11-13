@@ -381,17 +381,20 @@ def plan(ep: Path, data: dict, tts: dict) -> dict:
         v = tts[ln["id"]]
         t0, t1 = t, t + v["dur"]
         end = t1
+        words = [{"w": w["w"], "t0": t0 + w["t0"], "t1": t0 + w["t1"]}
+                 for w in word_times(ln["caption"], ln["say"], v["dur"], v["runs"])]
         clips = []
         for c in ln["clips"]:
-            c0 = end + c.get("gap", 0.25)
             d = len(read_mono(ep / c["file"])) / SR
+            if "at" in c:       # 나레이션 도중에 깔리는 소리: 그 단어(또는 시각)에서 시작한다
+                c0 = resolve_at(c["at"], t0, t1, [{**w, "w": clean_word(w["w"])} for w in words], clips)
+            else:               # 기본: 나레이션(또는 앞 클립)이 끝난 뒤 gap초
+                c0 = end + c.get("gap", 0.25)
             clips.append({"file": c["file"], "t0": c0, "t1": c0 + d, "gain": c.get("gain", 0.8)})
-            end = c0 + d
+            end = max(end, c0 + d)
         end += ln["after"]
         if ln.get("dur"):
             end = max(end, t0 + ln["dur"])
-        words = [{"w": w["w"], "t0": t0 + w["t0"], "t1": t0 + w["t1"]}
-                 for w in word_times(ln["caption"], ln["say"], v["dur"], v["runs"])]
         groups = caption_groups(words)
         for i, g in enumerate(groups):
             g1 = groups[i + 1][0]["t0"] - 0.04 if i + 1 < len(groups) else min(t1 + 0.35, end)
