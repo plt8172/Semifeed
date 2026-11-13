@@ -1,0 +1,317 @@
+<!doctype html><meta charset="utf-8">
+<link rel="stylesheet" href="../../kit/kit.css">
+<svg id="s" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+<script src="../../kit/kit.js"></script>
+<script>
+const R = Reel, { ramp, lerp, clamp, g, path, seg, text, span, glow, C } = R;
+const svg = R.$("#s");
+const at = R.at, TOTAL = R.total;
+const tH2 = at("h2"), tP1 = at("p1"), tP4 = at("p4"), tX1 = at("x1"), tX3 = at("x3"),
+  tT1 = at("t1"), tT2 = at("t2"), tT3 = at("t3"), tT4 = at("t4"), tR2 = at("r2a"), tR2b = at("r2b"), tR2c = at("r2c"),
+  tR3 = at("r3a"), tR3b = at("r3b"), tE1 = at("e1"), tE2 = at("e2"), tBack = R.word("e2", "하던");
+const c1 = R.clipTime("x2"), c2 = R.clipTime("r2a"), c3 = R.clipTime("r3a");
+const HEAD = [
+  { t: 0 },
+  { t: tP1, chap: "01 · 문제", title: "한 번에 한 가지" },
+  { t: tX1, chap: "02 · 실험", title: "타이머가 없으면" },
+  { t: tT1, chap: "03 · 원리", title: "타이머가 멈춰 세운다" },
+  { t: tR2, chap: "04 · 실험", title: "얼마나 자주 멈출까" },
+  { t: tE1 },
+];
+
+// ---------- 시뮬레이션: make_audio.py의 simulate()와 같은 규칙과 수치. 들리는 소리도 이 결과로 만들었다 ----------
+const BUF = 0.04, WAKE = 0.5, WORK = 0.002, DT = 0.0005, HOG_AT = 1.3;
+function simulate(dur, tick, hogAt) {
+  const n = Math.round(dur / DT), who = new Int8Array(n), level = new Float64Array(n), wait = new Int8Array(n);
+  let buf = BUF, run = 1, work = 0, wants = true, next = tick ? tick : null;
+  for (let i = 0; i < n; i++) {
+    const t = i * DT;
+    if (!wants && buf <= WAKE * BUF + 1e-9) wants = true;
+    const hog = t >= hogAt - 1e-9;
+    if (next !== null && t >= next - 1e-9) { next += tick; if (run === 2 && wants) { run = 1; work = 0; } }   // 타이머 인터럽트
+    if (run === 0) { if (wants) { run = 1; work = 0; } else if (hog) run = 2; }
+    who[i] = run; level[i] = buf; wait[i] = wants && run !== 1 ? 1 : 0;
+    buf = Math.max(0, buf - DT);
+    if (run === 1) { work += DT; if (work >= WORK - 1e-9) { buf = BUF; wants = false; run = hog ? 2 : 0; } }
+  }
+  return { who, level, wait, n, dur, tick };
+}
+function runsOf(sim, test) {
+  const out = []; let a = -1;
+  for (let i = 0; i <= sim.n; i++) {
+    const on = i < sim.n && test(i);
+    if (on && a < 0) a = i;
+    if (!on && a >= 0) { out.push([a * DT, i * DT]); a = -1; }
+  }
+  return out;
+}
+const SIMS = {
+  r1: simulate(2.0, null, HOG_AT), r2: simulate(2.0, 0.1, 0.0), r3: simulate(2.0, 0.004, 0.0),
+};
+for (const s of Object.values(SIMS)) {
+  s.music = runsOf(s, (i) => s.who[i] === 1);
+  s.hog = runsOf(s, (i) => s.who[i] === 2);
+  s.empty = runsOf(s, (i) => s.level[i] <= 0);
+  s.waits = runsOf(s, (i) => s.wait[i] === 1);
+}
+const WAIT1 = SIMS.r1.waits.length ? SIMS.r1.waits[SIMS.r1.waits.length - 1][0] : HOG_AT;   // 무거운 앱을 켠 뒤 음악 앱이 기다리기 시작한 시각
+
+// ---------- 배치 ----------
+const X0 = 70, X1 = 1010, W = X1 - X0, WIN = 2.0;
+const xr = (s) => X0 + (s / WIN) * W;                    // 실험 화면: 2초를 화면 폭에
+const TK0 = 528, TK1 = 566;                             // 타이머 눈금
+const BAND = [640, 755, 870], BH = 46;                  // 앱 줄 (위 모서리)
+const BUF_TOP = 882, BUF_BOT = 952;                     // 미리 만든 소리 (0.04초 → 0)
+const WAVE_Y = 1082, WAVE_A = 56;                       // 들리는 소리
+const AXIS_Y = 1178;
+const rect = (x, y, w, h, f, extra = "") => `<rect x="${x.toFixed(1)}" y="${y}" width="${Math.max(0, w).toFixed(1)}" height="${h}" fill="${f}" ${extra}/>`;
+
+// 들리는 소리: 클립의 실제 샘플을 3px 칸마다 가장 큰 값으로
+function columns(file) {
+  const s = R.clip(file), sr = R.clipSr, n = Math.floor(W / 3), out = [];
+  let mx = 1e-6;
+  for (let j = 0; j < n; j++) {
+    const a = Math.floor((j * 3 / W) * WIN * sr), b = Math.floor(((j + 1) * 3 / W) * WIN * sr);
+    let m = 0;
+    for (let i = a; i < b && i < s.length; i++) m = Math.max(m, Math.abs(s[i]));
+    out.push(m); mx = Math.max(mx, m);
+  }
+  return out.map((v) => v / mx);
+}
+SIMS.r1.cols = columns("audio/r1.wav"); SIMS.r2.cols = columns("audio/r2.wav"); SIMS.r3.cols = columns("audio/r3.wav");
+
+// ---------- 0. 훅: 1초에 250번 ----------
+function comb(u, n, o) {
+  if (o <= 0) return "";
+  let d = "";
+  const k1 = Math.floor(u / 0.004 + 1e-9);
+  for (let k = 0; k <= k1; k++) { const x = X0 + k * 0.004 * W; d += `M${x.toFixed(1)} 932V992`; }
+  return g(o, `<path d="${d}" stroke="${C.fg}" stroke-width="1.6"/>` +
+    seg(X0 + u * W, 918, X0 + u * W, 1006, C.a, 4, glow(R.GLOW_A, 10)) +
+    seg(X0, 1024, X1, 1024, C.mu, 2) + seg(X0, 1014, X0, 1034, C.mu, 2) + seg(X1, 1014, X1, 1034, C.mu, 2) +
+    text(540, 1068, "1초", 30, { f: C.mu, w: 600 }) +
+    text(540, 1140, "멈춘 횟수", 32, { f: C.mu, w: 600 }) +
+    text(540, 1246, R.num(n), 104, { f: C.b, w: 800, x: R.TNUM }));
+}
+const CNT0 = 7;                                          // 첫 화면의 횟수 = 7초 동안 멈춘 횟수
+function hook(t) {
+  const early = 1 - ramp(t, tP1 - 0.4, tP1 - 0.05), late = ramp(t, tBack, tBack + 0.5);
+  const k = Math.max(early, late);
+  if (k <= 0) return "";
+  const em = t < tP1 ? ramp(t, tH2, tH2 + 0.3) : 0;
+  return g(k, text(540, 520, "안드로이드 폰은", 64, { w: 800 }) +
+    text(540, 690, span("1초에 ", C.fg) + span("250", C.b, 150, 900) + span("번", C.fg), 96, { w: 800 }) +
+    text(540, 800, "하던 일을 멈춘다", 76, { w: 800, f: em > 0.5 ? C.a : C.fg }));
+}
+function hookComb(t) {
+  const early = 1 - ramp(t, tP1 - 0.4, tP1 - 0.05), late = ramp(t, tE2, tE2 + 0.5);
+  if (t < tP1) return comb(t % 1, Math.floor((t + CNT0) / 0.004), early);
+  // 끝: 마지막 프레임이 첫 프레임과 같아지도록 (눈금이 비고, 횟수가 1,750)
+  const u = (((t - TOTAL) % 1) + 1) % 1;
+  return comb(u, Math.max(0, Math.floor((t - TOTAL + CNT0) / 0.004)), late);
+}
+
+// ---------- 1. 문제: 코어 하나는 한 번에 한 가지 ----------
+const P_SLOW = 40, P_WIN = 0.1, XNOW = 840, LX = 200;      // 이름은 왼쪽 칸, 줄은 LX부터
+let seed = 11;
+const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const PB = [];
+{ let a = 0, k = 0; while (a < 1) { const d = 0.002 + 0.006 * rnd(); PB.push([k, a, a + d]); a += d; k = (k + 1 + (rnd() < 0.35 ? 1 : 0)) % 3; } }
+const sec1 = (t) => ramp(t, tP1 - 0.2, tP1 + 0.3) * (1 - ramp(t, tX1 - 0.4, tX1 - 0.05));
+function share(t) {
+  const o = sec1(t);
+  if (o <= 0) return "";
+  const now = 0.08 + (t - tP1) / P_SLOW, xs = (u) => XNOW + ((u - now) / P_WIN) * W;
+  const lk = ramp(t, tP4, tP4 + 0.4);
+  let past = "", cur = "", links = "", curTask = -1;
+  for (let i = 0; i < PB.length; i++) {
+    const [k, a, b] = PB[i];
+    if (a >= now) break;
+    if (xs(b) <= LX) continue;
+    const x0 = Math.max(LX, xs(a)), x1 = Math.min(XNOW, xs(b));
+    if (b > now) { curTask = k; cur += rect(x0, BAND[k], x1 - x0, BH, C.a, glow(R.GLOW_A, 10)); }
+    else past += rect(x0, BAND[k], x1 - x0 - 2, BH, C.fg, 'opacity="0.42"');
+    if (i > 0 && lk > 0 && xs(a) > LX + 4) {
+      const kp = PB[i - 1][0], x = xs(a);
+      links += seg(x, BAND[kp] + BH / 2, x, BAND[k] + BH / 2, C.a, 3) + `<circle cx="${x.toFixed(1)}" cy="${BAND[k] + BH / 2}" r="6" fill="${C.a}"/>`;
+    }
+  }
+  const names = ["음악", "카톡", "화면"];
+  let labels = "";
+  names.forEach((nm, k) => { labels += text(X0, BAND[k] + BH / 2 + 12, nm, 34, { a: "start", w: 700, f: k === curTask ? C.a : C.fg }) + seg(LX, BAND[k] + BH, X1, BAND[k] + BH, C.dim, 2); });
+  return g(o, labels + past + g(lk, links) + cur +
+    seg(XNOW, 590, XNOW, 940, C.a, 3) + text(XNOW, 578, "지금", 30, { f: C.a, w: 700 }) +
+    text(X1, 990, "실제보다 40배 느리게", 28, { a: "end", f: C.mu, w: 600 }));
+}
+
+// ---------- 2~4. 실험: 음악 앱과 무거운 앱 ----------
+const sec2 = (t) => ramp(t, tX1 - 0.1, tX1 + 0.35) * (1 - ramp(t, tE1 - 0.1, tE1 + 0.4));
+function frame(t) {
+  const o = sec2(t);
+  if (o <= 0) return "";
+  const timer = ramp(t, tT1, tT1 + 0.4), timerHot = timer * (1 - ramp(t, tR2, tR2 + 0.4));
+  const din = (k) => ramp(t, tX1 + 0.05 + 0.28 * k, tX1 + 0.5 + 0.28 * k);   // 줄이 위에서부터 차례로 그려진다
+  const line = (y, k, dash = "") => `<line x1="${X0}" y1="${y}" x2="${lerp(X0, X1, din(k)).toFixed(1)}" y2="${y}" stroke="${C.dim}" stroke-width="2" ${dash}/>`;
+  let s = g(din(0), text(X0, BAND[0] - 16, "음악 앱", 34, { a: "start", w: 700, f: C.a })) + line(BAND[0] + BH, 0) +
+    g(din(1), text(X0, BAND[1] - 16, "무거운 앱", 34, { a: "start", w: 700, f: C.b })) + line(BAND[1] + BH, 1) +
+    g(din(2), text(X0, BUF_TOP - 26, "미리 만든 소리", 34, { a: "start", w: 700 }) + text(X1, BUF_TOP - 26, "0.04초", 28, { a: "end", f: C.mu, w: 600 })) +
+    line(BUF_TOP, 2, 'stroke-dasharray="6 8"') + line(BUF_BOT, 2) +
+    g(din(3), text(X0, WAVE_Y - WAVE_A - 30, "들리는 소리", 34, { a: "start", w: 700 })) + line(WAVE_Y, 3) +
+    line(AXIS_Y, 4) +
+    g(din(4), [0, 1, 2].map((k) => seg(xr(k), AXIS_Y - 8, xr(k), AXIS_Y + 8, C.mu, 2) +
+      text(xr(k), AXIS_Y + 40, k ? `${k}초` : "0", 28, { a: k === 0 ? "start" : k === 2 ? "end" : "middle", f: C.mu, w: 600 })).join(""));
+  s += g(timer, text(X0, TK0 - 18, "타이머", 34, { a: "start", w: 700, f: timerHot > 0.5 ? C.a : C.fg }));
+  return g(o, s);
+}
+
+// 한 라운드를 시각 s(초)까지 그린다
+function roundAt(sim, s, o, hi = {}) {
+  if (o <= 0) return "";
+  let out = "";
+  // 무거운 앱, 음악 앱
+  let d = "";
+  for (const [a, b] of sim.hog) { if (a >= s) break; const x0 = xr(a), x1 = xr(Math.min(b, s)); d += `M${x0.toFixed(1)} ${BAND[1]}H${x1.toFixed(1)}V${BAND[1] + BH}H${x0.toFixed(1)}Z`; }
+  if (d) out += `<path d="${d}" fill="${C.b}" ${hi.hog ? glow(R.GLOW_B, 14 * hi.hog) : ""}/>`;
+  d = "";
+  for (const [a, b] of sim.music) { if (a >= s) break; const x0 = xr(a) - 1, x1 = Math.max(xr(Math.min(b, s)), x0 + 4); d += `M${x0.toFixed(1)} ${BAND[0]}H${x1.toFixed(1)}V${BAND[0] + BH}H${x0.toFixed(1)}Z`; }
+  if (d) out += `<path d="${d}" fill="${C.a}" ${hi.music ? glow(R.GLOW_A, 12 * hi.music) : ""}/>`;
+  if (hi.wait) {   // 음악 앱이 CPU를 원하는데 차례가 오지 않은 시간
+    d = "";
+    for (const [a, b] of sim.waits) { if (a >= s) break; const x0 = xr(a), x1 = xr(Math.min(b, s)); if (x1 - x0 < 3) continue; d += `M${x0.toFixed(1)} ${BAND[0] + 1}H${x1.toFixed(1)}V${BAND[0] + BH - 1}H${x0.toFixed(1)}Z`; }
+    if (d) out += g(hi.wait, `<path d="${d}" fill="none" stroke="${C.a}" stroke-width="2" stroke-dasharray="5 6"/>`);
+  }
+  // 미리 만든 소리
+  d = "";
+  const n = Math.min(sim.n, Math.floor(s / DT));
+  for (let i = 0; i < n; i += 2) d += (i ? "L" : "M") + xr(i * DT).toFixed(1) + " " + (BUF_BOT - (sim.level[i] / BUF) * (BUF_BOT - BUF_TOP)).toFixed(1);
+  if (d) out += path(d, C.fg, 3);
+  if (hi.empty) {
+    let e = "";
+    for (const [a, b] of sim.empty) { if (a >= s) break; e += `M${xr(a).toFixed(1)} ${BUF_BOT}H${xr(Math.min(b, s)).toFixed(1)}`; }
+    if (e) out += g(hi.empty, `<path d="${e}" stroke="${C.a}" stroke-width="7" stroke-linecap="round" ${glow(R.GLOW_A, 10)}/>`);
+  }
+  // 들리는 소리
+  let bars = "";
+  sim.cols.forEach((v, j) => {
+    const x = X0 + j * 3 + 1.5;
+    if (x > xr(s) || v < 0.01) return;
+    const h = Math.max(1.5, v * WAVE_A);
+    bars += `M${x.toFixed(1)} ${(WAVE_Y - h).toFixed(1)}V${(WAVE_Y + h).toFixed(1)}`;
+  });
+  if (bars) out += `<path d="${bars}" stroke="${hi.sound ? C.a : C.fg}" stroke-width="2" ${hi.sound ? glow(R.GLOW_A, 10 * hi.sound) : ""}/>`;
+  if (hi.gaps) {
+    let e = "";
+    for (const [a, b] of sim.empty) { if (a >= s) break; e += `M${(xr(a) + 3).toFixed(1)} ${WAVE_Y}H${(xr(Math.min(b, s)) - 3).toFixed(1)}`; }
+    if (e) out += g(hi.gaps, `<path d="${e}" stroke="${C.a}" stroke-width="6" stroke-linecap="round"/>`);
+  }
+  return g(o, out);
+}
+const sweep = (t, c, dur) => clamp(t - c.t0, 0, dur);
+function sweepLine(t, c, dur) {
+  const k = ramp(t, c.t0 - 0.15, c.t0) * (1 - ramp(t, c.t0 + dur, c.t0 + dur + 0.3));
+  const x = xr(sweep(t, c, dur));
+  return g(k, seg(x, TK0 - 8, x, WAVE_Y + WAVE_A + 14, C.mu, 2));
+}
+
+function experiment(t) {
+  const o = sec2(t);
+  if (o <= 0) return "";
+  let s = "";
+  // 라운드 1: 타이머 없음
+  const s1 = sweep(t, c1, 2.0), o1 = 1 - ramp(t, tT1, tT1 + 0.3);
+  if (o1 > 0) {
+    s += roundAt(SIMS.r1, s1, o1, { hog: ramp(t, tX3, tX3 + 0.4), wait: 1 });
+    const w0 = c1.t0 + WAIT1, wk = ramp(t, w0, w0 + 0.2) * o1;          // 기다린 시간: 실제 시간으로 계속 센다
+    if (wk > 0) s += g(wk, text(X1, BAND[0] - 16, span("기다리는 중 ", C.mu, 30, 600) + span(`${Math.max(0, t - w0).toFixed(1)}초`, C.a, 38, 800), 38, { a: "end", x: R.TNUM }));
+    const on = ramp(t, c1.t0 + HOG_AT, c1.t0 + HOG_AT + 0.15);
+    s += g(on * o1, seg(xr(HOG_AT), BAND[1] - 26, xr(HOG_AT), BAND[1], C.b, 3) + text(xr(HOG_AT) + 12, BAND[1] - 16, "켬", 32, { a: "start", w: 800, f: C.b }));
+    s += sweepLine(t, c1, 2.0);
+  }
+  // 원리: 타이머가 없는 모습 → 0.1초마다 끊고, 음악 앱에 넘긴다
+  const sOp = ramp(t, tT1 + 0.2, tT1 + 0.6) * lerp(1, 0.28, ramp(t, tR2, tR2 + 0.4)) * (1 - ramp(t, tR3, tR3 + 0.4));
+  if (sOp > 0) {
+    let hog = "", mus = "";
+    const cut = (k) => ramp(t, tT3 + k * 0.03, tT3 + k * 0.03 + 0.3);
+    for (let k = 1; k <= 20; k++) {
+      if (k < 20) {
+        const m = ramp(t, tT4 + k * 0.04, tT4 + k * 0.04 + 0.2);        // 끊긴 자리마다 음악 앱 차례
+        if (m > 0) mus += rect(xr(k * 0.1) - 1, BAND[0], 4, BH, C.a, `opacity="${m.toFixed(2)}"`);
+      }
+    }
+    // 무거운 앱 줄: 타이머가 끊은 자리마다 틈이 생긴다
+    hog = "";
+    for (let k = 0; k < 20; k++) {
+      const a0 = k === 0 ? 0.002 : k * 0.1, b0 = (k + 1) * 0.1;
+      const gl = k === 0 ? 0 : 2 * cut(k), gr = k === 19 ? 0 : 2 * cut(k + 1);
+      hog += rect(xr(a0) + gl, BAND[1], xr(b0) - xr(a0) - gl - gr, BH, C.b);
+    }
+    mus = rect(xr(0) - 1, BAND[0], 4, BH, C.a) + mus;
+    s += g(sOp, hog + mus);
+  }
+  // 타이머 눈금
+  const cutLines = ramp(t, tT3, tT3 + 0.2) * (1 - ramp(t, tR2, tR2 + 0.4));
+  if (t >= tT2 && t < tR3 + 0.2) {
+    const K = t < c2.t0 ? Math.min(20, Math.floor((t - tT2) / 0.1)) : 20;
+    let d = "";
+    for (let k = 1; k <= K; k++) d += `M${xr(k * 0.1).toFixed(1)} ${TK0}V${TK1}`;
+    s += `<path d="${d}" stroke="${C.fg}" stroke-width="3"/>`;
+    if (cutLines > 0) {
+      let c = "";
+      for (let k = 1; k < 20; k++) {
+        const kk = ramp(t, tT3 + k * 0.03, tT3 + k * 0.03 + 0.3);
+        if (kk <= 0) continue;
+        const x = xr(k * 0.1).toFixed(1), yEnd = TK1 + kk * (BAND[1] + BH + 8 - TK1);
+        for (const [y0, y1] of [[TK1, TK1 + 30], [BAND[0] - 6, BAND[0] + BH + 6], [BAND[1] - 6, BAND[1] + BH + 8]])
+          if (yEnd > y0) c += `M${x} ${y0}V${Math.min(y1, yEnd).toFixed(1)}`;
+      }
+      s += g(cutLines, `<path d="${c}" stroke="${C.fg}" stroke-width="2" stroke-dasharray="4 6"/>`);
+    }
+  } else if (t >= tR3 + 0.2) {
+    const m = 1 + Math.floor(24 * R.ease((t - tR3 - 0.2) / 1.4) + 1e-9), sp = 0.1 / m;
+    let d = "";
+    for (let k = 1; k * sp <= 2.0 + 1e-9; k++) d += `M${xr(k * sp).toFixed(1)} ${TK0}V${TK1}`;
+    s += `<path d="${d}" stroke="${C.fg}" stroke-width="${m > 12 ? 1.4 : 3}"/>`;
+  }
+  // 라운드 2: 0.1초마다
+  const o2 = ramp(t, c2.t0 - 0.1, c2.t0) * (1 - ramp(t, tR3, tR3 + 0.4));
+  if (o2 > 0) {
+    const k2c = ramp(t, tR2c, tR2c + 0.3);
+    s += roundAt(SIMS.r2, sweep(t, c2, 2.0), o2, { gaps: ramp(t, tR2b, tR2b + 0.3), empty: k2c, music: k2c, wait: k2c });
+    s += sweepLine(t, c2, 2.0);
+  }
+  // 라운드 3: 0.004초마다
+  const o3 = ramp(t, c3.t0 - 0.1, c3.t0);
+  if (o3 > 0) {
+    s += roundAt(SIMS.r3, sweep(t, c3, 2.0), o3, { sound: ramp(t, tR3b, tR3b + 0.3) });
+    s += sweepLine(t, c3, 2.0);
+  }
+  return g(o, s);
+}
+
+// 위쪽 한 줄: 조건과 멈춘 횟수
+function info(t) {
+  const o = sec2(t);
+  if (o <= 0) return "";
+  const k0 = 1 - ramp(t, tT1 - 0.1, tT1 + 0.2), k1 = ramp(t, tT2, tT2 + 0.3) * (1 - ramp(t, tR3, tR3 + 0.3)), k2 = ramp(t, tR3 + 0.1, tR3 + 0.4);
+  let n = 0;
+  if (t >= tR3) n = Math.floor(sweep(t, c3, 2.0) / 0.004 + 1e-6);
+  else if (t >= c2.t0) n = Math.floor(sweep(t, c2, 2.0) / 0.1 + 1e-6);
+  else if (t >= tT2) n = Math.min(20, Math.floor((t - tT2) / 0.1));
+  const Y = 466;
+  return g(o, g(k0, text(X0, Y, "타이머 없음", 38, { a: "start", w: 800 })) +
+    g(k1, text(X0, Y, span("0.1초", C.b) + "마다 · 1초에 " + span("10", C.b) + "번", 38, { a: "start", w: 800 })) +
+    g(k2, text(X0, Y, span("0.004초", C.b) + "마다 · 1초에 " + span("250", C.b) + "번", 38, { a: "start", w: 800 })) +
+    text(X1, Y, span("멈춘 횟수 ", C.mu, 30, 600) + span(R.num(n), C.b, 46, 800), 46, { a: "end", x: R.TNUM }));
+}
+
+// ---------- 끝: 이름, 그리고 처음 화면 ----------
+function title(t) {
+  const k = ramp(t, tE1, tE1 + 0.4) * (1 - ramp(t, tBack - 0.3, tBack + 0.2));
+  return g(k, text(540, 640, "TIMER INTERRUPT", 30, { f: C.b, ls: 8 }) + text(540, 790 + (1 - k) * 16, "타이머 인터럽트", 108, { w: 900 }));
+}
+
+Reel.stage((t) => {
+  svg.innerHTML = hook(t) + hookComb(t) + share(t) + frame(t) + experiment(t) + info(t) + title(t);
+  R.header(t, HEAD);
+});
+</script>
