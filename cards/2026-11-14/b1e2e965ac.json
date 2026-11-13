@@ -1,0 +1,35 @@
+{
+  "id": "b1e2e965ac",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65436",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-13T19:42+09:00",
+  "headline": "\"장비 더 빨리\" 주문 폭주, 어플라이드 생산량 두 배로",
+  "bullets": [
+    "4분기 매출 104억달러로 53% 늘어 역대 최대",
+    "내년 반도체 장비 수요 30% 이상 증가 전망",
+    "2028년까지 장비 생산량 두 배, 일부 부품은 공급 제약"
+  ],
+  "photo_queries": [
+    "semiconductor fab equipment",
+    "cleanroom wafer processing",
+    "industrial robot arm factory"
+  ],
+  "caption": "\"장비 더 빨리\" 주문 폭주, 어플라이드 생산량 두 배로\n\n미국 반도체 장비업체 어플라이드머티어리얼즈가 2026회계연도 4분기 매출 104억1000만달러로 1년 전보다 53% 늘며 역대 최대 분기 실적을 냈습니다. 어플라이드는 반도체 공장(팹)에서 웨이퍼 위에 회로를 만드는 데 쓰는 증착·식각 장비 등을 만드는 회사로, 반도체 회사들이 투자를 늘리면 가장 먼저 주문이 몰립니다. AI 반도체 수요로 첨단 로직, D램, 첨단 패키징 투자가 늘면서 회사는 내년 웨이퍼 팹 장비 시장 수요가 올해보다 30% 이상 커질 것으로 내다봤습니다. 게리 디커슨 CEO는 대형 고객들이 주문을 더 일찍 넣고 납품을 앞당겨 달라고 요청하고 있으며, 인도를 늦추려는 고객은 없다고 말했습니다. 이에 맞춰 어플라이드는 2028년까지 장비 생산량을 두 배로 늘리고, 2030년까지 제조·연구시설 생산능력을 두 배 이상으로 키울 계획입니다. 다만 수요가 너무 빨리 늘어 일부 부품은 공급이 부족한 상황이라고 밝혔습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65436\n\n#반도체 #semiconductor #반도체장비 #어플라이드머티어리얼즈 #WFE #팹투자 #실적",
+  "photo": {
+    "provider": "pixabay",
+    "id": "5315089",
+    "query": "semiconductor fab equipment",
+    "file": "b1e2e965ac.photo.jpg",
+    "download_url": "https://pixabay.com/get/ge5411d0314cea89169095a0f24639a89959f60e28e2e05906d7a393423b741e8256277f6c31ee6cca094b8af478723acbb556928789a062e5ce1a8107d31eea9_1280.jpg",
+    "page_url": "https://pixabay.com/photos/circuit-electric-trace-computer-5315089/",
+    "photographer": "analogicus",
+    "photographer_url": "https://pixabay.com/users/analogicus-8164369/",
+    "alt": "circuit, electric, trace, computer, circuit board, hardware, mechanical engineering, processor, semiconductor, e waste, connection, component, microchip, technology, printed circuit board, digital, soldered, networking, circuit, circuit board, circuit board, semiconductor, semiconductor, semiconductor, semiconductor, semiconductor, microchip",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: analogicus / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "aaecb86ebb",
+  "link": "https://www.theregister.com/storage/2026/11/13/hpe-debuts-hybrid-storage-configs-rising-ssd-costs-hit-supercomputing/5309679",
+  "source": "The Register",
+  "category": "메모리",
+  "published_at": "2026-11-14T01:15+09:00",
+  "headline": "SSD 값 치솟자 HPE, 슈퍼컴에 하드디스크 섞는다",
+  "bullets": [
+    "HPE, SSD와 32TB 하드디스크 섞은 슈퍼컴 저장장치 발표",
+    "랙당 처리량 최대 41%, 용량 최대 32% 늘려",
+    "대용량 SSD 가격 급등에 저장 비용 줄이려는 선택"
+  ],
+  "photo_queries": [
+    "hard disk drive internals",
+    "storage array drive bays",
+    "supercomputer server room"
+  ],
+  "caption": "SSD 값 치솟자 HPE, 슈퍼컴에 하드디스크 섞는다\n\nHPE가 슈퍼컴퓨터용 저장장치 'Cray 슈퍼컴퓨팅 스토리지 시스템 E2000'에 SSD와 새 32TB 하드디스크(HDD)를 섞은 구성을 새로 내놓았습니다. SSD는 낸드 플래시 메모리 칩에 데이터를 저장해 빠르지만 비싸고, 하드디스크는 회전하는 원판에 기록해 느리지만 같은 용량에 값이 쌉니다. AI 인프라 수요로 메모리 같은 부품 값이 오르는 가운데, 낸드 기반 SSD 가격이 하드디스크보다 빠르게 오르고 있다고 기사는 전했습니다. HPE도 대용량 SSD 가격이 치솟았다며, 새 구성은 연구기관과 국립연구소가 저장장치에 쓰는 돈을 줄여 계산용 장비에 더 쓸 수 있게 해 준다고 설명했습니다. 회사는 새 구성이 랙당 데이터 처리량을 최대 41%, 쓸 수 있는 저장 용량을 최대 32% 늘린다고 밝혔고, 2027년 초 판매할 예정입니다. 메모리 가격 상승이 서버와 슈퍼컴퓨터의 설계 선택까지 바꾸고 있다는 사례입니다.\n\n출처: The Register\nhttps://www.theregister.com/storage/2026/11/13/hpe-debuts-hybrid-storage-configs-rising-ssd-costs-hit-supercomputing/5309679\n\n#반도체 #semiconductor #SSD #HDD #낸드 #HPE #슈퍼컴퓨터 #스토리지",
+  "photo": {
+    "provider": "pixabay",
+    "id": "1071669",
+    "query": "hard disk drive internals",
+    "file": "aaecb86ebb.photo.jpg",
+    "download_url": "https://pixabay.com/get/ge6cf680af5abea111c3a41a824854ad9678f4a595f15075ac4afc65b8f8a5fb6413f1042fb7e77fda0e37b24236906c6ef1a9c6ab2364302e6a417176970a253_1280.jpg",
+    "page_url": "https://pixabay.com/photos/hard-disk-hard-disk-drive-1071669/",
+    "photographer": "manseok_Kim",
+    "photographer_url": "https://pixabay.com/users/manseok_Kim-1005494/",
+    "alt": "hard disk, hard disk drive, secondary memory, storage device, computer, saved, machine, electronic, hardware, hard disk, hard disk, hard disk, hard disk, hard disk",
+    "width": 5472,
+    "height": 3648,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: manseok_Kim / Pixabay"
+  }
+}

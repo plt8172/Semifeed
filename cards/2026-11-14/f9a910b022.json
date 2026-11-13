@@ -1,0 +1,36 @@
+{
+  "id": "f9a910b022",
+  "link": "https://www.etnews.com/20261113000289",
+  "source": "전자신문",
+  "category": "정책·공급망",
+  "published_at": "2026-11-13T17:49+09:00",
+  "headline": "젠슨 황 물러나도 엔비디아 GPU 26만장 한국 공급 유지",
+  "bullets": [
+    "엔비디아, 한국에 첨단 GPU 26만장 기존 계획대로 공급",
+    "CEO 사임으로 국내 AI 인프라 차질 우려 나와",
+    "과기정통부, 엔비디아와 점검회의 열어 재확인"
+  ],
+  "photo_queries": [
+    "graphics processing unit closeup",
+    "data center aisle lights",
+    "computer cooling fans"
+  ],
+  "caption": "젠슨 황 물러나도 엔비디아 GPU 26만장 한국 공급 유지\n\n엔비디아가 젠슨 황 CEO의 사임 이후에도 한국에 첨단 GPU 26만장을 공급하는 계획을 그대로 추진합니다. GPU(그래픽처리장치)는 원래 그래픽 계산용 칩이지만, 지금은 AI를 학습시키고 돌리는 데 가장 많이 쓰이는 핵심 부품입니다. 황 CEO가 갑자기 물러나면서 한국 정부와 기업이 엔비디아와 함께 추진해 온 AI 인프라 사업이 흔들릴 수 있다는 우려가 나왔습니다. 그러자 과학기술정보통신부는 13일 제2차관 주재로 엔비디아 측과 현안점검회의를 열었고, 배경훈 부총리 겸 과기정통부 장관이 SNS를 통해 공급 계획을 재확인했다고 밝혔습니다. GPU 확보는 국내 AI 데이터센터 구축의 출발점이어서, 공급이 예정대로 이어지는지가 앞으로 한국 AI 산업 일정에 중요한 변수가 됩니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261113000289\n\n#반도체 #semiconductor #엔비디아 #GPU #AI인프라 #과기정통부 #젠슨황",
+  "photo": {
+    "provider": "pixabay",
+    "id": "4739530",
+    "query": "printed circuit board",
+    "file": "f9a910b022.photo.jpg",
+    "download_url": "https://pixabay.com/get/g9a9555bd236bd273bbf745750f7aaed8d486d688c4b0657836fb6856128bb7dfd8c22c73a62a7b17038e2c9323450356d3d064cd5640b24fc5c7d5e8e9012361_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-board-circuit-electronic-4739530/",
+    "photographer": "padrinan",
+    "photographer_url": "https://pixabay.com/users/padrinan-1694659/",
+    "alt": "technology, board, circuit, electronic, computer, component, chip, hardware, team, electric, service, device, system, electricity, transistor, personal computer, technical, connection, industry, chip, chip, chip, chip, chip, transistor, transistor",
+    "width": 6016,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: padrinan / Pixabay",
+    "category": "computer"
+  }
+}
