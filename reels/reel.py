@@ -7,7 +7,8 @@
     python3 reels/reel.py frames  reels/episodes/<slug> 3.2 h2 ... 지정한 시각(초 또는 줄 id)의 원본 크기 화면 → build/frames/
     python3 reels/reel.py build   reels/episodes/<slug>            tts → 렌더 → 믹스 → out/<slug>.mp4
     python3 reels/reel.py codec   in.wav out_dir/                  같은 음성을 PCM·GSM·Codec2로 통과시킨 A/B/C.wav
-    python3 reels/reel.py say     "문장" out.wav [목소리 번호]        TTS로 문장 하나를 wav로 (데모 음성 재료)
+    python3 reels/reel.py say     "문장" out.wav [목소리]            TTS로 문장 하나를 wav로 (데모 음성 재료. 목소리: 내장 번호 또는 구글 목소리 이름)
+    python3 reels/reel.py voices  [ko-KR]                          구글 TTS의 목소리 목록 (GOOGLE_TTS_API_KEY 필요)
     python3 reels/reel.py listen  reels/episodes/<slug>            완성 영상의 소리를 줄마다 받아 적어 자막과 나란히 출력
     python3 reels/reel.py listen  any.wav|mp4                      오디오 파일을 받아 적는다 (데모 음성이 들리는지 확인)
     python3 reels/reel.py setup                                    내장 TTS 모델 받기 (약 130MB. 키 없이 쓰는 기본 목소리)
@@ -21,6 +22,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import difflib
 import hashlib
 import json
@@ -31,6 +33,7 @@ import shutil
 import subprocess
 import sys
 import tarfile
+import urllib.error
 import urllib.request
 import zlib
 from concurrent.futures import ProcessPoolExecutor
@@ -45,6 +48,8 @@ TTS_MODEL = "sherpa-onnx-supertonic-3-tts-int8-2026-05-11"      # Supertonic 3: 
 TTS_URL = f"https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/{TTS_MODEL}.tar.bz2"
 TTS_SID, TTS_SPEED = 2, 1.12
 TAKES, TAKE_OK = 4, 0.95           # 내장 TTS: 받아쓰기가 대본과 이만큼 맞을 때까지 다시 읽히는 횟수
+GOOGLE_TTS = "https://texttospeech.googleapis.com/v1"
+GOOGLE_VOICE = "ko-KR-Chirp3-HD-Aoede"   # Chirp 3: HD (월 100만 자까지 무료). 목소리 목록: reel.py voices
 ASR_MODEL = "sherpa-onnx-whisper-small"
 ASR_URL = f"https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/{ASR_MODEL}.tar.bz2"
 FALLBACK_CHROMIUM = "/opt/pw-browsers/chromium"
@@ -146,6 +151,8 @@ def tts_backend(voice: dict) -> str:
     b = voice.get("backend", "auto")
     if b != "auto":
         return b
+    if os.environ.get("GOOGLE_TTS_API_KEY"):
+        return "google"
     if os.environ.get("OPENAI_API_KEY"):
         return "openai"
     if (MODELS / TTS_MODEL / "tts.json").is_file():
@@ -166,6 +173,42 @@ def tts_openai(text: str, voice: dict, out: Path) -> None:
                                           "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=120) as r:
         out.write_bytes(r.read())
+
+
+def google_call(method: str, path: str, body: dict | None = None) -> dict:
+    """구글 TTS REST 호출. 키는 환경 변수 GOOGLE_TTS_API_KEY로만 받는다(없으면 프록시가 넣어 주는 경우를 위해 그냥 보낸다)."""
+    headers = {"Content-Type": "application/json"}
+    if os.environ.get("GOOGLE_TTS_API_KEY"):
+        headers["X-Goog-Api-Key"] = os.environ["GOOGLE_TTS_API_KEY"]
+    data = json.dumps(body).encode() if body is not None else None
+    req = urllib.request.Request(GOOGLE_TTS + path, data=data, headers=headers, method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        msg = e.read().decode(errors="replace")[:400]
+        raise SystemExit(f"구글 TTS 오류 {e.code}: {msg}") from None
+
+
+def google_body(text: str, voice: dict) -> dict:
+    name = voice.get("google_voice", GOOGLE_VOICE)
+    audio = {"audioEncoding": "LINEAR16", "sampleRateHertz": SR}
+    rate = float(voice.get("google_speed", 1.0))
+    if abs(rate - 1) >= 0.01:
+        audio["speakingRate"] = rate
+    return {"input": {"text": text}, "voice": {"languageCode": "-".join(name.split("-")[:2]), "name": name}, "audioConfig": audio}
+
+
+def tts_google(text: str, voice: dict, out: Path) -> None:
+    """Google Cloud Text-to-Speech로 읽는다. voice: google_voice(목소리 이름), google_speed(말 빠르기, 기본 1.0)."""
+    r = google_call("POST", "/text:synthesize", google_body(text, voice))
+    out.write_bytes(base64.b64decode(r["audioContent"]))     # LINEAR16은 WAV 머리말이 붙어서 온다
+
+
+def google_voices(lang: str = "ko-KR") -> None:
+    r = google_call("GET", f"/voices?languageCode={lang}")
+    for v in sorted(r.get("voices", []), key=lambda v: v["name"]):
+        print(f"{v['name']:<34} {v.get('ssmlGender', ''):<8} {v.get('naturalSampleRateHertz', '')}")
 
 
 _local = None
@@ -204,7 +247,7 @@ def tts_silence(text: str, voice: dict, out: Path) -> None:
     sf.write(out, np.zeros(int(SR * max(0.6, 0.13 * len(text)))), SR)
 
 
-TTS = {"openai": tts_openai, "local": tts_local, "silence": tts_silence}
+TTS = {"google": tts_google, "openai": tts_openai, "local": tts_local, "silence": tts_silence}
 
 
 def read_mono(path: Path, sr: int = SR) -> np.ndarray:
@@ -257,12 +300,12 @@ def run_tts(ep: Path, data: dict) -> dict:
         if not raw.is_file():
             TTS[backend](text, data["voice"], raw)
             note = ""
-            if backend == "local" and have_asr():
-                # 내장 모델은 읽을 때마다 조금씩 다르다. 받아 적어서 대본과 가장 가까운 것을 쓴다
+            if backend != "silence" and have_asr():
+                # 받아 적어서 대본과 맞는지 본다. 내장 모델은 읽을 때마다 조금씩 달라서, 가장 가까운 것을 고른다
                 def score(f):
                     return heard_ratio(hear(read_mono(f, 16000)), text, ln["caption"])
                 best, n = score(raw), 1
-                while best < TAKE_OK and n < TAKES:
+                while backend == "local" and best < TAKE_OK and n < TAKES:
                     alt = raw.with_suffix(".alt.wav")
                     TTS[backend](text, data["voice"], alt)
                     got, n = score(alt), n + 1
@@ -759,7 +802,7 @@ def setup(kind: str = "tts") -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("cmd", choices=["check", "plan", "preview", "frames", "build", "codec", "say", "listen", "setup"])
+    ap.add_argument("cmd", choices=["check", "plan", "preview", "frames", "build", "codec", "say", "listen", "setup", "voices"])
     ap.add_argument("args", nargs="*")
     a = ap.parse_args()
     if a.cmd == "setup":
@@ -768,8 +811,12 @@ def main() -> None:
         return listen(Path(a.args[0]))
     if a.cmd == "codec":
         return codec_demo(Path(a.args[0]), Path(a.args[1]))
+    if a.cmd == "voices":
+        return google_voices(a.args[0] if a.args else "ko-KR")
     if a.cmd == "say":
-        return say(a.args[0], Path(a.args[1]), {"sid": int(a.args[2])} if len(a.args) > 2 else None)
+        v = a.args[2] if len(a.args) > 2 else None
+        voice = None if v is None else {"sid": int(v)} if v.isdigit() else {"backend": "google", "google_voice": v}
+        return say(a.args[0], Path(a.args[1]), voice)
     ep = Path(a.args[0])
     if a.cmd == "check":
         errs = check(ep)

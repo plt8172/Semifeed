@@ -78,5 +78,33 @@ class TimingTest(unittest.TestCase):
         self.assertEqual(reel.check(ROOT / "reels" / "episodes" / "vocoding"), [])
 
 
+@unittest.skipIf(reel is None, "numpy/soundfile not installed")
+class GoogleTtsTest(unittest.TestCase):
+    def test_body(self):
+        b = reel.google_body("안녕하세요.", {"google_voice": "ko-KR-Chirp3-HD-Kore", "google_speed": 1.1})
+        self.assertEqual(b["voice"], {"languageCode": "ko-KR", "name": "ko-KR-Chirp3-HD-Kore"})
+        self.assertEqual(b["audioConfig"], {"audioEncoding": "LINEAR16", "sampleRateHertz": reel.SR, "speakingRate": 1.1})
+        self.assertNotIn("speakingRate", reel.google_body("네.", {})["audioConfig"])
+
+    def test_synthesize_sends_key_header_and_writes_wav(self):
+        import base64, io, json, os, tempfile
+        from unittest import mock
+        sent = {}
+
+        def fake(req, timeout):
+            sent["url"], sent["key"], sent["body"] = req.full_url, req.get_header("X-goog-api-key"), json.loads(req.data)
+            return io.BytesIO(json.dumps({"audioContent": base64.b64encode(b"RIFFdata").decode()}).encode())
+
+        with tempfile.TemporaryDirectory() as d, mock.patch.dict(os.environ, {"GOOGLE_TTS_API_KEY": "k"}), \
+                mock.patch.object(reel.urllib.request, "urlopen", fake):
+            self.assertEqual(reel.tts_backend({"backend": "auto"}), "google")
+            out = Path(d) / "a.wav"
+            reel.tts_google("안녕하세요.", {}, out)
+            self.assertEqual(out.read_bytes(), b"RIFFdata")
+        self.assertEqual(sent["url"], "https://texttospeech.googleapis.com/v1/text:synthesize")
+        self.assertEqual(sent["key"], "k")
+        self.assertEqual(sent["body"]["input"], {"text": "안녕하세요."})
+
+
 if __name__ == "__main__":
     unittest.main()
