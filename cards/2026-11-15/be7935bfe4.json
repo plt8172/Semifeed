@@ -1,0 +1,35 @@
+{
+  "id": "be7935bfe4",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65444",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-14T10:21+09:00",
+  "headline": "AI 반도체 주문 437% 급증, 세미파이브 수주 역대 최대",
+  "bullets": [
+    "3분기 신규 수주 1784억원, 전년 같은 기간보다 437% 늘어",
+    "분기 매출 514억원 첫 500억 돌파, 영업손실 97억원은 지속",
+    "수주잔고 2455억원 최대, 4분기부터 매출 전환 본격화 기대"
+  ],
+  "caption": "AI 반도체 주문 437% 급증, 세미파이브 수주 역대 최대\n\n국내 반도체 설계 기업 세미파이브가 올해 3분기에 1784억원어치의 새 주문을 따내 역대 최대 수주를 기록했습니다. 세미파이브는 고객이 원하는 용도에 맞춰 칩을 설계해 주는 주문형반도체(ASIC) 사업을 하는데, ASIC는 범용 칩보다 특정 작업을 효율적으로 처리할 수 있어 AI 서비스 기업들의 수요가 늘고 있습니다. 이번 분기에는 ASIC 개발 주문만 1369억원으로 1년 전보다 705% 늘었고, 북미 고성능 컴퓨팅 대형 프로젝트도 포함됐습니다. 분기 매출도 514억원으로 처음 500억원을 넘었지만, 비용이 함께 늘어 97억원의 영업손실은 이어졌습니다. 다만 직전 분기보다 적자 폭이 줄었고, 앞으로 매출이 될 수주잔고가 2455억원으로 사상 최대여서 회사는 4분기부터 실적 개선이 이어질 것으로 보고 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65444\n\n#반도체 #semiconductor #세미파이브 #ASIC #AI반도체 #시스템반도체 #실적",
+  "photo_queries": [
+    "silicon wafer semiconductor",
+    "chip die macro",
+    "electronics lab bench"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "581598",
+    "query": "silicon wafer semiconductor",
+    "file": "be7935bfe4.photo.jpg",
+    "download_url": "https://pixabay.com/get/g28a3664f93a847f0d93b7b080938ed6aa5e29fcbde14687362109dbe275a614066978ce9216a61da2753b25d2f157a963b69a9d64ce7ce4164df33c6cc198f36_1280.jpg",
+    "page_url": "https://pixabay.com/photos/electronics-components-chips-581598/",
+    "photographer": "Magnascan",
+    "photographer_url": "https://pixabay.com/users/Magnascan-653134/",
+    "alt": "electronics, components, chips, computer, windows wallpaper, beautiful wallpaper, board, hd wallpaper, technology, main board, 4k wallpaper, mother board, digital, circuit, hardware, computing, processor, laptop, laptop wallpaper, mac wallpaper, free wallpaper, equipment, modern, cool backgrounds, wallpaper 4k, side light, background, circuitry, micro, full hd wallpaper, integrated, cpu, pc, system, tech, 4k wallpaper 1920x1080, microchip, electricity, microprocessor, electric, desktop backgrounds, free background, wallpaper hd, green background, green computer, green technology, green laptop, green light, green digital, green tech, green board, green lights",
+    "width": 3264,
+    "height": 2448,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Magnascan / Pixabay"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "6776bdba0e",
+  "link": "https://www.theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/5309891",
+  "source": "The Register",
+  "category": "정책·공급망",
+  "published_at": "2026-11-14T06:16+09:00",
+  "headline": "中 AI 모델 6종, 수출 금지 엔비디아 칩 썼다는 분석",
+  "bullets": [
+    "전 오픈AI 엔지니어, 딥시크·키미 등 6종서 블랙웰 흔적 찾아",
+    "AI 모델 초깃값에 남은 GPU별 고유 패턴을 6조 개 조합과 대조",
+    "칩이 있던 곳은 확인 안 돼, 美 클라우드를 썼을 가능성도"
+  ],
+  "caption": "中 AI 모델 6종, 수출 금지 엔비디아 칩 썼다는 분석\n\n오픈AI 출신 엔지니어 윌 드퓨가 딥시크, 문샷AI, 미니맥스, 앤트그룹의 AI 모델이 미국이 중국 수출을 막은 엔비디아 블랙웰 GPU로 만들어졌다는 분석 보고서를 냈습니다. 블랙웰은 엔비디아의 최신 AI 칩으로, 미국은 이런 첨단 칩이 중국으로 가지 않도록 수출을 통제하고 있습니다. 드퓨는 AI 모델을 처음 만들 때 넣는 초깃값이 학습에 쓴 GPU 종류에 따라 고유한 패턴을 남기고, 그 흔적이 공개된 완성 모델에도 남는다는 점을 이용했습니다. 6조 개가 넘는 칩 구성과 시작값 조합을 대조한 결과 딥시크-V4-프로, 키미 K3, 미니맥스-M3 등 중국 모델 6종이 블랙웰 시스템에서 만들어졌다고 밝혔습니다. 다만 이 방법으로는 칩이 어디에 있었는지 알 수 없어, 중국 기업이 미국 클라우드 업체를 통해 칩을 빌려 썼을 가능성도 남아 있습니다. 미국 의회에는 이런 빈틈을 막는 법안이 여러 건 올라가 있어, 이번 분석이 수출 통제 강화 논의에 힘을 실을 수 있습니다.\n\n출처: The Register\nhttps://www.theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/5309891\n\n#반도체 #semiconductor #엔비디아 #수출통제 #AI칩 #딥시크 #미중갈등",
+  "photo_queries": [
+    "gpu cooling fans closeup",
+    "liquid cooling server pipes",
+    "data center aisle"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5496177",
+    "query": "printed circuit board",
+    "file": "6776bdba0e.photo.jpg",
+    "download_url": "https://pixabay.com/get/g7f5898c947d0b51a7e4f38ebc21318db7957131b149ee0c2c71afff7201e9bc7630848832957e2189afc083b6964df8223db719ffb992a125f499344d05aed09_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mother-board-electronics-computer-5496177/",
+    "photographer": "nanoslavic",
+    "photographer_url": "https://pixabay.com/users/nanoslavic-17278421/",
+    "alt": "mother board, electronics, computer, board, components, chips, tech, technology, main board, digital, circuit, hardware, parts, processor, module, microelectronics, electrical, repair, engineering, printed circuit board, pcb, mother board, pcb, pcb, pcb, pcb, pcb",
+    "width": 4934,
+    "height": 3134,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: nanoslavic / Pixabay",
+    "category": "computer"
+  }
+}

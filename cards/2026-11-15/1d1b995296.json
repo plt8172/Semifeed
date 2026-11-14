@@ -1,0 +1,35 @@
+{
+  "id": "1d1b995296",
+  "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/malaysia-plans-new-law-using-data-center-power-consumption-to-catch-ai-gpu-smugglers-but-real-world-tdp-variance-and-lack-of-physical-audits-could-undermine-it-new-law-also-forces-operators-to-pay-for-unused-electricity-capacity",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-15T00:10+09:00",
+  "headline": "말레이시아, 전기 사용량으로 AI 칩 밀수 잡는 법 추진",
+  "bullets": [
+    "데이터센터에 GPU 수입량·전력 사용량·고객 공개 의무화 추진",
+    "예약한 전력은 안 써도 요금 내게 해 불필요한 예약 차단",
+    "전력만으로 GPU 수 추정은 어려워 현장 점검 필요 지적"
+  ],
+  "caption": "말레이시아, 전기 사용량으로 AI 칩 밀수 잡는 법 추진\n\n말레이시아 정부가 데이터센터 운영사에 AI 칩 수입량과 전력 사용량을 신고하게 하는 새 법을 추진합니다. 일부 업체가 말레이시아 데이터센터 공간을 빌려 GPU를 합법적으로 들여온 뒤 다른 나라로 몰래 빼돌렸다는 사실을 투자통상산업부 장관이 인정하면서 나온 대책입니다. 미국은 첨단 AI 칩의 중국 수출을 막고 있는데, 동남아가 우회 통로로 쓰인다는 의심이 커지고 있습니다. 새 법은 GPU 수입 대수, 전력 사용량, 시설 위치, 운영사와 대형 고객의 신원을 공개하게 하고, 예약해 둔 전력 용량은 실제로 쓰지 않아도 요금을 내게 합니다. 들여온 칩 수에 비해 전기를 너무 적게 쓰면 칩이 다른 곳으로 갔다고 의심할 수 있다는 계산입니다. 하지만 GPU는 실제 작업에서 정격 전력만큼 쓰지 않는 경우가 많고 서버 구성마다 소비 전력이 달라, 전력 사용량만으로는 칩 수를 정확히 알기 어렵다는 지적도 나옵니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/artificial-intelligence/malaysia-plans-new-law-using-data-center-power-consumption-to-catch-ai-gpu-smugglers-but-real-world-tdp-variance-and-lack-of-physical-audits-could-undermine-it-new-law-also-forces-operators-to-pay-for-unused-electricity-capacity\n\n#반도체 #semiconductor #AI칩 #수출통제 #밀수 #데이터센터 #말레이시아",
+  "photo_queries": [
+    "electric meter closeup",
+    "power substation transformer",
+    "industrial cooling towers"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5229750",
+    "query": "electric meter closeup",
+    "file": "1d1b995296.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc23a531a4538c4b43df9aa0a7744e1d1ed420dc45100182a2f4190d5ef4fc77a19c3d8d15cc6be0cd06607df62b6e7ee9f8a3b425a6ba3e5aca988ef2a1ba020_1280.jpg",
+    "page_url": "https://pixabay.com/photos/electric-meter-electricity-meter-5229750/",
+    "photographer": "jillrose999",
+    "photographer_url": "https://pixabay.com/users/jillrose999-16379406/",
+    "alt": "electric meter, electricity, meter, voltmeter, multimeter, gauge, electrical, electrician, measure, measurement, energy, current, rhb, electric, electric meter, electric meter, electric meter, electric meter, electric meter, electrician, electrician",
+    "width": 4608,
+    "height": 3072,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: jillrose999 / Pixabay"
+  }
+}
