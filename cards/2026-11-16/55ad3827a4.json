@@ -1,0 +1,35 @@
+{
+  "id": "55ad3827a4",
+  "link": "https://www.etnews.com/20261116000004",
+  "source": "전자신문",
+  "category": "기업·실적",
+  "published_at": "2026-11-16T07:28+09:00",
+  "headline": "물러난 젠슨 황, 나흘 만에 엔비디아 CEO 복귀 논의",
+  "bullets": [
+    "FT \"젠슨 황, 측근들과 엔비디아 CEO 복귀 논의\" 복수 소식통 인용 보도",
+    "실리콘밸리 임원들로 복귀 로비용 '상황실' 꾸려지는 중이라고 전해져",
+    "백악관 지지 얻으려 한다는 보도, 엔비디아 공식 입장은 확인 안 돼"
+  ],
+  "caption": "물러난 젠슨 황, 나흘 만에 엔비디아 CEO 복귀 논의\n\n사임한 지 나흘 된 젠슨 황 전 엔비디아 최고경영자(CEO)가 복귀를 노리고 있다는 보도가 나왔습니다. 영국 파이낸셜타임스(FT)는 복수의 소식통을 인용해 황 전 CEO가 측근들과 CEO 자리 복귀를 논의했다고 전했습니다. 보도에 따르면 실리콘밸리 임원들로 이뤄진 이른바 '전시 상황실'이 복귀를 위한 로비를 준비하고 있으며, 백악관의 지지를 얻으려 하는 것으로 알려졌습니다. 엔비디아는 AI 학습과 서비스에 쓰이는 그래픽처리장치(GPU) 시장을 이끄는 회사로, 황 전 CEO는 창업 이후 회사를 이끌어 왔기 때문에 그의 거취는 AI 반도체 업계 전반의 관심사입니다. 다만 이번 소식은 언론 보도 단계이며, 실제 복귀가 가능할지와 이사회·회사의 공식 입장은 아직 밝혀지지 않았습니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261116000004\n\n#반도체 #semiconductor #엔비디아 #젠슨황 #GPU #AI반도체 #빅테크",
+  "photo_queries": [
+    "graphics card gpu",
+    "conference stage audience",
+    "skyscraper office windows"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5884682",
+    "query": "graphics card gpu",
+    "file": "55ad3827a4.photo.jpg",
+    "download_url": "https://pixabay.com/get/gea2c9bee247b43f98a10ef50f7bf5adc4f0b71348cc4ead40ac6ed12a11600b74deaa333813a000d9824ae19f673cb6558b127b50385f8f1d01a796bbd1aea65_1280.jpg",
+    "page_url": "https://pixabay.com/photos/card-circuit-electronics-chips-5884682/",
+    "photographer": "ArmandoAre1",
+    "photographer_url": "https://pixabay.com/users/ArmandoAre1-7153816/",
+    "alt": "card, circuit, electronics, chips, processor, repair, board, engineering, computer, components, tech, technology, digital, hardware, parts, microelectronics, electrical",
+    "width": 6016,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ArmandoAre1 / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "58dc7e4307",
+  "link": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-16T00:09+09:00",
+  "headline": "메모리값 500% 폭등, 삼성·SK 담합 소송 본격 심리",
+  "bullets": [
+    "美 법원, 마이크론·삼성·SK하이닉스 D램 담합 소송 기각 신청 거부",
+    "원고 측 \"동시 감산·DDR4 단종 등으로 공급 줄여 값 1년 새 최대 500%↑\"",
+    "유죄 판단은 아냐, 세 회사는 12월 7일까지 소장에 답변해야"
+  ],
+  "caption": "메모리값 500% 폭등, 삼성·SK 담합 소송 본격 심리\n\n미국 법원이 마이크론·삼성전자·SK하이닉스를 상대로 낸 D램 가격 담합 소송을 기각해 달라는 세 회사의 요청을 받아들이지 않았습니다. D램은 PC·스마트폰·서버가 작업 중인 데이터를 잠시 담아 두는 메모리로, 이 세 회사가 세계 공급의 대부분을 만듭니다. 개인과 소상공인 17명으로 이뤄진 원고 측은 세 회사가 2022년 10월부터 2023년 4월까지 동시에 생산을 줄이고, 이어 AI용 고대역폭메모리(HBM)로 함께 방향을 틀었으며, 석 달 사이에 잇따라 DDR4 생산 종료를 발표하는 등 나란히 공급을 줄여 값이 1년 새 최대 500% 뛰었다고 주장합니다. 세 회사는 경쟁이 치열해 서로를 매처럼 지켜볼 뿐이고 같은 시장 상황에 각자 대응했을 뿐이라고 반박했지만, 판사는 \"오히려 대형을 이뤄 나는 매에 가깝다\"며 담합 의혹이 재판을 이어 갈 만큼 그럴듯하다고 봤습니다. 다만 이는 유죄 판단이 아니며, 앞으로 양측이 증거를 내고 다툰 뒤에야 결론이 납니다. 세 회사는 12월 7일까지 소장에 답변해야 하고, 재판 일정을 정하는 절차는 2027년 1월에 열립니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge\n\n#반도체 #semiconductor #D램 #메모리 #삼성전자 #SK하이닉스 #마이크론 #반독점",
+  "photo_queries": [
+    "ram memory module",
+    "memory chip closeup",
+    "courthouse columns building"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4813085",
+    "query": "ram memory module",
+    "file": "58dc7e4307.photo.jpg",
+    "download_url": "https://pixabay.com/get/g792c85bb63abf6538dcff96e41b2d1ac5e33fe99e4674edfe5ffb2feebf827d88555453bb042e9748bb5f9af7d7501f44a0b549fabf66d826ee1c5941dc9e9c1_1280.jpg",
+    "page_url": "https://pixabay.com/photos/memory-ram-computer-technology-4813085/",
+    "photographer": "LAWJR",
+    "photographer_url": "https://pixabay.com/users/LAWJR-4448871/",
+    "alt": "memory, ram, computer, technology, electronics, electronic, chip, module, circuit, board, chips, ddr3, data, digital, hardware, brown computer, brown laptop, brown data, brown memory, ram, ram, ram, ram, ram, ddr3",
+    "width": 5184,
+    "height": 3888,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: LAWJR / Pixabay"
+  }
+}

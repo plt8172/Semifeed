@@ -1,0 +1,35 @@
+{
+  "id": "ee5230a945",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65450",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-15T13:22+09:00",
+  "headline": "AI 데이터센터 정전 대비 배터리, 삼성SDI 美서 첫 공개",
+  "bullets": [
+    "삼성SDI, 美 'RE+ 2026'서 AI 데이터센터용 UPS 배터리 북미 첫 공개",
+    "LFP 배터리 넣은 20피트 컨테이너형 전력용 ESS 'SBB 2.0'이 핵심",
+    "서버 백업용 고출력 원통형 배터리 등 데이터센터 제품군도 전시"
+  ],
+  "caption": "AI 데이터센터 정전 대비 배터리, 삼성SDI 美서 첫 공개\n\n삼성SDI가 17일부터 사흘간 미국 라스베이거스에서 열리는 에너지산업 전시회 'RE+ 2026'에서 AI 데이터센터용 배터리와 에너지저장장치(ESS)를 선보입니다. 핵심 제품은 값이 싸고 안전성이 높은 리튬인산철(LFP) 배터리를 넣은 전력용 ESS 'SBB 2.0'으로, 20피트 컨테이너 하나에 배터리 셀과 안전장치를 통합했습니다. ESS는 전기를 저장했다가 필요할 때 꺼내 쓰는 대형 배터리 설비입니다. 북미 시장에 처음 공개하는 'U8A3'는 무정전전원장치(UPS)용 배터리로, 정전 같은 상황에서도 서버가 꺼지지 않도록 전기를 대 주는 역할을 하며 순간적인 전력 부하 변화에 대응하도록 설계됐습니다. 이 밖에 서버 백업 장치(BBU)에 쓰는 고출력 원통형 배터리 등 데이터센터용 제품군도 전시합니다. AI 데이터센터가 늘면서 전기를 안정적으로 공급하는 배터리가 배터리 업체들의 새 시장으로 떠오르고 있음을 보여 주는 대목입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65450\n\n#반도체 #semiconductor #삼성SDI #배터리 #ESS #데이터센터 #LFP #UPS",
+  "photo_queries": [
+    "battery storage container",
+    "lithium ion cells",
+    "solar farm battery"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2742302",
+    "query": "solar farm battery",
+    "file": "ee5230a945.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2f14227c42dd4c73efd2faf15d5ec3844ab84b4606a714024cc738a060a50ab5a400d4428e917a322c0f0f1d683cc29c8d9b2ec6bbf578ff692e82a5c1673713_1280.jpg",
+    "page_url": "https://pixabay.com/photos/photovoltaic-system-solar-2742302/",
+    "photographer": "mrganso",
+    "photographer_url": "https://pixabay.com/users/mrganso-607585/",
+    "alt": "photovoltaic system, solar, solar energy, solar panel, photovoltaic, renewable, energy revolution, power generation, solar field, solar cells, voltage, current, sun, electricity, energy, solar power, environment, renewable energy, technology, power supply, clouds, nature, sky, atmospheric, turn, earth day",
+    "width": 5231,
+    "height": 3353,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: mrganso / Pixabay"
+  }
+}

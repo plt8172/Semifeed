@@ -1,0 +1,36 @@
+{
+  "id": "52a139c52f",
+  "link": "https://www.etnews.com/20261113000212",
+  "source": "전자신문",
+  "category": "패키징",
+  "published_at": "2026-11-15T16:30+09:00",
+  "headline": "엔비디아 혼란에도 SK하이닉스, AI 메모리 생산 늘린다",
+  "bullets": [
+    "SK하이닉스, HBM4 생산능력 추가 확대 위해 협력사와 장비 발주 논의",
+    "투자는 HBM 패키징·테스트 중심, 내년 상반기 본격 가동 계획",
+    "엔비디아 CEO 교체 등 불확실성에도 HBM 수요 견고하다는 판단"
+  ],
+  "caption": "엔비디아 혼란에도 SK하이닉스, AI 메모리 생산 늘린다\n\nSK하이닉스가 AI 칩에 들어가는 고대역폭메모리(HBM4)의 생산 능력을 더 늘리기 위해 협력사들과 제조 장비 발주를 논의하고 있다고 반도체 장비 업체 관계자들이 전했습니다. HBM은 메모리 칩 여러 장을 수직으로 쌓아 데이터를 한꺼번에 많이 주고받게 만든 메모리로, 엔비디아 같은 회사의 AI 가속기 옆에 붙어 AI 학습과 추론 속도를 좌우합니다. 이번 투자는 칩을 쌓아 붙이고 검사하는 패키징·테스트 공정이 중심이며, 내년 상반기에 본격 가동하는 것이 목표입니다. 최근 엔비디아 최고경영자 교체 등으로 AI 산업의 앞날에 대한 불확실성이 커졌지만, SK하이닉스는 AI 인프라의 핵심인 HBM 수요는 흔들리지 않는다고 판단한 것으로 풀이됩니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261113000212\n\n#반도체 #semiconductor #HBM #HBM4 #SK하이닉스 #메모리 #패키징 #AI반도체",
+  "photo_queries": [
+    "stacked chips package",
+    "semiconductor test equipment",
+    "cleanroom engineer"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7772914",
+    "query": "microchip",
+    "file": "52a139c52f.photo.jpg",
+    "download_url": "https://pixabay.com/get/g1ea14c1c8b560bb162d2e307234583318f6d6e87803e151a6d0b456ec644c80a36bebcb565537c98ec07c3c270cb3a55e7add516fe0cef86cd6eacac380e1938_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-circuit-board-head-7772914/",
+    "photographer": "flutie8211",
+    "photographer_url": "https://pixabay.com/users/flutie8211-17475707/",
+    "alt": "technology, circuit, board, head, light, burst, artificial intelligence, ai, networking, digital, computer, internet, business, connected, communication, artificial intelligence, artificial intelligence, artificial intelligence, artificial intelligence, artificial intelligence",
+    "width": 5000,
+    "height": 2672,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: flutie8211 / Pixabay",
+    "category": "computer"
+  }
+}

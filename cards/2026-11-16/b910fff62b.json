@@ -1,0 +1,35 @@
+{
+  "id": "b910fff62b",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65447",
+  "source": "디일렉",
+  "category": "정책·공급망",
+  "published_at": "2026-11-15T13:22+09:00",
+  "headline": "고려아연 74억달러 美 제련소, 전력 230MW 승인받아",
+  "bullets": [
+    "美 테네시강유역개발공사, 고려아연 자회사 전력 230MW 사용 승인",
+    "74억달러 테네시 통합제련소, 2029년부터 전력 공급받을 예정",
+    "핵심광물 11종 포함 비철금속 12종·반도체용 황산 생산 계획"
+  ],
+  "caption": "고려아연 74억달러 美 제련소, 전력 230MW 승인받아\n\n고려아연이 미국 테네시주에 짓는 핵심광물 통합제련소가 공장을 돌릴 전기를 확보했습니다. 미국 남동부 7개 주에 전기를 공급하는 연방 공기업 테네시강유역개발공사(TVA)가 지난 10일 이사회에서 고려아연 자회사 크루서블 징크의 230메가와트(MW) 규모 전력 사용 요청을 승인했고, 2029년부터 전기를 공급할 예정입니다. 제련소는 광석에서 금속을 뽑아내는 곳으로 전기를 매우 많이 쓰기 때문에, 대규모 전력 확보는 공장 건설의 핵심 조건입니다. 고려아연은 미국 정부 등과 함께 약 74억달러를 들여 이 제련소를 짓는 '프로젝트 크루서블'을 추진하고 있으며, 이미 미국 연방 신속 인허가 대상에 선정되고 최종 환경영향평가도 통과했습니다. 이 제련소는 미국 정부가 지정한 핵심광물 11종을 포함한 비철금속 12종과 반도체 공정에 쓰이는 황산 등을 생산할 계획입니다. 2027년 착공해 2029년부터 일부 제품을 상업 생산하는 것이 목표로, 미국이 중요 소재 공급망을 자국 안에 두려는 흐름과 맞닿아 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65447\n\n#반도체 #semiconductor #고려아연 #핵심광물 #공급망 #제련 #미국",
+  "photo_queries": [
+    "metal smelter furnace",
+    "power transmission lines",
+    "zinc metal ingots"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2932947",
+    "query": "metal smelter furnace",
+    "file": "b910fff62b.photo.jpg",
+    "download_url": "https://pixabay.com/get/g23c7c7b5bd31c6d405fd5e3ec435da0a2ca00e718046a48f96f36ef22d457db8e46f7eb1aef4e6bcd7e946354b03730966cf20c39d4b46b6a0ef5626361feaa0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/metallurgy-a-ferro-alloy-2932947/",
+    "photographer": "kepinator",
+    "photographer_url": "https://pixabay.com/users/kepinator-4781665/",
+    "alt": "metallurgy, a ferro-alloy, the electric arched furnace, coal, fire, radiance, metallurgy, metallurgy, metallurgy, metallurgy, metallurgy",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: kepinator / Pixabay"
+  }
+}
