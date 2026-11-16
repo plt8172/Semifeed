@@ -1,0 +1,35 @@
+{
+  "id": "2e7b877f88",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65470",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-16T18:03+09:00",
+  "headline": "두 달 파업에 반도체 검사부품社 순익 46% 급감",
+  "bullets": [
+    "리노공업 3분기 매출 827억원, 1년 새 14.6% 감소",
+    "7월 말부터 두 달 파업에 생산·납기 차질",
+    "노사 잠정합의했지만 내년 상반기 물량도 타격"
+  ],
+  "caption": "두 달 파업에 반도체 검사부품社 순익 46% 급감\n\n반도체 검사 부품 업체 리노공업의 3분기 실적이 크게 꺾였습니다. 매출은 827억원으로 1년 전보다 14.6%, 영업이익은 394억원으로 18.3%, 순이익은 226억원으로 46% 줄었습니다. 리노공업의 주력 제품인 '리노핀'은 반도체나 인쇄회로기판이 전기적으로 제대로 작동하는지 확인할 때 쓰는 작은 핀으로, 전체 생산량의 약 96%를 차지합니다. 지난 7월 말부터 약 두 달 동안 노조 파업이 이어지면서 1~3분기 누적 생산량이 7.8% 줄었고, 고객사에 납기를 제시하지 못해 일부 계약도 맺지 못했습니다. 이 회사는 보통 6개월 뒤 생산할 물량을 미리 계약하기 때문에 파업 영향이 내년 상반기 물량까지 번졌습니다. 노사는 협상 183일 만인 지난 13일 잠정합의안을 마련했지만, 회사는 실적보다 고객사 신뢰를 잃은 것을 더 큰 피해로 보고 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65470\n\n#반도체 #semiconductor #리노공업 #반도체테스트 #테스트소켓 #실적 #파업",
+  "photo_queries": [
+    "spring probe pins",
+    "chip testing socket",
+    "electronics factory line"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "564775",
+    "query": "chip testing socket",
+    "file": "2e7b877f88.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2d7096f8475ed0c119cc13bc9955b7673b1d310f437a42804fadf9d2737198b0036c8e637372f6d86f28d0b12c4c7d8947cfd7631d5f06fb248b43c06504f19c_1280.jpg",
+    "page_url": "https://pixabay.com/photos/pins-cpu-processor-macro-pen-564775/",
+    "photographer": "blickpixel",
+    "photographer_url": "https://pixabay.com/users/blickpixel-52945/",
+    "alt": "pins, cpu, processor, macro, pen, computer, electronics, data processing, chip, circuit board, circuits, pc, control center, connections, electrical engineering, component, technology, trace, data, electric, components, software, close up, slot, cpu, cpu, cpu, cpu, cpu, processor, chip, chip, software, software, software",
+    "width": 2831,
+    "height": 1887,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: blickpixel / Pixabay"
+  }
+}

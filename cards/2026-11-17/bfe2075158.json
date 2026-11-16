@@ -1,0 +1,35 @@
+{
+  "id": "bfe2075158",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65487",
+  "source": "디일렉",
+  "category": "기업·실적",
+  "published_at": "2026-11-16T18:18+09:00",
+  "headline": "대한전선, 싱가포르서 2718억원 전력망 공사 따냈다",
+  "bullets": [
+    "싱가포르 전력청 400kV 초고압 전력망 사업 수주",
+    "계약액은 지난해 매출의 약 7.5%…설계~시험 일괄",
+    "데이터센터·반도체 전력 수요에 송전망 확충 흐름"
+  ],
+  "caption": "대한전선, 싱가포르서 2718억원 전력망 공사 따냈다\n\n대한전선이 싱가포르 전력청으로부터 2718억원 규모의 400킬로볼트(kV) 초고압 전력망 사업을 따냈습니다. 초고압 전력망은 발전소에서 만든 전기를 먼 곳까지 손실을 줄여 보내기 위해 아주 높은 전압으로 송전하는 설비로, 대한전선은 케이블과 전력기기의 설계·생산부터 설치·접속·시험까지 한꺼번에 맡습니다. 계약액은 대한전선의 지난해 연결 매출 3조6360억원의 약 7.5%에 해당합니다. 싱가포르는 데이터센터와 반도체 산업이 전기를 점점 더 많이 쓰면서 2029년까지 최대 5조5000억원을 들여 송전망을 7700km에서 9100km로 늘릴 계획입니다. 대한전선은 싱가포르 400kV 이상 초고압 시장에서 점유율 1위를 지키고 있고, 3분기 말 수주잔고는 역대 최대인 4조3000억원으로, AI와 반도체 붐이 전력 인프라 수요로 이어지고 있음을 보여 줍니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65487\n\n#반도체 #semiconductor #대한전선 #전력망 #초고압케이블 #싱가포르 #데이터센터 #전력인프라",
+  "photo_queries": [
+    "high voltage cable",
+    "power transmission tower",
+    "electrical substation"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "3387882",
+    "query": "power transmission tower",
+    "file": "bfe2075158.photo.jpg",
+    "download_url": "https://pixabay.com/get/gaaa623fb85fbcad0d1ac26c5744a3a50682e93f3be011607612088dc52482b6dd246a7b54efaff39e1635f0f5f357ae5b4adad479da85ffe4d7338e529757405_1280.jpg",
+    "page_url": "https://pixabay.com/photos/transmission-tower-electric-tower-3387882/",
+    "photographer": "analogicus",
+    "photographer_url": "https://pixabay.com/users/analogicus-8164369/",
+    "alt": "transmission tower, electric tower, electricity pylon, power line, infrastructure, infrastructure, infrastructure, infrastructure, infrastructure, infrastructure",
+    "width": 5184,
+    "height": 3232,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: analogicus / Pixabay"
+  }
+}

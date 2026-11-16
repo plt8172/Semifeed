@@ -1,0 +1,35 @@
+{
+  "id": "c076e7a9b3",
+  "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-17T06:50+09:00",
+  "headline": "美, 중국 기업의 AI 서버 원격 접속까지 막는다",
+  "bullets": [
+    "美 상무부 산업안보국, 새 규칙 발표…90일 뒤 시행",
+    "해외 데이터센터 빌려 쓰는 수출통제 우회 차단",
+    "인도네시아·말레이시아 등 5개국 수출도 허가 필요"
+  ],
+  "caption": "美, 중국 기업의 AI 서버 원격 접속까지 막는다\n\n미국 상무부 산업안보국(BIS)이 중국 등 고위험 국가에 본사를 둔 기업이 해외 데이터센터를 통해 미국산 AI 칩을 원격으로 쓰는 것을 제한하는 새 규칙을 발표했습니다. 미국은 그동안 엔비디아의 고성능 AI 칩을 허가된 기업에만 팔도록 수출을 통제해 왔지만, 칩을 직접 사지 않고 다른 나라 데이터센터의 서버를 빌려 쓰는 방식으로 이 규제를 피해 간다는 지적이 이어졌습니다. 새 규칙에 따라 해외 데이터센터는 미국 기술이 들어간 서비스의 접근을 더 엄격히 관리해야 하고, 중국·러시아·이란처럼 위험도가 높은 국가에 본사를 둔 기업에 원격 접속을 제공하는 데도 제한이 걸립니다. 또 인도네시아·말레이시아·싱가포르·태국·브라질에 본사를 둔 기업에 첨단 칩을 수출할 때도 허가를 받아야 합니다. 규칙은 90일 뒤 시행되며, AI 칩 규제가 '판매'뿐 아니라 '사용'까지 넓어진다는 점에서 데이터센터 업계와 칩 공급망 전반에 영향을 줄 수 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls\n\n#반도체 #semiconductor #수출통제 #AI칩 #데이터센터 #미중갈등 #공급망 #엔비디아",
+  "photo_queries": [
+    "network switch ports",
+    "shipping container port",
+    "data center aisle"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6955359",
+    "query": "network switch ports",
+    "file": "c076e7a9b3.photo.jpg",
+    "download_url": "https://pixabay.com/get/g93853c13e24125c9918e9fbd6ebc1a72ebc8eb42c9c265a222ef09bb283a9200f49eac2b7e270853d5ff00bfe5896f60f3df5881ce7d56dacdb78e22e934399f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/switch-network-technology-digital-6955359/",
+    "photographer": "computergottyt",
+    "photographer_url": "https://pixabay.com/users/computergottyt-2511322/",
+    "alt": "switch, network, technology, digital, desk, office, it, edp, electronics, internet, led",
+    "width": 4592,
+    "height": 3064,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: computergottyt / Pixabay"
+  }
+}

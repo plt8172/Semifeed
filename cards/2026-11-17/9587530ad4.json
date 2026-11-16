@@ -1,0 +1,35 @@
+{
+  "id": "9587530ad4",
+  "link": "https://www.eetimes.com/silicon-motherboard-enables-double-sided-integration-of-ics-and-passive-components/",
+  "source": "EE Times",
+  "category": "패키징",
+  "published_at": "2026-11-17T02:00+09:00",
+  "headline": "칩을 실리콘판 양면에 붙여 부품 면적 최대 90% 줄였다",
+  "bullets": [
+    "日 닛신보, '실리콘 마더보드' 기술 소개",
+    "실리콘 기판 양면에 칩과 수동부품 함께 탑재",
+    "부품 실장 면적 최대 90% 축소…소형화에 유리"
+  ],
+  "caption": "칩을 실리콘판 양면에 붙여 부품 면적 최대 90% 줄였다\n\n일본 전자부품 업체 닛신보가 실리콘 기판의 앞뒤 양면에 반도체 칩(IC)과 수동부품을 함께 붙이는 '실리콘 마더보드' 기술을 내놨습니다. 수동부품은 저항이나 커패시터처럼 스스로 신호를 만들지는 않지만 전류와 전압을 조절해 칩이 제대로 작동하도록 돕는 작은 부품으로, 보통은 칩과 따로 인쇄회로기판 위에 나란히 놓입니다. 닛신보는 이런 부품들을 실리콘으로 된 기판 양면에 함께 올려, 부품이 차지하는 면적을 최대 90%까지 줄일 수 있다고 밝혔습니다. 여러 부품을 하나로 묶어 작게 만드는 것을 반도체 업계에서는 패키징이라고 부르는데, 같은 기능을 더 좁은 공간에 담을 수 있으면 웨어러블 기기나 소형 센서처럼 공간이 부족한 제품을 설계하기가 쉬워집니다.\n\n출처: EE Times\nhttps://www.eetimes.com/silicon-motherboard-enables-double-sided-integration-of-ics-and-passive-components/\n\n#반도체 #semiconductor #패키징 #실리콘기판 #전자부품 #수동부품 #소형화",
+  "photo_queries": [
+    "smd capacitor resistor",
+    "chip packaging substrate",
+    "tiny electronic components"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4880754",
+    "query": "smd capacitor resistor",
+    "file": "9587530ad4.photo.jpg",
+    "download_url": "https://pixabay.com/get/g3adae52f9696ef779a1802c9b86acb16817b172f9de4f4d701fbd236e2348b36a0ed0ea4fcbb271c28db703d1bed8a5325bff276a680aea381f2c471c4d8b7a2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technique-technology-automation-4880754/",
+    "photographer": "gosiak1980",
+    "photographer_url": "https://pixabay.com/users/gosiak1980-2374509/",
+    "alt": "technique, technology, automation, electronics, device, electric, plate, elements, small, miniaturization, resistor, equipment",
+    "width": 3456,
+    "height": 1944,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: gosiak1980 / Pixabay"
+  }
+}

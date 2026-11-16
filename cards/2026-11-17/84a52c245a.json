@@ -1,0 +1,35 @@
+{
+  "id": "84a52c245a",
+  "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028",
+  "source": "Tom's Hardware",
+  "category": "AI·설계",
+  "published_at": "2026-11-17T04:05+09:00",
+  "headline": "엔비디아, 연산 코어 5만개 넘는 과학용 GPU 공개",
+  "bullets": [
+    "슈퍼컴퓨팅 2026서 신형 GPU '루빈 HPC' 발표",
+    "CUDA 코어 5만개 이상…현행 루빈 GPU는 2만8672개",
+    "2028년 출시, 기후·유전체 등 과학 시뮬레이션용"
+  ],
+  "caption": "엔비디아, 연산 코어 5만개 넘는 과학용 GPU 공개\n\n엔비디아가 미국에서 열린 슈퍼컴퓨팅 학회 'SC26'에서 과학·공학 계산용 신형 GPU '루빈 HPC'를 공개했습니다. GPU는 수많은 계산을 동시에 처리하는 칩으로, 엔비디아 GPU 안에서 실제 계산을 맡는 작은 연산 단위를 CUDA 코어라고 부릅니다. 엔비디아는 루빈 HPC에 자사 GPU 가운데 가장 많은 5만개 이상의 CUDA 코어가 들어간다고 밝혔는데, 현재 루빈 GPU는 2만8672개입니다. 이 칩은 기후 연구, 유전체 분석, 금융 시뮬레이션처럼 방대한 데이터를 다루는 분야를 겨냥했고, AI 에이전트가 가설을 세우고 시뮬레이션으로 검증하는 과정을 빠르게 하는 데 쓰입니다. 다만 메모리(HBM) 용량과 대역폭, 칩의 물리적 구성 같은 세부 사양은 공개되지 않았으며 출시는 2028년으로 예정돼 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028\n\n#반도체 #semiconductor #엔비디아 #GPU #슈퍼컴퓨터 #HPC #AI반도체",
+  "photo_queries": [
+    "gpu chip closeup",
+    "supercomputer cluster",
+    "scientific simulation screen"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1201074",
+    "query": "gpu chip closeup",
+    "file": "84a52c245a.photo.jpg",
+    "download_url": "https://pixabay.com/get/g817b136c5a8eaec2ff94314ac6e89deb1404d04bd19842c594feb34c6e62681f093fab81871f91ddf043ba220ad76a33363a3be32dafa13c26f936a4ea245269_1280.jpg",
+    "page_url": "https://pixabay.com/photos/nvidia-gpu-electronics-pcb-board-1201074/",
+    "photographer": "JacekAbramowicz",
+    "photographer_url": "https://pixabay.com/users/JacekAbramowicz-1981807/",
+    "alt": "nvidia, gpu, electronics, pcb, board, processor, circuit, chip, computer, power, component, technology, hardware, macro, videocard, high-tech, nvidia, nvidia, nvidia, gpu, gpu, gpu, gpu, gpu, pcb",
+    "width": 1920,
+    "height": 1080,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: JacekAbramowicz / Pixabay"
+  }
+}
