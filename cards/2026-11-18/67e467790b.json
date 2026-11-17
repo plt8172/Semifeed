@@ -1,0 +1,35 @@
+{
+  "id": "67e467790b",
+  "link": "https://www.theregister.com/off-prem/2026/11/17/americas-hyperscale-bit-barns-draw-as-much-power-as-entire-states/5310471",
+  "source": "The Register",
+  "category": "정책·공급망",
+  "published_at": "2026-11-18T03:29+09:00",
+  "headline": "하버드 \"美 대형 데이터센터, 주 하나만큼 전기 쓴다\"",
+  "bullets": [
+    "美 초대형 데이터센터 403곳, 미국 전력의 1.8% 쓴 것으로 추정",
+    "연간 68~99TWh로 인디애나·미시간 등 한 주 소비량에 근접",
+    "탄소 배출 중간 추정 2570만톤, 2018년 1050만톤의 2배 넘어"
+  ],
+  "caption": "하버드 \"美 대형 데이터센터, 주 하나만큼 전기 쓴다\"\n\n미국 하버드대 연구진이 미국의 초대형(하이퍼스케일) 데이터센터 403곳이 2024년 5월~2025년 4월 미국 전체 전력의 약 1.8%를 쓴 것으로 추정했습니다. 하이퍼스케일 데이터센터는 클라우드와 AI 서비스를 돌리는 가장 큰 규모의 서버 단지입니다. 연구진은 전기 계량기 대신 위성사진과 건물 정보로 시설을 찾고 각 시설의 전력 용량과 가동률 가정으로 사용량을 계산했는데, 그 결과 연간 68~99테라와트시(TWh)로 약 100TWh를 쓰는 인디애나·미시간·테네시 같은 주 하나에 가까웠습니다. 이산화탄소 배출량은 중간 추정치 2570만톤으로 2018년 1050만톤의 두 배가 넘었고, 사용 전력의 약 54%는 천연가스·석탄 같은 화석연료에서 나왔습니다. 연구 기간 이후에도 데이터센터가 계속 늘어난 만큼 지금은 더 많을 수 있다고 연구진은 밝혔습니다. 다만 모든 시설을 다루지는 못했고 일반 서버와 AI 전용 전력은 구분하지 못했다는 한계도 함께 밝혔습니다.\n\n출처: The Register\nhttps://www.theregister.com/off-prem/2026/11/17/americas-hyperscale-bit-barns-draw-as-much-power-as-entire-states/5310471\n\n#반도체 #semiconductor #데이터센터 #AI #전력 #탄소배출 #에너지 #하이퍼스케일",
+  "photo_queries": [
+    "power plant cooling towers",
+    "high voltage substation",
+    "data center hallway"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4349830",
+    "query": "power plant cooling towers",
+    "file": "67e467790b.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2cd95521b05db9f4d3d3e69418573aab095ae0e43ac9a9a8be41ecebc6e584963e2acdce3792a7ad5fc844eda555a90dff259cb5e8f7949b342fed57103f9b5c_1280.jpg",
+    "page_url": "https://pixabay.com/photos/power-plant-cooling-tower-4349830/",
+    "photographer": "denfran",
+    "photographer_url": "https://pixabay.com/users/denfran-4118908/",
+    "alt": "power plant, cooling tower, coal-fired power station, chimney, electricity, environment, technology, industrial plant, environmental pollution, factory, steam, clouds, power supply, power generation, nature, energy generation, environmental protection",
+    "width": 6000,
+    "height": 3375,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: denfran / Pixabay"
+  }
+}

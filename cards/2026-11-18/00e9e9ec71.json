@@ -1,0 +1,35 @@
+{
+  "id": "00e9e9ec71",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/former-nvidia-ceo-jensen-huang-will-appear-before-a-house-foreign-affairs-panel-amid-concerns-over-his-affair-with-a-suspected-chinese-spy-will-testify-behind-closed-doors-december-1-nvidia-lawyer-will-also-appear",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-18T00:50+09:00",
+  "headline": "젠슨 황, 中스파이 의혹 여성 문제로 美의회 출석",
+  "bullets": [
+    "젠슨 황 前 엔비디아 CEO, 12월 1일 美 하원 3개 위원회 출석",
+    "중국 스파이 의혹 여성과의 관계를 인정한 뒤 의회가 출석 요구",
+    "그 여성이 일한 업체는 AI 칩 中 밀반출 의혹으로 형사 수사 중"
+  ],
+  "caption": "젠슨 황, 中스파이 의혹 여성 문제로 美의회 출석\n\n젠슨 황 전 엔비디아 최고경영자(CEO)가 12월 1일 미국 하원 외교·정보·중국특별위원회에 출석하고, 다음 날인 2일에는 엔비디아 변호사가 출석합니다. 황 전 CEO는 중국 스파이라는 의혹을 받는 여성과 사적인 관계였다고 인정한 뒤 CEO에서 물러났고, 의회는 그 직후인 11월 9일 출석을 요청하는 서한을 보냈습니다. 문제의 여성은 엔비디아 고객사였던 메가스피드의 임원이었는데, 이 회사는 미국 수출 규제를 어기고 AI 칩을 중국으로 빼돌렸다는 의혹으로 엔비디아의 판매 금지 명단에 올랐고 현재 형사 수사를 받고 있습니다. 미국은 첨단 AI 칩이 중국 군사·AI 개발에 쓰이는 것을 막으려고 수출을 통제하고 있습니다. 위원장들은 \"국가 안보 침해 가능성에 대한 두 사람의 역할을 듣겠다\"며 중국 정부 측이 첨단 AI 칩에 접근하는 것은 위험하다고 밝혔습니다. 출석으로 소환장 발부는 필요 없어졌으며, 청문 결과는 엔비디아 경영진 문제와 AI 칩 수출 통제 논의 모두에 영향을 줄 수 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/former-nvidia-ceo-jensen-huang-will-appear-before-a-house-foreign-affairs-panel-amid-concerns-over-his-affair-with-a-suspected-chinese-spy-will-testify-behind-closed-doors-december-1-nvidia-lawyer-will-also-appear\n\n#반도체 #semiconductor #엔비디아 #젠슨황 #AI칩 #수출통제 #미중갈등",
+  "photo_queries": [
+    "us capitol dome",
+    "shipping container port",
+    "graphics processor chip"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "477987",
+    "query": "us capitol dome",
+    "file": "00e9e9ec71.photo.jpg",
+    "download_url": "https://pixabay.com/get/g659e2cd780b4c082b0b0b278951124714908efc58022931fa8a951698b5a7fa10186f876d58dbef35fdaf899cbe3d4314e86413b0841d00e493eee1d8ba44a5f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/us-capitol-government-washington-dc-477987/",
+    "photographer": "Jackelberry",
+    "photographer_url": "https://pixabay.com/users/Jackelberry-491273/",
+    "alt": "us capitol, government, washington dc, monument, national, architecture, landmark, building, america, blue building, us capitol, government, government, government, government, washington dc, washington dc, washington dc, washington dc, washington dc, United States, District of Columbia, Washington",
+    "width": 4000,
+    "height": 3000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Jackelberry / Pixabay"
+  }
+}

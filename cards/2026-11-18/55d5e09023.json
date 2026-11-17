@@ -1,0 +1,35 @@
+{
+  "id": "55d5e09023",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65532",
+  "source": "디일렉",
+  "category": "파운드리",
+  "published_at": "2026-11-17T18:12+09:00",
+  "headline": "삼성 칩 설계 협력사 4곳 매출 증가, 1곳은 3배",
+  "bullets": [
+    "삼성 파운드리 설계 협력사(DSP) 5곳 중 4곳, 3분기 매출 증가",
+    "코아시아세미 매출 약 3배, 가온칩스 140.8% 늘며 흑자전환",
+    "세미파이브는 첫 500억원대 매출에도 적자 확대, 수익성 엇갈려"
+  ],
+  "caption": "삼성 칩 설계 협력사 4곳 매출 증가, 1곳은 3배\n\n삼성전자 파운드리(반도체 위탁생산)와 손잡고 고객사의 칩 설계를 돕는 국내 디자인솔루션파트너(DSP) 5곳 가운데 4곳의 3분기 매출이 1년 전보다 늘었습니다. DSP는 칩을 직접 설계하기 어려운 고객사를 대신해 설계부터 생산 준비까지 맡아 주는 회사로, 파운드리와 고객을 잇는 역할을 합니다. 코아시아세미는 대형 턴키(설계부터 생산까지 일괄 제공) 프로젝트가 본격 반영되며 매출이 439억8000만원으로 약 3배가 됐고, 가온칩스는 매출이 140.8% 늘어 영업이익률 11.2%로 흑자로 돌아섰습니다. 세미파이브는 분기 매출이 처음 500억원을 넘었지만 판매관리비가 늘어 영업손실이 96억7000만원으로 커졌고, 알파칩스는 이익이 줄었으며 에이디테크놀로지는 매출이 31.5% 줄며 적자로 전환했습니다. 매출은 대체로 늘었지만 수익성은 회사마다 크게 엇갈린 셈이며, 세미파이브 약 2500억원 등 쌓인 수주가 앞으로 실적에 반영될지가 관건입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65532\n\n#반도체 #semiconductor #삼성전자 #파운드리 #DSP #시스템반도체 #실적 #팹리스",
+  "photo_queries": [
+    "integrated circuit layout",
+    "semiconductor cleanroom",
+    "chip die macro"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1137487",
+    "query": "integrated circuit layout",
+    "file": "55d5e09023.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc3a367fd6484f5e3ff9077ab67b65df504e260b29d3e2db9c0c805bbac0ff191d6792417db546addc0eaf6bd7aa5350e80123142036e77e6e68d489f609be540_1280.jpg",
+    "page_url": "https://pixabay.com/photos/tech-ram-gpu-technology-computer-1137487/",
+    "photographer": "Recklessstudios",
+    "photographer_url": "https://pixabay.com/users/Recklessstudios-1884442/",
+    "alt": "tech, ram, gpu, technology, computer, hardware, memory, electronic, component, processing, microprocessor, blue computer, blue technology, blue laptop, blue tech, blue memory, tech, tech, tech, tech, tech, ram, ram, gpu, gpu, gpu",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Recklessstudios / Pixabay"
+  }
+}

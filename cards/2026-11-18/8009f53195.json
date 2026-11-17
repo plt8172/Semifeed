@@ -1,0 +1,35 @@
+{
+  "id": "8009f53195",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65536",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-17T17:30+09:00",
+  "headline": "AP시스템, 생산성 40% 높인 OLED 장비 상용화 추진",
+  "bullets": [
+    "노트북·모니터용 대면적 OLED 양산에 HMO용 ALD 장비 적용 협의",
+    "공간 분할 방식으로 기존보다 공정 생산성 40% 이상 높여",
+    "트렌드포스, 노트북 OLED 비중 2026년 6%→2030년 22.4% 전망"
+  ],
+  "caption": "AP시스템, 생산성 40% 높인 OLED 장비 상용화 추진\n\n디스플레이 장비 회사 AP시스템이 노트북·태블릿·모니터용 OLED 생산에 쓸 새 장비의 상용화를 추진하고 있다고 17일 밝혔습니다. 이 장비는 원자층증착(ALD) 장비로, 화면 픽셀을 켜고 끄는 아주 작은 스위치인 박막트랜지스터(TFT)를 원자 한 층 두께씩 얇은 막을 쌓아 만드는 데 쓰입니다. 특히 전력 소모가 적으면서 전자가 더 빨리 움직이게 하는 고이동도산화물(HMO) 기술용이며, 반응 공간을 나누고 기판을 움직이며 막을 쌓는 방식이라 기존 방식보다 생산성을 40% 이상 높이고 큰 기판에도 고르게 막을 입힐 수 있다고 회사는 설명합니다. 그동안 레이저로 기판을 처리하는 장비를 주력으로 팔아 온 AP시스템은 이 장비로 공급 범위를 넓히려 합니다. 다만 실제 수주는 패널 업체의 공정 선택과 투자 일정에 달려 있습니다. 시장조사업체 트렌드포스는 노트북용 OLED 비중이 2026년 약 6%에서 2030년 22.4%로 커질 것으로 내다봤습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65536\n\n#반도체 #semiconductor #디스플레이 #OLED #AP시스템 #반도체장비 #ALD #노트북",
+  "photo_queries": [
+    "oled display panel",
+    "laptop screen closeup",
+    "vacuum deposition chamber"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "924920",
+    "query": "laptop screen closeup",
+    "file": "8009f53195.photo.jpg",
+    "download_url": "https://pixabay.com/get/g726e4bb0b283554c644573e55600d875f4bf5ffe1dda05f13727cfea04952cfafc22b4ca09a4c498a1df9a28b85e25aae686fc79a4ab72562656f2ec5e77a04e_1280.jpg",
+    "page_url": "https://pixabay.com/photos/coding-programming-working-macbook-924920/",
+    "photographer": "StockSnap",
+    "photographer_url": "https://pixabay.com/users/StockSnap-894430/",
+    "alt": "coding, programming, working, macbook, laptop, technology, office, desk, business, coding, coding, coding, coding, coding, programming, programming, programming",
+    "width": 5472,
+    "height": 3648,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: StockSnap / Pixabay"
+  }
+}

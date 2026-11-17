@@ -1,0 +1,35 @@
+{
+  "id": "2f07186837",
+  "link": "https://spectrum.ieee.org/optical-computing-ai",
+  "source": "IEEE Spectrum",
+  "category": "AI·설계",
+  "published_at": "2026-11-17T23:00+09:00",
+  "headline": "빛으로 계산하는 칩 업계, AI 전력난에 몸값 5배 넘게",
+  "bullets": [
+    "광컴퓨팅 기업 가치 합계 22억2000만달러, 2022년 4억달러서 급증",
+    "AI 추론이 전력 한계에 부딪히자 저전력 빛 연산 기술 주목",
+    "업체들은 GPU보다 에너지 효율 10~80배 개선을 목표로 개발"
+  ],
+  "caption": "빛으로 계산하는 칩 업계, AI 전력난에 몸값 5배 넘게\n\n전기 대신 빛으로 계산하는 광컴퓨팅 산업이 AI 덕분에 다시 주목받고 있습니다. IEEE 스펙트럼에 따르면 이 분야 기업들의 가치 합계는 22억2000만달러로 2022년 4억달러에서 크게 늘었고, 미국·중국·독일·이스라엘에서 스타트업이 잇달아 생기고 있습니다. 배경은 AI 추론, 즉 AI 모델이 사용자 질문에 답하는 과정이 전력 부족에 막히고 있다는 점입니다. AI 계산의 핵심은 숫자 표를 곱하는 행렬 곱셈인데, 빛은 렌즈와 빛 조절 장치를 통과시키기만 해도 이 곱셈을 할 수 있어 이론적으로 전기를 훨씬 적게 씁니다. 다만 데이터를 빛으로 바꾸고 다시 읽는 비용이 있고 빛으로 처리하기 어려운 계산도 남아 있어, 업체들은 현실적인 목표로 GPU보다 에너지 효율을 10~80배 높이는 것을 내걸고 있습니다. 전문가들은 엔비디아와 TSMC가 칩 간 연결용 실리콘 포토닉스에 투자하고 있어, 당장 광컴퓨팅이 GPU를 대체하지 못하더라도 기술 기반은 넓어질 것으로 봅니다.\n\n출처: IEEE Spectrum\nhttps://spectrum.ieee.org/optical-computing-ai\n\n#반도체 #semiconductor #광컴퓨팅 #포토닉스 #AI반도체 #AI추론 #전력",
+  "photo_queries": [
+    "photonics laboratory laser",
+    "glass prism light spectrum",
+    "optical lens closeup"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6174502",
+    "query": "glass prism light spectrum",
+    "file": "2f07186837.photo.jpg",
+    "download_url": "https://pixabay.com/get/g4576a3e208ba6dff24bece2e70253dea0e74909c09b17b1ce21649914fd0ec4e420c5d89d2c92f3d4636e6d7c9e7519599080db5ea78bd134a5502ca727f2033_1280.jpg",
+    "page_url": "https://pixabay.com/photos/prism-light-spectrum-optics-6174502/",
+    "photographer": "BlenderTimer",
+    "photographer_url": "https://pixabay.com/users/BlenderTimer-9538909/",
+    "alt": "prism, light, spectrum, optics, rainbow, nature, glass, color, macro, close up",
+    "width": 3051,
+    "height": 1716,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: BlenderTimer / Pixabay"
+  }
+}
