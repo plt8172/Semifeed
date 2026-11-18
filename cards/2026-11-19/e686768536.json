@@ -1,0 +1,35 @@
+{
+  "id": "e686768536",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65622",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-18T17:42+09:00",
+  "headline": "마트 가격표 속 국산 칩, 한 해 1억개 팔려 세계 2위",
+  "bullets": [
+    "쓰리에이로직스 NFC 태그칩 'TNB132M', 세계일류상품 선정",
+    "연간 약 1억개 공급, 같은 분야 세계 시장 점유율 2위",
+    "마트 전자 가격표·스마트 물류에 쓰이고 차량·가전으로 확대"
+  ],
+  "caption": "마트 가격표 속 국산 칩, 한 해 1억개 팔려 세계 2위\n\n국내 반도체 설계 회사 쓰리에이로직스의 NFC 태그칩 'TNB132M'이 정부가 인증하는 '현재 세계일류상품'에 선정됐습니다. NFC는 스마트폰을 가까이 대기만 하면 정보를 주고받는 근거리 무선통신 기술로, 교통카드나 간편결제에도 쓰입니다. 이 칩은 무선 신호와 기기 안의 작은 제어용 칩(MCU)을 이어 주는 중계 역할을 하며, 대형마트나 백화점 매대의 전자 가격 표시기에 주로 들어갑니다. 가격표에 스마트폰을 대면 상품 정보를 보거나 결제할 수 있고, 물류에서는 제품 이동과 원산지·유통 과정을 추적하는 데 쓰입니다. 이 제품은 한 해 약 1억개가 공급되고 같은 분야 세계 시장 점유율 2위입니다. 세계일류상품은 산업통상부와 KOTRA가 세계 시장 점유율 5위 안에 드는 등 일정 기준을 넘은 제품에 주는 인증입니다. 국내 최초로 NFC 태그칩을 국산화한 이 회사는 최근 차량용, 정품 인증, 스마트 가전 등으로 공급처를 넓히고 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65622\n\n#반도체 #semiconductor #NFC #팹리스 #전자가격표시기 #국산화 #시스템반도체",
+  "photo_queries": [
+    "electronic shelf label",
+    "smartphone contactless tap",
+    "warehouse parcel scanning"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2507499",
+    "query": "smartphone contactless tap",
+    "file": "e686768536.photo.jpg",
+    "download_url": "https://pixabay.com/get/gdf7ee62a7f0127ddca350b6c67d107ccc3924083fbbfeafc886859bcf4e2d6fb88b0a4313dc63ef9802ac82a035b3d301b623c3d6ecd07dc5c0098ee4c144458_1280.jpg",
+    "page_url": "https://pixabay.com/photos/train-track-railroad-smartphone-2507499/",
+    "photographer": "FunkyFocus",
+    "photographer_url": "https://pixabay.com/users/FunkyFocus-3900817/",
+    "alt": "train track, railroad, smartphone, railway track, mobile phone, cellphone, smartphone, smartphone, smartphone, smartphone, smartphone, mobile phone, mobile phone, mobile phone, mobile phone, cellphone",
+    "width": 3741,
+    "height": 2592,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: FunkyFocus / Pixabay"
+  }
+}

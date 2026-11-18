@@ -1,0 +1,36 @@
+{
+  "id": "93d0cbef79",
+  "link": "https://semiengineering.com/reducing-high-bandwidth-flash-latency-in-gpu-systems-georgia-tech-nvidia-stanford/",
+  "source": "Semiconductor Engineering",
+  "category": "메모리",
+  "published_at": "2026-11-17T08:52+09:00",
+  "headline": "낸드로 만든 AI 메모리, 느린 속도 줄일 방법 나왔다",
+  "bullets": [
+    "HBF는 HBM의 D램을 낸드로 바꿔 용량을 최대 16배로 늘린 메모리",
+    "대신 읽기 지연이 HBM의 20배라 AI 추론이 최대 12.8배 느려져",
+    "엔비디아 등 연구진 새 방식, 이상적 성능의 92.4%까지 끌어올려"
+  ],
+  "caption": "낸드로 만든 AI 메모리, 느린 속도 줄일 방법 나왔다\n\n미국 조지아공대와 엔비디아 리서치, 스탠퍼드대 연구진이 'HBF'라는 새 AI 메모리의 약점을 줄이는 방법을 담은 논문을 발표했습니다. 지금 AI 칩 옆에는 D램을 여러 층 쌓아 데이터를 빠르게 주고받는 고대역폭메모리(HBM)가 붙는데, HBF는 이 D램 대신 저장장치에 쓰이는 낸드 플래시를 쌓아 비슷한 읽기 속도에 용량을 최대 16배까지 늘린 메모리입니다. AI 모델이 커질수록 메모리 용량이 많이 필요해 주목받지만, 데이터를 처음 꺼내는 데 걸리는 시간이 약 20마이크로초로 HBM의 20배에 달해 그대로 쓰면 AI 추론이 최대 12.8배 느려집니다. 연구진이 제안한 '슬립스트림'은 AI 모델이 데이터를 읽는 순서가 반복된다는 점을 이용해, 필요한 데이터를 미리 순서대로 가져다 놓는 소프트웨어·하드웨어 결합 방식입니다. 실험 결과 40MB 버퍼만으로 지연이 없는 이상적인 HBF 성능의 92.4%를 냈고, 기존 방식은 320MB 버퍼로도 43.1%에 그쳤습니다. 아직 논문 단계의 연구지만, 낸드 기반 메모리를 AI 칩에 실제로 쓸 수 있는 길을 보여 줬다는 의미가 있습니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/reducing-high-bandwidth-flash-latency-in-gpu-systems-georgia-tech-nvidia-stanford/\n\n#반도체 #semiconductor #HBM #HBF #낸드 #AI메모리 #엔비디아",
+  "photo_queries": [
+    "nand flash chips",
+    "solid state drive closeup",
+    "memory chip stack"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "564815",
+    "query": "microchip",
+    "file": "93d0cbef79.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0ed8e4c5421459dc5b8a655d44a41d98b256101eb4412fc6440d8bb95536331a4c9b43a14a0ec105ff7e60e8494243151d213d45f4ef7ce87e02b60b777815f1_1280.jpg",
+    "page_url": "https://pixabay.com/photos/circuit-board-computer-chip-564815/",
+    "photographer": "blickpixel",
+    "photographer_url": "https://pixabay.com/users/blickpixel-52945/",
+    "alt": "circuit board, computer, chip, data processing, solder joint, macro, motherboard, it, electronics, circuits, hardware, control center, datailaufnahme, management, lines, riser board, component, technology, trace, printed circuit board, data store, circuit board, circuit board, circuit board, circuit board, chip, motherboard, motherboard, motherboard, motherboard, motherboard, hardware",
+    "width": 4608,
+    "height": 3072,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: blickpixel / Pixabay",
+    "category": "computer"
+  }
+}

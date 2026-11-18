@@ -1,0 +1,35 @@
+{
+  "id": "4c643d3f85",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/leaked-ohio-bill-could-allow-ai-data-center-companies-to-seize-private-land-for-their-buildouts-using-eminent-domain-law-proposed-law-would-expand-list-of-beneficiaries",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-19T00:30+09:00",
+  "headline": "美 오하이오, AI 데이터센터용 사유지 수용 길 열리나",
+  "bullets": [
+    "유출된 오하이오 법안, 송전·가스 사업자에 토지 수용권 확대",
+    "법률 전문가 \"데이터센터나 그 전력 시설용 땅 수용 가능해져\"",
+    "주민 반대 속 AI 데이터센터 건설과 사유재산권 갈등 커져"
+  ],
+  "caption": "美 오하이오, AI 데이터센터용 사유지 수용 길 열리나\n\n미국 오하이오주에서 유출된 법안이 통과되면 AI 데이터센터를 짓는 데 개인 땅을 강제로 사들이는 길이 열릴 수 있다는 지적이 나왔습니다. 토지 수용권은 공공의 목적이 있고 정당한 보상을 하면 주인의 동의 없이도 땅을 가져갈 수 있는 권한으로, 원래는 지자체나 전력협동조합 같은 곳에 주로 주어집니다. 지역 방송 WCPO가 입수한 이 법안은 주 전력입지위원회의 허가를 받아 송전선이나 가스관을 짓는 사업자까지 이 권한을 받을 수 있게 넓히는 내용입니다. 법률 전문가들은 전력회사 같은 송전 사업자가 데이터센터나 데이터센터에 전기를 대는 시설을 위해 땅을 수용할 수 있게 된다고 경고했습니다. 오하이오 주민들은 그동안 새 데이터센터 건설에 거듭 반대해 왔고, 앞서 지역 경제단체가 에너지 시설에 수용권을 넓히자고 의원들에게 건의한 사실도 드러났습니다. AI 열풍으로 데이터센터와 전력망 수요가 빠르게 늘면서, 이를 위한 땅과 주민의 재산권이 부딪치는 일이 미국 곳곳에서 늘고 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/leaked-ohio-bill-could-allow-ai-data-center-companies-to-seize-private-land-for-their-buildouts-using-eminent-domain-law-proposed-law-would-expand-list-of-beneficiaries\n\n#반도체 #semiconductor #데이터센터 #AI인프라 #전력망 #미국정책",
+  "photo_queries": [
+    "farmland fence rural",
+    "transmission line construction",
+    "electrical substation fence"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4200285",
+    "query": "electrical substation fence",
+    "file": "4c643d3f85.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2a6d01e3aec202a9efd49eae972dacf3a04fc228b0ff470df464cb576306a1353e6ea3fd96345779987542d675c59ae456bf847c89c6a91f86a29399abc5391f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/perm-gres-energetics-substation-4200285/",
+    "photographer": "Fill1970",
+    "photographer_url": "https://pixabay.com/users/Fill1970-7215201/",
+    "alt": "perm gres, energetics, substation, substation, substation, substation, substation, substation",
+    "width": 7360,
+    "height": 4912,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Fill1970 / Pixabay"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "0f2a855bc6",
+  "link": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+  "source": "NVIDIA Blog",
+  "category": "AI·설계",
+  "published_at": "2026-11-17T01:00+09:00",
+  "headline": "엔비디아 새 AI 칩, 전력당 성능 10배 넘게 뛰었다",
+  "bullets": [
+    "베라 루빈, AI 성능 시험 MLPerf 첫 참가해 학습 전 종목 1위",
+    "AI 에이전트 작업에서 전력 1와트당 처리량, 이전 세대의 10배 이상",
+    "GPU 1개당 학습 성능도 GB300 대비 최대 2배로 세대 격차 보여"
+  ],
+  "caption": "엔비디아 새 AI 칩, 전력당 성능 10배 넘게 뛰었다\n\n엔비디아가 차세대 AI 플랫폼 '베라 루빈'으로 업계 표준 AI 성능 시험인 MLPerf에 처음 참가해 모든 학습 종목에서 가장 좋은 결과를 냈다고 밝혔습니다. MLPerf는 여러 회사의 AI 컴퓨터가 같은 과제를 얼마나 빠르고 효율적으로 처리하는지 비교하는 벤치마크입니다. 엔비디아에 따르면 이번에 새로 생긴 에이전트 부문에서 베라 루빈 NVL72는 같은 응답 속도에서 전력 1와트당 처리량이 이전 세대인 GB300 NVL72보다 10배 넘게 높았고, 이 가운데 일부는 잠정 결과입니다. AI 에이전트는 코드 작성이나 업무 처리처럼 스스로 여러 단계를 거쳐 일을 끝내는 AI로, 한 작업에도 계산을 여러 번 반복해 전기를 많이 씁니다. 학습에서는 GPU 1개당 성능이 GB300보다 최대 2배였고, 딥시크-V3 학습 시험에서 GPU를 256개에서 1024개로 늘리자 학습 시간이 16분에서 약 4분으로 줄었습니다. 데이터센터 전력이 부족해지는 상황에서 같은 전기로 더 많은 일을 하는 칩이 앞으로 AI 경쟁의 핵심이 된다는 점을 보여 줍니다. 다만 이 수치는 엔비디아가 직접 발표한 내용입니다.\n\n출처: NVIDIA Blog\nhttps://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/\n\n#반도체 #semiconductor #엔비디아 #AI칩 #GPU #MLPerf #데이터센터",
+  "photo_queries": [
+    "gpu cooling heatsink",
+    "supercomputer cluster lights",
+    "liquid cooling pipes"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4743115",
+    "query": "fiber optic",
+    "file": "0f2a855bc6.photo.jpg",
+    "download_url": "https://pixabay.com/get/g62f3f7123de83722df7991b618778adfcf5570ddb98dc9696d62a7d3324b91528084ecc9b74dd0c30c91311e29e438edb40d1d3af333cf9bb087a0a3ff2e0955_1280.jpg",
+    "page_url": "https://pixabay.com/photos/communication-speed-data-internet-4743115/",
+    "photographer": "danielkirsch",
+    "photographer_url": "https://pixabay.com/users/danielkirsch-4218687/",
+    "alt": "communication, speed, data, internet, connection, glass fiber lamp, stars, effect, lamp, light effect, points, shine, shining, light, explosion, play of colors, to dye, celebration, fireworks, network, technology, digital, computer, transmission, data, fireworks, fireworks, fireworks, fireworks, fireworks",
+    "width": 5192,
+    "height": 3391,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: danielkirsch / Pixabay",
+    "category": "science"
+  }
+}
