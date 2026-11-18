@@ -192,6 +192,76 @@ describe("handleAction", () => {
     expect(env.STATE.data.has(`card:${KEY}`)).toBe(false);
   });
 
+  it("treats a publish that errors but actually went through as published (no second publish)", async () => {
+    const calls = mockFetch(["FINISHED", "PUBLISHED"]);
+    const inner = globalThis.fetch;
+    vi.stubGlobal("fetch", async (url: string, init?: RequestInit) => {
+      if (String(url).endsWith("/media_publish")) {
+        calls.push({ url: String(url), method: "POST", body: String(init?.body) });
+        return new Response(JSON.stringify({ error: { message: "Application request limit reached", code: 4 } }), { status: 400 });
+      }
+      return inner(url, init);
+    });
+    const env = makeEnv();
+    await handleAction(env, "approve", KEY, payload("approve") as never, fastPoll);
+    expect(calls.filter((c) => c.url.endsWith("/media_publish"))).toHaveLength(1);
+    expect(env.STATE.data.get(`card:${KEY}`)).toBe("published");
+    const last = slackUpdates(calls).at(-1);
+    expect(last.text).toContain("게시 완료");
+    expect(last.blocks.some((b: { block_id?: string }) => b.block_id === "semifeed_review")).toBe(false);
+  });
+
+  it("waits out a rate limit without restoring the buttons, then checks before publishing again", async () => {
+    const calls = mockFetch(["FINISHED"]);
+    const inner = globalThis.fetch;
+    const limited = () => new Response(JSON.stringify({ error: { message: "Application request limit reached", code: 4 } }), { status: 400 });
+    vi.stubGlobal("fetch", async (url: string, init?: RequestInit) => {
+      if (String(url).endsWith("/media_publish")) {
+        calls.push({ url: String(url), method: "POST", body: String(init?.body) });
+        return limited();
+      }
+      if (String(url).includes("/container1?") && calls.some((c) => c.url.endsWith("/media_publish"))) return limited();
+      return inner(url, init);
+    });
+    const env = makeEnv();
+    await handleAction(env, "approve", KEY, payload("approve") as never, fastPoll);
+    const last = slackUpdates(calls).at(-1);
+    expect(last.text).toContain("호출 한도");
+    expect(last.blocks.some((b: { block_id?: string }) => b.block_id === "semifeed_review")).toBe(false);
+    expect(env.STATE.data.get(`card:${KEY}`)).toBe("publishing");
+
+    const during = mockFetch([]);
+    await processPending(env);
+    env.STATE.data.delete(`card:${KEY}`);
+    await handleAction(env, "approve", KEY, payload("approve") as never, fastPoll);
+    expect(during).toHaveLength(0);
+
+    env.STATE.data.delete("ig_cooldown_until");
+    const after = mockFetch(["PUBLISHED"]);
+    await processPending(env);
+    expect(after.some((c) => c.url.endsWith("/media_publish"))).toBe(false);
+    expect(after.some((c) => c.url.endsWith("/1784/media"))).toBe(false);
+    expect(env.STATE.data.get(`card:${KEY}`)).toBe("published");
+  });
+
+  it("retries a container that could not be created because of the rate limit", async () => {
+    const calls = mockFetch([]);
+    const inner = globalThis.fetch;
+    vi.stubGlobal("fetch", async (url: string, init?: RequestInit) =>
+      String(url).endsWith("/1784/media")
+        ? new Response(JSON.stringify({ error: { message: "Application request limit reached", code: 4 } }), { status: 400 })
+        : inner(url, init),
+    );
+    const env = makeEnv();
+    await handleAction(env, "approve", KEY, payload("approve") as never, fastPoll);
+    expect(slackUpdates(calls).at(-1).text).toContain("호출 한도");
+    env.STATE.data.delete("ig_cooldown_until");
+    const later = mockFetch(["FINISHED"]);
+    await processPending(env);
+    expect(later.filter((c) => c.url.endsWith("/1784/media"))).toHaveLength(1);
+    expect(env.STATE.data.get(`card:${KEY}`)).toBe("published");
+  });
+
   it("uses the refreshed token from KV when present", async () => {
     const calls: { auth: string | null; url: string }[] = [];
     mockFetch(["FINISHED"]);
