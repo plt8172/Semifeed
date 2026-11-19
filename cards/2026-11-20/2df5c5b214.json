@@ -1,0 +1,35 @@
+{
+  "id": "2df5c5b214",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65689",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-19T18:33+09:00",
+  "headline": "LG디스플레이, 3조원 OLED 공장 투자 접었다",
+  "bullets": [
+    "파주 P10 10.5세대 OLED 라인 3조원 투자 철회 공시, 결정 7년 만",
+    "OLED TV 성장 둔화·LCD→OLED 전환 지연으로 대형 시장 침체",
+    "새 라인 대신 기존 대형 OLED 설비로 게이밍 모니터 등 수요 대응"
+  ],
+  "caption": "LG디스플레이, 3조원 OLED 공장 투자 접었다\n\nLG디스플레이가 경기 파주 P10 공장에 10.5세대 OLED 생산라인을 짓기 위해 계획했던 3조원 규모 투자를 하지 않기로 하고 19일 공시했습니다. 2019년 투자를 결정한 지 7년 만이며, 원래 투자 종료 시점은 2028년 3월이었습니다. OLED는 화면의 각 점이 스스로 빛을 내는 디스플레이로, 고급 TV와 모니터에 쓰입니다. 10.5세대는 한 번에 아주 큰 유리 기판을 가공하는 라인으로, 초대형 TV 패널을 많이 찍어 내기 위한 설비입니다. 그런데 코로나19와 러시아·우크라이나 전쟁, 고물가·고금리로 여건이 나빠졌고, OLED TV 시장 성장도 둔해졌으며 LCD에서 OLED로 넘어가는 속도도 예상보다 느렸습니다. 대신 최근에는 게이밍 모니터 같은 중소형 프리미엄 제품이 커지고 있어, LG디스플레이는 이미 가진 대형 OLED 설비를 최대한 활용해 이런 수요에 대응하는 편이 수익성에 맞다고 밝혔습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65689\n\n#반도체 #semiconductor #디스플레이 #OLED #LG디스플레이 #설비투자 #전자부품",
+  "photo_queries": [
+    "tv screen pixels closeup",
+    "display panel glass factory",
+    "gaming monitor desk setup"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2564367",
+    "query": "gaming monitor desk setup",
+    "file": "2df5c5b214.photo.jpg",
+    "download_url": "https://pixabay.com/get/gfe1e34ba20287c2990e73560f109d957d8ae8ee12368cba4d034f9f18189400c6cd48608d02d5bdf0a62fd3838035fdbf904878d4a5384f81c90b440312ff89a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computer-keyboard-apple-electronics-2564367/",
+    "photographer": "StockSnap",
+    "photographer_url": "https://pixabay.com/users/StockSnap-894430/",
+    "alt": "computer, keyboard, apple, electronics, modern, technology, room, business, office, work, desk, table, computer, computer, keyboard, keyboard, keyboard, keyboard, keyboard, room, room, room, room, desk, desk, desk, table",
+    "width": 6000,
+    "height": 3375,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: StockSnap / Pixabay"
+  }
+}

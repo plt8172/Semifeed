@@ -1,0 +1,35 @@
+{
+  "id": "c3631e8cf0",
+  "link": "https://www.eetimes.com/nvidia-reports-115-8b-in-quarterly-revenue-under-interim-ceo/",
+  "source": "EE Times",
+  "category": "기업·실적",
+  "published_at": "2026-11-19T19:26+09:00",
+  "headline": "엔비디아, 석 달 동안 매출 1158억달러 올렸다",
+  "bullets": [
+    "엔비디아, 분기 매출 1158억달러 발표…임시 CEO 체제에서 낸 실적",
+    "AI 인프라 수요가 강하게 이어지며 매출과 이익 모두 끌어올려",
+    "경영진 교체기에도 AI 칩 수요가 실적을 떠받치는 구조 확인"
+  ],
+  "caption": "엔비디아, 석 달 동안 매출 1158억달러 올렸다\n\nAI 칩 회사 엔비디아가 한 분기 동안 1158억달러의 매출을 올렸다고 발표했습니다. EE Times에 따르면 AI 인프라에 대한 강한 수요가 매출과 이익을 함께 끌어올렸습니다. 엔비디아는 AI를 학습시키고 돌리는 데 쓰는 GPU(그래픽처리장치)를 만드는 회사로, 전 세계 데이터센터가 AI 서비스용 서버를 늘리면서 이 칩을 대량으로 사들이고 있습니다. 눈에 띄는 점은 이번 실적이 정식 CEO가 아닌 임시 CEO 체제에서 나왔다는 것입니다. 회사가 리더십 변화를 겪는 중에도 AI 칩 수요가 실적을 받쳐 주고 있다는 뜻입니다. 엔비디아의 실적은 메모리·패키징 등 AI 칩 공급망 전체의 수요를 가늠하는 지표로도 쓰입니다. 경영진 교체의 구체적인 배경은 이 기사 요약에서 밝혀지지 않았습니다.\n\n출처: EE Times\nhttps://www.eetimes.com/nvidia-reports-115-8b-in-quarterly-revenue-under-interim-ceo/\n\n#반도체 #semiconductor #엔비디아 #AI칩 #GPU #실적 #데이터센터",
+  "photo_queries": [
+    "graphics card fans",
+    "server blade hardware",
+    "electronics assembly line"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1574533",
+    "query": "graphics card fans",
+    "file": "c3631e8cf0.photo.jpg",
+    "download_url": "https://pixabay.com/get/g5f92394275dcc17e6bd4c4f4ef016e4421956b4a686d16896cc71e82e9347386b3bf63178a1cba3f0a6d6eb686c03b9074a419aa2d3e1f4ed0957a1c536606b3_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computer-technology-pc-electronics-1574533/",
+    "photographer": "Bru-nO",
+    "photographer_url": "https://pixabay.com/users/Bru-nO-1161770/",
+    "alt": "computer, technology, pc, electronics, storage medium, hard drive, storage, digital, circuit board, circuits, graphic card, component, riser board, fan, server, hosting, webspace, cooling, edp, shining, hard drive, server, server, server, hosting, hosting, hosting, hosting, hosting",
+    "width": 4607,
+    "height": 3360,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Bru-nO / Pixabay"
+  }
+}

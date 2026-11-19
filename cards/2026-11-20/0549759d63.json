@@ -1,0 +1,35 @@
+{
+  "id": "0549759d63",
+  "link": "https://www.tomshardware.com/tech-industry/semiconductors/intel-18a-yields-hit-70-percent-as-company-signs-microsoft-as-emib-customer-the-first-company-to-publicly-commit-to-intels-new-packaging-technology",
+  "source": "Tom's Hardware",
+  "category": "파운드리",
+  "published_at": "2026-11-19T22:00+09:00",
+  "headline": "인텔 새 공정 칩 70% 합격, MS와 장기 공급 계약",
+  "bullets": [
+    "립부 탄 CEO \"18A 수율, 취임 때 형편없었는데 지금 70%\"",
+    "MS, 차세대 제온 '다이아몬드 래피즈' 포함 수년치 공급 확보",
+    "MS는 인텔 EMIB 패키징을 자체 칩에 쓴다고 공개한 첫 회사"
+  ],
+  "caption": "인텔 새 공정 칩 70% 합격, MS와 장기 공급 계약\n\n인텔의 립부 탄 CEO가 최신 18A 공정의 수율이 70%에 이르렀다고 밝혔습니다. 수율은 웨이퍼 한 장에서 만든 칩 가운데 정상적으로 작동하는 칩의 비율로, 높을수록 같은 비용으로 더 많은 칩을 팔 수 있습니다. 탄 CEO는 2025년 3월 취임 당시에는 수율이 형편없었다고 말했으며, 어떤 기준의 수율인지는 밝히지 않았습니다. 인텔은 같은 날 마이크로소프트와 장기 계약도 맺었습니다. 마이크로소프트는 차세대 서버용 CPU '다이아몬드 래피즈'를 포함한 제온 프로세서를 수년간 공급받고, 자체 개발한 데이터센터용 칩에 인텔의 EMIB 패키징 기술을 쓰기로 했습니다. 패키징은 여러 개의 작은 칩 조각을 하나로 이어 붙여 큰 칩처럼 작동하게 만드는 공정으로, AI 시대 고성능 칩의 핵심 기술입니다. 다만 어떤 칩에 얼마나 쓰는지, 계약 금액은 공개되지 않았습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/semiconductors/intel-18a-yields-hit-70-percent-as-company-signs-microsoft-as-emib-customer-the-first-company-to-publicly-commit-to-intels-new-packaging-technology\n\n#반도체 #semiconductor #인텔 #파운드리 #18A #수율 #패키징 #마이크로소프트",
+  "photo_queries": [
+    "processor die closeup",
+    "cpu socket pins",
+    "cleanroom semiconductor fab"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4242470",
+    "query": "cpu socket pins",
+    "file": "0549759d63.photo.jpg",
+    "download_url": "https://pixabay.com/get/ge4e5d28303ffa756f95000b0e530d34d3078cf8e160f3962092812abf78b8b8e9e368232b4cd38a1785bcbbc0eea5efad6be2fd92d5a893b84cba764253466d2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/cpu-socket-processor-chip-hardware-4242470/",
+    "photographer": "longTermHolder",
+    "photographer_url": "https://pixabay.com/users/longTermHolder-8349005/",
+    "alt": "cpu, socket, processor, chip, hardware, technology, device, pc, it, cpu, cpu, cpu, cpu, cpu, processor, processor, chip",
+    "width": 5767,
+    "height": 4320,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: longTermHolder / Pixabay"
+  }
+}

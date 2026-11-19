@@ -1,0 +1,35 @@
+{
+  "id": "7147444cf8",
+  "link": "https://www.trendforce.com/presscenter/news/20261119-13314.html",
+  "source": "TrendForce",
+  "category": "메모리",
+  "published_at": "2026-11-19T16:05+09:00",
+  "headline": "중국 주문 줄어 저장장치용 메모리값 내년 하락 전망",
+  "bullets": [
+    "트렌드포스 \"낸드 계약가, 2027년 1분기 0~5% 하락 전환\" 전망",
+    "中 클라우드 기업 SSD 주문 감소폭이 북미 수요 증가분보다 커",
+    "2분기부터 전 제품 하락 예상…최근 현물가는 20% 넘게 급락"
+  ],
+  "caption": "중국 주문 줄어 저장장치용 메모리값 내년 하락 전망\n\n시장조사업체 트렌드포스는 낸드플래시 가격이 2027년 1분기부터 전 분기보다 0~5% 떨어지고, 2분기부터는 모든 제품군이 하락 국면에 들어설 것이라고 전망했습니다. 낸드플래시는 전원이 꺼져도 데이터가 남는 메모리로, SSD와 스마트폰 저장공간에 쓰입니다. 가장 큰 이유는 중국 클라우드 기업들이 GPU 부족, 높은 재고, AI 서비스 가격 경쟁 때문에 내년 기업용 SSD 주문을 줄였고, 그 감소폭이 미국 클라우드 기업의 주문 증가분보다 크다는 점입니다. 반면 공급은 업체들의 증설과 더 높게 쌓는 공정 전환으로 내년에 25~30% 늘어날 것으로 봤습니다. 이미 유통 시장 현물가는 최근 20% 넘게 떨어졌고, 올해 4분기 계약가 상승 전망치도 8~13%로 낮아졌습니다. 다만 트렌드포스는 앞으로 흐름이 중국 기업의 재고 소진 속도와 해외 GPU 구매 제한 변화 등에 달려 있다고 덧붙였습니다.\n\n출처: TrendForce\nhttps://www.trendforce.com/presscenter/news/20261119-13314.html\n\n#반도체 #semiconductor #메모리 #낸드플래시 #SSD #트렌드포스 #반도체가격",
+  "photo_queries": [
+    "solid state drive",
+    "memory chips on board",
+    "storage server drive bays"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6090254",
+    "query": "storage server drive bays",
+    "file": "7147444cf8.photo.jpg",
+    "download_url": "https://pixabay.com/get/g9837141084b1b78685aa54d7169a5b31ad3f57117182f82c396884d5dfe7c463df15a197c64a0fcf583afd45d66e35f4a005130a9d196cb304225937b3bb9903_1280.jpg",
+    "page_url": "https://pixabay.com/photos/computer-laptop-notebook-calculator-6090254/",
+    "photographer": "webandi",
+    "photographer_url": "https://pixabay.com/users/webandi-1460261/",
+    "alt": "computer, laptop, notebook, calculator, technology, digital, hardware, internet, office, network, hdmi, usb, networking, economy, project, work, online, communication",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: webandi / Pixabay"
+  }
+}

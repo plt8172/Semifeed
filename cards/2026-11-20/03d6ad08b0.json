@@ -1,0 +1,35 @@
+{
+  "id": "03d6ad08b0",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-center-power-demand-will-double-by-2030-thanks-to-usd4-trillion-in-spending-adding-an-entire-great-britain-to-energy-strain-93-large-ai-factories-with-projected-capacity-of-around-50-gigawatts",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-20T06:00+09:00",
+  "headline": "AI 데이터센터 전력 수요, 2030년까지 두 배 된다",
+  "bullets": [
+    "IEA \"현재 120GW인 데이터센터 용량, 2030년까지 120GW 더 늘어\"",
+    "대형 AI 시설 93곳 50GW 예상…영국 전력 수요 하나를 더하는 규모",
+    "송전망 공사 지연이 병목…화석연료 발전 배출도 70% 증가 전망"
+  ],
+  "caption": "AI 데이터센터 전력 수요, 2030년까지 두 배 된다\n\n국제에너지기구(IEA)가 '세계 에너지 전망 2026' 보고서에서 AI 데이터센터가 전 세계 전력망에 큰 부담을 주고 있다고 밝혔습니다. 현재 전 세계 데이터센터 용량은 120GW이고, 2030년까지 120GW가 더 지어질 예정이며 그중 75%가 AI용입니다. IEA가 위성사진으로 추적하는 대형 'AI 공장' 93곳은 2년 만에 용량이 2GW 미만에서 17GW로 늘었고, 완공되면 50GW로 영국 한 나라의 전력 수요를 하나 더하는 규모가 됩니다. 문제는 전기를 실어 나르는 송전망입니다. 재생에너지 발전소는 짓는 데 1~5년이 걸리지만 송전망 공사는 그보다 3~5배 오래 걸려, AI 칩보다 전력망이 더 큰 걸림돌이 되고 있습니다. 또 안정적인 전기를 위해 석탄·가스 발전 비중이 60%에 가까워, 데이터센터 관련 배출이 2030년까지 70% 늘 것으로 예상됐습니다. 전기요금과의 관계에 대해서는 아직 뚜렷한 연관성이 확인되지 않았다고 IEA는 밝혔습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/ai-data-center-power-demand-will-double-by-2030-thanks-to-usd4-trillion-in-spending-adding-an-entire-great-britain-to-energy-strain-93-large-ai-factories-with-projected-capacity-of-around-50-gigawatts\n\n#반도체 #semiconductor #데이터센터 #전력망 #IEA #AI인프라 #에너지",
+  "photo_queries": [
+    "high voltage transformer",
+    "wind turbines solar farm",
+    "data center building exterior"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1989416",
+    "query": "wind turbines solar farm",
+    "file": "03d6ad08b0.photo.jpg",
+    "download_url": "https://pixabay.com/get/g646e4b62b725c450646a5d027cbd7cd63f4589a89db24d2091b5bfebe7905555928f46e8e9b0870f5eeb54c26c2fce2d8e9919456fc1db9f2345aa8078e3ab2a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/renewable-energy-environment-wind-1989416/",
+    "photographer": "seagul",
+    "photographer_url": "https://pixabay.com/users/seagul-191369/",
+    "alt": "renewable, energy, environment, nature, wind, solar, green, power, electricity, ecology, electric, sustainable, environmental, generation, turbine, renewable energy, generator, clean, panel, eco, sun",
+    "width": 4500,
+    "height": 3000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: seagul / Pixabay"
+  }
+}

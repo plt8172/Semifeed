@@ -6,6 +6,7 @@
     "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents": "2026-11-08T20:48:19+09:00",
     "https://eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim": "2026-11-09T20:49:09+09:00",
     "https://eetimes.com/intel-wants-a-quantum-business-classiq-could-help-build-one": "2026-10-29T16:49:01+09:00",
+    "https://eetimes.com/nvidia-reports-115-8b-in-quarterly-revenue-under-interim-ceo": "2026-11-20T08:39:55+09:00",
     "https://eetimes.com/silicon-motherboard-enables-double-sided-integration-of-ics-and-passive-components": "2026-11-17T08:37:11+09:00",
     "https://eetimes.com/sk-hynix-reports-record-q3-results-driven-by-ai-memory-surge": "2026-10-29T15:27:35+09:00",
     "https://etnews.com/20261029000152": "2026-10-29T12:45:41+09:00",
@@ -124,6 +125,7 @@
     "https://thelec.kr/news/articleView.html?idxno=65532": "2026-11-18T08:39:01+09:00",
     "https://thelec.kr/news/articleView.html?idxno=65536": "2026-11-18T08:39:01+09:00",
     "https://thelec.kr/news/articleView.html?idxno=65622": "2026-11-19T08:37:46+09:00",
+    "https://thelec.kr/news/articleView.html?idxno=65689": "2026-11-20T08:39:55+09:00",
     "https://theregister.com/ai-and-ml/2026/10/31/googles-ai-satellite-sends-a-very-expensive-haiku-to-earth/5306818": "2026-11-01T08:49:26+09:00",
     "https://theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/5309891": "2026-11-15T08:37:12+09:00",
     "https://theregister.com/devops/2026/11/06/pytorch-215-tackles-the-one-bad-gpu-problem/5308227": "2026-11-08T08:49:30+09:00",
@@ -169,6 +171,7 @@
     "https://tomshardware.com/tech-industry/big-tech/nvidia-promises-employee-pay-raises-equity-before-december-to-quell-unrest-in-wake-of-jensen-huang-scandal-at-first-all-hands-meeting-since-ceos-departure-staff-offered-perks-told-were-going-to-be-fine": "2026-11-19T08:37:46+09:00",
     "https://tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status": "2026-11-07T08:49:38+09:00",
     "https://tomshardware.com/tech-industry/cyber-security/certified-android-tv-manufacturer-put-unauthorized-backdoor-in-set-top-boxes-google-reveals-oem-sold-access-to-criminal-affiliates-for-1-3-million-devices-used-massive-network-as-botnet-for-ad-fraud-residential-proxy": "2026-11-04T20:49:47+09:00",
+    "https://tomshardware.com/tech-industry/data-centers/ai-data-center-power-demand-will-double-by-2030-thanks-to-usd4-trillion-in-spending-adding-an-entire-great-britain-to-energy-strain-93-large-ai-factories-with-projected-capacity-of-around-50-gigawatts": "2026-11-20T08:39:55+09:00",
     "https://tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments": "2026-11-05T08:50:25+09:00",
     "https://tomshardware.com/tech-industry/data-centers/china-deploys-worlds-first-800-volt-dc-power-system-for-massive-ai-data-center-seeks-to-quench-power-needs-with-higher-conversion-and-efficiency-inside-a-smaller-footprint": "2026-11-04T16:51:23+09:00",
     "https://tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide": "2026-11-04T11:49:52+09:00",
@@ -194,11 +197,13 @@
     "https://tomshardware.com/tech-industry/semiconductors/globalfoundries-vp-details-fdx-fusion-technology-sporting-7nm-class-performance-without-the-need-for-euv-tools-company-targets-2030-for-high-volume-manufacturing-with-planar-transistors-in-tow": "2026-11-07T08:49:38+09:00",
     "https://tomshardware.com/tech-industry/semiconductors/india-targets-creating-homegrown-gpus-within-2-years-and-plans-to-commercialize-indigenous-shakti-and-vega-risc-v-processors-sees-ai-boom-as-a-potential-repeat-of-the-y2k-opportunity-for-its-it-industry": "2026-11-06T08:52:41+09:00",
     "https://tomshardware.com/tech-industry/semiconductors/intel-14a-moves-closer-to-production-as-pdk-0-9-becomes-available-process-design-kit-gives-developers-important-production-milestone-ahead-of-1-0-in-2027": "2026-11-04T08:50:01+09:00",
+    "https://tomshardware.com/tech-industry/semiconductors/intel-18a-yields-hit-70-percent-as-company-signs-microsoft-as-emib-customer-the-first-company-to-publicly-commit-to-intels-new-packaging-technology": "2026-11-20T08:39:55+09:00",
     "https://tomshardware.com/tech-industry/semiconductors/microns-usd4-5-billion-taoyuan-plant-construction-halted-amidst-labor-dispute-company-and-union-still-havent-reached-agreement-as-latter-asks-for-clearer-profit-sharing-terms": "2026-11-06T08:52:41+09:00",
     "https://tomshardware.com/video-games/nintendo/nintendo-rom-chip-supplier-macronix-quits-to-focus-on-chips-for-ai-data-centers-game-key-cards-may-be-more-available-as-large-game-storage-chips-become-more-expensive": "2026-11-05T08:50:25+09:00",
     "https://trendforce.com/presscenter/news/20261029-13284.html": "2026-10-29T16:49:01+09:00",
     "https://trendforce.com/presscenter/news/20261102-13291.html": "2026-11-02T20:49:34+09:00",
     "https://trendforce.com/presscenter/news/20261106-13297.html": "2026-11-06T16:50:28+09:00",
-    "https://trendforce.com/presscenter/news/20261111-13303.html": "2026-11-12T08:39:09+09:00"
+    "https://trendforce.com/presscenter/news/20261111-13303.html": "2026-11-12T08:39:09+09:00",
+    "https://trendforce.com/presscenter/news/20261119-13314.html": "2026-11-20T08:39:55+09:00"
   }
 }
