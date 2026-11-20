@@ -1,0 +1,36 @@
+{
+  "id": "5918778094",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65723",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-20T17:44+09:00",
+  "headline": "배터리 소재 17곳 중 11곳 적자, 코스모신소재만 웃었다",
+  "bullets": [
+    "국내 배터리 소재 17곳 중 11곳 3분기 영업적자, 흑자는 6곳뿐",
+    "코스모신소재 영업익 18억원, 1254.7%↑…MLCC용 필름이 끌어",
+    "동박·분리막 적자 계속, 양극재는 ESS용 LFP를 새 성장축으로"
+  ],
+  "caption": "배터리 소재 17곳 중 11곳 적자, 코스모신소재만 웃었다\n\n디일렉이 국내 배터리 소재 기업 17곳의 올해 3분기 실적을 분석한 결과, 11곳이 영업적자를 냈고 흑자는 6곳에 그쳤습니다. 배터리 수요가 부진하고 고객사들이 생산 일정을 조정한 영향으로, 특히 배터리 안에 들어가는 동박과 분리막을 만드는 회사들의 적자가 이어졌습니다. 반면 코스모신소재는 3분기 영업이익이 18억원으로 1년 전보다 1254.7% 늘었습니다. 배터리 소재 대신 MLCC를 만들 때 쓰는 필름 사업이 성장을 이끌었기 때문입니다. MLCC(적층세라믹콘덴서)는 전자제품 안에서 전기를 잠시 저장했다가 필요한 곳에 공급하는 작은 부품으로, AI 서버와 자동차 전장용 수요가 늘고 있습니다. 양극재 업체들은 에너지저장장치(ESS)용 리튬인산철(LFP) 양극재를 새 성장동력으로 키우고 있습니다. 같은 소재 업계 안에서도 AI 관련 전자부품 쪽으로 사업을 넓힌 회사와 배터리에만 기댄 회사의 실적이 갈리고 있는 셈입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65723\n\n#반도체 #semiconductor #배터리 #2차전지 #MLCC #양극재 #LFP #전자부품",
+  "photo_queries": [
+    "ceramic capacitors closeup",
+    "lithium battery cells",
+    "battery factory line"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4909954",
+    "query": "electronic components",
+    "file": "5918778094.photo.jpg",
+    "download_url": "https://pixabay.com/get/g70b83e1cf3b2acd7721df1186955353d3697e5645707dc88fb0d0b463d669aa54746c836f2e4c299d594fae80d356323579b0d4d2b006d0c3b6324977f3a82c7_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technique-technology-automation-4909954/",
+    "photographer": "gosiak1980",
+    "photographer_url": "https://pixabay.com/users/gosiak1980-2374509/",
+    "alt": "technique, technology, automation, electronics, device, electric, plate, elements, small, miniaturization, resistor, equipment, resistor, resistor, resistor, resistor, resistor",
+    "width": 3456,
+    "height": 2304,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: gosiak1980 / Pixabay",
+    "category": "science"
+  }
+}

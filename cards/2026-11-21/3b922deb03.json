@@ -1,0 +1,36 @@
+{
+  "id": "3b922deb03",
+  "link": "https://www.theregister.com/systems/2026/11/20/ai-boom-threatens-circuit-board-crunch-to-rival-pandemic-era-chip-shortage/5311335",
+  "source": "The Register",
+  "category": "전자·부품",
+  "published_at": "2026-11-21T01:01+09:00",
+  "headline": "AI 서버가 회로기판 쓸어가, 2028년까지 품귀 경고",
+  "bullets": [
+    "PC 기판은 12층 안팎, AI 서버 기판은 40~60층…재료 더 들어",
+    "올해 1~9월 북미 PCB 주문 56.1% 늘 때 출하는 13.3%만 늘어",
+    "자동차·의료·방산용 기판 주문이 밀려날 우려, 2028년 중반 완화"
+  ],
+  "caption": "AI 서버가 회로기판 쓸어가, 2028년까지 품귀 경고\n\n전자제품 속 부품을 얹고 서로 잇는 초록색 판을 인쇄회로기판(PCB)이라고 합니다. 전자산업 단체인 글로벌일렉트로닉스협회(Global Electronics Association)는 보고서에서 AI 서버 수요 때문에 PCB가 코로나19 시기 반도체 대란에 맞먹는 부족 사태를 겪을 수 있다고 경고했습니다. 일반 PC 기판은 회로층이 12층 정도지만 AI 서버 기판은 40~60층 이상이어서, 층마다 들어가는 수지·동박·적층판 같은 재료가 훨씬 많이 필요합니다. 그 결과 북미에서는 올해 1~9월 PCB 주문이 56.1% 늘었지만 출하는 13.3% 증가에 그쳤고, 기판용 유리섬유 천 일부 품목 가격은 300% 올랐습니다. 동남아와 중국에 새 공장이 늘고 있지만 재료 자체가 부족해 공급 부족은 2028년 중반 전에는 풀리기 어렵다는 전망입니다. 협회는 AI가 생산 능력을 빨아들이면서 자동차·산업·의료·방산용 기판 주문이 밀려나고 있다고 지적했습니다.\n\n출처: The Register\nhttps://www.theregister.com/systems/2026/11/20/ai-boom-threatens-circuit-board-crunch-to-rival-pandemic-era-chip-shortage/5311335\n\n#반도체 #semiconductor #PCB #인쇄회로기판 #AI서버 #공급망 #전자부품",
+  "photo_queries": [
+    "pcb manufacturing machine",
+    "copper wire spools",
+    "electronics assembly line"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5365197",
+    "query": "printed circuit board",
+    "file": "3b922deb03.photo.jpg",
+    "download_url": "https://pixabay.com/get/g824c58a565213b694c312380c0f56e7bbc4d080dc5673e0e5e42a8298aef0516874de1ddfcb1b5f8692d3c9337ada0f8b2451ec44e1802c1ee66e604eb24832a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mother-board-electronic-electronics-5365197/",
+    "photographer": "nanoslavic",
+    "photographer_url": "https://pixabay.com/users/nanoslavic-17278421/",
+    "alt": "mother board, electronic, electronics, computer, board, components, chips, tech, technology, main board, digital, circuit, hardware, parts, processor, module, microelectronics, electrical, repair, engineering, printed circuit board, pcb, macro, mother board, mother board, mother board, mother board, tech, tech, pcb, pcb, pcb, pcb, pcb",
+    "width": 5760,
+    "height": 3840,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: nanoslavic / Pixabay",
+    "category": "computer"
+  }
+}

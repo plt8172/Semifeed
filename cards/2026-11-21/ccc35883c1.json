@@ -1,0 +1,35 @@
+{
+  "id": "ccc35883c1",
+  "link": "https://www.etnews.com/20261120000300",
+  "source": "전자신문",
+  "category": "메모리",
+  "published_at": "2026-11-20T16:27+09:00",
+  "headline": "SK하이닉스, 日 메모리 회사 키옥시아 지분 14.1% 쥔다",
+  "bullets": [
+    "키옥시아 투자용 법인이 발행한 1290억엔 전환사채를 주식으로 전환",
+    "베인캐피털 측이 가진 법인 보통주 1001주도 1억엔에 추가 취득",
+    "2018년 베인 주도 컨소시엄으로 도시바메모리(현 키옥시아)에 투자"
+  ],
+  "caption": "SK하이닉스, 日 메모리 회사 키옥시아 지분 14.1% 쥔다\n\nSK하이닉스가 일본 메모리 기업 키옥시아에 투자하면서 사들였던 채권을 주식으로 바꿔, 키옥시아 지분 14.1%를 간접적으로 갖게 됩니다. 키옥시아는 옛 도시바메모리로, 스마트폰과 SSD 같은 저장장치에 들어가는 낸드플래시 메모리를 만드는 회사입니다. SK하이닉스는 2018년 미국 사모펀드 베인캐피털이 이끈 컨소시엄에 참여해 도시바메모리에 투자했는데, 이때 투자는 특수목적법인(SPC)을 거쳐 이뤄졌습니다. 이번에 SK하이닉스는 이 법인이 발행한 1290억엔 규모 전환사채를 보통주 12만9000주로 바꾸고, 베인캐피털 측이 가진 이 법인 보통주 1001주도 1억엔에 사들인다고 공시했습니다. 전환사채는 처음에는 돈을 빌려준 채권이지만 정해진 조건에 따라 주식으로 바꿀 수 있는 증권입니다. 채권자에서 주주로 바뀌는 만큼, 같은 낸드 사업을 하는 키옥시아와 SK하이닉스의 관계가 지분으로 더 분명해지는 셈입니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261120000300\n\n#반도체 #semiconductor #SK하이닉스 #키옥시아 #낸드 #메모리 #전환사채",
+  "photo_queries": [
+    "usb flash drive closeup",
+    "memory card macro",
+    "cleanroom semiconductor fab"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1137506",
+    "query": "memory card macro",
+    "file": "ccc35883c1.photo.jpg",
+    "download_url": "https://pixabay.com/get/g8b40180759f9f25f6d068a6464bf49c741ab490596be948f18e61bee260f42fa7d359dab99679a18d6632e96eb882472902feaeed9c2eb66d9502b7e8422f078_1280.jpg",
+    "page_url": "https://pixabay.com/photos/sd-card-data-storage-technology-1137506/",
+    "photographer": "Recklessstudios",
+    "photographer_url": "https://pixabay.com/users/Recklessstudios-1884442/",
+    "alt": "sd, card, data, storage, technology, flash, digital, drive, plastic, electronic, external, accessory, gray technology, gray data, gray digital",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Recklessstudios / Pixabay"
+  }
+}

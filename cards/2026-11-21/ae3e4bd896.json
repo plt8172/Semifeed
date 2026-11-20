@@ -1,0 +1,35 @@
+{
+  "id": "ae3e4bd896",
+  "link": "https://www.tomshardware.com/pc-components/ssds/phison-details-ssd-with-a-built-in-npu-and-64gb-of-memory-that-supports-pytorch-and-llama-cpp-running-on-the-drive-second-design-merges-fast-pslc-cache-and-qlc-capacity-behind-one-controller",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-20T23:00+09:00",
+  "headline": "파이슨, AI 직접 돌리는 SSD 개발…전송량 최대 100분의 1",
+  "bullets": [
+    "NPU·64GB 메모리 달아 파이토치·llama.cpp를 드라이브 안에서 실행",
+    "데이터를 통째 보내지 않고 결과만 전송, 전송량 10~100분의 1 주장",
+    "빠른 pSLC 캐시와 대용량 QLC 합친 SSD도 소개…아직 개발 단계"
+  ],
+  "caption": "파이슨, AI 직접 돌리는 SSD 개발…전송량 최대 100분의 1\n\n대만 저장장치 반도체 기업 파이슨이 미국 슈퍼컴퓨팅 행사 SC26에서 AI 프로그램을 저장장치 안에서 직접 돌리는 SSD 설계를 공개했습니다. SSD는 컴퓨터의 데이터를 저장하는 장치이고, NPU는 AI 계산에 특화된 칩입니다. 지금은 서버가 SSD에서 데이터를 통째로 꺼내 CPU나 GPU로 옮겨 계산하지만, 이 SSD는 NPU와 64GB 메모리를 품고 있어 데이터가 있는 자리에서 바로 계산한 뒤 결과만 돌려보냅니다. 파이슨은 이렇게 하면 일부 작업에서 주고받는 데이터가 10분의 1에서 100분의 1까지 줄어든다고 주장했습니다. 파이토치, llama.cpp 같은 널리 쓰이는 AI 도구를 별도 프로그래밍 도구 없이 쓸 수 있다는 점도 내세웠습니다. 다만 파이슨은 소개한 제품과 기능 상당수가 아직 개발 중이라고 밝혔고, 서버가 드라이브의 계산 기능에 어떻게 접근하는지는 공개하지 않았습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/ssds/phison-details-ssd-with-a-built-in-npu-and-64gb-of-memory-that-supports-pytorch-and-llama-cpp-running-on-the-drive-second-design-merges-fast-pslc-cache-and-qlc-capacity-behind-one-controller\n\n#반도체 #semiconductor #SSD #파이슨 #NPU #스토리지 #AI반도체",
+  "photo_queries": [
+    "nvme ssd closeup",
+    "data center hallway",
+    "computer motherboard slots"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "893259",
+    "query": "computer motherboard slots",
+    "file": "ae3e4bd896.photo.jpg",
+    "download_url": "https://pixabay.com/get/g792f666d0a9c3df8161a2346b10de3f41023b8d2517323ea1bd38650076470e348fa2acdeb35ad787beeaf00489e136198277ad88d5db7988a0fad5a0fa7440f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/ram-pc-computer-parts-hardware-893259/",
+    "photographer": "fancycrave1",
+    "photographer_url": "https://pixabay.com/users/fancycrave1-1115284/",
+    "alt": "ram, pc, computer, parts, hardware, technology, board, equipment, circuit, motherboard, cpu, component, data, electronic, storage, industry, microchip, network, processor, electrical, device, semiconductor, random, disk, ram, ram, ram, ram, ram, motherboard, motherboard, motherboard, cpu, semiconductor, random",
+    "width": 4288,
+    "height": 2848,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: fancycrave1 / Pixabay"
+  }
+}

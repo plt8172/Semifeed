@@ -1,0 +1,35 @@
+{
+  "id": "8b34dcf85d",
+  "link": "https://semiengineering.com/what-is-driving-silicon-wafer-demand-recovery/",
+  "source": "Semiconductor Engineering",
+  "category": "장비·소재",
+  "published_at": "2026-11-19T17:01+09:00",
+  "headline": "반도체 원판(웨이퍼) 출하, AI 덕에 올해 11.8% 늘 전망",
+  "bullets": [
+    "SEMI, 올해 세계 실리콘 웨이퍼 출하량 11.8% 증가 전망",
+    "AI 수요가 2029년까지 출하를 끌고, 메모리 수요·재고 확보도 한몫",
+    "새 생산라인이 많은 게 이번 주기 특징…2027년엔 증가세 완만"
+  ],
+  "caption": "반도체 원판(웨이퍼) 출하, AI 덕에 올해 11.8% 늘 전망\n\n반도체 칩은 둥근 실리콘 원판인 웨이퍼 위에 회로를 새겨 만듭니다. 반도체 장비·재료 업계 단체인 SEMI는 올해 세계 실리콘 웨이퍼 출하량이 11.8% 늘어날 것으로 내다봤습니다. 가장 큰 이유는 AI 수요이고, SEMI는 이 수요가 2029년까지 출하를 끌어올릴 것으로 봤습니다. 메모리 수요 증가, 혹시 모를 부족에 대비한 재고 확보, 세계 곳곳의 반도체 공장 증설도 출하를 늘리고 있습니다. 과거에는 공장이 이미 최대로 가동되면 웨이퍼 수요가 먼저 꺾이곤 했지만, 이번에는 새로 짓거나 가동을 앞둔 생산라인이 많다는 점이 다릅니다. SEMI는 2027년에도 출하가 늘겠지만 올해보다는 증가세가 완만할 것으로 전망했습니다. 다만 투자가 늦어지거나 반도체 수요가 약해지면 미리 사 둔 웨이퍼가 소진되지 않아 주문이 줄어들 위험이 있다고 덧붙였습니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/what-is-driving-silicon-wafer-demand-recovery/\n\n#반도체 #semiconductor #웨이퍼 #실리콘웨이퍼 #SEMI #반도체소재 #AI반도체",
+  "photo_queries": [
+    "silicon wafer semiconductor",
+    "cleanroom wafer handling",
+    "semiconductor fab equipment"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2784904",
+    "query": "cleanroom wafer handling",
+    "file": "8b34dcf85d.photo.jpg",
+    "download_url": "https://pixabay.com/get/g835713b9d734a800617f8d8e1f42391960cf8f74f36b95aea3c6e37da6e49babd4a108b38f7fa982a125f50e64cf952a47ac5e14beec79ded864a6792fb544e0_1280.jpg",
+    "page_url": "https://pixabay.com/photos/fittings-water-polo-construction-2784904/",
+    "photographer": "jarmoluk",
+    "photographer_url": "https://pixabay.com/users/jarmoluk-143740/",
+    "alt": "fittings, water polo, construction, building, house, energy, gas, hot, plumber, key, cauldron, nature, treatment, machine, media, metal, copper, brass, repair, all over again, heating, the pump, work, the industry, industrial, pipe, pipeline, specialist, steel, technical, technology, devices, maintaining, water, pressure, factory",
+    "width": 3000,
+    "height": 2000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: jarmoluk / Pixabay"
+  }
+}
