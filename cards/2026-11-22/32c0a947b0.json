@@ -1,0 +1,36 @@
+{
+  "id": "32c0a947b0",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65734",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-20T17:32+09:00",
+  "headline": "매출 80% 두산에 기댄 데스틴파워, 전력저장 장비로 확장",
+  "bullets": [
+    "연료전지 전력변환모듈, 두산퓨얼셀에 전량 납품 중",
+    "AI 데이터센터 전력 수요에 ESS·수전해용 PCS 확대",
+    "연내 코스닥 상장 목표, 공모자금 156억원 신공장에"
+  ],
+  "caption": "매출 80% 두산에 기댄 데스틴파워, 전력저장 장비로 확장\n\n전력변환 전문기업 데스틴파워가 한 고객사에 쏠린 사업 구조를 바꾸고 있습니다. 이 회사는 연료전지 발전 시스템의 전력 변환부와 제어부를 묶은 모듈(ESM)을 두산퓨얼셀에 전량 납품하고 있고, 이 매출이 전체의 80%대를 차지합니다. 사실상 한 회사의 주문에 실적이 좌우되는 셈입니다. 그래서 회사는 에너지저장장치(ESS)와 수전해용 전력변환장치(PCS)로 판로를 넓히고 있습니다. ESS는 전기를 저장했다 필요할 때 꺼내 쓰는 대형 배터리 설비이고, PCS는 그 전기를 쓸 수 있는 형태로 바꿔 주는 장치입니다. AI 데이터센터가 늘며 전력 설비 수요가 커지자 PCS 한 대의 용량도 2MW에서 8MW까지 커졌고, 회사는 늘어나는 열을 잡기 위해 액침냉각 기술을 적용하고 있습니다. 데스틴파워는 연내 코스닥 상장을 목표로 하며, 공모자금 중 156억원을 전북 익산 신공장에 쓸 계획입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65734\n\n#반도체 #semiconductor #전력변환 #ESS #연료전지 #수전해 #데이터센터",
+  "photo_queries": [
+    "battery energy storage containers",
+    "power inverter cabinet",
+    "hydrogen electrolysis plant"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4459235",
+    "query": "electrical engineering",
+    "file": "32c0a947b0.photo.jpg",
+    "download_url": "https://pixabay.com/get/g51acc9fda2948ba299e23d6c8992c2950d763b47dfcf89d92542fa57b3b04461a3b38a112620e6cbadc88ea4da15fb62dc7833cb593caf1a601bbd1283391877_1280.jpg",
+    "page_url": "https://pixabay.com/photos/steel-scaffolding-structure-4459235/",
+    "photographer": "Didgeman",
+    "photographer_url": "https://pixabay.com/users/Didgeman-153208/",
+    "alt": "steel scaffolding, structure, power generation, strommast, electricity, high voltage, power supply, steel, industry, power lines, structure, structure, electricity, electricity, electricity, steel, steel, steel, steel, steel, industry, industry, industry",
+    "width": 5472,
+    "height": 3648,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Didgeman / Pixabay",
+    "category": "industry"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "ede1365725",
+  "link": "https://semiengineering.com/ai-accelerators-drive-changes-in-power-delivery-networks/",
+  "source": "Semiconductor Engineering",
+  "category": "패키징",
+  "published_at": "2026-11-19T17:05+09:00",
+  "headline": "AI 칩 하나에 1000암페어, 전원 부품을 칩 옆으로 옮긴다",
+  "bullets": [
+    "0.7V로 도는 600W GPU, 전류가 1000A 넘게 치솟아",
+    "전압조정기를 기판 아래·패키지 안으로 옮겨 손실 줄여",
+    "패키징·발열·시스템 설계 난도는 함께 높아져"
+  ],
+  "caption": "AI 칩 하나에 1000암페어, 전원 부품을 칩 옆으로 옮긴다\n\nAI 칩이 커지면서 전기를 칩까지 손실 없이 보내는 일이 성능의 걸림돌이 되고 있습니다. 600W를 쓰는 GPU가 0.7V 정도의 낮은 전압으로 돌면 전류가 1000암페어 넘게 흘러야 하는데, 전류가 클수록 배선의 아주 작은 저항에서도 전압이 떨어지고 열로 새는 전기가 늘어납니다. 그래서 칩 설계자들은 원래 칩 주변에 있던 전압조정기(칩에 맞는 전압으로 바꿔 주는 부품)를 기판 아래, 칩 패키지 안, 칩과 기판을 잇는 중간 판(인터포저) 안으로 옮기는 '수직 전력 공급' 방식을 택하고 있습니다. 전원을 칩 가까이 두면 전압이 흔들릴 때 반응하는 시간도 밀리초에서 마이크로초로 줄어듭니다. 대신 패키징, 열 관리, 시스템 설계를 함께 맞춰야 해서 칩을 포장하는 후공정 업체(OSAT)의 역할도 커지고 있습니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/ai-accelerators-drive-changes-in-power-delivery-networks/\n\n#반도체 #semiconductor #AI반도체 #패키징 #전력반도체 #GPU #데이터센터",
+  "photo_queries": [
+    "inductor coils electronics",
+    "voltage regulator board",
+    "gpu chip package"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "9354076",
+    "query": "inductor coils electronics",
+    "file": "ede1365725.photo.jpg",
+    "download_url": "https://pixabay.com/get/gaf6b24a01c9cd6dda62b251090bd06aa66969007bd8f4e91d1745e8b9ae39813190ab41aaec03ebd6e3437fb7b2e8c07a82ae4a9c4f2e15efc751d09afa41927_1280.jpg",
+    "page_url": "https://pixabay.com/photos/technology-circuit-9354076/",
+    "photographer": "Surprising_Media",
+    "photographer_url": "https://pixabay.com/users/Surprising_Media-11873433/",
+    "alt": "technology, circuit, printed circuit board, electronic, connectors, measuring device, bottom view, routes, close-up",
+    "width": 5000,
+    "height": 2800,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Surprising_Media / Pixabay"
+  }
+}

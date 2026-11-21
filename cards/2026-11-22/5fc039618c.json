@@ -1,0 +1,35 @@
+{
+  "id": "5fc039618c",
+  "link": "https://www.tomshardware.com/tech-industry/data-centers/trump-wants-to-ban-us-companies-from-building-overseas-data-centers-as-bans-slow-development-also-considers-putting-a-tremendous-tax-in-lieu-of-prohibition",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-22T01:29+09:00",
+  "headline": "트럼프 \"해외 데이터센터 짓는 美 기업에 막대한 세금\"",
+  "bullets": [
+    "해외에 데이터센터 짓는 美 기업 막거나 세금 물리겠다 밝혀",
+    "\"중국이 다 가져간다\"…금지 AI 칩 우회 사용 겨냥 해석",
+    "내각과 논의 전 구상, 과세는 의회 권한이라 시행 불투명"
+  ],
+  "caption": "트럼프 \"해외 데이터센터 짓는 美 기업에 막대한 세금\"\n\n트럼프 미국 대통령이 미국 기업이 다른 나라에 데이터센터를 짓지 못하게 하거나, 짓더라도 '막대한 세금'을 물리고 싶다고 밝혔습니다. 데이터센터는 AI를 학습시키고 돌리는 서버를 모아 둔 거대한 시설입니다. 트럼프는 \"중국이 다 가져갈 것\"이라고 말했는데, 중국 AI 기업들이 중국 수출이 금지된 엔비디아 칩을 해외 데이터센터를 통해 빌려 쓰는 허점을 노린 것이라는 해석이 나옵니다. 다만 아직 내각이나 참모와도 논의하지 않은 구상이고, 세금을 매기는 권한은 의회에 있어 실제로 시행될지는 불투명합니다. 미국 안에서는 데이터센터 건설을 막는 지역 규제가 500건을 넘어선 상황이라, 해외로 눈을 돌리던 기업들의 선택지가 더 좁아질 수 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/data-centers/trump-wants-to-ban-us-companies-from-building-overseas-data-centers-as-bans-slow-development-also-considers-putting-a-tremendous-tax-in-lieu-of-prohibition\n\n#반도체 #semiconductor #데이터센터 #AI칩 #수출통제 #미중갈등 #트럼프",
+  "photo_queries": [
+    "data center construction site",
+    "cooling towers industrial",
+    "server rack cables"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "197300",
+    "query": "server rack cables",
+    "file": "5fc039618c.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2515780576760feb046609cbb1dd9b5d17c39dadd626a76066e29b0487f9e9ef3b1442149283b332f340c24a0f8e0682cbfbabeb643364939327c9cef2e6e990_1280.jpg",
+    "page_url": "https://pixabay.com/photos/network-connection-pc-web-address-197300/",
+    "photographer": "LoboStudioHamburg",
+    "photographer_url": "https://pixabay.com/users/LoboStudioHamburg-13838/",
+    "alt": "network, connection, pc, web address, internet, computer, web, http, www, e commerce, router, switch, media, nsa, cia, monitoring, security, administration, technology, storage, cloud, connections, distributor, map, riser board, data, data processing, component, chip, cpu, science, network, network, network, router, router, router, router, router, switch, switch, security, storage, data",
+    "width": 5616,
+    "height": 3744,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: LoboStudioHamburg / Pixabay"
+  }
+}

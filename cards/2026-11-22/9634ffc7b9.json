@@ -1,0 +1,35 @@
+{
+  "id": "9634ffc7b9",
+  "link": "https://www.tomshardware.com/tech-industry/semiconductors/rapidus-reportedly-struggles-to-produce-working-sram-on-its-2nm-node-putting-2027-mass-production-at-risk-company-faces-significant-challenges-using-euv-to-develop-gaa-transistors",
+  "source": "Tom's Hardware",
+  "category": "파운드리",
+  "published_at": "2026-11-22T00:30+09:00",
+  "headline": "日 라피더스, 2나노 칩 핵심 시험 놓쳐 양산 차질 우려",
+  "bullets": [
+    "블룸버그 \"올여름 목표였던 2나노 SRAM 시연 못 했다\"",
+    "클린룸 오염 문제와도 씨름 중인 것으로 알려져",
+    "2027년 양산 계획 위태…회사는 연기 언급 안 해"
+  ],
+  "caption": "日 라피더스, 2나노 칩 핵심 시험 놓쳐 양산 차질 우려\n\n일본 정부가 지원하는 반도체 회사 라피더스가 2나노급 공정에서 제대로 작동하는 SRAM을 만들지 못하고 있다고 블룸버그가 보도했습니다. SRAM은 프로세서 안에서 캐시로 쓰이는 고속 메모리로, 같은 구조가 수억 개 반복되기 때문에 제조 결함과 트랜지스터 편차를 찾아내는 공정 점검용 시험대로 쓰입니다. 라피더스는 2025년 7월 홋카이도 공장에서 차세대 GAA 트랜지스터가 정상 작동한다고 발표했지만, 트랜지스터 하나를 만드는 것과 여러 소자를 연결한 회로를 만드는 것은 난도가 전혀 다릅니다. 보도에 따르면 올여름까지 SRAM 시연을 마쳐야 했지만 아직 이루지 못했고, 클린룸 오염 문제도 겪고 있다고 합니다. 회사는 양산 연기를 확인하지 않았지만, 이 단계가 늦어지면 2027년 양산 목표가 흔들릴 수 있습니다. 어느 단계에서 막혔는지는 보도에서 밝혀지지 않았습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/semiconductors/rapidus-reportedly-struggles-to-produce-working-sram-on-its-2nm-node-putting-2027-mass-production-at-risk-company-faces-significant-challenges-using-euv-to-develop-gaa-transistors\n\n#반도체 #semiconductor #라피더스 #2나노 #파운드리 #SRAM #일본반도체",
+  "photo_queries": [
+    "silicon wafer semiconductor",
+    "cleanroom fab interior",
+    "chip testing probe"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "409582",
+    "query": "chip testing probe",
+    "file": "9634ffc7b9.photo.jpg",
+    "download_url": "https://pixabay.com/get/g2b9d471d42ac24a1edc8058f473a0ffa098e0539d260461870a250170e09b34882db56e85f936fb568bba6011eaaa5f1ce9e15be23b368ab63640ef01e31e6e1_1280.jpg",
+    "page_url": "https://pixabay.com/photos/circuit-board-electronics-computer-409582/",
+    "photographer": "delphinmedia",
+    "photographer_url": "https://pixabay.com/users/delphinmedia-348407/",
+    "alt": "circuit board, electronics, computer, training, mechatronics, measure up, check, technology, digital, module, cable, teaching, university, college student, to study, mechatronics, mechatronics, mechatronics, mechatronics, mechatronics",
+    "width": 3888,
+    "height": 2592,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: delphinmedia / Pixabay"
+  }
+}
