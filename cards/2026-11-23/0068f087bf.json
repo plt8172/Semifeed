@@ -1,0 +1,36 @@
+{
+  "id": "0068f087bf",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65739",
+  "source": "디일렉",
+  "category": "전자·부품",
+  "published_at": "2026-11-22T10:00+09:00",
+  "headline": "LG전자 협력사, 자동화로 불량률 90% 줄였다",
+  "bullets": [
+    "LG전자, 협력사 88곳과 제조 혁신 워크숍 개최",
+    "세탁기 부품사 생산성 20%↑, 에어컨 부품사 재료비 36%↓",
+    "설비 이상 자동 알림으로 장애 대응 시간 50% 이상 단축"
+  ],
+  "caption": "LG전자 협력사, 자동화로 불량률 90% 줄였다\n\nLG전자가 부품을 공급하는 협력사들과 함께 공장 자동화와 인공지능(AI)을 활용한 제조 혁신을 넓히고 있습니다. 지난 18일 평택에서 열린 워크숍에는 협력사 88곳이 참여했고, 그동안의 성과가 공개됐습니다. 세탁기 부품을 만드는 한 협력사는 부품 투입부터 사출, 절단, 배출까지 공정을 자동화해 생산성을 20% 높이고 불량률을 90% 줄였습니다. 에어컨 부품 협력사는 공정을 고치고 스테인리스 같은 대체 소재를 써서 재료비를 36% 이상 아꼈습니다. 에어컨·TV 부품 협력사는 설비 상태를 실시간으로 보고 이상 징후를 자동으로 알려 주는 체계를 갖춰 고장 대응 시간을 절반 이상 줄였고, 생산량과 불량률 같은 현장 데이터는 LG의 AI 모델 엑사원 기반 AI 에이전트로 확인할 수 있게 했습니다. 가전제품의 품질과 원가는 수많은 협력사 부품에서 결정되기 때문에, 협력사 공장의 경쟁력이 곧 완제품 경쟁력으로 이어진다는 것이 LG전자의 설명입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65739\n\n#반도체 #semiconductor #LG전자 #제조혁신 #공장자동화 #스마트팩토리 #가전",
+  "photo_queries": [
+    "plastic injection molding machine",
+    "industrial robot arm factory",
+    "air conditioner outdoor units"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5358836",
+    "query": "electronic components",
+    "file": "0068f087bf.photo.jpg",
+    "download_url": "https://pixabay.com/get/g0f757a0792fd654770fa523598b47491fcc8e0ce3a37f62e42f18b3f230e1845cc2f68d00b9a76ab974af49fc1176ded96946278f73876095730f97fea7cacc2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mother-board-electronic-electronics-5358836/",
+    "photographer": "nanoslavic",
+    "photographer_url": "https://pixabay.com/users/nanoslavic-17278421/",
+    "alt": "mother board, electronic, electronics, computer, board, components, chips, tech, technology, main board, digital, circuit, hardware, parts, processor, module, microelectronics, electrical, repair, engineering, printed circuit board, pcb, macro, mother board, mother board, mother board, circuit, pcb, pcb, pcb, pcb, pcb",
+    "width": 5760,
+    "height": 3840,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: nanoslavic / Pixabay",
+    "category": "science"
+  }
+}

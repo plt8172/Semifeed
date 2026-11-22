@@ -1,0 +1,35 @@
+{
+  "id": "358721cc33",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65735",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-23T08:01+09:00",
+  "headline": "중국이 95% 쥔 배터리 원료, 국내사가 생산 3배 늘린다",
+  "bullets": [
+    "피지티, 리튬염 생산 올해 1188t→내년 3250t 목표",
+    "SK온 5년·동화일렉트로라이트 3년 장기 공급계약 확보",
+    "약 800억원 들여 군산공장 연산 1만t으로 증설 계획"
+  ],
+  "caption": "중국이 95% 쥔 배터리 원료, 국내사가 생산 3배 늘린다\n\n배터리 소재 기업 피지티가 내년 리튬염 생산량을 올해 예상치 1188톤의 약 3배인 3250톤으로 늘릴 계획입니다. 리튬염(육불화인산리튬, LiPF6)은 배터리 안에서 리튬이온이 오가도록 돕는 전해액의 핵심 원료로, 전 세계 시장의 95% 이상을 중국 기업이 차지하고 있습니다. 미국과 유럽이 배터리 공급망에서 중국산 소재 의존도를 낮추려 하면서, 중국 밖에서 리튬염을 만드는 업체의 몸값이 높아졌습니다. 피지티는 올해 4월 전북 군산공장에서 상업 생산을 시작했고, SK온과 5년, 동화일렉트로라이트와 3년 장기 공급계약을 맺어 판로를 확보했습니다. 회사는 약 800억원을 들여 군산공장에 연산 5000톤 라인을 더 지어 연간 생산능력을 1만 톤으로 늘릴 계획이며, 최근 코스닥 상장을 위한 공모 절차에도 들어갔습니다. 국내 배터리 업계로서는 핵심 원료를 국내에서 조달할 선택지가 늘어난다는 의미가 있습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65735\n\n#반도체 #semiconductor #배터리 #리튬염 #전해액 #소재국산화 #공급망",
+  "photo_queries": [
+    "lithium battery cells",
+    "chemical plant pipes",
+    "electric car charging"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "7527766",
+    "query": "chemical plant pipes",
+    "file": "358721cc33.photo.jpg",
+    "download_url": "https://pixabay.com/get/ge454597318f07f7a6f84122346595523954a38a00b4fb7e6ffb68af9267f1257737740db41efa0bd244d497f287f2dfe7a04c6c6ef14bb4930dc2b23b4f5fcf2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/industrial-plant-rain-mist-night-7527766/",
+    "photographer": "tasukaran",
+    "photographer_url": "https://pixabay.com/users/tasukaran-19084744/",
+    "alt": "industrial plant, nature, rain, mist, night, lights, evening",
+    "width": 3872,
+    "height": 2592,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: tasukaran / Pixabay"
+  }
+}

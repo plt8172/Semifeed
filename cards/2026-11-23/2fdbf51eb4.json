@@ -1,0 +1,35 @@
+{
+  "id": "2fdbf51eb4",
+  "link": "https://semiengineering.com/chip-industry-week-in-review-165/",
+  "source": "Semiconductor Engineering",
+  "category": "정책·공급망",
+  "published_at": "2026-11-20T17:01+09:00",
+  "headline": "AI 칩 340만개 中수출 신청, 美 허가는 87.9만개",
+  "bullets": [
+    "美 정부 자료: 엔비디아·AMD AI 칩 中 수출 허가 신청 340만개",
+    "허가는 87만9천개 넘는 수준, 실제 출하량은 불분명",
+    "TSMC·삼성, 새 규제 뒤 中 고객 일부 출하 중단 보도"
+  ],
+  "caption": "AI 칩 340만개 中수출 신청, 美 허가는 87.9만개\n\n미국 정부 자료에 따르면 엔비디아와 AMD의 첨단 AI 칩을 중국에 팔겠다는 수출 허가 신청이 340만 개 분량 들어왔고, 이 가운데 87만9천 개 남짓이 허가를 받았습니다. 다만 허가받은 물량 중 실제로 얼마나 중국에 넘어갔는지는 밝혀지지 않았습니다. 미국은 고성능 AI 칩이 중국의 군사·첨단 기술 개발에 쓰일 수 있다고 보고, 이런 칩을 수출할 때 정부 허가를 받도록 하는 수출 통제를 시행하고 있습니다. 이번 주 미 상무부는 해외 데이터센터를 통해 미국 AI 컴퓨팅을 원격으로 쓰는 경로를 막는 규제와 함께 싱가포르·말레이시아·태국·인도네시아·브라질에 적용되는 새 반도체 허가 요건도 내놨습니다. 파이낸셜타임스 보도를 인용한 기사에 따르면 TSMC와 삼성은 새 규제 이후 허가가 날 때까지 일부 중국 고객에 대한 칩 출하를 멈췄습니다. 칩을 직접 팔지 않고 대신 만들어 주는 파운드리 기업까지 규제 영향권에 들어간 셈이어서, 미중 반도체 갈등이 설계 회사를 넘어 생산 단계로 넓어지고 있음을 보여 줍니다.\n\n출처: Semiconductor Engineering\nhttps://semiengineering.com/chip-industry-week-in-review-165/\n\n#반도체 #semiconductor #수출통제 #AI칩 #엔비디아 #미중갈등 #공급망",
+  "photo_queries": [
+    "cargo container port cranes",
+    "air freight cargo pallets",
+    "silicon wafer semiconductor"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1845350",
+    "query": "cargo container port cranes",
+    "file": "2fdbf51eb4.photo.jpg",
+    "download_url": "https://pixabay.com/get/g4734156ad6661fa22a7409abf865ebb3663abf4c23ee88a52c251875a226382c588b890a73bd722173475a25e8ce47462bfc1fde49cefef62af03a2f5499a5c3_1280.jpg",
+    "page_url": "https://pixabay.com/photos/port-pier-cargo-containers-crate-1845350/",
+    "photographer": "Pexels",
+    "photographer_url": "https://pixabay.com/users/Pexels-2286921/",
+    "alt": "port, pier, cargo containers, crate, export, freight, import, shipping industry, industry, outdoors, shipping containers, storage, warehouse, port, port, port, port, port, export, freight, import, industry, industry, warehouse, warehouse, warehouse",
+    "width": 5472,
+    "height": 3648,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Pexels / Pixabay"
+  }
+}
