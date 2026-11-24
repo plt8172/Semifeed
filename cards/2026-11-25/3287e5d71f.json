@@ -1,0 +1,35 @@
+{
+  "id": "3287e5d71f",
+  "link": "https://www.theregister.com/systems/2026/11/24/us-blacklists-megaspeed-hours-after-jensen-huang-returns-to-nvidia/5311901",
+  "source": "The Register",
+  "category": "정책·공급망",
+  "published_at": "2026-11-25T00:15+09:00",
+  "headline": "美, 'AI 칩 中 유출 우려' 알리바바 자회사 등 7곳 제재",
+  "bullets": [
+    "싱가포르 클라우드 업체 메가스피드 등 7곳, 美 수출 블랙리스트에",
+    "알리바바 싱가포르 자회사 포함, 美 기술 공급엔 허가 필요·원칙 거부",
+    "첨단 GPU 中 우회 의혹 수사 중…젠슨 황 복귀 몇 시간 뒤 발표"
+  ],
+  "caption": "美, 'AI 칩 中 유출 우려' 알리바바 자회사 등 7곳 제재\n\n미국 상무부 산하 산업안보국(BIS)이 싱가포르 클라우드 업체 메가스피드(Megaspeed)와 관련 회사들을 수출 블랙리스트인 '엔티티 리스트'에 올렸습니다. 대상은 싱가포르·말레이시아·태국의 7개 회사로, 메가스피드의 모회사 스위프트데이터와 말레이시아 자회사, 그리고 중국 알리바바의 싱가포르 자회사도 포함됐습니다. 엔티티 리스트에 오르면 미국 수출 통제를 받는 물품을 이 회사들에 공급할 때 허가를 받아야 하고, 이번에는 허가 신청을 원칙적으로 거부하는 조건이 붙었습니다. 미국 정부는 이 회사들이 첨단 AI 칩(GPU)을 허가받지 않은 곳, 즉 중국으로 빼돌릴 위험이 크다고 봤습니다. 상무부는 2024년부터 메가스피드를 조사해 왔고, 엔비디아도 2025년 6월 이 회사를 자체 판매 금지 목록에 올렸습니다. 이번 발표는 메가스피드와 얽힌 논란으로 물러났던 젠슨 황이 11일 만에 엔비디아 CEO로 복귀한 지 몇 시간 뒤에 나왔으며, 황 CEO는 12월 1일 미 의회 위원회 3곳에 출석할 예정입니다.\n\n출처: The Register\nhttps://www.theregister.com/systems/2026/11/24/us-blacklists-megaspeed-hours-after-jensen-huang-returns-to-nvidia/5311901\n\n#반도체 #semiconductor #엔비디아 #수출통제 #AI칩 #GPU #미중갈등",
+  "photo_queries": [
+    "graphics card gpu",
+    "customs cargo inspection",
+    "singapore port skyline"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "647400",
+    "query": "singapore port skyline",
+    "file": "3287e5d71f.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc0b2885339ba6b166b9bd388b0ed9aefcb4f3015be0b1d4e005941072301f6dbc834aeae6f65cfe69fc7254ec3014fc2f804526bed69063ab44b4d39ba41855d_1280.jpg",
+    "page_url": "https://pixabay.com/photos/buildings-skyline-city-lights-647400/",
+    "photographer": "zephylwer0",
+    "photographer_url": "https://pixabay.com/users/zephylwer0-621585/",
+    "alt": "buildings, skyline, city lights, night sky, cityscape, skyscrapers, tall buildings, urban, urban landscape, metro, city, at night, lights, big city, asia, architecture, singapore, night photography, city, city, city, city, city, big city, singapore, singapore, singapore, singapore",
+    "width": 5616,
+    "height": 3744,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: zephylwer0 / Pixabay"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "0e23291eaa",
+  "link": "https://www.eetimes.com/the-enigma-of-softbanks-1-trillion-sk-hynix-buyout-attempt/",
+  "source": "EE Times",
+  "category": "메모리",
+  "published_at": "2026-11-23T17:30+09:00",
+  "headline": "소프트뱅크, 1조달러에 SK하이닉스 인수 시도 보도",
+  "bullets": [
+    "日 소프트뱅크가 SK하이닉스를 1조달러에 사려 했다는 보도",
+    "EE타임스 분석: 처음부터 성사되기 어려운 거래였다",
+    "AI 확산 속 메모리 회사의 전략적 가치가 드러난 사례"
+  ],
+  "caption": "소프트뱅크, 1조달러에 SK하이닉스 인수 시도 보도\n\n일본의 대형 기술 투자 기업 소프트뱅크가 세계 2위 메모리 반도체 회사인 SK하이닉스를 1조달러에 통째로 인수하려 했다는 보도가 나왔습니다. 미국 전자산업 매체 EE타임스는 이 시도가 애초에 성사되기 어려운 거래였다고 분석하면서, 이번 일이 AI 붐 속에서 메모리 회사가 얼마나 전략적으로 중요해졌는지를 보여 준다고 짚었습니다. 메모리 반도체는 데이터를 저장하고 꺼내 쓰는 칩으로, AI 서버에서는 AI 칩 옆에 붙어 엄청난 양의 데이터를 빠르게 주고받는 역할을 합니다. SK하이닉스는 이런 AI용 고성능 메모리를 만드는 대표 기업 가운데 하나여서, AI 경쟁에 뛰어든 기업들에게는 탐나는 회사입니다. 인수 시도가 구체적으로 어떻게 이뤄졌는지, SK하이닉스 측이 어떻게 반응했는지는 이 기사 요약에서 밝혀지지 않았습니다. 다만 이런 규모의 인수설이 나왔다는 것 자체가 메모리가 AI 시대의 핵심 자원으로 여겨지고 있다는 뜻으로 읽힙니다.\n\n출처: EE Times\nhttps://www.eetimes.com/the-enigma-of-softbanks-1-trillion-sk-hynix-buyout-attempt/\n\n#반도체 #semiconductor #SK하이닉스 #소프트뱅크 #메모리반도체 #AI반도체 #인수합병",
+  "photo_queries": [
+    "dram memory chips closeup",
+    "semiconductor fab cleanroom",
+    "seoul skyline night"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6494990",
+    "query": "printed circuit board",
+    "file": "0e23291eaa.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf754816752d0a2b67c4b0935f28641115113be63b61839ac4ecbbfaa9258b922f65a5ee48cc6f8a720cbcd61e15268da85013b9239444b589f10fbce2e4ce7cc_1280.jpg",
+    "page_url": "https://pixabay.com/photos/motherboard-hardware-computer-pcb-6494990/",
+    "photographer": "Techaltruistic",
+    "photographer_url": "https://pixabay.com/users/Techaltruistic-20885477/",
+    "alt": "motherboard, hardware, computer, pcb, chip, technology, electronic, board, microchip, tech, circuits, motherboard, pcb, pcb, pcb, pcb, pcb, microchip",
+    "width": 4928,
+    "height": 3264,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Techaltruistic / Pixabay",
+    "category": "computer"
+  }
+}
