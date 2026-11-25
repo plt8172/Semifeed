@@ -1,0 +1,35 @@
+{
+  "id": "641d392a0b",
+  "link": "https://www.theregister.com/personal-tech/2026/11/25/hp-sees-premium-priced-ai-pcs-as-its-meal-ticket-in-a-shrinking-market/5312174",
+  "source": "The Register",
+  "category": "기업·실적",
+  "published_at": "2026-11-26T02:00+09:00",
+  "headline": "HP \"메모리 부족 탓에 내년 PC 시장 줄어든다\"",
+  "bullets": [
+    "HP, 2027년 PC 시장 한 자릿수 후반~두 자릿수 초반 감소 전망",
+    "4분기 매출 160억달러, AI PC가 출하량 60% 가까이",
+    "메모리·저장장치 원가 상승이 수익성 압박"
+  ],
+  "caption": "HP \"메모리 부족 탓에 내년 PC 시장 줄어든다\"\n\n미국 PC 제조사 HP가 메모리 칩 부족 사태 때문에 2027년 PC 시장이 한 자릿수 후반에서 두 자릿수 초반 비율로 줄어들 것이라고 내다봤습니다. AI 서버용 메모리 수요가 몰리면서 PC에 들어가는 메모리와 저장장치 값이 크게 오른 영향입니다. HP는 올해 2월 메모리와 저장장치가 PC 부품 원가에서 차지하는 비중이 연초 15~18%에서 40% 가까이로 올랐다고 밝힌 바 있습니다. 그래도 HP의 10월까지 석 달 매출은 160억달러로 1년 전보다 9.3% 늘었고, AI 기능을 넣은 AI PC가 출하량의 60% 가까이를 차지했습니다. HP는 값비싼 고급 제품과 AI PC에 집중하고 메모리 회사들과 장기 계약을 맺어 물량을 확보하는 방식으로 버티겠다는 전략입니다. 회사는 메모리와 저장장치 원가가 계속 오르겠지만 올해보다는 오름폭이 줄어들 것으로 예상했습니다.\n\n출처: The Register\nhttps://www.theregister.com/personal-tech/2026/11/25/hp-sees-premium-priced-ai-pcs-as-its-meal-ticket-in-a-shrinking-market/5312174\n\n#반도체 #semiconductor #HP #PC #AIPC #메모리부족 #전자제품",
+  "photo_queries": [
+    "laptop assembly line",
+    "laptop keyboard closeup",
+    "computer store shelves"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4337524",
+    "query": "laptop keyboard closeup",
+    "file": "641d392a0b.photo.jpg",
+    "download_url": "https://pixabay.com/get/gfa10d591481d460a770003e60567f9a402b8dff82eedf166f09c14099dcaa63c090e3465b79b0edc6fc3d62189a73de98b210a22c6cbbf92b7c4753defc941b5_1280.jpg",
+    "page_url": "https://pixabay.com/photos/pen-notebook-notepad-diary-4337524/",
+    "photographer": "rupixen",
+    "photographer_url": "https://pixabay.com/users/rupixen-11154019/",
+    "alt": "pen, notebook, notepad, diary, stationery, desk, laptop, computer, macbook, keyboard, macbook pro, tech, technology, apple, electronics, minimal, digital, computer hardware, computer keyboard, minimal tech, tech, tech, tech, tech, tech",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: rupixen / Pixabay"
+  }
+}

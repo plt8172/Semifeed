@@ -39,6 +39,7 @@
     "https://etnews.com/20261116000004": "2026-11-16T08:37:36+09:00",
     "https://etnews.com/20261120000247": "2026-11-22T08:37:42+09:00",
     "https://etnews.com/20261120000300": "2026-11-21T08:37:28+09:00",
+    "https://etnews.com/20261125000570": "2026-11-26T08:37:14+09:00",
     "https://semiengineering.com/ai-accelerators-drive-changes-in-power-delivery-networks": "2026-11-22T08:37:42+09:00",
     "https://semiengineering.com/analog-superposition-increases-effective-pcm-storage-density-ibm-research-europe": "2026-10-29T15:39:56+09:00",
     "https://semiengineering.com/chip-industry-week-in-review-162": "2026-10-31T11:49:10+09:00",
@@ -138,6 +139,7 @@
     "https://thelec.kr/news/articleView.html?idxno=65735": "2026-11-23T08:37:03+09:00",
     "https://thelec.kr/news/articleView.html?idxno=65739": "2026-11-23T08:37:03+09:00",
     "https://thelec.kr/news/articleView.html?idxno=65796": "2026-11-24T08:37:08+09:00",
+    "https://thelec.kr/news/articleView.html?idxno=65900": "2026-11-26T08:37:14+09:00",
     "https://theregister.com/ai-and-ml/2026/10/31/googles-ai-satellite-sends-a-very-expensive-haiku-to-earth/5306818": "2026-11-01T08:49:26+09:00",
     "https://theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/5309891": "2026-11-15T08:37:12+09:00",
     "https://theregister.com/ai-and-ml/2026/11/23/amazon-scoops-up-ai-accelerator-tech-to-keep-chips-busy-at-all-times/5311754": "2026-11-24T08:37:08+09:00",
@@ -152,6 +154,7 @@
     "https://theregister.com/off-prem/2026/11/17/americas-hyperscale-bit-barns-draw-as-much-power-as-entire-states/5310471": "2026-11-18T08:39:01+09:00",
     "https://theregister.com/on-prem/2026/11/04/bare-metal-boom-on-prem-server-sales-for-hpc-and-ai-up-20-this-year/5307611": "2026-11-05T08:50:25+09:00",
     "https://theregister.com/on-prem/2026/11/09/memory-crunch-makes-refurbished-kit-look-a-lot-less-secondhand/5307758": "2026-11-09T20:49:09+09:00",
+    "https://theregister.com/personal-tech/2026/11/25/hp-sees-premium-priced-ai-pcs-as-its-meal-ticket-in-a-shrinking-market/5312174": "2026-11-26T08:37:14+09:00",
     "https://theregister.com/public-sector/2026/11/06/britains-tech-ambitions-depend-on-minerals-made-in-china-mps-warn/5307779": "2026-11-06T20:50:00+09:00",
     "https://theregister.com/public-sector/2026/11/06/us-air-traffic-control-enters-the-21st-century-starts-to-abandon-floppy-disks/5308210": "2026-11-07T20:50:13+09:00",
     "https://theregister.com/science/2026/10/29/battman-aims-to-turbocharge-us-batteries-without-robbin-critical-minerals/5306273": "2026-10-30T08:49:42+09:00",
@@ -162,6 +165,7 @@
     "https://theregister.com/systems/2026/11/09/huawei-says-its-made-a-100-percent-chinese-pc/5308335": "2026-11-09T20:49:09+09:00",
     "https://theregister.com/systems/2026/11/20/ai-boom-threatens-circuit-board-crunch-to-rival-pandemic-era-chip-shortage/5311335": "2026-11-21T08:37:28+09:00",
     "https://theregister.com/systems/2026/11/24/us-blacklists-megaspeed-hours-after-jensen-huang-returns-to-nvidia/5311901": "2026-11-25T08:37:28+09:00",
+    "https://theregister.com/systems/2026/11/25/huawei-and-crew-tout-homegrown-eda-tools-to-overcome-chinas-fab-deficit/5312205": "2026-11-26T08:37:14+09:00",
     "https://tomshardware.com/pc-components/ai-demand-triggers-massive-pcb-shortage-for-pc-makers-as-order-books-full-until-2030-lead-times-stretch-to-30-months-as-material-costs-surge-12x": "2026-10-30T08:49:42+09:00",
     "https://tomshardware.com/pc-components/cooling/diamond-foundry-creates-worlds-first-200mm-single-crystal-diamond-wafer-massive-gem-aims-to-solve-ai-chip-cooling-crisis-envisioned-as-a-cooling-material-for-semiconductors": "2026-11-09T08:48:52+09:00",
     "https://tomshardware.com/pc-components/cpus/amds-venice-x-maxes-out-family-at-5-3-ghz-returning-3d-v-cache-to-data-center-after-four-years-chips-target-hpc-workloads-with-pcie-6-0-and-1-6-tb-s-memory-bandwidth": "2026-11-12T08:39:09+09:00",
@@ -223,6 +227,7 @@
     "https://trendforce.com/presscenter/news/20261102-13291.html": "2026-11-02T20:49:34+09:00",
     "https://trendforce.com/presscenter/news/20261106-13297.html": "2026-11-06T16:50:28+09:00",
     "https://trendforce.com/presscenter/news/20261111-13303.html": "2026-11-12T08:39:09+09:00",
-    "https://trendforce.com/presscenter/news/20261119-13314.html": "2026-11-20T08:39:55+09:00"
+    "https://trendforce.com/presscenter/news/20261119-13314.html": "2026-11-20T08:39:55+09:00",
+    "https://trendforce.com/presscenter/news/20261125-13321.html": "2026-11-26T08:37:14+09:00"
   }
 }

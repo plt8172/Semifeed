@@ -1,0 +1,35 @@
+{
+  "id": "87acb87023",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65900",
+  "source": "디일렉",
+  "category": "메모리",
+  "published_at": "2026-11-25T17:44+09:00",
+  "headline": "SK하이닉스, 100층 쌓은 D램 4~5년 내 양산 목표",
+  "bullets": [
+    "3D D램 2031년께 상용화 전망, 첫 제품은 100층",
+    "셀 제작해 동작 검증, 리프레시 특성 기존 수준",
+    "200~300층 넘으려면 전용 장비 개발 필요"
+  ],
+  "caption": "SK하이닉스, 100층 쌓은 D램 4~5년 내 양산 목표\n\nSK하이닉스가 메모리 셀을 위로 쌓아 올리는 3D D램을 개발 중이며 4~5년 안에 양산하는 것을 목표로 한다고 밝혔습니다. 최강식 SK하이닉스 DE는 서울대 AI반도체 포럼에서 3D D램이 2031년께 상용화되고 첫 제품은 셀을 100층 쌓은 형태가 될 것이라고 내다봤습니다. D램은 컴퓨터와 스마트폰이 작업 중인 데이터를 잠시 담아 두는 메모리인데, 셀을 더 작게 만들수록 저장할 수 있는 전하가 줄고 새는 전류가 커져 미세화가 한계에 다다랐습니다. 그래서 셀을 줄이는 대신 위로 쌓는 방식이 대안으로 떠올랐고, 이는 D램 칩 여러 장을 쌓는 HBM과는 다른 기술입니다. SK하이닉스는 이미 3D D램 셀을 만들어 동작을 확인했지만, 200~300층 이상으로 가려면 전용 장비가 필요하다고 설명했습니다. 누설전류가 적은 새 소재 IGZO도 연구하고 있어, 신뢰성 문제가 풀리면 판도를 바꿀 수 있다고 봤습니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65900\n\n#반도체 #semiconductor #SK하이닉스 #D램 #3D디램 #메모리반도체 #반도체기술",
+  "photo_queries": [
+    "microscope chip inspection",
+    "wafer processing equipment",
+    "electronics research laboratory"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "2223456",
+    "query": "electronics research laboratory",
+    "file": "87acb87023.photo.jpg",
+    "download_url": "https://pixabay.com/get/gb3823740128922f8aa69b46ffd0cdaa457f437ac01209be50aa6e14188d3b6e9e3a9051c7ccb1aca1c09aa5d5168f971536bbec00e69823d6bce03efcb4a4cd2_1280.jpg",
+    "page_url": "https://pixabay.com/photos/transmission-electron-microscope-2223456/",
+    "photographer": "kennethr",
+    "photographer_url": "https://pixabay.com/users/kennethr-5076425/",
+    "alt": "transmission electron microscope, universiti malaysia sabah, biotechnology research institute, gray research",
+    "width": 2741,
+    "height": 1824,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: kennethr / Pixabay"
+  }
+}

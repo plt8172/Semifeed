@@ -1,0 +1,35 @@
+{
+  "id": "b946c695c0",
+  "link": "https://www.theregister.com/systems/2026/11/25/huawei-and-crew-tout-homegrown-eda-tools-to-overcome-chinas-fab-deficit/5312205",
+  "source": "The Register",
+  "category": "AI·설계",
+  "published_at": "2026-11-26T03:02+09:00",
+  "headline": "美 제재 막힌 화웨이, 협력사와 칩 설계 SW 자체 개발",
+  "bullets": [
+    "美 수출 통제로 화웨이, 주요 칩 설계 SW 사용 제한",
+    "협력사 플렉싱, 3D 패키징용 설계 도구 공개",
+    "공정 격차를 칩 쌓기로 메우려는 화웨이 전략"
+  ],
+  "caption": "美 제재 막힌 화웨이, 협력사와 칩 설계 SW 자체 개발\n\n중국 화웨이가 미국 제재로 쓰지 못하게 된 칩 설계 소프트웨어를 협력사와 함께 자체 개발해 실제로 쓰기 시작했다고 밝혔습니다. 칩 설계 소프트웨어(EDA)는 반도체를 계획하고 설계하고 생산하는 데 꼭 필요한 도구로, 미국의 케이던스·시놉시스와 독일 지멘스가 시장을 장악하고 있습니다. 미국은 2019년 화웨이를 제재 명단에 올렸고, 수출 통제로 화웨이는 이들 회사의 도구를 쓰기 어려워졌습니다. 이에 화웨이 칩 부문 하이실리콘은 협력사 플렉싱과 손잡고 도구를 만들었고, 플렉싱은 이번 주 여러 칩을 3D로 붙이는 설계를 지원하는 새 도구를 소개했습니다. 중국 최대 파운드리 SMIC는 7나노급 공정에 머물러 대만·한국·미국보다 수년 뒤처져 있어, 화웨이는 칩을 위아래로 붙여 쌓는 첨단 패키징으로 이 격차를 메우려 합니다. 이번 도구는 화웨이의 대형 AI 칩 개발을 뒷받침하는 기반이 될 것으로 보입니다.\n\n출처: The Register\nhttps://www.theregister.com/systems/2026/11/25/huawei-and-crew-tout-homegrown-eda-tools-to-overcome-chinas-fab-deficit/5312205\n\n#반도체 #semiconductor #화웨이 #EDA #칩설계 #첨단패키징 #수출통제 #미중갈등",
+  "photo_queries": [
+    "chip layout design screen",
+    "engineering computer workstation",
+    "chip packaging machine"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4941158",
+    "query": "engineering computer workstation",
+    "file": "b946c695c0.photo.jpg",
+    "download_url": "https://pixabay.com/get/gbdf064d1bce4e8418eae7d5268f989817268c0c46a3bb0056ee26f1f19ec9d06c011d60d1170bac25492695d8553fbe6a9bb26f0514c012e59990aba11e396f9_1280.jpg",
+    "page_url": "https://pixabay.com/photos/engineer-engineering-4941158/",
+    "photographer": "This_is_Engineering",
+    "photographer_url": "https://pixabay.com/users/This_is_Engineering-11384528/",
+    "alt": "engineer, engineering, civil engineering, computer, screen, diagram, plans, office, civil engineering, civil engineering, civil engineering, civil engineering, civil engineering",
+    "width": 7952,
+    "height": 5304,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: This_is_Engineering / Pixabay"
+  }
+}

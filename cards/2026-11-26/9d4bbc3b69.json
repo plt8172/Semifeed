@@ -1,0 +1,35 @@
+{
+  "id": "9d4bbc3b69",
+  "link": "https://www.trendforce.com/presscenter/news/20261125-13321.html",
+  "source": "TrendForce",
+  "category": "메모리",
+  "published_at": "2026-11-25T16:03+09:00",
+  "headline": "中 주문 줄어 내년 저장장치 메모리값 하락 전망",
+  "bullets": [
+    "中 클라우드 기업들, 2027년 기업용 SSD 주문 축소",
+    "트렌드포스, 내년 낸드 가격 하락 사이클 진입 전망",
+    "D램은 공급 부족 이어지나 가격 상승폭은 둔화"
+  ],
+  "caption": "中 주문 줄어 내년 저장장치 메모리값 하락 전망\n\n대만 시장조사기관 트렌드포스는 중국의 클라우드 서비스 기업들이 2027년 메모리 주문을 줄이면서 메모리 가격 전망에 하방 압력이 생겼다고 밝혔습니다. 중국 기업들은 GPU 공급 부족을 우려해 내년 기업용 SSD 구매 계획을 줄였고, 그 감소분이 북미 클라우드 기업의 추가 주문보다 컸습니다. 여기에 일부 제조사의 증설과 공정 전환으로 공급이 크게 늘어, 저장장치용 메모리인 낸드플래시는 공급 과잉 속에 계약 가격이 내려갈 것으로 예상됐습니다. 트렌드포스는 내년 낸드 매출 전망을 4193억달러(전년 대비 29% 증가)로 낮췄습니다. 반면 작업용 메모리인 D램은 내년 내내 공급이 빠듯하겠지만 분기별 가격 상승폭이 점차 줄어 하반기에는 보합에 가까워질 수 있다며, 매출 전망을 1조1500억달러로 낮췄습니다. 한편 PC와 스마트폰은 값싼 메모리 재고가 바닥나 내년 제품 가격이 오를 압력을 받고 있고, 제조사들이 저장 용량을 줄일 것으로 예상됩니다.\n\n출처: TrendForce\nhttps://www.trendforce.com/presscenter/news/20261125-13321.html\n\n#반도체 #semiconductor #낸드플래시 #D램 #메모리반도체 #트렌드포스 #메모리가격",
+  "photo_queries": [
+    "cloud server hallway",
+    "smartphone motherboard",
+    "solid state drive"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4197001",
+    "query": "smartphone motherboard",
+    "file": "9d4bbc3b69.photo.jpg",
+    "download_url": "https://pixabay.com/get/gc4713a211c9273624fe314b40ea0da6502de3709380b725d89e42bf4c9aa36c3ed6c6bae65e447b992d037f175cd3b514169ac3cd4f30d7b173ce551f6b82a66_1280.jpg",
+    "page_url": "https://pixabay.com/photos/iphone-mobile-smartphone-apple-4197001/",
+    "photographer": "saifata30",
+    "photographer_url": "https://pixabay.com/users/saifata30-1727382/",
+    "alt": "iphone, mobile, smartphone, apple, circuit board",
+    "width": 5184,
+    "height": 3456,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: saifata30 / Pixabay"
+  }
+}

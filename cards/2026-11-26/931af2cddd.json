@@ -1,0 +1,35 @@
+{
+  "id": "931af2cddd",
+  "link": "https://www.etnews.com/20261125000570",
+  "source": "전자신문",
+  "category": "메모리",
+  "published_at": "2026-11-25T18:19+09:00",
+  "headline": "삼성전자, 500층대 쌓은 저장장치용 메모리 공개 예정",
+  "bullets": [
+    "내년 2월 반도체 회로 학회 ISSCC 2027서 발표 예정",
+    "500단대 3D 낸드와 4나노 기반 맞춤형 HBM 기술 공개",
+    "밀도 42Gb/㎟, 핀당 6.8Gbps 입출력 속도 갖춰"
+  ],
+  "caption": "삼성전자, 500층대 쌓은 저장장치용 메모리 공개 예정\n\n삼성전자가 내년 2월 열리는 세계적인 반도체 회로 학회 ISSCC 2027에서 저장 셀을 500층대로 쌓아 올린 3D 낸드플래시 기술을 발표합니다. 낸드플래시는 전원이 꺼져도 데이터가 남는 메모리로, 스마트폰 저장공간이나 SSD에 쓰이며 셀을 높이 쌓을수록 같은 면적에 더 많은 데이터를 담을 수 있습니다. 학회 사전 프로그램에 따르면 이 칩은 제곱밀리미터당 42Gb의 밀도와 초당 290MB의 쓰기 처리량, 핀당 6.8Gbps의 입출력 속도를 갖췄습니다. 삼성전자는 4나노 공정을 기반으로 한 맞춤형 고대역폭메모리(HBM) 핵심 기술도 함께 공개합니다. HBM은 D램을 여러 장 쌓아 AI 칩 바로 옆에서 데이터를 빠르게 주고받게 하는 메모리로, AI 서버의 성능을 좌우하는 부품입니다. 저장용 메모리와 AI용 메모리 양쪽에서 기술력을 보여 주겠다는 뜻으로 읽힙니다.\n\n출처: 전자신문\nhttps://www.etnews.com/20261125000570\n\n#반도체 #semiconductor #삼성전자 #낸드플래시 #HBM #메모리반도체 #ISSCC",
+  "photo_queries": [
+    "nand flash chip",
+    "usb flash drive",
+    "storage server rack"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5029286",
+    "query": "usb flash drive",
+    "file": "931af2cddd.photo.jpg",
+    "download_url": "https://pixabay.com/get/ga72775a0c98df901be377db091216ae2958b039b9f67f7393e8de0bddf2e17ce97c79d1ad3bc20b13a069df3634255e9f191451982e20e99cfd7f004531618cb_1280.jpg",
+    "page_url": "https://pixabay.com/photos/usb-technology-white-flash-data-5029286/",
+    "photographer": "ds_30",
+    "photographer_url": "https://pixabay.com/users/ds_30-1795490/",
+    "alt": "usb, technology, white, flash, data, computer, portable, drive, storage, electrical, removable, memories, accessories, connect, electronics, device, store, software, files, digital, security, equipment, mobility, digitally, plastic, usb, usb, usb, usb, usb",
+    "width": 3942,
+    "height": 2459,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ds_30 / Pixabay"
+  }
+}
