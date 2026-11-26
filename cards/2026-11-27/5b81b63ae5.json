@@ -1,0 +1,36 @@
+{
+  "id": "5b81b63ae5",
+  "link": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+  "source": "Tom's Hardware",
+  "category": "메모리",
+  "published_at": "2026-11-27T01:11+09:00",
+  "headline": "메모리값 500% 뛰자 기업들, 이베이까지 뒤져 칩 구한다",
+  "bullets": [
+    "전자업체들, 이베이·브로커 뒤져 5~12개 소량도 확보",
+    "대만 어페이서는 칩 살 돈 마련하려 대출까지 받아",
+    "3대 메모리사 새 공장은 2028년에야 가동 예상"
+  ],
+  "caption": "메모리값 500% 뛰자 기업들, 이베이까지 뒤져 칩 구한다\n\nAI 데이터센터 투자 열풍으로 메모리 반도체가 심각하게 부족해지자, 전자제품을 만드는 기업들이 칩을 구하려고 이른바 '구매 상황실'을 차리고 있다고 월스트리트저널이 보도했습니다. 직원들이 이베이 같은 온라인 장터와 수백 곳의 중개상을 뒤져 5개, 12개 수준의 소량 물량까지 사들이고, 일부는 회색시장까지 찾는데 중고 칩을 새 제품에 섞어 파는 판매자도 있다고 합니다. 이렇게 된 것은 마이크론·삼성전자·SK하이닉스 3대 메모리 회사가 수익성이 높은 HBM(AI 칩 옆에 붙는 고성능 메모리) 생산에 집중했기 때문입니다. 아마존·애플·마이크로소프트 같은 대기업은 장기 공급 계약으로 물량을 확보할 수 있지만, 작은 회사들은 남는 물량을 찾아다닐 수밖에 없습니다. 대만 메모리 모듈 업체 어페이서는 칩이 나오면 바로 살 수 있도록 대출까지 받았고, 일론 머스크도 삼성전자에 장기 계약과 공장 금융보증을 제안했지만 이재용 회장이 \"다른 회사들도 다 그렇게 제안한다\"고 답했다고 전해졌습니다. 3대 회사가 새 공장을 짓고 있지만 2028년 전에는 생산이 시작되지 않을 전망이어서, 원가가 오른 제조사들이 제품 값을 올리거나 사양을 낮추는 일이 이어지고 있습니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units\n\n#반도체 #semiconductor #메모리 #D램 #DRAM #메모리부족 #HBM #전자제품",
+  "photo_queries": [
+    "memory chip tray",
+    "electronics warehouse shelves",
+    "smt pick and place machine"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "463971",
+    "query": "printed circuit board",
+    "file": "5b81b63ae5.photo.jpg",
+    "download_url": "https://pixabay.com/get/g1e28943959d517b0a26badcc233736f57839678b0730807c0c964b9333b76999c9bec701f59f10a24afbabd7a9f9269edba53d2ace81ce28bf018d4bfa7f3a04_1280.jpg",
+    "page_url": "https://pixabay.com/photos/circuit-board-motherboard-elko-463971/",
+    "photographer": "blickpixel",
+    "photographer_url": "https://pixabay.com/users/blickpixel-52945/",
+    "alt": "circuit board, motherboard, elko, datailaufnahme, hardware, computer, chip, it, solder joint, soldering, macro, motherboard, motherboard, motherboard, motherboard, motherboard, soldering",
+    "width": 3495,
+    "height": 2330,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: blickpixel / Pixabay",
+    "category": "computer"
+  }
+}

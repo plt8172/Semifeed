@@ -1,0 +1,35 @@
+{
+  "id": "7e6d09097b",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=65989",
+  "source": "디일렉",
+  "category": "정책·공급망",
+  "published_at": "2026-11-26T17:50+09:00",
+  "headline": "정부, 속도·안정성 따라 다른 5G 요금제 허용 추진",
+  "bullets": [
+    "이달 말부터 이통 3사 모두 5G 단독모드(SA) 전국망 갖춰",
+    "정부, 망 중립성 해설서 보완해 품질 차등 상품 허용 방침",
+    "일반 이용자 품질 유지 위해 망 여유용량 확보 의무"
+  ],
+  "caption": "정부, 속도·안정성 따라 다른 5G 요금제 허용 추진\n\n과학기술정보통신부가 통신사들이 응답속도나 연결 안정성을 다르게 한 통신 상품을 내놓을 수 있도록 망 중립성 기준을 손보겠다고 밝혔습니다. 망 중립성은 통신사가 인터넷 트래픽을 불합리하게 차별하지 못하게 하는 원칙으로, 그동안 품질을 나눈 상품을 만드는 데 걸림돌이 돼 왔습니다. 이번 결정은 LG유플러스와 SK텔레콤이 이달 30일과 다음 달 1일 5G 단독모드(SA) 서비스를 시작하면서 2021년 KT에 이어 이동통신 3사 모두 SA 전국망을 갖추게 된 데 맞춘 것입니다. 5G SA는 기지국부터 신호를 처리하는 코어망까지 모두 5G 기술로 만든 망으로, 하나의 망을 여러 가상 망으로 나눠 쓰는 '네트워크 슬라이싱'이 가능해 공연장 영상 전송이나 공장 로봇 제어처럼 용도별로 품질을 보장하기 쉽습니다. 앞으로 요금제는 데이터양과 최대 속도뿐 아니라 이용 목적에 맞는 통신 품질로도 달라질 수 있습니다. 다만 정부는 기존 인터넷 품질을 보호하고 특정 앱이나 콘텐츠를 우대하지 않는다는 전제를 달았고, 통신사에 망 여유용량 확보와 보장 품질·보호 방안의 사전 고지를 요구할 방침입니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=65989\n\n#반도체 #semiconductor #5G #5GSA #망중립성 #통신 #네트워크슬라이싱 #과기정통부",
+  "photo_queries": [
+    "cell tower antenna",
+    "telecom base station rooftop",
+    "fiber optic network cables"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "1352531",
+    "query": "telecom base station rooftop",
+    "file": "7e6d09097b.photo.jpg",
+    "download_url": "https://pixabay.com/get/gf5e5dc3ff00837e9d2d481814e1c252f29417035f245b5399e13a7c5ac93d6ed901004e40480fde51f6969925e7be75d5e3ddf64b0cd7e97a4649efddf179e87_1280.jpg",
+    "page_url": "https://pixabay.com/photos/mobile-tower-network-communication-1352531/",
+    "photographer": "prasanna_devadas",
+    "photographer_url": "https://pixabay.com/users/prasanna_devadas-2449639/",
+    "alt": "mobile, tower, network, communication, antenna, blue mobile, antenna, antenna, antenna, antenna, antenna",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: prasanna_devadas / Pixabay"
+  }
+}

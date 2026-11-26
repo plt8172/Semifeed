@@ -1,0 +1,35 @@
+{
+  "id": "666ad6343a",
+  "link": "https://www.eetimes.com/siemens-adds-soc-verification-and-software-debug-with-two-planned-deals/",
+  "source": "EE Times",
+  "category": "AI·설계",
+  "published_at": "2026-11-27T03:00+09:00",
+  "headline": "지멘스, 칩 설계 검증·디버깅 회사 2곳 인수 추진",
+  "bullets": [
+    "지멘스, 브레커·라우터바흐 2곳 인수 계획 발표",
+    "칩 검증과 소프트웨어 디버깅으로 개발 도구 확대",
+    "애널리스트 \"통합 효과 나타나기까진 시간 걸릴 것\""
+  ],
+  "caption": "지멘스, 칩 설계 검증·디버깅 회사 2곳 인수 추진\n\n독일 지멘스가 칩 설계 검증 회사 브레커와 소프트웨어 디버깅 도구 회사 라우터바흐를 인수할 계획이라고 EE타임스가 전했습니다. 지멘스는 반도체 설계에 쓰는 소프트웨어(EDA) 분야의 주요 회사 중 하나로, 이번 인수로 칩 개발 도구의 범위를 넓히려는 것입니다. 여기서 SoC(시스템온칩)는 CPU·메모리 제어 등 여러 기능을 칩 하나에 모은 반도체로, 스마트폰이나 자동차 전자장치의 두뇌 역할을 합니다. 칩이 복잡해질수록 공장에서 만들기 전에 설계가 제대로 작동하는지 확인하는 '검증'과, 칩 위에서 돌아가는 소프트웨어의 오류를 찾는 '디버깅'에 드는 시간과 비용이 커집니다. 두 회사를 품으면 지멘스는 칩 설계 확인부터 소프트웨어 점검까지 한 회사 도구로 묶어 제공할 수 있게 됩니다. 다만 인수는 아직 계획 단계이고, 한 애널리스트는 통합에 따른 효과가 나타나기까지는 시간이 걸릴 것으로 내다봤습니다. 인수 금액은 기사에서 밝혀지지 않았습니다.\n\n출처: EE Times\nhttps://www.eetimes.com/siemens-adds-soc-verification-and-software-debug-with-two-planned-deals/\n\n#반도체 #semiconductor #지멘스 #EDA #칩설계 #반도체검증 #SoC #인수합병",
+  "photo_queries": [
+    "oscilloscope circuit debugging",
+    "logic analyzer probes",
+    "integrated circuit die macro"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6521720",
+    "query": "oscilloscope circuit debugging",
+    "file": "666ad6343a.photo.jpg",
+    "download_url": "https://pixabay.com/get/g9912683b8b7f4bd5133308e58d3ab161e55e07f44a63bc3bf463fb07556aced29f916bf999af8c494c97a8c5cdc2cc4d75186cf454f2f81b5e36e3b9fd8de631_1280.jpg",
+    "page_url": "https://pixabay.com/photos/software-developer-web-developer-6521720/",
+    "photographer": "Innovalabs",
+    "photographer_url": "https://pixabay.com/users/Innovalabs-22783312/",
+    "alt": "software developer, web developer, programmer, software engineer, technology, tech, web developer, programmer, programmer, software engineer, technology, technology, technology, tech, tech, tech, tech, tech",
+    "width": 7360,
+    "height": 4912,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Innovalabs / Pixabay"
+  }
+}

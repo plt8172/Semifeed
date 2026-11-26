@@ -1,0 +1,35 @@
+{
+  "id": "22fe671056",
+  "link": "https://www.tomshardware.com/tech-industry/big-tech/two-californian-nvidia-ai-chip-customers-are-really-chinese-owned-companies-used-as-workaround-for-government-export-controls",
+  "source": "Tom's Hardware",
+  "category": "정책·공급망",
+  "published_at": "2026-11-27T03:00+09:00",
+  "headline": "엔비디아 AI 칩 산 美 회사 2곳, 알고 보니 중국 소유",
+  "bullets": [
+    "엔비디아 고객사 리클라우드AI·에어브레스, 중국 모회사 둬",
+    "에어브레스, 제재 명단 오른 中 인스퍼에서 이름만 바꿔",
+    "미국 회사를 거친 수출 통제 우회 통로라는 지적"
+  ],
+  "caption": "엔비디아 AI 칩 산 美 회사 2곳, 알고 보니 중국 소유\n\n엔비디아의 최신 AI 칩을 사들인 미국 캘리포니아의 두 회사가 사실은 중국 기업이 소유한 곳이라고 CBS뉴스가 보도했습니다. 미국은 고성능 AI 칩이 중국으로 넘어가지 않도록 수출을 통제하고 있어, 엔비디아는 허가된 회사에만 최고급 AI 칩을 팔 수 있습니다. 그런데 엔비디아 웹사이트에 '엘리트' 협력사로 올라 있는 에어브레스는 원래 중국 모회사와 같은 인스퍼라는 이름을 쓰다가, 2023년 3월 인스퍼 관련 회사들이 미국 제재 명단에 오른 뒤 이름을 바꿨습니다. 에어브레스는 2024년 4월부터 2026년 2월까지 최소 56억달러어치 칩을 말레이시아 두 회사로 수출했는데, 그중 한 곳은 수출 통제 위반 혐의로 수사를 받는 메가스피드입니다. 다른 한 곳인 리클라우드AI는 중국 선전에 본사를 둔 회사 소유이고, 그 대표는 중국군이 운영하는 대학을 나온 것으로 전해졌습니다. 칩을 먼저 미국 회사에 판 뒤 동남아로 빌려주거나 보내는 방식이 통제를 피하는 통로로 쓰이고 있다는 지적이 나옵니다.\n\n출처: Tom's Hardware\nhttps://www.tomshardware.com/tech-industry/big-tech/two-californian-nvidia-ai-chip-customers-are-really-chinese-owned-companies-used-as-workaround-for-government-export-controls\n\n#반도체 #semiconductor #엔비디아 #AI칩 #수출통제 #미중갈등 #공급망",
+  "photo_queries": [
+    "graphics card closeup",
+    "cargo container port cranes",
+    "gpu server cluster"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "6849995",
+    "query": "cargo container port cranes",
+    "file": "22fe671056.photo.jpg",
+    "download_url": "https://pixabay.com/get/gce75d96c5d93b6eddcfdb973751685a66357c15add4caa316e8d408a7e5340e8737d6d42bfbd65be8234ac8d881af6e326c0782c33faa19cff3c6fe721d2aade_1280.jpg",
+    "page_url": "https://pixabay.com/photos/hamburg-port-ship-container-6849995/",
+    "photographer": "Niklas9416",
+    "photographer_url": "https://pixabay.com/users/Niklas9416-4093236/",
+    "alt": "hamburg, port, ship, container, logistics, export, crane, transport, elbe, port, port, ship, container, logistics, logistics, logistics, logistics, logistics, export",
+    "width": 6000,
+    "height": 4000,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Niklas9416 / Pixabay"
+  }
+}
