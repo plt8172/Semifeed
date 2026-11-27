@@ -5,6 +5,7 @@
     "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks": "2026-11-08T08:49:30+09:00",
     "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents": "2026-11-08T20:48:19+09:00",
     "https://eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim": "2026-11-09T20:49:09+09:00",
+    "https://eetimes.com/huawei-next-big-ai-move-hbm-workaround": "2026-11-28T08:37:49+09:00",
     "https://eetimes.com/intel-wants-a-quantum-business-classiq-could-help-build-one": "2026-10-29T16:49:01+09:00",
     "https://eetimes.com/nvidia-reports-115-8b-in-quarterly-revenue-under-interim-ceo": "2026-11-20T08:39:55+09:00",
     "https://eetimes.com/siemens-adds-soc-verification-and-software-debug-with-two-planned-deals": "2026-11-27T08:36:45+09:00",
@@ -142,6 +143,7 @@
     "https://thelec.kr/news/articleView.html?idxno=65796": "2026-11-24T08:37:08+09:00",
     "https://thelec.kr/news/articleView.html?idxno=65900": "2026-11-26T08:37:14+09:00",
     "https://thelec.kr/news/articleView.html?idxno=65989": "2026-11-27T08:36:45+09:00",
+    "https://thelec.kr/news/articleView.html?idxno=66007": "2026-11-28T08:37:49+09:00",
     "https://theregister.com/ai-and-ml/2026/10/31/googles-ai-satellite-sends-a-very-expensive-haiku-to-earth/5306818": "2026-11-01T08:49:26+09:00",
     "https://theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/5309891": "2026-11-15T08:37:12+09:00",
     "https://theregister.com/ai-and-ml/2026/11/23/amazon-scoops-up-ai-accelerator-tech-to-keep-chips-busy-at-all-times/5311754": "2026-11-24T08:37:08+09:00",
@@ -151,12 +153,14 @@
     "https://theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673": "2026-11-02T08:48:58+09:00",
     "https://theregister.com/networks/2026/11/02/ericsson-says-it-can-detect-track-drones-using-only-mobile-networks/5306958": "2026-11-03T11:49:44+09:00",
     "https://theregister.com/networks/2026/11/03/gsma-warns-of-growing-risks-to-mobile-networks-from-extreme-weather/5307308": "2026-11-04T16:51:23+09:00",
+    "https://theregister.com/networks/2026/11/27/ai-boom-leaves-network-operators-waiting-up-to-18-months-for-kit/5312366": "2026-11-28T08:37:49+09:00",
     "https://theregister.com/off-prem/2026/10/30/aws-installs-an-ai-accelerator-every-14-seconds-and-eyes-1-trillion-annual-revenue/5306547": "2026-10-30T16:49:52+09:00",
     "https://theregister.com/off-prem/2026/11/05/when-datacenters-lose-power-generators-should-kick-in-that-didnt-happen-for-google-in-london/5307739": "2026-11-05T16:50:48+09:00",
     "https://theregister.com/off-prem/2026/11/17/americas-hyperscale-bit-barns-draw-as-much-power-as-entire-states/5310471": "2026-11-18T08:39:01+09:00",
     "https://theregister.com/on-prem/2026/11/04/bare-metal-boom-on-prem-server-sales-for-hpc-and-ai-up-20-this-year/5307611": "2026-11-05T08:50:25+09:00",
     "https://theregister.com/on-prem/2026/11/09/memory-crunch-makes-refurbished-kit-look-a-lot-less-secondhand/5307758": "2026-11-09T20:49:09+09:00",
     "https://theregister.com/personal-tech/2026/11/25/hp-sees-premium-priced-ai-pcs-as-its-meal-ticket-in-a-shrinking-market/5312174": "2026-11-26T08:37:14+09:00",
+    "https://theregister.com/personal-tech/2026/11/27/smartphone-shipments-face-another-bleak-year-before-modest-2028-comeback/5312580": "2026-11-28T08:37:49+09:00",
     "https://theregister.com/public-sector/2026/11/06/britains-tech-ambitions-depend-on-minerals-made-in-china-mps-warn/5307779": "2026-11-06T20:50:00+09:00",
     "https://theregister.com/public-sector/2026/11/06/us-air-traffic-control-enters-the-21st-century-starts-to-abandon-floppy-disks/5308210": "2026-11-07T20:50:13+09:00",
     "https://theregister.com/science/2026/10/29/battman-aims-to-turbocharge-us-batteries-without-robbin-critical-minerals/5306273": "2026-10-30T08:49:42+09:00",
@@ -232,6 +236,7 @@
     "https://trendforce.com/presscenter/news/20261106-13297.html": "2026-11-06T16:50:28+09:00",
     "https://trendforce.com/presscenter/news/20261111-13303.html": "2026-11-12T08:39:09+09:00",
     "https://trendforce.com/presscenter/news/20261119-13314.html": "2026-11-20T08:39:55+09:00",
-    "https://trendforce.com/presscenter/news/20261125-13321.html": "2026-11-26T08:37:14+09:00"
+    "https://trendforce.com/presscenter/news/20261125-13321.html": "2026-11-26T08:37:14+09:00",
+    "https://trendforce.com/presscenter/news/20261127-13327.html": "2026-11-28T08:37:49+09:00"
   }
 }

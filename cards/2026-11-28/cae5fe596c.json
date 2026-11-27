@@ -1,0 +1,35 @@
+{
+  "id": "cae5fe596c",
+  "link": "https://www.theregister.com/personal-tech/2026/11/27/smartphone-shipments-face-another-bleak-year-before-modest-2028-comeback/5312580",
+  "source": "The Register",
+  "category": "전자·부품",
+  "published_at": "2026-11-28T00:33+09:00",
+  "headline": "메모리값 350% 뛰자 올해 스마트폰 출하 14% 줄 듯",
+  "bullets": [
+    "카운터포인트, 올해 출하 14%·내년 6% 감소 전망",
+    "AI 서버에 메모리 몰려 휴대폰용 D램 공급 빠듯",
+    "2028년 6% 반등해도 2025년보다 약 14% 적어"
+  ],
+  "caption": "메모리값 350% 뛰자 올해 스마트폰 출하 14% 줄 듯\n\n시장조사업체 카운터포인트리서치는 올해 세계 스마트폰 출하량이 14% 줄고, 2027년에도 6% 더 줄 것으로 내다봤습니다. 가장 큰 원인은 메모리 가격입니다. IDC에 따르면 D램과 낸드플래시 등 메모리 원가는 지난해보다 약 350% 올랐고 지금도 오르고 있습니다. 낸드플래시는 사진·앱을 저장하는 메모리입니다. 메모리 제조사들이 이익이 큰 AI 서버용 칩 생산에 집중하면서 휴대폰·PC에 들어가는 일반 메모리가 부족해졌고, 제조사들은 가격을 올리거나 메모리 용량을 줄이고 저가 모델을 거둬들였습니다. 카운터포인트는 2028년에는 메모리 공급이 나아지며 출하가 6% 반등할 수 있지만, 그래도 2025년보다 약 14% 적을 것이라고 봤습니다. 일부 저가폰 수요는 영영 사라졌다는 분석으로, 가격에 민감한 소비자와 시장이 특히 큰 영향을 받을 것으로 보입니다.\n\n출처: The Register\nhttps://www.theregister.com/personal-tech/2026/11/27/smartphone-shipments-face-another-bleak-year-before-modest-2028-comeback/5312580\n\n#반도체 #semiconductor #스마트폰 #메모리 #D램 #카운터포인트 #전자부품",
+  "photo_queries": [
+    "smartphone teardown parts",
+    "phone assembly line factory",
+    "mobile phone repair bench"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "410324",
+    "query": "smartphone teardown parts",
+    "file": "cae5fe596c.photo.jpg",
+    "download_url": "https://pixabay.com/get/g3068635dc4723950657355f7d3f8332da9128afb309f69568e516fa393b220241a1154559f3eadb95d997f8d2ae990163c9838dcd7ffd0d2d785bf226e19514f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/iphone-smartphone-apps-apple-inc-410324/",
+    "photographer": "JESHOOTS-com",
+    "photographer_url": "https://pixabay.com/users/JESHOOTS-com-264599/",
+    "alt": "iphone, smartphone, apps, apple inc, mobile phone, cell phone, phone, communication, mobile, telephone, technology, cellular, call, screen, wireless, business, modern, digital, message, connection, communicate, electronic, display, contact, hand, touch, conversation, portable, computer, touchscreen, applications, ios, holding, typing, browsing, brown business, brown computer, brown technology, brown laptop, brown phone, brown apple, brown mobile, brown community, brown digital, brown communication, brown company, brown conversation, brown smartphone, brown telephone, brown iphone, iphone, iphone, iphone, smartphone, smartphone, mobile phone, cell phone, phone, phone, phone, phone, phone, mobile, mobile",
+    "width": 2180,
+    "height": 1453,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: JESHOOTS-com / Pixabay"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "92a5b17320",
+  "link": "https://www.trendforce.com/presscenter/news/20261127-13327.html",
+  "source": "TrendForce",
+  "category": "메모리",
+  "published_at": "2026-11-27T16:48+09:00",
+  "headline": "치솟던 D램 값, 2028년엔 내려갈 수도",
+  "bullets": [
+    "트렌드포스, 2027년 D램 계약가 상승폭 점차 줄 전망",
+    "기본 시나리오: 하반기 보합 뒤 2028년 1분기부터 하락",
+    "비관 시나리오선 2027년 4분기부터 하락 시작 가능"
+  ],
+  "caption": "치솟던 D램 값, 2028년엔 내려갈 수도\n\n대만 시장조사업체 트렌드포스가 그동안 가파르게 오르던 D램 계약 가격이 2028년에는 떨어질 수 있다는 전망을 내놨습니다. D램은 PC·스마트폰·서버가 작업 중인 데이터를 잠시 올려 두는 메모리로, 계약 가격은 제조사와 대형 고객이 미리 정해 거래하는 값입니다. 트렌드포스는 4분기 들어 공급망 기업들이 2027~2028년 생산·판매 계획을 다시 따지면서 D램 구매 움직임이 다소 느려졌다고 설명했습니다. 미국 중간선거 이후 데이터센터 건설 속도, 엔비디아의 신생 클라우드 기업 자금 지원 정책 변화, 중국 기업을 겨냥한 미국의 새 AI 칩 규제가 수요를 흔들 수 있는 변수로 꼽혔습니다. 반면 메모리 제조사들은 생산 능력을 계속 늘리고 있어, 서버 출하 증가세가 꺾이면 공급 부족이 풀리고 2028년 1분기부터 모든 제품군 가격이 내려갈 수 있다는 것이 기본 시나리오입니다. 서버 업체들이 구매를 더 줄이는 비관적인 경우에는 하락이 2027년 4분기부터 시작될 수 있다고 봤습니다.\n\n출처: TrendForce\nhttps://www.trendforce.com/presscenter/news/20261127-13327.html\n\n#반도체 #semiconductor #메모리 #D램 #DRAM #트렌드포스 #메모리가격",
+  "photo_queries": [
+    "memory module ram sticks",
+    "semiconductor cleanroom fab",
+    "server motherboard closeup"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4869869",
+    "query": "memory module ram sticks",
+    "file": "92a5b17320.photo.jpg",
+    "download_url": "https://pixabay.com/get/gb1a558e2c4e239eaab7743cf4382355e6e9f6fad826d6cb83b75d1ac8110ab437e2937dcd3de78101f0a5758e0d6138d228f24c74ad80bdcb8a0722e7d708a6f_1280.jpg",
+    "page_url": "https://pixabay.com/photos/memories-computers-chip-pc-4869869/",
+    "photographer": "ds_30",
+    "photographer_url": "https://pixabay.com/users/ds_30-1795490/",
+    "alt": "memories, computers, chip, pc, electronics, technology, equipment, access, part, silicone, byte, small, speed, storage, components, gigabytes, electricity, megabyte, accessibility, connections, sdram, hardware, silicon, technologicals, silicone, gigabytes, megabyte, sdram, sdram, sdram, silicon, silicon, silicon, silicon, silicon",
+    "width": 4862,
+    "height": 3264,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: ds_30 / Pixabay"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "4710cbda0d",
+  "link": "https://www.thelec.kr/news/articleView.html?idxno=66007",
+  "source": "디일렉",
+  "category": "장비·소재",
+  "published_at": "2026-11-27T16:34+09:00",
+  "headline": "中 화면 투자 덕에 국내 장비사 19곳 매출 늘었다",
+  "bullets": [
+    "디스플레이 장비 26곳 중 19곳 3분기 매출 증가",
+    "야스·아이씨디 등 5곳 흑자전환, 야스 누적 매출 670%↑",
+    "中 8.6세대 OLED 투자 수주, 4분기·내년 반영 전망"
+  ],
+  "caption": "中 화면 투자 덕에 국내 장비사 19곳 매출 늘었다\n\n국내 디스플레이 장비 기업들의 실적이 눈에 띄게 좋아졌습니다. 디일렉이 26개 기업의 올해 3분기 실적을 분석한 결과 19곳의 매출이 1년 전보다 늘었고, 2분기 10곳에서 크게 증가했습니다. 야스, 아이씨디, HB솔루션, 파인텍, 참엔지니어링 5곳은 적자에서 흑자로 돌아섰습니다. 가장 큰 이유는 중국 디스플레이 기업들의 OLED 투자입니다. OLED는 스스로 빛을 내는 화면으로 스마트폰과 노트북에 널리 쓰이며, 야스는 중국 TCL CSOT에 OLED 증착장비를 공급하면서 1~3분기 누적 매출이 669.6% 늘었습니다. BOE, TCL CSOT, 비전옥스 등이 노트북·태블릿용 8.6세대 OLED 생산라인 투자를 진행하고 있어, 국내 장비 기업이 따낸 물량은 4분기와 내년 실적에 차례로 반영될 전망입니다. 다만 아바코와 DMS는 적자로 돌아서는 등 모든 기업이 좋아진 것은 아닙니다.\n\n출처: 디일렉\nhttps://www.thelec.kr/news/articleView.html?idxno=66007\n\n#반도체 #semiconductor #디스플레이 #OLED #장비 #실적 #디스플레이장비",
+  "photo_queries": [
+    "oled display panel closeup",
+    "flat panel factory production",
+    "laptop screen manufacturing"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "5379317",
+    "query": "electronic components",
+    "file": "4710cbda0d.photo.jpg",
+    "download_url": "https://pixabay.com/get/gbdb7ed3b69828e84f0ebe94049195010d60bc5130b131a9b277e4d5c5a9a8baee5e3b819215134e37ffa9e0400bcc1ce799fa82e6b3718569471ccd3916c48b4_1280.jpg",
+    "page_url": "https://pixabay.com/photos/inductor-capacitor-coil-5379317/",
+    "photographer": "nanoslavic",
+    "photographer_url": "https://pixabay.com/users/nanoslavic-17278421/",
+    "alt": "inductor, capacitor, coil, mother board, electronic, electronics, computer, board, components, chips, tech, technology, main board, digital, circuit, hardware, parts, processor, module, microelectronics, electrical, engineering, printed circuit board, pcb, macro, inductor, inductor, inductor, inductor, inductor",
+    "width": 5760,
+    "height": 3042,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: nanoslavic / Pixabay",
+    "category": "science"
+  }
+}

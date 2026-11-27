@@ -1,0 +1,35 @@
+{
+  "id": "0ae2924ce7",
+  "link": "https://www.theregister.com/networks/2026/11/27/ai-boom-leaves-network-operators-waiting-up-to-18-months-for-kit/5312366",
+  "source": "The Register",
+  "category": "정책·공급망",
+  "published_at": "2026-11-27T19:45+09:00",
+  "headline": "AI 열풍에 통신 장비값 50% 뛰고 납기 18개월",
+  "bullets": [
+    "광통신 장비 값 올해 약 50% 상승, 통신망 사업자 RETN",
+    "3개월이던 납기가 12~15개월, 일부는 18개월까지",
+    "통신사와 AI 데이터센터가 칩·부품 놓고 직접 경쟁"
+  ],
+  "caption": "AI 열풍에 통신 장비값 50% 뛰고 납기 18개월\n\n유럽 통신망 사업자 RETN이 AI 데이터센터 건설 붐 때문에 광통신 장비 가격이 올해 초보다 약 50% 올랐다고 밝혔습니다. 광통신 장비는 빛 신호로 데이터를 실어 나르는 광섬유망을 운용하는 장비로, 도시와 데이터센터를 잇는 인터넷 고속도로 역할을 합니다. 더 큰 문제는 납기로, 예전엔 3개월이면 받던 장비가 지금은 12~15개월, 일부 주문은 18개월까지 걸린다고 합니다. RETN은 통신사들이 칩과 부품을 놓고 AI 데이터센터와 직접 경쟁하게 됐고, 원자재·인력·전력 부족과 지정학적 긴장도 겹쳤다고 설명했습니다. 비용을 아끼려 망 업그레이드를 미뤄 온 통신사들이 하필 가장 나쁜 시기에 투자를 해야 하는 상황이 된 것도 원인으로 꼽혔습니다. AI 데이터센터가 땅과 전력을 구하기 쉬운 외딴 지역으로 옮겨 가고 있어, RETN은 개발사가 개장 2~5년 전부터 통신망 확보를 함께 계획해야 한다고 조언했습니다.\n\n출처: The Register\nhttps://www.theregister.com/networks/2026/11/27/ai-boom-leaves-network-operators-waiting-up-to-18-months-for-kit/5312366\n\n#반도체 #semiconductor #광통신 #데이터센터 #AI #공급망 #통신장비",
+  "photo_queries": [
+    "fiber optic cable bundle",
+    "network switch ports",
+    "telecom equipment rack"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "9786819",
+    "query": "fiber optic cable bundle",
+    "file": "0ae2924ce7.photo.jpg",
+    "download_url": "https://pixabay.com/get/g000ae71dc4ecfa2fe004fad5cc359255dcd70ed71792ba55cbe1be4d965a710c74a93c50498e2a3fbac79cb7d363fa237dd4f610e10648f027f497ed006c8b3a_1280.jpg",
+    "page_url": "https://pixabay.com/photos/smart-cabling-it-infrastructure-9786819/",
+    "photographer": "Avcom211",
+    "photographer_url": "https://pixabay.com/users/Avcom211-47695725/",
+    "alt": "smart cabling, it infrastructure, smarter networks, network performance, avcom, avcomindia",
+    "width": 6720,
+    "height": 4480,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: Avcom211 / Pixabay"
+  }
+}

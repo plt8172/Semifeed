@@ -1,0 +1,35 @@
+{
+  "id": "284160f656",
+  "link": "https://www.eetimes.com/huawei-next-big-ai-move-hbm-workaround/",
+  "source": "EE Times",
+  "category": "AI·설계",
+  "published_at": "2026-11-27T17:56+09:00",
+  "headline": "수출 통제 막힌 화웨이, AI 메모리 직접 설계",
+  "bullets": [
+    "화웨이, 내년 2월 ISSCC서 자체 설계 HBM 논문 발표",
+    "데이터 핀 밀도 2배, 웨이퍼 5층을 하이브리드 본딩",
+    "설계 공개와 양산은 별개, 美 통제 속 자급 시도"
+  ],
+  "caption": "수출 통제 막힌 화웨이, AI 메모리 직접 설계\n\n중국 화웨이가 AI 칩에 붙는 고대역폭메모리(HBM)를 직접 설계해 내년 2월 미국 샌프란시스코에서 열리는 국제고체회로학회(ISSCC 2027)에서 발표합니다. HBM은 D램을 여러 층 쌓아 AI 가속기 옆에 붙이는 메모리로, 지금은 삼성전자와 SK하이닉스가 공급을 주도하고 있습니다. 블룸버그에 따르면 화웨이 설계는 현재 양산 제품보다 데이터 핀 밀도가 두 배이며, 메모리 컨트롤러와 여러 층의 메모리를 웨이퍼 5장을 직접 맞붙이는 하이브리드 본딩으로 쌓았습니다. 미국 수출 통제로 중국 기업은 HBM을 구하기 어려워졌고, 화웨이는 2027년 초 나올 AI 가속기 어센드 960DT 고객에게 HBM을 직접 조달하라고 요청한 것으로 전해졌습니다. 다만 화웨이가 실제 생산에 얼마나 가까운지는 밝혀지지 않았고, 국내 전문가들은 논문으로 기술을 보여 주는 것과 대량 생산은 다른 문제라고 지적했습니다.\n\n출처: EE Times\nhttps://www.eetimes.com/huawei-next-big-ai-move-hbm-workaround/\n\n#반도체 #semiconductor #HBM #AI반도체 #화웨이 #하이브리드본딩 #수출통제",
+  "photo_queries": [
+    "stacked memory chip die",
+    "silicon wafer semiconductor",
+    "chip packaging machine"
+  ],
+  "photo": {
+    "provider": "pixabay",
+    "id": "4955429",
+    "query": "silicon wafer semiconductor",
+    "file": "284160f656.photo.jpg",
+    "download_url": "https://pixabay.com/get/g932dc45dd2533e3438e318ffaac2c97e06dc6ad9f2b26d99cccdeddc41d8efa86c519545ff676116f6d6a14c321d157bdbfb633908048ee70c12489099032f2b_1280.jpg",
+    "page_url": "https://pixabay.com/photos/hardware-technology-motherboard-4955429/",
+    "photographer": "SlimeyFox",
+    "photographer_url": "https://pixabay.com/users/SlimeyFox-6041778/",
+    "alt": "hardware, technology, motherboard, electronics, chip, circuit, processor, tech, gray technology, gray tech, motherboard, chip, tech, tech, tech, tech, tech",
+    "width": 3648,
+    "height": 2736,
+    "license": "Pixabay Content License",
+    "license_url": "https://pixabay.com/service/license-summary/",
+    "credit": "Photo: SlimeyFox / Pixabay"
+  }
+}
